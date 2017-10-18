@@ -1,0 +1,236 @@
+@font-face
+{
+    font-family: annabelle;
+    src: local(anabelle), url(../fonts/annabelle.ttf);
+}
+
+@font-face
+{
+    font-family: Ubuntu;
+    src: local(ubuntu), url(../fonts/Ubuntu.ttf);
+}
+
+@font-face
+{
+    font-family: Arimo;
+    src: local(arimo), url(../fonts/Arimo.ttf);
+}
+
+@font-face
+{
+    font-family: Lora;
+    src: local(lora), url(../fonts/Lora.ttf);
+}
+
+@font-face
+{
+    font-family: Coca-Cola;
+    src: local(coca-cola), url(../fonts/Coca-cola.otf);
+}
+
+@font-face
+{
+    font-family: Starcraft;
+    src: local(starcraft), url(../fonts/Starcraft.ttf);
+}
+
+@font-face
+{
+    font-family: Chocolate;
+    src: local(chocolate), url(../fonts/Chocolate.otf);
+}
+
+@font-face
+{
+    font-family: Rusish;
+    src: local(rusish), url(../fonts/Rusish.otf);
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    min-width: 800px;
+    margin: 0 auto;
+    font: 1.5rem 'Times New Roman', serif;
+}
+
+.content
+{
+    background: url('http://bit.ly/2f0lLgc');
+    text-align: center;
+}
+
+h2,
+h3
+{
+    font: 1.7rem 'Chocolate', serif;
+}
+
+.header .title
+{
+    font: 10rem Coca-Cola, serif;
+    margin: 0;
+}
+
+.main_news
+{
+    width: 44%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -5px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+.add_news
+{
+    width: 44%;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+.inside_main_news
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+.first_letter::first-letter
+{
+    font: 3.5rem Rusish, sans-serif;
+}
+
+hr
+{
+    background-color: #000;
+    height: 2px;
+}
+
+q
+{
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+}
+
+img
+{
+    width: 90%;
+}
+
+input.night:checked ~ .content
+{
+    color: #fff;
+    background: url('http://bit.ly/2fhRTzK');
+}
+
+input[name='size'][value='80']:checked ~ .content
+{
+    font-size: 1.2rem;
+}
+
+input[name='size'][value='80']:checked ~ .content h3,
+input[name='size'][value='80']:checked ~ .content h2
+{
+    font-size: 1.36rem;
+}
+
+input[name='size'][value='110']:checked ~ .content
+{
+    font-size: 1.65rem;
+}
+
+input[name='size'][value='110']:checked ~ .content h3,
+input[name='size'][value='110']:checked ~ .content h2
+{
+    font-size: 1.87rem;
+}
+
+input[name='size'][value='120']:checked ~ .content
+{
+    font-size: 1.8rem;
+}
+
+input[name='size'][value='120']:checked ~ .content h3,
+input[name='size'][value='120']:checked ~ .content h2
+{
+    font-size: 2.04rem;
+}
+
+input[name='size'][value='140']:checked ~ .content
+{
+    font-size: 2.38rem;
+}
+
+input[name='size'][value='140']:checked ~ .content h3,
+input[name='size'][value='140']:checked ~ .content h2
+{
+    font-size: 2.04rem;
+}
+
+input[name='family'][value='Serif']:checked ~ .content
+{
+    font-family: Lora, serif;
+}
+
+input[name='family'][value='Serif']:checked ~ .content h2,
+input[name='family'][value='Serif']:checked ~ .content h3
+{
+    font-family: Lora, serif;
+}
+
+input[name='family'][value='Sans-serif']:checked ~ .content
+{
+    font-family: Arimo, sans-serif;
+}
+
+input[name='family'][value='Sans-serif']:checked ~ .content h2,
+input[name='family'][value='Sans-serif']:checked ~ .content h3
+{
+    font-family: Arimo, sans-serif;
+}
+
+input[name='family'][value='Monospace']:checked ~ .content
+{
+    font-family: Ubuntu, monospace;
+}
+
+input[name='family'][value='Monospace']:checked ~ .content h2,
+input[name='family'][value='Monospace']:checked ~ .content h3
+{
+    font-family: Ubuntu, monospace;
+}
+
+input[name='family'][value='Cursive']:checked ~ .content
+{
+    font-family: annabelle, cursive;
+}
+
+input[name='family'][value='Cursive']:checked ~ .content h2,
+input[name='family'][value='Cursive']:checked ~ .content h3
+{
+    font-family: annabelle, cursive;
+}
+
+footer
+{
+    font: 2rem Starcraft, serif;
+}
