@@ -2,8 +2,246 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
+    <title>Искусство левитации</title>
+    <link href="https://fonts.googleapis.com/css?family=Pattaya&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <input type="radio" id="set-size__1x" name="set-size" checked>
+    <input type="radio" id="set-size__2x" name="set-size" >
+    <input type="radio" id="set-size__3x" name="set-size" >
+
+    <input type="radio" id="set-font__sans" name="set-font" checked>
+    <input type="radio" id="set-font__serif" name="set-font" >
+    <input type="radio" id="set-font__mono" name="set-font" >
+
+    <input type="radio" id="set-color__light" name="set-color" checked>
+    <input type="radio" id="set-color__dark" name="set-color" >
+
+    <main>
+        <section class="navigation">
+            <div class="navigation-item">
+                <h3 class="navigation-item__header">Размер шрифта</h3>
+                <label for="set-size__1x">Маленький</label>
+                <label for="set-size__2x">Средний</label>
+                <label for="set-size__3x">Крупный</label>
+            </div>
+            <div class="navigation-item">
+                <h3 class="navigation-item__header">Начертание шрифта</h3>
+                <label for="set-font__sans">Без засечек</label>
+                <label for="set-font__serif">С засечками</label>
+                <label for="set-font__mono">Моноширинный</label>
+            </div>
+            <div class="navigation-item">
+                <h3 class="navigation-item__header">Цветовая тема</h3>
+                <label for="set-color__light">Тёмная на светлом</label>
+                <label for="set-color__dark">Светлая на тёмном</label>
+            </div>
+        </section>
+        <section class="newspaper">
+            <h1 class="newspaper__header">ИСКУССТВО ЛЕВИТАЦИИ</h1>
+            <h2 class="newspaper__subhead">Выпуск от 31 октября 1985 года</h2>
+            <div class="remark">
+                <span class="remark__item">Вся</span>
+                <span class="remark__item">информация</span>
+                <span class="remark__item">является</span>
+                <span class="remark__item">абсурдной</span>
+                <span class="remark__item">и</span>
+                <span class="remark__item">не</span>
+                <span class="remark__item">должна</span>
+                <span class="remark__item">восприниматься</span>
+                <span class="remark__item">всерьёз</span>
+            </div>
+            <section class="news">
+                <h2 class="news__header">
+                    Но&shy;вость не&shy;де&shy;ли: Вос&shy;ста&shy;ние ко&shy;ти&shy;ков! 
+                    Чи&shy;тай&shy;те на&nbsp;стр.5
+                </h2>
+                <figure class="news-image">
+                    <img class="news-image__source" src="cat1.jpg" 
+                    alt="Милый котик" title="Милый котик">
+                    <figcaption class="news-image__caption">Картина 1. Милый котик</figcaption>
+                </figure>                    
+                <article class="any-news">
+                    <h2 class="any-news__header">
+                        По&shy;че&shy;му тро&shy;га&shy;тель&shy;но на&shy;ив&shy;но иг&shy;ро&shy;вое 
+                        на&shy;ча&shy;ло?
+                    </h2>
+                    <p class="any-news__paragraph">
+                        Ду&shy;а&shy;лизм ак&shy;ку&shy;му&shy;ли&shy;ру&shy;ет 
+                        ху&shy;до&shy;же&shy;ствен&shy;ный та&shy;лант, так Г.Корф 
+                        фор&shy;му&shy;ли&shy;ру&shy;ет соб&shy;ствен&shy;ную 
+                        ан&shy;ти&shy;те&shy;зу. До&shy;бав&shy;лю, что мир мо&shy;жет быть 
+                        по&shy;лу&shy;чен из опы&shy;та. Ти&shy;пи&shy;че&shy;ское, так 
+                        или ина&shy;че, пред&shy;став&shy;ля&shy;ет со&shy;бой 
+                        на&shy;пря&shy;жен&shy;ный ме&shy;лан&shy;хо&shy;лик.
+                    </p>
+                    <p class="any-news__paragraph">
+                        Пост&shy;мо&shy;дер&shy;низм изящ&shy;но по&shy;рож&shy;да&shy;ет 
+                        и обес&shy;пе&shy;чи&shy;ва&shy;ет на&shy;пря&shy;жен&shy;ный 
+                        он&shy;то&shy;ло&shy;ги&shy;че&shy;ский ста&shy;тус ис&shy;кус&shy;ства. 
+                        Ин&shy;те&shy;рес&shy;но от&shy;ме&shy;тить, что 
+                        ав&shy;то&shy;ма&shy;ти&shy;за&shy;ция мо&shy;но&shy;тон&shy;но 
+                        транс&shy;по&shy;ни&shy;ру&shy;ет ба&shy;бу&shy;визм. 
+                        Ис&shy;чис&shy;ле&shy;ние пре&shy;ди&shy;ка&shy;тов, как при&shy;ня&shy;то 
+                        счи&shy;тать, под&shy;чер&shy;ки&shy;ва&shy;ет фи&shy;ло&shy;ге&shy;нез.
+                    </p>
+                    <p class="any-news__paragraph">
+                        Мон&shy;таж изящ&shy;но на&shy;чи&shy;на&shy;ет 
+                        са&shy;мо&shy;до&shy;ста&shy;точ&shy;ный де&shy;дук&shy;тив&shy;ный 
+                        ме&shy;тод. Суж&shy;де&shy;ние изящ&shy;но 
+                        транс&shy;фор&shy;ми&shy;ру&shy;ет он&shy;то&shy;ло&shy;ги&shy;че&shy;ский 
+                        стиль. Ме&shy;лан&shy;хо&shy;лик, на пер&shy;вый взгляд, 
+                        не&shy;рав&shy;но&shy;ме&shy;рен.
+                    </p>
+                </article>
+                <article class="any-news">
+                    <h2 class="any-news__header">
+                        Ас&shy;со&shy;ци&shy;а&shy;ция как клас&shy;си&shy;чес&shy;кий ре&shy;а&shy;лизм
+                    </h2>
+                    <p class="any-news__paragraph">
+                        Ли&shy;би&shy;до, как при&shy;ня&shy;то счи&shy;тать, да&shy;ет 
+                        он&shy;то&shy;ло&shy;ги&shy;че&shy;ский мо&shy;дер&shy;низм. 
+                        Ли&shy;тур&shy;ги&shy;че&shy;ская дра&shy;ма вы&shy;зы&shy;ва&shy;ет 
+                        ин&shy;тел&shy;ли&shy;ги&shy;бель&shy;ный 
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ный па&shy;ра&shy;докс. 
+                        Суб&shy;ли&shy;ма&shy;ция, со&shy;глас&shy;но 
+                        тра&shy;ди&shy;ци&shy;он&shy;ным пред&shy;став&shy;ле&shy;ни&shy;ям, 
+                        рас&shy;смат&shy;ри&shy;ва&shy;ет&shy;ся стиль. &quot;ко&shy;декс 
+                        де&shy;я&shy;ний&quot;, как при&shy;ня&shy;то счи&shy;тать, 
+                        мно&shy;го&shy;пла&shy;но&shy;во транс&shy;фор&shy;ми&shy;ру&shy;ет 
+                        фак&shy;то&shy;гра&shy;фи&shy;че&shy;ский ка&shy;тар&shy;сис. 
+                        Ре&shy;а&shy;лизм не&shy;устой&shy;чив. До&shy;бав&shy;лю, что 
+                        ба&shy;зо&shy;вый тип лич&shy;но&shy;сти об&shy;ра&shy;зу&shy;ет 
+                        при&shy;ми&shy;тив&shy;ный ин&shy;тел&shy;лект.
+                    </p>
+                    <p class="any-news__paragraph">
+                        Эй&shy;дос при&shy;ни&shy;ма&shy;ет во вни&shy;ма&shy;ние из ря&shy;да вон 
+                        вы&shy;хо&shy;дя&shy;щий ге&shy;до&shy;низм. Осво&shy;бож&shy;де&shy;ние 
+                        под&shy;ры&shy;ва&shy;ет са&shy;мо&shy;до&shy;ста&shy;точ&shy;ный 
+                        ин&shy;тел&shy;лект, так Г.Корф фор&shy;му&shy;ли&shy;ру&shy;ет 
+                        соб&shy;ствен&shy;ную ан&shy;ти&shy;те&shy;зу. 
+                        Пред&shy;став&shy;ля&shy;ет&shy;ся ло&shy;гич&shy;ным, что 
+                        апри&shy;ор&shy;ная би&shy;сек&shy;су&shy;аль&shy;ность 
+                        про&shy;дол&shy;жа&shy;ет пред&shy;мет ис&shy;кус&shy;ства. 
+                        Во&shy;об&shy;ра&shy;же&shy;ние изящ&shy;но на&shy;чи&shy;на&shy;ет 
+                        прин&shy;цип вос&shy;при&shy;я&shy;тия. Ощу&shy;ще&shy;ние ми&shy;ра 
+                        име&shy;ет 
+                        со&shy;ци&shy;аль&shy;но-пси&shy;хо&shy;ло&shy;ги&shy;че&shy;ский 
+                        фак&shy;тор, та&shy;ким об&shy;ра&shy;зом, все 
+                        пе&shy;ре&shy;чис&shy;лен&shy;ные при&shy;зна&shy;ки 
+                        ар&shy;хе&shy;ти&shy;па и ми&shy;фа под&shy;твер&shy;жда&shy;ют, что 
+                        дей&shy;ствие ме&shy;ха&shy;низ&shy;мов ми&shy;фо&shy;твор&shy;че&shy;ства 
+                        срод&shy;ни ме&shy;ха&shy;низ&shy;мам 
+                        ху&shy;до&shy;же&shy;ствен&shy;но-про&shy;дук&shy;тив&shy;но&shy;го 
+                        мыш&shy;ле&shy;ния. Ма&shy;нье&shy;ризм прост.
+                    </p>
+                </article>
+                <article class="any-news">
+                    <h2 class="any-news__header">
+                        Он&shy;то&shy;ло&shy;ги&shy;чес&shy;кий струк&shy;ту&shy;ра&shy;лизм: 
+                        ху&shy;до&shy;жест&shy;вен&shy;ное опос&shy;ре&shy;до&shy;ва&shy;ние 
+                        или бху&shy;та&shy;ва&shy;да?
+                    </h2>
+                    <p class="any-news__paragraph">
+                        Весь&shy;ма су&shy;ще&shy;ствен&shy;но сле&shy;ду&shy;ю&shy;щее: 
+                        са&shy;мо&shy;на&shy;блю&shy;де&shy;ние осмыс&shy;лен&shy;но 
+                        по&shy;ни&shy;ма&shy;ет под со&shy;бой 
+                        он&shy;то&shy;ло&shy;ги&shy;че&shy;ский он&shy;то&shy;ге&shy;нез 
+                        ре&shy;чи. Оче&shy;вид&shy;но, что бес&shy;со&shy;зна&shy;тель&shy;ное 
+                        ме&shy;то&shy;до&shy;ло&shy;ги&shy;че&shy;ски при&shy;ни&shy;ма&shy;ет 
+                        во вни&shy;ма&shy;ние го&shy;мео&shy;стаз. Эти сло&shy;ва 
+                        со&shy;вер&shy;шен&shy;но спра&shy;вед&shy;ли&shy;вы, од&shy;на&shy;ко 
+                        ху&shy;до&shy;же&shy;ствен&shy;ный вкус зер&shy;каль&shy;но 
+                        по&shy;ни&shy;ма&shy;ет под со&shy;бой де&shy;прес&shy;сив&shy;ный 
+                        здра&shy;вый смысл. Фи&shy;ло&shy;ге&shy;нез при&shy;ни&shy;ма&shy;ет 
+                        во вни&shy;ма&shy;ние не&shy;од&shy;но&shy;знач&shy;ный 
+                        дра&shy;ма&shy;тизм. Це&shy;лое об&shy;ра&shy;за, 
+                        сле&shy;до&shy;ва&shy;тель&shy;но, мен&shy;таль&shy;но 
+                        ан&shy;ни&shy;ги&shy;ли&shy;ру&shy;ет 
+                        экс&shy;пе&shy;ри&shy;мен&shy;таль&shy;ный фи&shy;ло&shy;ге&shy;нез, 
+                        од&shy;на&shy;ко Зи&shy;г&shy;варт счи&shy;тал 
+                        кри&shy;те&shy;ри&shy;ем ис&shy;тин&shy;но&shy;сти 
+                        не&shy;об&shy;хо&shy;ди&shy;мость и об&shy;щезна&shy;чи&shy;мость, 
+                        для ко&shy;то&shy;рых нет ни&shy;ка&shy;кой опо&shy;ры 
+                        в объ&shy;ек&shy;тив&shy;ном ми&shy;ре.
+                    </p>
+                    <p class="any-news__paragraph">
+                        Од&shy;на&shy;ко Э.Дюрк&shy;гейм утвер&shy;ждал, 
+                        что струк&shy;ту&shy;ра&shy;лизм пре&shy;об&shy;ра&shy;зу&shy;ет 
+                        ин&shy;терак&shy;ци&shy;о&shy;низм. Ре&shy;ак&shy;ция 
+                        кон&shy;тро&shy;ли&shy;ру&shy;ет био&shy;гра&shy;фи&shy;че&shy;ский 
+                        ме&shy;тод. Осво&shy;бож&shy;де&shy;ние, как спра&shy;вед&shy;ли&shy;во 
+                        счи&shy;та&shy;ет Ф.Эн&shy;гельс, рас&shy;кла&shy;ды&shy;ва&shy;ет 
+                        на эле&shy;мен&shy;ты фи&shy;ло&shy;ге&shy;нез, та&shy;ким 
+                        об&shy;ра&shy;зом, вто&shy;рой ком&shy;плекс дви&shy;жу&shy;щих сил 
+                        по&shy;лу&shy;чил раз&shy;ра&shy;бот&shy;ку в тру&shy;дах 
+                        А.Бер&shy;та&shy;лан&shy;фи и Ш.Бю&shy;ле&shy;ра. Ре&shy;а&shy;лизм 
+                        рас&shy;смат&shy;ри&shy;ва&shy;ет&shy;ся сим&shy;во&shy;лизм, 
+                        та&shy;ким об&shy;ра&shy;зом, вто&shy;рой ком&shy;плекс дви&shy;жу&shy;щих 
+                        сил по&shy;лу&shy;чил раз&shy;ра&shy;бот&shy;ку в тру&shy;дах 
+                        А.Бер&shy;та&shy;лан&shy;фи и Ш.Бю&shy;ле&shy;ра. Ка&shy;тар&shy;сис, так 
+                        или ина&shy;че, кон&shy;вен&shy;ци&shy;о&shy;на&shy;лен.
+                    </p>
+                    <p class="any-news__paragraph">
+                        <q>
+                            Со&shy;мне&shy;ние, по опре&shy;де&shy;ле&shy;нию, 
+                            не&shy;три&shy;ви&shy;аль&shy;но. Пла&shy;стич&shy;ность 
+                            об&shy;ра&shy;за от&shy;чуж&shy;да&shy;ет не&shy;из&shy;мен&shy;ный 
+                            смысл жиз&shy;ни. Ху&shy;до&shy;же&shy;ствен&shy;ный та&shy;лант 
+                            на&shy;чи&shy;на&shy;ет по&shy;зи&shy;ти&shy;вист&shy;ский 
+                            син&shy;так&shy;сис ис&shy;кус&shy;ства.
+                        </q>
+                    </p>
+                </article>
+                <article class="any-news">
+                    <h2 class="any-news__header">
+                        Ху&shy;до&shy;жест&shy;вен&shy;ная жизнь как си&shy;ло&shy;вое поле
+                    </h2>
+                    <figure class="news-image">
+                        <img class="news-image__source" src="cat2.jpg" 
+                        alt="Няшный котик" title="Няшный котик">
+                        <figcaption class="news-image__caption">Картина 2. Няшный котик</figcaption>
+                    </figure>
+                    <p class="any-news__paragraph">
+                        Ча&shy;сти&shy;ца, со&shy;глас&shy;но 
+                        тра&shy;ди&shy;ци&shy;он&shy;ным пред&shy;став&shy;ле&shy;ни&shy;ям, 
+                        мас&shy;шта&shy;би&shy;ру&shy;ет не&shy;зна&shy;чи&shy;тель&shy;ный 
+                        ка&shy;нон. По&shy;гранс&shy;лой, в от&shy;ли&shy;чие 
+                        от клас&shy;си&shy;че&shy;ско&shy;го слу&shy;чая, 
+                        ор&shy;га&shy;ни&shy;чен. Тра&shy;ги&shy;че&shy;ское 
+                        ил&shy;лю&shy;стри&shy;ру&shy;ет кван&shy;то&shy;вый атом.
+                    </p>
+                    <p class="any-news__paragraph">
+                        Ху&shy;до&shy;же&shy;ствен&shy;ная 
+                        мен&shy;таль&shy;ность тео&shy;ре&shy;ти&shy;че&shy;ски воз&shy;мож&shy;на. 
+                        Кван&shy;то&shy;вое со&shy;сто&shy;я&shy;ние 
+                        за&shy;кан&shy;чи&shy;ва&shy;ет по&shy;гранс&shy;лой. Приз&shy;ма, 
+                        как мож&shy;но по&shy;ка&shy;зать с по&shy;мо&shy;щью не со&shy;всем 
+                        три&shy;ви&shy;аль&shy;ных вы&shy;чис&shy;ле&shy;ний, ед&shy;ва ли 
+                        кван&shy;ту&shy;е&shy;ма. Вы&shy;ра&shy;зи&shy;тель&shy;ное, 
+                        в от&shy;ли&shy;чие от клас&shy;си&shy;че&shy;ско&shy;го слу&shy;чая, 
+                        транс&shy;фор&shy;ми&shy;ру&shy;ет 
+                        пси&shy;хо&shy;ло&shy;ги&shy;че&shy;ский па&shy;рал&shy;ле&shy;лизм. 
+                        Ху&shy;до&shy;же&shy;ствен&shy;ное опо&shy;сре&shy;до&shy;ва&shy;ние, 
+                        сле&shy;до&shy;ва&shy;тель&shy;но, не&shy;пре&shy;рыв&shy;но. 
+                        Ли&shy;би&shy;до, на пер&shy;вый взгляд, 
+                        вос&shy;ста&shy;нав&shy;ли&shy;ва&shy;ет век&shy;тор&shy;ный 
+                        ре&shy;зо&shy;на&shy;тор.
+                    </p>
+                </article>
+            </section>
+            <figure class="news-image">
+                <img class="news-image__source" src="cat3.jpg" 
+                alt="Глазастый котик" title="Глазастый котик">
+                <figcaption class="news-image__caption">Картина 3. Глазастый котик</figcaption>
+            </figure>
+        </section>
+    </main>
 </body>
 </html>
