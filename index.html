@@ -2,8 +2,332 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+<input id="night_mode" class="night" type="checkbox">
+<label for="night_mode">
+        Ночной режим.
+</label>
+Размер шрифта:
+<input id="size80" type="radio" name="size" value="80">
+<label for="size80">
+    80%
+</label>
+<input id="size110" type="radio" name="size" value="110">
+<label for="size110">
+    110%
+</label>
+<input id="size120" type="radio" name="size" value="120">
+<label for="size120">
+    120%
+</label>
+<input id="size140" type="radio" name="size" value="140">
+<label for="size140">
+    140%.
+</label>
+Тип шрифта:
+<input id="family_serif" type="radio" name="family" value="Serif">
+<label for="family_serif">
+    Serif
+</label>
+<input id="family_sans-serif" type="radio" name="family" value="Sans-serif">
+<label for="family_sans-serif">
+    Sans-serif
+</label>
+<input id="family_monospace" type="radio" name="family" value="Monospace">
+<label for="family_monospace">
+    Monospace
+</label>
+<input id="family_cursive" type="radio" name="family" value="Cursive">
+<label for="family_cursive">
+    Cursive
+</label>
+<main class="content">
+    <!-- Header block -->
+    <header class="header">
+        <h1 class="title">The Art Newspaper</h1>
+        <hr>
+    </header>
+    <!-- End header -->
+    <!-- Main news block -->
+    <div class="main_news">
+        <!-- Article news -->
+        <article>
+            <h2>
+                Pussy Riot воз&shy;об&shy;но&shy;ви&shy;ли му&shy;зы&shy;каль&shy;ную
+                де&shy;я&shy;тель&shy;ность
+            </h2>
+            <img src="http://bit.ly/2e86gnG" title="riot" alt="image pussy riot">
+            <p class="first_letter">
+                Зна&shy;ме&shy;ни&shy;тая арт-груп&shy;па вы&shy;пу&shy;сти&shy;ла уже два ви&shy;део&shy;
+                кли&shy;па на пес&shy;ни о жен&shy;ской сек&shy;су&shy;аль&shy;но&shy;сти, и еще один
+                дол&shy;жен по&shy;явить&shy;ся в Се&shy;ти до кон&shy;ца ок&shy;тяб&shy;ря.
+            </p>
+            <p>
+                Клип на пес&shy;ню <em>«Straight Outta Vagina»</em> по&shy;свя&shy;щен то&shy;му,
+                как жен&shy;щи&shy;ны осво&shy;бож&shy;да&shy;ют&shy;ся от муж&shy;ско&shy;го
+                дик&shy;та&shy;та, иро&shy;ни&shy;зи&shy;ру&shy;ет над фрей&shy;дист&shy;ской
+                иде&shy;ей о том, что «сла&shy;бый пол» за&shy;ви&shy;ду&shy;ет пе&shy;ни&shy;су,
+                и по&shy;ка&shy;зы&shy;ва&shy;ет муж&shy;чин, ко&shy;то&shy;рые хо&shy;дят на
+                каб&shy;лу&shy;ках и вся&shy;че&shy;ски пы&shy;та&shy;ют&shy;ся по&shy;хо&shy;дить
+                на жен&shy;щин. На&shy;деж&shy;да То&shy;ло&shy;кон&shy;ни&shy;ко&shy;ва иг&shy;
+                ра&shy;ет в кли&shy;пе глав&shy;ную роль, по&shy;яв&shy;ля&shy;ясь в бе&shy;лой
+                ря&shy;се и цвет&shy;ной ба&shy;ла&shy;кла&shy;ве. <em>«Organs»</em> — пес&shy;ня
+                и ви&shy;део&shy;клип о по&shy;ли&shy;ти&shy;че&shy;ских убий&shy;ствах и при&shy;
+                сво&shy;е&shy;нии го&shy;су&shy;дар&shy;ством прав на че&shy;ло&shy;ве&shy;че&shy;
+                ское те&shy;ло: <q>Ор&shy;га&shy;ны в ря&shy;сах или ор&shy;га&shy;ны в по&shy;
+                го&shy;нах — за&shy;да&shy;ча у них, в об&shy;щем-то, од&shy;на: по&shy;да&shy;вить
+                во&shy;лю, страсть, твор&shy;че&shy;скую и жиз&shy;нен&shy;ную си&shy;лы</q>.
+                Оба кли&shy;па мож&shy;но по&shy;смот&shy;реть на YouTube-ка&shy;на&shy;ле
+                <a href="https://www.youtube.com/user/PussyRiotOfficial">wearepussyriot</a>.
+            </p>
+            <p>
+                В ком&shy;мен&shy;та&shy;рии <em>The Guardian</em> по по&shy;во&shy;ду
+                вы&shy;хо&shy;да пер&shy;во&shy;го кли&shy;па На&shy;деж&shy;да То&shy;ло&shy;
+                кон&shy;ни&shy;ко&shy;ва срав&shy;ни&shy;ла рас&shy;про&shy;стра&shy;не&shy;ние в со&shy;
+                вре&shy;мен&shy;ном ми&shy;ре пат&shy;ри&shy;ар&shy;халь&shy;ных и же&shy;но&shy;
+                не&shy;на&shy;вист&shy;ни&shy;че&shy;ских идей с ве&shy;не&shy;ри&shy;че&shy;ски&shy;ми
+                за&shy;бо&shy;ле&shy;ва&shy;ни&shy;я&shy;ми. Она за&shy;яви&shy;ла, что <q>Трамп
+                от&shy;кры&shy;то под&shy;дер&shy;жи&shy;ва&shy;ет ав&shy;то&shy;ри&shy;тар&shy;ные ме&shy;
+                то&shy;ды Вла&shy;ди&shy;ми&shy;ра Пу&shy;ти&shy;на. И это страш&shy;но. Это не мир, в
+                ко&shy;то&shy;ром я хо&shy;чу жить</q>, — ска&shy;за&shy;ла
+                То&shy;ло&shy;кон&shy;ни&shy;ко&shy;ва.
+            </p>
+        </article>
+        <!-- End first article news -->
+        <hr>
+        <div class="inside_main_news">
+            <article>
+                <h3>
+                    В Вер&shy;са&shy;ле тор&shy;го&shy;ва&shy;ли фаль&shy;ши&shy;вы&shy;ми
+                    би&shy;ле&shy;та&shy;ми
+                </h3>
+                <img src="http://bit.ly/2em7U2C" title="Versailles" alt="image Versailles">
+                <p class="first_letter">
+                    В про&shy;шлое вос&shy;кре&shy;се&shy;нье, 9 ок&shy;тяб&shy;ря, пя&shy;те&shy;ро
+                    со&shy;труд&shy;ни&shy;ков Вер&shy;саль&shy;ско&shy;го двор&shy;ца в воз&shy;расте
+                    от 21 до 34 лет бы&shy;ли пой&shy;ма&shy;ны на про&shy;да&shy;же под&shy;дель&shy;ных
+                    би&shy;ле&shy;тов в быв&shy;ший ко&shy;ро&shy;лев&shy;ский дво&shy;рец. Как со&shy;
+                    об&shy;ща&shy;ет га&shy;зе&shy;та <em>Le Parisien</em>, по&shy;до&shy;
+                    зре&shy;ва&shy;е&shy;мые в мо&shy;шен&shy;ни&shy;че&shy;стве за&shy;дер&shy;жа&shy;ны
+                    по&shy;ли&shy;ци&shy;ей го&shy;род&shy;ской ком&shy;му&shy;ны Ви&shy;ро&shy;ф&shy;ле.
+                    Двое муж&shy;чин и две жен&shy;щи&shy;ны уже при&shy;зна&shy;ли свое уча&shy;стие в
+                    не&shy;за&shy;кон&shy;ной тор&shy;го&shy;вой схе&shy;ме, 11 ок&shy;тяб&shy;ря им
+                    бы&shy;ли офи&shy;ци&shy;аль&shy;но предъ&shy;яв&shy;ле&shy;ны об&shy;ви&shy;не&shy;ния.
+                    Еще один муж&shy;чи&shy;на, на про&shy;тя&shy;же&shy;нии че&shy;ты&shy;рех лет
+                    ра&shy;бо&shy;тав&shy;ший се&shy;зон&shy;ным со&shy;труд&shy;ни&shy;ком на ис&shy;
+                    то&shy;ри&shy;че&shy;ском объ&shy;ек&shy;те и сей&shy;час по&shy;до&shy;зре&shy;
+                    ва&shy;ю&shy;щий&shy;ся в том, что был ру&shy;ко&shy;во&shy;ди&shy;те&shy;лем пре&shy;
+                    ступ&shy;ной груп&shy;пы, пол&shy;но&shy;стью от&shy;ри&shy;ца&shy;ет свою ви&shy;ну.
+                    Он так&shy;же за&shy;клю&shy;чен под стра&shy;жу.
+                </p>
+                <p>
+                    По&shy;ли&shy;ция пред&shy;по&shy;ла&shy;га&shy;ет, что в те&shy;че&shy;ние не&shy;
+                    сколь&shy;ких ме&shy;ся&shy;цев груп&shy;па рас&shy;про&shy;стра&shy;ня&shy;ла
+                    два ви&shy;да фаль&shy;ши&shy;вок, яко&shy;бы да&shy;вав&shy;ших пра&shy;во вхо&shy;да
+                    на тер&shy;ри&shy;то&shy;рию пар&shy;ка и на про&shy;езд на кур&shy;си&shy;ру&shy;ю&shy;
+                    щем по его тер&shy;ри&shy;то&shy;рии ми&shy;ни-по&shy;ез&shy;де: под&shy;дель&shy;ные
+                    би&shy;ле&shy;ты и на&shy;сто&shy;я&shy;щиеби&shy;ле&shy;ты, пе&shy;ре&shy;про&shy;
+                    да&shy;вав&shy;ши&shy;е&shy;ся во вто&shy;рой раз. Кас&shy;сир вы&shy;да&shy;вал
+                    под&shy;дель&shy;ные би&shy;ле&shy;ты рас&shy;пла&shy;чи&shy;вав&shy;шим&shy;ся на&shy;
+                    лич&shy;ны&shy;ми по&shy;се&shy;ти&shy;те&shy;лям, а его со&shy;общ&shy;ни&shy;ки
+                    про&shy;пус&shy;ка&shy;ли их на вхо&shy;де на тер&shy;ри&shy;то&shy;рию. Схе&shy;му
+                    раз&shy;об&shy;ла&shy;чи&shy;ли дру&shy;гие со&shy;труд&shy;ни&shy;ки, за&shy;ме&shy;
+                    тив&shy;шие, что кол&shy;ле&shy;ги не про&shy;во&shy;дят не&shy;ко&shy;то&shy;рые
+                    би&shy;ле&shy;ты че&shy;рез кон&shy;троль&shy;ный ав&shy;то&shy;мат, и ру&shy;ко&shy;
+                    во&shy;ди&shy;тель вы&shy;звал по&shy;ли&shy;цию. <q>В вос&shy;кре&shy;се&shy;нье
+                    во вре&shy;мя аре&shy;ста у од&shy;но&shy;го из по&shy;до&shy;зре&shy;ва&shy;е&shy;мых
+                    бы&shy;ло об&shy;на&shy;ру&shy;же&shy;но око&shy;ло 150 фаль&shy;ши&shy;вых би&shy;ле
+                    &shy;тов, каж&shy;дый из ко&shy;то&shy;рых пе&shy;ре&shy;про&shy;да&shy;вал&shy;ся
+                    при&shy;бли&shy;зи&shy;тель&shy;но за €10</q>, — со&shy;об&shy;ща&shy;ет
+                    <em>Le Parisien</em>. Обыч&shy;ный би&shy;лет в глав&shy;ный дво&shy;рец и на
+                    вре&shy;мен&shy;ные вы&shy;став&shy;ки сто&shy;ит €15, а пол&shy;ный би&shy;лет,
+                    да&shy;ю&shy;щий пра&shy;во на по&shy;се&shy;ще&shy;ние все&shy;го ис&shy;то&shy;
+                    ри&shy;че&shy;ско&shy;го ком&shy;плек&shy;са, вклю&shy;чая са&shy;ды, — €25.
+                </p>
+            </article>
+            <hr>
+            <article>
+                <h2>
+                    Эмод&shy;зи при&shy;зна&shy;ли ис&shy;кус&shy;ством
+                </h2>
+                <img src="http://bit.ly/2dQZN1V" title="emoji" alt="image emoji">
+                <p class="first_letter">
+                    Спе&shy;ци&shy;а&shy;лист от&shy;де&shy;ла ар&shy;хи&shy;тек&shy;ту&shy;ры и ди&shy;
+                    зай&shy;на му&shy;зея Пол Гол&shy;лоуэй в ком&shy;мен&shy;та&shy;рии из&shy;да&shy;нию
+                    CBS News от&shy;ме&shy;тил, что <q>эти ше&shy;дев&shy;ры ди&shy;зай&shy;на
+                    раз&shy;ме&shy;ром 12 на 12 пик&shy;се&shy;лей ста&shy;ли пер&shy;вы&shy;ми
+                    рост&shy;ка&shy;ми но&shy;во&shy;го ви&shy;зу&shy;аль&shy;но&shy;го язы&shy;ка</q>.
+                </p>
+                <p>
+                    Со&shy;здан&shy;ные 17 лет на&shy;зад пер&shy;вые <em>эмод&shy;зи</em>
+                    ста&shy;ли хи&shy;том в Япо&shy;нии, од&shy;на&shy;ко толь&shy;ко в 2010 го&shy;ду
+                    их вклю&shy;чи&shy;ли в стан&shy;дарт ко&shy;ди&shy;ро&shy;ва&shy;ния сим&shy;во&shy;лов
+                    Юни&shy;код, что спо&shy;соб&shy;ство&shy;ва&shy;ло рас&shy;про&shy;стра&shy;не&shy;нию
+                    изоб&shy;ра&shy;же&shy;ний в дру&shy;гих стра&shy;нах. Пе&shy;ре&shy;дан&shy;ный
+                    му&shy;зею на&shy;бор, в част&shy;но&shy;сти, вклю&shy;ча&shy;ет пик&shy;то&shy;грам&shy;
+                    мы на те&shy;му эмо&shy;ций, по&shy;го&shy;ды, жи&shy;вот&shy;ных и зна&shy;ков зо&shy;
+                    ди&shy;а&shy;ка. В Му&shy;зее со&shy;вре&shy;мен&shy;но&shy;го ис&shy;кус&shy;ства в
+                    Нью-Йор&shy;ке пред&shy;ста&shy;вить вы&shy;став&shy;ку, по&shy;свя&shy;щен&shy;ную
+                    эво&shy;лю&shy;ции язы&shy;ка эмод&shy;зи, пла&shy;ни&shy;ру&shy;ют в де&shy;каб&shy;ре
+                    те&shy;ку&shy;ще&shy;го го&shy;да.
+                </p>
+            </article>
+        </div>
+    </div>
+    <!-- End main news block -->
+    <!-- Start add news block -->
+    <div class="add_news">
+        <article>
+            <h3>
+                В<br><br>М<br>о<br>с<br>к<br>в<br>е<br>прой&shy;дет эко&shy;фе&shy;сти&shy;валь
+                ви&shy;део&shy;ар&shy;та
+            </h3>
+            <img src="http://bit.ly/2fqMPIq" title="fest" alt="image fest"><br>
+            <small>Ма&shy;ри-Франс Жи&shy;ра&shy;до, Эн&shy;т&shy;ро(СКО)пия, Ка&shy;на&shy;да, 2016</small>
+            <p class="first_letter">
+                Меж&shy;ду&shy;на&shy;род&shy;ный фе&shy;сти&shy;валь ви&shy;део&shy;ар&shy;та
+                <em>«Сей&shy;час&amp;По&shy;том»</em> прой&shy;дет в Го&shy;су&shy;дар&shy;
+                ствен&shy;ном Дар&shy;ви&shy;нов&shy;ском му&shy;зеес 22 ок&shy;тяб&shy;ря по 29
+                но&shy;яб&shy;ря.
+            </p>
+            <p>
+                Фе&shy;сти&shy;валь ви&shy;део&shy;ар&shy;та, со&shy;здан&shy;ный в 2011 го&shy;ду
+                мос&shy;ков&shy;ской ху&shy;дож&shy;ни&shy;цей и ку&shy;ра&shy;то&shy;ром Ма&shy;ри&shy;ной
+                Фо&shy;мен&shy;ко, пу&shy;те&shy;ше&shy;ству&shy;ет по му&shy;зей&shy;ным пло&shy;щад&shy;кам
+                сто&shy;ли&shy;цы уже ше&shy;стой год. Его те&shy;ма каж&shy;дый раз ме&shy;ня&shy;ет&shy;ся
+                в за&shy;ви&shy;си&shy;мо&shy;сти от про&shy;бле&shy;ма&shy;ти&shy;ки му&shy;зея, и в этом
+                го&shy;ду она зву&shy;чит так: <em>«Эко&shy;ло&shy;гия без гра&shy;ниц»</em>. В
+                ра&shy;бо&shy;те с ху&shy;дож&shy;ни&shy;ка&shy;ми фе&shy;сти&shy;валь то&shy;же
+                ста&shy;ра&shy; ет&shy;ся уста&shy;но&shy;вить как мож&shy;но мень&shy;ше огра&shy;
+                ни&shy;че&shy;ний: уча&shy;стие в нем бес&shy;плат&shy;ное, а воз&shy;раст&shy;ной ценз тех,
+                кто в те&shy;че&shy;ние го&shy;да мог при&shy;слать свои ра&shy;бо&shy;ты на
+                рас&shy;смот&shy;ре&shy;ние от&shy;бо&shy;роч&shy;ной ко&shy;мис&shy;сии, не
+                ука&shy;зы&shy;вал&shy;ся. Глав&shy;ное усло&shy;вие — не пре&shy;вы&shy;шать
+                хро&shy;но&shy;мет&shy;раж. В от&shy;ли&shy;чие от
+                экс&shy;пе&shy;ри&shy;мен&shy;таль&shy;но&shy;го или до&shy;ку&shy;мен&shy;таль&shy;
+                но&shy;го ки&shy;но, у ху&shy;дож&shy;ни&shy;ков бы&shy;ло не боль&shy;ше 15 ми&shy;нут,
+                что&shy;бы от&shy;ра&shy;зить свое ви&shy;де&shy;ние вза&shy;и&shy;мо&shy;
+                от&shy;но&shy;ше&shy;ний че&shy;ло&shy;ве&shy;ка и при&shy;ро&shy;ды. В ре&shy;зуль&shy;
+                та&shy;те в кон&shy;курс&shy;ную про&shy;грам&shy;му во&shy;шло 28 ро&shy;ли&shy;ков
+                (из них все&shy;го че&shy;ты&shy;ре — рос&shy;сий&shy;ских ви&shy;део&shy;ху&shy;дож&shy;
+                ни&shy;ков); еще 11 зри&shy;те&shy;лям по&shy;ка&shy;жут вне кон&shy;кур&shy;са; до&shy;
+                пол&shy;ни&shy;тель&shy;но бу&shy;дут пред&shy;став&shy;ле&shy;ны меж&shy;ду&shy;на&shy;
+                род&shy;ные про&shy;ек&shy;ты из Гер&shy;ма&shy;нии, Гре&shy;ции, Ита&shy;лии, США,
+                Фран&shy;ции, Япо&shy;нии и дру&shy;гих стран.
+            </p>
+            <p>
+                По тра&shy;ди&shy;ции кон&shy;курс&shy;ное жю&shy;ри, в со&shy;став ко&shy;то&shy;ро&shy;го
+                в этом го&shy;ду во&shy;шли арт-груп&shy;па <em>«ПровМыза»</em> (Сер&shy;гей Про&shy;
+                во&shy;ров и Га&shy;ли&shy;на Мыз&shy;ни&shy;ко&shy;ва), пре&shy;зи&shy;дент Меж&shy;
+                ду&shy;на&shy;род&shy;но&shy;го ки&shy;но&shy;фе&shy;сти&shy;ва&shy;ля ко&shy;
+                рот&shy;ко&shy;мет&shy;раж&shy;но&shy;го ки&shy;но в Мон&shy;те&shy;ка&shy;ти&shy;ни
+                Мар&shy;чел&shy;ло Дзеп&shy;пи и ку&shy;ра&shy;тор, за&shy;ве&shy;ду&shy;ю&shy;щая
+                сек&shy;то&shy;ром ки&shy;но и ви&shy;део&shy;ар&shy;та Го&shy;су&shy;дар&shy;ствен&shy;
+                но&shy;го цен&shy;тра со&shy;вре&shy;мен&shy;но&shy;го ис&shy;кус&shy;ства Ка&shy;ри&shy;
+                на Ка&shy;ра&shy;е&shy;ва, вы&shy;бе&shy;рет не&shy;сколь&shy;ких при&shy;зе&shy;ров.
+                Трой&shy;ку по&shy;бе&shy;ди&shy;те&shy;лей до&shy;пол&shy;нит ра&shy;бо&shy;та,
+                удо&shy;сто&shy;ен&shy;ная спе&shy;ци&shy;аль&shy;но&shy;го упо&shy;ми&shy;на&shy;ния,
+                а так&shy;же луч&shy;шее, по мне&shy;нию су&shy;дей, рос&shy;сий&shy;ское ви&shy;део.
+            </p>
+        </article>
+        <hr>
+        <article>
+            <h3>
+                На Documenta 14 по&shy;стро&shy;ят Пар&shy;фе&shy;нон из книг
+            </h3>
+            <img src="http://bit.ly/2eTNMZm" title="Documenta" alt="image Documenta">
+            <p class="first_letter">
+                Documenta 14 вме&shy;сте с Франк&shy;фурт&shy;ской книж&shy;ной яр&shy;мар&shy;кой
+                при&shy;гла&shy;ша&shy;ют из&shy;да&shy;тель&shy;ства, ав&shy;то&shy;ров и про&shy;сто
+                со&shy;чув&shy;ству&shy;ю&shy;щих пе&shy;ре&shy;дать в дар кни&shy;ги,
+                за&shy;пре&shy;щен&shy;ные где-ли&shy;бо сей&shy;час или в про&shy;шлом, для
+                ин&shy;стал&shy;ля&shy;ции <em>«Книж&shy;ный Пар&shy;фе&shy;нон»</em>
+                ар&shy;ген&shy;тин&shy;ской ху&shy;дож&shy;ни&shy;цы Мар&shy;ты Ми&shy;ну&shy;хин.
+                Око&shy;ло 100 тыс. то&shy;мов по&shy;на&shy;до&shy;бит&shy;ся для про&shy;ек&shy;та,
+                ко&shy;то&shy;рый по&shy;явит&shy;ся в рам&shy;ках <em>Documenta</em> на пло&shy;ща&shy;ди
+                Фри&shy;дри&shy;ха в Кас&shy;се&shy;ле, где в 1933 го&shy;ду не&shy;мец&shy;кие
+                сту&shy;ден&shy;ты и де&shy;я&shy;те&shy;ли на&shy;цист&shy;ской пар&shy;тии со&shy;жгли
+                око&shy;ло 2 тыс. книг во вре&shy;мя ак&shy;ции про&shy;тив
+                «не&shy;гер&shy;ман&shy;ско&shy;го ду&shy;ха».
+            </p>
+            <p>
+                «Книж&shy;ный Пар&shy;фе&shy;нон» ре&shy;кон&shy;стру&shy;и&shy;ру&shy;ет
+                ана&shy;ло&shy;гич&shy;ную ра&shy;бо&shy;ту, со&shy;здан&shy;ную Мар&shy;той
+                Ми&shy;ну&shy;хин в 1983 го&shy;ду в Бу&shy;энос-Ай&shy;ре&shy;се по&shy;сле
+                па&shy;де&shy;ния во&shy;ен&shy;ной дик&shy;та&shy;ту&shy;ры в Ар&shy;ген&shy;ти&shy;не.
+                То&shy;гда ко&shy;пия хра&shy;ма бы&shy;ла со&shy;став&shy;ле&shy;на из из&shy;да&shy;ний,
+                за&shy;пре&shy;щен&shy;ных хун&shy;той, а че&shy;рез не&shy;сколь&shy;ко дней
+                ин&shy;стал&shy;ля&shy;цию не&shy;мно&shy;го на&shy;кло&shy;ни&shy;ли с по&shy;мо&shy;щью
+                двух подъ&shy;ем&shy;ных кра&shy;нов, поз&shy;во&shy;лив зри&shy;те&shy;лям за&shy;брать
+                кни&shy;ги до&shy;мой. Раз&shy;дать кни&shy;ги пла&shy;ни&shy;ру&shy;ют и в
+                Кас&shy;се&shy;ле. Узнать, как при&shy;нять уча&shy;стие в про&shy;ек&shy;те,
+                мож&shy;но по ссыл&shy;ке.
+            </p>
+        </article>
+        <hr>
+        <article>
+            <h3>
+                Фи&shy;ли&shy;ал Эр&shy;ми&shy;та&shy;жа пре&shy;зен&shy;то&shy;ва&shy;ли во
+                Вла&shy;ди&shy;во&shy;сто&shy;ке
+            </h3>
+            <img src="http://bit.ly/2dRpDD6" title="Hermitage" alt="image Hermitage">
+            <p class="first_letter">
+                В глав&shy;ном го&shy;ро&shy;де При&shy;мор&shy;ско&shy;го края 28 сен&shy;тяб&shy;ря
+                пред&shy;ста&shy;ви&shy;ли про&shy;ект цен&shy;тра «Эр&shy;ми&shy;таж
+                -Вла&shy;ди&shy;во&shy;сток». Фи&shy;ли&shy;ал од&shy;но&shy;го из круп&shy;ней&shy;ших
+                му&shy;зеев Рос&shy;сии рас&shy;по&shy;ло&shy;жит&shy;ся в быв&shy;шем тор&shy;го&shy;вом
+                до&shy;ме «Кунст и Аль&shy;берс» — по&shy;стро&shy;ен&shy;ное 113 лет на&shy;зад зда&shy;ние
+                в сти&shy;ле мо&shy;дерн счи&shy;та&shy;ет&shy;ся од&shy;ним из сим&shy;во&shy;лов
+                Вла&shy;ди&shy;во&shy;сто&shy;ка. Его ре&shy;став&shy;ра&shy;ция на&shy;ча&shy;лась
+                еще ле&shy;том и бу&shy;дет пол&shy;но&shy;стью за&shy;вер&shy;ше&shy;на к зи&shy;ме
+                2017 го&shy;да; му&shy;зей от&shy;кро&shy;ет&shy;ся экс&shy;по&shy;зи&shy;ци&shy;ей,
+                по&shy;свя&shy;щен&shy;ной Ека&shy;те&shy;ри&shy;не Ве&shy;ли&shy;кой. Как
+                со&shy;об&shy;ща&shy;ет ре&shy;ги&shy;о&shy;наль&shy;ное агент&shy;ство Prima Media,
+                об&shy;щая пло&shy;щадь цен&shy;тра со&shy;ста&shy;вит 1 тыс. кв. м: для кол&shy;лек&shy;ций
+                Эр&shy;ми&shy;та&shy;жа бу&shy;дет от&shy;ве&shy;де&shy;но 600 кв.м, еще 400 кв. м
+                зай&shy;мет вы&shy;став&shy;ка ис&shy;кус&shy;ства При&shy;мор&shy;ско&shy;го края
+                на&shy;ча&shy;ла XX ве&shy;ка.
+            </p>
+            <p>
+                На офи&shy;ци&shy;аль&shy;ном ме&shy;ро&shy;при&shy;я&shy;тии во
+                Вла&shy;ди&shy;во&shy;сто&shy;ке при&shy;сут&shy;ство&shy;ва&shy;ли гу&shy;бер&shy;на&shy;тор
+                края Вла&shy;ди&shy;мир Ми&shy;клу&shy;шев&shy;ский и ге&shy;не&shy;раль&shy;ный
+                ди&shy;рек&shy;тор Эр&shy;ми&shy;та&shy;жа Ми&shy;ха&shy;ил Пио&shy;тров&shy;ский,
+                ко&shy;то&shy;рые под&shy;пи&shy;са&shy;ли со&shy;гла&shy;ше&shy;ние о
+                про&shy;дол&shy;же&shy;нии со&shy;труд&shy;ни&shy;че&shy;ства. Ди&shy;рек&shy;тор
+                пе&shy;тер&shy;бург&shy;ско&shy;го му&shy;зея от&shy;ме&shy;тил: <q>Мы бу&shy;дем
+                ре&shy;гу&shy;ляр&shy;но ор&shy;га&shy;ни&shy;зо&shy;вы&shy;вать здесь все то, что
+                про&shy;ис&shy;хо&shy;дит в Эр&shy;ми&shy;та&shy;же Санкт-Пе&shy;тер&shy;бур&shy;ге,
+                — не толь&shy;ко вы&shy;став&shy;ки, но и лек&shy;то&shy;рии, ма&shy;стер-клас&shy;сы.
+                Зда&shy;ние, вы&shy;бран&shy;ное для фи&shy;ли&shy;а&shy;ла му&shy;зея, ока&shy;за&shy;лось
+                на&shy;мно&shy;го ин&shy;те&shy;рес&shy;нее, чем я ви&shy;дел на
+                фо&shy;то&shy;гра&shy;фи&shy;ях. С удо&shy;воль&shy;стви&shy;ем бу&shy;ду на&shy;блю&shy;дать
+                за его ре&shy;став&shy;ра&shy;ци&shy;ей</q>. Ин&shy;те&shy;рес&shy;но, что в
+                рам&shy;ках Дней Эр&shy;ми&shy;та&shy;жа, ко&shy;то&shy;рые про&shy;хо&shy;дят во
+                Вла&shy;ди&shy;во&shy;сто&shy;ке всю не&shy;де&shy;лю, в по&shy;ме&shy;ще&shy;ни&shy;ях
+                бу&shy;ду&shy;ще&shy;го му&shy;зея уже от&shy;кры&shy;лась вы&shy;став&shy;ка,
+                по&shy;свя&shy;щен&shy;ная ху&shy;до&shy;же&shy;ствен&shy;ной фо&shy;то&shy;гра&shy;фии,
+                а в При&shy;мор&shy;ской кар&shy;тин&shy;ной га&shy;ле&shy;рее мож&shy;но уви&shy;деть
+                экс&shy;по&shy;зи&shy;цию «Эр&shy;ми&shy;таж — Вла&shy;ди&shy;во&shy;сто&shy;ку»,
+                рас&shy;ска&shy;зы&shy;ва&shy;ю&shy;щую о свя&shy;зях со зна&shy;ме&shy;ни&shy;тым
+                му&shy;зе&shy;ем. Про&shy;ект «Эр&shy;ми&shy;таж-Вла&shy;ди&shy;во&shy;сток»
+                яв&shy;ля&shy;ет&shy;ся ча&shy;стью кон&shy;цеп&shy;ции «Боль&shy;шой Эр&shy;ми&shy;таж»,
+                преду&shy;смат&shy;ри&shy;ва&shy;ю&shy;щей от&shy;кры&shy;тие фи&shy;ли&shy;а&shy;лов
+                так&shy;же в Ека&shy;те&shy;рин&shy;бур&shy;ге, Ка&shy;лу&shy;ге и Ом&shy;ске.
+            </p>
+        </article>
+    </div>
+    <!-- End add news block -->
+    <hr>
+    <!-- Start footer -->
+    <footer>
+        <span>© 2016 The Art Newspaper Russia.</span>
+    </footer>
+    <!-- End footer -->
+</main>
 </body>
 </html>
