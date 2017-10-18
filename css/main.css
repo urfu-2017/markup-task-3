@@ -55,7 +55,7 @@ body
 {
     min-width: 800px;
     margin: 0 auto;
-    font: 15px 'Times New Roman', serif;
+    font: 1.5rem 'Times New Roman', serif;
 }
 
 .content
@@ -68,11 +68,6 @@ h2,
 h3
 {
     font: 1.7rem 'Chocolate', serif;
-}
-
-h3
-{
-    font-size: 1.5rem;
 }
 
 .header .title
@@ -149,46 +144,46 @@ input.night:checked ~ .content
 
 input[name='size'][value='80']:checked ~ .content
 {
-    font-size: .8rem;
+    font-size: 1.2rem;
 }
 
 input[name='size'][value='80']:checked ~ .content h3,
 input[name='size'][value='80']:checked ~ .content h2
 {
-    font-size: 1rem;
+    font-size: 1.36rem;
 }
 
 input[name='size'][value='110']:checked ~ .content
 {
-    font-size: 1.1rem;
+    font-size: 1.65rem;
 }
 
 input[name='size'][value='110']:checked ~ .content h3,
 input[name='size'][value='110']:checked ~ .content h2
 {
-    font-size: 1.2rem;
+    font-size: 1.87rem;
 }
 
 input[name='size'][value='120']:checked ~ .content
 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 input[name='size'][value='120']:checked ~ .content h3,
 input[name='size'][value='120']:checked ~ .content h2
 {
-    font-size: 1.4rem;
+    font-size: 2.04rem;
 }
 
 input[name='size'][value='140']:checked ~ .content
 {
-    font-size: 1.4rem;
+    font-size: 2.38rem;
 }
 
 input[name='size'][value='140']:checked ~ .content h3,
 input[name='size'][value='140']:checked ~ .content h2
 {
-    font-size: 1.6rem;
+    font-size: 2.04rem;
 }
 
 input[name='family'][value='Serif']:checked ~ .content
