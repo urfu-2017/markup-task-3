@@ -1,0 +1,121 @@
+html 
+{
+    font-size: 16px;
+    font-family: 'Alice', serif;
+}
+
+body
+{
+    margin: auto;
+}
+
+#blackBackColor:checked ~ div
+{
+    background-color: black;
+    color: white;
+}
+
+#whiteBackColor:checked ~ div
+{
+    background-color: white;
+    color: black;
+}
+
+#smallFontSize:checked ~ div
+{
+    font-size: 16px;
+}
+
+#mediumFontSize:checked ~ div
+{
+    font-size: 24px;
+}
+
+#largeFontSize:checked ~ div
+{
+    font-size: 32px;
+}
+
+#standartFont:checked ~ div
+{
+    font-family: 'Alice', serif;
+}
+
+#androidFont:checked ~ div
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.header 
+{
+    text-align: center;
+}
+
+.paperTitle
+{
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Vollkorn', serif;
+}
+
+.paperInfo
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.paperSubTitle
+{
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.newsTitle
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.newsTitle.Hot
+{
+    text-align: right;
+    font-style: italic;
+}
+
+.main
+{
+    column-count: 3;
+}
+
+.main p
+{
+    column-count: 2;
+    text-align: justify;
+}
+
+.main p::first-letter
+{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.imgTitle
+{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+q
+{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.advert
+{
+    font-size: 2rem;
+    text-align: center;
+    border: 4px solid;
+}
