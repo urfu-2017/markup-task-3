@@ -3,7 +3,238 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Alice&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
+    <!-- Настройки сайта -->
+    <span>Цветовая схема:</span>
+    <span>Черная</span>
+    <input class="blackBackColor" type="radio" name="color">
+    <span>Белая</span>
+    <input class="whiteBackColor" type="radio" name="color" checked><br>
+
+    <span>Размер шрифта:</span>
+    <span>S</span>
+    <input class="smallFontSize" type="radio" name="size" checked>
+    <span>M</span>
+    <input class="mediumFontSize" type="radio" name="size">
+    <span>L</span>
+    <input class="largeFontSize" type="radio" name="size"><br>
+
+    <span>Шрифт:</span>
+    <span>Стандартный</span>
+    <input class="standartFont" type="radio" name="font" checked>
+    <span>Android</span>
+    <input class="androidFont" type="radio" name="font"><br>
+
+    <div class="header">
+        <div class="paperTitle">Комсомольский Рабочий</div>
+        <div class="paperInfo">
+            <span>Сороковой выпуск</span>
+            <span>Празднование</span>
+            <span>Среда, Апрель 12, 1961</span>
+            <span>Сегодня - будущее</span>
+            <span>Последнее издание</span>
+        </div>
+        <div class="paperSubTitle">Советский человек на орбите Земли</div>
+    </div>
+    <div class="main">
+        <div class="newsTitle Hot">Земля на пороге открытия</div>
+        <p>Юрий Га&shy;га&shy;рин 
+            стал пер&shy;вым че&shy;ло&shy;ве&shy;ком в ми&shy;ро&shy;вой 
+            ис&shy;то&shy;рии, со&shy;вер&shy;шив&shy;шим по&shy;лёт в 
+            кос&shy;ми&shy;че&shy;ское про&shy;стран&shy;ство. 
+            Ра&shy;ке&shy;та-но&shy;си&shy;тель «Во&shy;сток» с 
+            ко&shy;раб&shy;лём «Во&shy;сток-1», на бор&shy;ту ко&shy;то&shy;ро&shy;го 
+            на&shy;хо&shy;дил&shy;ся Га&shy;га&shy;рин, бы&shy;ла за&shy;пу&shy;ще&shy;на 
+            с кос&shy;мо&shy;дро&shy;ма «Бай&shy;ко&shy;нур». По&shy;сле 108 ми&shy;нут 
+            по&shy;лё&shy;та Га&shy;га&shy;рин успеш&shy;но при&shy;зем&shy;лил&shy;ся в 
+            Са&shy;ра&shy;тов&shy;ской об&shy;ла&shy;сти, не&shy;по&shy;да&shy;лё&shy;ку 
+            от го&shy;ро&shy;да Эн&shy;гель&shy;са. На&shy;чи&shy;ная с 12 ап&shy;ре&shy;ля 
+            1962 го&shy;да, день по&shy;лё&shy;та Га&shy;га&shy;ри&shy;на в кос&shy;мос был 
+            объ&shy;яв&shy;лен празд&shy;ни&shy;ком — Днём кос&shy;мо&shy;нав&shy;ти&shy;ки. 
+            Пер&shy;вый кос&shy;ми&shy;че&shy;ский по&shy;лёт вы&shy;звал боль&shy;шой 
+            ин&shy;те&shy;рес во всём ми&shy;ре, а сам Юрий Га&shy;га&shy;рин 
+            пре&shy;вра&shy;тил&shy;ся в ми&shy;ро&shy;вую зна&shy;ме&shy;ни&shy;тость. 
+            По при&shy;гла&shy;ше&shy;ни&shy;ям за&shy;ру&shy;беж&shy;ных 
+            пра&shy;ви&shy;тельств и об&shy;ще&shy;ствен&shy;ных 
+            ор&shy;га&shy;ни&shy;за&shy;ций он по&shy;се&shy;тил око&shy;ло 30 стран. 
+            Мно&shy;го у пер&shy;во&shy;го кос&shy;мо&shy;нав&shy;та бы&shy;ло 
+            по&shy;ез&shy;док и внут&shy;ри Со&shy;вет&shy;ско&shy;го Со&shy;ю&shy;за. 
+            В по&shy;сле&shy;ду&shy;ю&shy;щие го&shy;ды Га&shy;га&shy;рин вёл боль&shy;шую 
+            об&shy;ще&shy;ствен&shy;но-по&shy;ли&shy;ти&shy;че&shy;скую ра&shy;бо&shy;ту, 
+            окон&shy;чил Во&shy;ен&shy;но-воз&shy;душ&shy;ную ин&shy;же&shy;нер&shy;ную 
+            ака&shy;де&shy;мию име&shy;ни про&shy;фес&shy;со&shy;ра Н. Е. 
+            Жу&shy;ков&shy;ско&shy;го, ра&shy;бо&shy;тал в Цен&shy;тре 
+            под&shy;го&shy;тов&shy;ки кос&shy;мо&shy;нав&shy;тов и го&shy;то&shy;вил&shy;ся 
+            к но&shy;во&shy;му по&shy;лё&shy;ту в кос&shy;мос.
+        </p>
+        <div class="newsTitle">Точные науки - будущее</div>
+        <p>
+            От сво&shy;е&shy;го за&shy;рож&shy;де&shy;ния фи&shy;зи&shy;ка все&shy;гда 
+            име&shy;ла боль&shy;шое при&shy;клад&shy;ное зна&shy;че&shy;ние и 
+            раз&shy;ви&shy;ва&shy;лась вме&shy;сте с ма&shy;ши&shy;на&shy;ми и 
+            ме&shy;ха&shy;низ&shy;ма&shy;ми, ко&shy;то&shy;рые 
+            че&shy;ло&shy;ве&shy;че&shy;ство ис&shy;поль&shy;зо&shy;ва&shy;ло для 
+            сво&shy;их нужд. Фи&shy;зи&shy;ка ши&shy;ро&shy;ко 
+            ис&shy;поль&shy;зу&shy;ет&shy;ся в ин&shy;же&shy;нер&shy;ных на&shy;у&shy;ках, 
+            не&shy;ма&shy;ло фи&shy;зи&shy;ков бы&shy;ли од&shy;но&shy;вре&shy;мен&shy;но 
+            изоб&shy;ре&shy;та&shy;те&shy;ля&shy;ми и, на&shy;обо&shy;рот. 
+            Ме&shy;ха&shy;ни&shy;ка, как часть фи&shy;зи&shy;ки, тес&shy;но 
+            свя&shy;за&shy;на с тео&shy;ре&shy;ти&shy;че&shy;ской ме&shy;ха&shy;ни&shy;кой 
+            и со&shy;про&shy;тив&shy;ле&shy;ни&shy;ем ма&shy;те&shy;ри&shy;а&shy;лов, как 
+            ин&shy;же&shy;нер&shy;ны&shy;ми на&shy;у&shy;ка&shy;ми. 
+            Тер&shy;мо&shy;ди&shy;на&shy;ми&shy;ка свя&shy;за&shy;на с 
+            теп&shy;ло&shy;тех&shy;ни&shy;кой и 
+            кон&shy;стру&shy;и&shy;ро&shy;ва&shy;ни&shy;ем теп&shy;ло&shy;вых 
+            дви&shy;га&shy;те&shy;лей. Элек&shy;три&shy;че&shy;ство свя&shy;за&shy;но с 
+            элек&shy;тро&shy;тех&shy;ни&shy;кой и элек&shy;тро&shy;ни&shy;кой, для 
+            ста&shy;нов&shy;ле&shy;ния и раз&shy;ви&shy;тия ко&shy;то&shy;рой очень 
+            важ&shy;ны ис&shy;сле&shy;до&shy;ва&shy;ния в об&shy;ла&shy;сти 
+            фи&shy;зи&shy;ки твер&shy;до&shy;го те&shy;ла. До&shy;сти&shy;же&shy;ния 
+            ядер&shy;ной фи&shy;зи&shy;ки обу&shy;сло&shy;ви&shy;ли 
+            по&shy;яв&shy;ле&shy;ние ядер&shy;ной энер&shy;ге&shy;ти&shy;ки, и то&shy;му 
+            по&shy;доб&shy;ное. Фи&shy;зи&shy;ка так&shy;же име&shy;ет ши&shy;ро&shy;кие 
+            меж&shy;дис&shy;ци&shy;пли&shy;нар&shy;ные свя&shy;зи. На гра&shy;ни&shy;це 
+            фи&shy;зи&shy;ки, хи&shy;мии и ин&shy;же&shy;нер&shy;ных на&shy;ук 
+            воз&shy;ник&shy;ла и быст&shy;ро раз&shy;ви&shy;ва&shy;ет&shy;ся та&shy;кая 
+            от&shy;расль на&shy;у&shy;ки как 
+            ма&shy;те&shy;ри&shy;а&shy;ло&shy;ве&shy;де&shy;ние. Ме&shy;то&shy;ды и 
+            ин&shy;стру&shy;мен&shy;ты ис&shy;поль&shy;зу&shy;ют&shy;ся хи&shy;ми&shy;ей, 
+            что при&shy;ве&shy;ло к ста&shy;нов&shy;ле&shy;нию двух 
+            на&shy;прав&shy;ле&shy;ний ис&shy;сле&shy;до&shy;ва&shy;ний: 
+            фи&shy;зи&shy;че&shy;ской хи&shy;мии и хи&shy;ми&shy;че&shy;ской 
+            фи&shy;зи&shy;ки. Ме&shy;то&shy;ды и 
+            ин&shy;стру&shy;мен&shy;ты ис&shy;поль&shy;зу&shy;ют&shy;ся хи&shy;ми&shy;ей, 
+            что при&shy;ве&shy;ло к ста&shy;нов&shy;ле&shy;нию двух 
+            на&shy;прав&shy;ле&shy;ний ис&shy;сле&shy;до&shy;ва&shy;ний: 
+            фи&shy;зи&shy;че&shy;ской хи&shy;мии и хи&shy;ми&shy;че&shy;ской 
+            фи&shy;зи&shy;ки. Ме&shy;то&shy;ды и 
+            ин&shy;стру&shy;мен&shy;ты ис&shy;поль&shy;зу&shy;ют&shy;ся хи&shy;ми&shy;ей, 
+            что при&shy;ве&shy;ло к ста&shy;нов&shy;ле&shy;нию двух 
+            на&shy;прав&shy;ле&shy;ний ис&shy;сле&shy;до&shy;ва&shy;ний: 
+            фи&shy;зи&shy;че&shy;ской хи&shy;мии и хи&shy;ми&shy;че&shy;ской 
+            фи&shy;зи&shy;ки. Ме&shy;то&shy;ды и 
+            ин&shy;стру&shy;мен&shy;ты ис&shy;поль&shy;зу&shy;ют&shy;ся хи&shy;ми&shy;ей, 
+            что при&shy;ве&shy;ло к ста&shy;нов&shy;ле&shy;нию двух 
+            на&shy;прав&shy;ле&shy;ний ис&shy;сле&shy;до&shy;ва&shy;ний: 
+            фи&shy;зи&shy;че&shy;ской хи&shy;мии и хи&shy;ми&shy;че&shy;ской 
+            фи&shy;зи&shy;ки.
+        </p>
+        <img src="http://cs543107.vk.me/v543107345/20b35/eA5YTAOZDVI.jpg" alt="Gagrin">
+        <q>Поехали!</q><br>
+        <div class="newsTitle">ГЕРОЮ КОСМОСА - ТРОЕКРАТНОЕ УРА!</div>
+        <p>
+            В ре&shy;зуль&shy;та&shy;те, в те&shy;че&shy;ние 10 ми&shy;нут 
+            пе&shy;ред вхо&shy;дом в ат&shy;мо&shy;сфе&shy;ру ко&shy;рабль 
+            бес&shy;по&shy;ря&shy;доч&shy;но ку&shy;выр&shy;кал&shy;ся со 
+            ско&shy;ро&shy;стью 1 обо&shy;рот в се&shy;кун&shy;ду. Га&shy;га&shy;рин 
+            ре&shy;шил не пу&shy;гать ру&shy;ко&shy;во&shy;ди&shy;те&shy;лей по&shy;лё&shy;та 
+            (в первую оче&shy;редь — Ко&shy;ро&shy;лё&shy;ва) и в услов&shy;ном 
+            вы&shy;ра&shy;же&shy;нии со&shy;об&shy;щил о не&shy;штат&shy;ной 
+            си&shy;ту&shy;а&shy;ции на бор&shy;ту ко&shy;раб&shy;ля. Ко&shy;гда 
+            ко&shy;рабль во&shy;шёл в бо&shy;лее плот&shy;ные слои ат&shy;мо&shy;сфе&shy;ры, 
+            то со&shy;еди&shy;ня&shy;ю&shy;щие ка&shy;бе&shy;ли 
+            пе&shy;ре&shy;го&shy;ре&shy;ли, а ко&shy;ман&shy;да на раз&shy;де&shy;ле&shy;ние 
+            от&shy;се&shy;ков по&shy;сту&shy;пи&shy;ла уже от 
+            тер&shy;мо&shy;дат&shy;чи&shy;ков, так что спус&shy;ка&shy;е&shy;мый 
+            ап&shy;па&shy;рат на&shy;ко&shy;нец от&shy;де&shy;лил&shy;ся от 
+            при&shy;бор&shy;но-дви&shy;га&shy;тель&shy;но&shy;го от&shy;се&shy;ка. 
+            Спуск про&shy;ис&shy;хо&shy;дил по бал&shy;ли&shy;сти&shy;че&shy;ской 
+            тра&shy;ек&shy;то&shy;рии (как и у осталь&shy;ных кос&shy;ми&shy;че&shy;ских 
+            ко&shy;раб&shy;лей се&shy;рий «Во&shy;сток» и «Вос&shy;ход»), то есть с 
+            8—10-крат&shy;ны&shy;ми пе&shy;ре&shy;груз&shy;ка&shy;ми, к ко&shy;то&shy;рым 
+            Га&shy;га&shy;рин был го&shy;тов. Слож&shy;нее бы&shy;ло пе&shy;ре&shy;жить 
+            пси&shy;хо&shy;ло&shy;ги&shy;че&shy;ские на&shy;груз&shy;ки — по&shy;сле 
+            вхо&shy;да кап&shy;су&shy;лы в ат&shy;мо&shy;сфе&shy;ру за&shy;го&shy;ре&shy;лась 
+            об&shy;шив&shy;ка ко&shy;раб&shy;ля (тем&shy;пе&shy;ра&shy;ту&shy;ра 
+            сна&shy;ру&shy;жи при спус&shy;ке до&shy;сти&shy;га&shy;ет 3—5 ты&shy;сяч °C), 
+            по стёк&shy;лам ил&shy;лю&shy;ми&shy;на&shy;то&shy;ров по&shy;тек&shy;ли 
+            струй&shy;ки жид&shy;ко&shy;го ме&shy;тал&shy;ла, а са&shy;ма ка&shy;би&shy;на 
+            на&shy;ча&shy;ла по&shy;трес&shy;ки&shy;вать.
+            Спуск про&shy;ис&shy;хо&shy;дил по бал&shy;ли&shy;сти&shy;че&shy;ской 
+            тра&shy;ек&shy;то&shy;рии (как и у осталь&shy;ных кос&shy;ми&shy;че&shy;ских 
+            ко&shy;раб&shy;лей се&shy;рий «Во&shy;сток» и «Вос&shy;ход»), то есть с 
+            8—10-крат&shy;ны&shy;ми пе&shy;ре&shy;груз&shy;ка&shy;ми, к ко&shy;то&shy;рым 
+            Га&shy;га&shy;рин был го&shy;тов. Слож&shy;нее бы&shy;ло пе&shy;ре&shy;жить 
+            пси&shy;хо&shy;ло&shy;ги&shy;че&shy;ские на&shy;груз&shy;ки — по&shy;сле 
+            вхо&shy;да кап&shy;су&shy;лы в ат&shy;мо&shy;сфе&shy;ру за&shy;го&shy;ре&shy;лась 
+            об&shy;шив&shy;ка ко&shy;раб&shy;ля (тем&shy;пе&shy;ра&shy;ту&shy;ра 
+            сна&shy;ру&shy;жи при спус&shy;ке до&shy;сти&shy;га&shy;ет 3—5 ты&shy;сяч °C), 
+            по стёк&shy;лам ил&shy;лю&shy;ми&shy;на&shy;то&shy;ров по&shy;тек&shy;ли 
+            струй&shy;ки жид&shy;ко&shy;го ме&shy;тал&shy;ла, а са&shy;ма ка&shy;би&shy;на 
+            на&shy;ча&shy;ла по&shy;трес&shy;ки&shy;вать.
+            Спуск про&shy;ис&shy;хо&shy;дил по бал&shy;ли&shy;сти&shy;че&shy;ской 
+            тра&shy;ек&shy;то&shy;рии (как и у осталь&shy;ных кос&shy;ми&shy;че&shy;ских 
+            ко&shy;раб&shy;лей се&shy;рий «Во&shy;сток» и «Вос&shy;ход»), то есть с 
+            8—10-крат&shy;ны&shy;ми пе&shy;ре&shy;груз&shy;ка&shy;ми, к ко&shy;то&shy;рым 
+            Га&shy;га&shy;рин был го&shy;тов. Слож&shy;нее бы&shy;ло пе&shy;ре&shy;жить 
+            пси&shy;хо&shy;ло&shy;ги&shy;че&shy;ские на&shy;груз&shy;ки — по&shy;сле 
+            вхо&shy;да кап&shy;су&shy;лы в ат&shy;мо&shy;сфе&shy;ру за&shy;го&shy;ре&shy;лась 
+            об&shy;шив&shy;ка ко&shy;раб&shy;ля (тем&shy;пе&shy;ра&shy;ту&shy;ра 
+            сна&shy;ру&shy;жи при спус&shy;ке до&shy;сти&shy;га&shy;ет 3—5 ты&shy;сяч °C), 
+            по стёк&shy;лам ил&shy;лю&shy;ми&shy;на&shy;то&shy;ров по&shy;тек&shy;ли 
+            струй&shy;ки жид&shy;ко&shy;го ме&shy;тал&shy;ла, а са&shy;ма ка&shy;би&shy;на 
+            на&shy;ча&shy;ла по&shy;трес&shy;ки&shy;вать.
+        </p>
+        <div class="newsTitle Hot">Горьковский автозавод в лидерах</div>
+        <p>
+            ГАЗ про&shy;дол&shy;жал по&shy;лу&shy;чать тех&shy;ни&shy;че&shy;скую 
+            под&shy;держ&shy;ку от Ford Motor до 1935 го&shy;да, ко&shy;гда дей&shy;ствие 
+            до&shy;го&shy;во&shy;ра бы&shy;ло до&shy;сроч&shy;но пре&shy;кра&shy;ще&shy;но 
+            по обо&shy;юд&shy;но&shy;му со&shy;гла&shy;сию сто&shy;рон. Так в СССР 
+            по&shy;лу&shy;чи&shy;ли до&shy;ку&shy;мен&shy;та&shy;цию на мо&shy;дель Ford 
+            Model B 1933 мо&shy;дель&shy;но&shy;го го&shy;да. Она от&shy;ли&shy;ча&shy;лась 
+            за&shy;кры&shy;тым ку&shy;зо&shy;вом с со&shy;вре&shy;мен&shy;ным 
+            об&shy;ли&shy;ком и че&shy;ты&shy;рёх&shy;ци&shy;лин&shy;дро&shy;вым 
+            дви&shy;га&shy;те&shy;лем (в от&shy;ли&shy;чие от Ford Model 18 со слож&shy;ным 
+            в про&shy;из&shy;вод&shy;стве вось&shy;ми&shy;ци&shy;лин&shy;дро&shy;вым). 
+            Мо&shy;дель бы&shy;ла при&shy;ня&shy;та для про&shy;из&shy;вод&shy;ства на ГАЗе, 
+            но с до&shy;ста&shy;точ&shy;но се&shy;рьёз&shy;ны&shy;ми 
+            до&shy;ра&shy;бот&shy;ка&shy;ми по тре&shy;бо&shy;ва&shy;ни&shy;ям 
+            экс&shy;плу&shy;а&shy;та&shy;ции в СССР, на&shy;при&shy;мер, две 
+            по&shy;пе&shy;реч&shy;ные рес&shy;со&shy;ры за&shy;ме&shy;не&shy;ны на 
+            че&shy;ты&shy;ре про&shy;доль&shy;ные, а дви&shy;га&shy;тель остав&shy;лен 
+            4-ци&shy;лин&shy;дро&shy;вым, но с уве&shy;ли&shy;чен&shy;ной до 50 л. с. 
+            мощ&shy;но&shy;стью. В мае 1936 го&shy;да на&shy;чал&shy;ся се&shy;рий&shy;ный 
+            вы&shy;пуск 4-двер&shy;но&shy;го 5-мест&shy;но&shy;го се&shy;да&shy;на ГАЗ-М-1 
+            («Мо&shy;ло&shy;то&shy;вец-1»), из&shy;вест&shy;но&shy;го как «Эм&shy;ка». 
+            Этот ав&shy;то&shy;мо&shy;биль стал са&shy;мой мас&shy;со&shy;вой 
+            до&shy;во&shy;ен&shy;ной со&shy;вет&shy;ской лег&shy;ко&shy;вой мо&shy;де&shy;лью. 
+            На ба&shy;зе «Эм&shy;ки» был со&shy;здан ряд се&shy;рий&shy;ных 
+            мо&shy;ди&shy;фи&shy;ка&shy;ций.
+        </p>
+        <div class="advert">
+            <h3>Заря компьютеров</h3>
+        </div>
+        <p>
+            «Кор&shy;вет» — один из очень не&shy;мно&shy;гих 8-бит&shy;ных ПК, 
+            име&shy;ю&shy;щих спе&shy;ци&shy;аль&shy;ный ме&shy;ха&shy;низм для 
+            ап&shy;па&shy;рат&shy;но&shy;го уско&shy;ре&shy;ния вы&shy;во&shy;да 
+            не&shy;иг&shy;ро&shy;вой гра&shy;фи&shy;ки (у ча&shy;сти за&shy;ру&shy;беж&shy;ных 
+            иг&shy;ро&shy;вых ПК бы&shy;ла преду&shy;смот&shy;ре&shy;на 
+            ап&shy;па&shy;рат&shy;ная под&shy;держ&shy;ка отоб&shy;ра&shy;же&shy;ния 
+            «спрай&shy;тов» (дви&shy;жу&shy;щих&shy;ся объ&shy;ек&shy;тов) и 
+            «зна&shy;ко&shy;ге&shy;не&shy;ра&shy;то&shy;ра» (от&shy;но&shy;си&shy;тель&shy;но 
+            не&shy;по&shy;движ&shy;но&shy;го зад&shy;не&shy;го фо&shy;на), но 
+            ап&shy;па&shy;рат&shy;ное уско&shy;ре&shy;ние ри&shy;со&shy;ва&shy;ния то&shy;чек, 
+            ли&shy;ний и за&shy;крас&shy;ки об&shy;ла&shy;сти бы&shy;ло 
+            фак&shy;ти&shy;че&shy;ски толь&shy;ко у MSX2). При&shy;чем этот ме&shy;ха&shy;низм 
+            ре&shy;а&shy;ли&shy;зо&shy;ван не в 
+            спе&shy;ци&shy;а&shy;ли&shy;зи&shy;ро&shy;ван&shy;ной мик&shy;ро&shy;схе&shy;ме 
+            ви&shy;део&shy;про&shy;цес&shy;со&shy;ра (как у MSX2), а на обыч&shy;ной 
+            «мел&shy;кой ло&shy;ги&shy;ке» и стан&shy;дарт&shy;ных 
+            мик&shy;ро&shy;схе&shy;мах ПЛМ.
+            При&shy;чем этот ме&shy;ха&shy;низм 
+            ре&shy;а&shy;ли&shy;зо&shy;ван не в 
+            спе&shy;ци&shy;а&shy;ли&shy;зи&shy;ро&shy;ван&shy;ной мик&shy;ро&shy;схе&shy;ме 
+            ви&shy;део&shy;про&shy;цес&shy;со&shy;ра (как у MSX2), а на обыч&shy;ной 
+            «мел&shy;кой ло&shy;ги&shy;ке» и стан&shy;дарт&shy;ных 
+            мик&shy;ро&shy;схе&shy;мах ПЛМ.
+        </p>
+    </div>
 </body>
 </html>
