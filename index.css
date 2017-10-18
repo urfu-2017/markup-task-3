@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'Marck Script';
+    src: url(MarckScript.woff) format(woff);
+}
+
 html
 {
     margin: 0;
@@ -16,14 +22,12 @@ body
 
 .navigation
 {
-    margin: 0;
     padding: 1.5rem 0;
 }
 
 .navigation-item
 {
     display: inline-block;
-    margin: 0;
     padding: 1.5rem;
     text-align: center;
 }
@@ -38,7 +42,6 @@ body
 
 .navigation-item label
 {
-    margin: 0;
     padding: .25rem .5rem;
     cursor: pointer;
 }
@@ -83,34 +86,33 @@ input[id='set-color__dark']:checked ~ main .newspaper
     color: #fed;
 }
 
-.newspaper__header
+.newspaper__name
 {
     margin: 0;
     padding: 0;
     text-align: center;
-    font: 5rem 'Press Start 2P', sans-serif;
-    line-height: 7rem;
+    font: 5rem/7rem 'Press Start 2P', sans-serif;
     text-shadow: 1px 1px 0 #fed, 4px 4px 0 #420;
 }
 
-input[id='set-size__2x']:checked ~ main .newspaper__header
+input[id='set-size__2x']:checked ~ main .newspaper__name
 {
     font-size: 5.2rem;
     line-height: 7.3rem;
 }
 
-input[id='set-size__3x']:checked ~ main .newspaper__header
+input[id='set-size__3x']:checked ~ main .newspaper__name
 {
     font-size: 5.4rem;
     line-height: 7.6rem;
 }
 
-input[id='set-color__dark']:checked ~ main .newspaper__header
+input[id='set-color__dark']:checked ~ main .newspaper__name
 {
     text-shadow: 2px 2px 0 #420, 4px 4px 0 #fed;
 }
 
-.newspaper__subhead
+.newspaper__date
 {
     margin: 1.5rem 0;
     padding: .5rem 0;
@@ -123,17 +125,17 @@ input[id='set-color__dark']:checked ~ main .newspaper__header
     color: #fed;
 }
 
-input[id='set-size__2x']:checked ~ main .newspaper__subhead
+input[id='set-size__2x']:checked ~ main .newspaper__date
 {
     font-size: 1.1rem;
 }
 
-input[id='set-size__3x']:checked ~ main .newspaper__subhead
+input[id='set-size__3x']:checked ~ main .newspaper__date
 {
     font-size: 1.2rem;
 }
 
-input[id='set-color__dark']:checked ~ main .newspaper__subhead
+input[id='set-color__dark']:checked ~ main .newspaper__date
 {
     border-top-color: #420;
     border-bottom-color: #420;
@@ -173,7 +175,6 @@ input[id='set-size__3x']:checked ~ main .remark__item
 
 .news
 {
-    margin: 0;
     padding: 1.5rem 0;
     -moz-column-count: 3;
     -webkit-column-count: 3;
@@ -198,8 +199,7 @@ input[id='set-color__dark']:checked ~ main .news
     margin: 0 0 1.5rem;
     padding: 0;
     text-align: center;
-    font: 2.5rem 'Pattaya', cursive;
-    line-height: 2.5rem;
+    font: 2.5rem/2.5rem 'Pattaya', cursive;
 }
 
 input[id='set-size__2x']:checked ~ main .news__header
@@ -217,7 +217,13 @@ input[id='set-size__3x']:checked ~ main .news__header
 .any-news
 {
     margin: 0 0 1.5rem;
-    padding: 0;
+}
+
+.any-news.sub-article
+{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
 }
 
 .any-news__header
@@ -225,8 +231,14 @@ input[id='set-size__3x']:checked ~ main .news__header
     margin: 0 0 1.5rem;
     padding: 0;
     text-align: center;
-    font: 2rem 'Pattaya', cursive;
-    line-height: 2rem;
+    font: 2rem/2rem 'Pattaya', cursive;
+}
+
+.any-news.sub-article .news-image,
+.any-news.sub-article .any-news__header
+{
+    -webkit-column-span: all;
+    column-span: all;
 }
 
 input[id='set-size__2x']:checked ~ main .any-news__header
