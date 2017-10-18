@@ -9,39 +9,39 @@ body
     margin: auto;
 }
 
-#blackBackColor:checked ~ div
+.blackBackColor:checked ~ div
 {
     background-color: black;
     color: white;
 }
 
-#whiteBackColor:checked ~ div
+.whiteBackColor:checked ~ div
 {
     background-color: white;
     color: black;
 }
 
-#smallFontSize:checked ~ div
+.smallFontSize:checked ~ div
 {
     font-size: 16px;
 }
 
-#mediumFontSize:checked ~ div
+.mediumFontSize:checked ~ div
 {
     font-size: 24px;
 }
 
-#largeFontSize:checked ~ div
+.largeFontSize:checked ~ div
 {
     font-size: 32px;
 }
 
-#standartFont:checked ~ div
+.standartFont:checked ~ div
 {
     font-family: 'Alice', serif;
 }
 
-#androidFont:checked ~ div
+.androidFont:checked ~ div
 {
     font-family: 'Roboto Slab', serif;
 }
