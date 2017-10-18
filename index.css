@@ -1,45 +1,65 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Lobster&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300&subset=cyrillic');
-@font-face
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html
 {
-    font-family: Pompadur;
-    src: url(Pompadur.woff), url(Pompadur.ttf);
+    background: url('http://bgfons.com/upload/paper_texture282.jpg');
+    font-family: 'Lobster', cursive;
+    line-height: 1.5em;
+}
+
+footer,
+header
+{
+    line-height: 2em;
+    font-size: 3.5em;
+    text-align: center;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 header,
 footer
 {
-    font-family: 'EB Garamond', serif;
-    padding: 0 18px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 15px;
+}
+
+main article .columned:first-letter
+{
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
+
+.single-column
+{
+    width: 2px;
+    word-break: break-all;
+    margin: auto;
+    text-transform: uppercase;
+
+}
+
+.image img
+{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image figcaption
+{
+    text-align: center;
 }
 
 p
 {
-    box-sizing: border-box;
-    padding: 0 10px;
+    padding-top: 10px;
 }
 
-.columnize
+.columned
 {
-    -moz-columns: 300px 2;
-    -webkit-columns: 300px 2;
     columns: 300px 2;
-}
-
-main article
-{
-    padding: 0 0 10px;
-}
-
-main article .columnize:first-letter
-{
-    font-size: 2em;
 }
 
 main,
@@ -51,18 +71,18 @@ aside
 
 main
 {
-    width: 80%;
-    margin: 0 -6px 0 0;
+    width: 77%;
 }
 
 aside
 {
     width: 20%;
+    margin-left: 2%;
 }
 
 .image
 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Bad Script', cursive;
     font-size: .8em;
     overflow: hidden;
     margin: 10px auto;
@@ -70,7 +90,7 @@ aside
 
 aside article
 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Bad Script', cursive;
 }
 
 article:not(:last-child):after,
@@ -82,70 +102,39 @@ header:after
     height: 1px;
     border: 1px solid #000;
     background: #000;
-    -moz-column-span: all;
     -webkit-column-span: all;
     column-span: all;
 }
 
-html
-{
-    background: #f8ecc2;
-    font-family: 'Lobster', cursive;
-    line-height: 1.5em;
-}
-
-header,
-footer
-{
-    line-height: 2em;
-    font-size: 3.5em;
-    text-align: center;
-}
-
 figure
 {
-    margin: 0 5px;
-}
-
-input[value='small']:checked ~ .container
-{
-    font-size: .7em;
-}
-
-input[value='large']:checked ~ .container
-{
-    font-size: 1.3em;
-    line-height: 1.3em;
+    margin-top: 5px;
 }
 
 q
 {
-    border-left: 10px solid #000;
-    margin: 1.5em 10px;
-    padding: .5em 10px;
+    border-left: 3px solid #000;
+    padding: .5em;
     quotes: '\201C''\201D''\2018''\2019';
     display: block;
-    font-family: Pompadur;
 }
 
 q:before
 {
     color: #000;
-    content: open-quote;
     font-size: 4em;
     line-height: .1em;
     margin-right: .15em;
-    vertical-align: -.4em;
+    vertical-align: -.5em;
 }
 
 q:after
 {
     color: #000;
-    content: close-quote;
     font-size: 4em;
     line-height: .1em;
     margin-left: .15em;
-    vertical-align: -.45em;
+    vertical-align: -.5em;
 }
 
 input[value='night']:checked ~ .container
@@ -172,60 +161,13 @@ input[value='night']:checked ~ .container header:after
     background: #fff;
 }
 
-input
+input[value='small']:checked ~ .container
 {
-    display: none;
+    font-size: .7em;
 }
 
-.single-column
+input[value='large']:checked ~ .container
 {
-    width: 2px;
-    margin: 0 auto;
-    word-break: break-all;
-    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 1.3em;
 }
-
-.image img
-{
-    display: block;
-    width: 95%;
-    margin: 0 auto;
-}
-
-.image figcaption
-{
-    text-align: center;
-}
-
-label
-{
-    position: absolute;
-    color: #f00;
-}
-
-.row1
-{
-    top: 5px;
-}
-
-.row2
-{
-    top: 20px;
-}
-
-.column1
-{
-    left: 5px;
-}
-
-.column2
-{
-    left: 60px;
-}
-
-.column3
-{
-    left: 125px;
-}
-
-
