@@ -1,0 +1,229 @@
+@font-face
+{
+    font-family: 'Canterbury';
+    src: local('Canterbury'), url('fonts/Canterbury.ttf')
+        format('truetype');
+}
+
+@font-face
+{
+    font-family: 'OldStandard';
+    src: local('OldStandard'), url('fonts/OldStandard-Regular.ttf')
+        format('truetype');
+}
+
+@font-face
+{
+    font-family: 'OldStandard';
+    src: local('OldStandard'), url('fonts/OldStandard-Bold.ttf')
+        format('truetype');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'OldStandard';
+    src: local('OldStandard'), url('fonts/OldStandard-Italic.ttf')
+        format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'Special Elite';
+    src: local('Special Elite'), url('fonts/SpecialElite.ttf')
+        format('truetype');
+}
+
+.newspaper
+{
+    border: 2px solid #000;
+    font-size: 20px;
+    font-family: 'OldStandard';
+}
+
+.vertical-text
+{
+    text-transform: uppercase;
+    word-wrap: break-word;
+    width: .7em;
+    left: 10px;
+    position: absolute;
+}
+
+.newspaper-name
+{
+    display: inline-block;
+    font-size: 140px;
+    font-family: 'Canterbury';
+    text-align: center;
+    width: 100%;
+}
+
+.info-line
+{
+    font-size: 12px;
+}
+
+.service,
+.price,
+.town,
+.newspaper-number,
+.associated-press
+{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.newspaper-number
+{
+    text-align: left;
+}
+
+.price
+{
+    text-align: right;
+}
+
+.header-newspaper
+{
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150px;
+    font-variant: small-caps;
+}
+
+article > p:first-letter
+{
+    font-size: 2em;
+    color: #f00;
+}
+
+h1,
+h2,
+p
+{
+    margin: 0 3%;
+}
+
+article
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+.rocket
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+.rocket > img
+{
+    width: 100%;
+}
+
+main > div
+{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+main > div:first-child
+{
+    border-right: 1px solid #000;
+}
+
+main > div:last-child
+{
+    border-left: 1px solid #000;
+}
+
+.gagarin
+{
+    width: 100%;
+}
+
+.gagarin-face
+{
+    margin: 0 3%;
+    display: inline-block;
+    width: 27%;
+}
+
+figcaption
+{
+    font-style: italic;
+    text-align: right;
+}
+
+h1
+{
+    font-size: 60px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+blockquote
+{
+    font-style: italic;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    text-align: center;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+blockquote:before
+{
+    color: #000;
+    content: '\201C';
+    font-size: 3em;
+    line-height: .1em;
+    margin-right: .2em;
+    vertical-align: -.4em;
+}
+
+blockquote:after
+{
+    color: #000;
+    content: '\201D';
+    font-size: 3em;
+    line-height: .1em;
+    vertical-align: -.45em;
+}
+
+.night-mode:checked ~ .newspaper
+{
+    background: #494949;
+    color: #f9faff;
+}
+
+.small-size:checked ~ .newspaper main
+{
+    font-size: .8em;
+}
+
+.big-size:checked ~ .newspaper main
+{
+    font-size: 1.2em;
+}
+
+.elite:checked ~ .newspaper main
+{
+    font-family: 'Special Elite';
+}
