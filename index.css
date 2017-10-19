@@ -30,7 +30,7 @@ p:first-of-type::first-letter
     text-shadow: 2px 2px;
 }
 
-cite
+blockquote
 {
     text-shadow: 1px -1px 1px;
     font-family: monospace;
