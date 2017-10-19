@@ -1,9 +1,336 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stalinist+One"
+        rel="stylesheet">
 </head>
+
 <body>
+    <input type="radio" name="textSize" value="smaller" id="smaller">
+    <label for="smaller">Small</label>
+    <input type="radio" name="textSize" value="medium" id="medium" checked>
+    <label for="medium">Medium</label>
+    <input type="radio" name="textSize" value="larger" id="larger">
+    <label for="larger">Large</label>
+
+    <input type="checkbox" name="textStyle" value="italic" id="italic">
+    <label for="italic">Cursive</label>
+    <input type="checkbox" name="textStyle" value="arial" id="arial">
+    <label for="arial">Arial</label>
+    <input type="checkbox" name="mode" value="color" id="color">
+    <label for="color">Black mode</label>
+    <div id="override" class="mainDiv">
+        <div class="sideText">Здесь есть статьи</div>
+        <header>Retro newspaper.</header>
+        <article class="firstArticle">
+            <h2>За&shy;мед&shy;ле&shy;ние ин&shy;фля&shy;ции гро&shy;зит
+                Рос&shy;сии ка&shy;та&shy;стро&shy;фой
+            </h2>
+            <p>К се&shy;ре&shy;ди&shy;не ок&shy;тяб&shy;ря ин&shy;фля&shy;ция
+                в Рос&shy;сии за&shy;мед&shy;ли&shy;лась до 2,8
+                про&shy;цен&shy;та, уста&shy;но&shy;вив оче&shy;ред&shy;ной
+                ре&shy;корд. Уже три ме&shy;ся&shy;ца она на&shy;хо&shy;дит&shy;ся
+                на уров&shy;не ни&shy;же це&shy;ле&shy;во&shy;го
+                и про&shy;дол&shy;жа&shy;ет опус&shy;кать&shy;ся.
+                При&shy;чи&shy;ной то&shy;му мно&shy;го&shy;об&shy;ра&shy;зие
+                раз&shy;ных фак&shy;то&shy;ров: от жест&shy;кой
+                по&shy;ли&shy;ти&shy;ки Бан&shy;ка Рос&shy;сии
+                до срав&shy;ни&shy;тель&shy;но креп&shy;ко&shy;го
+                руб&shy;ля и об&shy;щей сла&shy;бо&shy;сти по&shy;тре&shy;би&shy;тель&shy;ско&shy;го
+                спро&shy;са в стра&shy;не. С од&shy;ной сто&shy;ро&shy;ны,
+                ис&shy;то&shy;ри&shy;че&shy;ски низ&shy;кая ин&shy;фля&shy;ция
+                — успех, ко&shy;то&shy;рым гор&shy;дят&shy;ся
+                фи&shy;нан&shy;со&shy;вые вла&shy;сти, с дру&shy;гой,
+                впол&shy;не ре&shy;аль&shy;но воз&shy;ник&shy;но&shy;ве&shy;ние
+                про&shy;бле&shy;мы про&shy;ти&shy;во&shy;по&shy;лож&shy;но&shy;го
+                свой&shy;ства. Ес&shy;ли рост цен упа&shy;дет
+                до ну&shy;ля (что впол&shy;не мож&shy;но во&shy;об&shy;ра&shy;зить
+                при со&shy;хра&shy;не&shy;нии те&shy;ку&shy;ще&shy;го
+                трен&shy;да), то про&shy;бле&shy;мы воз&shy;ник&shy;нут
+                у всех сек&shy;то&shy;ров эко&shy;но&shy;ми&shy;ки.
+                А тя&shy;же&shy;лее все&shy;го при&shy;дет&shy;ся
+                долж&shy;ни&shy;кам, чье чис&shy;ло в стра&shy;не
+                про&shy;дол&shy;жа&shy;ет рас&shy;ти.
+            </p>
+            <p>16 ок&shy;тяб&shy;ря зам&shy;ми&shy;ни&shy;стра эко&shy;но&shy;ми&shy;че&shy;ско&shy;го
+                раз&shy;ви&shy;тия Азер Та&shy;лы&shy;бов объ&shy;явил,
+                что го&shy;до&shy;вая ин&shy;фля&shy;ция в стра&shy;не
+                за&shy;мед&shy;ли&shy;лась до 2,8 про&shy;цен&shy;та.
+                Это оче&shy;ред&shy;ной ре&shy;корд это&shy;го
+                го&shy;да. Ди&shy;на&shy;ми&shy;ка про&shy;сле&shy;жи&shy;ва&shy;ет&shy;ся
+                чет&shy;ко — по ито&shy;гам июля го&shy;до&shy;вая
+                ин&shy;фля&shy;ция впер&shy;вые опу&shy;сти&shy;лась
+                ни&shy;же ори&shy;ен&shy;ти&shy;ра ЦБ в 4 про&shy;цен&shy;та,
+                к кон&shy;цу ав&shy;гу&shy;ста сни&shy;зи&shy;лась
+                до 3,4 про&shy;цен&shy;та, в сен&shy;тяб&shy;ре
+                бы&shy;ла до&shy;стиг&shy;ну&shy;та 3-про&shy;цент&shy;ная
+                от&shy;мет&shy;ка. Те&shy;перь за пол&shy;ме&shy;ся&shy;ца
+                рост цен за&shy;мед&shy;лил&shy;ся еще на 0,2
+                про&shy;цент&shy;но&shy;го пунк&shy;та да&shy;же
+                на фо&shy;не ослаб&shy;ле&shy;ния фак&shy;то&shy;ра
+                ре&shy;корд&shy;но&shy;го уро&shy;жая.
+            </p>
+            <p>Еще за&shy;мет&shy;нее за&shy;мед&shy;ле&shy;ние
+                ро&shy;ста цен, ес&shy;ли от&shy;сле&shy;жи&shy;вать
+                ди&shy;на&shy;ми&shy;ку по го&shy;дам. В 2015
+                го&shy;ду бы&shy;ли мак&shy;си&shy;маль&shy;ные
+                за 10 лет 12,9 про&shy;цен&shy;та. Од&shy;на&shy;ко
+                уже в 2016 го&shy;ду ин&shy;фля&shy;ция сни&shy;зи&shy;лась
+                в 2,5 ра&shy;за, до уров&shy;ня 5,4 про&shy;цен&shy;та,
+                и это был луч&shy;ший ре&shy;зуль&shy;тат в ис&shy;то&shy;рии
+                Рос&shy;сии. При трен&shy;де по&shy;след&shy;них
+                ме&shy;ся&shy;цев есть се&shy;рьез&shy;ные ос&shy;но&shy;ва&shy;ния
+                по&shy;ла&shy;гать, что ин&shy;фля&shy;ция упа&shy;дет
+                еще в два ра&shy;за или око&shy;ло то&shy;го.</p>
+        </article>
+        <article class="secondArticle">
+            <h2>Пра&shy;ви&shy;тель&shy;ство Рос&shy;сии утвер&shy;ди&shy;ло
+                пе&shy;ре&shy;нос вы&shy;ход&shy;ных дней в 2018
+                го&shy;ду
+            </h2>
+            <p>Пре&shy;мьер-ми&shy;нистр Рос&shy;сии Дмит&shy;рий
+                Мед&shy;ве&shy;дев под&shy;пи&shy;сал про&shy;ект
+                Мин&shy;тр&shy;у&shy;да о пе&shy;ре&shy;но&shy;се
+                вы&shy;ход&shy;ных дней в 2018 го&shy;ду. По&shy;ста&shy;нов&shy;ле&shy;ние
+                пра&shy;ви&shy;тель&shy;ства опуб&shy;ли&shy;ко&shy;ва&shy;но
+                в сре&shy;ду, 18 ок&shy;тяб&shy;ря, на сай&shy;те
+                ка&shy;б&shy;ми&shy;на.
+            </p>
+            <p>Так, вы&shy;ход&shy;ные 6 и 7 ян&shy;ва&shy;ря (суб&shy;бо&shy;та
+                и вос&shy;кре&shy;се&shy;нье) пе&shy;ре&shy;но&shy;сят&shy;ся
+                на 9 мар&shy;та и 2 мая со&shy;от&shy;вет&shy;ствен&shy;но,
+                а суб&shy;бо&shy;ты 28 ап&shy;ре&shy;ля, 9 июня
+                и 29 де&shy;каб&shy;ря — на по&shy;не&shy;дель&shy;ник
+                30 ап&shy;ре&shy;ля, по&shy;не&shy;дель&shy;ник
+                11 июня и по&shy;не&shy;дель&shy;ник 31 де&shy;каб&shy;ря.</p>
+            <p>Та&shy;ким об&shy;ра&shy;зом, в 2018 го&shy;ду рос&shy;си&shy;я&shy;не
+                бу&shy;дут от&shy;ды&shy;хать с 30 де&shy;каб&shy;ря
+                2017 го&shy;да по 8 ян&shy;ва&shy;ря 2018 го&shy;да
+                (10 дней), с 23 по 25 фев&shy;ра&shy;ля (три
+                вы&shy;ход&shy;ных), с 8 по 11 мар&shy;та (че&shy;ты&shy;ре
+                дня), с 29 ап&shy;ре&shy;ля по 2 мая (че&shy;ты&shy;ре
+                дня), 9 мая, с 10 по 12 июня (три дня) и с 3
+                по 5 но&shy;яб&shy;ря (три дня).</p>
+        </article>
+        <article class="thirdArticle">
+            <h2>Москва от&shy;ка&shy;жет&shy;ся от услуг част&shy;ных
+                эва&shy;ку&shy;а&shy;тор&shy;щи&shy;ков из-за
+                жа&shy;лоб граж&shy;дан
+            </h2>
+            <p>В те&shy;че&shy;ние трех лет на со&shy;зда&shy;ние
+                но&shy;во&shy;го пар&shy;ко&shy;воч&shy;но&shy;го
+                про&shy;стран&shy;ства сто&shy;ли&shy;ца по&shy;тра&shy;тит
+                в об&shy;щей слож&shy;но&shy;сти 21 мил&shy;ли&shy;ард
+                руб&shy;лей, со&shy;об&shy;ща&shy;ет ра&shy;дио&shy;стан&shy;ция
+                «Го&shy;во&shy;рит Москва» во втор&shy;ник, 17
+                ок&shy;тяб&shy;ря.</p>
+            <p>Де&shy;пу&shy;тат Мос&shy;ков&shy;ской го&shy;род&shy;ской
+                ду&shy;мы Сте&shy;пан Ор&shy;лов счи&shy;та&shy;ет
+                та&shy;кие тра&shy;ты для го&shy;ро&shy;да оп&shy;ти&shy;маль&shy;ны&shy;ми.</p>
+            <p>
+                <cite>На пер&shy;вый взгляд, сум&shy;ма ка&shy;жет&shy;ся
+                    вну&shy;ши&shy;тель&shy;ной, од&shy;на&shy;ко
+                    при де&shy;таль&shy;ном ана&shy;ли&shy;зе
+                    она впол&shy;не оправ&shy;да&shy;на. День&shy;ги
+                    рас&shy;счи&shy;та&shy;ны на раз&shy;ви&shy;тие
+                    пар&shy;ко&shy;вок круп&shy;ней&shy;ше&shy;го
+                    го&shy;ро&shy;да Ев&shy;ро&shy;пы в те&shy;че&shy;ние
+                    трех лет. Кро&shy;ме то&shy;го, го&shy;род
+                    со&shy;би&shy;ра&shy;ет&shy;ся от&shy;ка&shy;зать&shy;ся
+                    от услуг част&shy;ных ком&shy;па&shy;ний
+                    и со&shy;здать еди&shy;ную го&shy;род&shy;скую
+                    служ&shy;бу эва&shy;ку&shy;а&shy;ции, по&shy;это&shy;му
+                    в бюд&shy;же&shy;те так&shy;же учте&shy;ны
+                    за&shy;тра&shy;ты на за&shy;куп&shy;ку эва&shy;ку&shy;а&shy;то&shy;ров.
+                    День&shy;ги так&shy;же пой&shy;дут на стро&shy;и&shy;тель&shy;ство,
+                    ор&shy;га&shy;ни&shy;за&shy;цию и бла&shy;го&shy;устрой&shy;ство
+                    зе&shy;мель&shy;ных участ&shy;ков под но&shy;вые
+                    пар&shy;ков&shy;ки, не&shy;об&shy;хо&shy;ди&shy;мых
+                    не толь&shy;ко жи&shy;те&shy;лям сто&shy;ли&shy;цы,
+                    но и ав&shy;то&shy;мо&shy;би&shy;ли&shy;стам
+                    из Под&shy;мос&shy;ко&shy;вья, ко&shy;то&shy;рые
+                    каж&shy;дый день при&shy;ез&shy;жа&shy;ют
+                    сю&shy;да на ра&shy;бо&shy;ту</cite>, — рас&shy;ска&shy;зал
+                он в ин&shy;тер&shy;вью ра&shy;дио&shy;стан&shy;ции.
+            </p>
+            <p>
+                <cite>От&shy;ка&shy;зать&shy;ся от ра&shy;бо&shy;ты
+                    с част&shy;ны&shy;ми ком&shy;па&shy;ни&shy;я&shy;ми,
+                    за&shy;ни&shy;ма&shy;ю&shy;щи&shy;ми&shy;ся
+                    при&shy;ну&shy;ди&shy;тель&shy;ным пе&shy;ре&shy;ме&shy;ще&shy;ни&shy;ем
+                    транс&shy;пор&shy;та, мэ&shy;рия ре&shy;ши&shy;ла
+                    из-за оби&shy;лия жа&shy;лоб граж&shy;дан</cite>,
+                пи&shy;шет «Ком&shy;мер&shy;сантъ».
+            </p>
+            <p>Вме&shy;сто это&shy;го ГКУ «Ад&shy;ми&shy;ни&shy;стра&shy;тор
+                мос&shy;ков&shy;ско&shy;го пар&shy;ко&shy;воч&shy;но&shy;го
+                про&shy;стран&shy;ства» АМПП про&shy;ве&shy;дет
+                кон&shy;курс, по&shy;бе&shy;ди&shy;тель ко&shy;то&shy;ро&shy;го
+                по&shy;лу&shy;чит сер&shy;вис&shy;ный кон&shy;тракт
+                на пять лет. Так&shy;же го&shy;род за&shy;ку&shy;пит
+                125 но&shy;вых ма&shy;шин с ма&shy;ни&shy;пу&shy;ля&shy;то&shy;ра&shy;ми.</p>
+        </article>
+        <article class="fourthArticle">
+            <h2>Пер&shy;вый в ис&shy;то&shy;рии бой ги&shy;гант&shy;ских
+                ро&shy;бо&shy;тов по&shy;ка&shy;за&shy;ли на
+                ви&shy;део</h2>
+            <p>Пер&shy;вый в ис&shy;то&shy;рии бой ги&shy;гант&shy;ских
+                пи&shy;ло&shy;ти&shy;ру&shy;е&shy;мых ро&shy;бо&shy;тов
+                со&shy;сто&shy;ял&shy;ся на за&shy;бро&shy;шен&shy;ном
+                ста&shy;ле&shy;ли&shy;тей&shy;ном за&shy;во&shy;де
+                в Япо&shy;нии. Две аме&shy;ри&shy;кан&shy;ские
+                ма&shy;ши&shy;ны — Iron Glory и Eagle Prime —
+                бы&shy;ли по&shy;стро&shy;е&shy;ны ком&shy;па&shy;ни&shy;ей
+                MegaBots. Они вы&shy;сту&shy;па&shy;ли про&shy;тив
+                бо&shy;е&shy;во&shy;го ро&shy;бо&shy;та Kuratas,
+                раз&shy;ра&shy;бо&shy;тан&shy;но&shy;го Suidobashi
+                Heavy Industry. Ви&shy;део бит&shy;вы до&shy;ступ&shy;но
+                на Twitch-ка&shy;на&shy;ле MegaBotsInc.</p>
+            <p>Бой со&shy;сто&shy;ял из двух ду&shy;элей. В пер&shy;вой
+                сра&shy;жа&shy;лись Iron Glory, во&shy;ору&shy;жен&shy;ный
+                пнев&shy;ма&shy;ти&shy;че&shy;ски&shy;ми пуш&shy;ка&shy;ми,
+                и Kuratas, име&shy;ю&shy;щий боль&shy;шой сталь&shy;ной
+                ку&shy;лак. Бит&shy;ва окон&shy;чи&shy;лась по&shy;бе&shy;дой
+                по&shy;след&shy;не&shy;го. Во вто&shy;рой ду&shy;э&shy;ли
+                про&shy;тив япон&shy;ско&shy;го ро&shy;бо&shy;та
+                вы&shy;ста&shy;ви&shy;ли Eagle Prime. При&shy;бли&shy;зив&shy;шись
+                вплот&shy;ную друг к дру&shy;гу, ма&shy;ши&shy;ны
+                за&shy;стря&shy;ли, од&shy;на&shy;ко в сле&shy;ду&shy;ю&shy;щем
+                ра&shy;ун&shy;де аме&shy;ри&shy;кан&shy;ский
+                ро&shy;бот ис&shy;поль&shy;зо&shy;вал огром&shy;ную
+                бен&shy;зо&shy;пи&shy;лу. В ре&shy;зуль&shy;та&shy;те
+                япон&shy;ская ко&shy;ман&shy;да при&shy;зна&shy;ла
+                свое по&shy;ра&shy;же&shy;ние.</p>
+            <p>Хо&shy;тя во вре&shy;мя съе&shy;мок боя ис&shy;поль&shy;зо&shy;ва&shy;лось
+                мно&shy;го по&shy;ста&shy;но&shy;воч&shy;ных
+                эле&shy;мен&shy;тов, со&shy;зда&shy;те&shy;ли
+                шоу на&shy;де&shy;ют&shy;ся, что матч даст на&shy;ча&shy;ло
+                су&shy;ще&shy;ство&shy;ва&shy;нию но&shy;во&shy;го
+                ви&shy;да спор&shy;та с уча&shy;сти&shy;ем ги&shy;гант&shy;ских
+                бо&shy;е&shy;вых ро&shy;бо&shy;тов.</p>
+        </article>
+        <div class="showImg">
+            Новости в 60-х.
+            <img src="show.jpg" alt="News show from 60s">
+        </div>
+        <article class="fifthArticle">
+            <h2>Ита&shy;льян&shy;ский бренд снял фильм с паль&shy;то
+                в глав&shy;ной ро&shy;ли</h2>
+            <p>Ита&shy;льян&shy;ская мар&shy;ка одеж&shy;ды и ак&shy;сес&shy;су&shy;а&shy;ров
+                Max Mara со&shy;зда&shy;ла ко&shy;рот&shy;ко&shy;мет&shy;раж&shy;ный
+                фильм под на&shy;зва&shy;ни&shy;ем A coat tale
+                («Сказ&shy;ка о паль&shy;то»). Об этом пред&shy;ста&shy;ви&shy;те&shy;ли
+                ком&shy;па&shy;нии рас&shy;ска&shy;за&shy;ли
+                кор&shy;ре&shy;спон&shy;ден&shy;ту «Лен&shy;ты.ру»
+                в сре&shy;ду, 18 ок&shy;тяб&shy;ря.</p>
+            <p>От&shy;ме&shy;ча&shy;ет&shy;ся, что лен&shy;та сня&shy;та
+                в со&shy;труд&shy;ни&shy;че&shy;стве с T Brand
+                Studio. Сце&shy;ни&shy;че&shy;ское дви&shy;же&shy;ние
+                сре&shy;жис&shy;си&shy;ро&shy;ва&shy;но Stephen
+                Galloway. В филь&shy;ме так&shy;же при&shy;ни&shy;ма&shy;ет
+                уча&shy;стие Ан&shy;на Ба&shy;рыш&shy;ни&shy;ков,
+                дочь ар&shy;ти&shy;ста Ми&shy;ха&shy;и&shy;ла
+                Ба&shy;рыш&shy;ни&shy;ко&shy;ва.
+            </p>
+        </article>
+        <article class="sixthArticle">
+            <h2>Со&shy;здан ко&shy;фе из чес&shy;но&shy;ка</h2>
+            <p>Япон&shy;ский изоб&shy;ре&shy;та&shy;тель-ку&shy;ли&shy;нар
+                Йо&shy;ки&shy;то&shy;мо Си&shy;мо&shy;таи (Yokitomo
+                Shimotai) со&shy;здал ко&shy;фе из чес&shy;но&shy;ка,
+                в ко&shy;то&shy;ром нет ко&shy;фе&shy;и&shy;на.
+                Об этом со&shy;об&shy;ща&shy;ет The South China
+                Morning Post.</p>
+            <p>По сло&shy;вам 74-лет&shy;не&shy;го муж&shy;чи&shy;ны,
+                ко&shy;то&shy;рый был вла&shy;дель&shy;цем ре&shy;сто&shy;ра&shy;на
+                в пре&shy;фек&shy;ту&shy;ре Ао&shy;мо&shy;ри,
+                со&shy;зда&shy;нию на&shy;пит&shy;ка по&shy;мог
+                слу&shy;чай, про&shy;изо&shy;шед&shy;ший 30 лет
+                на&shy;зад. Си&shy;мо&shy;таи го&shy;то&shy;вил
+                ку&shy;сок мя&shy;са с чес&shy;но&shy;ком, а
+                за&shy;тем до&shy;ба&shy;вил к об&shy;жа&shy;рен&shy;ным
+                ча&shy;стям рас&shy;те&shy;ния го&shy;ря&shy;чую
+                во&shy;ду. По&shy;про&shy;бо&shy;вав по&shy;лу&shy;чив&shy;шу&shy;ю&shy;ся
+                смесь, он уди&shy;вил&shy;ся ее вку&shy;су, на&shy;по&shy;ми&shy;на&shy;ю&shy;ще&shy;му
+                горь&shy;кий ко&shy;фе.
+            </p>
+            <p>Вый&shy;дя на пен&shy;сию, муж&shy;чи&shy;на про&shy;дол&shy;жал
+                ра&shy;бо&shy;тать над бу&shy;ду&shy;щим на&shy;пит&shy;ком,
+                пы&shy;та&shy;ясь най&shy;ти оп&shy;ти&shy;маль&shy;ный
+                спо&shy;соб при&shy;го&shy;тов&shy;ле&shy;ния
+                «чес&shy;ноч&shy;но&shy;го» ко&shy;фе. В хо&shy;де
+                экс&shy;пе&shy;ри&shy;мен&shy;тов он при&shy;шел
+                к вы&shy;во&shy;ду, что для об&shy;жа&shy;ри&shy;ва&shy;ния
+                лу&shy;ко&shy;виц под&shy;хо&shy;дит элек&shy;три&shy;че&shy;ская
+                печь. Со&shy;глас&shy;но окон&shy;ча&shy;тель&shy;но&shy;му
+                ре&shy;цеп&shy;ту, по&shy;сле теп&shy;ло&shy;вой
+                об&shy;ра&shy;бот&shy;ки чес&shy;нок охла&shy;жда&shy;ет&shy;ся
+                и рас&shy;ти&shy;ра&shy;ет&shy;ся для по&shy;лу&shy;че&shy;ния
+                со&shy;ка.
+            </p>
+            <p>Хо&shy;тя у на&shy;пит&shy;ка име&shy;ет&shy;ся со&shy;от&shy;вет&shy;ству&shy;ю&shy;щий
+                при&shy;вкус, он, по мне&shy;нию ку&shy;ли&shy;на&shy;ра,
+                не вы&shy;зы&shy;ва&shy;ет не&shy;при&shy;ят&shy;ный
+                за&shy;пах изо рта, под&shy;хо&shy;дит для бе&shy;ре&shy;мен&shy;ных
+                жен&shy;щин и тех, кто из&shy;бе&shy;га&shy;ет
+                упо&shy;треб&shy;ле&shy;ния ко&shy;фе&shy;и&shy;на.
+                Про&shy;да&shy;жи «чес&shy;ноч&shy;но&shy;го»
+                ко&shy;фе на&shy;ча&shy;лись в со&shy;сед&shy;ней
+                пре&shy;фек&shy;ту&shy;ре Ива&shy;те.</p>
+        </article>
+        <article class="seventhArticle">
+            <h2>Та&shy;ма&shy;го&shy;чи пе&shy;ре&shy;вы&shy;пу&shy;стят
+                в США</h2>
+            <p>Ком&shy;па&shy;ния Bandai за&shy;яви&shy;ла о на&shy;ме&shy;ре&shy;нии
+                пе&shy;ре&shy;вы&shy;пу&shy;стить иг&shy;руш&shy;ку
+                та&shy;ма&shy;го&shy;чи в США. Об этом во втор&shy;ник,
+                10 ок&shy;тяб&shy;ря, со&shy;об&shy;ща&shy;ет
+                Daily Mail.
+            </p>
+            <p>
+                <cite>Мы по&shy;лу&shy;чи&shy;ли та&shy;кой боль&shy;шой
+                    от&shy;клик от по&shy;клон&shy;ни&shy;ков
+                    иг&shy;ры по все&shy;му ми&shy;ру, нас ста&shy;ли
+                    про&shy;сить вер&shy;нуть ее, по&shy;это&shy;му
+                    мы так и по&shy;сту&shy;пи&shy;ли</cite>,
+                — по&shy;яс&shy;ни&shy;ли в ком&shy;па&shy;нии.
+                Пред&shy;за&shy;ка&shy;зы на по&shy;куп&shy;ку
+                та&shy;ма&shy;го&shy;чи на ин&shy;тер&shy;нет-плат&shy;фор&shy;ме
+                Amazon на&shy;ча&shy;лись 10 ок&shy;тяб&shy;ря.</p>
+            <p>От&shy;ме&shy;ча&shy;ет&shy;ся, что сто&shy;и&shy;мость
+                об&shy;нов&shy;лен&shy;ной вер&shy;сии иг&shy;ры
+                со&shy;став&shy;ля&shy;ет 15 дол&shy;ла&shy;ров.</p>
+            <p>11 ап&shy;ре&shy;ля ны&shy;неш&shy;не&shy;го го&shy;да
+                со&shy;об&shy;ща&shy;лось, что в честь 20-лет&shy;не&shy;го
+                юби&shy;лея вы&shy;хо&shy;да ори&shy;ги&shy;наль&shy;ной
+                вер&shy;сии та&shy;ма&shy;го&shy;чи япон&shy;ская
+                ком&shy;па&shy;ния Bandai пе&shy;ре&shy;вы&shy;пу&shy;сти&shy;ла
+                в Япо&shy;нии иг&shy;руш&shy;ку с элек&shy;трон&shy;ным
+                кар&shy;ман&shy;ным пи&shy;том&shy;цем.</p>
+            <p>Bandai вы&shy;пу&shy;сти&shy;ла пер&shy;вые та&shy;ма&shy;го&shy;чи
+                в 1996 го&shy;ду. Это бы&shy;ло ми&shy;ни&shy;а&shy;тюр&shy;ное
+                элек&shy;трон&shy;ное устрой&shy;ство, по очер&shy;та&shy;ни&shy;ям
+                на&shy;по&shy;ми&shy;на&shy;ю&shy;щее яй&shy;цо,
+                с чер&shy;но-бе&shy;лым экра&shy;ном и тре&shy;мя
+                кноп&shy;ка&shy;ми. Чет&shy;вер&shy;тая кноп&shy;ка
+                рас&shy;по&shy;ла&shy;га&shy;лась на зад&shy;ней
+                па&shy;не&shy;ли и слу&shy;жи&shy;ла для пе&shy;ре&shy;за&shy;груз&shy;ки
+                устрой&shy;ства.
+            </p>
+        </article>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,183 @@
+.mainDiv
+{
+    background-color: #f6f1cc;
+    column-count: 5;
+    column-rule: 4px outset #ccc;
+}
+
+header
+{
+    font-family: 'Monoton', cursive;
+    column-span: all;
+    font-size: 400%;
+    text-align: center;
+}
+
+h1
+{
+    column-span: all;
+}
+
+h2
+{
+    text-align: center;
+}
+
+p:first-of-type::first-letter
+{
+    font-family: 'Marck Script', cursive;
+    font-size: 250%;
+    text-shadow: 2px 2px;
+}
+
+cite
+{
+    text-shadow: 1px -1px 1px;
+    font-family: monospace;
+    text-decoration-line: underline;
+    font-size: 70%;
+}
+
+.firstArticle
+{
+    font-family: customFont1, Anonymous Pro, monospace;
+
+}
+
+.secondArticle
+{
+    font-family: customFont2, Anonymous Pro, monospace;
+
+}
+
+.thirdArticle
+{
+    font-family: customFont3, Anonymous Pro, monospace;
+
+}
+
+.fourthArticle
+{
+    font-family: customFont4, Anonymous Pro, monospace;
+
+}
+
+.fifthArticle
+{
+    font-family: customFont5, Anonymous Pro, monospace;
+
+}
+
+.sixthArticle
+{
+    font-family: customFont6, Anonymous Pro, monospace;
+
+}
+
+.seventhArticle
+{
+    font-family: customFont7, Anonymous Pro, monospace;
+    font-size: 140%;
+        
+}
+
+body
+{
+    background-color: #bdbdbd;
+}
+
+.sideText
+{
+    box-shadow: 10px 10px 5px #888;
+    margin-right: 5px;
+    float: left;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Stalinist One', cursive;
+}
+
+input[value='color']:checked ~ .mainDiv
+{
+    background-color: #fff;
+    color: #f0f;
+    text-shadow: 4px 4px 15px;
+    filter: invert(100%);
+}
+
+input[value='italic']:checked ~ .mainDiv
+{
+    font-style: italic;
+}
+
+input[value='arial']:checked ~ #override > *
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[value='smaller']:checked ~ .mainDiv
+{
+    font-size: 75%;
+}
+
+input[value='medium']:checked ~ .mainDiv
+{
+    font-size: 100%;
+}
+
+input[value='larger']:checked ~ .mainDiv
+{
+    font-size: 125%;
+}
+
+img
+{
+    width: 100%;
+}
+
+.showImg
+{
+    text-align: center;
+    column-span: all;
+}
+
+@font-face
+{
+    font-family: customFont1;
+    src: url(10845.ttf);
+}
+
+@font-face
+{
+    font-family: customFont2;
+    src: url(10748.ttf);
+}
+
+@font-face
+{
+    font-family: customFont3;
+    src: url(10477.otf);
+}
+
+@font-face
+{
+    font-family: customFont4;
+    src: url(10425.ttf);
+}
+
+@font-face
+{
+    font-family: customFont5;
+    src: url(10388.ttf);
+}
+
+@font-face
+{
+    font-family: customFont6;
+    src: url(10350.ttf);
+}
+
+@font-face
+{
+    font-family: customFont7;
+    src: url(10157.ttf);
+}
