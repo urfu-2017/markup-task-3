@@ -1,0 +1,41 @@
+.label-container
+{
+    display: inline-block;
+    width: 33%;
+    margin: auto;
+    text-align: center;
+}
+
+.label-container > label
+{
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.label-container > label[checked]
+{
+    border-bottom: 2px solid black;
+}
+
+header
+{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer
+{
+    margin: 15px 0;
+    column-span: all;
+}
+
+footer:before
+{
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    border: .25px solid;
+    margin-bottom: 10px;
+}

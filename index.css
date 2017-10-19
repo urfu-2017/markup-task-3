@@ -1,0 +1,65 @@
+body
+{
+    width: 1200px;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+}
+
+main
+{
+    background-color: #eedfac;
+    column-count: 3;
+    column-rule: 1px solid;
+    padding: 0 25px;
+    font-size: 20px;
+}
+
+.pic
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.pic > img
+{
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+}
+
+.pic > p
+{
+    font-size: .75em;
+    text-align: center;
+}
+
+main > h1
+{
+    column-span: all;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+main > h2
+{
+    font-size: 2em;
+    text-align: center;
+}
+
+section > p:first-of-type::first-letter
+{
+    font-size: 1.5em;
+}
+
+section > h2
+{
+    text-align: center;
+}
+
+q
+{
+    border-top: 2px dashed;
+    border-bottom: 2px dashed;
+    display: inline-block;
+    padding: 25px 0;
+}
