@@ -1,0 +1,54 @@
+h1,h2
+{
+    text-align: center;
+}
+.stories
+{
+    column-count: 3;
+    column-rule: 2px solid green
+}
+.pop_science_articles
+{
+    column-count: 2;
+    column-rule: 2px solid #000000;
+}
+.strip
+{
+    column-span: all;
+    background-size: cover;
+}
+article p:first-of-type::first-letter
+{
+    color: red;
+    font-size: 50px;
+}
+figcaption
+{
+    text-align: center;
+}
+img
+{
+    display: block;
+    margin: 0 auto;
+}
+q
+{
+    font-size: .5em;
+}
+div.vertical
+{
+    position: absolute;
+    background-color:red;
+    display: block;
+    top: 15px;
+    right: 15px;
+    width: 10px;
+    text-align: center; 
+    font: Consolas, Monaco, monospace;
+    word-wrap: break-word;
+}
+section
+{
+    display: block;
+    padding-right: 20px;
+}
