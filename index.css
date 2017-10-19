@@ -134,8 +134,9 @@ img
     width: 100%;
 }
 
-.showImg
+figure
 {
+    margin: 0;
     text-align: center;
     column-span: all;
 }
