@@ -109,7 +109,7 @@ input[value='italic']:checked ~ .mainDiv
     font-style: italic;
 }
 
-input[value='arial']:checked ~ #override > *
+input[value='arial']:checked ~ .mainDiv > article
 {
     font-family: Arial, Helvetica, sans-serif;
 }
