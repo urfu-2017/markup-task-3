@@ -1,4 +1,17 @@
+body
+{
+    background: #dadada;
+}
+
 header
+{
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4
 {
     text-align: center;
 }
@@ -8,13 +21,54 @@ hr
     border-color: black;
 }
 
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+aside li
+{
+    margin-bottom: 10px;
+}
+
+.ad
+{
+    width: 20%;
+}
+
+main
+{
+    padding: 30px;
+}
+
+article:first-letter
+{
+    font-size: 30px;
+    color: red;
+}
+
 div
 {
     display: inline-block;
-    width: 20%;
+    vertical-align: top;
+    width: 30%;
+    padding: 10px;
+}
+
+q
+{
+    font-style: italic;
 }
 
 em
 {
     color: red;
+}
+
+.ad li
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 1px black;
 }
