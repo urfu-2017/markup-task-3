@@ -1,0 +1,20 @@
+header
+{
+    text-align: center;
+}
+
+hr
+{
+    border-color: black;
+}
+
+div
+{
+    display: inline-block;
+    width: 20%;
+}
+
+em
+{
+    color: red;
+}
