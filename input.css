@@ -3,35 +3,61 @@ input
     display: none;
 }
 
-input[id='font-small']:checked ~ main
+input[id='font-small']:checked ~ main > section
 {
-    font-size: 17px;
+    font-size: 15px;
 }
 
-input[id='font-big']:checked ~ main
+input[id='font-big']:checked ~ main > section
 {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 input[id='theme-dark']:checked ~ main
 {
     color: white;
-    background-color: rgb(130, 80, 50);
+    background: url('dark-theme.jpg');
     column-rule-color: white;
     border-color: white;
 }
 
-input[id='font-type-sans-serif']:checked ~ main
+input[id='font-sans-serif']:checked ~ main > section
 {
     font-family: sans-serif;
 }
 
-input[id='font-type-mono']:checked ~ main
+input[id='font-mono']:checked ~ main > section
 {
     font-family: monospace;
+    text-align: justify;
 }
 
-input[id='font-type-serif']:checked ~ main
+input[id='font-serif']:checked ~ main > section
 {
     font-family: serif;
+}
+
+input[id='font-serif']:checked ~ main label[for='font-serif'],
+input[id='font-mono']:checked ~ main label[for='font-mono'],
+input[id='font-sans-serif']:checked ~ main label[for='font-sans-serif'],
+input[id='font-small']:checked ~ main label[for='font-small'],
+input[id='font-normal']:checked ~ main label[for='font-normal'],
+input[id='font-big']:checked ~ main label[for='font-big'],
+input[id='theme-dark']:checked ~ main label[for='theme-dark'],
+input[id='theme-light']:checked ~ main label[for='theme-light']
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[id='font-serif']:not(:checked) ~ main label[for='font-serif'],
+input[id='font-mono']:not(:checked) ~ main label[for='font-mono'],
+input[id='font-sans-serif']:not(:checked) ~ main label[for='font-sans-serif'],
+input[id='font-small']:not(:checked) ~ main label[for='font-small'],
+input[id='font-normal']:not(:checked) ~ main label[for='font-normal'],
+input[id='font-big']:not(:checked) ~ main label[for='font-big'],
+input[id='theme-dark']:not(:checked) ~ main label[for='theme-dark'],
+input[id='theme-light']:not(:checked) ~ main label[for='theme-light']
+{
+    background-color: rgba(255, 255, 255, .5);
 }
