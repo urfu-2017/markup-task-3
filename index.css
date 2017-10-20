@@ -1,0 +1,93 @@
+.mainDiv
+{
+    text-shadow: 1px -1px 1px;
+    column-count: 4;
+    column-rule: 5px outset rgb(139, 141, 156);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+header
+{
+    font-family: cursive;
+    column-span: all;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Rurintania;
+}
+
+h2
+{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3
+{
+    font-size: 100%;
+}
+
+p:first-of-type::first-letter
+{
+    font-family: fantasy;
+    font-size: 200%;
+}
+
+blockquote
+{
+    font-style: italic;
+    font-size: 85%;
+}
+
+body
+{
+    background-image: url("pagebackground.jpg");
+}
+
+div :not(.sideText)
+{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+
+.sideText
+{
+    float: left;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 9px;
+    letter-spacing: 3px;
+    text-shadow: 1px 0 1px;
+}
+
+
+img
+{
+    width: 90%;
+    text-align: center;
+}
+
+
+figure
+{
+    margin: 0;
+    text-align: center;
+    column-span: all;
+}
+
+figcaption
+{
+    font-size: 75%;
+    text-align: center;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: Rurintania;
+    src: url(rurintania.ttf);
+}
+
