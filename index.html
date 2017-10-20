@@ -4,20 +4,45 @@
 <head>
     <meta charset="utf-8">
     <title>Задача DeLorean DMC-12</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&amp;subset=cyrillic"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&amp;subset=cyrillic"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro"
+        rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1 class="newspaper_title">COOL NEWSPAPER TITLE</h1>
-    </header>
+    Sizes:
+    <input type="radio" id="size_0.8" name="size">
+    <label for="size_0.8">Small</label>
+    <input type="radio" id="size_1.0" name="size" checked>
+    <label for="size_1.0">Normal</label>
+    <input type="radio" id="size_1.2" name="size">
+    <label for="size_1.2">Big</label>
+    <br> Fonts:
+    <input type="radio" id="Times" name="font-family" checked>
+    <label for="Times">Times</label>
+    <input type="radio" id="Arial" name="font-family">
+    <label for="Arial">Arial</label>
+    <br> Theme color:
+    <label for="theme_color_dark">Dark theme</label>
+    <input type="checkbox" id="theme_color_dark" name="theme_color">
+
     <main>
+        <h1 class="newspaper_title">VERY COOL NEWSPAPER TITLE</h1>
         <div class="vertical">
-            qweqweqweqweqweqweqwqqqeeqweqweqwweqqw
+            Китайская инструкция
         </div>
         <section class="stories">
+            <h2>Раздел коротких историй</h2>
             <article class="one_story">
-                <h2 class="story_title">Большой шум</h2>
+                <h3 class="story_title">Большой шум</h3>
                 <figure>
                     <img src="bignoize.jpg" alt="picture is related in meaning with story_title">
                     <figcaption>Pic1. - The big noize</figcaption>
@@ -66,7 +91,7 @@
                 </p>
             </article>
             <article class="one_story">
-                <h2 class="story_title">Мост</h2>
+                <h3 class="story_title">Мост</h3>
                 <figure>
                     <img src="bridge.jpg" alt="picture is related in meaning with story_title">
                     <figcaption>Pic2. - The bridge</figcaption>
@@ -136,13 +161,15 @@
                 </p>
             </article>
         </section>
-        <figure class="strip">
-            <img src="strip.jpg" alt="Huge strip" width="100%">
+        <figure>
+            <img src="strip.jpg" alt="Huge strip">
             <figcaption>Pic3. - Long strip</figcaption>
         </figure>
         <section class="pop_science_articles">
+            <h2>Раздел научных статей</h2>
             <article class="one_article">
-                <h2>Пять тезисов про стыд(1)</h2>
+                <h3 class="article_title">Два тезиса про стыд</h3>
+                <h4>Стыд — явление социальное</h4>
                 <p>
                     Стыд от&shy;но&shy;сит&shy;ся к во&shy;об&shy;ра&shy;жа&shy;е&shy;мо&shy;му
                     ре&shy;ги&shy;стру пси&shy;хи&shy;че&shy;ских
@@ -202,10 +229,86 @@
                     не&shy;кто, с ко&shy;то&shy;рым субъ&shy;ект
                     сты&shy;да на&shy;хо&shy;дит&shy;ся в от&shy;но&shy;ше&shy;ни&shy;ях.
                 </p>
+                <h4>Знание рождает стыд</h4>
+                <p>Вспом&shy;ним один из пер&shy;вых при&shy;ме&shy;ров
+                    сты&shy;да в ис&shy;то&shy;рии ци&shy;ви&shy;ли&shy;за&shy;ции.
+                    Адам и Ева в раю бы&shy;ли на&shy;ги, но
+                    не сты&shy;ди&shy;лись это&shy;го. Лишь вку&shy;сив
+                    с дре&shy;ва по&shy;зна&shy;ния, они об&shy;на&shy;ру&shy;жи&shy;ли
+                    свою на&shy;го&shy;ту и, усты&shy;див&shy;шись,
+                    сши&shy;ли смо&shy;ков&shy;ные ли&shy;стья
+                    и сде&shy;ла&shy;ли се&shy;бе опо&shy;я&shy;са&shy;ние.
+                    На при&shy;зыв Бо&shy;га, Адам от&shy;ве&shy;ча&shy;ет:
+                    <q>Го&shy;лос Твой услы&shy;шал я в раю, и убо&shy;ял&shy;ся,
+                        по&shy;то&shy;му что я наг, и скрыл&shy;ся</q>
+                    [Быт 3:10]. Адам и Ева не ис&shy;пы&shy;ты&shy;ва&shy;ли сты&shy;да,
+                    хо&shy;тя бы&shy;ли на&shy;ги из&shy;на&shy;чаль&shy;но,
+                    по&shy;то&shy;му что не име&shy;ли зна&shy;ния
+                    и не вла&shy;де&shy;ли взгля&shy;дом, они
+                    бук&shy;валь&shy;но не ви&shy;де&shy;ли,
+                    что на&shy;ги, и не ве&shy;да&shy;ли, что
+                    на&shy;го&shy;та — это стыд&shy;но. Итак,
+                    пер&shy;вое зна&shy;ние в иудео-хри&shy;сти&shy;ан&shy;ской
+                    куль&shy;ту&shy;ре свя&shy;за&shy;но со сты&shy;дом.
+                    Зна&shy;ние рож&shy;да&shy;ет стыд, мно&shy;го
+                    знать — стыд&shy;но. О чем го&shy;во&shy;рит
+                    нам эта биб&shy;лей&shy;ская прит&shy;ча?
+                    Во-пер&shy;вых, о том, что толь&shy;ко вку&shy;сив
+                    с дре&shy;ва по&shy;зна&shy;ния, Адам и Ева
+                    про&shy;зре&shy;ли и об&shy;ре&shy;ли зна&shy;ние
+                    и уме&shy;ние ви&shy;деть, и та&shy;ким об&shy;ра&shy;зом
+                    от&shy;кры&shy;ли для се&shy;бя стыд. Умно&shy;жая
+                    по&shy;зна&shy;ния, мы умно&shy;жа&shy;ем
+                    стыд.
+                </p>
+                <p>
+                    Во-вто&shy;рых, стыд воз&shy;ни&shy;ка&shy;ет у нас все&shy;гда
+                    пост-фак&shy;тум, мы ис&shy;пы&shy;ты&shy;ва&shy;ем
+                    это чув&shy;ство за уже со&shy;вер&shy;шен&shy;ные
+                    по&shy;ступ&shy;ки и со&shy;бы&shy;тия про&shy;шло&shy;го,
+                    пе&shy;ре&shy;оце&shy;нен&shy;ные со вре&shy;ме&shy;нем.
+                    Нам мо&shy;жет быть стыд&shy;но за то, что
+                    мы сде&shy;ла&shy;ли толь&shy;ко что, в не&shy;да&shy;ле&shy;ком
+                    про&shy;шлом, но ни&shy;ко&shy;гда нам не
+                    бы&shy;ва&shy;ет стыд&shy;но за бу&shy;ду&shy;щее.
+                    Ино&shy;гда по&shy;ня&shy;ти&shy;ем
+                    <q>стыд&shy;ли&shy;вость</q>
+                    на&shy;зы&shy;ва&shy;ет&shy;ся та&shy;кое опа&shy;се&shy;ние
+                    со&shy;вер&shy;шать дей&shy;ствие в бу&shy;ду&shy;щем,
+                    за ко&shy;то&shy;рое по&shy;том бу&shy;дет
+                    стыд&shy;но. Но опять же ста&shy;нет стыд&shy;но
+                    пост-фак&shy;тум за со&shy;бы&shy;тие про&shy;шло&shy;го.
+                    Это сво&shy;е&shy;го ро&shy;да future in
+                    the past, в лю&shy;бом слу&shy;чае оцен&shy;ка
+                    ис&shy;хо&shy;дит из на&shy;сто&shy;я&shy;ще&shy;го
+                    в про&shy;шлое.
+                </p>
+                <p>
+                    Как изоб&shy;ра&shy;зить на хол&shy;сте или в кад&shy;ре этот
+                    эф&shy;фект по&shy;сле&shy;дей&shy;ствия?
+                    Во-пер&shy;вых, вам нуж&shy;но по&shy;ка&shy;зать
+                    от&shy;чуж&shy;ден&shy;ный взгляд, ко&shy;то&shy;рый
+                    за&shy;хва&shy;ты&shy;ва&shy;ет че&shy;ло&shy;ве&shy;ка
+                    врас&shy;плох, взгляд со сто&shy;ро&shy;ны,
+                    ко&shy;то&shy;рый при&shy;во&shy;дит че&shy;ло&shy;ве&shy;ка
+                    в сму&shy;ще&shy;ние и за&shy;став&shy;ля&shy;ет
+                    его сты&shy;дить&shy;ся. Во-вто&shy;рых,
+                    вам не&shy;об&shy;хо&shy;ди&shy;мо по&shy;ка&shy;зать
+                    этот эф&shy;фект по&shy;сле&shy;дей&shy;ствия,
+                    пе&shy;ре&shy;оцен&shy;ку че&shy;ло&shy;ве&shy;ком
+                    сво&shy;е&shy;го про&shy;шло&shy;го, взгляд
+                    из на&shy;сто&shy;я&shy;ще&shy;го в ми&shy;нув&shy;шее.
+                    На&shy;при&shy;мер, по&shy;смот&shy;ри&shy;те,
+                    как вза&shy;и&shy;мо&shy;дей&shy;ству&shy;ет
+                    со взгля&shy;дом дру&shy;го&shy;го, пе&shy;ре&shy;оце&shy;ни&shy;вая
+                    свое про&shy;шлое, ка&shy;ю&shy;ща&shy;я&shy;ся
+                    Ма&shy;рия Маг&shy;да&shy;ли&shy;на Ти&shy;ци&shy;а&shy;на,
+                    и как она вза&shy;и&shy;мо&shy;дей&shy;ству&shy;ет
+                    с на&shy;ми, скры&shy;вая и сты&shy;дясь
+                    сво&shy;е&shy;го те&shy;ла.
+                </p>
             </article>
-
         </section>
     </main>
 </body>
-
 </html>
