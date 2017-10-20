@@ -1,0 +1,112 @@
+@font-face
+{
+    font-family: truth;
+    src: url('fonts/Real_Truth.ttf');
+}
+
+@font-face
+{
+    font-family: truthTitle;
+    src: url('fonts/Franklin_Gothic_Medium.ttf');
+}
+
+@font-face
+{
+    font-family: CaviarDreams;
+    src: url('fonts/Caviar_Dreams.ttf');
+}
+
+@font-face
+{
+    font-family: CaviarDreamsBold;
+    src: url('fonts/Caviar_Dreams_Bold.ttf');
+}
+
+@font-face
+{
+    font-family: CaviarDreamsItalic;
+    src: url('fonts/Caviar_Dreams_Bold_Italic.ttf');
+}
+
+html
+{
+    font-size: 10px;
+}
+
+.newspaper
+{
+    margin: auto;
+    width: 75%;
+}
+
+.mainTitle
+{
+    font: 8.5rem truthTitle;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: .5rem solid black;
+    margin-bottom: .8rem;
+    letter-spacing: .1rem;
+}
+
+.newspaperTitle
+{
+    width: 55%;
+    text-align: right;
+    padding-bottom: .5rem;
+    border-bottom: .5rem solid black;
+}
+
+.newspaperTitle > div:nth-of-type(1)
+{
+    font: 1.8rem CaviarDreamsItalic;
+    text-decoration: underline;
+}
+
+.newspaperTitle > div:nth-of-type(2)
+{
+    font: 2rem CaviarDreamsBold;
+    text-decoration: underline;
+    letter-spacing: .4rem;
+}
+
+.newspaperTitle img
+{
+    width: 16%;
+}
+
+.truth
+{
+    font: 16rem truth;
+}
+
+.founded
+{
+    width: 30%;
+    font: 1.6rem CaviarDreams;
+    text-align: center;
+    letter-spacing: .4rem;
+    display: inline-block;
+}
+
+.version
+{
+    width: 69%;
+    display: inline-block;
+    text-align: center;
+}
+
+.version div:first-of-type
+{
+    font: 2rem CaviarDreamsBold;
+    border-bottom: .3rem solid black;
+    word-spacing: .2rem;
+    letter-spacing: .4rem;
+    padding-bottom: .3rem;
+}
+
+.version div:last-of-type
+{
+    font: 1.4rem CaviarDreamsBold;
+    padding-top: .4rem;
+}
