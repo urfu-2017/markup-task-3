@@ -10,12 +10,11 @@
 
 header
 {
-    font-family: cursive;
     column-span: all;
     font-size: 60px;
     text-align: center;
     color: rgb(0, 0, 0);
-    font-family: Rurintania;
+    font-family: Rurintania ,serif;
 }
 
 h2
@@ -43,7 +42,7 @@ blockquote
 
 body
 {
-    background-image: url("pagebackground.jpg");
+    background-image: url('pagebackground.jpg');
 }
 
 div :not(.sideText)
@@ -51,7 +50,6 @@ div :not(.sideText)
     margin-left: 15px;
     margin-right: 5px;
 }
-
 
 .sideText
 {
@@ -64,13 +62,11 @@ div :not(.sideText)
     text-shadow: 1px 0 1px;
 }
 
-
 img
 {
     width: 90%;
     text-align: center;
 }
-
 
 figure
 {
@@ -86,8 +82,8 @@ figcaption
     font-style: oblique;
 }
 
-@font-face {
+@font-face
+{
     font-family: Rurintania;
     src: url(rurintania.ttf);
 }
-
