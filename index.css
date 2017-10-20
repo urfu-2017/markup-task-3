@@ -1,12 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-@import url('https://fonts.googleapis.com/css?family=Bad+Script');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@font-face
+{
+    font-family: 'Yanone Kaffeesatz';
+    src: url('./src/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Bad Script';
+    src: url('./src/fonts/BadScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    src: url('./src/fonts/Lobster-Regular.ttf') format('truetype');
+}
 
 html
 {
     background: url('http://bgfons.com/upload/paper_texture282.jpg');
     font-family: 'Lobster', cursive;
     line-height: 1.5em;
+    max-width: 1880px;
+}
+
+p
+{
+    margin: 0 0 15px;
 }
 
 footer,
@@ -43,18 +63,13 @@ main article .columned:first-letter
 .image img
 {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .image figcaption
 {
     text-align: center;
-}
-
-p
-{
-    padding-top: 10px;
 }
 
 .columned
@@ -88,12 +103,13 @@ aside
     margin: 10px auto;
 }
 
-aside article
+aside p
 {
     font-family: 'Bad Script', cursive;
 }
 
 article:not(:last-child):after,
+aside p:not(:last-child):after,
 footer:before,
 header:after
 {
@@ -104,6 +120,7 @@ header:after
     background: #000;
     -webkit-column-span: all;
     column-span: all;
+    margin-bottom: 5px;
 }
 
 figure
@@ -122,7 +139,7 @@ q
 q:before
 {
     color: #000;
-    font-size: 4em;
+    font-size: 2em;
     line-height: .1em;
     margin-right: .15em;
     vertical-align: -.5em;
@@ -131,7 +148,7 @@ q:before
 q:after
 {
     color: #000;
-    font-size: 4em;
+    font-size: 2em;
     line-height: .1em;
     margin-left: .15em;
     vertical-align: -.5em;
