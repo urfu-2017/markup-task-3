@@ -3,7 +3,213 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header_and_footer.css">
+    <link rel="stylesheet" href="input.css">
 </head>
 <body>
+    <input id="font-small" type="radio" name="font">
+    <input id="font-normal" type="radio" name="font" checked>
+    <input id="font-big" type="radio" name="font">
+
+    <input id="font-serif" type="radio" name="font-type">
+    <input id="font-sans-serif" type="radio" name="font-type">
+    <input id="font-mono" type="radio" name="font-type" checked>
+
+    <input id="theme-light" type="radio" name="theme">
+    <input id="theme-dark" type="radio" name="theme" checked>
+    <main>
+        <header>
+            <div class="label-container">
+                <h1>Размер шрифта</h1>
+                <label for="font-small">Маленький</label>
+                <label for="font-normal">Средний</label>
+                <label for="font-big">Большой</label>
+            </div>
+            <div class="label-container">
+                <h1>Тип шрифта</h1>
+                <label for="font-serif">С засечками</label>
+                <label for="font-sans-serif">Без засечек</label>
+                <label for="font-mono" title="Моноширинный">Моноширинный</label>
+            </div>
+            <div class="label-container">
+                <h1>Тема</h1>
+                <label for="theme-light">Светлая</label>
+                <label for="theme-dark">Темная</label>
+            </div>
+        </header>
+        <section>
+            <h1>Чем можно кормить котенка?</h1>
+            <article>
+                <p>От пра&shy;виль&shy;но&shy;го корм&shy;ле&shy;ния ко&shy;тен&shy;ка
+                    за&shy;ви&shy;сит раз&shy;ви&shy;тие те&shy;ло&shy;сло&shy;же&shy;ния,
+                    им&shy;му&shy;ни&shy;те&shy;та, здо&shy;ро&shy;вье и дол&shy;го&shy;ле&shy;тие.
+                    Да&shy;вать те же про&shy;дук&shy;ты, что и взрос&shy;ло&shy;му ко&shy;ту, или
+                    кор&shy;мить ма&shy;лы&shy;ша со сто&shy;ла нель&shy;зя. О том, как кор&shy;мить
+                    ко&shy;тят, а так же о том, чем от&shy; ли&shy;ча&shy;ет&shy;ся пи&shy;та&shy;ние
+                    эк&shy;зо&shy;ти&shy;че&shy;ских по&shy;род, пой&shy;дет речь в ста&shy;тье.</p>
+            </article>
+
+            <article>
+                <h2>Чем кормить от 1 недели до 1 месяца</h2>
+
+                <p>Со&shy;всем ма&shy;лень&shy;ких ко&shy;тят (но&shy;во&shy;рож&shy;ден&shy;ных,
+                    толь&shy;ко что ро&shy;див&shy;ше&shy;го&shy;ся) пра&shy;виль&shy;нее кор&shy;мить –
+                    ма&shy;те&shy;рин&shy;ским мо&shy;ло&shy;ком, ко&shy;то&shy;рое
+                    вы&shy;ра&shy;ба&shy;ты&shy;ва&shy;ет кош&shy;ка. Ес&shy;ли по ка&shy;кой-то
+                    при&shy;чи&shy;не кош&shy;ка от&shy;ка&shy;за&shy;лась кор&shy;мить. Мож&shy;но
+                    за&shy;ме&shy;нить за&shy;ме&shy;ни&shy;те&shy;ля&shy;ми мо&shy;ло&shy;ка, дет&shy;ской
+                    сме&shy;сью, ко&shy;зьим мо&shy;ло&shy;ком, ки&shy;пя&shy;чен&shy;ным мо&shy;ло&shy;ком.
+                </p>
+
+                <figure>
+                    <img alt="маленький котенок" src="cat.jpeg">
+                    <figcaption>на удивление они очень жадные:)</figcaption>
+                </figure>
+
+                <p>Са&shy;мым по&shy;пу&shy;ляр&shy;ным яв&shy;ля&shy;ет&shy;ся за&shy;ме&shy;ни&shy;те&shy;ли
+                    мо&shy;ло&shy;ка – это су&shy;хое ко&shy;ша&shy;чье мо&shy;ло&shy;ко. Ку&shy;пить
+                    ко&shy;то&shy;рое мож&shy;но в ЗОО ма&shy;га&shy;зи&shy;нах. Ка&shy;кой фир&shy;мы
+                    ре&shy;шать вам, ра&shy;зу&shy;ме&shy;ет&shy;ся это не долж&shy;но быть са&shy;мым
+                    де&shy;ше&shy;вым. Мы кор&shy;мим Бре&shy;верс(Brewers). Дан&shy;ная смесь
+                    (за&shy;ме&shy;ни&shy;тель мо&shy;ло&shy;ка) в ком&shy;плек&shy;те уже име&shy;ет
+                    ро&shy;жок с со&shy;с&shy;кой для вскарм&shy;ли&shy;ва&shy;ния(про&shy;сле&shy;ди&shy;те
+                    при по&shy;куп&shy;ке о его на&shy;ли&shy;чии, бу&shy;дет удоб&shy;нее и вре&shy;мя не
+                    по&shy;тра&shy;ти&shy;те на по&shy;ис&shy;ке при&shy;спо&shy;соб&shy;ле&shy;ний для
+                    кор&shy;меж&shy;ки). Ес&shy;ли его сра&shy;зу не бу&shy;дет то при&shy;деть&shy;ся
+                    по&shy;тра&shy;тить&shy;ся прим&shy;ре&shy;но 300-400 руб&shy;лей. Ко&shy;то&shy;рое
+                    сто&shy;ит меж&shy;ду про&shy;чем до&shy;ро&shy;же чем для де&shy;тей:).</p>
+
+                <q>Ес&shy;ли бу&shy;ты&shy;лоч&shy;ки там всё та&shy;кие не ока&shy;за&shy;лось:), то
+                    ана&shy;ло&shy;гом мо&shy;жет слу&shy;жить кон&shy;чик шпри&shy;ца. На ко&shy;то&shy;рый
+                    на&shy;де&shy;ва&shy;ем ре&shy;зин&shy;ку от пи&shy;пет&shy;ки с про&shy;ко&shy;ло&shy;той
+                    ды&shy;роч&shy;кой. Ма&shy;лень&shy;ко&shy;го ко&shy;тен&shy;ка ве&shy;сом в 200
+                    грам&shy;мов та&shy;ким об&shy;ра&shy;зом, по&shy;мо&shy;гая шпри&shy;цем –
+                    на&shy;жи&shy;ма&shy;ла слег&shy;ка на пор&shy;шень.</q>
+
+                <p>Дет&shy;скую смесь для груд&shy;ных ма&shy;лы&shy;шей, для ко&shy;тят сле&shy;ду&shy;ет
+                    раз&shy;ба&shy;вить во&shy;дой силь&shy;нее не&shy;же&shy;ли на&shy;пи&shy;са&shy;но в
+                    ин&shy;струк&shy;ции. Кор&shy;мить ме&shy;лень&shy;ко&shy;го ко&shy;тен&shy;ка с
+                    бу&shy;ты&shy;лоч&shy;ки или пи&shy;пет&shy;ки.</p>
+
+                <p>Ко&shy;зье мо&shy;ло&shy;ко най&shy;ти бу&shy;дет по&shy;слож&shy;нее, но за&shy;то оно по
+                    со&shy;ста&shy;ву са&shy;мое близ&shy;кое. Слож&shy;но, но мож&shy;но най&shy;ти в
+                    су&shy;пер&shy;мар&shy;ке&shy;тах или че&shy;рез зна&shy;ко&shy;мых, кто дер&shy;жит
+                    фер&shy;му.</p>
+
+                <p>Ки&shy;пя&shy;чен&shy;ное мо&shy;ло&shy;ко как ва&shy;ри&shy;ант за&shy;ме&shy;ны
+                    (ана&shy;ло&shy;га), сле&shy;ду&shy;ет ис&shy;поль&shy;зо&shy;вать в са&shy;мую
+                    по&shy;след&shy;нюю оче&shy;редь. Так как оно уже об&shy;ра&shy;бо&shy;та&shy;но на
+                    за&shy;во&shy;де и ли&shy;ше&shy;но всех нуж&shy;ных ви&shy;та&shy;ми&shy;нов и
+                    ми&shy;не&shy;ра&shy;лов для ко&shy;тен&shy;ка. Го&shy;то&shy;вим смесь:
+                    до&shy;бав&shy;ля&shy;ем 1 жел&shy;ток(на 0.5 лит&shy;ра), ще&shy;пот&shy;ку
+                    са&shy;ха&shy;ра, хо&shy;ро&shy;шо взбал&shy;ты&shy;ва&shy;ем.</p>
+            </article>
+            <article>
+                <h2>От мeсяца рацион котенка</h2>
+
+                <p>В пер&shy;вый пе&shy;ри&shy;од жиз&shy;ни пред&shy;по&shy;чти&shy;тель&shy;нее
+                    бел&shy;ко&shy;вая пи&shy;ща с вы&shy;со&shy;ким со&shy;дер&shy;жа&shy;ни&shy;ем
+                    ви&shy;та&shy;ми&shy;нов. Ос&shy;но&shy;ва ра&shy;ци&shy;о&shy;на – не&shy;жир&shy;ная
+                    пти&shy;ца и го&shy;вя&shy;ди&shy;на. Мя&shy;со ва&shy;рят или ошпа&shy;ри&shy;ва&shy;ют
+                    ки&shy;пят&shy;ком, очи&shy;ща&shy;ют от ко&shy;стей и хря&shy;щей, мел&shy;ко ре&shy;жут.
+                    К не&shy;му под&shy;ме&shy;ши&shy;ва&shy;ют ка&shy;шу (смесь пше&shy;нич&shy;ной
+                    кру&shy;пы и ри&shy;со&shy;вой сеч&shy;ки), да&shy;ют мо&shy;ло&shy;ко, тво&shy;рог,
+                    ке&shy;фир. Раз в не&shy;де&shy;лю по&shy;лез&shy;ны пе&shy;чень и сы&shy;рое яй&shy;цо.
+                    Ма&shy;лень&shy;кий ко&shy;те&shy;нок нуж&shy;да&shy;ет&shy;ся в ви&shy;та&shy;ми&shy;нах,
+                    по&shy;это&shy;му в пи&shy;щу под&shy;ме&shy;ши&shy;ва&shy;ют ва&shy;ре&shy;ные
+                    на&shy;тер&shy;тые ово&shy;щи.</p>
+
+                <p>Мно&shy;гие по&shy;ку&shy;па&shy;ют, ко&shy;гда ко&shy;тен&shy;ку 1 ме&shy;сяц, а чем
+                    кор&shy;мить не знаю. В ста&shy;тье чем за&shy;пре&shy;ще&shy;но кор&shy;мить
+                    ко&shy;тен&shy;ка при&shy;ве&shy;ден пол&shy;ный спи&shy;сок за&shy;пре&shy;щен&shy;ных
+                    про&shy;дук&shy;тов. Ко&shy;то&shy;рые мо&shy;гут при&shy;ве&shy;сти к се&shy;рьез&shy;ным
+                    про&shy;бле&shy;мам по здо&shy;ро&shy;вью.</p>
+            </article>
+
+            <article>
+                <h2>От 1,5 до 3 месяцев</h2>
+
+                <p>От по&shy;лу&shy;то&shy;ра до трех ме&shy;ся&shy;цев ко&shy;тен&shy;ку
+                    не&shy;об&shy;хо&shy;ди&shy;мо есть твер&shy;дую пи&shy;щу 4 – 5 раз. С
+                    по&shy;лу&shy;го&shy;до&shy;ва&shy;ло&shy;го воз&shy;рас&shy;та кор&shy;мят три ра&shy;за
+                    в день и толь&shy;ко на вось&shy;мой ме&shy;сяц пе&shy;ре&shy;во&shy;дят на
+                    двух&shy;ра&shy;зо&shy;вый ре&shy;жим.</p>
+            </article>
+
+            <article>
+                <h2>От 3 месяцев</h2>
+
+                <p>С трех ме&shy;ся&shy;цев ра&shy;ци&shy;он от&shy;ли&shy;ча&shy;ет&shy;ся толь&shy;ко
+                    раз&shy;ме&shy;ром пор&shy;ций и ча&shy;сто&shy;той корм&shy;ле&shy;ний. К кру&shy;пам
+                    до&shy;бав&shy;ля&shy;ют греч&shy;ку. Мож&shy;но кор&shy;мить ва&shy;ре&shy;ной
+                    мор&shy;ской ры&shy;бой без ко&shy;сто&shy;чек. По&shy;сте&shy;пен&shy;но
+                    при&shy;уча&shy;ют к го&shy;вя&shy;жьим, ку&shy;ри&shy;ным суб&shy;про&shy;дук&shy;там.
+                    Про&shy;дол&shy;жа&shy;ют да&shy;вать мо&shy;лоч&shy;ные про&shy;дук&shy;ты,
+                    ко&shy;ли&shy;че&shy;ство ово&shy;щей уве&shy;ли&shy;чи&shy;ва&shy;ют. С это&shy;го
+                    воз&shy;рас&shy;та мож&shy;но пред&shy;ла&shy;гать пи&shy;том&shy;цам
+                    мя&shy;со&shy;кост&shy;ную, кост&shy;ную и рыб&shy;ную му&shy;ку. Это ис&shy;точ&shy;ник
+                    каль&shy;ция и фос&shy;фо&shy;ра, не&shy;об&shy;хо&shy;ди&shy;мо&shy;го для
+                    раз&shy;ви&shy;тия ске&shy;ле&shy;та.</p>
+            </article>
+
+            <article>
+                <h2>Различия в кормлении разных пород</h2>
+
+                <p>Пра&shy;ви&shy;ла корм&shy;ле&shy;ния от&shy;ли&shy;ча&shy;ют&shy;ся в
+                    за&shy;ви&shy;си&shy;мо&shy;сти от по&shy;ро&shy;ды. На&shy;при&shy;мер,
+                    бен&shy;галь&shy;ская от&shy;ли&shy;ча&shy;ет&shy;ся пло&shy;хой
+                    пе&shy;ре&shy;но&shy;си&shy;мо&shy;стью мо&shy;ло&shy;ка; вред&shy;но жир&shy;ное
+                    мя&shy;со и все кру&shy;пы, кро&shy;ме ри&shy;са. Шот&shy;ланд&shy;ским и
+                    вис&shy;ло&shy;ухим бри&shy;тан&shy;ским не да&shy;ют ры&shy;бу. Они пло&shy;хо
+                    пе&shy;ре&shy;но&shy;сят мо&shy;лоч&shy;ные про&shy;дук&shy;ты, как и сфинк&shy;сы или
+                    ско&shy;тиш&shy;фол&shy;ды. Пер&shy;сам, мей ку&shy;нам и ори&shy;ен&shy;таль&shy;ным
+                    кош&shy;кам по&shy;не&shy;мно&shy;гу до&shy;бав&shy;ля&shy;ют в ка&shy;ши
+                    рас&shy;ти&shy;тель&shy;ное мас&shy;ло.</p>
+
+                <p>Ес&shy;ли кор&shy;мить ма&shy;лы&shy;ша пра&shy;виль&shy;но, это обес&shy;пе&shy;чит
+                    по&shy;ступ&shy;ле&shy;ние в ор&shy;га&shy;низм не&shy;об&shy;хо&shy;ди&shy;мых
+                    ве&shy;ществ. Что&shy;бы сба&shy;лан&shy;си&shy;ро&shy;вать ра&shy;ци&shy;он в
+                    до&shy;маш&shy;них усло&shy;ви&shy;ях, не&shy;об&shy;хо&shy;ди&shy;мо пом&shy;нить о
+                    ро&shy;ли каж&shy;до&shy;го из ком&shy;по&shy;нен&shy;тов. Мя&shy;со
+                    яв&shy;ля&shy;ет&shy;ся ис&shy;точ&shy;ни&shy;ком же&shy;ле&shy;за, жи&shy;ров,
+                    ами&shy;но&shy;кис&shy;лот, ви&shy;та&shy;ми&shy;нов груп&shy;пы В. Од&shy;на&shy;ко
+                    ис&shy;клю&shy;чи&shy;тель&shy;но мяс&shy;ное ме&shy;ню мо&shy;жет при&shy;ве&shy;сти к
+                    дис&shy;ба&shy;лан&shy;су ми&shy;не&shy;раль&shy;ных ве&shy;ществ; к не&shy;му
+                    до&shy;бав&shy;ля&shy;ют ры&shy;бу, бо&shy;га&shy;тую ви&shy;та&shy;ми&shy;на&shy;ми
+                    груп&shy;пы А и фос&shy;фо&shy;ром.</p>
+
+                <p>Хо&shy;ро&shy;шим ис&shy;точ&shy;ни&shy;ком бел&shy;ка, а зна&shy;чит, энер&shy;гии,
+                    яв&shy;ля&shy;ют&shy;ся мо&shy;лоч&shy;ные про&shy;дук&shy;ты. Яй&shy;ца
+                    до&shy;бав&shy;ля&shy;ют по&shy;то&shy;му, что они яв&shy;ля&shy;ют&shy;ся цен&shy;ным
+                    ис&shy;точ&shy;ни&shy;ком же&shy;ле&shy;за, фо&shy;ли&shy;е&shy;вой кис&shy;ло&shy;ты и
+                    ри&shy;бо&shy;фла&shy;ви&shy;на. Без этих ве&shy;ществ не сфор&shy;ми&shy;ру&shy;ет&shy;ся
+                    им&shy;мун&shy;ная си&shy;сте&shy;ма. Ово&shy;щи по&shy;ло&shy;жи&shy;тель&shy;но
+                    вли&shy;я&shy;ют на пе&shy;ри&shy;сталь&shy;ти&shy;ку ки&shy;шеч&shy;ни&shy;ка. Зла&shy;ки
+                    нуж&shy;ны как ис&shy;точ&shy;ник уг&shy;ле&shy;во&shy;дов. Вы&shy;бор в поль&shy;зу
+                    ри&shy;са и греч&shy;ки де&shy;ла&shy;ет&shy;ся по&shy;то&shy;му, что они
+                    нор&shy;ма&shy;ли&shy;зу&shy;ют ра&shy;бо&shy;ту ЖКТ; а пше&shy;ни&shy;ца
+                    со&shy;дер&shy;жит боль&shy;ше бел&shy;ков.</p>
+            </article>
+            <article>
+                <h2>Если отказывается принимать пищу</h2>
+
+                <p>Ино&shy;гда ко&shy;те&shy;нок от&shy;ка&shy;зы&shy;ва&shy;ет&shy;ся есть ово&shy;щи. В
+                    та&shy;ком слу&shy;чае их мож&shy;но сме&shy;шать с фар&shy;шем. Пол&shy;но&shy;цен&shy;но
+                    за&shy;ме&shy;нить эту па&shy;ру мо&shy;жет дет&shy;ское мяс&shy;ное пю&shy;ре. Для тех
+                    по&shy;род, ко&shy;то&shy;рые пло&shy;хо пе&shy;ре&shy;но&shy;сят мо&shy;ло&shy;ко, его
+                    мож&shy;но за&shy;ме&shy;нить ке&shy;фи&shy;ром. Очень ва&shy;жен тво&shy;рог.
+                    Пи&shy;то&shy;мец бу&shy;дет есть луч&shy;ше, ес&shy;ли его раз&shy;ба&shy;вить
+                    сме&shy;та&shy;ной. От&shy;сут&shy;ствие го&shy;вя&shy;ди&shy;ны мож&shy;но
+                    ком&shy;пен&shy;си&shy;ро&shy;вать кро&shy;ли&shy;чьим мя&shy;сом.
+                    От&shy;но&shy;си&shy;тесь к корм&shy;ле&shy;нию ко&shy;тен&shy;ка се&shy;рьез&shy;но. Ведь
+                    от это&shy;го бу&shy;дет за&shy;ви&shy;сеть его здо&shy;ро&shy;вье.</p>
+            </article>
+            <footer>
+                Взято с http://lakoshka.ru/chem-mozhno-kormit-kotenka/ Орфография сохранена
+            </footer>
+        </section>
+
+    </main>
 </body>
 </html>

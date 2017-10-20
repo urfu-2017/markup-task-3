@@ -1,0 +1,44 @@
+.label-container
+{
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.label-container > label
+{
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+label
+{
+    padding: 10px 0;
+    font-size: 16px;
+    border: 1px solid;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+header
+{
+    display: flex;
+}
+
+footer
+{
+    margin: 15px 0;
+    column-span: all;
+}
+
+footer:before
+{
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    border: 1px solid;
+    margin-bottom: 10px;
+}

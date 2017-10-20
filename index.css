@@ -1,0 +1,81 @@
+html
+{
+    background: url('table.jpg');
+}
+
+body
+{
+    width: 1200px;
+    margin: auto;
+}
+
+main
+{
+    padding: 0 50px;
+    font-size: 18px;
+    background: url('light-theme.jpg') round;
+    margin: 25px 0;
+}
+
+section
+{
+    column-count: 3;
+    column-rule: 1px solid;
+}
+
+figure
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+figure > img
+{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+figure > figcaption
+{
+    font-size: .9em;
+    text-align: center;
+}
+
+section h1
+{
+    column-span: all;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+article > h2
+{
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+article > p:first-of-type::first-letter
+{
+    font-size: 1.5em;
+}
+
+article > p
+{
+    text-indent: 1em;
+    margin: 0;
+    line-height: 1.3em;
+    padding: 10px 0;
+    hyphens: manual;
+}
+
+q
+{
+    border-top: 2px dashed;
+    border-bottom: 2px dashed;
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 0;
+}
