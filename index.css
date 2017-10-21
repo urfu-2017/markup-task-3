@@ -44,9 +44,14 @@ article p
     text-align: left;
 }
 
-article p:first-of-type:first-letter
+article p:first-of-type::first-letter
 {
     font: 800 30px Sacramento, cursive;
+}
+
+article p::first-letter
+{
+    margin-left: 25px;
 }
 
 q
