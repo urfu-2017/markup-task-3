@@ -1,0 +1,128 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #f7f5f5;
+}
+
+@font-face
+{
+    font-family: 'Cinzel Decorative';
+    src: url(CinzelDecorative-Black.ttf);
+}
+
+@font-face
+{
+    font-family: 'Lato', sans-serif;
+    src: url(Lato-Regular.ttf);
+}
+
+header
+{
+    margin: 10px 50px;
+    border-bottom: 3px solid #a9a9a9;
+}
+
+h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', fantasy;
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 5px 3px 4px #a9a9a9;
+}
+
+.underhead
+{
+    text-align: center;
+}
+
+.date
+{
+    float: left;
+}
+
+.number
+{
+    margin-right: 20px;
+}
+
+.price
+{
+    float: right;
+}
+
+main
+{
+    margin: 0 50px;
+    line-height: 1.3;
+}
+
+article
+{
+    text-align: justify;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 1px solid #a9a9a9;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+h2
+{
+    margin: 10px 0 15px;
+    column-span: all;
+    font-size: 40px;
+    letter-spacing: .1rem;
+}
+
+p
+{
+    margin: 0;
+    margin-bottom: 10px;
+    text-indent: 5%;
+    hyphens: auto;
+}
+
+figure
+{
+    margin: 5px auto;
+}
+
+img
+{
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+}
+
+figcaption
+{
+    font-style: italic;
+    font-size: 13px;
+}
+
+.author
+{
+    font-style: italic;
+    float: right;
+}
+
+footer
+{
+    margin: 10px 50px;
+    border-top: 3px solid #a9a9a9;
+}
+
+.source
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.page
+{
+    float: right;
+}
