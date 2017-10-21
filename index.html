@@ -3,7 +3,94 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
 </head>
 <body>
+    <input type="checkbox" class="dark" id="dark">
+    <label for="dark">Темная тема</label><br>
+    <input type="radio" name="size" class="small-font" id="small-font">
+    <label for="small-font">Маленький</label>
+    <input type="radio" name="size" class="normal-font" id="normal-font" checked>
+    <label for="normal-font">Средний</label>
+    <input type="radio" name="size" class="big-font" id="big-font">
+    <label for="big-font">Большой</label><br>
+    <input type="radio" name="font" class="noto-font" id="noto-font" checked>
+    <label for="noto-font">Обычный</label>
+    <input type="radio" name="font" class="scada-font" id="scada-font">
+    <label for="scada-font">Продвинутый</label><br>
+    <div class="newspaper">
+        <div class="header">
+            <div class="paper-title">Советский спорт</div>
+            <div class="paper-subtitle">Блестящая победа советского спорта!</div>
+        </div>
+        <div class="body">
+            <div class="column-first">
+                <img class="photo-first" src="https://static.footballhd.ru/uploads/posts/2014-04/1396507451_vratari.jpg" alt="Yashin">
+                <q class="quote">Ворота на замке!</q>
+                <article>
+                    <div class="column-head">Краткий обзор матча</div>
+                    <p>
+                        Фи&shy;наль&shy;ный матч олим&shy;пи&shy;а&shy;ды удал&shy;ся на&shy;шим спорт&shy;сме&shy;нам!
+                        Ко&shy;ман&shy;ды иг&shy;ра&shy;ли в вы&shy;со&shy;ком тем&shy;пе, 
+                        де&shy;мон&shy;ст&shy;ри&shy;руя вы&shy;со&shy;кое мас&shy;тер&shy;ст&shy;во. 
+                        По&shy;сте&shy;пен&shy;но пре&shy;иму&shy;щест&shy;во пе&shy;ре&shy;хо&shy;дит к сбор&shy;ной СССР.
+                        А раз&shy;вяз&shy;ка на&shy;сту&shy;пи&shy;ла на 48 ми&shy;ну&shy;те, ког&shy;да Ана&shy;то&shy;лий Иса&shy;ев
+                        го&shy;ло&shy;вой пе&shy;ре&shy;ки&shy;нул мяч на Ана&shy;то&shy;лия Иль&shy;и&shy;на,
+                        и тот то&shy;же го&shy;ло&shy;вой точ&shy;но от&shy;пра&shy;вил мяч в сет&shy;ку юго&shy;с&shy;лав&shy;ских во&shy;рот.
+                    </p>
+                </article>
+            </div>
+            <div class="column-second">
+                <article>
+                    <div class="column-head">Новый бассейн в Таджикистане</div>
+                    <p>
+                        В Ста&shy;ли&shy;на&shy;бад&shy;с&shy;ном аэро&shy;пор&shy;ту не&shy;дав&shy;но за&shy;но&shy;во
+                        пе&shy;ре&shy;обо&shy;ру&shy;до&shy;ван вод&shy;ный бас&shy;сейн.
+                        Сде&shy;ла&shy;но два от&shy;де&shy;ле&shy;ния для плов&shy;цов и пры&shy;гу&shy;нов в во&shy;ду.
+                        По&shy;стро&shy;е&shy;ны трех и пя&shy;ти&shy;мет&shy;ро&shy;вая выш&shy;ки для прыж&shy;ков в во&shy;ду.
+                    </p>
+                    <p> 
+                        В день от&shy;кры&shy;тия бас&shy;сей&shy;на со&shy;сто&shy;ял&shy;ся боль&shy;шой спор&shy;тив&shy;ный празд&shy;ник,
+                        в ко&shy;то&shy;ром при&shy;ня&shy;ли учас&shy;тие луч&shy;шие спорт&shy;сме&shy;ны рес&shy;пуб&shy;ли&shy;ки.
+                    </p>
+                </article>
+                <img class="photo-second" src="https://upload.wikimedia.org/wikipedia/ru/8/88/СХТЗ-НАТИ_и_Сталинец-6.jpg" alt="RSM">
+                <q class="quote">Больше урожая!</q>
+            </div>
+            <div class="column-third">
+                <article>
+                    <div class="column-head">ЕЖЕДНЕВНО 180 КОМБАЙНОВ</div>
+                    <p>
+                        РОС&shy;ТОВ-на-ДО&shy;НУ. (Наш корр.). Всю&shy;ду в це&shy;хах "Рост&shy;сель&shy;ма&shy;ша" мож&shy;но уви&shy;деть циф&shy;ру "180".
+                        Столь&shy;ко вы&shy;со&shy;коп&shy;ро&shy;из&shy;во&shy;ди&shy;тель&shy;ных ком&shy;бай&shy;нов "РСМ-8" обя&shy;за&shy;лись
+                        вы&shy;пус&shy;кать еже&shy;су&shy;точ&shy;но ра&shy;бо&shy;чие за&shy;во&shy;да-ги&shy;ган&shy;та к со&shy;ро&shy;ка&shy;ле&shy;тию
+                        Со&shy;вет&shy;ской влас&shy;ти. 
+                    </p>
+                    <p>
+                        Меж&shy;ду про&shy;из&shy;водст&shy;вен&shy;ни&shy;ка&shy;ми це&shy;хов раз&shy;вер&shy;ну&shy;лось
+                        со&shy;ци&shy;а&shy;лис&shy;ти&shy;чес&shy;кое со&shy;рев&shy;но&shy;ва&shy;ние в честь 40-й го&shy;дов&shy;щи&shy;ны Ок&shy;тяб&shy;ря.
+                        Сре&shy;ди пе&shy;ре&shy;до&shy;ви&shy;ков не&shy;ма&shy;ло физ&shy;куль&shy;тур&shy;ни&shy;ков. Все&shy;му за&shy;во&shy;ду ста&shy;ли
+                        из&shy;вест&shy;ны име&shy;на фор&shy;мов&shy;щи&shy;ков це&shy;ха се&shy;ро&shy;го чу&shy;гу&shy;на, штан&shy;гис&shy;та
+                        М. Тро&shy;я&shy;но&shy;ва и бор&shy;ца Н. Ща&shy;ди&shy;на, сле&shy;са&shy;ря экс&shy;пе&shy;ри&shy;мен&shy;таль&shy;ною це&shy;ха
+                        лег&shy;ко&shy;ат&shy;ле&shy;та В. Дем&shy;чен&shy;ко и мно&shy;гих дру&shy;гих, вдвое пе&shy;ре&shy;кры&shy;ва&shy;ю&shy;щих нор&shy;мы. 
+                    </p>
+                    <p>
+                        Пе&shy;ре&shy;до&shy;вые в тру&shy;де до&shy;би&shy;ва&shy;ют&shy;ся хо&shy;ро&shy;ших успе&shy;хов и в спор&shy;те.
+                        В эти дни на "Рост&shy;сель&shy;ма&shy;ше" про&shy;хо&shy;дит спар&shy;та&shy;ки&shy;а&shy;да, по&shy;свя&shy;щен&shy;ная
+                        40-ле&shy;тию Ве&shy;ли&shy;ко&shy;го Ок&shy;тяб&shy;ря. В про&shy;грам&shy;му ее вхо&shy;дят со&shy;рев&shy;но&shy;ва&shy;ния
+                        по 8 ви&shy;дам спор&shy;та: лег&shy;кой ат&shy;ле&shy;ти&shy;ке, го&shy;род&shy;кам, пла&shy;ва&shy;нию, греб&shy;ле,
+                        стрель&shy;бе, на&shy;столь&shy;но&shy;му тен&shy;ни&shy;су, во&shy;лей&shy;бо&shy;лу и шах&shy;ма&shy;там.
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="paper-footer">Воскресенье, 14 ИЮЛЯ 1957г.</div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,121 @@
+html 
+{
+    font-size: 18px;
+}
+
+.newspaper
+{
+    font-family: 'Noto Serif', serif;
+    border: .2rem solid #000;
+    padding: .2rem;
+}
+
+article
+{
+    padding: 1rem;
+    column-count: 2;
+    break-inside: avoid;
+    
+}
+
+article p::first-letter
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header 
+{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer 
+{
+    text-align: center;
+}
+
+.body
+{
+    column-count: 3;
+    column-fill: auto;
+}
+
+.paper-title
+{
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.paper-subtitle
+{
+    font-size: 3rem;
+    font-family: 'PT Serif', serif;
+}
+
+.body img
+{
+    width: 100%;
+    height: 320px;
+    display: inline-block;
+}
+
+.column-head
+{
+    font-size: 2rem;
+}
+
+.column-head::first-letter
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.column-first
+{
+    text-align: right;
+}
+
+.column-first article
+{
+    border: .2rem solid #000;
+    column-rule: .2rem solid #000;
+    text-align: left;
+}
+
+.column-second .column-head
+{
+    column-span: all;
+}
+
+.column-third .column-head
+{
+    column-span: all;
+}
+
+.dark:checked ~ div
+{
+    background-color: #000;
+    color: #fff;
+}
+
+.dark:checked ~ div::first-letter
+{
+    color: red;
+}
+
+.small-font:checked ~ .newspaper
+{
+    font-size: .9rem;
+}
+
+.big-font:checked ~ .newspaper
+{
+    font-size: 1.3rem;
+}
+
+.scada-font:checked ~ .newspaper
+{
+    font-family: 'Scada', sans-serif;
+}
