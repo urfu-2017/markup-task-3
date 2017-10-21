@@ -1,0 +1,196 @@
+body
+{
+    width: auto;
+    margin: 0;
+}
+
+main > p
+{
+    font-size: 15px;
+    padding-top: 15px;
+    padding-right: 10px;
+    margin: 0;
+    text-align: right;
+}
+
+main
+{
+    /* rgb(211, 178, 140); */
+    background: url(pictures/background.jpg);
+    width: 70%;
+    min-height: 100%;
+    margin: auto;
+    padding: 3px;
+    border: 1px solid #000;
+}
+
+hr
+{
+    margin: 2px;
+    color: #000;
+}
+
+h1
+{
+    text-align: center;
+    font: 60px Old English Text MT, Franklin Gothic Heavy, fantasy;
+    font-weight: 800;
+    letter-spacing: 7px;
+    margin: 10px;
+}
+
+h6
+{
+    text-align: right;
+    text-transform: uppercase;
+    font: 12px Times New Roman, serif;
+    font-weight: 800;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    margin: 0;
+    border: 5px double #000;
+}
+
+.article
+{
+    column-count: 3;
+    width: auto;
+    border: 1px solid #000;
+}
+
+section
+{
+    margin: 10px 0;
+}
+
+.poster
+{
+    display: block;
+    width: 95%;
+    margin: auto;
+    column-span: all;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font: 30px Fenwick;
+    font-weight: 900;
+    font-style: oblique;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.image
+{
+    width: 100%;
+}
+
+span
+{
+    font-size: 25px;
+    font-style: italic;
+}
+
+p
+{
+    text-indent: 15px;
+    margin: 1px 0;
+    font: 13px 'River Avenue', Times, serif;
+    text-align: justify;
+}
+
+.article > p:first-of-type::first-letter
+{
+    font: 30px  Franklin Gothic Heavy, fantasy;
+}
+
+.article > p:nth-of-type(2n+1)
+{
+    padding: 3px;
+    border: 3px double #000;
+}
+
+.quote_text > p
+{
+    border: 3px dashed #000;
+    text-align: right;
+    padding: 3px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.quote_text > p::first-line
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quote
+{
+    position: relative;
+    overflow: auto;
+    min-height: 200px;
+}
+
+.quote_image
+{
+    display: block;
+    width: 50%;
+    height: 80%;
+    margin: 0;
+    float: left;
+}
+
+.for_quote
+{
+    width: 100%;
+}
+
+.quote_text
+{
+    position: absolute;
+    left: 51%;
+    height: 80%;
+}
+
+footer
+{
+    height: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+input[value='italic']:checked ~ .page :nth-child(n)
+{
+    font-style: italic;
+}
+
+input[value='bold']:checked ~ .page :nth-child(n)
+{
+    font-weight: 900;
+}
+
+input[value='night_version']:checked ~ .page :nth-child(n)
+{
+    color: #fff;
+    background: #000;
+}
+
+input[value='small']:checked ~ .page :nth-child(n)
+{
+    font-size: 10px;
+}
+
+input[value='medium']:checked ~ .page :nth-child(n)
+{
+    font-size: 15px;
+}
+
+input[value='large']:checked ~ .page :nth-child(n)
+{
+    font-size: 20px;
+}
