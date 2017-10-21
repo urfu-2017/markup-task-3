@@ -1,0 +1,126 @@
+/*stylelint-disable selector-no-id*/
+
+label
+{
+    color: aquamarine;
+}
+
+input#NightMode:checked ~ .all
+{
+    color: #9ebbff ;
+    background: #70707a;
+}
+
+input#FontChange:checked ~ .all
+{
+    font-variant: petite-caps !important;
+}
+
+input#FontType:checked ~ .all
+{
+    font-family: 'Amatic SC', cursive !important;
+}
+
+body
+{
+    background: #160e14;
+}
+
+.all
+{
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-rule: 2px solid grey;
+    background: #faebd7;
+
+}
+
+p
+{
+    overflow: auto;
+}
+
+p::first-letter
+{
+    color: mediumseagreen;
+    font-weight: bold;
+}
+
+.title::first-letter,
+.globaltitle:first-letter
+{
+    color: red;
+}
+
+.sonytitle::first-letter
+{
+    color: black;
+    font-size: 20px;
+}
+
+img
+{
+    align-content: center;
+    width: 90%;
+    height: 150px;
+}
+
+.globaltitle
+{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px gray;
+}
+
+.title
+{
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
+    text-shadow: 1px 1px gray;
+
+}
+
+.test1
+{
+    font-size: small;
+    word-spacing: 1px;
+}
+
+.test2
+{
+    font-weight: normal; /* обычный (а) */
+
+}
+
+@font-face
+{
+    font-family: 'News Cycle', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=News+Cycle');
+}
+
+@font-face
+{
+    font-family: 'Pacifico', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Pacifico');
+}
+
+@font-face
+{
+    font-family: 'Amatic SC', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Amatic+SC');
+}
+
+.sony
+{
+    font-family: 'Pacifico', cursive;
+    column-count: 2;
+}
+
+.queen,
+.test1,
+.test2,
+.test3
+{
+    font-family: 'Fascinate Inline', cursive;
+}
