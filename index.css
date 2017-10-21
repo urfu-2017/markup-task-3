@@ -1,0 +1,239 @@
+@font-face
+{
+    font-family: Lobster;
+    src: url('fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Lora;
+    src: url('fonts/Lora/Lora-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: OpenSans;
+    src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: UbuntuMono;
+    src: url('fonts/Ubuntu_Mono/UbunutMono-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+body
+{
+    background-color: #ff9;
+}
+
+.yandex
+{
+    color: #f00;
+}
+
+.left
+{
+    border-right: 2px solid #000;
+    text-align: center;
+    font-family: UbuntuMono;
+    margin-right: 1ch;
+    float: left;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    padding-right: 1ch;
+    width: 1ch;
+}
+
+header
+{
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    margin: 30px 0 20px;
+    text-align: center;
+    font: 40px Lobster;
+}
+
+.settings
+{
+    margin: 5px 0;
+}
+
+label
+{
+    margin: 10px;
+    padding: 5px;
+}
+
+.small
+{
+    display: none;
+}
+
+.setter:checked + label
+{
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+}
+
+.small:checked ~ .content > section
+{
+    font-size: 14px;
+}
+
+.medium
+{
+    display: none;
+}
+
+.medium:checked ~ .content > section
+{
+    font-size: 18px;
+}
+
+.large
+{
+    display: none;
+}
+
+.large:checked ~ .content > section
+{
+    font-size: 22px;
+}
+
+.serif
+{
+    display: none;
+}
+
+.serif:checked ~ .content > section,
+.serif:checked ~ .content > footer
+{
+    font-family: Lora, serif;
+}
+
+.sans-serif
+{
+    display: none;
+}
+
+.sans-serif:checked ~ .content > section,
+.sans-serif:checked ~ .content > footer
+{
+    font-family: OpenSans, sans-serif;
+}
+
+.mono
+{
+    display: none;
+}
+
+.mono:checked ~ .content > section,
+.mono:checked ~ .content > footer
+{
+    font-family: UbuntuMono, monospace;
+}
+
+.night
+{
+    display: none;
+}
+
+.night:checked ~ .content
+{
+    color: #ddd;
+    background-color: #000;
+}
+
+.night:checked ~ .content > header
+{
+    border-color: #ddd;
+}
+
+.col3,
+.col2
+{
+    column-rule: 1px solid #999;
+}
+
+.col3
+{
+    padding: 5px;
+    column-count: 3;
+}
+
+.col2
+{
+    column-count: 2;
+}
+
+.image
+{
+    margin: 15px 0;
+}
+
+.image > .title
+{
+    text-align: center;
+}
+
+.image > img
+{
+    width: 100%;
+}
+
+.all
+{
+    column-span: all;
+}
+
+section > article:first-child > h3
+{
+    margin-top: 0;
+}
+
+.col2 h3
+{
+    column-span: all;
+}
+
+article h3
+{
+    margin: 20px 0 5px;
+}
+
+article > p
+{
+    margin: 0 0 10px;
+}
+
+article > p:first-of-type::first-letter
+{
+    font-size: 2em;
+    font-style: oblique;
+}
+
+blockquote
+{
+    font-style: italic;
+}
+
+blockquote::after
+{
+    content: '"';
+}
+
+blockquote::before
+{
+    content: '"';
+}
+
+footer
+{
+    font-size: 10px;
+}
