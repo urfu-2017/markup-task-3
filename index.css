@@ -1,0 +1,178 @@
+body
+{
+    font-family: 'Cherry Swash', cursive;
+    min-width: 1300px;
+    background: url('bg.png') #fbf8f5;
+}
+
+/*====================   Header   ===================*/
+
+.main-header
+{
+    margin-bottom: 10px;
+}
+
+.main-header__short-fact,
+.main-header__heading,
+.main-header__weather
+{
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.main-header__short-fact
+{
+    width: 25%;
+}
+
+.main-header__heading
+{
+    width: 62%;
+    margin: 0 0 20px;
+
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 5em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.main-header__weather,
+.main-header__short-fact
+{
+    box-sizing: border-box;
+    width: 15%;
+    border: 1px solid #000;
+    margin: 0 2%;
+
+    text-align: center;
+}
+
+.main-header__weather-heading,
+.main-header__short-fact-heading
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/*============================   Header Info   =======================*/
+
+.main-header__info
+{
+    border-top: 4px double #000;
+    border-bottom: 4px double #000;
+}
+
+.main-header__number,
+.main-header__date,
+.main-header__price
+{
+    width: 33%;
+    display: inline-block;
+}
+
+.main-header__price
+{
+    text-align: right;
+}
+
+/*=============================   Main   ========================*/
+
+hr
+{
+    border: none;
+    color: #000;
+    background-color: #000;
+    height: 1px;
+}
+
+main
+{
+    columns: 2;
+    column-rule: 1px solid #000;
+}
+
+.main__article_two-columns
+{
+    columns: 2;
+}
+
+.main__article_three-columns
+{
+    columns: 3;
+}
+
+.main__article_small,
+.main__article_medium,
+.main__article_big
+{
+    border-bottom: 1px solid #000;
+}
+
+.main__article_small
+{
+    min-height: 199px;
+}
+
+.main__article_medium
+{
+    min-height: 449px;
+}
+
+.main__article_big
+{
+    min-height: 649px;
+}
+
+.main__article-heading
+{
+    margin: 0 0 10px;
+
+    text-align: center;
+}
+
+.main__article-heading_multicolumn
+{
+    column-span: all;
+}
+
+.main__article-paragraph::first-letter
+{
+    font-size: 1.5em;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+.main__article-image_right
+{
+    float: right;
+    margin-left: 3px;
+}
+
+.main__article-image_left
+{
+    float: left;
+    margin-right: 3px;
+}
+
+.main__article-image_multicolumn
+{
+    display: block;
+    column-span: all;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.main__currency-section
+{
+    text-align: center;
+}
+
+.main__currency-header
+{
+    margin: 0 0 30px;
+}
+
+.main__currency
+{
+    font-size: 2em;
+    display: inline-block;
+}
