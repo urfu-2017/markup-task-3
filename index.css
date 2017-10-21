@@ -1,0 +1,102 @@
+@font-face
+{
+    font-family: 'HFF Clip Hanger';
+    src: url('HFF Clip Hanger.ttf');
+}
+
+@font-face
+{
+    font-family: 'Bobo Dylan';
+    src: url('Rns_Bobo_Dylan.otf');
+}
+
+figure,
+.firstLine,
+.vertical,
+blockquote,
+h1
+{
+    text-align: center;
+}
+
+section
+{
+    column-count: 4;
+    column-rule: 1px dotted #ddd;
+    column-fill: auto;
+}
+
+figure
+{
+    break-inside: avoid-column;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+.firstLine
+{
+    border-bottom: 3px black double;
+    border-top: 3px black double;
+    margin-bottom: 5px;
+}
+
+.vertical
+{
+    display: inline-block;
+    float: left;
+    width: 1em;
+    word-break: break-all;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: auto;
+    letter-spacing: .2em;
+    margin: 10px;
+    padding: 3px;
+    font-family: 'Abril Fatface';
+    break-inside: avoid-column;
+}
+
+section article:nth-child(2n) blockquote
+{
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+}
+
+section article:nth-child(2n+1) blockquote
+{
+    border-bottom: 3px black double;
+    border-top: 3px black double;
+}
+
+article p:first-of-type::first-letter
+{
+    font-weight: bold;
+}
+
+h1
+{
+    font-family: 'HFF Clip Hanger';
+}
+
+article:nth-child(1) > h3
+{
+    font-family: 'Bobo Dylan';
+}
+
+article:nth-child(2) > h3
+{
+    font-family: 'Oswald';
+}
+
+article:nth-child(3) > h3
+{
+    font-family: 'Fjalla One';
+}
+
+article:nth-child(4) > h3
+{
+    font-family: 'Fascinate Inline';
+}
