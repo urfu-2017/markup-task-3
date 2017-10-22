@@ -1,0 +1,70 @@
+.newspaper.name 
+{
+    color: blue;
+    width: 70%;
+    float: left;
+    height: 150px;
+    background-color: yellow;
+}
+
+aside 
+{
+    background-color: green;
+    width: 30%;
+    height: 150px;
+    float: left;
+}
+
+.second.header 
+{
+    text-align: center;
+}
+
+hr 
+{
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+}
+
+.first.article 
+{
+    float: left;
+    width: 45%;
+    column-count: 3;
+    column-rule: 2px solid #000;
+    hyphens: auto;
+    border: 4px double black;
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.first.article h3 
+{
+    column-span: all;
+    text-align: center;
+}
+
+.second.article 
+{
+    float: right;
+    width: 45%;
+    column-width: 150px;
+    column-rule: 2px solid #000;
+    hyphens: auto;
+    border: 4px double black;
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.second.article h3
+{
+    column-span: none;
+}
+
+img
+{
+    width: 150px;
+    height: 150px;
+}
