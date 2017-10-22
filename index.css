@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+
+@font-face
+{
+    font-family: 'Annabelle';
+    src: url(annabelle.ttf);
+}
+
+@font-face
+{
+    font-family: 'StudioScriptCTT';
+    src: url(studioscriptctt.ttf);
+}
+
+@font-face
+{
+    font-family: 'Journal Cyrillic';
+    src: url(journal-cyrillic.ttf);
+}
+
+header
+{
+    border-bottom: 1px dotted #000;
+    text-align: center;
+}
+
+main
+{
+    background: rgba(220, 212, 193, .86);
+    column-count: 2;
+    column-rule: 1px solid #000;
+    text-align: justify;
+}
+
+h1
+{
+    font-family: 'Annabelle', fantasy;
+
+    font-size: 4em;
+    text-shadow: 6px 6px 6px #aaa;
+}
+
+h2
+{
+    font-family: 'Neucha', serif;
+
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+p,
+.vertical-text
+{
+    font-family: 'Journal Cyrillic', serif;
+
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+p:first-of-type,
+.date
+{
+    font-family: 'StudioScriptCTT', cursive;
+
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px #aaa;
+    text-align: center;
+}
+
+p:nth-child(3)::first-letter
+{
+    font-family: 'StudioScriptCTT', cursive;
+
+    font-size: 1.8em;
+    text-shadow: 1px 1px 1px #aaa;
+}
+
+article:nth-of-type(2),
+article:last-child
+{
+    column-count: 3;
+}
+
+article:first-child
+{
+    display: inline-block;
+}
+
+.power_of_thought
+{
+    break-before: column;
+}
+
+img
+{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+header,
+.image-to-span-column,
+article:last-child > h2
+{
+    column-span: all;
+}
+
+.set-dark:checked ~ main
+{
+    color: #fff;
+    column-rule: 1px solid #fff;
+    background: #000;
+}
+
+.big-size:checked ~ main p
+{
+    font-size: 1.5em;
+}
+
+.set-italic:checked ~ main p
+{
+    font-style: italic;
+}
+
+.set-bold:checked ~ main p
+{
+    font-weight: bold;
+}
+
+.vertical-text 
+{
+    white-space: pre;
+    float: left;
+    margin-left: -4em;
+    font-size: .7em;
+}
