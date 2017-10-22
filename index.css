@@ -1,13 +1,15 @@
 body
 {
-    background-color: #cfcf92;
+    background-color: rgba(233, 233, 164, .64);
 }
 
 .paper
 {
     margin: 50px 5%;
     padding: 15px 5%;
-    background-color: #f9f9b8;
+    background-image: url('images/paper-texture-light.jpg');
+    background-size: cover;
+    box-shadow: 5px 5px #b08e80;
 }
 
 header
@@ -90,47 +92,47 @@ article:first-of-type h3
 }
 
 .small + label,
-.small:checked ~ section
+.small:checked ~ .paper
 {
     font-size: 8px;
 }
 
 .normal + label,
-.normal:checked ~ section
+.normal:checked ~ .paper
 {
     font-size: 16px;
 }
 
 .large + label,
-.large:checked ~ section
+.large:checked ~ .paper
 {
     font-size: 24px;
 }
 
 .bold + label,
-.bold:checked ~ section
+.bold:checked ~ .paper
 {
     font-weight: bold;
 }
 
-.cursive:not(:checked) ~ section header
+.cursive:not(:checked) ~ .paper header
 {
     font-family: Prata, serif;
 }
 
-.cursive:not(:checked) ~ section main
+.cursive:not(:checked) ~ .paper main
 {
     font-family: Tinos, serif;
 }
 
 .cursive + label,
-.cursive:checked ~ section
+.cursive:checked ~ .paper
 {
     font-family: 'Comic Sans', cursive;
 }
 
-.night:checked ~ section
+.night:checked ~ .paper
 {
-    background-color: rgba(0, 0, 0, .69);
+    background-image: url('images/paper-texture-dark.jpg');
     color: #cfcf92;
 }
