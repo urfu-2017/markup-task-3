@@ -3,55 +3,95 @@ body
     margin: auto;
     width: 80%;
     background-color: #fffacd;
+    margin-bottom: 100px;
 }
 
-.main
+main
+{
+    background-color: #ffe98f;
+    padding: 30px;
+    font-family: 'Old Standard TT', serif;
+}
+
+.news
 {
     column-count: 3;
     column-rule: 2px solid #000;
 }
 
+#changeColor:checked ~ main
+{
+    
+    color: #fffacd;
+    background-color: #705d16;
+}
+
+#changeFont:not(:checked) ~ main
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#font-size-small:checked ~ main
+{
+    font-size: .8em;
+}
+
+#font-size-large:checked ~ main
+{
+    font-size: 1.2em;
+}
+
 h2
 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: center;
 }
 
-.image,
-.test-class h2
+h1
+{
+    text-align: center;
+}
+
+.many-columns-article
+{
+    column-count: 2;
+}
+
+article img
+{
+    width: 100%;
+}
+
+.many-columns-article > figure,
+.many-columns-article h2
 {
     column-span: all;
 }
 
 p
 {
-    text-indent: 5%;
-    font-size: 1.2em;
-    margin-top: 0px;
+
+    text-indent: 10%;
+    margin: 0;
+    margin-top: 2px;
 }
 
 figcaption
 {
     font-style: italic;
-    font-size: 0.8em;
+    font-size: .8em;
     text-align: center;
 }
 
 blockquote
 {
-    font-size: 0.8em;
-    background-color: #fff599;
+    font-size: .8em;
     padding: 10px;
 }
 
 h1
 {
     font-size: 4em;
-}
-
-.test-class
-{
-    column-count: 2;
 }
 
 article p:first-of-type::first-letter
@@ -62,12 +102,7 @@ article p:first-of-type::first-letter
 .description
 {
     text-align: center;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-top: 3px double #000;
+    border-bottom: 3px double #000;
     margin-bottom: 10px;
-}
-
-img
-{
-    width: 100%;
 }

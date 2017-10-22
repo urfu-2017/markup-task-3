@@ -3,15 +3,24 @@
 <head>
     <meta charset="utf-8">
     <link href='index.css' rel='stylesheet'>
-    <title>Задача «DeLorean DMC-12»</title>
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <title>Газета: Случайные новости оу котах</title>
 </head>
 <body>
-    <header>
-        <h1><center>Случайные Новости О Котах</center></h1>
-        <div class='description'>Выпуск от 29 июля, 1985</div>
-    </header>
+    <input type="checkbox" name="change-color-theme" id="changeColor">
+    <label for="change-color-theme">Изменить цветовую тему</label>
+    <input type="checkbox" name="change-font-family" id="changeFont" checked>
+    <label for="change-font-family">Не стандартный шрифт</label>
+    <input type="radio" name="font-size" id="font-size-small">
+    <label for="font-size">Маленький размер текста</label>
+    <input type="radio" name="font-size" id="font-size-medium" checked>
+    <label for="font-size">Средний размер текста</label>
+    <input type="radio" name="font-size" id="font-size-large">
+    <label for="font-size">Большой размер текста</label>
     <main>
-        <div class='main'>
+        <h1>Случайные Новости О Котах</h1>
+        <div class='description'>Выпуск от 29 июля, 1985</div>
+        <div class='news'>
             <article>
                 <h2>В Германии полицейские перекрыли участок автобана ради спасения котенка</h2>
                 <figure>
@@ -76,8 +85,8 @@
                     Эл&shy;ли&shy;о&shy;та, со&shy;об&shy;ща&shy;ет NZ Herald.
                 </p>
             </article>
-            <article>
-                <h2>Кошка Диджа попала в Книгу рекордов Гиннесса 2017</h2>
+            <article class='many-columns-article'>
+                <h2>Кошка Диджа попала в Книгу рекордов Гиннесса 1985</h2>
                 <p>
                     Поли&shy;цей&shy;ским уда&shy;лось пой&shy;мать жи&shy;вот&shy;ное, ко&shy;то&shy;рое было
                     явно на&shy;пу&shy;га&shy;но. Одна&shy;ко на всю опе&shy;ра&shy;цию стра&shy;жам по&shy;ряд&shy;ка
@@ -85,10 +94,6 @@
                     дли&shy;ной 6 ки&shy;ло&shy;мет&shy;ров. В ре&shy;зуль&shy;та&shy;те про&shy;ве&shy;де&shy;ния ак&shy;ции
                     ни&shy;кто не по&shy;стра&shy;дал.
                 </p>
-                <figure>
-                    <img src='https://u2.photofunia.com/1/results/k/p/kpdNggIEF8cavaYa2T8zCg_r.jpg'>
-                    <figcaption>Вау! Кошка на скейтборде</figcaption>
-                </figure>
                 <p>
                     В от&shy;ли&shy;чие от со&shy;бак, кош&shy;ки не&shy;охот&shy;но под&shy;да&shy;ют&shy;ся
                     дрес&shy;си&shy;ров&shy;ке; тем уди&shy;ви&shy;тель&shy;нее вы&shy;гля&shy;дят до&shy;сти&shy;же&shy;ния
@@ -103,11 +108,15 @@
                     пры&shy;га&shy;ет и даже ка&shy;та&shy;ет&shy;ся на скейт&shy;борде.
                 </p>
                 <p>
-                    В но&shy;вое из&shy;да&shy;ние Guinness World Records 2017 во&shy;шли и дру&shy;гие
+                    В но&shy;вое из&shy;да&shy;ние Guinness World Records 1985 во&shy;шли и дру&shy;гие
                     уди&shy;ви&shy;тель&shy;ные зве&shy;ри — на&shy;при&shy;мер, сре&shy;ди со&shy;бак
                     ре&shy;корд&shy;сме&shy;ном по ко&shy;ли&shy;че&shy;ству трю&shy;ков в ми&shy;ну&shy;ту
                     (32) стал пар&shy;сон-рас&shy;сел те&shy;рьер Смурф.
                 </p>
+                <figure>
+                    <img src='https://u2.photofunia.com/1/results/k/p/kpdNggIEF8cavaYa2T8zCg_r.jpg'>
+                    <figcaption>Вау! Кошка на скейтборде</figcaption>
+                </figure>
             </article>
         </div>
     </main>
