@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&subset=cyrillic');
+@import url('./fonts/index.css');
+
+.newspaper
+{
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    color: #333;
+    background: #fff3ba;
+
+    font-family: 'PT Serif', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    column-count: 4;
+    column-gap: 2em;
+    column-rule: 6px double #beaa4f;
+}
+
+.header
+{
+    text-align: center;
+
+    column-span: all;
+}
+
+.name
+{
+    margin: 0;
+
+    font-family: Dobrozrachniy;
+    font-size: 3em;
+}
+
+.meta
+{
+    border-top: 1px solid #beaa4f;
+    border-bottom: 1px solid #beaa4f;
+}
+
+.tagline
+{
+    margin: 0;
+
+    font-family: Dobrozrachniy;
+}
+
+.image
+{
+    width: 100%;
+    height: auto;
+}
+
+.article > p
+{
+    text-indent: 15px;
+}
+
+.title
+{
+    margin-top: 0;
+}
+
+.article:nth-child(odd) > .title
+{
+    font-family: Dobrozrachniy;
+}
+
+.article:nth-child(even) > .title
+{
+    font-family: Galaktika;
+}
+
+.article > p:first-of-type::first-letter
+{
+    letter-spacing: 2px;
+
+    color: red;
+
+    font-family: Pobeda;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+article blockquote
+{
+    margin: 0;
+    padding: 8px 0;
+
+    border-top: 4px dotted currentColor;
+    border-bottom: 4px dotted #beaa4f;
+}
+
+.primary-mind
+{
+    margin: 0;
+
+    text-align: center;
+
+    font-family: Galaktika;
+    font-size: 3em;
+}
+
+.tcfsb:checked ~ .newspaper
+{
+    font-size: 20px;
+}
+
+.tcfsi:checked ~ .newspaper > .content
+{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.tcfsbold:checked ~ .newspaper > .content
+{
+    font-weight: bold;
+}
+
+.tcntd:checked ~ .newspaper
+{
+    color: #fff;
+    background: #2e2a1c;
+}

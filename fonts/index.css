@@ -1,0 +1,43 @@
+@font-face
+{
+    font-family: Dobrozrachniy;
+    font-style: normal;
+
+    src: url('./Dobrozrachniy/Dobrozrachniy-Regular.eot');
+    src: url('./Dobrozrachniy/Dobrozrachniy-Regular.woff') format('woff'), url('./Dobrozrachniy/Dobrozrachniy-Regular.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: Dobrozrachniy;
+    font-style: italic;
+
+    src: url('./Dobrozrachniy/Dobrozrachniy-Oblique.eot');
+    src: url('./Dobrozrachniy/Dobrozrachniy-Oblique.woff') format('woff'), url('./Dobrozrachniy/Dobrozrachniy-Oblique.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: Pobeda;
+    font-weight: normal;
+
+    src: url('./Pobeda/Pobeda-Regular.eot');
+    src: url('./Pobeda/Pobeda-Regular.svg') format('svg'), url('./Pobeda/Pobeda-Regular.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: Pobeda;
+    font-weight: bold;
+
+    src: url('./Pobeda/Pobeda-Bold.eot');
+    src: url('./Pobeda/Pobeda-Bold.svg') format('svg'), url('./Pobeda/Pobeda-Bold.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: Galaktika;
+
+    src: url('./Galaktika/Galaktika.eot');
+    src: url('./Galaktika/Galaktika.svg') format('svg'), url('./Galaktika/Galaktika.woff') format('woff');
+}
