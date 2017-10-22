@@ -16,9 +16,25 @@ h2
     text-align: center;
 }
 
+.image,
+.test-class h2
+{
+    column-span: all;
+}
+
 p
 {
     text-indent: 5%;
+}
+
+h1
+{
+    font-size: 4em;
+}
+
+.test-class
+{
+    column-count: 2;
 }
 
 article > h2 + p::first-letter
@@ -33,4 +49,9 @@ article > h2 + p::first-letter
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     margin-bottom: 10px;
+}
+
+img
+{
+    width: 100%;
 }
