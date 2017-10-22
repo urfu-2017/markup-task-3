@@ -80,7 +80,8 @@
 }
 
 .fr2:checked ~ .newspaper div,
-.fr2:checked ~ .newspaper p
+.fr2:checked ~ .newspaper p,
+.fr2:checked ~ .newspaper ul
 {
     font-family: NautilusPompilius;
 }
