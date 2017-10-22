@@ -16,6 +16,11 @@ h4
     text-align: center;
 }
 
+h3
+{
+    margin: 0;
+}
+
 hr
 {
     border-color: black;
@@ -27,19 +32,21 @@ ul
     padding: 0;
 }
 
-aside li
-{
-    margin-bottom: 10px;
-}
-
-.ad
-{
-    width: 20%;
-}
-
 main
 {
     padding: 30px;
+}
+
+article
+{
+    padding-bottom: 30px;
+    border-bottom: solid 1px black;
+}
+
+article:last-child,
+.ad ul li:last-child
+{
+    border: none;
 }
 
 article:first-letter
@@ -48,12 +55,47 @@ article:first-letter
     color: red;
 }
 
-div
+input[type='checkbox']
+{
+    position: fixed;
+    top: 50vh;
+    width: 30px;
+    height: 30px;
+}
+
+input:checked > body
+{
+    background: white;
+}
+
+#first-col,
+#second-col,
+.ad,
+.next-release
 {
     display: inline-block;
     vertical-align: top;
+}
+
+#first-col,
+#second-col
+{
     width: 30%;
+}
+
+div
+{
     padding: 10px;
+}
+
+div img
+{
+    width: 100%;
+}
+
+blockquote
+{
+    margin: 5px;
 }
 
 q
@@ -66,9 +108,40 @@ em
     color: red;
 }
 
+.ad
+{
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
 .ad li
 {
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: solid 1px black;
+}
+
+.ad img
+{
+    max-width: 100%;
+}
+
+.next-release
+{
+    width: 12%;
+    text-align: center;
+}
+
+.next-release hr
+{
+    width: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer
+{
+    text-align: center;
+    border-top: solid 1px black;
 }
