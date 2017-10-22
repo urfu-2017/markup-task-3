@@ -1,3 +1,19 @@
+@font-face
+{
+    font-family: 'Astakhov Dished Serif';
+    src: url('fonts/subset-AstakhovDishedSerif.woff2') format('woff2'), url('fonts/subset-AstakhovDishedSerif.woff') format('woff'), url('fonts/subset-AstakhovDishedSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Kurale';
+    src: url('fonts/subset-Kurale-Regular.woff2') format('woff2'), url('fonts/subset-Kurale-Regular.woff') format('woff'), url('fonts/subset-Kurale-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
     background-color: rgba(233, 233, 164, .64);
@@ -117,12 +133,12 @@ article:first-of-type h3
 
 .cursive:not(:checked) ~ .paper header
 {
-    font-family: Prata, serif;
+    font-family: 'Astakhov Dished Serif', serif;
 }
 
 .cursive:not(:checked) ~ .paper main
 {
-    font-family: Tinos, serif;
+    font-family: 'Kurale', serif;
 }
 
 .cursive + label,
