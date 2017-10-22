@@ -1,0 +1,136 @@
+body
+{
+    background-color: #cfcf92;
+}
+
+.paper
+{
+    margin: 50px 5%;
+    padding: 15px 5%;
+    background-color: #f9f9b8;
+}
+
+header
+{
+    text-align: center;
+}
+
+h1
+{
+    font-size: 3em;
+    font-variant: small-caps;
+    letter-spacing: .4em;
+}
+
+.issue
+{
+    text-transform: uppercase;
+}
+
+main
+{
+    column-count: 2;
+    column-rule: solid 2px;
+}
+
+article
+{
+    column-count: 2;
+    column-rule: solid 2px;
+    break-inside: avoid;
+}
+
+h3,
+.wide
+{
+    column-span: all;
+}
+
+blockquote
+{
+    border-left: solid 1px;
+    break-inside: avoid;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+blockquote:not(.wide)
+{
+    margin: 0 10%;
+}
+
+figure
+{
+    border: solid 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+article > p:first-of-type:first-letter
+{
+    font-size: 2em;
+}
+
+p
+{
+    text-indent: 5%;
+}
+
+article > p:first-of-type,
+h3 + h4,
+article:first-of-type h3
+{
+    margin-top: 0;
+}
+
+.small + label,
+.small:checked ~ section
+{
+    font-size: 8px;
+}
+
+.normal + label,
+.normal:checked ~ section
+{
+    font-size: 16px;
+}
+
+.large + label,
+.large:checked ~ section
+{
+    font-size: 24px;
+}
+
+.bold + label,
+.bold:checked ~ section
+{
+    font-weight: bold;
+}
+
+.cursive:not(:checked) ~ section header
+{
+    font-family: Prata, serif;
+}
+
+.cursive:not(:checked) ~ section main
+{
+    font-family: Tinos, serif;
+}
+
+.cursive + label,
+.cursive:checked ~ section
+{
+    font-family: 'Comic Sans', cursive;
+}
+
+.night:checked ~ section
+{
+    background-color: rgba(0, 0, 0, .69);
+    color: #cfcf92;
+}

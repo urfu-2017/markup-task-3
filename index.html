@@ -3,7 +3,356 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prata%7CTinos:400,400i&amp;subset=cyrillic"
+          rel="stylesheet">
 </head>
 <body>
+    Шрифт:
+    <input type="radio" name="font-size" id="radio-small" class="small"><label for="radio-small">A</label>
+    <input type="radio" name="font-size" id="radio-normal" class="normal" checked>
+    <label for="radio-normal">A</label>
+    <input type="radio" name="font-size" id="radio-large" class="large"><label for="radio-large">A</label>
+    <input type="checkbox" id="cb-bold" class="bold"><label for="cb-bold">Bold</label>
+    <input type="checkbox" id="cb-cursive" class="cursive"><label for="cb-cursive">Cursive</label>
+    <input type="checkbox" id="cb-night" class="night"><label for="cb-night">Ночная тема</label>
+
+    <section class="paper">
+
+        <header>
+            <h1>Русские ведомости</h1>
+            <div class="issue">№203 Вторник, 5 сентября (16 сентября) 1985 г.</div>
+        </header>
+
+        <hr>
+
+        <main>
+            <article>
+                <h3>Самолёт, летящий из Сургута в Москву, экстренно приземлился в
+                    Екатеринбурге из-за поломки</h3>
+                <h4>Борт принадлежит компании "Аэрофлот".</h4>
+
+                <p>Се&shy;го&shy;дня в Ека&shy;те&shy;рин&shy;бур&shy;ге экс&shy;трен&shy;но
+                    при&shy;зем&shy;лил&shy;ся
+                    са&shy;мо&shy;лёт авиа&shy;ком&shy;па&shy;нии &quot;Аэро&shy;флот&quot;,
+                    ко&shy;то&shy;рый
+                    ле&shy;тел из Сур&shy;гу&shy;та в Моск&shy;ву. Вы&shy;нуж&shy;ден&shy;ная
+                    по&shy;сад&shy;ка
+                    про&shy;изо&shy;шла из-за тех&shy;ни&shy;че&shy;ской
+                    неис&shy;прав&shy;но&shy;сти.</p>
+
+                <p>
+                    – Рейс авиа&shy;ком&shy;па&shy;нии &quot;Аэро&shy;флот&quot; Сур&shy;гут –
+                    Москва со&shy;вер&shy;шил вы&shy;нуж&shy;ден&shy;ную по&shy;сад&shy;ку в
+                    аэро&shy;пор&shy;ту
+                    Коль&shy;цо&shy;во в свя&shy;зи с тех&shy;ни&shy;че&shy;ской
+                    неис&shy;прав&shy;но&shy;стью
+                    воз&shy;душ&shy;но&shy;го суд&shy;на, – со&shy;об&shy;щи&shy;ли E1.RU в
+                    пресс-служ&shy;бе Коль&shy;цо&shy;во. – По&shy;сле при&shy;бы&shy;тия
+                    за&shy;пас&shy;но&shy;го
+                    бор&shy;та рейс был про&shy;дол&shy;жен в пункт на&shy;зна&shy;че&shy;ния.
+                </p>
+
+                <p>Агент&shy;ство Interfax.ru, ссы&shy;ла&shy;ясь на соб&shy;ствен&shy;ный
+                    ис&shy;точ&shy;ник
+                    в авиа&shy;дис&shy;пет&shy;чер&shy;ских
+                    служ&shy;бах,
+                    со&shy;об&shy;щи&shy;ло, что са&shy;мо&shy;лёт сел из-за де&shy;то&shy;на&shy;ции
+                    пе&shy;чи на бор&shy;ту.</p>
+
+                <figure class="wide">
+                    <img src="images/aeroflot.jpg" alt="самолёт Аэрофлота">
+                    <figcaption>Пассажиров пересадили на другой борт.</figcaption>
+                </figure>
+
+                <p>&quot;Ко&shy;гда са&shy;мо&shy;лёт на&shy;хо&shy;дил&shy;ся в рай&shy;оне
+                    Хан&shy;ты-Ман&shy;сий&shy;ска, эки&shy;паж до&shy;ло&shy;жил об
+                    ава&shy;рий&shy;ной
+                    си&shy;ту&shy;а&shy;ции
+                    на кухне&quot;, – при&shy;во&shy;дит агент&shy;ство сло&shy;ва
+                    со&shy;бе&shy;сед&shy;ни&shy;ка.
+                    Из-за скач&shy;ка на&shy;пря&shy;же&shy;ния
+                    про&shy;изо&shy;шла
+                    по&shy;лом&shy;ка пе&shy;чи, но по&shy;жа&shy;ра не по&shy;сле&shy;до&shy;ва&shy;ло.
+                </p>
+
+                <blockquote>&quot;Са&shy;мо&shy;лёт бла&shy;го&shy;по&shy;луч&shy;но вы&shy;пол&shy;нил
+                    по&shy;сад&shy;ку в Ека&shy;те&shy;рин&shy;бур&shy;ге. Ни&shy;кто не
+                    по&shy;стра&shy;дал, – ска&shy;зал
+                    он.
+                    – Са&shy;мо&shy;лёт от даль&shy;ней&shy;ших по&shy;лё&shy;тов вре&shy;мен&shy;но
+                    от&shy;стра&shy;нён, пас&shy;са&shy;жи&shy;ры пе&shy;ре&shy;са&shy;же&shy;ны на
+                    ре&shy;зерв&shy;ный
+                    борт&quot;.
+                </blockquote>
+            </article>
+            <article>
+                <h3>Субботний ураган: в МЧС объявили штормовое предупреждение</h3>
+                <h4>На Урале ждут очень сильный ветер, рвущий провода и ломающий деревья.</h4>
+
+                <p>МЧС и си&shy;ноп&shy;ти&shy;ки объ&shy;яви&shy;ли штор&shy;мо&shy;вое
+                    пре&shy;ду&shy;пре&shy;жде&shy;ние
+                    на Сред&shy;нем Ура&shy;ле. 21 ок&shy;тяб&shy;ря
+                    ме&shy;ста&shy;ми в
+                    Сверд&shy;лов&shy;ской об&shy;ла&shy;сти про&shy;гно&shy;зи&shy;ру&shy;ет&shy;ся
+                    ве&shy;тер с по&shy;ры&shy;ва&shy;ми до 25 мет&shy;ров в се&shy;кун&shy;ду.
+                    Воз&shy;мож&shy;но
+                    па&shy;де&shy;ние сла&shy;бо&shy;укреп&shy;лён&shy;ных кон&shy;струк&shy;ций,
+                    де&shy;ре&shy;вьев,
+                    по&shy;вре&shy;жде&shy;ние остек&shy;ле&shy;ния зда&shy;ний и
+                    стро&shy;е&shy;ний, об&shy;рыв ли&shy;ний свя&shy;зи и
+                    элек&shy;тро&shy;пе&shy;ре&shy;да&shy;чи.
+                    В ре&shy;зуль&shy;та&shy;те шква&shy;ли&shy;стых по&shy;ры&shy;вов
+                    вет&shy;ра
+                    воз&shy;мож&shy;но пе&shy;ре&shy;хлё&shy;сты&shy;ва&shy;ние ли&shy;ний
+                    элек&shy;тро&shy;пе&shy;ре&shy;да&shy;чи,
+                    спо&shy;соб&shy;ству&shy;ю&shy;щее воз&shy;ник&shy;но&shy;ве&shy;нию
+                    по&shy;жа&shy;ров.</p>
+
+                <figure class="wide">
+                    <img src="images/wind.jpg" alt="осень в Екатеринбурге">
+                    <figcaption>В субботу нас ждёт сильный ветер.</figcaption>
+                </figure>
+
+                <p>На&shy;пом&shy;ним, тем&shy;пе&shy;ра&shy;ту&shy;ра воз&shy;ду&shy;ха днём
+                    ожи&shy;да&shy;ет&shy;ся
+                    от 0 до 2 гра&shy;ду&shy;сов теп&shy;ла, по но&shy;чам –
+                    до
+                    5
+                    гра&shy;ду&shy;сов мо&shy;ро&shy;за.</p>
+
+                <p>Глав&shy;ное управ&shy;ле&shy;ние МЧС Рос&shy;сии по Сверд&shy;лов&shy;ской
+                    об&shy;ла&shy;сти
+                    про&shy;сит жи&shy;те&shy;лей не те&shy;рять
+                    бди&shy;тель&shy;ность и не пре&shy;не&shy;бре&shy;гать
+                    ре&shy;ко&shy;мен&shy;да&shy;ци&shy;я&shy;ми
+                    МЧС при непо&shy;го&shy;де.</p>
+            </article>
+            <article>
+                <h3>ИИ-платформа AlphaGo Zero отточила го без участия человека</h3>
+
+                <p>DeepMind, под&shy;раз&shy;де&shy;ле&shy;ние хол&shy;дин&shy;га Alphabet,
+                    про&shy;дол&shy;жа&shy;ет
+                    ра&shy;бо&shy;ту над
+                    со&shy;вер&shy;шен&shy;ство&shy;ва&shy;ни&shy;ем
+                    ис&shy;кус&shy;ствен&shy;но&shy;го ин&shy;тел&shy;лек&shy;та. Имен&shy;но
+                    спе&shy;ци&shy;а&shy;ли&shy;сты
+                    DeepMind со&shy;зда&shy;ли чем&shy;пи&shy;о&shy;на ми&shy;ра по
+                    иг&shy;ре
+                    в
+                    го — плат&shy;фор&shy;му AlphaGo. Ей уда&shy;лось вы&shy;иг&shy;рать у
+                    несколь&shy;ких
+                    чем&shy;пи&shy;о&shy;нов ми&shy;ра по го,
+                    по&shy;сле
+                    че&shy;го ста&shy;ло яс&shy;но, что че&shy;ло&shy;век уже ни&shy;ко&shy;гда не
+                    смо&shy;жет по&shy;бе&shy;дить ма&shy;ши&shy;ну.</p>
+
+                <p>Недав&shy;но DeepMind со&shy;об&shy;щи&shy;ла о по&shy;яв&shy;ле&shy;нии ещё бо&shy;лее
+                    силь&shy;ной си&shy;сте&shy;мы ком&shy;пью&shy;тер&shy;но&shy;го го,
+                    спо&shy;соб&shy;ной иг&shy;рать в го луч&shy;ше, чем все преды&shy;ду&shy;щие
+                    вер&shy;сии AlphaGo. Но&shy;вин&shy;ка по&shy;лу&shy;чи&shy;ла
+                    на&shy;зва&shy;ние AlphaGo Zero. Эта плат&shy;фор&shy;ма на&shy;учи&shy;лась
+                    иг&shy;рать
+                    в го без обу&shy;че&shy;ния на
+                    пар&shy;ти&shy;ях,
+                    сыг&shy;ран&shy;ных че&shy;ло&shy;ве&shy;ком, са&shy;ма по се&shy;бе.</p>
+
+                <p>В «ба&shy;зе зна&shy;ний» AlphaGo Zero — пра&shy;ви&shy;ла го и боль&shy;ше
+                    ни&shy;че&shy;го. Тем не ме&shy;нее, про&shy;грам&shy;ма очень
+                    быст&shy;ро со&shy;вер&shy;шен&shy;ству&shy;ет&shy;ся, иг&shy;рая са&shy;ма с со&shy;бой.
+                    Раз&shy;ра&shy;бот&shy;чи&shy;ки утвер&shy;жда&shy;ют, что Zero осво&shy;и&shy;ла
+                    пра&shy;ви&shy;ла иг&shy;ры все&shy;го за несколь&shy;ко ча&shy;сов.
+                    Спу&shy;стя
+                    три дня са&shy;мо&shy;обу&shy;че&shy;ния AlphaGo Zero по&shy;бе&shy;ди&shy;ла
+                    AlphaGo Lee, вер&shy;сию ИИ, ко&shy;то&shy;рая
+                    по&shy;бе&shy;ди&shy;ла
+                    Ли
+                    Се&shy;до&shy;ля со сче&shy;том 4:1 в 2016 го&shy;ду.</p>
+            </article>
+            <article>
+                <h3>Писать веб-сайты на ассемблере полезно и приятно</h3>
+
+                <p>
+                    Ко&shy;неч&shy;но, мно&shy;гие ска&shy;жут, что это ни-ни и пи&shy;сать для ве&shy;ба
+                    нуж&shy;но толь&shy;ко на PHP,
+                    ну или на один из мо&shy;дер&shy;ных язы&shy;ках Пи&shy;тон, Ру&shy;би, Node.js
+                    и т.д.
+                </p>
+
+                <p>
+                    Но де&shy;ло в том, что на&shy;пи&shy;са&shy;ние сай&shy;тов на
+                    ас&shy;сем&shy;бле&shy;ре очень по&shy;лез&shy;но, а с
+                    под&shy;хо&shy;дя&shy;щи&shy;ми ин&shy;стру&shy;мен&shy;та&shy;ми — лег&shy;ко и
+                    при&shy;ят&shy;но.
+                </p>
+            </article>
+            <article>
+                <h3>Двигаться быстрее скорости света? — Нет ничего проще</h3>
+
+                <p>Тео&shy;рия от&shy;но&shy;си&shy;тель&shy;но&shy;сти
+                    за&shy;во&shy;ра&shy;жи&shy;ва&shy;ет сво&shy;и&shy;ми
+                    па&shy;ра&shy;док&shy;са&shy;ми. Все мы зна&shy;ем про
+                    близ&shy;не&shy;цов,
+                    про
+                    воз&shy;мож&shy;но&shy;сти за&shy;су&shy;нуть длин&shy;ный са&shy;мо&shy;лёт в
+                    ко&shy;рот&shy;кий ящик. Се&shy;го&shy;дня каж&shy;дый вы&shy;пуск&shy;ник
+                    шко&shy;лы
+                    зна&shy;ет от&shy;ве&shy;ты на эти клас&shy;си&shy;че&shy;ские за&shy;гад&shy;ки,
+                    а уж сту&shy;ден&shy;ты-физи&shy;ки и по&shy;дав&shy;но
+                    счи&shy;та&shy;ют,
+                    что
+                    тайн в спе&shy;ци&shy;аль&shy;ной тео&shy;рии от&shy;но&shy;си&shy;тель&shy;но&shy;сти
+                    для них не оста&shy;лось.</p>
+
+                <p>Всё бы хо&shy;ро&shy;шо, ес&shy;ли бы не удру&shy;ча&shy;ю&shy;ще
+                    об&shy;сто&shy;я&shy;тель&shy;ство — невоз&shy;мож&shy;ность
+                    сверх&shy;све&shy;то&shy;вых
+                    ско&shy;ро&shy;стей. Неуже&shy;ли ни&shy;как нель&shy;зя быст&shy;рее?! —
+                    ду&shy;ма&shy;ла я в дет&shy;стве. А мо&shy;жет быть
+                    мож&shy;но?!
+                    По&shy;это&shy;му при&shy;гла&shy;шаю вас на се&shy;анс, уж и не знаю, чёр&shy;ной
+                    или бе&shy;лой ма&shy;гии име&shy;ни
+                    Аль&shy;бер&shy;та
+                    Эйн&shy;штей&shy;на с раз&shy;об&shy;ла&shy;че&shy;ни&shy;ем в кон&shy;це. Впро&shy;чем
+                    для тех, ко&shy;му по&shy;ка&shy;жет&shy;ся ма&shy;ло, я
+                    при&shy;го&shy;то&shy;ви&shy;ла
+                    ещё и за&shy;дач&shy;ку.</p>
+            </article>
+            <article>
+                <h3>Камня едва хватило на Ленина: в мэрии пожаловались, что весь гранит Урала уходит
+                    в Москву</h3>
+                <h4>Заказы на уральских предприятиях расписаны на несколько лет вперёд.</h4>
+
+                <p>В кон&shy;це ле&shy;та мно&shy;го&shy;стра&shy;даль&shy;ный пе&shy;ше&shy;ход&shy;ник
+                    у &quot;Пас&shy;са&shy;жа&quot; был на&shy;по&shy;ло&shy;ви&shy;ну гра&shy;нит&shy;ным,
+                    на&shy;по&shy;ло&shy;ви&shy;ну ас&shy;фаль&shy;то&shy;вым.
+                    Ви&shy;це-мэр Ека&shy;те&shy;рин&shy;бур&shy;га по транс&shy;пор&shy;ту и
+                    бла&shy;го&shy;устрой&shy;ству Ев&shy;ге&shy;ний Ар&shy;хи&shy;пов за&shy;явил,
+                    что
+                    обес&shy;пе&shy;чить по&shy;треб&shy;но&shy;сти Ека&shy;те&shy;рин&shy;бур&shy;га
+                    гра&shy;ни&shy;том ока&shy;за&shy;лось огром&shy;ной про&shy;бле&shy;мой,
+                    по&shy;то&shy;му
+                    что
+                    все про&shy;из&shy;вод&shy;ствен&shy;ные мощ&shy;но&shy;сти стра&shy;ны сей&shy;час
+                    за&shy;гру&shy;же&shy;ны за&shy;ка&shy;за&shy;ми из Моск&shy;вы, где
+                    идёт
+                    ин&shy;тен&shy;сив&shy;ное бла&shy;го&shy;устрой&shy;ство об&shy;ще&shy;ствен&shy;ных
+                    про&shy;странств.</p>
+
+                <blockquote class="wide">
+                    – С гра&shy;ни&shy;том огром&shy;ная про&shy;бле&shy;ма:
+                    ни один ре&shy;ги&shy;он не мо&shy;жет се&shy;бе
+                    поз&shy;во&shy;лить
+                    за&shy;ка&shy;зать и
+                    ку&shy;пить
+                    этот гра&shy;нит, по&shy;то&shy;му что мос&shy;ков&shy;ские за&shy;ка&shy;зы на
+                    пред&shy;при&shy;я&shy;ти&shy;ях уже рас&shy;пи&shy;са&shy;ны на
+                    несколь&shy;ко
+                    лет
+                    впе&shy;рёд, – от&shy;ме&shy;тил он.
+                </blockquote>
+
+                <p>Ев&shy;ге&shy;ний Ар&shy;хи&shy;пов уточ&shy;нил, что очень ма&shy;ло
+                    по&shy;став&shy;щи&shy;ков спо&shy;соб&shy;ны спра&shy;вить&shy;ся ещё и с
+                    дру&shy;ги&shy;ми
+                    за&shy;ка&shy;за&shy;ми, кро&shy;ме мос&shy;ков&shy;ских. При этом в
+                    Ека&shy;те&shy;рин&shy;бур&shy;ге,
+                    по его сло&shy;вам, про&shy;бле&shy;ма с
+                    гра&shy;ни&shy;том
+                    всё-та&shy;ки уже раз&shy;ре&shy;ши&shy;лась, и один-два по&shy;став&shy;щи&shy;ка,
+                    ко&shy;то&shy;рые по&shy;став&shy;ля&shy;ют этот
+                    ма&shy;те&shy;ри&shy;ал,
+                    най&shy;де&shy;ны.</p>
+
+                <p>Сто&shy;ит от&shy;ме&shy;тить, что те&shy;ма де&shy;фи&shy;ци&shy;та гра&shy;ни&shy;та
+                    из-за мос&shy;ков&shy;ских за&shy;ка&shy;зов вче&shy;ра в
+                    оче&shy;ред&shy;ной
+                    раз
+                    бы&shy;ла под&shy;ня&shy;та на фе&shy;де&shy;раль&shy;ном уровне пор&shy;та&shy;лом
+                    &quot;Ме&shy;ду&shy;за&quot;. В Ека&shy;те&shy;рин&shy;бур&shy;ге её яр&shy;кой
+                    ил&shy;лю&shy;стра&shy;ци&shy;ей был мо&shy;мент, ко&shy;гда по&shy;ло&shy;ви&shy;ну
+                    но&shy;во&shy;го пе&shy;ше&shy;ход&shy;но&shy;го пе&shy;ре&shy;хо&shy;да на
+                    Ле&shy;ни&shy;на про&shy;сто
+                    за&shy;ас&shy;фаль&shy;ти&shy;ро&shy;ва&shy;ли на вре&shy;мя, по&shy;то&shy;му
+                    что гра&shy;ни&shy;та на него в мо&shy;мент ра&shy;бот не хва&shy;ти&shy;ло
+                    –
+                    при&shy;шлось ждать по&shy;ста&shy;вок. Гра&shy;нит на Ле&shy;ни&shy;на – это
+                    гра&shy;нит из Ка&shy;ре&shy;лии, по&shy;то&shy;му что
+                    един&shy;ствен&shy;ный гра&shy;нит&shy;ный за&shy;вод в
+                    Ека&shy;те&shy;рин&shy;бур&shy;ге
+                    под&shy;пи&shy;сал кон&shy;трак&shy;ты с Моск&shy;вой на
+                    несколь&shy;ко
+                    лет впе&shy;рёд.</p>
+            </article>
+            <article>
+                <h3>Обнаружены критичные уязвимости в протоколе WPA2 — Key Reinstallation Attacks
+                    (KRACK)</h3>
+
+                <p>Груп&shy;па ис&shy;сле&shy;до&shy;ва&shy;те&shy;лей об&shy;на&shy;ру&shy;жи&shy;ла
+                    се&shy;рьез&shy;ные недо&shy;стат&shy;ки в про&shy;то&shy;ко&shy;ле WPA2,
+                    обес&shy;пе&shy;чи&shy;ва&shy;ю&shy;щем
+                    за&shy;щи&shy;ту всех совре&shy;мен&shy;ных Wi-Fi се&shy;тей.
+                    Зло&shy;умыш&shy;лен&shy;ник,
+                    на&shy;хо&shy;дя&shy;щий&shy;ся в зоне дей&shy;ствия
+                    жерт&shy;вы,
+                    мо&shy;жет ис&shy;поль&shy;зо&shy;вать эти недо&shy;стат&shy;ки, ис&shy;поль&shy;зуя
+                    Key Reinstallation Attacks.
+                    Зло&shy;умыш&shy;лен&shy;ни&shy;ки
+                    мо&shy;гут ис&shy;поль&shy;зо&shy;вать этот но&shy;вый ме&shy;тод ата&shy;ки для
+                    чте&shy;ния ин&shy;фор&shy;ма&shy;ции, ко&shy;то&shy;рая ра&shy;нее
+                    счи&shy;та&shy;лась
+                    за&shy;шиф&shy;ро&shy;ван&shy;ной.</p>
+
+                <blockquote class="wide">Уяз&shy;ви&shy;мо&shy;сти WPA2 поз&shy;во&shy;ля&shy;ют
+                    обой&shy;ти за&shy;щи&shy;ту и про&shy;слу&shy;ши&shy;вать
+                    Wi-Fi-тра&shy;фик,
+                    пе&shy;ре&shy;да&shy;ва&shy;е&shy;мый
+                    меж&shy;ду
+                    точ&shy;кой до&shy;сту&shy;па и ком&shy;пью&shy;те&shy;ром.
+                    Ата&shy;ка ра&shy;бо&shy;та&shy;ет про&shy;тив ча&shy;стых и
+                    кор&shy;по&shy;ра&shy;тив&shy;ных
+                    Wi-Fi се&shy;тей, про&shy;тив уста&shy;рев&shy;ше&shy;го WPA
+                    и
+                    све&shy;же&shy;го стан&shy;дар&shy;та WPA2, и да&shy;же про&shy;тив се&shy;тей,
+                    ко&shy;то&shy;рые ис&shy;поль&shy;зу&shy;ют ис&shy;клю&shy;чи&shy;тель&shy;но
+                    AES.
+                    Все
+                    на&shy;ши ата&shy;ки, на&shy;прав&shy;лен&shy;ные на WPA2, ис&shy;поль&shy;зу&shy;ют
+                    но&shy;ва&shy;тор&shy;скую тех&shy;ни&shy;ку ре&shy;ин&shy;стал&shy;ля&shy;ции
+                    клю&shy;чей
+                    (key reinstallation), — пи&shy;шут ав&shy;то&shy;ры KRACK.
+                </blockquote>
+
+                <p>По су&shy;ти, KRACK поз&shy;во&shy;ля&shy;ет зло&shy;умыш&shy;лен&shy;ни&shy;ку
+                    осу&shy;ще&shy;ствить ата&shy;ку ти&shy;па man-in-the-middle
+                    и
+                    при&shy;ну&shy;дить участ&shy;ни&shy;ков се&shy;ти вы&shy;пол&shy;нить
+                    ре&shy;ин&shy;стал&shy;ля&shy;цию
+                    клю&shy;чей шиф&shy;ро&shy;ва&shy;ния, ко&shy;то&shy;рые
+                    за&shy;щи&shy;ща&shy;ют
+                    тра&shy;фик WPA2. К то&shy;му же ес&shy;ли сеть на&shy;стро&shy;е&shy;на на
+                    ис&shy;поль&shy;зо&shy;ва&shy;ние
+                    WPA-TKIP или GCMP,
+                    зло&shy;умыш&shy;лен&shy;ник смо&shy;жет не толь&shy;ко про&shy;слу&shy;ши&shy;вать
+                    тра&shy;фик WPA2, но и осу&shy;ществ&shy;лять
+                    ин&shy;жек&shy;ты
+                    па&shy;ке&shy;тов в дан&shy;ные жерт&shy;вы.
+                    Ме&shy;тод KRACK уни&shy;вер&shy;са&shy;лен и ра&shy;бо&shy;та&shy;ет про&shy;тив
+                    лю&shy;бых устройств, под&shy;клю&shy;чен&shy;ных к Wi-Fi
+                    се&shy;ти. То
+                    есть в опас&shy;но&shy;сти аб&shy;со&shy;лют&shy;но все поль&shy;зо&shy;ва&shy;те&shy;ли
+                    Android, Linux, iOS, macOS, Windows,
+                    OpenBSD, а так&shy;же мно&shy;го&shy;чис&shy;лен&shy;ные IoT-устой&shy;ства.</p>
+
+                <p>По сло&shy;вам ис&shy;сле&shy;до&shy;ва&shy;те&shy;лей, экс&shy;пло&shy;ит не бу&shy;дет
+                    опуб&shy;ли&shy;ко&shy;ван до мо&shy;мен&shy;та, по&shy;ка
+                    боль&shy;шин&shy;ство
+                    вен&shy;до&shy;ров не вы&shy;пу&shy;стит об&shy;нов&shy;ле&shy;ния.</p>
+            </article>
+        </main>
+
+        <hr>
+
+    </section>
 </body>
 </html>
