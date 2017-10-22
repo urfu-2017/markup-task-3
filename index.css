@@ -189,17 +189,13 @@ label
 
 .all
 {
+    -webkit-column-span: all;
     column-span: all;
 }
 
 section > article:first-child > h3
 {
     margin-top: 0;
-}
-
-.col2 h3
-{
-    column-span: all;
 }
 
 article h3
