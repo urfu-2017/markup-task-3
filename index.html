@@ -1,9 +1,231 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    settings
+    <input name="fontsize" type="radio" value="small">Размер шрифта: Для взрослых людей
+    <input name="fontsize" type="radio" value="big">Для их родителей
+    <input name="fonttype" type="radio" value="normal">Начертание шрифта: Не Comic Sans
+    <input name="fonttype" type="radio" value="disgusting">Comic Sans
+    <input name="colorcheme" type="radio" value="day">Цветовая схема: Светлая сторона
+    <input name="colorcheme" type="radio" value="night">Тёмная сторона
+
+    <div class="newspaper">
+        <header class="newspaperheader">
+            <div class="newspaperimage">
+                <img src="lion1left.jpg" alt="lion">
+            </div>
+            <div class="newspapername">
+                The daily globe
+            </div>
+            <div class="newspaperimage">
+                <img src="lion1right.jpg" alt="lion">
+            </div>
+        </header>
+        <hr class="separator">
+        <div class="information">
+            <div>
+                Yekaterinburg
+                <br>
+                <br>
+                October 20, 2017
+                <br>
+                Sunday
+                <br>
+                <br>
+                Evening edition
+                <br>
+                Price: two coins
+            </div>
+            <div>
+                <div>
+                    Evening weater
+                    <br>
+                    <br>
+                    south: sunny period
+                    <br>
+                    north: rain and cloudy
+                    <br>
+                    central: rain and cloudy
+                    <br>
+                    Yekaterinburg: rainy
+                </div>
+            </div>
+            <div>
+                <div>
+                    Zodiak aspects
+                    <br>
+                    <br>
+                    phase: Growing Moon
+                    <br>
+                    lunar day: 4
+                    <br>
+                    zodiak: Scorpio
+                    <br>
+                    moonrise: 09:42
+                    <br>
+                    sunset: 18:50
+                </div>
+            </div>
+        </div>
+        <hr class="separator">
+        <div class="subjects">
+            <aside>
+                <div>
+                    <div class="subject">A stumbling block. Spherical. In a vacuum</div>
+                    <div class="text">
+                    In 2016, researchers from the California Institute of Technology presented evidence 
+                    that the ninth planet - with an orbital period of 15 000 years - does exist beyond 
+                    the orbit of Neptune. At the moment, the existence of the ninth planet remains 
+                    hypothetical, but astronomers have calculated that its orbit is huge. If Planet X 
+                    does exist, it is approximately 2-15 times heavier than Earth and is from the Sun 
+                    at a distance of 240,000,000,000 kilometers.
+                    </div>
+                    <br>
+                    <div class="page">
+                        Full report page 6
+                    </div>
+                </div>    
+                <br><br>
+                <hr class="separator">
+                <br>
+                <div>
+                    <div class="specialreport">Special report</div>
+                    <div class="subject">Launch. Land. Repeat. The VTVL Rocket</div>
+                    <div class="text">
+                        On April 8, 2016, private company SpaceX carried out a successful vertical landing 
+                        of the missile. For the general director of the company "SpaceX", Elona Mask, this 
+                        goal remained a priority for many years. Despite the fact that the achievement 
+                        belongs to a private enterprise, the technology of vertical landing will be 
+                        available to government agencies like NASA so that they can move forward in space 
+                        exploration.
+                    </div>
+                    <div class="page">
+                        Full report page 5
+                    </div>
+                    <div class="ornament">
+                        <img src="ornament.jpg" alt="victorian ornament">
+                    </div>
+                </div>
+            </aside> 
+
+            <aside>
+                <div>
+                    <div class="exclusive">Exclusive</div>
+                    <div class="subject">Why is the theory of evolution questionable?</div>
+                    <div class="image">
+                            <img src="littlemutation.jpg" alt="mutation">
+                            <div class="caption">
+                                GK-PID
+                            </div> 
+                    </div>
+                    <div class="text">
+                        The ancient molecule, GK-PID, caused unicellular organisms to evolve into 
+                        multicellular organisms about 800 million years ago. It was found that the GK-PID 
+                        molecule acted as a "molecular carbine": it collected the chromosomes together and 
+                        fixed them on the inner wall of the cell membrane when the division occurred. A 
+                        fascinating discovery indicates that the ancient version of GK-PID behaved earlier 
+                        than it does now. The reason why it turned into a "genetic carbine" is associated 
+                        with a small genetic mutation that reproduced itself. It turns out that the origins 
+                        of multicellular life forms is the result of one particular mutation.
+                    </div>    
+                    <div class="page">
+                        Full report page 4
+                    </div>
+                    <br>
+                    <hr class="separator">
+                    <br>
+                    <div class="subject">The Earth Has a Second Moon? NASA Says Yes</div>
+                    <div class="text">
+                        In 2016 scientists discovered a “quasi-satellite” of our planet, which named HO3. 
+                        It orbits the sun in such a way that the space rock never strays too far from Earth. 
+                        The asteroid’s exact size is unknown, but researchers believe that it is between 130 
+                        feet and 330 feet wide.<br><br>
+                        The asteroid poses no threat to earth, and never gets closer than 9 million miles to 
+                        our planet.
+                    </div>
+                    <div class="page">
+                        Full report pages 2-3
+                    </div>
+                </div>   
+            </aside>
+            
+            <aside>
+                <div>
+                    <div class="specialreport">Special report</div>
+                    <div class="subject">Cryptography: Challenge for lovers</div>  
+                    <div class="text">
+                            In January 2016, mathematicians opened a new prime number in the framework of 
+                            the "Great Internet Mersenne Prime Search". This is 2<sup>74207281</sup> - 1. 
+                            Modern cryptography uses Mersenne's prime numbers to decipher encoded 
+                            information. 2<sup>74207281</sup> at the moment is the longest of all existing 
+                            prime numbers (it is longer than its predecessor by almost 5 million digits). 
+                            The total number of digits that make up a new prime number is about 24,000,000.
+                            <br>
+                            <br>
+                            And what about next number?
+                    </div>
+                    <div class="page">
+                        Full report page 7
+                    </div>
+                </div>
+                <br>
+                <hr class="separator">
+                <br>
+                <div>
+                    <div class="subject">Information permafrost</div>
+                    <br>
+                    <div>
+                        <blockquote>
+                            <p>
+                                Bernard Fisher
+                            </p>
+                            In God we trust. All others must have data.
+                        </blockquote>
+                    </div>
+                    <br>
+                    <div class="text">
+                        At the moment there is no way that would allow storing data on one device for a 
+                        really long period of time. <br>
+                        Or does it exist?<br>
+                        Recently, scientists from Southampton University made an amazing discovery. They 
+                        used nano-structured glass in order to successfully create a process of recording 
+                        and retrieving data. The storage device is a small glass disk the size of a 25-cent 
+                        coin, which is capable of storing 360 terabytes of data and is not affected by high 
+                        temperatures (up to 1000 degrees Celsius). The average shelf-life at room 
+                        temperature is about 13.8 billion years (about the same time there is our universe).
+                        The data is recorded on the device using an ultrafast laser by means of short, 
+                        intense light pulses.
+                    </div>
+                    <div class="page">
+                        Full report page 8
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <hr class="separator">
+        <footer>
+            <div class="page9">
+                jobs 9.
+            </div>
+            <div class="page10">
+                health 10.
+            </div>
+            <div class="page11">
+                <div class="bla">blablabla</div>11.
+            </div>
+            <div class="page12">
+                games 12.
+            </div>
+            <div class="page12">
+                sports 13
+            </div>
+        </footer>
+    </div>
+    
 </body>
 </html>
