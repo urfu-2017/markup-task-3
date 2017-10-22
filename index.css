@@ -13,6 +13,7 @@ body
 
 h2
 {
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -25,6 +26,22 @@ h2
 p
 {
     text-indent: 5%;
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+
+figcaption
+{
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+blockquote
+{
+    font-size: 0.8em;
+    background-color: #fff599;
+    padding: 10px;
 }
 
 h1
@@ -37,10 +54,9 @@ h1
     column-count: 2;
 }
 
-article > h2 + p::first-letter
+article p:first-of-type::first-letter
 {
     font-size: 2em;
-
 }
 
 .description
