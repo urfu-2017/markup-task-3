@@ -1,0 +1,154 @@
+.newspaper
+{
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+main
+{
+    padding: 30px 20px 40px;
+    font-size: 17px;
+    background: url('paper_texture309.jpg');
+    background-attachment: fixed;
+    margin: 25px 50px;
+}
+
+.title
+{
+    margin: 10px;
+    font: 70px Old English Text MT;
+    text-align: center;
+}
+
+.news_title
+{
+    text-align: center;
+}
+
+.date
+{
+    padding: .2rem;
+    border-top: 4px double;
+    border-bottom: 4px double;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+.pic > img
+{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.pic > div
+{
+    font-size: 15px;
+    opacity: .5;
+}
+
+p 
+{
+    text-indent: 20px;
+}
+
+p::first-letter
+{
+    font: 150% Old English Text MT;
+}
+
+blockquote
+{
+    margin: 0;
+    padding: 12px 20px;
+    font: 12px cursive;
+    background-color: rgba(250, 248, 160, .42);
+    opacity: .7;
+}
+
+hr
+{
+    background-color: rgb(43, 2, 2);
+    height: .2px;
+    width: 90%;
+}
+
+.new
+{
+    font: 17px impact;
+    text-transform: uppercase;
+    
+}
+
+.column
+{
+    column-count: 4;
+    column-rule: 1px solid rgb(66, 49, 38);
+    column-gap: 1.2rem;
+    column-width: 70px;
+}
+
+.impr
+{
+    font-weight: bold;
+    border: 1px solid rgba(51, 47, 47, .34);
+}
+
+aside
+{
+    border: solid .2px rgba(250, 248, 160, .42);
+    outline: solid .2px rgb(26, 26, 26);
+    font-size: 18px;
+    padding: 5px;
+}
+
+input[value='color']:checked ~ main
+{
+    font-size: 17px;
+    padding: 30px 20px 40px;
+    color: #fff;
+    background: url('tekstura_korichnevyy_relef_nerovnosti_kontrast_1920x1080.jpg');
+    background-attachment: fixed;
+    margin: 25px 50px;
+}
+
+input[value='italic']:checked ~ main .newspaper article *
+{
+    font-style: italic;
+}
+
+input[value='arial']:checked ~ main .newspaper article *
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[value='small']:checked ~ main .newspaper article *
+{
+    font-size: 80%;
+}
+
+input[value='medium']:checked ~ main .newspaper article *
+{
+    font-size: 100%;
+}
+
+input[value='large']:checked ~ main .newspaper article *
+{
+    font-size: 120%;
+}
+
+label
+{
+    padding: 10px 20px 10px 10px;
+    font-size: 10px;
+    border: 1px solid;
+    text-transform: uppercase;
+}
+
+input
+{
+    visibility: hidden;
+}
