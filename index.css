@@ -43,7 +43,45 @@
 @font-face
 {
     font-family: RubricaXtCn;
-    src: url('fonts/RubricaXtCn.ttf')
+    src: url('fonts/RubricaXtCn.ttf');
+}
+
+@font-face
+{
+    font-family: NautilusPompilius;
+    src: url('fonts/Nautilus_Pompilius.ttf');
+}
+
+.tr2:checked ~ .newspaper
+{
+    background-color: black;
+    color: white;
+}
+
+.tr3:checked ~ .newspaper
+{
+    background-image: url(https://pp.userapi.com/c639220/v639220298/53992/_OMvC36w6Sw.jpg);
+}
+
+.tr4:checked ~ .newspaper
+{
+    background-color: red;
+    color: rgb(255, 208, 0);
+}
+
+.sr2:checked ~ .newspaper
+{
+    font-size: 12px;
+}
+
+.sr3:checked ~ .newspaper
+{
+    font-size: 8px;
+}
+
+.fr2:checked ~ .newspaper *
+{
+    font-family: NautilusPompilius;
 }
 
 body
@@ -83,8 +121,9 @@ li::before
 .newspaper
 {
     margin: auto;
-    width: 75%;
-    border-bottom: 6px double black;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .mainTitle
@@ -93,7 +132,7 @@ li::before
     text-transform: uppercase;
     text-align: center;
     border-bottom: 5px solid black;
-    margin-bottom: 0.5%;
+    margin-bottom: .5%;
     line-height: 90%;
 }
 
@@ -132,6 +171,7 @@ li::before
 .truth
 {
     font: 16em Truth;
+    display: inline;
 }
 
 .founded
@@ -196,7 +236,7 @@ li::before
     padding: 1.5%;
     display: inline-block;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .first .title
@@ -205,8 +245,8 @@ li::before
     text-transform: uppercase;
     display: inline-block;
     position: relative;
-    z-index: 2;
-    margin-top: -7.2%;
+    z-index: 1;
+    margin-top: -1.12em;
     text-indent: 3.7em;
     line-height: 1.2em;
 }
@@ -243,6 +283,7 @@ li::before
     padding-right: 1%;
     padding-bottom: 1%;
     margin-top: 1%;
+    border-right: 6px double black;
     display: inline-block;
 }
 
@@ -269,7 +310,6 @@ li::before
     padding-top: 2%;
     padding-left: 1%;
     padding-bottom: 3%;
-    border-left: 6px double black;
     display: inline-block;
 }
 
