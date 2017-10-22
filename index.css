@@ -1,12 +1,12 @@
 @font-face
 {
-    font-family: truth;
+    font-family: Truth;
     src: url('fonts/Real_Truth.ttf');
 }
 
 @font-face
 {
-    font-family: truthTitle;
+    font-family: FranklinGothicMedium;
     src: url('fonts/Franklin_Gothic_Medium.ttf');
 }
 
@@ -28,64 +28,118 @@
     src: url('fonts/Caviar_Dreams_Bold_Italic.ttf');
 }
 
-html
+@font-face
+{
+    font-family: MSReferenceSansSerif;
+    src: url('fonts/MS_Reference_Sans_Serif.ttf');
+}
+
+@font-face
+{
+    font-family: BrokgauzEfronItalic;
+    src: url('fonts/Brokgauz_Efron_Italic.ttf');
+}
+
+@font-face
+{
+    font-family: RubricaXtCn;
+    src: url('fonts/RubricaXtCn.ttf')
+}
+
+body
 {
     font-size: 10px;
+}
+
+p
+{
+    -webkit-margin-before: 1%;
+    -webkit-margin-after: 1%;
+    font: 1.2em MSReferenceSansSerif;
+    text-indent: 5%;
+    font-weight: bold;
+    text-align: justify;
+}
+
+ul
+{
+    padding-left: 5%;
+    font: 1.2em MSReferenceSansSerif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+li::before
+{
+    content: '— ';
+    padding-right: 1%;
 }
 
 .newspaper
 {
     margin: auto;
     width: 75%;
+    border-bottom: 6px double black;
 }
 
 .mainTitle
 {
-    font: 8.5rem truthTitle;
+    font: 8.5em FranklinGothicMedium;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: .5rem solid black;
-    margin-bottom: .8rem;
-    letter-spacing: .1rem;
+    border-bottom: 5px solid black;
+    margin-bottom: 0.5%;
+    line-height: 90%;
+}
+
+.left
+{
+    width: 54.5%;
+    display: inline-block;
 }
 
 .newspaperTitle
 {
-    width: 55%;
     text-align: right;
-    padding-bottom: .5rem;
-    border-bottom: .5rem solid black;
+    padding-right: 1.5%;
+    padding-bottom: 1%;
+    border-bottom: 5px solid black;
 }
 
 .newspaperTitle > div:nth-of-type(1)
 {
-    font: 1.8rem CaviarDreamsItalic;
+    font: 1.6em CaviarDreamsItalic;
     text-decoration: underline;
 }
 
 .newspaperTitle > div:nth-of-type(2)
 {
-    font: 2rem CaviarDreamsBold;
+    font: 1.8em CaviarDreamsBold;
     text-decoration: underline;
-    letter-spacing: .4rem;
+    letter-spacing: 4px;
 }
 
 .newspaperTitle img
 {
-    width: 16%;
+    width: 15.5%;
 }
 
 .truth
 {
-    font: 16rem truth;
+    font: 16em Truth;
 }
 
 .founded
 {
     width: 30%;
-    font: 1.6rem CaviarDreams;
+    font: 1.6em CaviarDreams;
     text-align: center;
-    letter-spacing: .4rem;
+    letter-spacing: 4px;
     display: inline-block;
 }
 
@@ -98,15 +152,134 @@ html
 
 .version div:first-of-type
 {
-    font: 2rem CaviarDreamsBold;
-    border-bottom: .3rem solid black;
-    word-spacing: .2rem;
-    letter-spacing: .4rem;
-    padding-bottom: .3rem;
+    font: 2em CaviarDreamsBold;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    border-bottom: 3px solid black;
+    padding-bottom: .5%;
 }
 
 .version div:last-of-type
 {
-    font: 1.4rem CaviarDreamsBold;
-    padding-top: .4rem;
+    font: 1.4em CaviarDreamsBold;
+}
+
+.version span:not(:last-child)::after
+{
+    font-size: 1.5em;
+    content: '\2022';
+    padding-left: 2.5%;
+    padding-right: 1.5%;
+}
+
+.right
+{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.first
+{
+    padding-left: 2%;
+    padding-top: .7%;
+    padding-bottom: 1.5%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.tass
+{
+    font: 1.5em TimesNewRoman;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 1.5%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.first .title
+{
+    font: 4em BrokgauzEfronItalic;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-top: -7.2%;
+    text-indent: 3.7em;
+    line-height: 1.2em;
+}
+
+.first .subtitle
+{
+    font: 3.5em TimesNewRoman;
+    padding-top: 1%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.first .text
+{
+    padding-top: 1%;
+    column-count: 2;
+    column-rule: 1px solid black;
+    column-gap: 4em;
+}
+
+.diamond
+{
+    width: 2%;
+    height: 100%;
+    transform: rotate(90deg);
+    font-size: 2em;
+    margin-left: 47%;
+    margin-bottom: 5%;
+}
+
+.second
+{
+    width: 37%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    display: inline-block;
+}
+
+.second p
+{
+    font-size: 1em;
+}
+
+.second .title
+{
+    font: 5em RubricaXtCn;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 4px;
+}
+
+.photo1
+{
+    width: 59%;
+    align-items: center;
+    vertical-align: top;
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 3%;
+    border-left: 6px double black;
+    display: inline-block;
+}
+
+.photo1 img
+{
+    width: 98%;
+}
+
+.signature p
+{
+    font: italic 1.2em TimesNewRoman;
+    padding-top: 1%;
 }
