@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: "Typingrad";
+    src: url("Typingrad.ttf") format("ttf");
+}
+
 h1,
 h2,
 h3,
@@ -12,7 +18,8 @@ h1
     font-size: 300%;
 }
 
-h2
+h2,
+.colspanimg
 {
     column-span: all;
 }
@@ -21,11 +28,12 @@ section
 {
     column-count: 3;
     column-rule: 1px solid;
+    padding: 15px 15px;
 }
 
 article p:first-of-type::first-letter
 {
-    font: 1.5em 'Bungee Shade', cursive;
+    font: 1.5em 'Typingrad', fantasy;
 }
 
 figcaption
@@ -48,7 +56,10 @@ q
 
 div.vertical
 {
-    float: left;
+    position: absolute;
+    left: 1em;
+    top: 11em;
+    width: 1em;
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-family: 'Anonymous Pro', monospace;
