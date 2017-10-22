@@ -1,0 +1,36 @@
+body
+{
+    margin: auto;
+    width: 80%;
+    background-color: #fffacd;
+}
+
+.main
+{
+    column-count: 3;
+    column-rule: 2px solid #000;
+}
+
+h2
+{
+    text-align: center;
+}
+
+p
+{
+    text-indent: 5%;
+}
+
+article > h2 + p::first-letter
+{
+    font-size: 2em;
+
+}
+
+.description
+{
+    text-align: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
