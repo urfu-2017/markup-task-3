@@ -1,6 +1,8 @@
-body
+.page-inner
 {
     background: #dadada;
+    height: 100%;
+    width: 100%;
 }
 
 header
@@ -57,16 +59,26 @@ article:first-letter
 
 input[type='checkbox']
 {
-    position: fixed;
-    top: 50vh;
     width: 30px;
     height: 30px;
 }
 
-input:checked > body
+#color:checked ~ div
 {
-    background: white;
+    background: teal;
+    color: white;
 }
+
+#font-size:checked ~ div
+{
+    font-size: large;
+}
+
+#font-family:checked ~ div
+{
+    font-family: 'Bookman Old Style';
+}
+
 
 #first-col,
 #second-col,
