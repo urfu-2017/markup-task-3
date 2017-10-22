@@ -1,0 +1,173 @@
+@font-face
+{
+    font-family: Old London;
+    src: url(fonts/oldlondon.woff2);
+}
+
+h1
+{
+    font-family: 'Old London', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    margin: auto auto 5px;
+}
+
+.lastHr
+{
+    margin-bottom: 0;
+}
+
+main
+{
+    position: relative;
+
+}
+
+.wrapper
+{
+    background: #daba94;
+    height: 100%;
+}
+
+p
+{
+    margin-top: 0;
+}
+
+.headerRow
+{
+    font-size: 12px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+h2
+{
+    column-span: all;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+}
+
+.mainArticle
+{
+    column-count: 3;
+    column-rule: 1px solid black;
+    width: 60%;
+    border-right: 2px solid black;
+    text-align: justify;
+    position: absolute;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.articleImg
+{
+    display: block;
+    column-span: all;
+    width: 100%;
+    margin: auto auto 10px;
+}
+
+img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+body
+{
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    background: #daba94;
+}
+
+.asideBlock
+{
+    padding-left: 5px;
+    position: absolute;
+    left: 60%;
+    column-count: 2;
+    column-rule: 1px solid black;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.asideArticle
+{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: .8em;
+}
+
+.mainFooter
+{
+    border: 2px solid black;
+    height: 117px;
+    column-span: all;
+    width: auto;
+    text-align: right;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 10px;
+    padding-top: 10%;
+}
+
+h3
+{
+    font-family: 'Poiret One', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+article p:first-letter
+{
+    font-family: 'Stalinist One', serif;
+    font-size: 1.5em;
+}
+
+.footerImg
+{
+    margin-top: -5%;
+    width: 40%;
+    float: left;
+}
+
+blockquote
+{
+    column-span: all;
+}
+
+input[value='size_small']:checked ~ :not(label):nth-child(n)
+{
+    font-size: 10px;
+}
+
+input[value='size_big']:checked ~ :not(label):nth-child(n)
+{
+    font-size: 19px;
+}
+
+input[value='style_simple']:checked ~ .wrapper :nth-child(n),
+input[value='style_simple']:checked ~ .wrapper p:first-letter
+{
+    font-family: sans-serif;
+}
+
+input[value='theme_inverse']:checked ~ .wrapper :nth-child(n)
+{
+    background: #000;
+    color: #fff;
+}
+
+input[value='theme_inverse']:checked ~ .wrapper .mainArticle,
+input[value='theme_inverse']:checked ~ .wrapper .asideBlock
+{
+    column-rule: 1px solid white;
+}
+
