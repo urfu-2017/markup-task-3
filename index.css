@@ -202,12 +202,13 @@ main
     margin-top: 8px;
 }
 
-.main__article-image_multicolumn
+.main__article-figure_multicolumn
 {
-    display: block;
+    margin: 8px 0 5px;
     column-span: all;
-    margin-top: 8px;
-    margin-bottom: 5px;
+
+    text-decoration: underline;
+    font-size: .8em;
 }
 
 .main__currency-section
