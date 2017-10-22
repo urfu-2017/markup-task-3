@@ -128,7 +128,7 @@ footer:after
 .subject
 {
     font-family: IMFeDPrm28P, Arial, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -249,7 +249,7 @@ blockquote p:first-line
     font-family: BlackwoodCastle, Arial, sans-serif;
 }
 
-div aside
+div section
 {
     width: 100%;
 }
