@@ -1,0 +1,23 @@
+.subscribe
+{
+    width: 300px;
+    padding: .6rem;
+    border: .5rem double #373737;
+}
+
+.subscribe__description
+{
+    font-size: .8rem;
+}
+
+.subscribe__title
+{
+    font-size: 1.5rem;
+}
+
+.subscribe__prices
+{
+    column-count: 2;
+    column-rule: #373737;
+    column-gap: .2rem;
+}

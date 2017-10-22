@@ -3,7 +3,241 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="css/blocks/settings.css">
+    <link rel="stylesheet" href="css/blocks/main-visual.css">
+    <link rel="stylesheet" href="css/blocks/subscribe.css">
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 <body>
+<input type="radio" id="size-small" name="size" checked>
+<input type="radio" id="size-big" name="size">
+<input type="radio" id="font-good" name="font" checked>
+<input type="radio" id="font-bad" name="font">
+<input type="radio" id="theme-new" name="theme" checked>
+<input type="radio" id="theme-old" name="theme">
+<div class="settings">
+    <div class="settings__group">
+        <label for="size-small">Маленький шрифт</label>
+        <label for="size-big">Большой шрифт</label>
+    </div>
+    <div class="settings__group">
+        <label for="font-good">Хороший шрифт</label>
+        <label for="font-bad">Плохой шрифт</label>
+    </div>
+    <div class="settings__group">
+        <label for="theme-new">Состояние при печати</label>
+        <label for="theme-old">Состояние в наши дни</label>
+    </div>
+</div>
+<main>
+    <div class="main-visual">
+        <div class="main-visual__date">
+            Понедѣльникъ 5 іюня 1917 г. Годъ изданія девятнадцатый
+        </div>
+        <div class="main-visual__line">
+            <div class="main-visual__title">Уральская</div>
+            <div class="main-visual__description">газета политическая,
+                общественная,<br>литературная и экономическая
+            </div>
+            <div class="main-visual__period">Выходитъ ежедневно исключая дней
+                послепраздничныхъ въ Екатеринбургѣ
+            </div>
+        </div>
+        <div class="main-visual__line">
+            <div class="main-visual__subscribe">
+                <div class="subscribe">
+                    <div class="subscribe__title">
+                        ПОДПИСНАЯ ЦѢНА
+                    </div>
+                    <div class="subscribe__prices">
+                        На годъ&nbsp;&nbsp;&nbsp;10р. &#8212;&nbsp;к.<br>На 6
+                        мѣс.&nbsp;&nbsp;&nbsp;5р. 50к.<br>На 3 мѣс.&nbsp;&nbsp;&nbsp;2р.
+                        85к.<br>На 1 мѣс.&nbsp;&nbsp;&nbsp;1р.
+                        &#8212;&nbsp;к.<br>
+                    </div>
+                    <div class="subscribe__description">
+                        За середину адреса уплачивается 30 копъ. и прилагается
+                        третій почтовый вырѣзъ
+                    </div>
+                </div>
+            </div>
+            <div class="main-visual__title">Жизнь</div>
+        </div>
+    </div>
+    <header>
+        <span class="date">Понедѣльникъ 5 іюня 1917 г. №119</span>
+        <h1>Уральская жизнь</h1>
+    </header>
+    <section>
+        <h2>Еще о мяс&shy;но&shy;мъ кри&shy;зисѣ</h2>
+        <p>Горъ. упра&shy;вой на имя горъ. про&shy;до&shy;воль&shy;ствен&shy;ной
+            ко&shy;миссіи по&shy;лу&shy;че&shy;на отъ предсѣда&shy;те&shy;ля то&shy;боль&shy;ской
+            гу&shy;берн&shy;ской про&shy;до&shy;воль&shy;ствъ. упра&shy;вы те&shy;ле&shy;грам&shy;
+            ма о то&shy;мъ, что хо&shy;да&shy;тай&shy;ство Ека&shy;те&shy;рин&shy;бур&shy;га
+            о вы&shy;дачѣ скуп&shy;щи&shy;ку ско&shy;та гр. Маль&shy;це&shy;ву
+            разрѣшенія на пріобрѣтеніе партіи ско&shy;та для нуждъ на&shy;се&shy;ленія
+            горъ. Ека&shy;те&shy;рин&shy;бур&shy;га – удо&shy;вле&shy;тво&shy;рен&shy;ны&shy;мъ
+            быть не мо&shy;жетъ. От&shy;казъ мо&shy;ти&shy;ви&shy;ро&shy;ванъ те&shy;мъ,
+            что со&shy;сто&shy;я&shy;лось по&shy;ста&shy;нов&shy;леніе то&shy;боль&shy;ска&shy;го
+            гу&shy;берн&shy;ска&shy;го про&shy;до&shy;воль&shy;ствен&shy;на&shy;го
+            ко&shy;ми&shy;те&shy;та – за&shy;пре&shy;ща&shy;ю&shy;щее вы&shy;возъ
+            ско&shy;та изъ гу&shy;берніи.
+        </p>
+        <h2>За&shy;дер&shy;жаніе гро&shy;ми&shy;лы</h2>
+        <p>Сол&shy;да&shy;то&shy;мъ 149 зап. пол&shy;ка Ни&shy;ко&shy;ла&shy;е&shy;мъ
+            Ко&shy;лод&shy;ки&shy;ны&shy;мъ и ми&shy;лиціоне&shy;ро&shy;мъ съ по&shy;ста
+            Ржан&shy;ни&shy;ко&shy;вы&shy;мъ до&shy;став&shy;ленъ во 2-ю часть
+            ми&shy;лиціи сол&shy;датъ 126 зап. пол&shy;ка ка&shy;ран&shy;тин&shy;ной
+            ро&shy;ты Гри&shy;горій Вост&shy;ро&shy;въ, бившій ок&shy;на въ домѣ
+            тер&shy;пи&shy;мо&shy;сти на Ма&shy;ла&shy;хов&shy;ской ул. № 39. По
+            пред&shy;став&shy;леніи его въ ми&shy;лицію онъ оскор&shy;би&shy;лъ
+            сло&shy;ва&shy;ми на&shy;чаль&shy;ни&shy;ка ми&shy;лиціи 2-й ча&shy;сти
+            гр. Вью&shy;го&shy;ва. О про&shy;ис&shy;шествіи со&shy;став&shy;ленъ
+            про&shy;то&shy;колъ. Гр. Вост&shy;ро&shy;въ пре&shy;про&shy;вож&shy;денъ
+            въ рас&shy;по&shy;ря&shy;женіе ко&shy;ман&shy;ди&shy;ра пол&shy;ка.
+        </p>
+        <h2>Обез&shy;пе&shy;ченіе топ&shy;ли&shy;во&shy;мъ</h2>
+        <p>По дан&shy;ны&shy;мъ го&shy;род&shy;ско&shy;го са&shy;мо&shy;управ&shy;ленія
+            для обез&shy;пе&shy;ченія на&shy;се&shy;ленія го&shy;ро&shy;да дро&shy;ва&shy;ми
+            на го&shy;до&shy;вой періодъ съ мая 1917 г. по май 1918 г. не&shy;об&shy;хо&shy;ди&shy;мо
+            за&shy;го&shy;то&shy;вить до 70000 сажъ. дро&shy;въ. На со&shy;сто&shy;яв&shy;шем&shy;ся
+            на дняхъ со&shy;еди&shy;нен&shy;но&shy;мъ засѣданіи Ко&shy;ми&shy;те&shy;та
+            по за&shy;го&shy;товкѣ дро&shy;въ для на&shy;се&shy;ленія го&shy;ро&shy;да
+            и го&shy;род&shy;ско&shy;го за&shy;го&shy;то&shy;вить лишь око&shy;ло
+            по&shy;ло&shy;ви&shy;ны тре&shy;бу&shy;ю&shy;ща&shy;го&shy;ся ко&shy;ли&shy;че&shy;ства
+            дро&shy;въ. Та&shy;къ ка&shy;къ ска&shy;зан&shy;ное со&shy;зда&shy;етъ
+            для го&shy;род&shy;ско&shy;го на&shy;се&shy;ленія од&shy;инъ изъ наи&shy;болѣе
+            не&shy;же&shy;ла&shy;тель&shy;ны&shy;хъ, осо&shy;бен&shy;но въ зим&shy;нее
+            вре&shy;мя, кри&shy;зи&shy;со&shy;въ, то со&shy;браніе за&shy;ня&shy;лось
+            во&shy;про&shy;со&shy;мъ, гдѣ за&shy;го&shy;то&shy;вить не&shy;до&shy;ста&shy;ю&shy;щее
+            ко&shy;ли&shy;че&shy;ство дро&shy;въ. По&shy;ста&shy;нов&shy;ле&shy;но
+            для за&shy;го&shy;тов&shy;ки ис&shy;поль&shy;зо&shy;вать го&shy;род&shy;скую
+            на&shy;ем&shy;ную да&shy;чу и не&shy;мед&shy;лен&shy;но же со&shy;ста&shy;вить
+            де&shy;таль&shy;ный про&shy;ектъ раз&shy;ра&shy;бот&shy;ки. Про&shy;сить
+            го&shy;род&shy;ское са&shy;мо&shy;управ&shy;леніе об&shy;ра&shy;зо&shy;вать
+            осо&shy;бую ко&shy;миссію, съ при&shy;гла&shy;шеніемъ въ ея со&shy;ставъ
+            пред&shy;ста&shy;ви&shy;те&shy;лей ко&shy;ми&shy;те&shy;та по за&shy;го&shy;товкѣ
+            дро&shy;въ, Го&shy;род&shy;ско&shy;го про&shy;до&shy;воль&shy;ствен&shy;на&shy;го
+            ко&shy;ми&shy;те&shy;та, лѣсно&shy;го объ-ва и др. учре&shy;жденій.
+        </p>
+        <h2>Ре&shy;ги&shy;страція из&shy;би&shy;ра&shy;те&shy;лей</h2>
+        <p>На дняхъ бу&shy;дутъ го&shy;то&shy;вы изъ пе&shy;ча&shy;ти кар&shy;точ&shy;ки
+            для ре&shy;ги&shy;страціи граж&shy;данъ-из&shy;би&shy;ра&shy;те&shy;лей.
+            Затѣмъ нач&shy;нет&shy;ся об&shy;ходъ счет&shy;чи&shy;ко&shy;въ по
+            квар&shy;ти&shy;ра&shy;мъ для за&shy;не&shy;сенія из&shy;би&shy;ра&shy;те&shy;лей
+            на ре&shy;ги&shy;страціон&shy;ныя кар&shy;точ&shy;ки.
+        </p>
+        <h2>Сре&shy;ди му&shy;суль&shy;манъ</h2>
+        <p>При мѣстно&shy;мъ му&shy;суль&shy;ман&shy;ско&shy;мъ на&shy;род&shy;но&shy;мъ
+            ко&shy;ми&shy;тетѣ об&shy;ра&shy;зо&shy;ва&shy;лась изъ во&shy;ен&shy;ны&shy;хъ
+            му&shy;суль&shy;манъ во&shy;ен&shy;ная ор&shy;га&shy;ни&shy;зація.
+        </p>
+        <h2>Отъ Ека&shy;те&shy;рин&shy;бур&shy;ска&shy;го Го&shy;род&shy;ско&shy;го
+            Про&shy;до&shy;воль&shy;ствен&shy;на&shy;го Ко&shy;ми&shy;те&shy;та
+            и Совѣта ра&shy;бо&shy;чихъ и Сол&shy;дат&shy;скихъ Де&shy;пу&shy;та&shy;то&shy;въ</h2>
+        <p>Впредь до уста&shy;нов&shy;ленія осо&shy;бы&shy;хъ пра&shy;ви&shy;лъ
+            борь&shy;бы со спе&shy;ку&shy;ляціей, ма&shy;ну&shy;фак&shy;тур&shy;ные
+            то&shy;ва&shy;ры съ 1-го іюня 1917 г. бу&shy;дутъ про&shy;да&shy;вать&shy;ся
+            граж&shy;да&shy;на&shy;мъ г. Ека&shy;те&shy;рин&shy;бур&shy;га по
+            имѣющим&shy;ся у ни&shy;хъ кар&shy;точ&shy;ка&shy;мъ на вы&shy;да&shy;чу
+            са&shy;ха&shy;ру; жи&shy;те&shy;ля&shy;мъ уѣзда по удо&shy;стовѣреніямъ
+            во&shy;лост&shy;ны&shy;хъ Ко&shy;ми&shy;те&shy;то&shy;въ и сель&shy;скихъ
+            ста&shy;ро&shy;стъ; граж&shy;да&shy;на&shy;мъ сол&shy;да&shy;та&shy;мъ
+            по удо&shy;стовѣреніямъ рот&shy;ны&shy;хъ Ко&shy;ми&shy;те&shy;то&shy;въ
+            съ разрѣшенія Про&shy;до&shy;воль&shy;ствен&shy;на&shy;го Ко&shy;ми&shy;те&shy;та.
+        </p>
+        <h2>Ре&shy;вельскій за&shy;про&shy;съ</h2>
+        <p>У на&shy;съ уже со&shy;об&shy;ща&shy;лось, что ре&shy;вельскій ко&shy;ми&shy;тетъ
+            со&shy;ю&shy;за го&shy;ро&shy;до&shy;въ увѣдо&shy;ми&shy;лъ Ека&shy;те&shy;рин&shy;бур&shy;гъ
+            о воз&shy;мож&shy;ной эва&shy;ку&shy;аціи Ре&shy;ве&shy;ля и пред&shy;ло&shy;жи&shy;лъ
+            разрѣшить во&shy;про&shy;съ о размѣщеніи въ Ека&shy;те&shy;рин&shy;бургѣ
+            ре&shy;вель&shy;скихъ учеб&shy;ны&shy;хъ за&shy;ве&shy;деній. Ека&shy;те&shy;рин&shy;бургскій
+            ко&shy;ми&shy;тетъ со&shy;ю&shy;за го&shy;ро&shy;до&shy;въ, об&shy;су&shy;дивъ
+            пред&shy;ло&shy;женіе ре&shy;вель&shy;скъ. ко&shy;мъ-та по&shy;ста&shy;но&shy;ви&shy;лъ
+            послѣдне&shy;му со&shy;об&shy;щить, что въ на&shy;ше&shy;мъ го&shy;родѣ
+            сво&shy;бод&shy;ны&shy;хъ зданій со&shy;вер&shy;шен&shy;но нѣтъ и
+            надѣять&shy;ся на размѣщеніе здѣсь эва&shy;ку&shy;и&shy;ро&shy;ван&shy;ны&shy;хъ
+            учи&shy;ли&shy;щъ не&shy;воз&shy;мож&shy;но.
+        </p>
+        <h2>От&shy;сутствіе обу&shy;ви</h2>
+        <p>За от&shy;сутствіемъ обу&shy;ви въ го&shy;родѣ за&shy;кры&shy;ты
+            спеціаль&shy;но обув&shy;ные ма&shy;га&shy;зи&shy;ны. Въ бли&shy;жай&shy;шее
+            вре&shy;мя по&shy;лу&shy;ченія обу&shy;ви ни&shy;кто изъ тор&shy;гов&shy;цевъ
+            не ожи&shy;да&shy;етъ. Та&shy;ки&shy;мъ об&shy;ра&shy;зо&shy;мъ, го&shy;родъ
+            пе&shy;ре&shy;жи&shy;ва&shy;етъ обув&shy;ной кри&shy;зи&shy;съ. Въ
+            послѣднее вре&shy;мя идетъ уси&shy;лен&shy;ная за&shy;куп&shy;ка га&shy;ло&shy;шъ,
+            у ма&shy;га&shy;зи&shy;на ТЪ-ва &quot;Тре&shy;уголь&shy;ни&shy;къ&quot;
+            съ ран&shy;ня&shy;го утра де&shy;жу&shy;рятъ оче&shy;ре&shy;ди.
+        </p>
+        <h2>Безъ та&shy;ба&shy;ку</h2>
+        <p>Бывшіе въ ма&shy;га&shy;зи&shy;на&shy;хъ остат&shy;ки до&shy;ро&shy;гихъ
+            сор&shy;то&shy;въ та&shy;ба&shy;ку за послѣдніе дни рас&shy;куп&shy;ле&shy;ны.
+            Въ та&shy;бач&shy;ны&shy;хъ ма&shy;га&shy;зи&shy;на&shy;хъ ви&shy;сятъ
+            пла&shy;ка&shy;ты, что та&shy;ба&shy;ку боль&shy;ше не имѣет&shy;ся.
+            Вви&shy;ду это&shy;го уси&shy;лен&shy;но рас&shy;ку&shy;па&shy;ют&shy;ся
+            па&shy;пи&shy;ро&shy;сы, но та&shy;къ ка&shy;къ за&shy;па&shy;съ ихъ
+            огра&shy;ни&shy;чен&shy;ный, то че&shy;резъ 2-3 дня го&shy;родъ оста&shy;нет&shy;ся
+            безъ та&shy;ба&shy;ку и па&shy;пи&shy;ро&shy;съ.
+        </p>
+        <h2>Снятіе са&shy;на</h2>
+        <figure>
+            <img alt=""
+                 src="https://azbyka.ru/days/assets/upload/newmartyros_photo/mihail-viktorov.jpg">
+            <figcaption><em>Михаилъ Викторовъ</em></figcaption>
+        </figure>
+        <section>
+            <p>Свя&shy;щен&shy;ни&shy;къ Верхъ-Ис&shy;ет&shy;ска&shy;го за&shy;во&shy;да
+                Ни&shy;коль&shy;ской церк&shy;ви Ми&shy;ха&shy;и&shy;лъ Вик&shy;то&shy;ро&shy;въ,
+                толь&shy;ко од&shy;инъ годъ про&shy;бывшій въ это&shy;мъ санѣ,
+                по&shy;далъ епархіаль&shy;но&shy;му на&shy;чаль&shy;ству про&shy;шеніе
+                о снятіи съ не&shy;го са&shy;на. Окон&shy;ча&shy;тель&shy;ное
+                рѣшеніе о снятіи са&shy;на про&shy;из&shy;во&shy;дитъ
+                мѣстная епархіаль&shy;ная власть. Прео&shy;свя&shy;щен&shy;ны&shy;мъ
+                Се&shy;ра&shy;фи&shy;мо&shy;мъ, епи&shy;ско&shy;по&shy;мъ Че&shy;ля&shy;бин&shy;ски&shy;мъ,
+                управ&shy;ля&shy;ю&shy;щи&shy;мъ епархіей, ужѣ пред&shy;ло&shy;же&shy;но
+                при&shy;хо&shy;жа&shy;на&shy;мъ Ни&shy;коль&shy;ской В.-Ис&shy;ет&shy;ской
+                церк&shy;ви ука&shy;зать кан&shy;ди&shy;да&shy;та на осво&shy;бо&shy;див&shy;ше&shy;е&shy;ся
+                мѣсто. М. В. Вик&shy;то&shy;ро&shy;въ дол&shy;женъ те&shy;перь
+                ит&shy;ти на во&shy;ен&shy;ную служ&shy;бу. По&shy;да&shy;ли
+                про&shy;шенія о снятіи са&shy;на еще нѣсколь&shy;ко
+                свя&shy;щен&shy;ни&shy;ко&shy;въ.
+            </p>
+        </section>
+        <h2>На&shy;плы&shy;въ за&shy;яв&shy;леній</h2>
+        <p>Въ го&shy;род&shy;скую упра&shy;ву по&shy;сту&shy;пи&shy;ло за
+            послѣднее вре&shy;мя око&shy;ло 200 за&shy;яв&shy;леній объ от&shy;водѣ
+            аренд&shy;ны&shy;хъ участ&shy;ко&shy;въ близъ гор&shy;на&shy;го ин&shy;сти&shy;ту&shy;та
+            для по&shy;строй&shy;ки на ни&shy;хъ жи&shy;лы&shy;хъ до&shy;мо&shy;въ.
+            Та&shy;кой на&shy;плы&shy;въ вы&shy;званъ вы&shy;год&shy;ны&shy;ми
+            условіями, на ко&shy;то&shy;рыхъ сда&shy;ют&shy;ся участ&shy;ки.
+        </p>
+        <h2>Объ&shy;яв&shy;ленія</h2>
+        <p>Объ&shy;яв&shy;ленія для помѣщенія въ га&shy;зетѣ при&shy;ни&shy;ма&shy;ют&shy;ся
+            за пла&shy;ту: на пер&shy;вой стра&shy;ницѣ по 40 к. за стро&shy;ку
+            пе&shy;ти&shy;та или мѣсто, ею за&shy;ни&shy;ма&shy;е&shy;мое и на
+            послѣдней стра&shy;ницѣ по 20 к. за стро&shy;ку. Для ли&shy;цъ, ищу&shy;щихъ
+            за&shy;нятій, съ уста&shy;нов&shy;лен&shy;ной за объ&shy;яв&shy;ленія
+            пла&shy;ты дѣла&shy;ет&shy;ся боль&shy;шая скид&shy;ка. За раз&shy;сыл&shy;ку
+            от&shy;дель&shy;нъ. объ&shy;яв&shy;леній при га&shy;зетѣ, не болѣе 1
+            ло&shy;та, взи&shy;ма&shy;ет&shy;ся 10 р. за каж&shy;дую тыс. эк&shy;зем&shy;плъ.
+            Объ&shy;яв&shy;ленія изъ рай&shy;о&shy;на Ев&shy;ро&shy;пей&shy;ской
+            Россіи при&shy;ни&shy;ма&shy;ют&shy;ся во всѣхъ кон&shy;то&shy;рахъ
+            по пріему объ&shy;яв&shy;леній. ОТЪ РЕДАКЦІИ: До&shy;став&shy;ля&shy;е&shy;мыя
+            въ ре&shy;дакцію ста&shy;тьи и вся&shy;ка&shy;го ро&shy;да замѣтки
+            долж&shy;ны быть съ под&shy;пи&shy;сью ав&shy;то&shy;ра, точ&shy;ны&shy;мъ
+            ад&shy;ре&shy;со&shy;мъ его и обо&shy;зна&shy;ченіемъ условій. Всѣ
+            ру&shy;ко&shy;пи&shy;си мо&shy;гутъ быть ис&shy;прав&shy;ля&shy;е&shy;мы
+            по усмотрѣнію ре&shy;дакціи. Мелкія ста&shy;тьи и замѣтки не&shy;при&shy;ня&shy;тыя
+            ре&shy;дакціей, уни&shy;что&shy;жа&shy;ют&shy;ся.
+        </p>
+        <h2>Пись&shy;мо въ ре&shy;дакцію</h2>
+        <p>Г. ре&shy;дак&shy;торъ! По&shy;корнѣйше про&shy;шу на&shy;пе&shy;ча&shy;тать
+            слѣду&shy;ю&shy;щее мое пись&shy;мо: Шлю привѣтъ всё&shy;мъ зна&shy;ко&shy;мы&shy;мъ
+            съ пу&shy;ти. Горь&shy;ко со&shy;жалѣю, что вслѣдствіе болѣзни мнѣ
+            не уда&shy;лось по&shy;про&shy;щать&shy;ся съ ни&shy;ми. Съ со&shy;вер&shy;шенъ.
+            по&shy;чтъ. док&shy;торъ А. Ба&shy;ло&shy;но&shy;въ.
+        </p>
+    </section>
+</main>
 </body>
 </html>
