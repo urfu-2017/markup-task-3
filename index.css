@@ -1,15 +1,62 @@
 body
 {
+    margin: 0;
+
     font-family: 'Cherry Swash', cursive;
     min-width: 1300px;
     background: url('bg.png') #fbf8f5;
+    color: #000;
+}
+
+.theme-changer:checked ~ header,
+.theme-changer:checked ~ main,
+.theme-changer:checked ~ footer
+{
+    background: #000;
+    color: #fff;
+}
+
+.font-changer_small:checked ~ main
+{
+    font-size: .75em;
+}
+
+.font-changer_normal:checked ~ main
+{
+    font-size: 1em;
+}
+
+.font-changer_big:checked ~ main
+{
+    font-size: 1.25em;
+}
+
+.font-family_serif:checked ~ header > :not(.main-header__heading),
+.font-family_serif:checked ~ main,
+.font-family_serif:checked ~ footer
+{
+    font-family: 'Slabo 27px', serif;
+}
+
+.font-family_sans-serif:checked ~ header > :not(.main-header__heading),
+.font-family_sans-serif:checked ~ main,
+.font-family_sans-serif:checked ~ footer
+{
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*====================   Header   ===================*/
 
 .main-header
 {
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.centered
+{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .main-header__short-fact,
@@ -41,7 +88,7 @@ body
 {
     box-sizing: border-box;
     width: 15%;
-    border: 1px solid #000;
+    border: 1px solid;
     margin: 0 2%;
 
     text-align: center;
@@ -58,8 +105,8 @@ body
 
 .main-header__info
 {
-    border-top: 4px double #000;
-    border-bottom: 4px double #000;
+    border-top: 4px double;
+    border-bottom: 4px double;
 }
 
 .main-header__number,
@@ -88,7 +135,7 @@ hr
 main
 {
     columns: 2;
-    column-rule: 1px solid #000;
+    column-rule: 1px solid;
 }
 
 .main__article_two-columns
@@ -105,7 +152,7 @@ main
 .main__article_medium,
 .main__article_big
 {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid;
 }
 
 .main__article_small
@@ -145,12 +192,14 @@ main
 {
     float: right;
     margin-left: 3px;
+    margin-top: 8px;
 }
 
 .main__article-image_left
 {
     float: left;
     margin-right: 3px;
+    margin-top: 8px;
 }
 
 .main__article-image_multicolumn
@@ -175,4 +224,10 @@ main
 {
     font-size: 2em;
     display: inline-block;
+}
+
+.main__article-quotation
+{
+    background: #767479;
+    border-radius: 10px;
 }
