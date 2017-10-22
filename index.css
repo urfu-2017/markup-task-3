@@ -79,7 +79,8 @@
     font-size: 8px;
 }
 
-.fr2:checked ~ .newspaper *
+.fr2:checked ~ .newspaper div,
+.fr2:checked ~ .newspaper p
 {
     font-family: NautilusPompilius;
 }
