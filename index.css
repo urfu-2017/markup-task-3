@@ -182,7 +182,7 @@ main
     column-span: all;
 }
 
-.main__article-paragraph::first-letter
+.main__article-paragraph:first-of-type::first-letter
 {
     font-size: 1.5em;
     font-family: 'UnifrakturCook', cursive;
