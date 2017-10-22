@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+@font-face
+{
+    font-family: UbuntuFont;
+    src: local('Ubuntu')
+        url('fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: TrueArial;
+    src: local('Times New Roman');
+}
+
+body
+{
+    margin: 0 auto;
+    height: 100%;
+    width: 1366px;
+    background: url(images/texture.png) repeat;
+    overflow-x: hidden;
+    font-family: UbuntuFont, sans-serif;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.newspaper-name
+{
+    margin: 0;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Coiny', cursive;
+}
+
+.newspaper-name-container
+{
+    width: 70%;
+    display: inline-block;
+}
+
+.newspaper-about-container
+{
+    width: 25%;
+    display: inline-block;
+}
+
+.header-container
+{
+    width: 100%;
+    display: table;
+}
+
+.about
+{
+    margin: 0;
+    display: block;
+    vertical-align: top;
+    text-align: right;
+    font-size: .8em;
+}
+
+.newspaper-stats-container
+{
+    width: 100%;
+    display: table;
+}
+
+.descr-edition
+{
+    margin: 0;
+    width: 33%;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: .8em;
+}
+
+.hr-without-margin
+{
+    margin: 0;
+    width: 100%;
+}
+
+.doctorwho
+{
+    height: 300px;
+    width: 450px;
+}
+
+.beautiful-quotes
+{
+    quotes: '\00ab' '\00bb';
+}
+
+.attract-attention
+{
+    margin: 10px 0;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    font-size: 3.5em;
+    font-style: italic;
+    text-align: center;
+}
+
+.ads-caption
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.normal-caption
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.normal-paragraph
+{
+    margin-top: 0;
+    text-indent: 8px;
+}
+
+.updown-paragraph
+{
+    padding-left: 45%;
+    width: 1px;
+    word-wrap: break-word;
+}
+
+article p:first-of-type:first-letter
+{
+    font: 2em 'Courier New';
+}
+
+.quote
+{
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.quote:before
+{
+    top: 0;
+    left: 0;
+    content: '\201C';
+}
+
+.quote:after
+{
+    top: 0;
+    right: 0;
+    content: '\201D';
+}
+
+.page
+{
+    margin: 0 5%;
+    display: table;
+    font-size: 14px;
+}
+
+.box
+{
+    border: 3px double #000;
+}
+
+.doctorwho-news
+{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.left-side
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+.sherlock-news
+{
+    width: 37%;
+    height: 100%;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.col-format
+{
+    column-gap: 10px;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+
+    column-rule: 1px dashed #000;
+    -moz-column-rule: 1px dashed #000;
+    -webkit-column-rule: 1px dashed #000;
+
+    text-align: justify;
+}
+
+.col-4
+{
+    column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+}
+
+.col-3
+{
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+}
+
+.little-news
+{
+    height: 100%;
+    width: 10.5%;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.tv-radio-news
+{
+    border: 3px solid #000;
+    background-color: #bbb;
+}
+
+.tv-radio-news > p
+{
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 146%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.black-and-white:checked ~ main
+{
+    background: black;
+    color: white;
+}
+
+.switch-font:checked ~ main
+{
+    font: 1em TrueArial, sans-serif;
+}
+
+.large-font:checked ~ main
+{
+    font-size: 1.1em;
+}
+
+.small-font:checked ~ main
+{
+    font-size: .8em;
+}
