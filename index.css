@@ -1,0 +1,163 @@
+.page-inner
+{
+    background: #dadada;
+    height: 100%;
+    width: 100%;
+}
+
+header
+{
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4
+{
+    text-align: center;
+}
+
+h3
+{
+    margin: 0;
+}
+
+hr
+{
+    border-color: black;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+main
+{
+    padding: 30px;
+}
+
+article
+{
+    padding-bottom: 30px;
+    border-bottom: solid 1px black;
+}
+
+article:last-child,
+.advertising ul li:last-child
+{
+    border: none;
+}
+
+article:first-letter
+{
+    font-size: 30px;
+    color: red;
+}
+
+input[type='checkbox']
+{
+    width: 30px;
+    height: 30px;
+}
+
+.color:checked ~ div
+{
+    background: teal;
+    color: white;
+}
+
+.font-size:checked ~ div
+{
+    font-size: large;
+}
+
+.font-family:checked ~ div
+{
+    font-family: 'Bookman Old Style';
+}
+
+.first-col,
+.second-col,
+.advertising,
+.next-release
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.first-col,
+.second-col
+{
+    width: 30%;
+}
+
+div
+{
+    padding: 10px;
+}
+
+div img
+{
+    width: 100%;
+}
+
+blockquote
+{
+    margin: 5px;
+}
+
+q
+{
+    font-style: italic;
+}
+
+em
+{
+    color: red;
+}
+
+.advertising
+{
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+.advertising li
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 1px black;
+}
+
+.advertising img
+{
+    max-width: 100%;
+}
+
+.next-release
+{
+    width: 12%;
+    text-align: center;
+}
+
+.next-release li
+{
+    border-bottom: solid 1px black;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.next-release li:last-child
+{
+    border: none;
+}
+
+footer
+{
+    text-align: center;
+    border-top: solid 1px black;
+}
