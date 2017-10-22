@@ -1,0 +1,73 @@
+@font-face
+{
+    font-family: 'New York Times';
+    src: url('new-york-times.ttf');
+}
+
+body
+{
+    background: #f3ece2 url('dust.png') repeat 50% 0;
+}
+
+.newsletter-headline
+{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.newsletter-headline > h1,
+.newsletter-headline > aside
+{
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.newsletter-headline h1
+{
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'New York Times', serif;
+}
+
+.weather-widget,
+.index-widget
+{
+    width: 25%;
+    text-align: justify;
+}
+
+.weather-widget
+{
+    float: left;
+}
+
+.index-widget
+{
+    float: right;
+}
+
+.newsletter-headline::after
+{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.newsletter-about
+{
+    width: 100%;
+    display: inline-block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.newsletter-about .promo-text,
+.newsletter-about .description
+{
+    width: 20%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+}
