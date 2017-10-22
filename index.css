@@ -1,0 +1,129 @@
+@font-face
+{
+    font-family: Verona Gothic;
+    src: url(Verona_Gothic.ttf);
+}
+
+@font-face
+{
+    font-family: Monte Carlo;
+    src: url(Monte-Carlo.ttf);
+}
+
+@font-face
+{
+    font-family: Modestina;
+    src: url(Modestina.ttf);
+}
+
+html
+{
+    background-color: #f7d6ab;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+main,
+section
+{
+    font: 20px sans-serif;
+    column-count: 2;
+    column-rule: 1px solid #000;
+}
+
+main
+{
+    background-color: #d3b28c;
+    column-count: 3;
+}
+
+.name,
+.heading
+{
+    column-span: all;
+    text-align: center;
+}
+
+.name
+{
+    font: 80px Verona Gothic, serif;
+}
+
+.heading
+{
+    font: 40px Monte Carlo, serif;
+}
+
+hr
+{
+    column-span: all;
+}
+
+p
+{
+    padding: 0;
+    margin: 0;
+    text-indent: 5%;
+}
+
+h2
+{
+    margin: 0;
+}
+
+p:first-of-type::first-letter
+{
+    font: bold italic 150% fantasy;
+}
+
+.drogon,
+.viserion
+{
+    column-span: all;
+}
+
+.drogon img,
+.viserion img
+{
+    width: 100%;
+}
+
+.vertical
+{
+    font: 20px Modestina, serif;
+    word-wrap: break-word;
+    width: 1px;
+    text-transform: uppercase;
+}
+
+input[id='reduce']:checked ~ main section
+{
+    font-size: 80%;
+}
+
+input[id='reduce']:checked ~ main h2
+{
+    font-size: 25px;
+}
+
+input[id='increase']:checked ~ main section
+{
+    font-size: 120%;
+}
+
+input[id='increase']:checked ~ main h2
+{
+    font-size: 55px;
+}
+
+input[id='serif']:checked ~ main section
+{
+    font-family: serif;
+}
+
+input[id='dark']:checked ~ main
+{
+    background: #493222;
+    color: white;
+}
