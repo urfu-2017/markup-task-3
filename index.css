@@ -1,7 +1,10 @@
 @font-face
 {
     font-family: 'Typingrad';
-    src: url('Typingrad.ttf') format('ttf');
+    src: local('Typingrad'),
+        url('fonts/Typingrad.woff2') format('woff2'),
+        url('fonts/Typingrad.woff') format('woff'),
+        url('fonts/Typingrad.ttf') format('ttf');
 }
 
 h1,
@@ -21,11 +24,14 @@ h1
 h2,
 .colspanimg
 {
+    -webkit-column-span: all;
     column-span: all;
 }
 
 section
 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
     column-rule: 1px solid;
     padding: 15px;
@@ -60,7 +66,14 @@ div.vertical
     left: 1em;
     top: 11em;
     width: 1em;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+    -moz-text-orientation: upright;
+    -ms-text-orientation: upright;
     text-orientation: upright;
     font-family: 'Anonymous Pro', monospace;
 }
