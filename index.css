@@ -2,7 +2,7 @@
 {
     font-size: 20px;
     column-count: 3;
-    column-rule: 2px solid #000000;
+    column-rule: 2px solid #000;
 }
 
 input[type='checkbox']:checked ~ table > tr:first-child > td:nth-child(2)
