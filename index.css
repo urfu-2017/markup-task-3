@@ -11,11 +11,8 @@
 @font-face
 {
     font-family: 'LilliputSteps-Regular';
-    src: url('font/lilliput_steps.eot?');
-    format('eot'), url('font/lilliput_steps.woff');
-    format('woff'), url('font/lilliput_steps.ttf');
-    format('truetype'), url('font/lilliput_steps.svg#LilliputSteps-Regular');
-    format('svg');
+    src: url('font/lilliput_steps.eot?') format('eot');
+    src: url('font/lilliput_steps.woff') format('woff'), url('font/lilliput_steps.ttf') format('truetype');
 }
 
 .headline
@@ -38,7 +35,7 @@ aside
 {
     font-family: LilliputSteps-Regular, cursive;
     text-align: center;
-    margin: -15px 5px 0;;
+    margin: -15px 5px 0;
 }
 
 .vertical
@@ -58,7 +55,7 @@ aside
 
 .date
 {
-    float:  left;
+    float: left;
 }
 
 .newspaper
