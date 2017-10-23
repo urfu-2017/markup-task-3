@@ -1,3 +1,57 @@
+@font-face
+{
+    font-family: machina;
+    src: url(DEUX.ttf);
+}
+
+@font-face
+{
+    font-family: augusta;
+    src: url(Augusta_One.ttf);
+}
+
+@font-face
+{
+    font-family: turandot;
+    src: url(Turandot.ttf);
+}
+
+@font-face
+{
+    font-family: valentina;
+    src: url(Valentina.ttf);
+}
+
+@font-face
+{
+    font-family: alice;
+    src: url(Alice.ttf);
+}
+
+@font-face
+{
+    font-family: violett;
+    src: url(Violet.ttf);
+}
+
+@font-face
+{
+    font-family: red_banner;
+    src: url(red_banner.ttf);
+}
+
+@font-face
+{
+    font-family: campus;
+    src: url(Graffiti1C.ttf);
+}
+
+@font-face
+{
+    font-family: comic;
+    src: url(comic.ttf);
+}
+
 .main 
 {
     background-color: hsl(53, 70%, 88%);
@@ -7,9 +61,39 @@
 
 header
 {
+    font-family: machina, Lucida Grande, monospace;
     column-span: all;
     text-align: center;
     font-size: 450%;
+}
+
+blockquote
+{
+    font-weight: bold;
+    font-size: 80%;
+    text-decoration: underline;
+}
+
+img
+{
+    width: 100%;
+}
+
+figure
+{
+    text-align: center;
+    column-span: all;
+    font-size: 120%;
+}
+
+.side
+{
+    writing-mode: vertical-rl;
+    float: left;
+    font-size: 160%;
+    margin-right: 2px;
+    text-orientation: upright;
+    font-family: augusta, turandot, monospace;
 }
 
 .news1
@@ -26,8 +110,8 @@ header
 
 .news3
 {
-    font-family: allegroScript, Lucida Grande, monospace;
-    font-size: 160%;
+    font-family: alice, Lucida Grande, monospace;
+    font-size: 120%;
 }
 
 .news4
@@ -48,38 +132,45 @@ header
     font-size: 120%;
 }
 
-@font-face
+h2
 {
-    font-family: turandot;
-    src: url(Turandot.ttf);
+    text-align: center;
 }
 
-@font-face
+p:first-of-type::first-letter
 {
-    font-family: valentina;
-    src: url(Valentina.ttf);
+    font-family: augusta;
+    font-size: 200%;
 }
 
-@font-face
+input[value='cursive']:checked ~ .main
 {
-    font-family: allegroScript;
-    src: url(AllegroScript.otf);
+    font-style: italic;
 }
 
-@font-face
+input[value='monospace']:checked ~ .main article
 {
-    font-family: violett;
-    src: url(Violet.ttf);
+    font-family: monospace;
 }
 
-@font-face
+input[value='designer']:checked ~ .main
 {
-    font-family: red_banner;
-    src: url(red_banner.ttf);
+    background-color: #000;
+    color: #7fff00;
+    text-shadow: 4px 4px 15px;
 }
 
-@font-face
+input[value='small']:checked ~ .main
 {
-    font-family: campus;
-    src: url(a_Campus.ttf) format ('truetype');
+    font-size: 75%;
+}
+
+input[value='medium']:checked ~ .main
+{
+    font-size: 100%;
+}
+
+input[value='large']:checked ~ .main
+{
+    font-size: 125%;
 }
