@@ -291,31 +291,31 @@ main
     clear: both;
 }
 
-#bw-checkbox:checked ~ main,
-#bw-checkbox:checked ~ main a,
-#bw-checkbox:checked ~ main a
+.bw-checkbox:checked ~ main,
+.bw-checkbox:checked ~ main a,
+.bw-checkbox:checked ~ main a
 {
     background-color: #444;
     color: #fff;
 }
 
-#bw-checkbox:checked ~ main .underlined:after,
-#bw-checkbox:checked ~ main .overlined:before
+.bw-checkbox:checked ~ main .underlined:after,
+.bw-checkbox:checked ~ main .overlined:before
 {
     background: #fff;
 }
 
-#font-checkbox:checked ~ main
+.font-checkbox:checked ~ main
 {
     font-family: sans-serif;
 }
 
-#size-small:checked ~ main .main-article
+.size-small:checked ~ main .main-article
 {
     font-size: 14px;
 }
 
-#size-large:checked ~ main .main-article
+.size-large:checked ~ main .main-article
 {
     font-size: 22px;
 }
