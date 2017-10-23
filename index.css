@@ -1,19 +1,19 @@
 @font-face
 {
     font-family: 'Yanone Kaffeesatz';
-    src: url('./src/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
+    src: url('./src/fonts/YanoneKaffeesatz-Regular.woff') format('woff');
 }
 
 @font-face
 {
     font-family: 'Bad Script';
-    src: url('./src/fonts/BadScript-Regular.ttf') format('truetype');
+    src: url('./src/fonts/BadScript-Regular.woff') format('woff');
 }
 
 @font-face
 {
     font-family: 'Lobster';
-    src: url('./src/fonts/Lobster-Regular.ttf') format('truetype');
+    src: url('./src/fonts/Lobster.woff') format('woff');
 }
 
 html
@@ -62,14 +62,14 @@ main article .columned:first-letter
 
 .image img
 {
-    display: block;
+    display: inline-block;
     width: 100%;
     margin: 0 auto;
 }
 
 .image figcaption
 {
-    text-align: center;
+    display: inline-block;
 }
 
 .columned
@@ -126,6 +126,7 @@ header:after
 figure
 {
     margin-top: 5px;
+    text-align: center;
 }
 
 q
