@@ -76,19 +76,23 @@
     display: inline-block;
     width: 20%;
     text-align: center;
+    vertical-align: middle;
 }
 
 .newspaper-number
 {
+    width: 18%;
     text-align: left;
+    margin-left: 2%;
 }
 
 .price
 {
+    width: 18%;
     text-align: right;
 }
 
-.header-newspaper
+.article-title
 {
     font-family: 'Times New Roman', serif;
     text-align: center;
@@ -97,7 +101,7 @@
     font-variant: small-caps;
 }
 
-article > p:first-letter
+span
 {
     font-size: 2em;
     color: #f00;
@@ -131,19 +135,21 @@ article
     width: 100%;
 }
 
-main > div
+.first-colum,
+.gagarin-face,
+.third-colum
 {
     display: inline-block;
     width: 33%;
     vertical-align: top;
 }
 
-main > div:first-child
+.first-colum
 {
     border-right: 1px solid #000;
 }
 
-main > div:last-child
+.third-colum
 {
     border-left: 1px solid #000;
 }
