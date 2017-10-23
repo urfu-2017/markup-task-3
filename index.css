@@ -1,0 +1,320 @@
+html,
+body
+{
+    height: 100%
+}
+
+.layout
+{
+    width: 1500px;
+    margin: auto
+}
+
+main
+{
+    width: 100%;
+    padding: 30px;
+    background: #fbf9f4;
+    box-shadow: 0 0 20px #ccc;
+    margin: 30px 0
+}
+
+.main-header
+{
+    text-align: center
+}
+
+.nameplate
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0
+}
+
+.tagline
+{
+    font-size: 20px;
+    padding: 15px 0;
+    border: 2px solid;
+    width: 15%
+}
+
+.logo
+{
+    width: 70%;
+    font-family: "Old English Text MT", serif;
+    font-size: 90px
+}
+
+.logo a
+{
+    color: #000;
+    text-decoration: none
+}
+
+.weather
+{
+    text-align: justify;
+    font-size: 14px;
+    width: 15%
+}
+
+.weather h5
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin: 0
+}
+
+.weather p
+{
+    margin: 0
+}
+
+.folio
+{
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    font-style: oblique;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 3px 0;
+    word-spacing: -1px
+}
+
+.folio > span
+{
+    display: inline-block;
+    width: 33.1%
+}
+
+.folio-volume
+{
+    text-align: left;
+    display: flex;
+    justify-content: space-between
+}
+
+.folio-volume > span
+{
+    display: inline-block;
+    width: 49%
+}
+
+.folio-copy
+{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400
+}
+
+.folio-price
+{
+    text-align: right
+}
+
+.article-header
+{
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto
+}
+
+.article-header h2
+{
+    margin: 0;
+    font-size: 130px;
+    word-spacing: 25px
+}
+
+.article-author
+{
+    text-align: center;
+}
+
+.article-author span:last-child
+{
+    font-size: 70%;
+}
+
+.underlined, .underlined
+{
+    position: relative
+}
+
+.underlined:after,
+.overlined:before
+{
+    content: "";
+    background: #000;
+    position: absolute;
+    left: 20%;
+    height: 2px;
+    width: 60%
+}
+
+.underlined:after
+{
+    bottom: 0
+}
+
+.overlined:before
+{
+    top: 0;
+}
+
+.article-header h3
+{
+    font-style: oblique;
+    font-size: 90px;
+    margin: 0;
+    padding: 0 20px
+}
+
+.double-header h1,
+.double-header h2,
+.double-header h3,
+.double-header h4,
+.double-header h5,
+.double-header h6
+{
+    margin: 0
+}
+
+.double-header :first-child
+{
+    text-align: left
+}
+
+.double-header :last-child
+{
+    text-align: right
+}
+
+.main-article
+{
+    font-size: 18px;
+    text-align: justify
+}
+
+.main-article p
+{
+    margin: 0;
+    text-indent: 3em
+}
+
+.main-article figcaption
+{
+    text-align: justify;
+    text-align-last: center;
+    font-weight: 700
+}
+
+.main-article img
+{
+    width: 100%
+}
+
+.main-article h6
+{
+    text-align: center;
+    margin: 0;
+    font-size: inherit
+}
+
+.left-block
+{
+    float: left;
+    margin-right: 10px;
+    width: 30%
+}
+
+.left-block .article-text
+{
+    border-right: solid 1px;
+    padding-right: 20px
+}
+
+.right-block
+{
+    float: left;
+    padding: 0 10px;
+    width: 67%;
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-gap: 25px
+}
+
+.spanned
+{
+    -webkit-column-span: all;
+    display: block;
+    column-span: all;
+    width: 45%
+}
+
+.subarticle-header
+{
+    font-size: 40px;
+    padding: 0 30px;
+    margin-bottom: 15px;
+    quotes: '\2018' '\2019'
+}
+
+.shortline.underlined:after,
+.shortline.overlined:before
+{
+    height: 1px;
+    width: 40%;
+    left: 30%;
+    margin: -8px 0
+}
+
+.subarticle-more
+{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px
+}
+
+.main-footer
+{
+    clear: both
+}
+
+#bw-checkbox:checked ~ main,
+#bw-checkbox:checked ~ main a,
+#bw-checkbox:checked ~ main a
+{
+    background-color: #444;
+    color: #fff
+}
+
+#bw-checkbox:checked ~ main .underlined:after,
+#bw-checkbox:checked ~ main .overlined:before
+{
+    background: #fff
+}
+
+#font-checkbox:checked ~ main
+{
+    font-family: sans-serif;
+}
+
+#size-small:checked ~ main .main-article
+{
+    font-size: 14px;
+}
+
+#size-large:checked ~ main .main-article
+{
+    font-size: 22px;
+}
