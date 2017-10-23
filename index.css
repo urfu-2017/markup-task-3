@@ -41,7 +41,7 @@ body
     margin: 0;
 }
 
-.wrapper
+.wrapper-sibling
 {
     background: #fff url('img/background/paper.png') repeat;
 }
@@ -51,7 +51,7 @@ input
     display: none;
 }
 
-input[value='dark']:checked ~ .wrapper
+input[value='dark']:checked ~ .wrapper-sibling
 {
     background-color: #000;
 }
@@ -76,7 +76,7 @@ header .underhead
     vertical-align: top;
 }
 
-input[value='dark']:checked ~ .wrapper header .underhead
+input[value='dark']:checked ~ .wrapper-sibling header .underhead
 {
     border-color: #bbb;
 }
@@ -116,6 +116,11 @@ section:first-child
     border-right: 1px solid #000;
 }
 
+input[value='dark']:checked ~ .wrapper-sibling section:first-child
+{
+    border-right: 1px solid #fff;
+}
+
 section h2
 {
     display: none;
@@ -138,6 +143,11 @@ article
     padding: 10px;
 }
 
+input[value='dark']:checked ~ .wrapper-sibling article
+{
+    column-rule: 1px solid #fff;
+}
+
 .main-article article 
 {
     column-count: 3;
@@ -149,7 +159,7 @@ article,
     font-family: open_sans_condensed;
 }
 
-.wrapper
+.wrapper-sibling
 {
     font-size: 20px;
 }
@@ -180,7 +190,7 @@ p:first-of-type::first-letter
     color: #444;
 }
 
-input[value='dark']:checked ~ .wrapper p:first-of-type::first-letter
+input[value='dark']:checked ~ .wrapper-sibling p:first-of-type::first-letter
 {
     color: #bbb;
 }
@@ -197,17 +207,12 @@ article .image
     width: inherit;
 }
 
-footer
-{
-    background-color: rgba(50, 50, 50, .7);
-}
-
-input[value='dark']:checked ~ .wrapper
+input[value='dark']:checked ~ .wrapper-sibling
 {
     color: #fff;
 }
 
-input[value='light']:checked ~ .wrapper
+input[value='light']:checked ~ .wrapper-sibling
 {
     color: #000;
 }
@@ -220,14 +225,14 @@ label[for]
     color: #000;
 }
 
-input[value='light']:checked ~ .wrapper label[for='light-theme'],
-input[value='dark']:checked ~ .wrapper label[for='dark-theme'],
-input[value='small']:checked ~ .wrapper label[for='small-font-size'],
-input[value='normal']:checked ~ .wrapper label[for='normal-font-size'],
-input[value='big']:checked ~ .wrapper label[for='big-font-size'],
-input[value='serif']:checked ~ .wrapper label[for='serif-font'],
-input[value='sans-serif']:checked ~ .wrapper label[for='sans-serif-font'],
-input[value='mono']:checked ~ .wrapper label[for='mono-font']
+input[value='light']:checked ~ .wrapper-sibling label[for='light-theme'],
+input[value='dark']:checked ~ .wrapper-sibling label[for='dark-theme'],
+input[value='small']:checked ~ .wrapper-sibling label[for='small-font-size'],
+input[value='normal']:checked ~ .wrapper-sibling label[for='normal-font-size'],
+input[value='big']:checked ~ .wrapper-sibling label[for='big-font-size'],
+input[value='serif']:checked ~ .wrapper-sibling label[for='serif-font'],
+input[value|='sans']:checked ~ .wrapper-sibling label[for|='sans'],
+input[value='mono']:checked ~ .wrapper-sibling label[for='mono-font']
 {
     background-color: #666;
     color: #fff;
@@ -249,65 +254,65 @@ input[value='mono']:checked ~ .wrapper label[for='mono-font']
 }
 
 .control label[for='small-font-size'],
-input[value='small']:checked ~ .wrapper
+input[value='small']:checked ~ .wrapper-sibling
 {
     font-size: 15px;
 }
 
 .control label[for='big-font-size'],
-input[value='big']:checked ~ .wrapper
+input[value='big']:checked ~ .wrapper-sibling
 {
     font-size: 30px;
 }
 
 .control label[for='normal-font-size'],
-input[value='normal']:checked ~ .wrapper
+input[value='normal']:checked ~ .wrapper-sibling
 {
     font-size: 20px;
 }
 
-input[value='big']:checked ~ .wrapper .small-articles
+input[value='big']:checked ~ .wrapper-sibling .small-articles
 {
     width: 45%;
 }
 
-input[value='big']:checked ~ .wrapper .main-article
+input[value='big']:checked ~ .wrapper-sibling .main-article
 {
     width: 55%;
 }
 
-input[value='small']:checked ~ .wrapper .small-articles
+input[value='small']:checked ~ .wrapper-sibling .small-articles
 {
     width: 20%;
 }
 
-input[value='small']:checked ~ .wrapper .main-article
+input[value='small']:checked ~ .wrapper-sibling .main-article
 {
     width: 80%;
 }
 
 .control label[for='serif-font'],
-input[value='serif']:checked ~ .wrapper article,
-input[value='serif']:checked ~ .wrapper article h3
+input[value='serif']:checked ~ .wrapper-sibling article,
+input[value='serif']:checked ~ .wrapper-sibling article h3
 {
     font-family: 'Times New Roman', Times, serif;
 }
 
 .control label[for='sans-serif-font'],
-input[value='sans-serif']:checked ~ .wrapper article
+input[value='sans-serif']:checked ~ .wrapper-sibling article
 {
     font-family: 'open_sans_condensed' sans-serif;
 }
 
 .control label[for='mono-font'],
-input[value='mono']:checked ~ .wrapper article,
-input[value='mono']:checked ~ .wrapper article h3
+input[value='mono']:checked ~ .wrapper-sibling article,
+input[value='mono']:checked ~ .wrapper-sibling article h3
 {
     font-family: Courier New, Courier, monospace;
 }
 
-input[value='mono']:checked ~ .wrapper article h3,
-input[value='serif']:checked ~ .wrapper article h3
+input[value='mono']:checked ~ .wrapper-sibling article h3,
+input[value='serif']:checked ~ .wrapper-sibling article h3
 {
     font-weight: bold;
 }
