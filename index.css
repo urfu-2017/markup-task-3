@@ -1,0 +1,85 @@
+.main 
+{
+    background-color: hsl(53, 70%, 88%);
+    column-count: 5;
+    column-rule: 3px outset #000;
+}
+
+header
+{
+    column-span: all;
+    text-align: center;
+    font-size: 450%;
+}
+
+.news1
+{
+    font-family: turandot, Lucida Grande, monospace;
+    font-size: 140%;
+}
+
+.news2
+{
+    font-family: valentina, Lucida Grande, monospace;
+    font-size: 110%;
+}
+
+.news3
+{
+    font-family: allegroScript, Lucida Grande, monospace;
+    font-size: 160%;
+}
+
+.news4
+{
+    font-family: violett, Lucida Grande, monospace;
+    font-size: 140%;
+}
+
+.news5
+{
+    font-family: red_banner, Lucida Grande, monospace;
+    font-size: 90%;
+}
+
+.news6
+{
+    font-family: campus, Lucida Grande, monospace;
+    font-size: 120%;
+}
+
+@font-face
+{
+    font-family: turandot;
+    src: url(Turandot.ttf);
+}
+
+@font-face
+{
+    font-family: valentina;
+    src: url(Valentina.ttf);
+}
+
+@font-face
+{
+    font-family: allegroScript;
+    src: url(AllegroScript.otf);
+}
+
+@font-face
+{
+    font-family: violett;
+    src: url(Violet.ttf);
+}
+
+@font-face
+{
+    font-family: red_banner;
+    src: url(red_banner.ttf);
+}
+
+@font-face
+{
+    font-family: campus;
+    src: url(a_Campus.ttf) format ('truetype');
+}
