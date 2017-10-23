@@ -3,28 +3,22 @@
 @font-face
 {
     font-family: 'Annabelle';
-    src: url(annabelle.ttf);
+    src: url(Annabelle.woff);
 }
 
 @font-face
 {
     font-family: 'StudioScriptCTT';
-    src: url(studioscriptctt.ttf);
+    src: url(StudioScriptCTT.woff);
 }
 
 @font-face
 {
     font-family: 'Journal Cyrillic';
-    src: url(journal-cyrillic.ttf);
+    src: url(JournalCyrillic.woff);
 }
 
-header
-{
-    border-bottom: 1px dotted #000;
-    text-align: center;
-}
-
-main
+.newspaper
 {
     background: rgba(220, 212, 193, .86);
     column-count: 2;
@@ -32,7 +26,13 @@ main
     text-align: justify;
 }
 
-h1
+.newspaper-header
+{
+    border-bottom: 1px dotted #000;
+    text-align: center;
+}
+
+.newspaper-title
 {
     font-family: 'Annabelle', fantasy;
 
@@ -57,7 +57,23 @@ p,
     text-shadow: 2px 2px 2px #aaa;
 }
 
-p:first-of-type,
+.vertical-text
+{
+    float: left;
+    margin-left: .7em;
+}
+
+.vertical-word
+{
+    display: block;
+    width: .5em;
+    padding-bottom: .5em;
+    font-size: .85em;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.first-paragraph,
 .date
 {
     font-family: 'StudioScriptCTT', cursive;
@@ -67,7 +83,7 @@ p:first-of-type,
     text-align: center;
 }
 
-p:nth-child(3)::first-letter
+.paragraph-with-capital-letter::first-letter
 {
     font-family: 'StudioScriptCTT', cursive;
 
@@ -75,18 +91,18 @@ p:nth-child(3)::first-letter
     text-shadow: 1px 1px 1px #aaa;
 }
 
-article:nth-of-type(2),
-article:last-child
+.power-of-thought,
+.lies
 {
     column-count: 3;
 }
 
-article:first-child
+.about-space
 {
     display: inline-block;
 }
 
-.power_of_thought
+.power-of-thought
 {
     break-before: column;
 }
@@ -97,42 +113,34 @@ img
     margin: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10%;
+    border-radius: 50px;
 }
 
-header,
+.newspaper-header,
 .image-to-span-column,
-article:last-child > h2
+.lies-header
 {
     column-span: all;
 }
 
-.set-dark:checked ~ main
+.set-dark:checked ~ .newspaper
 {
     color: #fff;
     column-rule: 1px solid #fff;
     background: #000;
 }
 
-.big-size:checked ~ main p
+.big-size:checked ~ .newspaper p
 {
     font-size: 1.5em;
 }
 
-.set-italic:checked ~ main p
+.set-italic:checked ~ .newspaper p
 {
     font-style: italic;
 }
 
-.set-bold:checked ~ main p
+.set-bold:checked ~ .newspaper p
 {
     font-weight: bold;
-}
-
-.vertical-text 
-{
-    white-space: pre;
-    float: left;
-    margin-left: -4em;
-    font-size: .7em;
 }
