@@ -1,0 +1,331 @@
+body
+{
+    margin: 0;
+}
+
+main
+{
+    background-image: url(picture/paper.jpg);
+}
+
+.newspaper
+{
+    margin: 3%;
+    margin-bottom: 0;
+    padding-bottom: 7%;
+    column-width: 300px;
+    column-gap: 50px;
+    column-rule: 2px solid black;
+}
+
+h1
+{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: matura mt script capitals, comic sans ms, fantasy, cursive;
+    text-align: center;
+    display: inline-block;
+    width: 95%;
+}
+
+.logo
+{
+    width: 4%;
+    display: inline-block;
+}
+
+.magazine-info
+{
+    border-top: 7px double grey;
+    border-bottom: 7px double grey;
+    font-family: segoe print, cursive, sans-serif;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.magazine-date
+{
+    display: inline-block;
+    text-align: right;
+    width: 70%;
+    font-weight: 600;
+}
+
+.magazine-number
+{
+    display: inline-block;
+    text-align: right;
+    width: 29%;
+    font-weight: 600;
+}
+
+.top-border
+{
+    border-top: 5px solid black;
+    padding-top: 40px;
+}
+
+h2
+{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: segoe print, cursive, sans-serif;
+}
+
+.article-text
+{
+    font-size: 1rem;
+    font-family: Arial, serif;
+    /* переносы слов, если возможно */
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+figure
+{
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 -10px 20px -10px;
+    width: 100%;
+    background: #f0f0f0;
+    /*!* запрещаем перенос *!*/
+    display: inline-block;
+}
+
+figcaption
+{
+    text-align: center;
+    font-size: 1rem;
+}
+
+table.linux-comparison
+{
+    border-collapse: collapse;
+    border: 2px solid;
+    text-align: center;
+    /*!* запрещаем перенос *!*/
+    display: inline-block;
+}
+
+div.center
+{
+    text-align: center;
+}
+
+th
+{
+    text-align: left;
+    background: #ccc;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td
+{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+ol
+{
+    padding: 0;
+    margin-left: 20px;
+}
+
+.tag-similarity
+{
+    margin-left: 20px;
+}
+
+h3
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: segoe print, cursive, sans-serif;
+}
+
+p:first-child:first-letter
+{
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.struck-through
+{
+    text-decoration: line-through;
+}
+
+.fatty
+{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+cite
+{
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.glued-column
+{
+    column-span: all;
+}
+
+.figure-no-full
+{
+    width: 90%;
+    display: inline-block;
+}
+
+.vertical-text
+{
+    /* Моноширинный вертикальный текст */
+    width: 1ch;
+    word-wrap: break-word;
+    /* стили */
+    font-family: segoe print, cursive, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* рамзер */
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* РАЗМЕР МЕНЬШЕ */
+
+input[value='small']:checked ~ main .article-text
+{
+    font-size: .7rem;
+}
+
+input[value='small']:checked ~ main .magazine-info :nth-child(n)
+{
+    font-size: .7rem;
+}
+
+input[value='small']:checked ~ main h1:nth-child(n) /*повысили специфичность*/
+{
+    font-size: 1.75rem;
+}
+
+input[value='small']:checked ~ main h2:nth-child(n) /*повысили специфичность*/
+{
+    font-size: 1.4rem;
+}
+
+input[value='small']:checked ~ main figcaption:nth-child(n)
+    /* повысили специфичность */
+{
+    font-size: .7rem;
+}
+
+input[value='small']:checked ~ main h3:nth-child(n) /*повысили специфичность*/
+{
+    font-size: 1.05rem;
+}
+
+input[value='small']:checked ~ main .fatty
+{
+    font-size: 1.05rem;
+}
+
+input[value='small']:checked ~ main article p:first-child::first-letter
+{
+    font-size: 1.75rem;
+}
+
+/* РАЗМЕР БОЛЬШЕ */
+
+input[value='big']:checked ~ main .article-text
+{
+    font-size: 1.3rem;
+}
+
+input[value='big']:checked ~ main .magazine-info :nth-child(n)
+{
+    font-size: 1.3rem;
+}
+
+input[value='big']:checked ~ main h1:nth-child(n) /*повысили специфичность*/
+{
+    font-size: 3.25rem;
+}
+
+input[value='big']:checked ~ main h2:nth-child(n) /*повысили специфичность*/
+{
+    font-size: 2.6rem;
+}
+
+input[value='big']:checked ~ main figcaption:nth-child(n)
+    /*повысили специфичность*/
+{
+    font-size: 1.3rem;
+}
+
+input[value='big']:checked ~ main h3:nth-child(n) /*повысили специфичность*/
+{
+    font-size: 1.95rem;
+}
+
+input[value='big']:checked ~ main .fatty
+{
+    font-size: 1.95rem;
+}
+
+input[value='big']:checked ~ main article p:first-child::first-letter
+{
+    font-size: 3.25rem;
+}
+
+/* ШРИФТ ARIAL */
+
+input[value='arial']:checked ~ main :nth-child(n) /*повысили специфичность*/
+{
+    font-family: Arial, sans-serif;
+}
+
+input[value='arial']:checked ~ main article p:first-child::first-letter
+{
+    font-family: Arial, sans-serif;
+}
+
+/* Times New Roman */
+
+input[value='times']:checked ~ main :nth-child(n) /*повысили специфичность*/
+{
+    font-family: 'Times New Roman', serif;
+}
+
+input[value='times']:checked ~ main article p:first-child::first-letter
+{
+    font-family: 'Times New Roman', serif;
+}
+
+input[value='white']:checked ~ main
+{
+    background-image: url(picture/paper-wb.jpg);
+    color: white;
+}
+
+input[value='white']:checked ~ main figure
+{
+    background: black;
+}
+
