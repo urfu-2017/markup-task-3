@@ -165,6 +165,13 @@ figure img
     width: 100%;
 }
 
+figcaption
+{
+    font-family: Monotype Corsiva, cursive;
+    text-align: center;
+    font-size: small;
+}
+
 .column-span-img
 {
     -webkit-column-span: all;
