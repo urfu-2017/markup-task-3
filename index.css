@@ -1,0 +1,75 @@
+.check_type {
+    text-align: right;
+}
+
+.main {
+    column-count: 3;
+}
+
+html {
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: #000;
+    color: greenyellow;
+}
+
+.top {
+    column-count: 2;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 7px 7px 7px #f94;
+}
+
+input[id='dark']:checked ~ main {
+    background-image: url("images/dark.jpg");
+    color: whitesmoke;
+}
+
+input[id='light']:checked ~ main {
+    background-image: url("images/light.jpg");
+    color: #000
+}
+
+.displayed {
+    text-align: center;
+}
+
+img {
+    border: 4px solid darkblue;
+}
+
+input[id='small']:checked ~ main {
+    font-size: 75%;
+}
+
+input[id='large']:checked ~ main {
+    font-size: 120%;
+}
+
+input[id='large']:checked > h2 {
+    color: greenyellow;
+}
+
+input[id='e-large']:checked ~ main {
+    font-size: 150%;
+}
+
+input[id='bold']:checked ~ main {
+    font-family: 'Ruslan Display', cursive;
+}
+
+input[id='hand']:checked ~ main {
+    font-family: 'Marck Script', cursive;
+}
+
+p:first-letter,
+h4:first-letter {
+    margin: 0 0 0 2rem;
+    font-size: 1.5rem;
+    color: orangered;
+}
+
+h2 {
+    color: darkred;
+}
