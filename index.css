@@ -22,12 +22,12 @@ h1 {
 }
 
 input[id='dark']:checked ~ main {
-    background-image: url("images/dark.jpg");
+    background-image: url("dark.jpg");
     color: whitesmoke;
 }
 
 input[id='light']:checked ~ main {
-    background-image: url("images/light.jpg");
+    background-image: url("light.jpg");
     color: #000
 }
 
