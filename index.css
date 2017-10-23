@@ -1,0 +1,144 @@
+@font-face
+{
+    font-family: Fira Code;
+    src: url(./FiraCode-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: Deutch;
+    src: url(./deutsch-gothic.ttf);
+}
+
+@font-face
+{
+    font-family: Helvetica;
+    src: url(./HelveticaRegular.ttf);
+}
+
+input[id='big']:checked ~ main
+{
+    font-size: 30px;
+}
+
+input[id='small']:checked ~ main
+{
+    font-size: 12px;
+}
+
+input[id='sans-serif']:checked ~ main
+{
+    font-family: Helvetica, sans-serif;
+}
+
+input[id='monospaced']:checked ~ main
+{
+    font-family: Fira Code, monospace;
+}
+
+input[id='DM']:checked ~ main
+{
+    background-color: #453622;
+    color: #a89570;
+    border-color: #a89570;
+}
+
+html
+{
+    background-color: #b7b080;
+}
+
+main
+{
+    background-color: #8f7c51;
+    color: #4f301f;
+    font: 17px serif;
+}
+
+.newspaper-header
+{
+    text-align: center;
+    column-span: all;
+    border-bottom: solid;
+    margin-bottom: 10px;
+}
+
+.newspaper-header > h1
+{
+    margin: 0;
+    font: 2em Deutch;
+}
+
+.newspaper-header-date
+{
+    border-top: double;
+    font-size: 10px;
+}
+
+.newspaper-content
+{
+    column-count: 3;
+    column-rule: solid;
+}
+
+.article-header,
+.article-subheader
+{
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    column-span: all;
+    text-align: center;
+}
+
+.article-subheader
+{
+    font-size: 1.25em;
+
+}
+
+.article
+{
+    column-count: 2;
+}
+
+.article-image
+{
+    margin: 5px 0;
+    column-span: all;
+    width: 100%;
+
+}
+
+.article-image img
+{
+    width: 100%;
+}
+
+.article-image figcaption
+{
+    font-size: .85em;
+    font-style: italic;
+    text-align: center;
+}
+
+.article-paragraph
+{
+    margin: 0;
+}
+
+.article-paragraph::first-letter
+{
+    font-size: 2em;
+    font-style: italic;
+}
+
+q
+{
+    margin: 10px 5px;
+}
+
+.vertical
+{
+    word-break: break-all;
+    width: 2px;
+}

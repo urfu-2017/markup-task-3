@@ -2,8 +2,140 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Elon Musk news</title>
 </head>
 <body>
+<input type="radio" id="big" name="size"><label for="big">Big</label>
+<input type="radio" id="normal" name="size" checked><label for="normal">Normal</label>
+<input type="radio" id="small" name="size"><label for="small">Small</label><br>
+<input type="radio" id="sans-serif" name="font" checked><label for="sans-serif">Sans-serif</label>
+<input type="radio" id="monospaced" name="font"><label for="monospaced">Monospaced</label><br>
+<input type="checkbox" id="DM" name="dark"><label for="DM">Enable Dark Mode</label>
+
+<main>
+    <section class="newspaper">
+        <div class="newspaper-header">
+            <h1>Пара слов о Илоне Маске</h1>
+            <h2 class="newspaper-header-date">A long time ago in a galaxy far, far away...</h2>
+        </div>
+        <div class="newspaper-content">
+            <article class="article">
+                <h3 class="article-header">Но&shy;вые идеи от SpaceX</h3>
+                <figure class="article-image">
+                    <img src="Elon_Musk_on_ISC.jpg"
+                         alt="Илон Маск на Международном космическом конгрессе">
+                    <figcaption>Илон Маск на Международном космическом конгрессе</figcaption>
+                </figure>
+                <p class="article-paragraph">
+                    Ос&shy;но&shy;ва&shy;тель SpaceX Илон Маск 29 сен&shy;тяб&shy;ря пред&shy;ста&shy;вил
+                    на Меж&shy;ду&shy;на&shy;род&shy;ном кос&shy;ми&shy;че&shy;ском кон&shy;грес&shy;се
+                    в Ав&shy;стра&shy;лии стра&shy;те&shy;гию раз&shy;ви&shy;тия ком&shy;па&shy;нии
+                    — и од&shy;но&shy;вре&shy;мен&shy;но свое ви&shy;де&shy;ние бу&shy;ду&shy;ще&shy;го
+                    кос&shy;ми&shy;че&shy;ской ин&shy;ду&shy;стрии в це&shy;лом. Маск по-преж&shy;не&shy;му
+                    меч&shy;та&shy;ет о Мар&shy;се и го&shy;тов на&shy;пра&shy;вить все уси&shy;лия
+                    для ко&shy;ло&shy;ни&shy;за&shy;ции этой пла&shy;не&shy;ты — но, по&shy;ми&shy;мо
+                    это&shy;го, он обе&shy;ща&shy;ет раз&shy;ра&shy;бо&shy;тать но&shy;вый вид
+                    де&shy;ше&shy;во&shy;го транс&shy;пор&shy;та, ко&shy;то&shy;рый смо&shy;жет
+                    пре&shy;одо&shy;ле&shy;вать рас&shy;сто&shy;я&shy;ние от Нью-Йор&shy;ка до
+                    Лон&shy;до&shy;на за пол&shy;ча&shy;са.</p>
+                <h4 class="article-subheader">
+                    Но&shy;вая ра&shy;ке&shy;та
+                </h4>
+                <p class="article-paragraph">
+                    Глав&shy;ное объ&shy;яв&shy;ле&shy;ние Ило&shy;на Мас&shy;ка
+                    — это но&shy;вая ра&shy;ке&shy;та под на&shy;зва&shy;ни&shy;ем BFR, Big
+                    <span class="strike">Fucking</span> Falcon Rocket. BFR ста&shy;нет тре&shy;тьей
+                    ра&shy;ке&shy;той SpaceX — в до&shy;пол&shy;не&shy;ние к уже успеш&shy;но
+                    ра&shy;бо&shy;та&shy;ю&shy;щей Falcon 9 и но&shy;вой Falcon Heavy, ко&shy;то&shy;рая
+                    в кос&shy;мос по&shy;ка ни ра&shy;зу не ле&shy;та&shy;ла.
+                </p>
+                <h3 class="article-subheader">
+                    Но&shy;вый транс&shy;порт
+                </h3>
+                <p class="article-paragraph">
+                    В на&shy;ча&shy;ле сво&shy;е&shy;го вы&shy;ступ&shy;ле&shy;ния Маск ска&shy;зал,
+                    что на&shy;шел ре&shy;ше&shy;ние клю&shy;че&shy;вой про&shy;бле&shy;мы
+                    мар&shy;си&shy;ан&shy;ской
+                    про&shy;грам&shy;мы — ис&shy;точ&shy;ник фи&shy;нан&shy;си&shy;ро&shy;ва&shy;ния.
+                    Еще год на&shy;зад он го&shy;во&shy;рил, что по&shy;ня&shy;тия не име&shy;ет,
+                    от&shy;ку&shy;да взять день&shy;ги, и шу&shy;тил, что пла&shy;ни&shy;ру&shy;ет
+                    во&shy;ро&shy;вать каль&shy;со&shy;ны. Его но&shy;вая ра&shy;ке&shy;та бу&shy;дет
+                    до&shy;ста&shy;точ&shy;но до&shy;ро&shy;гой в про&shy;из&shy;вод&shy;стве
+                    (по&shy;ка не&shy;яс&shy;но, сколь&shy;ко имен&shy;но сто&shy;ит BFR), но
+                    быст&shy;ро оку&shy;пит&shy;ся за счет мно&shy;го&shy;крат&shy;но&shy;го и
+                    мно&shy;го&shy;це&shy;ле&shy;во&shy;го ис&shy;поль&shy;зо&shy;ва&shy;ния.
+                    BFR мо&shy;жет вы&shy;во&shy;дить в кос&shy;мос спут&shy;ни&shy;ки и ле&shy;тать
+                    к Мар&shy;су; ра&shy;ке&shy;та так&shy;же мо&shy;жет ис&shy;поль&shy;зо&shy;вать&shy;ся
+                    как ста&shy;ци&shy;о&shy;нар&shy;ная лун&shy;ная ба&shy;за — но са&shy;мое
+                    глав&shy;ное, что но&shy;вая ра&shy;ке&shy;та бу&shy;дет прин&shy;ци&shy;пи&shy;аль&shy;но
+                    но&shy;вым сред&shy;ством пе&shy;ре&shy;дви&shy;же&shy;ния по Зем&shy;ле.
+                </p>
+                <p class="article-paragraph">
+                    Маск пред&shy;ла&shy;га&shy;ет ис&shy;поль&shy;зо&shy;вать BFR как
+                    бал&shy;ли&shy;сти&shy;че&shy;ское
+                    транс&shy;порт&shy;ное сред&shy;ство, спо&shy;соб&shy;ное за пол&shy;ча&shy;са
+                    до&shy;ле&shy;теть из Нью-Йор&shy;ка в Лон&shy;дон и за 40 ми&shy;нут — в
+                    Шан&shy;хай. Лю&shy;бое пу&shy;те&shy;ше&shy;ствие в лю&shy;бую точ&shy;ку
+                    Зем&shy;ли зай&shy;мет не бо&shy;лее ча&shy;са, утвер&shy;жда&shy;ет
+                    ос&shy;но&shy;ва&shy;тель
+                    SpaceX, а би&shy;лет бу&shy;дет сто&shy;ить столь&shy;ко же, сколь&shy;ко
+                    сей&shy;час об&shy;хо&shy;дит&shy;ся по&shy;лет на обыч&shy;ном са&shy;мо&shy;ле&shy;те
+                    в эко&shy;ном-клас&shy;се. Его идея вы&shy;гля&shy;дит пря&shy;ми&shy;ком
+                    по&shy;за&shy;им&shy;ство&shy;ван&shy;ной
+                    из рас&shy;ска&shy;за Фи&shy;ли&shy;па Ди&shy;ка «Че&shy;ло&shy;век в вы&shy;со&shy;ком
+                    зам&shy;ке», где рас&shy;про&shy;стра&shy;нен меж&shy;кон&shy;ти&shy;нен&shy;таль&shy;ный
+                    ра&shy;кет&shy;ный транс&shy;порт.
+                </p>
+                <p class="article-paragraph">
+                    Маск не пред&shy;ста&shy;вил ни&shy;ка&shy;ких тех&shy;ни&shy;че&shy;ских
+                    де&shy;та&shy;лей
+                    по&shy;доб&shy;ных пу&shy;те&shy;ше&shy;ствий и не рас&shy;ска&shy;зал, в ка&shy;ком
+                    го&shy;ду пла&shy;ни&shy;ру&shy;ет за&shy;пу&shy;стить ра&shy;кет&shy;ный
+                    транс&shy;порт. Не объ&shy;яс&shy;нил он и на&shy;сколь&shy;ко тя&shy;же&shy;лы&shy;ми
+                    для не&shy;под&shy;го&shy;тов&shy;лен&shy;но&shy;го че&shy;ло&shy;ве&shy;ка
+                    ока&shy;жут&shy;ся пе&shy;ре&shy;груз&shy;ки при по&shy;ле&shy;те.
+                </p>
+            </article>
+            <article class="article">
+                <h3 class="article-header">Скуч&shy;ные кеп&shy;ки</h3>
+                <p class="article-paragraph">
+                    Ос&shy;но&shy;ва&shy;тель SpaceX и Tesla Илон Маск 18 ок&shy;тяб&shy;ря
+                    дал в сво&shy;ем твит&shy;те&shy;ре ссыл&shy;ку на ма&shy;га&shy;зин
+                    ком&shy;па&shy;нии The Boring Company, ко&shy;то&shy;рую он со&shy;здал для
+                    ры&shy;тья ав&shy;то&shy;мо&shy;биль&shy;ных
+                    тон&shy;не&shy;лей под го&shy;род&shy;ски&shy;ми ули&shy;ца&shy;ми. В ма&shy;га&shy;зине
+                    про&shy;да&shy;ет&shy;ся чер&shy;ная кеп&shy;ка с на&shy;зва&shy;ни&shy;ем
+                    ком&shy;па&shy;нии.
+                </p>
+
+                <q>Са&shy;мая скуч&shy;ная кеп&shy;ка в ми&shy;ре</q>
+                <p class="article-paragraph">
+                    как на&shy;звал ее Маск, сто&shy;ит 20 дол&shy;ла&shy;ров.
+                </p>
+                <p class="article-paragraph">
+                    На сле&shy;ду&shy;ю&shy;щий день биз&shy;нес&shy;мен объ&shy;явил, что про&shy;да&shy;но
+                    уже че&shy;ты&shy;ре ты&shy;ся&shy;чи ке&shy;пок. Пя&shy;ти&shy;ты&shy;сяч&shy;но&shy;му
+                    он по&shy;обе&shy;щал по&shy;да&shy;рок — еще од&shy;ну кеп&shy;ку!
+                    И дей&shy;стви&shy;тель&shy;но по&shy;бе&shy;ди&shy;те&shy;лю вру&shy;чи&shy;ли
+                    вто&shy;рую кеп&shy;ку! <br>
+                    Приз по&shy;лу&shy;чил жи&shy;тель Мис&shy;су&shy;ри Кал&shy;тер Ти&shy;л&shy;тон.
+                    По&shy;да&shy;роч&shy;ную кеп&shy;ку под&shy;пи&shy;са&shy;ли со&shy;труд&shy;ни&shy;ки
+                    The Boring Company.<br>
+                    Чтобы Ти&shy;л&shy;тон не чув&shy;ство&shy;вал се&shy;бя нелов&shy;ко, Маск
+                    по&shy;ка&shy;зал
+                    свое ста&shy;рое фо&shy;то: там он но&shy;сит кеп&shy;ку по&shy;верх
+                    шля&shy;пы.
+                </p>
+                <figure class="article-image">
+                    <img src="hatOnAHat.jpg"
+                         alt="Илон в шляпе и кепке">
+                    <figcaption>Илон на ранчо сестры в Канаде</figcaption>
+                </figure>
+                <div class="vertical">вертикально</div>
+            </article>
+        </div>
+    </section>
+</main>
 </body>
 </html>
