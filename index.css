@@ -1,0 +1,215 @@
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+body {
+  background: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/24.jpg);
+  background-size: 300px;
+  margin: 0;
+  font-family: 'Droid Serif', serif;
+  min-width: 1200px;
+}
+
+body input[id="night-mode"]:checked ~ main,
+body input[id="night-mode"]:checked ~ header {
+  color: white;
+  background: black;
+  border-color: black;
+}
+
+body input[name="font-size"][value="default"]:checked ~ header,
+body input[name="font-size"][value="default"]:checked ~ main {
+  font-size: 1em;
+}
+
+body input[name="font-size"][value="1.1"]:checked ~ header,
+body input[name="font-size"][value="1.1"]:checked ~ main {
+  font-size: 1.1em;
+}
+
+body input[name="font-size"][value="0.9"]:checked ~ header,
+body input[name="font-size"][value="0.9"]:checked ~ main {
+  font-size: .9em;
+}
+
+body input[name="font-family"][value="Droid"]:checked ~ header,
+body input[name="font-family"][value="Droid"]:checked ~ main {
+  font-family: 'Droid Serif', serif;
+}
+
+body input[name="font-family"][value="Roboto"]:checked ~ header,
+body input[name="font-family"][value="Roboto"]:checked ~ main {
+  font-family: 'Roboto', sans-serif;
+}
+
+body input[name="font-family"][value="Fascinate"]:checked ~ header,
+body input[name="font-family"][value="Fascinate"]:checked ~ main {
+  font-family: 'Fascinate Inline', cursive;
+}
+
+body header .header-content {
+  width: 100%;
+  height: 100%;
+  background: url(https://cdn.pixabay.com/photo/2012/04/26/12/38/celtic-42345_960_720.png) no-repeat;
+  background-size: 100px;
+  background-position: 10%;
+  overflow: hidden;
+}
+
+body header .header-content .header-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  text-align: center;
+  margin: 20px 150px;
+}
+
+body header .header-content .header-weather {
+  float: right;
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  border: 5px solid;
+  border-color: inherit;
+  padding: 5px;
+  font-size: .9em;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+body header .header-text-separator {
+  font-family: 'Eczar', serif;
+  width: 100%;
+  height: 25px;
+  border: 5px solid;
+  border-color: inherit;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body .ornament-separator {
+  background: url(http://photoshopia.ru/gallery_bkg/data/786/black_white_ornament_photoshopia_ru_69.png);
+  background-size: 30px;
+  height: 10px;
+  width: 100%;
+}
+
+body main {
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+body main .side-articles, body main .main-article {
+  display: inline-block;
+  font-size: .8em;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+body main .side-articles p, body main .main-article p {
+  columns: 3;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  hyphens: auto;
+}
+
+body main .side-articles {
+  float: left;
+  width: 40%;
+  border-right: none;
+}
+
+body main .main-article {
+  width: 60%;
+}
+
+body main .main-article .articles-group-title {
+  font-size: 1.6em;
+}
+
+body main .main-article .article-title {
+  column-span: all;
+}
+
+body main .main-article .main-article-title {
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 2px solid;
+  border-color: inherit;
+}
+
+body main .main-article .main-article-img {
+  width: 90%;
+  margin: 10px auto;
+  filter: sepia(100%);
+  display: block;
+}
+
+body main .advert {
+  font-family: 'Pacifico', cursive;
+  border: 1px dashed;
+}
+
+body main .quote-of-the-day::before {
+  content: "Quote of the day: ";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+body main .quote-of-the-day {
+  font-size: 1.5em;
+  border: 2px dotted;
+  border-left: none;
+  border-right: none;
+  padding: 5px;
+  font-family: 'Satisfy', cursive;
+}
+
+body main .quote-of-the-day .author {
+  font-family: 'Droid Serif', serif;
+  display: block;
+}
+
+body main .quote-of-the-day .author::before {
+  content: "- ";
+}
+
+body main .article-container {
+  padding: 10px;
+  border-color: inherit;
+}
+
+body main .article-container span {
+  display: block;
+}
+
+body main .article-container .articles-group-title {
+  text-align: center;
+  border: 3px solid;
+  border-left: none;
+  border-right: none;
+  border-color: inherit;
+  letter-spacing: 10px;
+  padding: 10px;
+}
+
+body main .article-container .article-title {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+body main .article-container .article-text::first-letter {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+body .no-margin {
+  margin: 0;
+}
