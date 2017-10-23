@@ -1,10 +1,7 @@
 @font-face
 {
     font-family: 'Typingrad';
-    src: local('Typingrad'),
-        url('fonts/Typingrad.woff2') format('woff2'),
-        url('fonts/Typingrad.woff') format('woff'),
-        url('fonts/Typingrad.ttf') format('ttf');
+    src: local('Typingrad'), url('fonts/Typingrad.woff2') format('woff2'), url('fonts/Typingrad.woff') format('woff'), url('fonts/Typingrad.ttf') format('ttf');
 }
 
 h1,
@@ -66,10 +63,9 @@ div.vertical
     left: 1em;
     top: 11em;
     width: 1em;
-    -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     -moz-writing-mode: vertical-rl;
-    -ms-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     -webkit-text-orientation: upright;
     -moz-text-orientation: upright;
