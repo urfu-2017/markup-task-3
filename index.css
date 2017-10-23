@@ -1,31 +1,50 @@
-.newspaper.name 
+@font-face 
 {
-    color: blue;
-    width: 70%;
-    float: left;
-    height: 150px;
-    background-color: yellow;
+    font-family: 'Mon Amour Two Medium';
+    src: url(mon-amour-two-medium_[allfont.ru].ttf);
 }
 
-aside 
+.settings 
 {
-    background-color: green;
-    width: 30%;
+    float: left;
+    height: 150px;
+    width: 25%;
+}
+
+.newspaper.name
+{
+    width: 50%;
+    float: left;
+    height: 150px;
+}
+
+.newspaper.name p
+{
+    font-family: 'Mon Amour Two Medium';
+    text-align: center;
+    font-size: 60px;
+}
+
+.advertise 
+{
+    width: 25%;
     height: 150px;
     float: left;
+    text-align: center;
 }
 
 .second.header 
 {
     text-align: center;
+    word-spacing: 20em;
+    font-family: 'courier new';
 }
 
-hr 
+.line
 {
-    border: none; /* Убираем границу */
-    background-color: red; /* Цвет линии */
-    color: red; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
+    border: none;
+    background-color: #000;
+    height: 2px;
 }
 
 .first.article 
@@ -35,7 +54,7 @@ hr
     column-count: 3;
     column-rule: 2px solid #000;
     hyphens: auto;
-    border: 4px double black;
+    border: 4px double #000;
     height: 400px;
     overflow-x: hidden;
 }
@@ -53,7 +72,7 @@ hr
     column-width: 150px;
     column-rule: 2px solid #000;
     hyphens: auto;
-    border: 4px double black;
+    border: 4px double #000;
     height: 400px;
     overflow-x: hidden;
 }
@@ -67,4 +86,27 @@ img
 {
     width: 150px;
     height: 150px;
+}
+
+input[id='big']:checked ~ section > article
+{
+    font-size: 20px;
+}
+
+input[id='small']:checked ~ section > article
+{
+    font-size: 10px;
+}
+
+input[id='helvetica']:checked ~ section > article
+{
+    font-family: Helvetica;
+}
+
+input[id='black']:checked ~ article
+{
+    color: white;
+    background-color: black;
+    column-rule: 2px solid #fff;
+    border: 4px double #fff;
 }

@@ -10,23 +10,50 @@
 <body>
 
     <header class="first header">
+        <div class="settings">
+
+        </div>
         <div class="newspaper name">
-            The First-Pilot
+            <p>The First Pilot Issue</p>
         </div>
         <div>
-            <aside class="">реклама</aside>
+            <aside class="advertise">
+                <p>
+                    <img src="http://lno52.ru/r/rekl.jpg" alt="здесь могла быть ваша реклама">
+                </p>
+            </aside>
         </div>
     </header>
     <main>
         <header>
 
             <p class="second header">
-                Екатеринбург, Пондельник, октябрь, 1956 - 17 страниц
+                Екатеринбург Пондельник Октябрь 1956
             </p>
-            <hr>
+            <hr class="line">
 
         </header>
+
+        <p>Размер букв:</p>
+        <input type="radio" name="sizeOfText" id="small">
+        <label for="small">Small</label>
+        <input type="radio" name="sizeOfText" id="normal" checked>
+        <label for="normal">Normal</label>
+        <input type="radio" name="sizeOfText" id="big">
+        <label for="big">Big</label>
+
+        <p>Шрифт:</p>
+        <input type="radio" name="font" id="default" checked>
+        <label for="default">Default</label>
+        <input type="radio" name="font" id="helvetica">
+        <label for="helvetica">Helvetica</label>
+
         <section>
+            <input type="radio" id="white" name="color" checked>
+            <label for="white">White</label>
+            <input type="radio" id="black" name="color">
+            <label for="black">Black</label>
+
             <article class="first article">
                 <h3>Экзистенциальный марксизм в XXI веке</h3>
                 <p>
@@ -81,6 +108,7 @@
                     Вспомним Солженицына, Бродского, Ростроповича, Сахарова…
                 </p>
             </article>
+
         </section>
     </main>
 </body>
