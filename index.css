@@ -1,0 +1,196 @@
+@font-face
+{
+    font-family: Anglican;
+    src: url('fonts/AnglicanText.ttf');
+}
+
+@font-face
+{
+    font-family: BLK;
+    src: url('fonts/BLKCHCRY.TTF');
+}
+
+html body
+{
+    margin: 0;
+    padding: 0;
+}
+
+header main
+{
+    width: 100%;
+}
+
+h2
+{
+    column-span: all;
+    width: 100%;
+    text-align: center;
+}
+
+.header-black-line
+{
+    height: 30px;
+    background: black;
+    width: 100%;
+    clear: left;
+}
+
+.header-content
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.header-content > div:first-child,
+.header-content > div:last-child
+{
+    font-size: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 300px;
+    height: 80px;
+}
+
+.header-content > div:last-child:first-line
+{
+    font-weight: bold;
+}
+
+.header-content > div:last-child
+{
+    border: none;
+}
+
+.header-text-name
+{
+    font-family: Anglican;
+    font-size: 6em;
+}
+
+.header-info
+{
+    border: 2px solid black;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.header-info > div:nth-child(2)
+{
+    font-family: BLK;
+}
+
+.main-content > div
+{
+    float: left;
+    padding: 0 5px;
+}
+
+.column > p:first-letter
+{
+    font-family: BLK;
+}
+
+.column > p
+{
+    word-break: break-all;
+}
+
+.column > h2 + p
+{
+    margin-top: 0;
+}
+
+.left-column
+{
+    width: 40%;
+    column-count: 2;
+}
+
+.middle-column
+{
+    width: 40%;
+    column-count: 2;
+    height: 100%;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+.two-col-image
+{
+    column-span: all;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.two-col-image > img
+{
+    width: 95%;
+}
+
+.right-column
+{
+    width: 15%;
+    column-count: 1;
+}
+
+/* Controls */
+
+main > input[type='checkbox']
+{
+    display: none;
+}
+
+main > label
+{
+    cursor: pointer;
+    width: 33%;
+    font-size: 20px;
+    text-align: center;
+    border-right: 1px solid black;
+    float: left;
+    display: block;
+}
+
+main > label:hover
+{
+    color: white;
+    background: black;
+}
+
+main > label:nth-child(6)
+{
+    border: none;
+}
+
+.color-checkbox:checked ~ section > div,
+.color-checkbox:checked ~ header
+{
+    color: white;
+    background: black;
+}
+
+.color-checkbox:checked ~ header > div,
+.color-checkbox:checked ~ section > div
+{
+    border-color: white;
+}
+
+.font-checkbox:checked ~ section > div,
+.font-checkbox:checked ~ header
+{
+    font-family: sans-serif;
+}
+
+.size-checkbox:checked ~ section > div,
+.size-checkbox:checked ~ header
+{
+    font-size: large;
+}
