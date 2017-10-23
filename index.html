@@ -1,9 +1,317 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <input type="radio" name="theme" value="light" id="light-theme" checked>
+    <input type="radio" name="theme" value="dark" id="dark-theme">
+    <input type="radio" name="font-size" value="small" id="small-font-size">
+    <input type="radio" name="font-size" value="normal" id="normal-font-size" checked>
+    <input type="radio" name="font-size" value="big" id="big-font-size">
+    <input type="radio" name="font-family" value="serif" id="serif-font">
+    <input type="radio" name="font-family" value="sans-serif" id="sans-serif-font" checked>
+    <input type="radio" name="font-family" value="mono" id="mono-font">
+    <div class="styling-wrapper">
+        <div class="control">
+            <label for="light-theme">День</label>
+            <label for="dark-theme">Ночь</label>
+            <label for="small-font-size">Aa</label>
+            <label for="normal-font-size">Aa</label>
+            <label for="big-font-size">Aa</label>
+            <label for="serif-font">Aa</label>
+            <label for="sans-serif-font">Aa</label>
+            <label for="mono-font">Aa</label>
+        </div>
+        <header>
+            <h1>The Ekaterinburg Times</h1>
+            <div class="underhead">
+                <div class="left">самые горячие новости у нас!</div>
+                <div class="right">Всего за 1 рубль!</div>
+                <div class="center">22 октября 2017 года</div>
+            </div>
+        </header>
+        <main>
+            <section class="small-articles">
+                <h2>Новости Екатеринбурга</h2>
+                <article>
+                    <h3>Рособрнадзор запретил екатеринбургскому вузу принимать
+                        новых абитуриентов
+                    </h3>
+                    <p>
+                        Се&shy;го&shy;дня Ро&shy;со&shy;бр&shy;над&shy;зор за&shy;пре&shy;тил при&shy;ём
+                        сту&shy;ден&shy;тов в ека&shy;те&shy;рин&shy;бург&shy;скую
+                        Ака&shy;де&shy;мию ту&shy;риз&shy;ма и меж&shy;ду&shy;на&shy;род&shy;ных
+                        от&shy;но&shy;ше&shy;ний (быв&shy;ший Ураль&shy;ский
+                        меж&shy;ду&shy;на&shy;род&shy;ный ин&shy;сти&shy;тут
+                        ту&shy;риз&shy;ма). Эта ин&shy;фор&shy;ма&shy;ция
+                        по&shy;яви&shy;лась на сай&shy;те ве&shy;дом&shy;ства.
+                    </p>
+                    <p>
+                        Фе&shy;де&shy;раль&shy;ная служ&shy;ба по над&shy;зо&shy;ру в сфе&shy;ре
+                        об&shy;ра&shy;зо&shy;ва&shy;ния и на&shy;у&shy;ки
+                        в це&shy;лях ин&shy;фор&shy;ми&shy;ро&shy;ва&shy;ния
+                        обу&shy;ча&shy;ю&shy;щих&shy;ся со&shy;об&shy;ща&shy;ет
+                        об ор&shy;га&shy;ни&shy;за&shy;ци&shy;ях, осу&shy;ществ&shy;ля&shy;ю&shy;щих
+                        об&shy;ра&shy;зо&shy;ва&shy;тель&shy;ную де&shy;я&shy;тель&shy;ность,
+                        к ко&shy;то&shy;рым в пе&shy;ри&shy;од с 06 ок&shy;тяб&shy;ря
+                        по 19 ок&shy;тяб&shy;ря 2017 го&shy;да при&shy;ме&shy;не&shy;ны
+                        сле&shy;ду&shy;ю&shy;щие ме&shy;ры по ре&shy;зуль&shy;та&shy;там
+                        про&shy;ве&shy;дён&shy;ных про&shy;ве&shy;рок.
+                        За не&shy;ис&shy;пол&shy;не&shy;ние пред&shy;пи&shy;са&shy;ний
+                        в уста&shy;нов&shy;лен&shy;ные сро&shy;ки Ро&shy;со&shy;бр&shy;над&shy;зо&shy;ром
+                        за&shy;пре&shy;щён при&shy;ём в ЧОУ ВО &quot;Ака&shy;де&shy;мия
+                        ту&shy;риз&shy;ма и меж&shy;ду&shy;на&shy;род&shy;ных
+                        от&shy;но&shy;ше&shy;ний&quot;, – го&shy;во&shy;рит&shy;ся
+                        на сай&shy;те ве&shy;дом&shy;ства.
+                    </p>
+                    <p>
+                        На сай&shy;те ака&shy;де&shy;мии со&shy;об&shy;ща&shy;ет&shy;ся, что по
+                        ито&shy;гам мо&shy;ни&shy;то&shy;рин&shy;га Ми&shy;но&shy;бр&shy;на&shy;у&shy;ки
+                        за 2017 год де&shy;я&shy;тель&shy;ность ака&shy;де&shy;мии
+                        при&shy;зна&shy;на эф&shy;фек&shy;тив&shy;ной.
+                    </p>
+                    <p>
+                        Ака&shy;де&shy;мия ту&shy;риз&shy;ма и меж&shy;ду&shy;на&shy;род&shy;ных
+                        от&shy;но&shy;ше&shy;ний – это не&shy;го&shy;су&shy;дар&shy;ствен&shy;ный
+                        вуз. Учеб&shy;ное за&shy;ве&shy;де&shy;ние бы&shy;ло
+                        от&shy;кры&shy;то в 2004 го&shy;ду. Зда&shy;ние
+                        учеб&shy;но&shy;го кор&shy;пу&shy;са на&shy;хо&shy;дит&shy;ся
+                        по ули&shy;це Ма&shy;ра&shy;та, 17.
+                    </p>
+                </article>
+                <article>
+                    <h3>В екатеринбургское метро стали пускать по банковским
+                        картам
+                    </h3>
+                    <p>
+                        В Ека&shy;те&shy;рин&shy;бур&shy;ге в те&shy;сто&shy;вом ре&shy;жи&shy;ме
+                        вве&shy;ли тер&shy;ми&shy;на&shy;лы опла&shy;ты
+                        про&shy;ез&shy;да с по&shy;мо&shy;щью бан&shy;ков&shy;ских
+                        карт. Опла&shy;тить мож&shy;но бу&shy;дет толь&shy;ко
+                        с по&shy;мо&shy;щью карт, на ко&shy;то&shy;рых
+                        есть зна&shy;чок бес&shy;кон&shy;такт&shy;ной ан&shy;тен&shy;ны.
+                        Об этом со&shy;об&shy;ща&shy;ет&shy;ся на офи&shy;ци&shy;аль&shy;ном
+                        сай&shy;те Ека&shy;те&shy;рин&shy;бург&shy;ско&shy;го
+                        мет&shy;ро&shy;по&shy;ли&shy;те&shy;на.
+                    </p>
+                    <p>
+                        &quot;Си&shy;сте&shy;ма при&shy;ни&shy;ма&shy;ет
+                        кар&shy;точ&shy;ки пла&shy;тёж&shy;ных
+                        си&shy;стем MasterCard (Pay Pass), VISA (Pay Wave),
+                        МИР, а так&shy;же пла&shy;тёж&shy;ных си&shy;стем
+                        мо&shy;биль&shy;ных пла&shy;те&shy;жей ApplePay,
+                        SamsungPay, AndroidPay. Для про&shy;хо&shy;да че&shy;рез
+                        тур&shy;ни&shy;кет не&shy;об&shy;хо&shy;ди&shy;мо
+                        под&shy;не&shy;сти бан&shy;ков&shy;скую кар&shy;ту
+                        к счи&shy;ты&shy;ва&shy;ю&shy;ще&shy;му устрой&shy;ству
+                        на тур&shy;ни&shy;ке&shy;тах&quot;, – со&shy;об&shy;ща&shy;ют
+                        в под&shy;зем&shy;ке.
+                    </p>
+                    <p>
+                        Сто&shy;и&shy;мость про&shy;ез&shy;да по
+                        без&shy;на&shy;лу бу&shy;дет стан&shy;дарт&shy;ной
+                        – 28 руб&shy;лей.
+                    </p>
+                    <p>
+                        В этих же тер&shy;ми&shy;на&shy;лах мож&shy;но бу&shy;дет по&shy;пол&shy;нить
+                        счёт Екар&shy;ты, но толь&shy;ко в 2018 го&shy;ду.
+                    </p>
+                    <p>
+                        Вос&shy;поль&shy;зо&shy;вать&shy;ся без&shy;на&shy;лич&shy;ным рас&shy;чё&shy;том
+                        уже мож&shy;но на стан&shy;ци&shy;ях &quot;Бо&shy;та&shy;ни&shy;че&shy;ская&quot;,
+                        &quot;Пло&shy;щадь 1905 го&shy;да&quot; и &quot;Ураль&shy;ская&quot;,
+                        на осталь&shy;ных ав&shy;то&shy;ма&shy;ты по&shy;явят&shy;ся
+                        поз&shy;же.
+                    </p>
+                </article>
+                <article>
+                    <h3>Ещё больше вкусной и свежей пиццы: "Папа Джонс" увеличил
+                        зону доставки в Екатеринбурге</h3>
+                    <p>
+                        В кон&shy;це ав&shy;гу&shy;ста и сен&shy;тяб&shy;ре со&shy;сто&shy;я&shy;лись
+                        от&shy;кры&shy;тия чет&shy;вёр&shy;то&shy;го и
+                        пя&shy;то&shy;го ре&shy;сто&shy;ра&shy;нов се&shy;ти
+                        пиц&shy;це&shy;рий &quot;Па&shy;па Джонс&quot;
+                        в Ека&shy;те&shy;рин&shy;бур&shy;ге: на ул. Сте&shy;па&shy;на
+                        Ра&shy;зи&shy;на, 122 и на ул. Хо&shy;х&shy;ря&shy;ко&shy;ва,
+                        3а. В свя&shy;зи с чем зо&shy;на до&shy;став&shy;ки
+                        зна&shy;ме&shy;ни&shy;той пиц&shy;цы су&shy;ще&shy;ствен&shy;но
+                        уве&shy;ли&shy;чи&shy;лась, и ком&shy;па&shy;ния
+                        мо&shy;жет ра&shy;до&shy;вать боль&shy;шее ко&shy;ли&shy;че&shy;ство
+                        ека&shy;те&shy;рин&shy;бурж&shy;цев го&shy;ря&shy;чей
+                        све&shy;жей пиц&shy;цей. А для ма&shy;лень&shy;ких
+                        по&shy;се&shy;ти&shy;те&shy;лей в пиц&shy;це&shy;рии
+                        на ул. Сте&shy;па&shy;на Ра&shy;зи&shy;на ра&shy;бо&shy;та&shy;ет
+                        иг&shy;ро&shy;вая ком&shy;на&shy;та и про&shy;во&shy;дят&shy;ся
+                        ма&shy;стер-клас&shy;сы.
+                    </p>
+                    <p>
+                        В ме&shy;ню но&shy;вых ре&shy;сто&shy;ра&shy;нов во&shy;шло бо&shy;лее
+                        20 ви&shy;дов пиц&shy;цы диа&shy;мет&shy;ром от
+                        23 до 40 сан&shy;ти&shy;мет&shy;ров, за&shy;кус&shy;ки
+                        вро&shy;де сыр&shy;ных па&shy;ло&shy;чек, ку&shy;ри&shy;ных
+                        кры&shy;льев и кар&shy;то&shy;фель&shy;ных до&shy;лек,
+                        са&shy;ла&shy;ты и де&shy;сер&shy;ты. В раз&shy;де&shy;ле
+                        пицц мож&shy;но най&shy;ти и ве&shy;ге&shy;та&shy;ри&shy;ан&shy;ские,
+                        и сыт&shy;ные мяс&shy;ные по&shy;зи&shy;ции. Для
+                        ва&shy;ше&shy;го удоб&shy;ства мож&shy;но офор&shy;мить
+                        за&shy;каз че&shy;рез сайт www.papajohns.ru, где
+                        дей&shy;ству&shy;ет бо&shy;нус&shy;ная про&shy;грам&shy;ма
+                        &quot;Па&shy;па Бо&shy;нус&quot;.
+                    </p>
+                    <p>
+                        Пиц&shy;це&shy;рия ра&shy;да со&shy;об&shy;щить, что с 23 по 26 ок&shy;тяб&shy;ря
+                        в ре&shy;сто&shy;ра&shy;не на ул. Хо&shy;х&shy;ря&shy;ко&shy;ва
+                        дей&shy;ству&shy;ет скид&shy;ка 50% на лю&shy;бую
+                        пиц&shy;цу при за&shy;ка&shy;зе с со&shy;бой.
+                    </p>
+                    <p>
+                        Аме&shy;ри&shy;кан&shy;ская сеть пиц&shy;це&shy;рий &quot;Па&shy;па Джонс&quot;
+                        объ&shy;еди&shy;ня&shy;ет бо&shy;лее 5000 ре&shy;сто&shy;ра&shy;нов
+                        в 43 стра&shy;нах ми&shy;ра. Се&shy;го&shy;дняш&shy;ний
+                        меж&shy;ду&shy;на&shy;род&shy;ный успех &quot;Па&shy;па
+                        Джонс&quot; ухо&shy;дит сво&shy;и&shy;ми кор&shy;ня&shy;ми
+                        к пред&shy;при&shy;ни&shy;ма&shy;те&shy;лю Джо&shy;ну
+                        Шнат&shy;те&shy;ру, ко&shy;то&shy;рый 28 лет на&shy;зад
+                        ос&shy;но&shy;вал ком&shy;па&shy;нию, взяв за ос&shy;но&shy;ву
+                        ло&shy;зунг &quot;Луч&shy;ше ин&shy;гре&shy;ди&shy;ен&shy;ты
+                        – луч&shy;ше пиц&shy;ца&quot;, что&shy;бы под&shy;черк&shy;нуть
+                        свою при&shy;над&shy;леж&shy;ность к предо&shy;став&shy;ле&shy;нию
+                        луч&shy;ше&shy;го про&shy;дук&shy;та.
+                    </p>
+                </article>
+            </section>
+            <section class="main-article">
+                <h2>Главная новость</h2>
+                <article>
+                    <h3>Pizza Mia в Екатеринбурге перешла на эко-стиль</h3>
+                    <p>
+                        Флаг&shy;ман&shy;ский ре&shy;сто&shy;ран Pizza Mia
+                        (в ТЦ &quot;Ме&shy;га&shy;по&shy;лис&quot;)
+                        уже не&shy;де&shy;лю встре&shy;ча&shy;ет по&shy;се&shy;ти&shy;те&shy;лей
+                        в об&shy;нов&shy;лён&shy;ном ин&shy;те&shy;рье&shy;ре.
+                        Пер&shy;вы&shy;ми ре&shy;стай&shy;линг пиц&shy;це&shy;рии
+                        уви&shy;де&shy;ли фо&shy;рум&shy;ча&shy;не Е1.RU.
+                        При&shy;гла&shy;шён&shy;ные го&shy;сти про&shy;ве&shy;ли
+                        соб&shy;ствен&shy;ный &quot;ре&shy;ви&shy;зор&shy;ро&quot;.
+                        А в рам&shy;ках ку&shy;ли&shy;нар&shy;но&shy;го
+                        ма&shy;стер-клас&shy;са узна&shy;ли все тон&shy;ко&shy;сти
+                        при&shy;го&shy;тов&shy;ле&shy;ния тол&shy;стой
+                        ко&shy;роч&shy;ки фир&shy;мен&shy;ной пиц&shy;цы.
+                    </p>
+                    <p>
+                        Пер&shy;вое, что от&shy;ме&shy;ти&shy;ли
+                        го&shy;сти: на вход&shy;ной груп&shy;пе
+                        ис&shy;чез&shy;ли при&shy;выч&shy;ные ре&shy;сто&shy;ра&shy;ну
+                        кри&shy;ча&shy;щие цве&shy;та. Ла&shy;ко&shy;нич&shy;ный
+                        ди&shy;зайн, при&shy;ят&shy;ная фак&shy;тур&shy;ная
+                        ме&shy;бель из эко&shy;ло&shy;ги&shy;че&shy;ских
+                        ма&shy;те&shy;ри&shy;а&shy;лов в чёр&shy;но-бе&shy;лых
+                        то&shy;нах и де&shy;та&shy;ли, цеп&shy;ля&shy;ю&shy;щие
+                        взгляд: на&shy;при&shy;мер, лам&shy;поч&shy;ки
+                        Эди&shy;со&shy;на, под ко&shy;то&shy;ры&shy;ми
+                        хо&shy;чет&shy;ся сде&shy;лать сел&shy;фи.
+                    </p>
+                    <p>
+                        Вто&shy;рое – раз&shy;де&shy;ле&shy;ние кас&shy;со&shy;вой зо&shy;ны и
+                        зо&shy;ны вы&shy;да&shy;чи за&shy;ка&shy;за. Так
+                        ожи&shy;да&shy;ние за&shy;ка&shy;за пе&shy;ре&shy;ста&shy;ло
+                        быть в тя&shy;гость – вы не сто&shy;и&shy;те у
+                        кас&shy;сы, по&shy;ка вам всё со&shy;бе&shy;рут,
+                        а спо&shy;кой&shy;но раз&shy;ме&shy;ща&shy;е&shy;тесь
+                        в за&shy;ле.
+                    </p>
+                    <p>
+                        Ко&shy;ман&shy;до&shy;вал ма&shy;стер-клас&shy;сом
+                        го&shy;лос ра&shy;дио&shy;стан&shy;ции
+                        &quot;На&shy;ше ра&shy;дио&quot; Ан&shy;дрей Пет&shy;ро&shy;вич.
+                    </p>
+                    <p>
+                        <span>&mdash;</span><q>Я пом&shy;ню, как бе&shy;гал в
+                        пиц&shy;це&shy;рию ещё в сту&shy;ден&shy;че&shy;ские
+                        го&shy;ды. Все&shy;гда тут бы&shy;ло де&shy;мо&shy;кра&shy;тич&shy;но
+                        и сы&shy;то. И сей&shy;час, ко&shy;гда с ре&shy;бён&shy;ком
+                        гу&shy;ля&shy;ем и вдруг нам за&shy;хо&shy;те&shy;лось
+                        по&shy;есть, то пря&shy;ми&shy;ком идём сю&shy;да</q>,
+                        – рас&shy;ска&shy;зал он.
+                    </p>
+                    <div class="image">
+                        <img alt="Pizza Mia" src="img/pizza.jpg">
+                    </div>
+                    <p>
+                        Ору&shy;дуя ки&shy;сточ&shy;ка&shy;ми
+                        и взяв за холст круг те&shy;ста,
+                        каж&shy;дый стре&shy;мил&shy;ся офор&shy;мить свою
+                        пиц&shy;цу с ав&shy;тор&shy;ским под&shy;хо&shy;дом.
+                        Кто ска&shy;зал, что ку&shy;ли&shy;на&shy;рия не
+                        ис&shy;кус&shy;ство?
+                    </p>
+                    <p>
+                        <span>&mdash;</span><q>Я по про&shy;фес&shy;сии
+                        бух&shy;гал&shy;тер. На фо&shy;ру&shy;мах си&shy;жу
+                        дав&shy;но, в те&shy;мах &quot;Об&shy;ще&shy;ние ав&shy;то&shy;клу&shy;ба&quot;
+                        и свя&shy;зан&shy;ных с ку&shy;ли&shy;на&shy;ри&shy;ей.
+                        Очень ра&shy;да, что при&shy;гла&shy;си&shy;ли по&shy;участ&shy;во&shy;вать
+                        в ма&shy;стер-клас&shy;се. У всех по&shy;лу&shy;чи&shy;лись
+                        аб&shy;со&shy;лют&shy;но раз&shy;ные пиц&shy;цы. Кто зна&shy;ет,
+                        мо&shy;жет, ди&shy;рек&shy;то&shy;ра ре&shy;сто&shy;ра&shy;на
+                        пред&shy;ло&shy;жат вве&shy;сти их в но&shy;вое ме&shy;ню</q>,
+                        – рас&shy;ска&shy;за&shy;ла фо&shy;рум&shy;чан&shy;ка
+                        Алё&shy;на.
+                    </p>
+                    <p>
+                        <span>&mdash;</span><q>Мы с се&shy;мьёй про&shy;ве&shy;ли
+                        от&shy;лич&shy;ный ве&shy;чер. Я учи&shy;тель
+                        ан&shy;глий&shy;ско&shy;го, но сей&shy;час на&shy;хо&shy;жусь
+                        в де&shy;кре&shy;те. По&shy;это&shy;му, се&shy;го&shy;дня
+                        – от&shy;рыв! В Pizza Mia мне нра&shy;вит&shy;ся пиц&shy;ца.
+                        Она на&shy;по&shy;ми&shy;на&shy;ет до&shy;маш&shy;нюю.
+                        Не мо&shy;гу ска&shy;зать, ко&shy;гда мой ре&shy;бё&shy;нок
+                        по&shy;про&shy;бу&shy;ет пиц&shy;цу, но мы при&shy;дём
+                        вме&shy;сте с ним то&shy;гда, ко&shy;гда он сам нач&shy;нёт
+                        хо&shy;дить</q>, – по&shy;де&shy;ли&shy;лась
+                        впе&shy;чат&shy;ле&shy;ни&shy;я&shy;ми
+                        ещё од&shy;на го&shy;стья ма&shy;стер-клас&shy;са
+                        По&shy;ли&shy;на.
+                    </p>
+                    <div class="image">
+                        <img alt="Pizza Mia" src="img/children.jpg">
+                    </div>
+                    <p>
+                        На вто&shy;рой день пре&shy;зен&shy;та&shy;ции об&shy;нов&shy;лён&shy;но&shy;го
+                        за&shy;ве&shy;де&shy;ния со&shy;бра&shy;лось мно&shy;го
+                        лю&shy;дей. За всю ис&shy;то&shy;рию имен&shy;но
+                        это&shy;го ре&shy;сто&shy;ра&shy;на та&shy;кой
+                        ажи&shy;о&shy;таж на&shy;блю&shy;дал&shy;ся два&shy;жды.
+                        Пер&shy;вый раз – ко&shy;гда бы&shy;ло от&shy;кры&shy;тие
+                        и це&shy;ны сни&shy;зи&shy;ли на 50% на всё ме&shy;ню.
+                        И в ми&shy;нув&shy;шие вы&shy;ход&shy;ные. Ор&shy;га&shy;ни&shy;за&shy;то&shy;ры
+                        устро&shy;и&shy;ли празд&shy;ник для всей се&shy;мьи.
+                        Го&shy;стей встре&shy;ча&shy;ли как близ&shy;ких
+                        дру&shy;зей, дав&shy;но зна&shy;ко&shy;мых.
+                    </p>
+                    <p>
+                        <span>&mdash;</span><q>Ме&shy;сто ста&shy;ло
+                        при&shy;вле&shy;ка&shy;тель&shy;нее и ду&shy;шев&shy;нее.
+                        И де&shy;вуш&shy;ку при&shy;гла&shy;сить не&shy;стыд&shy;но,
+                        и с се&shy;мьей по&shy;си&shy;деть при&shy;ят&shy;но</q>,
+                        – от&shy;ме&shy;тил гость ре&shy;сто&shy;ра&shy;на.
+                        – <q>В ме&shy;ню
+                        ста&shy;ло боль&shy;ше се&shy;зон&shy;ных но&shy;ви&shy;нок,
+                        ко&shy;то&shy;рые то&shy;же не тер&shy;пит&shy;ся по&shy;про&shy;бо&shy;вать.
+                        На це&shy;нах но&shy;вый ди&shy;зайн ни&shy;как не ска&shy;зал&shy;ся.
+                        По-преж&shy;не&shy;му де&shy;мо&shy;кра&shy;тич&shy;но,
+                        до&shy;ступ&shy;но, вкус&shy;но, а те&shy;перь ещё и очень
+                        стиль&shy;но!</q>
+                    </p>
+                </article>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

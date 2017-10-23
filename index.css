@@ -1,0 +1,319 @@
+@font-face 
+{
+    font-family: 'old';
+    src: url('fonts/old.woff2') format('woff2'), url('fonts/old.woff') format('woff'), url('fonts/old.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'neucha';
+    src: url('fonts/neucha.woff2') format('woff2'), url('fonts/neucha.woff') format('woff'), url('fonts/neucha.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: 'open_sans_condensed_bold';
+    src: url('fonts/opensanscondensed-bold.woff2') format('woff2'), url('fonts/opensanscondensed-bold.woff') format('woff'), url('fonts/opensanscondensed-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'open_sans_condensed';
+    src: url('fonts/opensanscondensed-light.woff2') format('woff2'), url('fonts/opensanscondensed-light.woff') format('woff'), url('fonts/opensanscondensed-light.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'open_sans_condensed_italic';
+    src: url('fonts/opensanscondensed-lightitalic.woff2') format('woff2'), url('fonts/opensanscondensed-lightitalic.woff') format('woff'), url('fonts/opensanscondensed-lightitalic.woff') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+body
+{
+    margin: 0;
+}
+
+.styling-wrapper
+{
+    background: #fff url('img/background/paper.png') repeat;
+}
+
+input
+{
+    display: none;
+}
+
+input[value='dark']:checked ~ .styling-wrapper
+{
+    background-color: #000;
+}
+
+header,
+main
+{
+    padding: 0 15px;
+}
+
+header h1
+{
+    font: 64px 'old';
+    text-align: center;
+}
+
+header .underhead
+{
+    border-top: 5px double #000;
+    border-bottom: 5px double #000;
+    font: 1.2em 'neucha';
+    vertical-align: top;
+}
+
+input[value='dark']:checked ~ .styling-wrapper header .underhead
+{
+    border-color: #bbb;
+}
+
+.underhead .left
+{
+    float: left;
+}
+
+.underhead .center
+{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.underhead .right 
+{
+    float: right;
+}
+
+main 
+{
+    white-space: nowrap;
+}
+
+section 
+{
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0;
+}
+
+section:first-child
+{
+    border-right: 1px solid #000;
+}
+
+input[value='dark']:checked ~ .styling-wrapper section:first-child
+{
+    border-right: 1px solid #fff;
+}
+
+section h2
+{
+    display: none;
+}
+
+.small-articles 
+{
+    width: 30%;
+}
+
+.main-article 
+{
+    width: 70%;
+}
+
+article 
+{
+    column-count: 2;
+    column-rule: 1px solid #000;
+    padding: 10px;
+}
+
+input[value='dark']:checked ~ .styling-wrapper article
+{
+    column-rule: 1px solid #fff;
+}
+
+.main-article article 
+{
+    column-count: 3;
+}
+
+article,
+.control
+{
+    font-family: open_sans_condensed;
+}
+
+.styling-wrapper
+{
+    font-size: 20px;
+}
+
+article h3
+{
+    font-stretch: ultra-condensed;
+    font-family: open_sans_condensed_bold, sans-serif;
+    font-size: 1.5em;
+    -webkit-column-span: all;
+    column-span: all;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article p 
+{
+    margin-top: 0;
+    font-size: 1em;
+    text-indent: 1em;
+}
+
+p:first-of-type::first-letter
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+}
+
+input[value='dark']:checked ~ .styling-wrapper p:first-of-type::first-letter
+{
+    color: #bbb;
+}
+
+article .image
+{
+    width: 100%;
+    column-span: all;
+    padding-top: 3px;
+}
+
+.image img 
+{
+    width: inherit;
+}
+
+input[value='dark']:checked ~ .styling-wrapper
+{
+    color: #fff;
+}
+
+input[value='light']:checked ~ .styling-wrapper
+{
+    color: #000;
+}
+
+label[for]
+{
+    border: 1px solid #444;
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+input[value='light']:checked ~ .styling-wrapper label[for='light-theme'],
+input[value='dark']:checked ~ .styling-wrapper label[for='dark-theme'],
+input[value='small']:checked ~ .styling-wrapper label[for='small-font-size'],
+input[value='normal']:checked ~ .styling-wrapper label[for='normal-font-size'],
+input[value='big']:checked ~ .styling-wrapper label[for='big-font-size'],
+input[value='serif']:checked ~ .styling-wrapper label[for='serif-font'],
+input[value|='sans']:checked ~ .styling-wrapper label[for|='sans'],
+input[value='mono']:checked ~ .styling-wrapper label[for='mono-font']
+{
+    background-color: #666;
+    color: #fff;
+}
+
+.control
+{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.control label
+{
+    display: inline-block;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.control label[for='small-font-size'],
+input[value='small']:checked ~ .styling-wrapper
+{
+    font-size: 15px;
+}
+
+.control label[for='big-font-size'],
+input[value='big']:checked ~ .styling-wrapper
+{
+    font-size: 30px;
+}
+
+.control label[for='normal-font-size'],
+input[value='normal']:checked ~ .styling-wrapper
+{
+    font-size: 20px;
+}
+
+input[value='big']:checked ~ .styling-wrapper .small-articles
+{
+    width: 45%;
+}
+
+input[value='big']:checked ~ .styling-wrapper .main-article
+{
+    width: 55%;
+}
+
+input[value='small']:checked ~ .styling-wrapper .small-articles
+{
+    width: 20%;
+}
+
+input[value='small']:checked ~ .styling-wrapper .main-article
+{
+    width: 80%;
+}
+
+.control label[for='serif-font'],
+input[value='serif']:checked ~ .styling-wrapper article,
+input[value='serif']:checked ~ .styling-wrapper article h3
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.control label[for='sans-serif-font'],
+input[value='sans-serif']:checked ~ .styling-wrapper article
+{
+    font-family: 'open_sans_condensed' sans-serif;
+}
+
+.control label[for='mono-font'],
+input[value='mono']:checked ~ .styling-wrapper article,
+input[value='mono']:checked ~ .styling-wrapper article h3
+{
+    font-family: Courier New, Courier, monospace;
+}
+
+input[value='mono']:checked ~ .styling-wrapper article h3,
+input[value='serif']:checked ~ .styling-wrapper article h3
+{
+    font-weight: bold;
+}
+
