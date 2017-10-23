@@ -1,0 +1,106 @@
+@font-face
+{
+    font-family: Iorek Byrnison cyr-lat;
+    src: url(IorekByrnisoncyr-lat.otf);
+}
+
+@font-face
+{
+    font-family: Forum-Regular;
+    src: url(Forum-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: OldStandard-Regular;
+    src: url(OldStandard-Regular.ttf);
+}
+
+main
+{
+    column-count: 3;
+    column-rule: 1px solid #000;
+    font: 20px sans-serif;
+}
+
+.title,
+.heading
+{
+    text-align: center;
+    font: 150% Iorek Byrnison cyr-lat;
+}
+
+.title
+{
+    column-span: all;
+    font-size: 400%;
+    font-variant: small-caps;
+}
+
+hr
+{
+    column-span: all;
+}
+
+.second.news
+{
+    column-count: 2;
+    column-rule: 1px solid #000;
+}
+
+.second.news > .heading
+{
+    column-span: all;
+}
+
+p:first-of-type:first-letter
+{
+    font: 150% Iorek Byrnison cyr-lat;
+}
+
+em
+{
+    font: 100% Iorek Byrnison cyr-lat;
+}
+
+q
+{
+    font: 100% Forum-Regular;
+}
+
+cite,
+figcaption
+{
+    font: 75% OldStandard-Regular;
+}
+
+figure
+{
+    column-span: 1;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+figure.doge
+{
+    column-span: all;
+}
+
+input[id='increased']:checked ~ main
+{
+    font-size: 150%;
+}
+
+input[id='serif']:checked ~ main
+{
+    font-family: serif;
+}
+
+input[id='dark']:checked ~ main
+{
+    background: black;
+    color: white;
+}

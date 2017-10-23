@@ -2,8 +2,130 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
+<input type="radio" name="size" id="increased">
+<label for="increased">Увеличенный</label>
+<input type="radio" name="size" id="standard" checked>
+<label for="standard">Стандартный</label>
+<input type="radio" name="font" id="sans" checked>
+<label for="sans">Без засечек</label>
+<input type="radio" name="font" id="serif">
+<label for="serif">С засечками</label>
+<input type="radio" id="light" name="color" checked>
+<label for="light">Светлый фон</label>
+<input type="radio" id="dark" name="color">
+<label for="dark">Тёмный фон</label>
+<main>
+    <h1 class="title">Ну газета</h1>
+    <hr>
+    <section class="first news">
+        <h2 class="heading">Все ду&shy;ма&shy;ют, что Марк Цу&shy;кер&shy;берг — не че&shy;ло&shy;век.
+            Од&shy;на&shy;жды он да&shy;же (слу&shy;чай&shy;но) при&shy;знал это сам!</h2>
+        <article>
+            <p>
+                Ос&shy;но&shy;ва&shy;тель Facebook Марк Цу&shy;кер&shy;берг ста&shy;ра&shy;ет&shy;ся
+                ве&shy;сти се&shy;бя, как нор&shy;маль&shy;ный че&shy;ло&shy;век, но мно&shy;гие
+                ин&shy;тер&shy;нет-поль&shy;зо&shy;ва&shy;те&shy;ли уве&shy;ре&shy;ны, что на са&shy;мом
+                де&shy;ле Цу&shy;кер&shy;берг ино&shy;пла&shy;не&shy;тя&shy;нин-реп&shy;ти&shy;ло&shy;ид,
+                лишь изоб&shy;ра&shy;жа&shy;ю&shy;щий из се&shy;бя че&shy;ло&shy;ве&shy;ка.
+                <em>Ну&shy; га&shy;зе&shy;та</em> рас&shy;ска&shy;зы&shy;ва&shy;ет, ка&shy;кие
+                «до&shy;ка&shy;за&shy;тель&shy;ства»
+                при&shy;во&shy;дят кон&shy;спи&shy;ро&shy;ло&shy;ги и что об этом го&shy;во&shy;рит
+                сам Цу&shy;кер&shy;берг.
+            </p>
+            <p>В твит&shy;те&shy;ре Cyber Violence 18 ок&shy;тяб&shy;ря вы&shy;ло&shy;жи&shy;ли
+                ста&shy;рое ви&shy;део с фраг&shy;мен&shy;том вы&shy;ступ&shy;ле&shy;ния Мар&shy;ка
+                Цу&shy;кер&shy;бер&shy;га, в ко&shy;то&shy;ром тот де&shy;ла&shy;ет смеш&shy;ную
+                ого&shy;вор&shy;ку: <q>…но это бу&shy;дет вас бес&shy;по&shy;ко&shy;ить, по&shy;то&shy;му
+                что вы лю&shy;ди. И я был че&shy;ло&shy;ве&shy;ком. Я и есть че&shy;ло&shy;век. Все еще.
+                Я про&shy;сто го&shy;во&shy;рил о се&shy;бе в про&shy;шлом, а не о том, что я
+                не че&shy;ло&shy;век</q>.
+            </p>
+            <p>
+                Ко&shy;неч&shy;но, это вы&shy;гля&shy;дит как шут&shy;ка;
+                но ин&shy;тер&shy;нет-поль&shy;зо&shy;ва&shy;те&shy;ли по&shy;сто&shy;ян&shy;но
+                на&shy;хо&shy;дят в Цу&shy;кер&shy;бер&shy;ге что-то, что под&shy;твер&shy;жда&shy;ет
+                их тео&shy;рию. Не&shy;ко&shy;то&shy;рые уве&shy;ре&shy;ны, что Цу&shy;кер&shy;берг
+                про&shy;сто пы&shy;та&shy;ет&shy;ся ка&shy;зать&shy;ся че&shy;ло&shy;ве&shy;ком.
+            </p>
+            <figure class="mark">
+                <img src="twit.jpg" alt="twit">
+                <figcaption><q>Вот фо&shy;то&shy;гра&shy;фии, на ко&shy;то&shy;рых я
+                    есте&shy;ствен&shy;но по&shy;зи&shy;рую с мо&shy;и&shy;ми то&shy;ва&shy;ри&shy;ща&shy;ми
+                    людь&shy;ми в то вре&shy;мя, ко&shy;гда мы за&shy;ни&shy;ма&shy;ем&shy;ся од&shy;ним
+                    из мо&shy;их мно&shy;го&shy;чис&shy;лен&shy;ных ти&shy;пич&shy;ных
+                    че&shy;ло&shy;ве&shy;че&shy;ских за&shy;ня&shy;тий</q></figcaption>
+            </figure>
+            <p>
+                Что же ду&shy;ма&shy;ет сам Марк Цу&shy;кер&shy;берг?
+                В июне 2016 го&shy;да он про&shy;вел пря&shy;мую транс&shy;ля&shy;цию
+                в фейс&shy;бу&shy;ке, в хо&shy;де ко&shy;то&shy;рой от&shy;ве&shy;чал на
+                во&shy;про&shy;сы из ком&shy;мен&shy;та&shy;ри&shy;ев. То&shy;гда
+                он пря&shy;мо опро&shy;верг свою при&shy;част&shy;ность к реп&shy;ти&shy;ло&shy;и&shy;дам.
+            </p>
+            <p>
+                <q>Марк, су&shy;ще&shy;ству&shy;ют тео&shy;рии, что вы на са&shy;мом де&shy;ле
+                    реп&shy;ти&shy;ло&shy;ид</q>, — за&shy;чи&shy;тал Цу&shy;кер&shy;берг в хо&shy;де
+                транс&shy;ля&shy;ции. — <q>Эм… Я со&shy;би&shy;ра&shy;юсь, я со&shy;би&shy;ра&shy;юсь
+                ска&shy;зать „нет“. Я не реп&shy;ти&shy;ло&shy;ид</q>.
+                Он вы&shy;гля&shy;дел <em>нерв&shy;ным</em>
+                и на&shy;звал этот во&shy;прос <q>очень глу&shy;пым</q>.
+            </p>
+        </article>
+    </section>
+    <section class="second news">
+        <h2 class="heading">Са&shy;мая мем&shy;ная со&shy;ба&shy;ка.
+            Как си&shy;ба-ину ста&shy;ла лю&shy;би&shy;мой по&shy;ро&shy;дой ин&shy;тер&shy;не&shy;та</h2>
+        <article>
+            <p>
+                Си&shy;ба-ину — из&shy;вест&shy;ная по&shy;ро&shy;да со&shy;бак, но
+                в ин&shy;тер&shy;не&shy;те ее лю&shy;бят осо&shy;бен&shy;но:
+                со&shy;ба&shy;ки ста&shy;но&shy;вят&shy;ся ме&shy;ма&shy;ми, успеш&shy;ны&shy;ми
+                бло&shy;ге&shy;ра&shy;ми и ре&shy;гу&shy;ляр&shy;но по&shy;па&shy;да&shy;ют
+                в но&shy;во&shy;сти. В кон&shy;це сен&shy;тяб&shy;ря си&shy;ба-ину по клич&shy;ке
+                Стив стал ме&shy;мом, сва&shy;лив&shy;шись в ру&shy;чей
+                под воз&shy;глас хо&shy;зя&shy;и&shy;на: <q>Это фиа&shy;ско, бра&shy;тан!</q>
+                <em>Ну га&shy;зе&shy;та</em> рас&shy;ска&shy;зы&shy;ва&shy;ет, как
+                си&shy;ба-ину ста&shy;ли са&shy;мы&shy;ми по&shy;пу&shy;ляр&shy;ны&shy;ми
+                со&shy;ба&shy;ка&shy;ми и та&shy;кие ли они ве&shy;се&shy;лые на са&shy;мом де&shy;ле.
+            </p>
+            <p>Тра&shy;ди&shy;ци&shy;он&shy;но си&shy;ба-ину жи&shy;ли в япон&shy;ских
+                де&shy;рев&shy;нях и по&shy;мо&shy;га&shy;ли охот&shy;ни&shy;кам.
+                Не&shy;смот&shy;ря на то что их при&shy;зна&shy;ли япон&shy;ским
+                до&shy;сто&shy;я&shy;ни&shy;ем еще в 1936 го&shy;ду, все&shy;об&shy;щи&shy;ми
+                лю&shy;бим&shy;чи&shy;ка&shy;ми они ста&shy;ли бли&shy;же к 2010 го&shy;ду.
+                Имен&shy;но в это вре&shy;мя по&shy;явил&shy;ся са&shy;мый из&shy;вест&shy;ный
+                мем с си&shy;ба-ину — Doge. Хо&shy;зяй&shy;ка со&shy;ба&shy;ки по клич&shy;ке
+                Ка&shy;бо&shy;су вы&shy;ло&shy;жи&shy;ла се&shy;рию фо&shy;то&shy;гра&shy;фий
+                в лич&shy;ный блог. На од&shy;ном из сним&shy;ков Ка&shy;бо&shy;су си&shy;де&shy;ла
+                с очень удив&shy;лен&shy;ной мор&shy;доч&shy;кой — эта
+                фо&shy;то&shy;гра&shy;фия и ста&shy;ла ос&shy;но&shy;вой ме&shy;ма.
+                На сни&shy;мок Ка&shy;бо&shy;су ста&shy;ли по&shy;ме&shy;щать ко&shy;рот&shy;кие
+                фра&shy;зы, на&shy;пи&shy;сан&shy;ные шриф&shy;том Comic Sans MS.</p>
+            <figure class="doge">
+                <img src="doge.jpg" alt="doge">
+                <figcaption>what r you doing?</figcaption>
+            </figure>
+            <p>
+                Вско&shy;ре поль&shy;зо&shy;ва&shy;те&shy;ли сай&shy;та
+                <a href="https://www.reddit.com/">Reddit</a> и ими&shy;дж&shy;бор&shy;да
+                <a href="http://www.4chan.org/">4chan</a> ста&shy;ли ис&shy;поль&shy;зо&shy;вать
+                для мемa фо&shy;то&shy;гра&shy;фии
+                дру&shy;гих си&shy;ба-ину. Пик по&shy;пу&shy;ляр&shy;но&shy;сти Doge при&shy;шел&shy;ся
+                на 2013 год. Мем не толь&shy;ко за&shy;по&shy;ло&shy;нил со&shy;ци&shy;аль&shy;ные
+                се&shy;ти и бло&shy;ги, но да&shy;же ока&shy;зал&shy;ся в спис&shy;ке «50 ве&shy;щей
+                поп-куль&shy;ту&shy;ры, за ко&shy;то&shy;рые мы долж&shy;ны бла&shy;го&shy;да&shy;рить ее»,
+                со&shy;став&shy;лен&shy;ном MTV. В кон&shy;це 2013 го&shy;да аме&shy;ри&shy;кан&shy;ский
+                про&shy;грам&shy;мист Бил&shy;ли Мар&shy;кус пред&shy;ста&shy;вил
+                крип&shy;то&shy;ва&shy;лю&shy;ту, на&shy;зван&shy;ную в честь си&shy;ба-ину
+                — Dogecoin. <q>Doge — наш ве&shy;се&shy;лый дру&shy;же&shy;люб&shy;ный мас&shy;кот</q>,
+                — го&shy;во&shy;рит&shy;ся на сай&shy;те ва&shy;лю&shy;ты.
+            </p>
+        </article>
+    </section>
+</main>
 </body>
 </html>
