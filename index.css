@@ -1,0 +1,186 @@
+@font-face
+{
+    font-family: 'HeaderFont';
+    src: url(resources/fonts/Cast%20Iron.ttf);
+}
+
+@font-face
+{
+    font-family: 'UnderHeaderFont';
+    src: url(resources/fonts/DS_Moster.ttf);
+}
+
+@font-face
+{
+    font-family: 'LumberJack';
+    src: url(resources/fonts/Lumberjack_Inline_Rough.ttf);
+}
+
+@font-face
+{
+    font-family: 'Press';
+    src: url(resources/fonts/IntroRustG-Base2Line.otf);
+}
+
+.main-header
+{
+
+    font-family: HeaderFont, sans-serif;
+    text-align: center;
+    font-size: 66px;
+    margin-bottom: 10px;
+}
+
+blockquote
+{
+    font-family: Press, sans-serif;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+blockquote:before
+{
+    content: open-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
+}
+
+.vertical-text
+{
+    font-family: UnderHeaderFont, sans-serif;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-align: right;
+    font-size: 10px;
+    position: absolute;
+    top: 12px;
+    right: 1px;
+}
+
+.article-header
+{
+    column-span: all;
+}
+
+.under-header
+{
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-family: UnderHeaderFont, sans-serif;
+}
+
+.border
+{
+    border: none;
+    height: 6px;
+    background-color: #333;
+}
+
+.theme-header
+{
+    font-family: LumberJack, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    column-span: all;
+}
+
+.it-news
+{
+    float: left;
+    column-count: 2;
+    width: 45%;
+    margin-left: 3%;
+}
+
+.tech-news
+{
+    float: right;
+    width: 45%;
+    column-count: 2;
+    margin-right: 3%;
+}
+
+input[name='black-theme']
+{
+    overflow: visible;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+}
+
+input[name='reduce-size']
+{
+    overflow: visible;
+    position: fixed;
+    top: 55%;
+    z-index: 1;
+}
+
+input[name='increase-size']
+{
+    overflow: visible;
+    position: fixed;
+    top: 60%;
+    z-index: 1;
+}
+
+input[name='change-to-serif']
+{
+    overflow: visible;
+    position: fixed;
+    top: 65%;
+    z-index: 1;
+}
+
+input[name='black-theme']:checked ~ .main-block
+{
+    position: absolute;
+    color: white;
+    background: url(resources/texture/COLOURlovers.com-Gothic_Flowers_3.jpg);
+}
+
+input[name='reduce-size']:checked ~ .main-block
+{
+    position: absolute;
+    font-size: 75%;
+}
+
+input[name='increase-size']:checked ~ .main-block
+{
+    position: absolute;
+    font-size: 125%;
+}
+
+input[name='change-to-serif']:checked ~ .main-block
+{
+    position: absolute;
+    font-family: sans-serif;
+}
+
+.chart
+{
+    column-span: all;
+    margin-left: 5%;
+}
+
+img
+{
+    align-content: center;
+    width: 100%;
+}
+
+html,
+body
+{
+    margin: 0;
+}
+
+html
+{
+    background: url(resources/texture/yellowish.jpg) repeat;
+}
