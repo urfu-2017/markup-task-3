@@ -1,0 +1,92 @@
+
+input[id='light']:checked ~ main
+{
+    color: black;
+    background: url('старая газета.jpg') round;
+}
+
+input[id='dark']:checked ~ main
+{
+    color: white;
+    background: url('старая газета темная.jpg') round;
+}
+
+input[id='font1']:checked ~ main
+{
+    font-family: 'Times New Roman';
+}
+
+input[id='font2']:checked ~ main
+{
+    font-family: Arial, sans-serif;
+}
+
+input[id='font3']:checked ~ main
+{
+    font-family: monospace;
+}
+
+input[id='small']:checked ~ main
+{
+    font-size: 1em;
+
+}
+
+input[id='medium']:checked ~ main
+{
+    font-size: 1.5em;
+}
+
+input[id='big']:checked ~ main
+{
+    font-size: 2.5em;
+}
+
+header h1
+{
+    text-align: center;
+    margin: 20px;
+    border-bottom: 2px solid;
+
+}
+
+section
+{
+    display: inline-block;
+    column-count: 3;
+}
+
+article
+{
+    margin: 20px;
+    border-left: 1.5px solid;
+    border-right: 1.5px solid;
+}
+
+article > img
+{
+    width: 100%;
+    margin: auto;
+}
+
+article > h3
+{
+    margin: 10px;
+}
+
+article > p
+{
+    text-indent: 1.5em;
+    margin: 5px;
+}
+
+footer
+{
+    margin: 15px;
+}
+
+article:first-of-type > h3,
+section > h2
+{
+    display: none;
+}
