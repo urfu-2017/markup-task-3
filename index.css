@@ -34,7 +34,7 @@ section
 
 main
 {
-    background-color: #d3b28c;
+    background-image: url('OldPaperLight.jpg');
     column-count: 3;
 }
 
@@ -124,6 +124,6 @@ input[id='serif']:checked ~ main section
 
 input[id='dark']:checked ~ main
 {
-    background: #493222;
+    background-image: url('OldPaperDark.jpg');
     color: white;
 }
