@@ -1,0 +1,128 @@
+@font-face
+{
+    font-family: Old English Text;
+    src: url(OldEnglishText.ttf);
+}
+
+@font-face
+{
+    font-family: Bodoni Cameo Cyrillic;
+    src: url(BodoniCameoCyrillic.otf);
+}
+
+@font-face
+{
+    font-family: Trixie Pro Heavy;
+    src: url(TrixiePro-Heavy.otf);
+}
+
+html
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #ffdab9;
+
+}
+
+input[id='small']:checked ~ main section
+{
+    font-size: 80%;
+}
+
+input[id='small']:checked ~ main h3
+{
+    font-size: 80%;
+}
+
+input[id='big']:checked ~ main section
+{
+    font-size: 120%;
+}
+
+input[id='big']:checked ~ main h3
+{
+    font-size: 120%;
+}
+
+input[id='sans']:checked ~ main h3
+{
+    font-family: sans-serif;
+}
+
+input[id='sans']:checked ~ main section
+{
+    font-family: sans-serif;
+}
+
+input[id='dark']:checked ~ main
+{
+    background-image: url('black_old_paper.jpg');
+    color: white;
+}
+
+main,
+section
+{
+    font: 18px Trixie Pro Heavy, sans-serif;
+    column-rule: 1px solid #000;
+}
+
+section
+{
+    column-count: 2;
+}
+
+main
+{
+    background-image: url('old_paper.jpg');
+    column-count: 3;
+}
+
+p:first-of-type::first-letter
+{
+    font: bold 150% fantasy;
+}
+
+hr
+{
+    column-span: all;
+}
+
+p
+{
+    padding: 0;
+    margin: 0;
+    text-indent: 5%;
+}
+
+.top_head,
+.head
+{
+    column-span: all;
+    text-align: center;
+}
+
+.top_head
+{
+    font: 100px Old English Text, serif;
+}
+
+.head
+{
+    font: 30px Bodoni Cameo Cyrillic, sans-serif;
+}
+
+.war,
+.subway,
+.congress
+{
+    column-span: all;
+}
+
+.war img,
+.subway img,
+.congress img
+{
+    width: 100%;
+}
