@@ -3,7 +3,199 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="./Fonts/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <input type="radio" name="text_size" id="size_1x" checked>
+    <input type="radio" name="text_size" id="size_2x">
+    <input type="radio" name="text_size" id="size_3x">
+
+    <input type="radio" name="font-family" id="normal_font" checked>
+    <input type="radio" name="font-family" id="check_font">
+
+    <input type="radio" name="theme" id="normal_theme" checked>
+    <input type="radio" name="theme" id="new_theme">
+    <section class="settings">
+        <article class="settings_item">
+            <h2 class="settings_header">Размер шрифта</h2>
+            <label for="size_1x">Обычный</label>
+            <label for="size_2x">Большой</label>
+            <label for="size_3x">Очень большой</label>
+        </article>
+        <article class="settings_item">
+            <h2 class="settings_header">Вид шрифта</h2>
+            <label for="normal_font">Normal</label>
+            <label for="check_font">Not notmal</label>
+        </article>
+        <article class="settings_item">
+                <h2 class="settings_header">Цветовая тема</h2>
+                <label for="normal_theme">Обычная</label>
+                <label for="new_theme">Другая</label>
+            </article>
+    </section>
+    <div class="newspaper">
+        <header class="text_container">
+            <h1>Лучшая газета в мире</h1>
+            <hr>
+            <p class="data">Выпуск от 20 октября 1970 года</p>
+            <hr>
+        </header>
+        <main id="main_container" class="text_container">
+            <section class="left-half news">
+                    <article>
+                        <header><h2 class="header">Дар&shy;рен Аро&shy;но&shy;ф&shy;ски
+                            по&shy;ра&shy;до&shy;вал&shy;ся зва&shy;нию ав&shy;то&shy;ра
+                            са&shy;мо&shy;го пло&shy;хо&shy;го филь&shy;ма ве&shy;ка</h2></header>
+                        <p>Ре&shy;жис&shy;сер эк&shy;зи&shy;стен&shy;ци&shy;аль&shy;но&shy;го
+                            хор&shy;ро&shy;ра «ма&shy;ма!» при&shy;знал&shy;ся, что
+                            от&shy;ри&shy;ца&shy;тель&shy;ная кри&shy;ти&shy;ка его
+                            неза&shy;де&shy;ва&shy;ет.</p>
+                        <p>В раз&shy;го&shy;во&shy;ре со сту&shy;ден&shy;та&shy;ми
+                            ки&shy;но&shy;шко&shy;лы Loyola Marymount Дар&shy;рен
+                            Аро&shy;но&shy;ф&shy;ски кос&shy;нул&shy;ся те&shy;мы
+                            не&shy;га&shy;тив&shy;ной кри&shy;ти&shy;ки в
+                            от&shy;но&shy;ше&shy;нии его филь&shy;ма «ма&shy;ма!».
+                            <span class="quote">Моя лю&shy;би&shy;мая ре&shy;цен&shy;зия
+                            — из New York Observer, где Рекс Рид на&shy;пи&shy;сал: „Это
+                            худ&shy;ший фильм ве&shy;ка“. Для ме&shy;ня это по&shy;бе&shy;да.
+                            В том смыс&shy;ле, что на&shy;ко&shy;нец-то я на вер&shy;ши&shy;не
+                            спис&shy;ка! Ему не по&shy;нра&shy;вил&shy;ся и „Чер&shy;ный
+                            ле&shy;бедь“, ко&shy;то&shy;ро&shy;го он на&shy;звал „гад&shy;ким
+                            утен&shy;ком“.</span></p>
+                    </article>
+                    <article>
+                        <header><h2 class="header">Шон Пенн вы&shy;сту&shy;пил про&shy;тив
+                            се&shy;ри&shy;а&shy;ла Netflix о мек&shy;си&shy;кан&shy;ском
+                            нар&shy;ко&shy;тор&shy;гов&shy;це</h2></header>
+                        <p>Ад&shy;во&shy;ка&shy;ты ак&shy;те&shy;ра счи&shy;та&shy;ют, что
+                            вы&shy;ход до&shy;ку&shy;мен&shy;таль&shy;но&shy;го
+                            се&shy;ри&shy;а&shy;ла мо&shy;жет на&shy;не&shy;сти
+                            фи&shy;зи&shy;че&shy;ский вред их кли&shy;ен&shy;ту.</p>
+                        <p>С 20 ок&shy;тяб&shy;ря на Netflix на&shy;чи&shy;на&shy;ет&shy;ся
+                            до&shy;ку&shy;мен&shy;таль&shy;ный се&shy;ри&shy;ал «День, ко&shy;гда
+                            я встре&shy;ти&shy;ла Эль Ча&shy;по: Ис&shy;то&shy;рия Кейт дель
+                            Ка&shy;сти&shy;льо», ко&shy;то&shy;рый рас&shy;ска&shy;зы&shy;ва&shy;ет
+                            о со&shy;бы&shy;ти&shy;ях ок&shy;тяб&shy;ря 2015 го&shy;да, ко&shy;гда
+                            со&shy;сто&shy;я&shy;лась встре&shy;ча меж&shy;ду Шо&shy;ном Пен&shy;ном
+                            и мек&shy;си&shy;кан&shy;ским нар&shy;ко&shy;тор&shy;гов&shy;цем Эль
+                            Ча&shy;по (он же Хо&shy;акин Гуз&shy;ман Ло&shy;э&shy;ра).</p>
+                        <p>Пенн не при&shy;ни&shy;мал уча&shy;стия в со&shy;зда&shy;нии
+                            до&shy;ку&shy;мен&shy;таль&shy;ной лен&shy;ты, ко&shy;то&shy;рая
+                            рас&shy;ска&shy;зы&shy;ва&shy;ет о со&shy;бы&shy;ти&shy;ях с
+                            точ&shy;ки зре&shy;ния дель Ка&shy;сти&shy;льо. При этом
+                            со&shy;зда&shy;те&shy;ли до&shy;ку&shy;мен&shy;тал&shy;ки
+                            кос&shy;вен&shy;но ука&shy;зы&shy;ва&shy;ют, что ак&shy;тер
+                            по&shy;мог ми&shy;ни&shy;стер&shy;ству юс&shy;ти&shy;ции США
+                            с аре&shy;стом Эль Ча&shy;по.</p>
+                        <p>Ад&shy;во&shy;ка&shy;ты Пен&shy;на счи&shy;та&shy;ют, что
+                            вы&shy;ход до&shy;ку&shy;мен&shy;таль&shy;но&shy;го
+                            се&shy;ри&shy;а&shy;ла «День, ко&shy;гда я встре&shy;ти&shy;ла
+                            Эль Ча&shy;по» мо&shy;жет по&shy;ста&shy;вить их кли&shy;ен&shy;та
+                            в опас&shy;ное по&shy;ло&shy;же&shy;ние. <span class="quote">Ес&shy;ли
+                            се&shy;ри&shy;ал при&shy;ве&shy;дет к фи&shy;зи&shy;че&shy;ским
+                            уве&shy;чьям, то кровь ока&shy;жет&shy;ся на ру&shy;ках
+                            со&shy;зда&shy;те&shy;лей.</span></p>
+                    </article>
+                    <article>
+                        <header><h2 class="header">Джек Бл&shy;эк спро&shy;дю&shy;си&shy;ру&shy;ет
+                            ко&shy;ме&shy;дий&shy;ный се&shy;ри&shy;ал о се&shy;рий&shy;ном
+                            убий&shy;це</h2></header>
+                        <p>Ка&shy;нал ABC вме&shy;сте с про&shy;дю&shy;сер&shy;ской ком&shy;па&shy;ни&shy;ей
+                            Дже&shy;ка Бл&shy;эка Electric Dynamite раз&shy;ра&shy;бо&shy;та&shy;ет
+                            ко&shy;ме&shy;дий&shy;ный се&shy;ри&shy;ал «Бо&shy;ринг, штат Оре&shy;гон» о
+                            скром&shy;ном и не&shy;при&shy;мет&shy;ном го&shy;род&shy;ке в глу&shy;бин&shy;ке
+                            Аме&shy;ри&shy;ки, где на&shy;чи&shy;на&shy;ет ору&shy;до&shy;вать
+                            ма&shy;ньяк.</p>
+                        <p>Бо&shy;ринг в шта&shy;те Оре&shy;гон — не&shy;боль&shy;шой го&shy;ро&shy;док,
+                            ко&shy;то&shy;рый пол&shy;но&shy;стью оправ&shy;ды&shy;ва&shy;ет свое
+                            на&shy;зва&shy;ние (его мож&shy;но пе&shy;ре&shy;ве&shy;сти как Ску&shy;ка).
+                            Здесь ни&shy;ко&shy;гда ни&shy;че&shy;го не про&shy;ис&shy;хо&shy;дит. Или
+                            не про&shy;ис&shy;хо&shy;ди&shy;ло, по&shy;ка по&shy;кой Бо&shy;рин&shy;га
+                            не на&shy;ру&shy;ша&shy;ет се&shy;рий&shy;ный убий&shy;ца, вы&shy;брав&shy;ший
+                            глушь для сво&shy;их же&shy;сто&shy;ких игр.</p>
+                    </article>
+            </section>
+            <section class="job">
+                <header><h2 class="header">Работа</h2></header>
+                <article>
+                    <header><h3 class="header">Чесатель пузика</h3></header>
+                    <p>Пер&shy;спек&shy;тив&shy;ной и быст&shy;ро раз&shy;ви&shy;ва&shy;ю&shy;шей&shy;ся
+                        оди&shy;но&shy;кой жен&shy;щи&shy;не, ну&shy;жен спе&shy;ци&shy;а&shy;лист,
+                        ко&shy;то&shy;рый бу&shy;дет чи&shy;сать её ко&shy;ти&shy;ков 24/7</p>
+                    <p class="salary">30000</p>
+                </article>
+                <article>
+                        <header><h3 class="header">Испытатель диванов</h3></header>
+                        <p>Тре&shy;бу&shy;ет&shy;ся че&shy;ло&shy;век с очень чув&shy;стви&shy;тель&shy;ной
+                            пя&shy;той точ&shy;кой. Пол&shy;ный соц па&shy;кет. Гра&shy;фик ра&shy;бо&shy;ты
+                            2 че&shy;рез 2. При&shy;вест&shy;ву&shy;ет&shy;ся на&shy;ли&shy;чие
+                            пив&shy;но&shy;го пу&shy;за</p>
+                        <p class="salary">60000</p>
+                    </article>
+                    <article>
+                        <header><h3 class="header">Программист php</h3></header>
+                        <p>Ком&shy;па&shy;нии по про&shy;из&shy;вод&shy;ству ко&shy;сты&shy;лей и
+                            ве&shy;ло&shy;си&shy;пе&shy;дов сроч&shy;но тре&shy;бу&shy;ет&shy;ся
+                            про&shy;грам&shy;мист php. Не при&shy;вест&shy;ву&shy;ет&shy;ся зна&shy;ние
+                            дру&shy;гих язы&shy;ков. Опыт ра&shy;бо&shy;ты мень&shy;ше 5 лет.</p>
+                        <p class="salary">50000</p>
+                    </article>
+                    <article>
+                            <header><h3 class="header">Преподаватель в ВУЗ</h3></header>
+                            <p>По&shy;дой&shy;дет лю&shy;бой че&shy;ло&shy;век.
+                                Об&shy;ра&shy;зо&shy;ва&shy;ние не обя&shy;за&shy;тель&shy;но.</p>
+                            <p class="salary">20000</p>
+                    </article>
+            </section>
+            <section class="right-half news">
+                    <article>
+                        <div class="span_columns">
+                            <header>
+                                <h2 class="header">У «Ка&shy;ра&shy;те&shy;ля» от Netflix
+                                    по&shy;яви&shy;лась да&shy;та ре&shy;ли&shy;за</h2>
+                                <p>Все 13 се&shy;рий ог&shy;не&shy;стрель&shy;ной дра&shy;мы
+                                    вый&shy;дут все&shy;го че&shy;рез ме&shy;сяц.</p>
+                            </header>
+                            <img
+                            src="https://st.kp.yandex.net/images/news/mid_3054902_01_201710190608403577.jpg"
+                            alt="Каратель">
+                        </div>
+                        <p>По&shy;сле мас&shy;со&shy;во&shy;го рас&shy;стре&shy;ла лю&shy;дей во вре&shy;мя
+                            му&shy;зы&shy;каль&shy;но&shy;го кон&shy;цер&shy;та в Лас-Ве&shy;га&shy;се 1
+                            ок&shy;тяб&shy;ря стрим-сер&shy;вис Netflix ре&shy;шил от&shy;ка&shy;зать&shy;ся
+                            от пре&shy;зен&shy;та&shy;ции се&shy;ри&shy;а&shy;ла «Ка&shy;ра&shy;тель» во
+                            вре&shy;мя нью-йорк&shy;ско&shy;го Comic-Con. Не&shy;сколь&shy;ко не&shy;дель
+                            во&shy;круг про&shy;ек&shy;та ца&shy;ри&shy;ло мол&shy;ча&shy;ние, но
+                            те&shy;перь о нем мож&shy;но сно&shy;ва го&shy;во&shy;рить, не
+                            опа&shy;са&shy;ясь не&shy;же&shy;лан&shy;ных свя&shy;зей. У
+                            се&shy;ри&shy;а&shy;ла с Джо&shy;ном Берн&shy;та&shy;лом по&shy;яви&shy;лась
+                            да&shy;та пре&shy;мье&shy;ры. Фр&shy;энк Касл вер&shy;нет&shy;ся уже 17
+                            но&shy;яб&shy;ря.</p>
+                        <p>«Ка&shy;ра&shy;тель» — но&shy;вый се&shy;ри&shy;ал Netflix про улич&shy;ных
+                            ге&shy;ро&shy;ев все&shy;лен&shy;ной Marvel. По&shy;сле двух се&shy;зо&shy;нов
+                            «Со&shy;рви&shy;го&shy;ло&shy;вы», «Джес&shy;си&shy;ки Джонс»,
+                            «Лю&shy;ка Кей&shy;джа», «Же&shy;лез&shy;но&shy;го Ку&shy;ла&shy;ка» и
+                            «За&shy;щит&shy;ни&shy;ков» на&shy;стал че&shy;ред са&shy;мо&shy;го
+                            без&shy;жа&shy;лост&shy;но&shy;го ан&shy;ти&shy;ге&shy;роя.</p>
+                        <p>Впер&shy;вые по&shy;явив&shy;шись в ко&shy;мик&shy;сах про
+                            Че&shy;ло&shy;ве&shy;ка-па&shy;у&shy;ка в 1974 го&shy;ду, Ка&shy;ра&shy;тель
+                            пе&shy;ре&shy;жил уже не&shy;сколь&shy;ко ки&shy;но&shy;вер&shy;сий. В 1989
+                            го&shy;ду пер&shy;со&shy;на&shy;жа сыг&shy;рал Дольф Лунд&shy;грен.
+                            Спу&shy;стя 15 лет, ко&shy;гда экра&shy;ни&shy;за&shy;ции ко&shy;мик&shy;сов
+                            толь&shy;ко на&shy;ча&shy;ли за&shy;хва&shy;ты&shy;вать
+                            ки&shy;но&shy;те&shy;ат&shy;ры, вы&shy;шел фильм с То&shy;ма&shy;сом Джей&shy;ном
+                            в глав&shy;ной ро&shy;ли. Че&shy;рез че&shy;ты&shy;ре го&shy;да бы&shy;ла
+                            пред&shy;при&shy;ня&shy;та но&shy;вая по&shy;пыт&shy;ка, но на этот раз с Рэем
+                            Сти&shy;вен&shy;со&shy;ном. В 2015 го&shy;ду Ка&shy;ра&shy;тель вновь
+                            по&shy;явил&shy;ся, те&shy;перь уже на те&shy;ле&shy;экра&shy;нах и в
+                            ка&shy;че&shy;стве вто&shy;ро&shy;сте&shy;пен&shy;но&shy;го
+                            пер&shy;со&shy;на&shy;жа вто&shy;ро&shy;го се&shy;зо&shy;на
+                            «Со&shy;рви&shy;го&shy;ло&shy;вы».</p>
+                    </article>
+            </section>
+        </main>
+    </div>
+    
 </body>
 </html>

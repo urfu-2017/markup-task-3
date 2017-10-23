@@ -1,0 +1,267 @@
+
+body
+{
+    background-color: #994704;
+    font-family: 'bodoniregular';
+    hyphens: manual;
+}
+
+input
+{
+    display: none;
+}
+
+#size_1x:checked ~ .settings label[for='size_1x'],
+#size_2x:checked ~ .settings label[for='size_2x'],
+#size_3x:checked ~ .settings label[for='size_3x'],
+#normal_font:checked ~ .settings label[for='normal_font'],
+#check_font:checked ~ .settings label[for='check_font'],
+#normal_theme:checked ~ .settings label[for='normal_theme'],
+#new_theme:checked ~ .settings label[for='new_theme']
+{
+    background-color: #664600;
+    color: #fff;
+}
+
+label:hover
+{
+    background-color: #e9d993;
+}
+
+.settings
+{
+    margin-bottom: 20px;
+}
+
+.settings_item
+{
+    margin: 0 8%;
+    display: inline-block;
+    text-align: center;
+}
+
+.settings_header
+{
+    font-size: 30px;
+}
+
+.settings_item label
+{
+    padding: 5px;
+    font-size: 20px;
+}
+
+header h1
+{
+    font-size: 80em;
+    text-align: center;
+    font-family: 'american_textcregular';
+    margin: 0;
+}
+
+header hr
+{
+    border: 0;
+    height: 4px;
+    background: #c27f03;
+    margin: 3px 0;
+}
+
+.data
+{
+    text-align: center;
+    padding: 5px;
+    background-color: #c27f03;
+}
+
+.newspaper
+{
+    width: 90%;
+    margin: auto;
+    background: #e7cf8d;
+    box-shadow: -4px -4px 10px #000;
+}
+
+#main_container > section
+{
+    padding: 20px 10px;
+}
+
+#size_2x:checked ~ .newspaper .text_container
+{
+    font-size: 1.2px;
+}
+
+#size_3x:checked ~ .newspaper .text_container
+{
+    font-size: 1.5px;
+}
+
+#check_font:checked ~ .newspaper p
+{
+    font-family: 'vogue_highline_serifmedium';
+}
+
+#new_theme:checked ~ .newspaper > header > hr,
+#new_theme:checked ~ .newspaper > header > p
+{
+    background: #363530;
+}
+
+#new_theme:checked ~ .newspaper
+{
+    background-color: #a19a8e;
+}
+
+#new_theme:checked ~ .newspaper
+{
+    color: #000;
+}
+
+#new_theme:checked ~ .newspaper > header > .data
+{
+    color: #fff;
+}
+
+.text_container
+{
+    font-size: 1px;
+}
+
+.left-half,
+.right-half
+{
+    padding: 0 10px;
+    font-size: 1em;
+    width: 42%;
+    column-rule: 2px outset #000;
+    column-gap: 10px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.left-half
+{
+    column-count: 2;
+}
+
+.right-half
+{
+    column-count: 3;
+}
+
+.news > article > p:first-of-type::first-letter
+{
+    font-size: 2em;
+}
+
+.tb
+{
+    display: inline-block;
+    padding-top: 150%;
+    width: 10%;
+    writing-mode: tb-rl;
+    text-orientation: upright;
+}
+
+.job
+{
+    display: table-cell;
+    height: 100%;
+}
+
+.job h2
+{
+    margin: 0;
+    text-align: center;
+}
+
+.job h3
+{
+    margin-top: 0;
+
+}
+
+.job > article
+{
+    padding: 10px;
+}
+
+.job > article:nth-child(even)
+{
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.job > article:nth-child(odd)
+{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.salary
+{
+    text-align: right;
+}
+
+.salary::after
+{
+    content: 'р';
+}
+
+.quote
+{
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.quote::before,
+.quote::after
+{
+    content: '\"';
+}
+
+.span_columns .header
+{
+    font-size: 30em;
+}
+
+h2.header
+{
+    font-size: 23em;
+}
+
+h3.header
+{
+    font-size: 21em;
+}
+
+#main_container
+{
+    margin: .5%;
+    display: table;
+}
+
+p
+{
+    font-size: 20em;
+    font-family: 'chekhovskoybook';
+    margin: 0;
+    text-indent: 1em;
+
+}
+
+h1
+{
+    font-size: 40em;
+}
+
+img
+{
+    width: 80%;
+    margin: 10px 10%;
+}
+
+.span_columns
+{
+    column-span: all;
+}
