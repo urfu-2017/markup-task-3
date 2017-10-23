@@ -1,0 +1,126 @@
+/* Settings elements styles */
+
+input[type='radio']
+{
+    display: none;
+}
+
+.settings
+{
+    text-align: center;
+    background: linear-gradient(0deg, #f3ece2, #fff);
+}
+
+.settings-group
+{
+    margin: 20px;
+    display: inline-block;
+}
+
+.settings-group label
+{
+    width: 150px;
+    margin: 0 3px;
+    padding: 2px 0;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.settings-group label:hover
+{
+    background: linear-gradient(0deg, #f3ece2, #d2baa1);
+}
+
+/* Font size customizations */
+
+input[id='font-size-big']:checked ~ .settings
+{
+    font-size: 1.8rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper h1
+{
+    font-size: 8rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper .headline-widget
+{
+    font-size: 1.8rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper .newsletter-about
+{
+    font-size: 1.8rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper .description
+{
+    font-size: 2rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper .most-important-heading
+{
+    font-size: 8rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper article
+{
+    font-size: 1.8rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper figcaption
+{
+    font-size: 1.8rem;
+}
+
+input[id='font-size-big']:checked ~ .theme-wrapper article h2
+{
+    font-size: 2rem;
+}
+
+/* Font family customizations */
+
+@font-face
+{
+    font-family: 'Old Newspaper';
+    src: url('../fonts/old-newspaper.ttf');
+}
+
+@font-face
+{
+    font-family: 'News Cycle Sans';
+    src: url('../fonts/newscycle-bold.ttf');
+}
+
+input[id='font-serif']:checked ~ .theme-wrapper
+{
+    font-family: 'Old Newspaper', serif;
+}
+
+input[id='font-sans-serif']:checked ~ .theme-wrapper
+{
+    font-family: 'News Cycle Sans', sans-serif;
+}
+
+/* Page theme */
+
+input[id='theme-dark']:checked ~ .settings,
+input[id='theme-dark']:checked ~ .theme-wrapper
+{
+    color: #fff;
+    background: #111;
+}
+
+input[id='theme-dark']:checked ~ .settings label:hover
+{
+    color: #000;
+    background: #fff;
+}
+
+input[id='theme-dark']:checked ~ .settings label,
+input[id='theme-dark']:checked ~ .theme-wrapper .newsletter-about
+{
+    border-color: #fff;
+}
