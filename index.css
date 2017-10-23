@@ -1,0 +1,136 @@
+.newspaper
+{
+    background: #f7fa9f;
+}
+
+.half-width
+{
+    width: 49%;
+    display: inline-block;
+    border-left: 1px solid black;
+    padding: 3px;
+}
+
+figure
+{
+    max-width: 300%;
+    height: auto;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+article
+{
+    column-span: 1;
+    column-rule: 1px solid #000;
+}
+
+article.two-columns
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+article.three-columns
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+article > p:first-of-type::first-letter
+{
+    color: red;
+}
+
+article p
+{
+    text-align: justify;
+}
+
+article .spanned
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+article p.formatted
+{
+    white-space: pre-wrap;
+}
+
+blockquote
+{
+    border-left: 10px solid #ccc;
+    quotes: '\201C''\201D''\2018''\2019';
+    line-height: 2em;
+    width: auto;
+    background: gray;
+}
+
+blockquote:hover
+{
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+}
+
+blockquote:before
+{
+    color: #ccc;
+    content: open-quote;
+}
+
+blockquote:after
+{
+    content: '\'\'';
+}
+
+article p.huge-spaced
+{
+    letter-spacing: .8em;
+}
+
+article p.small-caps
+{
+    font-variant: small-caps;
+}
+
+article p.obluque
+{
+    font-style: oblique;
+}
+
+article p.light
+{
+    font-weight: light;
+}
+
+article p.cursive
+{
+    font-family: cursive;
+}
+
+article p.indented
+{
+    text-indent: 5%;
+}
+
+article p.bad-fonted
+{
+    font-family: 'Comic Sans MS' 'Comic Sans' fantasy;
+    line-height: 16px;
+}
+
+article p.helvetica
+{
+    font-family: Helvetica monospace;
+}
+
+article p.pink-shadowed
+{
+    text-shadow: 4px 4px 10px #ff69b4;
+}
