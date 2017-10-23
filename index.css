@@ -41,7 +41,7 @@ body
     margin: 0;
 }
 
-.wrapper-sibling
+.styling-wrapper
 {
     background: #fff url('img/background/paper.png') repeat;
 }
@@ -51,7 +51,7 @@ input
     display: none;
 }
 
-input[value='dark']:checked ~ .wrapper-sibling
+input[value='dark']:checked ~ .styling-wrapper
 {
     background-color: #000;
 }
@@ -76,7 +76,7 @@ header .underhead
     vertical-align: top;
 }
 
-input[value='dark']:checked ~ .wrapper-sibling header .underhead
+input[value='dark']:checked ~ .styling-wrapper header .underhead
 {
     border-color: #bbb;
 }
@@ -116,7 +116,7 @@ section:first-child
     border-right: 1px solid #000;
 }
 
-input[value='dark']:checked ~ .wrapper-sibling section:first-child
+input[value='dark']:checked ~ .styling-wrapper section:first-child
 {
     border-right: 1px solid #fff;
 }
@@ -143,7 +143,7 @@ article
     padding: 10px;
 }
 
-input[value='dark']:checked ~ .wrapper-sibling article
+input[value='dark']:checked ~ .styling-wrapper article
 {
     column-rule: 1px solid #fff;
 }
@@ -159,7 +159,7 @@ article,
     font-family: open_sans_condensed;
 }
 
-.wrapper-sibling
+.styling-wrapper
 {
     font-size: 20px;
 }
@@ -190,7 +190,7 @@ p:first-of-type::first-letter
     color: #444;
 }
 
-input[value='dark']:checked ~ .wrapper-sibling p:first-of-type::first-letter
+input[value='dark']:checked ~ .styling-wrapper p:first-of-type::first-letter
 {
     color: #bbb;
 }
@@ -207,12 +207,12 @@ article .image
     width: inherit;
 }
 
-input[value='dark']:checked ~ .wrapper-sibling
+input[value='dark']:checked ~ .styling-wrapper
 {
     color: #fff;
 }
 
-input[value='light']:checked ~ .wrapper-sibling
+input[value='light']:checked ~ .styling-wrapper
 {
     color: #000;
 }
@@ -225,14 +225,14 @@ label[for]
     color: #000;
 }
 
-input[value='light']:checked ~ .wrapper-sibling label[for='light-theme'],
-input[value='dark']:checked ~ .wrapper-sibling label[for='dark-theme'],
-input[value='small']:checked ~ .wrapper-sibling label[for='small-font-size'],
-input[value='normal']:checked ~ .wrapper-sibling label[for='normal-font-size'],
-input[value='big']:checked ~ .wrapper-sibling label[for='big-font-size'],
-input[value='serif']:checked ~ .wrapper-sibling label[for='serif-font'],
-input[value|='sans']:checked ~ .wrapper-sibling label[for|='sans'],
-input[value='mono']:checked ~ .wrapper-sibling label[for='mono-font']
+input[value='light']:checked ~ .styling-wrapper label[for='light-theme'],
+input[value='dark']:checked ~ .styling-wrapper label[for='dark-theme'],
+input[value='small']:checked ~ .styling-wrapper label[for='small-font-size'],
+input[value='normal']:checked ~ .styling-wrapper label[for='normal-font-size'],
+input[value='big']:checked ~ .styling-wrapper label[for='big-font-size'],
+input[value='serif']:checked ~ .styling-wrapper label[for='serif-font'],
+input[value|='sans']:checked ~ .styling-wrapper label[for|='sans'],
+input[value='mono']:checked ~ .styling-wrapper label[for='mono-font']
 {
     background-color: #666;
     color: #fff;
@@ -254,65 +254,65 @@ input[value='mono']:checked ~ .wrapper-sibling label[for='mono-font']
 }
 
 .control label[for='small-font-size'],
-input[value='small']:checked ~ .wrapper-sibling
+input[value='small']:checked ~ .styling-wrapper
 {
     font-size: 15px;
 }
 
 .control label[for='big-font-size'],
-input[value='big']:checked ~ .wrapper-sibling
+input[value='big']:checked ~ .styling-wrapper
 {
     font-size: 30px;
 }
 
 .control label[for='normal-font-size'],
-input[value='normal']:checked ~ .wrapper-sibling
+input[value='normal']:checked ~ .styling-wrapper
 {
     font-size: 20px;
 }
 
-input[value='big']:checked ~ .wrapper-sibling .small-articles
+input[value='big']:checked ~ .styling-wrapper .small-articles
 {
     width: 45%;
 }
 
-input[value='big']:checked ~ .wrapper-sibling .main-article
+input[value='big']:checked ~ .styling-wrapper .main-article
 {
     width: 55%;
 }
 
-input[value='small']:checked ~ .wrapper-sibling .small-articles
+input[value='small']:checked ~ .styling-wrapper .small-articles
 {
     width: 20%;
 }
 
-input[value='small']:checked ~ .wrapper-sibling .main-article
+input[value='small']:checked ~ .styling-wrapper .main-article
 {
     width: 80%;
 }
 
 .control label[for='serif-font'],
-input[value='serif']:checked ~ .wrapper-sibling article,
-input[value='serif']:checked ~ .wrapper-sibling article h3
+input[value='serif']:checked ~ .styling-wrapper article,
+input[value='serif']:checked ~ .styling-wrapper article h3
 {
     font-family: 'Times New Roman', Times, serif;
 }
 
 .control label[for='sans-serif-font'],
-input[value='sans-serif']:checked ~ .wrapper-sibling article
+input[value='sans-serif']:checked ~ .styling-wrapper article
 {
     font-family: 'open_sans_condensed' sans-serif;
 }
 
 .control label[for='mono-font'],
-input[value='mono']:checked ~ .wrapper-sibling article,
-input[value='mono']:checked ~ .wrapper-sibling article h3
+input[value='mono']:checked ~ .styling-wrapper article,
+input[value='mono']:checked ~ .styling-wrapper article h3
 {
     font-family: Courier New, Courier, monospace;
 }
 
-input[value='mono']:checked ~ .wrapper-sibling article h3,
-input[value='serif']:checked ~ .wrapper-sibling article h3
+input[value='mono']:checked ~ .styling-wrapper article h3,
+input[value='serif']:checked ~ .styling-wrapper article h3
 {
     font-weight: bold;
 }
