@@ -1,0 +1,191 @@
+@font-face
+{
+    font-family: 'Yanone Kaffeesatz';
+    src: url('./src/fonts/YanoneKaffeesatz-Regular.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Bad Script';
+    src: url('./src/fonts/BadScript-Regular.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    src: url('./src/fonts/Lobster.woff') format('woff');
+}
+
+html
+{
+    background: url('http://bgfons.com/upload/paper_texture282.jpg');
+    font-family: 'Lobster', cursive;
+    line-height: 1.5em;
+    max-width: 1880px;
+}
+
+p
+{
+    margin: 0 0 15px;
+}
+
+footer,
+header
+{
+    line-height: 2em;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h1,
+header,
+footer
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 15px;
+}
+
+main article .columned:first-letter
+{
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
+
+.single-column
+{
+    width: 2px;
+    word-break: break-all;
+    margin: auto;
+    text-transform: uppercase;
+
+}
+
+.image img
+{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image figcaption
+{
+    display: inline-block;
+}
+
+.columned
+{
+    columns: 300px 2;
+}
+
+main,
+aside
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+main
+{
+    width: 77%;
+}
+
+aside
+{
+    width: 20%;
+    margin-left: 2%;
+}
+
+.image
+{
+    font-family: 'Bad Script', cursive;
+    font-size: .8em;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+aside p
+{
+    font-family: 'Bad Script', cursive;
+}
+
+article:not(:last-child):after,
+aside p:not(:last-child):after,
+footer:before,
+header:after
+{
+    content: '';
+    display: block;
+    height: 1px;
+    border: 1px solid #000;
+    background: #000;
+    -webkit-column-span: all;
+    column-span: all;
+    margin-bottom: 5px;
+}
+
+figure
+{
+    margin-top: 5px;
+    text-align: center;
+}
+
+q
+{
+    border-left: 3px solid #000;
+    padding: .5em;
+    quotes: '\201C''\201D''\2018''\2019';
+    display: block;
+}
+
+q:before
+{
+    color: #000;
+    font-size: 2em;
+    line-height: .1em;
+    margin-right: .15em;
+    vertical-align: -.5em;
+}
+
+q:after
+{
+    color: #000;
+    font-size: 2em;
+    line-height: .1em;
+    margin-left: .15em;
+    vertical-align: -.5em;
+}
+
+input[value='night']:checked ~ .container
+{
+    background: #000;
+}
+
+input[value='night']:checked ~ .container,
+input[value='night']:checked ~ .container q:after,
+input[value='night']:checked ~ .container q:before
+{
+    color: #fff;
+}
+
+input[value='night']:checked ~ .container q
+{
+    border-left: 10px solid #fff;
+}
+
+input[value='night']:checked ~ .container article:not(:last-child):after,
+input[value='night']:checked ~ .container footer:before,
+input[value='night']:checked ~ .container header:after
+{
+    background: #fff;
+}
+
+input[value='small']:checked ~ .container
+{
+    font-size: .7em;
+}
+
+input[value='large']:checked ~ .container
+{
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
