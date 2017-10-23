@@ -1,0 +1,96 @@
+#one {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 400px;
+    border: 1px solid black;
+    float: left;
+}
+body {
+    margin-left: 25%;
+    font-family: Georgia;
+}
+aside {
+    background: #ffd65e;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(45deg, #ffd65e 0%, #ff5487 100%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(45deg, #ffd65e 0%, #ff5487 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(45deg, #ffd65e 0%, #ff5487 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#ff5487', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    
+    font-size: 15px;
+    float: left;
+    width: 130px;
+    text-align: left;
+    color: white;
+    padding-left: 30px;
+    padding-top: 35px;
+}
+.grey {
+    color: grey;
+    border: 1px solid black;
+}
+#tes {
+		border: 1px solid black;
+	white-space:pre-wrap;
+    column-count: 2;
+    column-gap: 1px;
+    column-width: 144px;
+    font-size: 8px;
+    height: 148px;
+}
+.red {
+    color: #b70000;
+}
+#moment {
+	border: 1px solid black;
+    font-size: 7px;
+    font-weight: bolder;
+}
+#context{
+	font-size: 8px;
+	font-weight: bolder;
+	color:  #838b75;
+}
+h1 {
+    font-size: 30px;
+}
+#asideText {
+    font-size: 12px;
+}
+#textBlock {
+    width: 295px;
+    font-size: 12px;
+    float: left;
+    padding-left: 35px;
+}
+#rightBlock {
+    float: left;
+    font-size: 8px;
+    width: 60px;
+    white-space: pre;
+}
+#description {
+	font-size: 7px;
+    font-family: 'Noto Sans', sans-serif;
+}
+#bigLetter {
+	border: 1px solid black;
+    font-size: 30px;
+}
+.bigText {
+	border: 1px solid black;
+    font-size: 40px;
+    font-weight: 900;
+}
+footer {
+	border: 1px solid black;
+	float: left;
+}
