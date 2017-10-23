@@ -254,14 +254,6 @@ main
     column-gap: 25px;
 }
 
-.spanned
-{
-    -webkit-column-span: all;
-    display: block;
-    column-span: all;
-    width: 45%;
-}
-
 .subarticle-header
 {
     font-size: 40px;
