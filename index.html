@@ -1,9 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
+    <title>Комсомольская правда</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=bikham-cyr-script" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=carolina" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=mon-amour-two-medium" rel="stylesheet">
 </head>
+
 <body>
+    <p>Размер шрифта:</p>
+    <input type="radio" name="sizeOfText" id="small">
+    <label for="small">Small</label>
+    <input type="radio" name="sizeOfText" id="normal" checked>
+    <label for="normal">Normal</label>
+    <input type="radio" name="sizeOfText" id="big">
+    <label for="big">Big</label>
+
+    <p>Шрифт:</p>
+    <input type="radio" name="font" id="default" checked>
+    <label for="default">Default</label>
+    <input type="radio" name="font" id="courierNew">
+    <label for="courierNew">Courier new</label>
+    <input type="radio" name="font" id="msSerif">
+    <label for="msSerif">MS Serif</label>
+
+    <p>Цветовая тема:</p>
+    <input type="radio" id="defaultColor" name="color" checked>
+    <label for="defaultColor">Default</label>
+    <input type="radio" id="white" name="color">
+    <label for="white">White</label>
+    <input type="radio" id="black" name="color">
+    <label for="black">Black</label>
+
+    <section class="newspaper">
+        <header>
+            <h1 class="newspaper_name">Комсомольская правда</h1>
+            <h2 class="newspaper_release">Выпуск № 3687 от 11 мая 1937 года</h2>
+        </header>
+        <hr>
+        <article class="article_name">
+            <article class="first_article">
+                <h2>Любовно и умело воспитывать пионеров</h2>
+                <p>В во&shy;семь-де&shy;вять лет пи&shy;о&shy;нер&shy;ский
+                    гал&shy;стук - это пред&shy;мет стрем&shy;ле&shy;ний
+                    и за&shy;ви&shy;сти. Каж&shy;дая со&shy;вет&shy;ская
+                    мать мог&shy;ла бы рас&shy;ска&shy;зать об этих го&shy;ря&shy;чих
+                    меч&shy;та&shy;ньях де&shy;тво&shy;ры, об этой ис&shy;крен&shy;ней,
+                    сер&shy;деч&shy;ней тя&shy;ге ре&shy;бят к пи&shy;о&shy;нер&shy;ской
+                    ор&shy;га&shy;ни&shy;за&shy;ции. Но не&shy;ко&shy;то&shy;рые
+                    из ма&shy;те&shy;рей мог&shy;ли бы за&shy;кон&shy;чить
+                    свой рас&shy;сказ жа&shy;ло&shy;бой на то, что сын
+                    быст&shy;ро охла&shy;дел и к гал&shy;сту&shy;ку, и
+                    к знач&shy;ку, что до&shy;ма он да&shy;же не вспо&shy;ми&shy;на&shy;ет
+                    о зве&shy;не в от&shy;ря&shy;де.</p>
+                <img class="pioneers" src="https://www.just-so-site.com/archive/pioneer/pioneer.jpg"
+                    alt="Пионеры">
+                <p>Как мо&shy;жет воз&shy;ник&shy;нуть у ре&shy;бен&shy;ка
+                    та&shy;кое от&shy;но&shy;ше&shy;ние, ко&shy;гда толь&shy;ко
+                    пи&shy;о&shy;нер&shy;ская ор&shy;га&shy;ни&shy;за&shy;ция
+                    и спо&shy;соб&shy;на от&shy;ра&shy;зить, во&shy;пло&shy;тить
+                    все стрем&shy;ле&shy;ния и ча&shy;я&shy;ния дет&shy;ских
+                    сер&shy;дец? Раз&shy;ве до&shy;пу&shy;сти&shy;мо, что&shy;бы
+                    хоть один ре&shy;бе&shy;нок охла&shy;де&shy;вал к сво&shy;им
+                    пи&shy;о&shy;нер&shy;ских де&shy;лам, ко&shy;гда са&shy;мо
+                    зва&shy;ние пи&shy;о&shy;не&shy;ра ма&shy;лень&shy;кий
+                    со&shy;вет&shy;ский граж&shy;да&shy;нин дол&shy;жен
+                    ощу&shy;щать, как нечто по&shy;чет&shy;ное, вы&shy;де&shy;ля&shy;ю&shy;щее
+                    его из сре&shy;ды всей де&shy;тво&shy;ры?</p>
+                <p class="text_in_frame">Есть хо&shy;ро&shy;шие пи&shy;о&shy;нер&shy;ские во&shy;жа&shy;тые
+                    - лю&shy;бим&shy;цы ре&shy;бят, под&shy;лин&shy;ные
+                    вла&shy;сти&shy;те&shy;ли их дум и сер&shy;дец. Об
+                    од&shy;ном из та&shy;ких во&shy;жа&shy;тых рас&shy;ска&shy;зы&shy;ва&shy;ла
+                    &quot;Ком&shy;со&shy;моль&shy;ская прав&shy;да&quot;
+                    26 ап&shy;ре&shy;ля в за&shy;мет&shy;ке &quot;
+                    <mark>Ин&shy;же&shy;нер Жел&shy;ков&shy;ский - во&shy;жа&shy;тый
+                        пи&shy;о&shy;нер&shy;от&shy;ря&shy;да
+                    </mark> &quot;.</p>
+                <p>Раз&shy;ве нет сре&shy;ди мно&shy;го&shy;чис&shy;лен&shy;ной
+                    ар&shy;мии ком&shy;со&shy;моль&shy;цев дей&shy;стви&shy;тель&shy;но
+                    под&shy;хо&shy;дя&shy;щих для пи&shy;о&shy;нер&shy;ской
+                    ра&shy;бо&shy;ты? От&shy;сут&shy;ствие у рай&shy;ко&shy;мов
+                    по&shy;сто&shy;ян&shy;ных ре&shy;зер&shy;вов под&shy;го&shy;тов&shy;лен&shy;ных,
+                    за&shy;ра&shy;нее обу&shy;чен&shy;ных во&shy;жа&shy;тых
+                    по&shy;ка&shy;зы&shy;ва&shy;ет всю не&shy;се&shy;рьез&shy;ность
+                    под&shy;хо&shy;да ко&shy;ми&shy;те&shy;тов ком&shy;со&shy;мо&shy;ла
+                    к это&shy;му важ&shy;ней&shy;ше&shy;му де&shy;лу. За&shy;да&shy;ча
+                    со&shy;сто&shy;ит не толь&shy;ко в том, что&shy;бы
+                    ин&shy;струк&shy;ти&shy;ро&shy;вать уже ра&shy;бо&shy;та&shy;ю&shy;щих
+                    во&shy;жа&shy;тых, но и в том, что&shy;бы за&shy;бла&shy;го&shy;вре&shy;мен&shy;но,
+                    без гон&shy;ки и спеш&shy;ки, го&shy;то&shy;вить на
+                    спе&shy;ци&shy;аль&shy;ных кур&shy;сах ком&shy;со&shy;моль&shy;ские
+                    кад&shy;ры для ра&shy;бо&shy;ты с пи&shy;о&shy;не&shy;ра&shy;ми.
+                    Един&shy;ствен&shy;ное су&shy;ще&shy;ству&shy;ю&shy;щее
+                    по&shy;со&shy;бие для во&shy;жа&shy;тых - жур&shy;нал
+                    &quot;Во&shy;жа&shy;тый&quot;. Пи&shy;о&shy;нер&shy;ский
+                    от&shy;ряд не вы&shy;ле&shy;за&shy;ет за школь&shy;ные
+                    две&shy;ри, хо&shy;тя в ре&shy;ше&shy;ни&shy;ях Х с'ез&shy;да
+                    ком&shy;со&shy;мо&shy;ла от&shy;чет&shy;ли&shy;во ска&shy;за&shy;но,
+                    а вто&shy;рым пле&shy;ну&shy;мом сно&shy;ва под&shy;твер&shy;жде&shy;но,
+                    что пи&shy;о&shy;нер&shy;ский от&shy;ряд от&shy;нюдь
+                    не яв&shy;ля&shy;ет&shy;ся при&shy;дат&shy;ком шко&shy;лы.</p>
+            </article>
+            <article class="second_article">
+                <h2>Сбор макулатуры</h2>
+                <p>Стра&shy;на на&shy;пря&shy;га&shy;ет все си&shy;лы, раз&shy;вер&shy;ты&shy;вая
+                    свою про&shy;мыш&shy;лен&shy;ност Ми долж&shy;ны стать
+                    са&shy;мо&shy;сто&shy;я&shy;тель&shy;ным хо&shy;зяй&shy;ствен&shy;ным
+                    ор&shy;га&shy;низ&shy;мом, что&shy;бы быть не&shy;за&shy;ви&shy;си&shy;мы&shy;ми
+                    от ино&shy;стран&shy;ных ка&shy;пи&shy;та&shy;ли&shy;стов.
+                    Нуж&shy;ные сель&shy;ско&shy;му хо&shy;зяй&shy;ству
+                    ма&shy;ши&shy;ны об&shy;хо&shy;дят&shy;ся де&shy;рев&shy;не
+                    в не&shy;сколь&shy;ко раз до&shy;ро&shy;же, ко&shy;гда
+                    их вво&shy;зят из-за гра&shy;ни&shy;цы. Мы долж&shy;ны
+                    из&shy;ба&shy;вить&shy;ся от «по&shy;мо&shy;щи доб&shy;рых»
+                    ино&shy;стран&shy;ных бур&shy;жуа во что&shy;бы то
+                    ни ста&shy;ло. Вот по&shy;че&shy;му мы со&shy;кра&shy;ща&shy;ем
+                    ввоз из-за гра&shy;ни&shy;цы дру&shy;гих пред&shy;ме&shy;тов
+                    и боль&shy;ше все&shy;го за&shy;ку&shy;па&shy;ем таи
+                    обо&shy;ру&shy;до&shy;ва&shy;ния для но&shy;вых со&shy;вет&shy;ских
+                    пред&shy;при&shy;я&shy;тий. По этой же при&shy;чи&shy;не
+                    со&shy;кра&shy;ти&shy;ли и ввоз бу&shy;ма&shy;ги. Бу&shy;ма&shy;га
+                    нам не&shy;об&shy;хо&shy;ди&shy;ма до&shy;за&shy;ре&shy;зу.</p>
+            </article>
+            <article class="advertisement">
+                <h3>Куда сдавать бумагу</h3>
+                <p>Вся&shy;ко&shy;го ви&shy;да бу&shy;ма&shy;гу, не&shy;за&shy;ви&shy;си&shy;мо
+                    от ее фор&shy;мы, ка&shy;че&shy;ства и раз&shy;ме&shy;ров,
+                    по&shy;ку&shy;па&shy;ет Утиль&shy;гос&shy;торг по 3
+                    коп. за кгр. Скла&shy;ды Утиль&shy;гос&shy;тор&shy;га
+                    по&shy;ме&shy;ща&shy;ют&shy;ся в сле&shy;ду&shy;ю&shy;щих
+                    пунк&shy;тах: 1. 1-я Ме&shy;щан&shy;ская, 18. 2. Под&shy;ко&shy;па&shy;ев&shy;ский
+                    пер., 4. 3. Ска&shy;ко&shy;вая, S1. 4. Се&shy;реб&shy;ря&shy;ный
+                    Бор. День&shy;ги вы&shy;пла&shy;чи&shy;ва&shy;ют&shy;ся
+                    тут же. Кро&shy;ме то&shy;го, бу&shy;ма&shy;гу по&shy;ни&shy;ма&shy;ет
+                    склад об&shy;ще&shy;ства «Друг Де&shy;тей», по&shy;ме&shy;ща&shy;ю&shy;щий&shy;ся
+                    на Са&shy;дов&shy;ни&shy;че&shy;ской на&shy;бе&shy;реж&shy;ной,
+                    37. 3а кон&shy;тор&shy;скую бу&shy;ма&shy;гу (плот&shy;ная)
+                    пла&shy;тят 20—25 к. за кгр.</p>
+            </article>
+        </article>
+        <footer>
+            Газета основана 13 марта 1925 года как официальный печатный орган ВЛКСМ.
+        </footer>
+    </section>
 </body>
+
 </html>
