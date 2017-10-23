@@ -1,0 +1,61 @@
+html
+{
+    background-color: darkkhaki;
+}
+
+h1,
+h3
+{
+    text-align: center;
+    column-span: all;
+    font-weight: 500;
+    font-size: 4em;
+    font-family: Lobster;
+    text-shadow: 1px 1px #492400, -1px -1px #38003a;
+}
+
+h3
+{
+    font-size: 2em;
+}
+
+@font-face
+{
+    font-family: OldRussian;
+    src: url(MonomakhUnicode.ttf);
+}
+
+.main
+{
+    column-count: 3;
+    column-rule: 2px solid #000;
+    font-family: OldRussian;
+}
+
+p
+{
+    text-align: justify;
+    hyphens: manual;
+    text-indent: 12px;
+    color: #260400;
+}
+
+p:first-of-type:first-letter
+{
+    font-size: 150%;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+q
+{
+    font-family: 'Bad Script';
+    font-weight: 600;
+    opacity: .9;
+}
+
+figcaption
+{
+    opacity: .7;
+    font-family: Comfortaa;
+}
