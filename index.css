@@ -1,0 +1,87 @@
+.c1 
+{ 
+    font-size: 20px; 
+    column-count: 3; 
+    column-rule: 2px solid #000000; 
+} 
+
+input[type='checkbox']:checked ~ table > tr:first-child > td:nth-child(2) 
+{ 
+    color: red; 
+} 
+
+.c2 
+{ 
+    column-count: 4; 
+    column-rule: 2px solid #000000; 
+} 
+
+div:nth-child(4) 
+{ 
+    column-count: 7; 
+    column-rule: 2px solid #000000; 
+    font-family: 'Times New Roman', Times, serif; 
+} 
+
+h6 
+{ 
+    column-span: all; 
+    margin: 10px; 
+} 
+
+hr 
+{ 
+    background-color: black; 
+    height: 5px; 
+} 
+
+h3 
+{ 
+    column-span: all; 
+} 
+
+h1, 
+h2 
+{ 
+    column-span: all; 
+    margin: 10px; 
+    font-size: 100px; 
+    font-family: sans-serif; 
+} 
+
+h2 
+{ 
+    font-family: fantasy; 
+} 
+
+tr:first-child > td:first-child 
+{ 
+    width: 57%; 
+    padding: 5px; 
+    border: 7px dotted black; 
+} 
+
+.c1 > h4 
+{ 
+    font-family: fantasy; 
+} 
+
+.c2 > h4 
+{ 
+    font-family: sans-serif; 
+}
+
+.c2 > p::first-letter
+{
+    font-size: 30px;
+}
+
+.c1 > p::first-letter
+{
+    font-size: 30px;
+}
+
+.c1 > p:nth-child(5)
+{
+    border: 2px dotted black;
+}
