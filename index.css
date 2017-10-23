@@ -213,3 +213,11 @@ body main .article-container .article-text::first-letter {
 body .no-margin {
   margin: 0;
 }
+
+body .margin-right {
+    margin-right: 40px;
+  }
+
+body .margin-top {
+margin-top: 20px;
+}
