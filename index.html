@@ -3,7 +3,141 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
+    <input id="theme" class="nightThemeChoice" type="checkbox">
+    <label for="theme">Ночная тема</label>
+    <input id="text" class="textSizeChoice" type="checkbox">
+    <label for="text">Версия с большими буквами</label>
+    <input id="font" class="fontChoice" type="checkbox">
+    <label for="font">Улучшить страницу</label>
+    <main>
+        <header class="introduction">
+            <div class="slogan">
+                <blockquote>Утром в газете — вечером в куплете.</blockquote>
+            </div>
+            <h1 class="newspaper-name">Ироничные вести</h1>
+            <div class="date"><span>Выпуск №42 от 31 сентября 2017 г., среда.</span></div>
+        </header>
+        <div class="news-block">
+            <article class="news">
+                <h3>В Саратове грузовик с асфальтом провалился под асфальт</h3>
+                <p>
+                    Гру&shy;зо&shy;вик Таtra, гру&shy;жё&shy;ный ас&shy;фаль&shy;том про&shy;ва&shy;
+                    лил&shy;ся в до&shy;рож&shy;ную яму. Ава&shy;рия про&shy;изо&shy;шла 19 ок&shy;
+                    тяб&shy;ря на пе&shy;ре&shy;крёст&shy;ке улиц Со&shy;ко&shy;ло&shy;вой и Же&shy;
+                    лез&shy;но&shy;до&shy;рож&shy;ной в Са&shy;ра&shy;то&shy;ве.<br>
+                    <br>
+                    Оче&shy;вид&shy;цем про&shy;ис&shy;ше&shy;ствия стал мест&shy;ный жи&shy;
+                    тель, ко&shy;то&shy;рый 
+                    <a href="https://goo.gl/rarY3s" target="_blank">опуб&shy;ли&shy;ко&shy;вал</a> фо&shy;
+                    то&shy;гра&shy;фии в груп&shy;пу «Са&shy;ра&shy;тов Он&shy;лайн» во «ВКонтакте». 
+                    По его сло&shy;вам, на этом участ&shy;ке что-то рас&shy;ка&shy;пы&shy;ва&shy;
+                    ли и гру&shy;зо&shy;вик вёз сю&shy;да ас&shy;фальт для вос&shy;ста&shy;нов&shy;ле&shy;
+                    ния до&shy;ро&shy;ги.
+                </p>
+                <blockquote class="quote">— Толь&shy;ко что по&shy;ло&shy;жи&shy;ли но&shy;вые пли&shy;
+                    ты. За&shy;ко&shy;па&shy;ли. При&shy;вез&shy;ли ас&shy;фальт и-и-и-и... За&shy;на&shy;
+                    вес, — про&shy; ком&shy;мен&shy;ти&shy;ро&shy;вал са&shy;ра&shy;то&shy;вец про&shy;
+                    ис&shy;ше&shy;ствие в соц&shy;се&shy;ти.
+                </blockquote>
+                <p>
+                    Для Са&shy;ра&shy;то&shy;ва это не пер&shy;вый слу&shy;чай, ко&shy;гда гру&shy;зо&shy;
+                    вик с ас&shy;фаль&shy;том ока&shy;зы&shy;ва&shy;ет&shy;ся в яме. В ав&shy;гу&shy;
+                    сте гру&shy;жё&shy;ный «Зил» про&shy;ва&shy;лил&shy;ся в яму на до&shy;ро&shy;
+                    ге. 18 ок&shy;тяб&shy;ря в Баш&shy;ки&shy;рии «Ка&shy;маз» с пес&shy;ком про&shy;
+                    ва&shy;лил&shy;ся под ас&shy;фальт.<br>
+                </p>
+                <figure>
+                    <img id="truck-img" src="images/truck.jpg" alt="fiasco">
+                    <figcaption>Фото с места проишествия</figcaption>
+                </figure>
+            </article>
+            <article class="news">
+                <h3>Петербургский суд ложно заминировали во время слушания дела о ложном минировании</h3>
+                <p>
+                    В Санкт-Пе&shy;тер&shy;бур&shy;ге Мос&shy;ков&shy;ский рай&shy;он&shy;ный суд эва&shy;
+                    ку&shy;и&shy;ро&shy;ва&shy;ли по&shy;сле ано&shy;ним&shy;но&shy;го звон&shy;ка те&shy;
+                    ле&shy;фон&shy;ных тер&shy;ро&shy;ри&shy;стов, ко&shy;то&shy;рые со&shy;об&shy;щи&shy;
+                    ли о за&shy;ло&shy;жен&shy;ной бом&shy;бе. Во вре&shy;мя звон&shy;ка в за&shy;ле слу&shy;
+                    ша&shy;лось де&shy;ло мест&shy;ной жи&shy;тель&shy;ни&shy;цы, ко&shy;то&shy;рая по&shy;
+                    до&shy;зре&shy;ва&shy;лась в лож&shy;ных со&shy;об&shy;ще&shy;ни&shy;ях о ми&shy;ни&shy;
+                    ро&shy;ва&shy;нии зда&shy;ний.<br>
+                    <br>
+                    Зво&shy;нив&shy;шие по&shy;со&shy;ве&shy;то&shy;ва&shy;ли сроч&shy;но эва&shy;ку&shy;
+                    и&shy;ро&shy;вать всех, кто на&shy;хо&shy;дил&shy;ся в по&shy;ме&shy;ще&shy;нии. При&shy;
+                    быв&shy;шие на ме&shy;сто спе&shy;ци&shy;а&shy;ли&shy;сты тща&shy;тель&shy;но изу&shy;
+                    чи&shy;ли зда&shy;ние су&shy;да, но ни&shy;ка&shy;ко&shy;го взрыв&shy;но&shy;
+                    го устрой&shy;ства не об&shy;на&shy;ру&shy;жи&shy;ли.<br>
+                    <br>
+                    Мас&shy;со&shy;вые эва&shy;ку&shy;а&shy;ции длят&shy;ся по всей стра&shy;
+                    не уже не пер&shy;вый день. Еже&shy;днев&shy;но от не&shy;из&shy;вест&shy;ных зло&shy;
+                    умыш&shy;лен&shy;ни&shy;ков по&shy;сту&shy;па&shy;ют звон&shy;ки о за&shy;ло&shy;жен&shy;
+                    ных бом&shy;бах в об&shy;ще&shy;ствен&shy;ных ме&shy;стах, где на&shy;блю&shy;да&shy;
+                    ет&shy;ся боль&shy;шое скоп&shy;ле&shy;ние лю&shy;дей.<br>
+                </p>
+            </article>
+
+            <article class="news">
+                <h3>Арт-объект «Я люблю Зеленоград» сломали в День города Зеленограда</h3>
+                <p>
+                    9 сен&shy;тяб&shy;ря в Зе&shy;ле&shy;но&shy;гра&shy;де не&shy;из&shy;вест&shy;
+                    ные сло&shy;ма&shy;ли арт-объ&shy;ект «Я люб&shy;лю Зе&shy;ле&shy;но&shy;
+                    град». Ин&shy;ци&shy;дент про&shy;изо&shy;шёл во вре&shy;мя празд&shy;но&shy;ва&shy;
+                    ния дня го&shy;ро&shy;да.<br>
+                    <br>
+                    Арт-объ&shy;ект по&shy;явил&shy;ся в скве&shy;ре на Сос&shy;но&shy;вой ал&shy;лее ме&shy;
+                    сяц на&shy;зад. По дан&shy;ным упра&shy;вы рай&shy;о&shy;на Са&shy;вёл&shy;ки, из&shy;
+                    го&shy;тов&shy;ле&shy;ние и уста&shy;нов&shy;ка сте&shy;лы «Я люб&shy;лю Зе&shy;ле&shy;
+                    но&shy;град» обо&shy;шлись в по&shy;чти 158 ты&shy;сяч руб&shy;лей.<br>
+                    <br>
+                    Как со&shy;об&shy;ща&shy;ет гла&shy;ва упра&shy;вы Ан&shy;дрей Мак&shy;шан&shy;
+                    цев, в на&shy;сто&shy;я&shy;щее вре&shy;мя сте&shy;лу ре&shy;мон&shy;ти&shy;ру&shy;
+                    ют, а ре&shy;кон&shy;струк&shy;ция осу&shy;ществ&shy;ля&shy;ет&shy;ся по га&shy;ран&shy;
+                    тии.<br>
+                    <br>
+                    Пор&shy;тал Zelenograd.ru опро&shy;сил го&shy;ро&shy;жан по по&shy;во&shy;ду раз&shy;
+                    ру&shy;ше&shy;ния арт-объ&shy;ек&shy;та. По ито&shy;гам опро&shy;са, 50% счи&shy;
+                    та&shy;ют, что сте&shy;лу нуж&shy;но бы&shy;ло де&shy;лать ан&shy;ти&shy;ван&shy;
+                    даль&shy;ной, 45% уве&shy;ре&shy;ны в том, что пе&shy;ред ван&shy;да&shy;ла&shy;
+                    ми ни&shy;че&shy;го не усто&shy;ит. Так&shy;же в ком&shy;мен&shy;та&shy;ри&shy;
+                    ях есть мне&shy;ния, что сте&shy;ла из&shy;на&shy;чаль&shy;но бы&shy;ла не нуж&shy;
+                    на го&shy;ро&shy;ду, а «день&shy;ги мож&shy;но бы&shy;ло по&shy;тра&shy;тить с боль&shy;
+                    шей поль&shy;зой».<br>
+                    <br>
+                    По&shy;ис&shy;ком на&shy;ру&shy;ши&shy;те&shy;лей по&shy;ряд&shy;ка за&shy;ни&shy;
+                    ма&shy;ет&shy;ся по&shy;ли&shy;ция.
+                </p>
+            </article>
+            <article class="news">
+                <h3>Американец погуглил «как ограбить банк» и ограбил банк</h3>
+                <p>
+                    По&shy;мощ&shy;ни&shy;ка&shy;ми ше&shy;ри&shy;фа го&shy;ро&shy;да Пи&shy;не&shy;
+                    лас-Парк был за&shy;дер&shy;жан муж&shy;чи&shy;на, огра&shy;бив&shy;
+                    ший банк. На до&shy;про&shy;се он при&shy;знал&shy;ся де&shy;тек&shy;ти&shy;
+                    ву, что ему нуж&shy;ны бы&shy;ли день&shy;ги, и он ре&shy;шил най&shy;
+                    ти в google «как огра&shy;бить банк».<br>
+                </p>
+                    <figure>
+                        <img id="google-img" src="images/google.jpg" alt="google.png">
+                        <figcaption>google</figcaption>
+                    </figure>
+                <p>
+                    За&shy;тем в чет&shy;верг око&shy;ло 11 утра Уи&shy;льям Джо Джон&shy;сон во&shy;
+                    рвал&shy;ся в кре&shy;дит&shy;ный ко&shy;опе&shy;ра&shy;тив Achieva и, ска&shy;
+                    зав кас&shy;си&shy;ру, что у не&shy;го есть пи&shy;сто&shy;лет, по&shy;тре&shy;
+                    бо&shy;вал от&shy;дать ему все на&shy;лич&shy;ные, по&shy;сле че&shy;го сбе&shy;
+                    жал. День&shy;ги он по&shy;тра&shy;тил на опла&shy;ту ком&shy;му&shy;наль&shy;
+                    ных услуг, арен&shy;ду квар&shy;ти&shy;ры и нар&shy;ко&shy;ти&shy;ки.<br>
+                    <br>
+                    В по&shy;не&shy;дель&shy;ник ве&shy;че&shy;ром он был най&shy;ден в оте&shy;
+                    ле и аре&shy;сто&shy;ван, во втор&shy;ник до&shy;став&shy;лен в тюрь&shy;му окру&shy;
+                    га Пи&shy;не&shy;лас.
+                </p>
+            </article>
+        </div>
+    </main>
 </body>
 </html>
