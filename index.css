@@ -1,0 +1,205 @@
+@font-face
+{
+    font-family: 'CormorantInfant';
+    src: local('CormorantInfant'), url(CormorantInfant-Bold.woff) format('woff');
+}
+
+html
+{
+    overflow-x: hidden;
+}
+
+body
+{
+    font-family: 'CormorantInfant';
+    background: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfwl2drV7biRCtzz0fxVy6znMIOP3XYH26_oTSB2_WqTEeRpDk);
+}
+
+p:first-letter
+{
+    font: 200% 'Domine', cursive;
+    color: red;
+}
+
+.vertical_left,
+.vertical_right
+{
+    word-break: break-word;
+    position: absolute;
+    overflow-wrap: break-word;
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+
+.vertical_left
+{
+    left: 0;
+    margin: 1%;
+    width: 13px;
+}
+
+.vertical_right
+{
+    right: 0;
+    margin: 1.5%;
+    width: 15px;
+}
+
+.fact
+{
+    font: 17px 'Roboto Condensed', sans-serif;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #000;
+    page-break-inside: avoid;
+    
+}
+
+header
+{
+    font: 'Pacifico', cursive;
+    text-align: center;
+    color: #000;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+}
+
+h1
+{
+    font: bold 50px 'Pacifico', cursive;
+    margin: 5px;
+}
+
+.date
+{
+    position: relative;
+}
+
+.article-one
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+.article-two
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+main p,
+h2,
+h3
+{
+    font: 13px 'Domine', cursive;
+    text-indent: 18px;
+}
+
+.author
+{
+    width: 50%;
+    float: left;
+    margin: 1px 2px;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+h2,
+h3
+{
+    font: bold 27px 'Pacifico', cursive;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.subtitle
+{
+    text-align: center;
+}
+
+h2
+{
+    font: 30px 'Pacifico', cursive;
+    text-align: center;
+    -moz-column-span: all;
+    column-span: all;
+    width: 500px;
+}
+
+ul
+{
+    font: 15px 'Domine', serif;
+    color: #000;
+}
+
+div.content
+{
+    font: 28px 'Pacifico', cursive;
+    text-align: justify;
+    margin-bottom: 6px;
+}
+
+.roundedFrame
+{
+    text-align: center;
+    border-radius: 100px;
+    border: 3px solid black;
+    box-shadow: 0 0 7px #000;
+}
+
+blockquote
+{
+    font: italic 'Domine', serif;
+    margin: 6px 20px;
+    padding: 6px;
+    font-style: italic;
+}
+
+.columns_2
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1.5px solid #000;
+    column-rule: 1.5px solid #000;
+}
+
+input[id='font-small']:checked ~ .newspaper main,
+input[id='font-small']:checked ~ .newspaper p
+{
+    font-size: 10px;
+}
+
+input[id='font-big']:checked ~ .newspaper main,
+input[id='font-big']:checked ~ .newspaper p
+{
+    font-size: 20px;
+}
+
+input[id='dark']:checked ~ .newspaper main
+{
+    color: #fff;
+    background: url(https://i.ytimg.com/vi/vJKZhZq3RmU/maxresdefault.jpg);
+    text-shadow: 1px 1px 2px #000, 0 0 2em #fff;
+}
+
+input[id='CormorantInfant']:checked ~ .newspaper p
+{
+    font-family: 'CormorantInfant';
+}
+
+input[id='Pacifico']:checked ~ .newspaper p
+{
+    font-family: 'Pacifico', cursive;
+}
