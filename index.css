@@ -1,0 +1,118 @@
+@font-face
+{
+    font-family: 'Typingrad';
+    src: local('Typingrad'), url('fonts/Typingrad.woff2') format('woff2'), url('fonts/Typingrad.woff') format('woff'), url('fonts/Typingrad.ttf') format('ttf');
+}
+
+h1,
+h2,
+h3,
+h4
+{
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 300%;
+}
+
+h2,
+.colspanimg
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+section
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-rule: 1px solid;
+    padding: 15px;
+}
+
+article p:first-of-type::first-letter
+{
+    font: 1.5em 'Typingrad', fantasy;
+}
+
+figcaption
+{
+    font: 1.2em 'Great Vibes', cursive;
+    text-align: center;
+}
+
+img
+{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+q
+{
+    font: 1.2em 'Lobster', cursive;
+}
+
+div.vertical
+{
+    position: absolute;
+    left: 1em;
+    top: 11em;
+    width: 1em;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+    -moz-text-orientation: upright;
+    -ms-text-orientation: upright;
+    text-orientation: upright;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+body
+{
+    font-size: 16px;
+    background-color: brown;
+}
+
+input[id='theme_color_dark']:not(:checked) ~ main
+{
+    background-color: rgb(240, 174, 116);
+    color: #000;
+}
+
+input[id='theme_color_dark']:checked ~ main
+{
+    background-color: #000;
+    color: rgb(240, 174, 116);
+}
+
+input[id='size_0.8']:checked ~ main
+{
+    font-size: .8em;
+}
+
+input[id='size_1.0']:checked ~ main
+{
+    font-size: 1em;
+}
+
+input[id='size_1.2']:checked ~ main
+{
+    font-size: 1.2em;
+}
+
+input[id='Times']:checked ~ main p
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[id='Arial']:checked ~ main p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
