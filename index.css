@@ -1,16 +1,82 @@
+@font-face
+{
+    font-family: old;
+    src:url('fonts/Carmen.ttf')
+}
+
+@font-face
+{
+    font-family: simpleText;
+    src:url('fonts/AntiqueTradyNr.ttf')
+}
+
+@font-face
+{
+    font-family: cap;
+    src:url('fonts/Heinrich_Text.ttf')
+}
 body
 {
-    background: rgb(235, 233, 159)
+    background: #FFFCFC;
+}
+
+h1
+{
+    font-family: cap;
+    font-size: 60px;
+    letter-spacing: 0.5em;
+    text-align: center;
+}
+
+h2
+{
+    font-family: old;
+    letter-spacing: 0.1em;
+    font-size: 40px;
+}
+
+p
+{
+    hyphens: auto;
+}
+
+p::first-letter
+{
+    font-weight: 900;
+    font-size: large;
+}
+
+article
+{
+    font-family: simpleText;
+    text-align: justify;
+}
+
+img
+{
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
 }
 
 .topnews
 {
-    float:left;
-    width:60%;
+    float: left;
+    width: 60%;
+}
+
+.topnews > article
+{
+    column-count: 3;
 }
 
 .othernews
 {
-    float:right;
-    width: 35%
+    float: right;
+    width: 35%;
+}
+
+.othernews > article
+{
+    column-count: 2;
 }
