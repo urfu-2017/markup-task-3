@@ -1,9 +1,377 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link href="http://allfont.ru/allfont.css?fonts=bikham-cyr-script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
+    <title>титульник не должен быть емпи, блин</title>
 </head>
 <body>
+        <input type="radio" id="set_size_small" name="set-size" >
+        <input type="radio" id="set_size_normal" name="set-size" checked>
+        <input type="radio" id="set_size_big" name="set-size" >
+    
+        <input type="radio" id="set_font_sanserif" name="set-font" checked>
+        <input type="radio" id="set_font_serif" name="set-font" >
+        <input type="radio" id="set_font_mono" name="set-font" >
+
+        <input type="radio" id="set_color_light" name="set-color" checked>
+        <input type="radio" id="set_color_dark" name="set-color" >
+
+    <main>
+        <section class="setting">
+                <div class="setting_item">
+                    <h3 class="setting_item_header">Размер шрифта</h3>
+                    <label for="set_size_small">Маленький</label>
+                    <label for="set_size_normal">Обычный</label>
+                    <label for="set_size_big">Для бабули</label>
+                </div>
+                <div class="setting_item">
+                    <h3 class="setting_item_header">Начертание шрифта</h3>
+                    <label for="set_font_sanserif">Без засечек</label>
+                    <label for="set_font_serif">С засечками</label>
+                    <label for="set_font_mono">Моноширинный</label>
+                </div>
+                <div class="setting_item">
+                    <h3 class="setting_item_header">Цветовая тема</h3>
+                    <label for="set_color_light">Обычная тема</label>
+                    <label for="set_color_dark">Переходи на тёмную сторону силы</label>
+                </div>
+            </section>
+
+        <section class="paper">
+            <h1 class="paper_name">Ваш интересный Вестник информации</h1>
+            <h2 class="paper_date">Выпуск от 20.07.1985</h2>
+            <div class="remark">
+                    <span class="remark_item">мозг</span>
+                    <span class="remark_item">на</span>
+                    <span class="remark_item">влияет</span>
+                    <span class="remark_item">плохо</span>
+                    <span class="remark_item">это</span>
+                    <span class="remark_item">надпись</span>
+                    <span class="remark_item">эту</span>
+                    <span class="remark_item">читайте</span>
+                    <span class="remark_item">Не</span>
+                </div>
+            <section class="entire_text">
+                <article class="news">
+                    <h2 class="article_name">
+                        Ваша мечта
+                    </h2>
+                    <p class="article_text">
+                            В про&shy;да&shy;жу по&shy;сту&shy;пи&shy;ла Morgan 4/4.
+                             Бы&shy;ло вы&shy;пу&shy;ще&shy;но все&shy;го 386 ав&shy;то&shy;
+                             мо&shy;би&shy;лей.
+                        </p>
+                            <blockquote class="quote">"Мы по&shy;ста&shy;ра&shy;лись учесть все свои
+                                преды&shy;ду&shy;щие ошиб&shy;ки и со&shy;зда&shy;ли ма&shy; -
+                                ши&shy;ну, спо&shy;соб&shy;ную по&shy;слу&shy;жить Вам
+                                дол&shy;гие го&shy;ды !"</blockquote>
+                    <figure class="paper-image-1">
+                            <img class="paper_image_source" src="1.jpg" 
+                            alt="изображение Morgan 4/4" title="">
+                            <figcaption class="paper_image_caption">Morgan 4/4 - 
+                            мечта каждого мужчины</figcaption>
+                    </figure>
+                    <p class="article_text">
+                        Осна&shy;ща&shy;ет&shy;ся эта ма&shy;лыш&shy;ка че&shy;ты&shy;
+                        рех&shy;ци&shy;лин&shy;дро&shy;вым дви&shy;аг&shy;те&shy;лем Ford 100E
+                         объ&shy;е&shy;мом 1,2 лит&shy;ра.
+                    </p>
+                </article>
+                <article class="news">
+                    <h2 class="article_name">
+                        Светский гуманизм
+                    </h2>
+                    <p class="article_text">
+                            Од&shy;но из на&shy;прав&shy;ле&shy;ний со&shy;вре&shy;мен&shy;ной
+                            фи&shy;ло&shy;со&shy;фии гу&shy;ма&shy;низ&shy;ма,
+                            ми&shy;ро&shy;воз&shy;зре&shy;ние, ко&shy;то&shy;рое
+                            про&shy;воз&shy;гла&shy;ша&shy;ет че&shy;ло&shy;ве&shy;ка,
+                            его пра&shy;во на сча&shy;стье,
+                            раз&shy;ви&shy;тие и про&shy;яв&shy;ле&shy;ние сво&shy;их
+                            по&shy;ло&shy;жи&shy;тель&shy;ных спо&shy;соб&shy;но&shy;стей наи&shy;выс&shy;шей
+                            цен&shy;но&shy;стью.
+                    </p>
+                    <p class="article_text">
+                    Гу&shy;ма&shy;ни&shy;сти&shy;че&shy;ское ми&shy;ро&shy;воз&shy;зре&shy;ние
+                    про&shy;ти&shy;во&shy;по&shy;став&shy;ля&shy;ет&shy;ся
+                    ре&shy;ли&shy;ги&shy;оз&shy;но&shy;му, не при&shy;зна&shy;ёт
+                    су&shy;ще&shy;ство&shy;ва&shy;ния сил,
+                    сто&shy;я&shy;щих вы&shy;ше че&shy;ло&shy;ве&shy;ка и при&shy;ро&shy;ды.
+                    Свет&shy;ский гу&shy;ма&shy;низм утвер&shy;жда&shy;ет спо&shy;соб&shy;ность
+                    и обя&shy;зан&shy;ность ве&shy;сти эти&shy;че&shy;ский
+                    об&shy;раз жиз&shy;ни без при&shy;вле&shy;че&shy;ния ги&shy;по&shy;те&shy;зы
+                    о су&shy;ще&shy;ство&shy;ва&shy;нии Бо&shy;га. Свет&shy;ский гу&shy;ма&shy;низм
+                    вы&shy;де&shy;лил&shy;ся из гу&shy;ма&shy;ни&shy;сти&shy;че&shy;ско&shy;го
+                    дви&shy;же&shy;ния в от&shy;вет на кри&shy;ти&shy;ку гу&shy;ма&shy;низ&shy;ма
+                    ре&shy;ли&shy;ги&shy;оз&shy;ны&shy;ми фун&shy;да&shy;мен&shy;та&shy;ли&shy;ста&shy;ми.
+                    От ре&shy;ли&shy;ги&shy;оз&shy;но&shy;го гу&shy;ма&shy;низ&shy;ма
+                    от&shy;ли&shy;ча&shy;ет&shy;ся
+                    тем, что от&shy;вер&shy;га&shy;ет ре&shy;ли&shy;ги&shy;оз&shy;ную 
+                    ве&shy;ру как
+                    прин&shy;ци&shy;пи&shy;аль&shy;но ил&shy;лю&shy;зор&shy;ный спо&shy;соб
+                    ори&shy;ен&shy;та&shy;ции
+                    че&shy;ло&shy;ве&shy;ка в ми&shy;ре.
+                    </p>
+                </article>
+                <article class="news">
+                        <h2 class="article_name">
+                            Не забывайте великих поэтов
+                        </h2>
+                            <blockquote class="quote">
+                                "Унылая пора ! Очей очарованье !<br>
+                                Приятна мне твоя прощальная краса —<br>
+                                Люблю я пышное природы увяданье,<br>
+                                В багрец и в золото одетые леса,<br>
+                                В их сенях ветра шум и свежее дыханье,<br>
+                                И мглой волнистою покрыты небеса,<br>
+                                И редкий солнца луч, и первые морозы,<br>
+                                И отдаленные седой зимы угрозы."<br>
+                            </blockquote>
+                        <p class="article_text">
+                        Автор: А. С. Пушкин
+                        </p>                       
+                        <figure class="paper-image-2">
+                                <img class="paper_image_source" src="2.jpg" 
+                                alt="тоже Картинка" title="жир">
+                                <figcaption class="paper_image_caption">Автор снимка:
+                                Николай Бородин</figcaption>
+                        </figure>
+                        <article class="news">
+                                <h2 class="article_name">
+                                    Недельный гороскоп
+                                </h2>
+                                <h3 class="zodiaks">Овен</h3>
+                                <p class="article_text">
+                                        Жизнь пол&shy;на не&shy;ожи&shy;дан&shy;но&shy;стей
+                                        и раз&shy;но&shy;об&shy;раз&shy;ных со&shy;бы&shy;тий.
+                                        Од&shy;на&shy;ко вас бу&shy;дут окру&shy;жать ли&shy;бо тай&shy;ны,
+                                        ли&shy;бо сплет&shy;ни. На них не сто&shy;ит об&shy;ра&shy;щать
+                                        вни&shy;ма&shy;ние, луч&shy;ше за&shy;нять&shy;ся ра&shy;бо&shy;той и
+                                        твор&shy;че&shy;ством. Не бе&shy;ри&shy;те на се&shy;бя
+                                        не&shy;вы&shy;пол&shy;ни&shy;мые обя&shy;за&shy;тель&shy;ства 
+                                        пе&shy;ред
+                                        на&shy;чаль&shy;ством, ина&shy;че слож&shy;но бу&shy;дет
+                                        вы&shy;пу&shy;ты&shy;вать&shy;ся из сло&shy;жив&shy;шей&shy;ся
+                                        си&shy;ту&shy;а&shy;ции. По&shy;ста&shy;рай&shy;тесь не
+                                        пе&shy;ре&shy;усерд&shy;ство&shy;вать с 
+                                        эмо&shy;ци&shy;о&shy;наль&shy;ны&shy;ми
+                                        пе&shy;ре&shy;груз&shy;ка&shy;ми, ино&shy;гда 
+                                        по&shy;лез&shy;но по&shy;быть
+                                        в оди&shy;но&shy;че&shy;стве.
+                                </p>
+                                <h3 class="zodiaks">Телец</h3>
+                                <p class="article_text">
+                                        Ес&shy;ли у вас есть тай&shy;ная меч&shy;та сме&shy;нить
+                                        ра&shy;бо&shy;ту,
+                                        по&shy;ста&shy;рай&shy;тесь ре&shy;а&shy;ли&shy;зо&shy;вать 
+                                        ее в бли&shy;жай&shy;шее вре&shy;мя,
+                                        по&shy;том мо&shy;жет не быть та&shy;ко&shy;го шан&shy;са. По 
+                                        край&shy;ней ме&shy;ре, сде&shy;лай&shy;те
+                                        пер&shy;вый шаг в этом на&shy;прав&shy;ле&shy;нии. Од&shy;на из 
+                                        важ&shy;ных за&shy;дач этой не&shy;де&shy;ли
+                                        - по&shy;ста&shy;рать&shy;ся урав&shy;но&shy;ве&shy;сить ча&shy;ши 
+                                        ве&shy;сов ва&shy;ше&shy;го
+                                        на&shy;стро&shy;е&shy;ния и эмо&shy;ци&shy;о&shy;наль&shy;но&shy;го 
+                                        со&shy;сто&shy;я&shy;ния,
+                                        что&shy;бы они не бы&shy;ли 
+                                        раз&shy;ба&shy;лан&shy;си&shy;ро&shy;ва&shy;ны. 
+                                        Со&shy;здай&shy;те
+                                        се&shy;бе ощу&shy;ще&shy;ние празд&shy;ни&shy;ка и 
+                                        ве&shy;ры в луч&shy;шее.
+                                </p>
+                                <h3 class="zodiaks">Близнецы</h3>
+                                <p class="article_text">
+                                        Груз про&shy;блем, остав&shy;ших&shy;ся с про&shy;шлой 
+                                        не&shy;де&shy;ли, вы су&shy;ме&shy;е&shy;те
+                                        сбро&shy;сить уже к сре&shy;де и бу&shy;де&shy;те 
+                                        го&shy;то&shy;вы к ре&shy;ше&shy;нию но&shy;вых
+                                        за&shy;дач. Твор&shy;че&shy;ское на&shy;стро&shy;е&shy;ние 
+                                        поз&shy;во&shy;лит уди&shy;вить све&shy;жи&shy;ми
+                                        иде&shy;я&shy;ми дру&shy;зей и кол&shy;лег. Сре&shy;да - 
+                                        на&shy;пря&shy;жен&shy;ный, но
+                                        кон&shy;струк&shy;тив&shy;ный день, хо&shy;тя 
+                                        ин&shy;фор&shy;ма&shy;цию, ко&shy;то&shy;рая вас
+                                        ин&shy;те&shy;ре&shy;су&shy;ет, най&shy;ти край&shy;не слож&shy;но. 
+                                        Но у вас все по&shy;лу&shy;чит&shy;ся.
+                                        В чет&shy;верг удаст&shy;ся най&shy;ти 
+                                        еди&shy;но&shy;мыш&shy;лен&shy;ни&shy;ков, ко&shy;то&shy;рые
+                                        раз&shy;де&shy;лят ва&shy;ши идеи и взгля&shy;ды. Вас 
+                                        бу&shy;дут под&shy;дер&shy;жи&shy;вать близ&shy;кие 
+                                        лю&shy;ди, что поз&shy;во&shy;лит об&shy;ре&shy;сти 
+                                        уве&shy;рен&shy;ность 
+                                        и спо&shy;кой&shy;ствие.
+                                </p>
+                                <h3 class="zodiaks">Рак</h3>
+                                <p class="article_text">
+                                        Сей&shy;час пе&shy;ри&shy;од, ко&shy;гда вы мо&shy;же&shy;те 
+                                        с лег&shy;ко&shy;стью, од&shy;ним прыж&shy;ком
+                                        пре&shy;одо&shy;леть мно&shy;гие пре&shy;пят&shy;ствия и 
+                                        ба&shy;рье&shy;ры. На&shy;сту&shy;па&shy;ет
+                                        бла&shy;го&shy;при&shy;ят&shy;ное вре&shy;мя для 
+                                        на&shy;ла&shy;жи&shy;ва&shy;ния но&shy;вых де&shy;ло&shy;вых
+                                        свя&shy;зей и кон&shy;так&shy;тов. Ва&shy;ше оба&shy;я&shy;ние 
+                                        и ав&shy;то&shy;ри&shy;тет мо&shy;гут быть 
+                                        столь зна&shy;чи&shy;тель&shy;ны&shy;ми, что ва&shy;ше 
+                                        окру&shy;же&shy;ние вос&shy;при&shy;мет как долж&shy;ное
+                                        ва&shy;ши ини&shy;ци&shy;а&shy;ти&shy;вы и 
+                                        пред&shy;ло&shy;же&shy;ния. В по&shy;не&shy;дель&shy;ник 
+                                        сто&shy;ит сни&shy;зить на&shy;груз&shy;ки до 
+                                        ми&shy;ни&shy;му&shy;ма, а луч&shy;ше и во&shy;все 
+                                        от&shy;ло&shy;жить все се&shy;рьез&shy;ные де&shy;ла до 
+                                        сре&shy;ды. Вто&shy;рая по&shy;ло&shy;ви&shy;на не&shy;де&shy;ли 
+                                        не даст вам по&shy;во&shy;да для огор&shy;че&shy;ний.
+                                </p>
+                                <h3 class="zodiaks">Лев</h3>
+                                <p class="article_text">
+                                        На этой не&shy;де&shy;ле вы по&shy;ка&shy;же&shy;те 
+                                        окру&shy;жа&shy;ю&shy;щим при&shy;мер успе&shy;ха в
+                                        до&shy;сти&shy;же&shy;нии це&shy;ли. Это 
+                                        за&shy;ме&shy;ча&shy;тель&shy;ная не&shy;де&shy;ля, 
+                                        осо&shy;бен&shy;но
+                                        для лю&shy;дей твор&shy;че&shy;ских про&shy;фес&shy;сий. 
+                                        Вни&shy;ма&shy;тель&shy;нее сле&shy;ди&shy;те за 
+                                        но&shy;во&shy;стя&shy;ми, что&shy;бы не про&shy;пу&shy;стить 
+                                        важ&shy;ной для вас ин&shy;фор&shy;ма&shy;ции. 
+                                        Оставь&shy;те пре&shy;тен&shy;зии к де&shy;ло&shy;вым 
+                                        парт&shy;не&shy;рам и по&shy;смот&shy;ри&shy;те на
+                                        си&shy;ту&shy;а&shy;цию с дру&shy;гой сто&shy;ро&shy;ны.
+                                </p>
+                                <h3 class="zodiaks">Дева</h3>
+                                <p class="article_text">
+                                        Воз&shy;мож&shy;ны опре&shy;де&shy;лен&shy;ные 
+                                        труд&shy;но&shy;сти в ка&shy;рье&shy;ре и в лич&shy;ной
+                                        жиз&shy;ни, пе&shy;ред ко&shy;то&shy;ры&shy;ми не 
+                                        сто&shy;ит от&shy;сту&shy;пать. И то&shy;гда успех 
+                                        про&shy;сто не&shy;из&shy;бе&shy;жен. Нын&shy;че 
+                                        луч&shy;ше опи&shy;рать&shy;ся на про&shy;ве&shy;рен&shy;ные 
+                                        ме&shy;то&shy;ды, а не&shy;стан&shy;дарт&shy;ные 
+                                        под&shy;хо&shy;ды ис&shy;поль&shy;зо&shy;вать толь&shy;ко как 
+                                        до&shy;пол&shy;не&shy;ние. В ра&shy;бо&shy;те 
+                                        не&shy;об&shy;хо&shy;ди&shy;мо про&shy;яв&shy;лять 
+                                        тер&shy;пе&shy;ние и упор&shy;ство, то&shy;гда 
+                                        пре&shy;гра&shy;ды пре&shy;вра&shy;тят&shy;ся в пыль, 
+                                        ко&shy;то&shy;рую про&shy;сто уне&shy;сет вет&shy;ром.
+                                        В вы&shy;ход&shy;ные ис&shy;поль&shy;зуй&shy;те 
+                                        лю&shy;бую воз&shy;мож&shy;ность, что&shy;бы 
+                                        за&shy;ве&shy;сти зна&shy;ком&shy;ства - 
+                                        ве&shy;че&shy;рин&shy;ка,
+                                        при&shy;гла&shy;ше&shy;ния в го&shy;сти или в ки&shy;но.
+                                </p>
+                                <h3 class="zodiaks">Весы</h3>
+                                <p class="article_text">
+                                        На этой не&shy;де&shy;ле ра&shy;бо&shy;та 
+                                        бу&shy;дет го&shy;нять&shy;ся за ва&shy;ми, 
+                                        как го&shy;лод&shy;ный волк за сво&shy;ей 
+                                        до&shy;бы&shy;чей, об от&shy;ды&shy;хе 
+                                        не&shy;ко&shy;гда бу&shy;дет да&shy;же 
+                                        меч&shy;тать. Что&shy;бы со&shy;всем не 
+                                        ис&shy;чез&shy;нуть в ее жад&shy;ной 
+                                        па&shy;сти, же&shy;ла&shy;тель&shy;но 
+                                        со&shy;сре&shy;до&shy;то&shy;чить&shy;ся на 
+                                        гло&shy;баль&shy;ных де&shy;лах. В сре&shy;ду 
+                                        вы узна&shy;е&shy;те ка&shy;кую-то ста&shy;рую 
+                                        тай&shy;ну или осво&shy;бо&shy;ди&shy;тесь от 
+                                        боль&shy;шой про&shy;бле&shy;мы. В чет&shy;верг 
+                                        при&shy;дет&shy;ся вы&shy;яс&shy;нять 
+                                        от&shy;но&shy;ше&shy;ния с на&shy;чаль&shy;ством, 
+                                        про&shy;яви&shy;те тер&shy;пе&shy;ние и такт.
+                                </p>
+                                <h3 class="zodiaks">Скорпион</h3>
+                                <p class="article_text">
+                                        По&shy;стро&shy;е&shy;ние 
+                                        ве&shy;ли&shy;ко&shy;леп&shy;ных 
+                                        воз&shy;душ&shy;ных (или пес&shy;ча&shy;ных) - 
+                                        на вы&shy;бор, зам&shy;ков - это пре&shy;крас&shy;но,
+                                        но все же луч&shy;ше ре&shy;аль&shy;но по&shy;смот&shy;р
+                                        еть на со&shy;здав&shy;шу&shy;ю&shy;ся си&shy;ту&shy;а&shy;
+                                        цию. Про&shy;яви&shy;те твор&shy;че&shy;ский под&shy;ход и ини&shy;
+                                        ци&shy;а&shy;ти&shy;ву в ра&shy;бо&shy;те, и вы до&shy;бье&shy;тесь
+                                        при&shy;зна&shy;ния и успе&shy;ха. Ис&shy;поль&shy;зуй&shy;те 
+                                        свои луч&shy;шие сто&shy;ро&shy;ны, оча&shy;руй&shy;те на&shy;
+                                        чаль&shy;ство сво&shy;ей муд&shy;
+                                        ро&shy;стью, и все бу&shy;дет в по&shy;ряд&shy;ке.
+                                </p>
+                                <h3 class="zodiaks">Стрелец</h3>
+                                <p class="article_text">
+                                        На&shy;сту&shy;па&shy;ет бла&shy;го&shy;при&shy;ят&shy;ное 
+                                        вре&shy;мя. Вы по&shy;чув&shy;ству&shy;е&shy;те при&shy;лив 
+                                        сил. Про&shy;яви&shy;те муд&shy;рость и осмот&shy;ри&shy;
+                                        тель&shy;ность в сво&shy;их ре&shy;ше&shy;ни&shy;ях, по&shy;
+                                        ра&shy;дуй&shy;те сво&shy;их близ&shy;ких. Это вре&shy;мя для
+                                        но&shy;вых идей и пла&shy;нов. Зай&shy;ми&shy;тесь са&shy;
+                                        мо&shy;раз&shy;ви&shy;ти&shy;ем и са&shy;мо&shy;со&shy;вер&shy;
+                                        шен&shy;ство&shy;ва&shy;ни&shy;ем. Толь&shy;ко не рас&shy;тра&shy;
+                                        чи&shy;вай&shy;те сра&shy;зу весь ре&shy;сурс ва&shy;ших сил,
+                                        они вам еще при&shy;го&shy;дят&shy;ся в бу&shy;ду&shy;щем.
+                                </p>
+                                <h3 class="zodiaks">Козерог</h3>
+                                <p class="article_text">
+                                        На этой не&shy;де&shy;ле вы мо&shy;же&shy;те об&shy;ре&shy;
+                                        сти мно&shy;го дру&shy;зей, ва&shy;ша ра&shy;бо&shy;та ста&shy;
+                                        нет ин&shy;те&shy;рес&shy;нее и увле&shy;ка&shy;тель&shy;нее. 
+                                        В по&shy;не&shy;дель&shy;ник ока&shy;жут&shy;ся успеш&shy;ны&shy;
+                                        ми и пло&shy;до&shy;твор&shy;ны&shy;ми по&shy;езд&shy;ки и ко&shy;
+                                        ман&shy;ди&shy;ров&shy;ки. Во втор&shy;ник вам мо&shy;жет до&shy;
+                                        стать&shy;ся не&shy;лег&shy;кая за&shy;да&shy;ча, и вы вы&shy;
+                                        пол&shy;ни&shy;те ее прак&shy;ти&shy;че&shy;ски без&shy;упреч&shy;
+                                        но, это по&shy;тре&shy;бу&shy;ет от вас мно&shy;го сил, но и 
+                                        при&shy;не&shy;сет по&shy;лез&shy;ный опыт. В чет&shy;верг 
+                                        бла&shy;го&shy;при&shy;ят&shy;но на&shy;чи&shy;нать ре&shy;монт 
+                                        до&shy;ма или квар&shy;ти&shy;ры. В пят&shy;ни&shy;цу по&shy;
+                                        ста&shy;рай&shy;тесь огра&shy;дить се&shy;бя от су&shy;е&shy;
+                                        ты и не&shy;нуж&shy;ных и уто&shy;ми&shy;тель&shy;ных кон&shy;
+                                        так&shy;тов. В вы&shy;ход&shy;ные при&shy;гла&shy;си&shy;те в 
+                                        го&shy;сти дру&shy;зей.
+                                </p>
+                                <h3 class="zodiaks">Водолей</h3>
+                                <p class="article_text">
+                                        Гря&shy;дут за&shy;мет&shy;ные пе&shy;ре&shy;ме&shy;ны
+                                        в от&shy;но&shy;ше&shy;ни&shy;ях с де&shy;ло&shy;вы&shy;
+                                        ми парт&shy;не&shy;ра&shy;ми. Это се&shy;рьез&shy;ное 
+                                        ис&shy;пы&shy;та&shy;ние на проч&shy;ность, от вас по&shy;
+                                        тре&shy;бу&shy;ет&shy;ся спо&shy;соб&shy;ность к со&shy;
+                                        труд&shy;ни&shy;че&shy;ству и юри&shy;ди&shy;че&shy;ская 
+                                        гра&shy;мот&shy;ность. Не об&shy;ра&shy;щай&shy;те вни&shy;
+                                        ма&shy;ние на мел&shy;кие не&shy;при&shy;ят&shy;но&shy;сти. 
+                                        В чет&shy;верг будь&shy;те осто&shy;рож&shy;ны с за&shy;
+                                        ман&shy;чи&shy;вым пред&shy;ло&shy;же&shy;ни&shy;ем о но&shy;
+                                        вой ра&shy;бо&shy;те. В суб&shy;бо&shy;ту не сто&shy;ит ни&shy;
+                                        че&shy;го пла&shy;ни&shy;ро&shy;вать се&shy;рьез&shy;но, 
+                                        так как все мо&shy;жет из&shy;ме&shy;нить&shy;ся в од&shy;
+                                        но мгно&shy;ве&shy;ние.
+                                </p>
+                                <h3 class="zodiaks">Рыбы</h3>
+                                <p class="article_text">
+                                        По&shy;хо&shy;же, вы со&shy;ста&shy;ви&shy;ли 
+                                        се&shy;бе слиш&shy;ком гран&shy;ди&shy;оз&shy;ные 
+                                        пла&shy;ны, мо&shy;жет быть, луч&shy;ше их 
+                                        со&shy;кра&shy;тить до ре&shy;аль&shy;но&shy;го 
+                                        объ&shy;е&shy;ма? Ве&shy;ро&shy;ят&shy;ны ко&shy;
+                                        ман&shy;ди&shy;ров&shy;ки, ко&shy;то&shy;рые поз&shy;
+                                        во&shy;лят вам от&shy;влечь&shy;ся от не&shy;ко&shy;
+                                        то&shy;рых про&shy;блем. Об&shy;ще&shy;ние с на&shy;
+                                        чаль&shy;ством по воз&shy;мож&shy;но&shy;сти со&shy;
+                                        кра&shy;ти&shy;те до ми&shy;ни&shy;му&shy;ма, ина&shy;
+                                        че ва&shy;ши не в ме&shy;ру ед&shy;кие вы&shy;ска&shy;
+                                        зы&shy;ва&shy;ния мо&shy;гут спро&shy;во&shy;ци&shy;
+                                        ро&shy;вать кон&shy;фликт&shy;ную си&shy;ту&shy;а&shy;
+                                        цию. В пят&shy;ни&shy;цу к вам мо&shy;гут на&shy;гря&shy;
+                                        нуть не&shy;ожи&shy;дан&shy;ные го&shy;сти. Про&shy;ве&shy;
+                                        ди&shy;те вы&shy;ход&shy;ные с близ&shy;ки&shy;ми людь&shy;
+                                        ми. В суб&shy;бо&shy;ту, ре&shy;шая важ&shy;ные во&shy;
+                                        про&shy;сы, при&shy;слу&shy;шай&shy;тесь к со&shy;ве&shy;
+                                        там лю&shy;би&shy;мо&shy;го че&shy;ло&shy;ве&shy;ка, и не
+                                        от&shy;вер&shy;гай&shy;те его по&shy;мощь.
+                                </p>
+                            </article>
+                    </article>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
