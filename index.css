@@ -23,70 +23,6 @@ input
     color: #fff;
 }
 
-label:hover
-{
-    background-color: #e9d993;
-}
-
-.settings
-{
-    margin-bottom: 20px;
-}
-
-.settings_item
-{
-    margin: 0 8%;
-    display: inline-block;
-    text-align: center;
-}
-
-.settings_header
-{
-    font-size: 30px;
-}
-
-.settings_item label
-{
-    padding: 5px;
-    font-size: 20px;
-}
-
-header h1
-{
-    font-size: 80em;
-    text-align: center;
-    font-family: 'american_textcregular';
-    margin: 0;
-}
-
-header hr
-{
-    border: 0;
-    height: 4px;
-    background: #c27f03;
-    margin: 3px 0;
-}
-
-.data
-{
-    text-align: center;
-    padding: 5px;
-    background-color: #c27f03;
-}
-
-.newspaper
-{
-    width: 90%;
-    margin: auto;
-    background: #e7cf8d;
-    box-shadow: -4px -4px 10px #000;
-}
-
-#main_container > section
-{
-    padding: 20px 10px;
-}
-
 #size_2x:checked ~ .newspaper .text_container
 {
     font-size: 1.2px;
@@ -123,6 +59,49 @@ header hr
     color: #fff;
 }
 
+label:hover
+{
+    background-color: #e9d993;
+}
+
+.settings
+{
+    width: 90%;
+    margin: 10px auto 40px;
+}
+
+.settings_item
+{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+.settings_header
+{
+    font-size: 30px;
+}
+
+.settings_item label
+{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.newspaper
+{
+    width: 90%;
+    margin: auto;
+    background: #e7cf8d;
+    box-shadow: -4px -4px 10px #000;
+}
+
+#main_container
+{
+    margin: .5%;
+    display: table;
+}
+
 .text_container
 {
     font-size: 1px;
@@ -150,18 +129,59 @@ header hr
     column-count: 3;
 }
 
+.span_columns
+{
+    column-span: all;
+}
+
+.span_columns .header
+{
+    font-size: 30em;
+}
+
+header h1
+{
+    font-size: 80em;
+    text-align: center;
+    font-family: 'american_textcregular';
+    margin: 0;
+}
+
+header hr
+{
+    border: 0;
+    height: 4px;
+    background: #c27f03;
+    margin: 3px 0;
+}
+
+h2.header
+{
+    margin-top: 0; 
+    font-size: 23em;
+}
+
+h3.header
+{
+    margin-top: 0; 
+    font-size: 21em;
+}
+
+.data
+{
+    text-align: center;
+    padding: 5px;
+    background-color: #c27f03;
+}
+
+#main_container > section
+{
+    padding: 20px 10px;
+}
+
 .news > article > p:first-of-type::first-letter
 {
     font-size: 2em;
-}
-
-.tb
-{
-    display: inline-block;
-    padding-top: 150%;
-    width: 10%;
-    writing-mode: tb-rl;
-    text-orientation: upright;
 }
 
 .job
@@ -172,14 +192,7 @@ header hr
 
 .job h2
 {
-    margin: 0;
     text-align: center;
-}
-
-.job h3
-{
-    margin-top: 0;
-
 }
 
 .job > article
@@ -220,34 +233,12 @@ header hr
     content: '\"';
 }
 
-.span_columns .header
-{
-    font-size: 30em;
-}
-
-h2.header
-{
-    font-size: 23em;
-}
-
-h3.header
-{
-    font-size: 21em;
-}
-
-#main_container
-{
-    margin: .5%;
-    display: table;
-}
-
 p
 {
     font-size: 20em;
     font-family: 'chekhovskoybook';
     margin: 0;
     text-indent: 1em;
-
 }
 
 h1
@@ -259,9 +250,4 @@ img
 {
     width: 80%;
     margin: 10px 10%;
-}
-
-.span_columns
-{
-    column-span: all;
 }

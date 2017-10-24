@@ -10,16 +10,6 @@
 
 @font-face
 {
-    font-family: 'beckett_rusregular';
-    src: url('10727.woff2') format('woff2')
-        , url('10727.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face
-{
     font-family: 'american_textcregular';
     src: url('10616.woff2') format('woff2')
         , url('10616.woff') format('woff');
