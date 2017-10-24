@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:400,600|Open+Sans+Condensed:300,600|Saira+Extra+Condensed:400,900|Titillium+Web:200|Bitter|Lora');
 
 .option {
-    margin: 0px 10px 10px;
+    margin: 0 10px 10;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 200;
 }
@@ -10,7 +10,7 @@ main {
     border: 2px solid #7c2fff;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0px 0px 20px #bbb;
+    box-shadow: 0 0 20px #bbb;
 }
 
 .paper-header {
@@ -42,29 +42,27 @@ main {
     font-size: 70px;
     font-weight: 700;
 
-    text-shadow: -3px -3px #829cf1,
-                   3px 3px #f88989;
+    text-shadow: -3px -3px #829cf1, 3px 3px #f88989;
 
     text-align: center;
-    margin: 0px;
+    margin: 0;
 }
 
 .paper-header-title::before {
-    content: "Awe";
+    content: 'Awe';
     opacity: 0.25;
-    text-shadow: 0px 0px;
+    text-shadow: 0 0;
 }
 
 .paper-header-title:hover::before {
     opacity: 1;
-    text-shadow: -3px -3px #829cf1,
-                   3px 3px #f88989;
+    text-shadow: -3px -3px #829cf1, 3px 3px #f88989;
 }
 
 .paper-subtitle {
     border-bottom: 2px solid #7c2fff;
     border-top: 2px solid #7c2fff;
-    margin: 20px 0px 50px;
+    margin: 20px 0 50px;
 }
 
 .paper-date {
@@ -76,7 +74,7 @@ main {
     font-weight: 300;
 
     text-align: center;
-    margin: 0px;
+    margin: 0;
 }
 
 .paper-body {
@@ -86,20 +84,20 @@ main {
 
 .paper-body h4 {
     font-weight: 600;
-    padding: 0px;
-    margin: 0px 0px 5px;
+    padding: 0;
+    margin: 0 0 5px;
     text-transform: uppercase;
 }
 
 .paper-body p {
     text-align: justify;
     hyphens: auto;
-    margin: 0px;
+    margin: 0;
 }
 
 .paper-body p::first-letter {
     font-weight: 900;
-    padding: 0px 1px;
+    padding: 0 1px;
 }
 
 .paper-body .text {
@@ -113,7 +111,7 @@ main {
 .illustration {
     width: 100%;
     display: block;
-    margin: 50px auto 10px auto;
+    margin: 50px auto 10px;
 }
 
 .illustration:hover {
@@ -124,7 +122,7 @@ main {
     content: '';
     background-color: #7c2fff;
     height: 2px;
-    margin: 10px 70px 10px 70px;
+    margin: 10px 70px;
 }
 
 /* Font Styles */
