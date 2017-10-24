@@ -1,0 +1,73 @@
+p
+{
+    text-indent: 1em;
+    font-family: 'Istok Web', sans-serif;
+}
+
+p::first-letter
+{
+    color: #a50024;
+    font-size: 1.5em;
+    font-family: 'Stalinist One', cursive;
+}
+
+.newspapper_name
+{
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+body
+{
+    background: url('img/paper.jpg');
+}
+
+main
+{
+    column-count: 2;
+}
+
+figure
+{
+    column-span: all;
+}
+
+figcaption
+{
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+}
+
+.news_title
+{
+    text-align: center;
+    font-family: 'Play', sans-serif;
+}
+
+.subtitle
+{
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.meta_info
+{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+}
+
+.small_section
+{
+    column-count: 2;
+    column-rule: 1px solid #000;
+}
+
+.large_section
+{
+    column-count: 3;
+    column-rule: 1px solid #000;
+    padding: 20px;
+}
