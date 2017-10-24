@@ -1,0 +1,255 @@
+body
+{
+    text-align: justify;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.present
+{
+    color: red;
+    text-shadow: 2px 0 2px black;
+    font: bold 40pt Impact, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.proletarii
+{
+    font-style: italic;
+    text-align: right;
+    margin: 0;
+    font-size: 150%;
+    text-decoration: underline;
+    opacity: .7;
+}
+
+.prolet
+{
+    margin-top: 0;
+}
+
+.name
+{
+    display: inline-block;
+    text-align: right;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 400%;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+img[alt='Знак почета']
+{
+    display: inline-block;
+    width: 66px;
+    height: 100px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+img[alt='Знак почета'] + div
+{
+    margin-right: 30px;
+    margin-top: 0;
+    opacity: .7;
+    text-align: center;
+}
+
+.organ
+{
+    max-width: 200px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.podpis
+{
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+
+}
+
+.podpis > p
+{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.shapka
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shapka > div
+{
+    line-height: 3;
+}
+
+.shapka > div > div
+{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5;
+}
+
+.fon
+{
+    padding: 20px 20px 30px;
+    font-size: 13px;
+    background: url('fon.png');
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.compliments
+{
+    margin-right: 30px;
+    border: 2px solid #000;
+}
+
+.compliments > h3
+{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 120%;
+}
+
+.compliments > p
+{
+    margin: 3px 10px 0;
+    text-indent: 20px;
+}
+
+.compliments > div
+{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 900;
+}
+
+.allhead
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qlenin
+{
+    max-width: 300px;
+    font-style: italic;
+    text-align: right;
+    margin-left: 200px;
+    font-family: sans-serif;
+    text-shadow: 0 1px 0 #000;
+}
+
+img[alt='плакат']
+{
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+img[alt='плакат'] + div
+{
+    text-align: center;
+    opacity: .7;
+}
+
+.maincontent
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobranie
+{
+    column-count: 3;
+    column-gap: 10px;
+    font-size: 110%;
+    text-indent: 30px;
+}
+
+.sobranie > p
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.tass
+{
+    text-align: right;
+    font-style: italic;
+}
+
+.kreml
+{
+    text-shadow: 1px 1px 0 black;
+    font: bold 25pt serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.kurs
+{
+    column-count: 5;
+    column-gap: 10px;
+    font-size: 110%;
+    text-indent: 30px;
+}
+
+.kurs > p
+{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.finish
+{
+    text-shadow: 1px 1px 0 black;
+    font: bold 35pt Bookman old style, serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.finish + p
+{
+    text-align: center;
+    font-size: 130%;
+}
+
+.socializm
+{
+    column-span: all;
+    font: bold 20pt sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.needbold
+{
+    font-weight: 900;
+}
