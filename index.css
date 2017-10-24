@@ -1,0 +1,166 @@
+@font-face
+{
+    font-family: 'Astakhov Dished Serif';
+    src: url('fonts/subset-AstakhovDishedSerif.woff2') format('woff2'), url('fonts/subset-AstakhovDishedSerif.woff') format('woff'), url('fonts/subset-AstakhovDishedSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Kurale';
+    src: url('fonts/subset-Kurale-Regular.woff2') format('woff2'), url('fonts/subset-Kurale-Regular.woff') format('woff'), url('fonts/subset-Kurale-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-color: rgba(233, 233, 164, .64);
+}
+
+.paper
+{
+    margin: 50px 5%;
+    padding: 15px 5%;
+    background-image: url('images/paper-texture-light.jpg');
+    background-size: cover;
+    box-shadow: 5px 5px #b08e80;
+}
+
+header
+{
+    text-align: center;
+}
+
+h1
+{
+    font-size: 3em;
+    font-variant: small-caps;
+    letter-spacing: .4em;
+}
+
+.issue
+{
+    text-transform: uppercase;
+}
+
+main
+{
+    column-count: 2;
+    column-rule: solid 2px;
+}
+
+article
+{
+    column-count: 2;
+    column-rule: solid 2px;
+    break-inside: avoid;
+}
+
+h3,
+.wide
+{
+    column-span: all;
+}
+
+blockquote
+{
+    border-left: solid 1px;
+    break-inside: avoid;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+blockquote:not(.wide)
+{
+    margin: 0 10%;
+}
+
+figure
+{
+    border: solid 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+article > p:first-of-type:first-letter
+{
+    font-size: 2em;
+}
+
+p
+{
+    text-indent: 5%;
+}
+
+article > p:first-of-type,
+h3 + h4,
+article:first-of-type h3,
+h2
+{
+    margin-top: 0;
+}
+
+.small + label,
+.small:checked ~ .paper
+{
+    font-size: 8px;
+}
+
+.normal + label,
+.normal:checked ~ .paper
+{
+    font-size: 16px;
+}
+
+.large + label,
+.large:checked ~ .paper
+{
+    font-size: 24px;
+}
+
+.bold + label,
+.bold:checked ~ .paper
+{
+    font-weight: bold;
+}
+
+.cursive:not(:checked) ~ .paper header
+{
+    font-family: 'Astakhov Dished Serif', serif;
+}
+
+.cursive:not(:checked) ~ .paper main
+{
+    font-family: 'Kurale', serif;
+}
+
+.cursive + label,
+.cursive:checked ~ .paper
+{
+    font-family: 'Comic Sans', cursive;
+}
+
+.night:checked ~ .paper
+{
+    background-image: url('images/paper-texture-dark.jpg');
+    color: #cfcf92;
+}
+
+.vertical-text
+{
+    width: 1ch;
+    margin-right: 10px;
+    padding-right: 5px;
+    word-break: break-all;
+    float: left;
+    border-right: solid 2px;
+    break-inside: avoid;
+}
