@@ -102,7 +102,8 @@ p
 
 article > p:first-of-type,
 h3 + h4,
-article:first-of-type h3
+article:first-of-type h3,
+h2
 {
     margin-top: 0;
 }
@@ -151,4 +152,15 @@ article:first-of-type h3
 {
     background-image: url('images/paper-texture-dark.jpg');
     color: #cfcf92;
+}
+
+.vertical-text
+{
+    width: 1ch;
+    margin-right: 10px;
+    padding-right: 5px;
+    word-break: break-all;
+    float: left;
+    border-right: solid 2px;
+    break-inside: avoid;
 }
