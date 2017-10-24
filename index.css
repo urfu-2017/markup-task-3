@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Tinos');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 @font-face
 {
-    font-family: TimesLogo;
-    src: url('OLDENGL.TTF');
-    font-style: normal;
+    font-family: NYTLogo;
+    src: url('OLDENGL.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
 }
 
 html,
@@ -53,10 +56,8 @@ main
 .logo
 {
     width: 70%;
-    font-family: 'Old English Text MT', TimesLogo, serif;
+    font-family: NYTLogo, serif;
     font-size: 90px;
-    font-weight: bold;
-    font-style: normal;
 }
 
 .logo a
@@ -217,6 +218,7 @@ main
 
 .main-article p
 {
+    font-family: 'Tinos', serif;
     margin: 0;
     text-indent: 3em;
 }
@@ -307,9 +309,10 @@ main
     background: #fff;
 }
 
-.font-checkbox:checked ~ main
+.font-checkbox:checked ~ main,
+.font-checkbox:checked ~ main .main-article p
 {
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .size-small:checked ~ main .main-article
