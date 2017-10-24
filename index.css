@@ -1,0 +1,221 @@
+@font-face
+{
+    font-family: 'Bikham Cyr Script';
+    src: url(bikham-cyr-script_[allfont.ru].ttf) format(ttf);
+}
+
+html
+{
+    margin: 0;
+    padding: 0;
+    font: 16px 'Acme', sans-serif;
+    color: #420;
+}
+
+body
+{
+    margin: 0;
+    padding: 0 4rem;
+    background-color: #fadabb;
+    text-align: justify;
+}
+
+.paper
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 4rem;
+    background-color: #fed;
+    color: #420;
+}
+
+.remark
+{
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    width: 1rem;
+}
+
+.remark_item
+{
+    display: block;
+    width: .3em;
+    margin-right: 1rem;
+    padding-bottom: .3rem;
+    font: .8rem 'Cutive Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.paper_name
+{
+    font: 70px 'Bikham Cyr Script';
+}
+
+.article_name 
+{
+    font: bold 40px 'Acme', sans-serif;
+    text-align: center;
+}
+
+.paper_date 
+{
+    font: italic 1.25rem 'Cutive Mono';
+    margin: 1.5rem;
+    padding: .5rem;
+    border-top: 4px double #fadabb;
+    border-bottom: 4px double #fadabb;
+    border-right: 4px double #fadabb;
+    border-left: 4px double #fadabb;
+    background-color: #420;
+    text-align: center;
+    color: #fed;
+}
+
+.entire_text
+{
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-rule: 1px solid #420;
+    -webkit-column-rule: 1px solid #420;
+    column-rule: 1px solid #420;
+    -moz-column-gap: 1.5rem;
+    -webkit-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+.quote
+{
+    font-style: oblique;
+    white-space: pre-line;
+}
+
+.paper-image-2
+{
+    column-span: all;
+}
+
+.paper_image_source
+{
+    width: 100%;
+}
+
+.article_text::first-letter
+{
+    font: 2rem 'Bikham Cyr Script';
+}
+
+.setting
+{
+    padding: 1.5rem 0;
+}
+
+.setting_item
+{
+    display: inline-block;
+    padding: 2rem;
+    text-align: center;
+}
+
+.setting_item_header
+{
+    margin: 0 0 1rem;
+    padding: 0;
+    color: #420;
+}
+
+.setting_item_label
+{
+    padding: .25rem .5rem;
+    cursor: pointer;
+}
+
+.setting_item label:not(:checked):hover
+{
+    background-color: #fed;
+}
+
+input[id='set_color_dark']:checked ~ main .paper
+{
+    background-color: #835d37;
+    color: #fadabb;
+}
+
+input[id='set_size_small']:checked ~ main .article_name
+{
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+input[id='set_size_big']:checked ~ main .article_name
+{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+input[id='set_size_small']:checked ~ main .article_text
+{
+    font-size: .9rem;
+}
+
+input[id='set_size_big']:checked ~ main .article_text
+{
+    font-size: 1.2rem;
+}
+
+input[id='set_font_sans']:checked ~ main .article_text
+{
+    font-family: 'Acme', sans-serif;
+}
+
+input[id='set_font_serif']:checked ~ main .article_text
+{
+    font-family: 'Bree Serif', serif;
+}
+
+input[id='set_font_mono']:checked ~ main .article_text
+{
+    font-family: 'Cutive Mono', monospace;
+}
+
+input[name^='set-']
+{
+    display: none;
+}
+
+input[id='set_size_small']:checked ~ main label[for='set_size_small'],
+input[id='set_size_normal']:checked ~ main label[for='set_size_normal'],
+input[id='set_size_big']:checked ~ main label[for='set_size_big'],
+input[id='set_font_sanserif']:checked ~ main label[for='set_font_sanserif'],
+input[id='set_font_serif']:checked ~ main label[for='set_font_serif'],
+input[id='set_font_mono']:checked ~ main label[for='set_font_mono'],
+input[id='set_color_light']:checked ~ main label[for='set_color_light'],
+input[id='set_color_dark']:checked ~ main label[for='set_color_dark']
+{
+    background-color: #420;
+    color: #fed;
+}
+
+input[id='set_size_small']:checked ~ main .paper_image_caption
+{
+    font-size: .9rem;
+}
+
+input[id='set_size_big']:checked ~ main .paper_image_caption
+{
+    font-size: 1.2rem;
+}
+
+input[id='set_size_small']:checked ~ main .quote
+{
+    font-size: .9rem;
+}
+
+input[id='set_size_big']:checked ~ main .quote
+{
+    font-size: 1.2rem;
+}
