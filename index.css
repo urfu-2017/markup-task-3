@@ -1,0 +1,107 @@
+.newspaper
+{
+    margin: 0 auto;
+    padding: 3%;
+    width: 768px;
+}
+
+.newspaper-header-text
+{
+    text-align: center;
+    font-size: 48px;
+}
+
+.three-columns
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.copyright
+{
+    text-align: center;
+}
+
+.copyright small
+{
+    display: block;
+}
+
+.copyright small:nth-child(2)
+{
+    font-weight: bold;
+}
+
+.newspaper-section
+{
+    text-align: justify;
+}
+
+.newspaper-section p:first-of-type:first-letter
+{
+    font-size: 2em;
+}
+
+.section-header
+{
+    text-align: center;
+}
+
+.watermark
+{
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+.quote
+{
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    text-indent: 10px;
+}
+
+.quote:before,
+.quote:after
+{
+    content: '\"';
+}
+
+.section-picture
+{
+    width: 100%;
+    height: initial;
+    background-color: #fff;
+}
+
+.font-size[id='smaller']:checked ~ .newspaper
+{
+    font-size: smaller;
+}
+
+.font-size[id='normal']:checked ~ .newspaper
+{
+    font-size: normal;
+}
+
+.font-size[id='larger']:checked ~ .newspaper
+{
+    font-size: larger;
+}
+
+.font-type[id='serif']:checked ~ .newspaper
+{
+    font-family: serif;
+}
+
+.font-type[id='sans-serif']:checked ~ .newspaper
+{
+    font-family: sans-serif;
+}
+
+.read-mode[id='night-mode']:checked ~ .newspaper
+{
+    background-color: #111;
+    color: #eee;
+}
