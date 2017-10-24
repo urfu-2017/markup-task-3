@@ -123,7 +123,7 @@ blockquote
     display: block;
     padding: 5px;
     width: 500px;
-    border: 4px solid #696969;
+    border: 4px dashed #696969;
     float: right;
     text-align: justify;
     margin-right: 10px;
@@ -150,7 +150,7 @@ li
     text-transform: uppercase;
 }
 
-h1
+h2
 {
     text-transform: uppercase;
     letter-spacing: .3em;
