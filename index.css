@@ -1,7 +1,6 @@
 body
 {
     text-align: justify;
-    position: relative;
     box-sizing: border-box;
     max-width: 1150px;
     margin: 0 auto;
@@ -12,25 +11,18 @@ body
 {
     color: red;
     text-shadow: 2px 0 2px black;
-    font: bold 40pt Impact, 'Arial Narrow Bold', sans-serif;
+    font: bold 53px Impact, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
-.proletarii
+.battleroar
 {
-    font-style: italic;
     text-align: right;
     margin: 0;
-    font-size: 150%;
+    font-size: 20px;
     text-decoration: underline;
-    opacity: .7;
-}
-
-.prolet
-{
-    margin-top: 0;
 }
 
 .name
@@ -38,67 +30,60 @@ body
     display: inline-block;
     text-align: right;
     font-family: sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 400%;
+    font-size: 52px;
     line-height: 1;
     margin: 0;
     text-shadow: 2px 2px 2px black;
 }
 
-img[alt='Знак почета']
+.symbol
+{
+    margin: 0;
+    margin-right: 30px;
+}
+
+.symbol > img
 {
     display: inline-block;
     width: 66px;
     height: 100px;
-    margin-right: 30px;
     margin-top: 10px;
 }
 
-img[alt='Знак почета'] + div
-{
-    margin-right: 30px;
-    margin-top: 0;
-    opacity: .7;
-    text-align: center;
-}
-
-.organ
+.from
 {
     max-width: 200px;
     text-align: center;
-    font-style: italic;
     margin-bottom: 0;
     margin-top: 0;
     margin-right: 20px;
 }
 
-.podpis
+.subscription
 {
     display: flex;
     justify-content: space-between;
-    font-style: italic;
-
+    margin-top: 15px;
 }
 
-.podpis > p
+.subscription > p
 {
     margin-bottom: 0;
     margin-top: 5px;
 }
 
-.shapka
+.banner
 {
     display: flex;
     justify-content: flex-end;
 }
 
-.shapka > div
+.banner > div
 {
     line-height: 3;
 }
 
-.shapka > div > div
+.banner > div > div
 {
     display: flex;
     justify-content: flex-end;
@@ -118,15 +103,14 @@ img[alt='Знак почета'] + div
 {
     margin-right: 30px;
     border: 2px solid #000;
+    border-radius: 10px;
 }
 
 .compliments > h3
 {
     text-align: center;
     font-family: sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 120%;
+    font-size: 15px;
 }
 
 .compliments > p
@@ -139,7 +123,6 @@ img[alt='Знак почета'] + div
 {
     display: flex;
     justify-content: space-around;
-    font-weight: 900;
 }
 
 .allhead
@@ -151,14 +134,18 @@ img[alt='Знак почета'] + div
 .qlenin
 {
     max-width: 300px;
-    font-style: italic;
     text-align: right;
     margin-left: 200px;
     font-family: sans-serif;
     text-shadow: 0 1px 0 #000;
 }
 
-img[alt='плакат']
+.poster
+{
+    margin: 0;
+}
+
+.poster > img
 {
     display: inline-block;
     width: 300px;
@@ -167,10 +154,9 @@ img[alt='плакат']
     margin-top: 10px;
 }
 
-img[alt='плакат'] + div
+figcaption
 {
     text-align: center;
-    opacity: .7;
 }
 
 .maincontent
@@ -179,15 +165,15 @@ img[alt='плакат'] + div
     justify-content: space-between;
 }
 
-.sobranie
+.meeting
 {
     column-count: 3;
     column-gap: 10px;
-    font-size: 110%;
+    font-size: 14px;
     text-indent: 30px;
 }
 
-.sobranie > p
+.meeting > p
 {
     margin-top: 0;
     margin-bottom: 5px;
@@ -196,28 +182,26 @@ img[alt='плакат'] + div
 .tass
 {
     text-align: right;
-    font-style: italic;
 }
 
-.kreml
+.meetingbanner
 {
     text-shadow: 1px 1px 0 black;
-    font: bold 25pt serif;
+    font: bold 33px serif;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
-    text-transform: uppercase;
 }
 
-.kurs
+.finishcontent
 {
     column-count: 5;
     column-gap: 10px;
-    font-size: 110%;
+    font-size: 14px;
     text-indent: 30px;
 }
 
-.kurs > p
+.finishcontent > p
 {
     margin-bottom: 10px;
     margin-top: 0;
@@ -226,30 +210,118 @@ img[alt='плакат'] + div
 .finish
 {
     text-shadow: 1px 1px 0 black;
-    font: bold 35pt Bookman old style, serif;
+    font: bold 47px Bookman old style, serif;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
-    text-transform: uppercase;
 }
 
 .finish + p
 {
     text-align: center;
-    font-size: 130%;
+    font-size: 17px;
 }
 
-.socializm
+.chapterhead
 {
     column-span: all;
-    font: bold 20pt sans-serif;
+    font: bold 27px sans-serif;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
-    text-transform: uppercase;
 }
 
 .needbold
 {
     font-weight: 900;
+}
+
+.clarity
+{
+    opacity: .8;
+}
+
+.up
+{
+    text-transform: uppercase;
+}
+
+.em
+{
+    font-style: italic;
+}
+
+input[id='color']:checked ~ .fon
+{
+    padding: 20px 20px 30px;
+    font-size: 13px;
+    color: #fff;
+    background: url('fon_neg.png');
+    background-attachment: fixed;
+    margin: auto;
+}
+
+input[id='arial']:checked ~ .fon > .maincontent > div
+{
+    font-family: sans-serif;
+}
+
+input[id='arial']:checked ~ .fon > .finishcontent
+{
+    font-family: sans-serif;
+}
+
+input[id='small']:checked ~ .fon > .maincontent > div > div,
+
+input[id='small']:checked ~ .fon > .finishcontent
+{
+    font-size: 100%;
+}
+
+input[id='larger']:checked ~ .fon > .maincontent > div > div,
+
+input[id='larger']:checked ~ .fon > .finishcontent
+{
+    font-size: 120%;
+}
+
+input[id='small']:checked ~ .fon > .switcher > label[for='small']
+{
+    color: yellow;
+}
+
+input[id='medium']:checked ~ .fon > .switcher > label[for='medium']
+{
+    color: yellow;
+}
+
+input[id='larger']:checked ~ .fon > .switcher > label[for='larger']
+{
+    color: yellow;
+}
+
+input[id='arial']:checked ~ .fon > .switcher > label[for='arial']
+{
+    color: yellow;
+}
+
+input[id='color']:checked ~ .fon > .switcher > label[for='color']
+{
+    color: yellow;
+}
+
+label
+{
+    padding: 7px;
+    font-size: 13px;
+    border: 3px solid #444;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 10px;
+    color: #444;
+}
+
+input
+{
+    display: none;
 }
