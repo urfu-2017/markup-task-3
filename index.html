@@ -1,9 +1,164 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
-</head>
-<body>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Задача «DeLorean DMC-12»</title>
+    </head>
+    <body>
+        <div class="page">
+            <input type="radio" name="font-size" id="decrease-font" class="appearance-switch-input" checked>
+            <label for="decrease-font" class="appearance-switch-label">Decrease the size</label>
+            <input type="radio" name="font-size" id="increase-font" class="appearance-switch-input">
+            <label for="increase-font" class="appearance-switch-label">Increase the size</label>
+            <input type="radio" name="background" id="light-background" 
+                class="appearance-switch-input" checked>
+            <label for="light-background" class="appearance-switch-label">Light background</label>
+            <input type="radio" name="background" id="dark-background" class="appearance-switch-input">
+            <label for="dark-background" class="appearance-switch-label">Light background</label>
+            <input type="radio" name="font-type" id="standard" checked class="appearance-switch-input">
+            <label for="standard" class="appearance-switch-label">Standard</label>
+            <input type="radio" name="font-type" id="type-written" class="appearance-switch-input">
+            <label for="type-written" class="appearance-switch-label">Typewritten</label>
+            <div class="newspaper">
+                <header class="newspaper-header">
+                    <img class="newspaper-logo-right" src="./images/logo-right.png" alt="Tracery">
+                    <img class="newspaper-logo-left" src="./images/logo-left.png" alt="Tracery">
+                    <h1 class="newspaper-title">New Times</h1>
+                    <div class="newspaper-release">
+                        <h3 class="newspaper-release-date">London Friday
+                            <time datetime="1985-04-25">25 April 1985</time>
+                        </h3>
+                    </div>
+                </header>
+                <main>
+                    <h2>Sherlock Holmes is a fictional private detective</h2>
+                    <article class="newspaper-content">
+                        <article class="newspaper-introduction">
+                            <h3>History</h3>
+                            <p class="newspaper-text">
+                                The au&shy;thor, (Sir) Ar&shy;thur Con&shy;an-Doyle wro&shy;te his first
+                                Holmes sto&shy;ry, A Stu&shy;dy In Scar&shy;let,in 1886. Sher&shy;lock Holmes
+                                a fic&shy;ti&shy;tious char&shy;ac&shy;ter was based on a real man,
+                                un&shy;der. Con&shy;an-Doyle wro&shy;te 56 self con&shy;tai&shy;ned short
+                                stor&shy;ies &amp; 4 nov&shy;els (60 ad&shy;ven&shy;tures in total).
+                            </p>
+                            <p class="newspaper-text">
+                                The col&shy;lec&shy;tion is known as The Can&shy;non. The first Sher&shy;
+                                lock Holmes film was pro&shy;duced in 1900. In 1939 the nov&shy;els were
+                                de&shy;veloped as a series of films star&shy;ing Basil Rath&shy;bone,
+                                es&shy;tab&shy;lish&shy;ing the trade&shy;mark deer&shy;stalk&shy;er,
+                                pipe &amp; spy&shy;glass as a glob&shy;al visu&shy;al icon.
+                            </p>
+                            <p class="newspaper-text">
+                                Con&shy;an Doyle wrote four nov&shy;els and fifty-six short stor&shy;ies
+                                that fea&shy;ture Holmes. The first two stor&shy;ies, short nov&shy;els
+                                ap&shy;peared in Bee&shy;ton’s Christ&shy;mas An&shy;nu&shy;al for 1887
+                                and Lip&shy;pin&shy;cott’s Monthly Magazine in 1890, re&shy;spect&shy;ively.
+                                The char&shy;ac&shy;ter grew tre&shy;mend&shy;ously in pop&shy;ular&shy;ity
+                                with the be&shy;gin&shy;ning of the first series of short stor&shy;ies in
+                                The Strand Magazine in 1891; fur&shy;ther series of short stor&shy;ies and
+                                two seri&shy;al&shy;ised nov&shy;els ap&shy;peared un&shy;til 1927. The
+                                stor&shy;ies cov&shy;er a peri&shy;od from around 1878 up to 1907, with a
+                                fi&shy;nal case in 1914. All but four sto&shy;ries are nar&shy;rated by
+                                Holmes’s friend and bio&shy;graph&shy;er, Dr John H. Wat&shy;son; two are
+                                nar&shy;rated by Sher&shy;lock Holmes him&shy;self, and two oth&shy;ers are
+                                writ&shy;ten in the third per&shy;son.Con&shy;an Doyle said that the
+                                char&shy;ac&shy;ter of Holmes was in&shy;spired by Dr Joseph Bell, for
+                                whom Doyle had  worked as a clerk at the Ed&shy;in&shy;burgh Roy&shy;al
+                                In&shy;firm&shy;ary. Like Sher&shy;lock Holmes, Bell was noted for
+                                draw&shy;ing large con&shy;clu&shy;sions from the smal&shy;lest
+                                ob&shy;ser&shy;va&shy;tions.
+                            </p>
+                            <figure class="newspaper-figure">
+                                    <img src="./images/conan-doyle.jpg" alt="Conan-Doyle"
+                                        class="newspaper-image">
+                                    <figcaption class="newspaper-image-caption">Conan-Doyle</figcaption>
+                                </figure>
+                        </article>
+                        <article class="newspaper-biography">
+                            <h3>Life with Watson</h3>
+                            <p class="newspaper-text">
+                                Holmes worked as a de&shy;tect&shy;ive for twenty-three years,
+                                with phys&shy;i&shy;cian John Wat&shy;son as&shy;sist&shy;ing
+                                him for sev&shy;en&shy;teen.They were room&shy;mates be&shy;fore
+                                Wat&shy;son's 1887 mar&shy;riage and again after his wife's death.
+                                Their res&shy;id&shy;ence is main&shy;tained by their land&shy;lady,
+                                Mrs. Hud&shy;son. Most of the stor&shy;ies are frame nar&shy;rat&shy;
+                                ives, writ&shy;ten from Wat&shy;son's point of view as
+                                sum&shy;mar&shy;ies of the de&shy;tect&shy;ive's most
+                                in&shy;ter&shy;est&shy;ing cases. Holmes fre&shy;quently
+                                calls Wat&shy;son's writ&shy;ing sen&shy;sa&shy;tion&shy;al
+                                and pop&shy;u&shy;list,sug&shy;gest&shy;ing that it fails to
+                                ac&shy;cur&shy;ately and ob&shy;ject&shy;ively re&shy;port the
+                                "sci&shy;ence" of his craft:
+                            </p>
+                            <q class="newspaper-quote">
+                                De&shy;tec&shy;tion is, or ought to be, an ex&shy;act sci&shy;ence and
+                                should be treated in the same cold and un&shy;emo&shy;tion&shy;al
+                                man&shy;ner. You have at&shy;temp&shy;ted to tinge it["A Study in
+                                Scar&shy;let"] with ro&shy;man&shy;ti&shy; cism, which pro&shy;duces
+                                much the sameef&shy;fect as if you worked a love-story .... Some facts
+                                should be sup&shy;pressed,or, at least, a just sense of
+                                pro&shy;por&shy;tion should be ob&shy;served in treat&shy;ing them.
+                                The only point in the case which de&shy;served men&shy;tion was the
+                                curi&shy;ous ana&shy;lyt&shy;ic&shy;al reas&shy;on&shy; ing from
+                                ef&shy;fects to causes, by which I suc&shy;ceeded in
+                                un&shy;rav&shy;el&shy;ling it.
+                            </q>
+                            <figure class="newspaper-figure">
+                                <img src="./images/holmes-watson.jpg" alt="Holmes-Watson"
+                                    class="newspaper-image">
+                                <figcaption class="newspaper-image-caption">Holmes-Watson</figcaption>
+                            </figure>
+                            <p class="newspaper-text">
+                                Nev&shy;er&shy;the&shy;less, Holmes's friend&shy;ship with Wat&shy;son
+                                is his most sig&shy;ni&shy;fic&shy;ant re&shy;la&shy;tion&shy;ship.
+                                When Wat&shy;son is in&shy;jured by a bul&shy;let, al&shy;though the
+                                wound turns out to be "quite su&shy;per&shy;fi&shy;cial", Wat&shy;son
+                                is moved by Holmes's re&shy;ac&shy;tion:
+                            </p>
+                            <q class="newspaper-quote">
+                                It was worth a wound; it was worth many wounds; to know the depth of
+                                loy&shy;alty and love which lay be&shy;hind that cold mask. The clear,
+                                hard eyes were dimmed for a mo&shy;ment, and the firm lips were
+                                shak&shy;ing. For the one and only time I caught a glimpse of a great
+                                heart as well as of a great brain. All my years of humble but single-minded
+                                ser&shy;vice cul&shy;min&shy;ated in that mo&shy;ment of
+                                rev&shy;el&shy;a&shy;tion
+                            </q>
+                        </article>
+                        <article class="newspaper-drug">
+                            <h3>Drug</h3>
+                            <p class="newspaper-text">
+                                Holmes oc&shy;ca&shy;sion&shy;ally uses ad&shy;dict&shy;ive drugs,
+                                es&shy;pe&shy;cially in the ab&shy;sence of stim&shy;u&shy;lat&shy;ing cases.
+                                He uses co&shy;caine, which he in&shy;jects in a sev&shy;en-per&shy;cent
+                                solu&shy;tion with a syr&shy;inge kept in a Mo&shy;rocco leath&shy;er case.
+                                Al&shy;though Holmes also dab&shy;bles in morphine, he ex&shy;pres&shy;ses
+                                strong dis&shy;ap&shy;prov&shy;al when he vis&shy;its an opi&shy;um den;
+                                both drugs were leg&shy;al in late-19th-cen&shy;tury Eng&shy;land. Wat&shy;son
+                                and Holmes use to&shy;bacco,smoking ci&shy;gar&shy;ettes,ci&shy;gars, and 
+                                pipes, and the de&shy;tect&shy;ive is an ex&shy;pert at identi&shy;fy&shy;ing
+                                to&shy;bacco-ash residue.
+                            </p>
+                            <p class="newspaper-text">
+                                A a phys&shy;i&shy;cian Wat&shy;son stron&shy;gly dis&shy;ap&shy;proves of his
+                                friend's co&shy;caine habit, de&shy;scri&shy;bing it as the 
+                                de&shy;tect&shy;ive's "on&shy;ly vice", and con&shy;cerned about its
+                                ef&shy;fect on Holmes's men&shy;tal health and in&shy;tel&shy;lect.
+                                In "The Ad&shy;ven&shy;ture of the Miss&shy;ing Three-Quarter" Wat&shy;son
+                                says&shy;that al&shy;though he has "weaned" Holmes from drugs, he re&shy;mains
+                                an ad&shy;dict whose habit is&shy;not dead, but merely sleep&shy;ing".
+                            </p>
+                        </article>
+                        <figure class="newspaper-figure">
+                            <img src="./images/drug.jpg" alt="Drug" class="newspaper-image">
+                            <figcaption class="newspaper-image-caption">Holmes smokes</figcaption>
+                        </figure>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </body>
 </html>
