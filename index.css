@@ -2,6 +2,8 @@
 {
     font-family: TimesLogo;
     src: url('OLDENGL.TTF');
+    font-style: normal;
+    font-weight: bold;
 }
 
 html,
@@ -51,7 +53,7 @@ main
 .logo
 {
     width: 70%;
-    font-family: 'Old English Text MT', TimesLogo, serif;
+    font-family: TimesLogo, 'Old English Text MT', serif;
     font-size: 90px;
 }
 
