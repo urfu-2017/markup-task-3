@@ -24,14 +24,14 @@ html
 .mainHeader
 {
     font-family: 'Parizhel';
-    text-align:  center;
+    text-align: center;
     font-size: 45px;
     font-weight: bold;
 }
 
 .header 
 {
-    text-align:  center;
+    text-align: center;
 }
 
 .twoColoms
@@ -42,7 +42,7 @@ html
 
 .leftimg 
 {
-    float:left;
+    float: left;
     margin: 7px 7px 7px 0;
     filter: grayscale(100%);
 }
