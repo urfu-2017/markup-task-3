@@ -1,9 +1,290 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC"
+    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton"
+    rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display"
+    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great"
+    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script"
+    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Six+Caps"
+    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do"
+    rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
+    <span>Change font size:</span>
+    <label for="size-bigger">bigger</label>
+    <input type="radio" name="size" id="size-bigger">
+    <label for="size-normal">normal</label>
+    <input type="radio" name="size" id="size-normal" checked="checked">
+    <label for="size-smaller">smaller</label>
+    <input type="radio" name="size" id="size-smaller">
+    <br>
+    <span>Change font:</span>
+    <label for="font-styling">styling</label>
+    <input type="radio" name="font" id="font-styling" checked="checked">
+    <label for="font-simple">simple</label>
+    <input type="radio" name="font" id="font-simple">
+    <br>
+    <span>Change color:</span>
+    <label for="color-light">light</label>
+    <input type="radio" name="color" id="color-light" checked="checked">
+    <label for="color-dark">dark</label>
+    <input type="radio" name="color" id="color-dark">
+    <header>
+        <div class="weather">
+            <span>Weatherforcast for the next 24 hours: rain</span><br>
+            <span>Wind: 2.5m/s South; Ther: 1&deg;C; Hum: 100%</span>
+        </div>
+        <div class="uphead">Special Beatles Issue</div>
+        <h1 class="headline">Music <span>record news</span></h1>
+    </header>
+    <div class="subhead">
+        <p class="number">&#8470;1</p>
+        <p class="date">Yekaterinburg, Wednesday, September 28, 2015</p>
+        <p class="page">Page One</p>
+    </div>
+    <main>
+        <h2 class="article-header">100 Greatest Beatles Songs</h2>
+        <section>
+            <article class="column">
+                <figure class="sign">
+                    <img src="http://goo.gl/qp2hFa" alt="Elvis Costello">
+                    <figcaption class="photo-signature">Elvis Costello</figcaption>
+                </figure>
+                <p class="first-paragraph">
+                    I first heard of the Beatles when I was ni&shy;ne years old. I spent 
+                    most of my ho&shy;li&shy;days on Merseyside then, and a lo&shy;cal girl 
+                    ga&shy;ve me a bad pub&shy;li&shy;ci&shy;ty shot of them with their names 
+                    scraw&shy;led on the back.
+                </p>
+                <p>
+                    I didn't ca&shy;re about that; they we&shy;re the band for me.
+                    The fun&shy;ny thing is that pa&shy;rents and all their friends from 
+                    Liverpool were al&shy;so cu&shy;rious and proud about this lo&shy;cal group.
+                    Prior to that, the peop&shy;le in show bu&shy;si&shy;ness from the north of 
+                    England had all been co&shy;me&shy;dians. The Beatles even re&shy;corded 
+                    for Parlophone, which was a co&shy;me&shy;dy la&shy;bel, as if they 
+                    be&shy;liev&shy;ed they might be a pas&shy;sing no&shy;vel&shy;ty act.
+                </p>
+                <p>
+                    I was exact&shy;ly the right age to be hit by them full-on. My 
+                    ex&shy;pe&shy;rien&shy;ce — seiz&shy;ing on eve&shy;ry pic&shy;ture, 
+                    sav&shy;ing mo&shy;ney for sing&shy;les and EPs, catch&shy;ing them on
+                    a lo&shy;cal news show — was re&shy;peat&shy;ed over and over again around 
+                    the world. It wasn't the first ti&shy;me any&shy;thing li&shy;ke this had 
+                    hap&shy;pen&shy;ed, but the Beatles ac&shy;hiev&shy;ed a le&shy;vel of fa&shy;me 
+                    and re&shy;cog&shy;ni&shy;ti&shy;on known pre&shy;vious&shy;ly on&shy;ly to 
+                    Charlie Chaplin, Brigitte Bardot and Elvis Presley, along with a litt&shy;le of 
+                    the air&shy;less ex&shy;clu&shy;si&shy;vi&shy;ty of as&shy;tro&shy;nauts, 
+                    for&shy;mer pre&shy;si&shy;dents and ot&shy;her heavy&shy;weight cham&shy;pions.
+                </p>
+                <p>
+                    Eve&shy;ry re&shy;cord was a shock. Com&shy;pa&shy;red to ra&shy;bid R&amp;B 
+                    ev&shy;an&shy;ge&shy;lists li&shy;ke the Rolling Stones, the Beatles 
+                    ar&shy;ri&shy;ved sound&shy;ing li&shy;ke not&shy;hing el&shy;se. They had 
+                    al&shy;ready ab&shy;sor&shy;bed Buddy Holly, the Everly Brothers and 
+                    Chuck Berry, but they were also wri&shy;ting their own songs. They ma&shy;de 
+                    wri&shy;ting your own ma&shy;te&shy;rial ex&shy;pec&shy;ted, rat&shy;her 
+                    than ex&shy;cep&shy;tio&shy;nal.
+                </p>
+                <p>
+                    And John Lennon and Paul McCartney were ex&shy;cep&shy;tio&shy;nal 
+                    song&shy;wri&shy;ters; McCartney was, and is, a tru&shy;ly vir&shy;tuoso 
+                    mu&shy;si&shy;cian; George Harrison wasn't the kind of guitar player who to&shy;re
+                    off wild, un&shy;pre&shy;dic&shy;tab&shy;le so&shy;los, but you can sing the 
+                    me&shy;lo&shy;dies of near&shy;ly all of his breaks. Most im&shy;por&shy;tant, 
+                    they always fit right in&shy;to the ar&shy;ran&shy;ge&shy;ment. Ringo Starr 
+                    played the drums with an inc&shy;re&shy;dib&shy;ly uni&shy;que feel that no&shy;body 
+                    can real&shy;ly co&shy;py, although ma&shy;ny fi&shy;ne drum&shy;mers have tried 
+                    and fai&shy;led. Most of all, John and Paul were fan&shy;tas&shy;tic sin&shy;gers.
+                </p>
+                <p>
+                    Lennon, McCartney and Harrison had stun&shy;ning&shy;ly high stan&shy;dards as 
+                    wri&shy;ters. Ima&shy;gi&shy;ne re&shy;leasing a song li&shy;ke "Ask Me Why" or 
+                    "Things We Said To&shy;day" as a B side. They ma&shy;de such fan&shy;tas&shy;tic 
+                    re&shy;cords as "Paper&shy;back Wri&shy;ter" b/w "Rain" or "Penny Lane" b/w 
+                    "Straw&shy;berry Fields For&shy;ever" and on&shy;ly put them out as sing&shy;les. 
+                    The&shy;se re&shy;cords were events, and not just ad&shy;van&shy;ce no&shy;ti&shy;ce 
+                    of an al&shy;bum. Then they started to real&shy;ly grow up: simp&shy;le love lyrics
+                    to adult stories like "Norwegian Wood," which spo&shy;ke of the sour si&shy;de of 
+                    love, and on to big&shy;ger ideas than you would ex&shy;pect to find in 
+                    catchy pop ly&shy;rics.
+                </p>
+                <p>
+                    They we&shy;re the first group to mess with the aural pers&shy;pec&shy;ti&shy;ve of 
+                    their re&shy;cor&shy;dings and have it be more than just a gim&shy;mick. 
+                    En&shy;gi&shy;neers li&shy;ke Geoff Emerick in&shy;ven&shy;ted tech&shy;ni&shy;ques 
+                    that we now ta&shy;ke for gran&shy;ted, in res&shy;pon&shy;se to the group's 
+                    ima&shy;gi&shy;na&shy;tion. Be&shy;fore the Beatles, you had guys in lab coats 
+                    doing re&shy;cor&shy;ding ex&shy;pe&shy;ri&shy;ments, but you didn't have 
+                    roc&shy;kers de&shy;li&shy;be&shy;ra&shy;te&shy;ly put&shy;ting things out of 
+                    ba&shy;lan&shy;ce, li&shy;ke a quiet vo&shy;cal in front of a loud track on
+                    "Straw&shy;berry Fields Fo&shy;re&shy;ver." You can't exag&shy;ge&shy;rav&shy;te the
+                    li&shy;cen&shy;se that this ga&shy;ve to every&shy;one from Motown to Jimi Hendrix.
+                </p>
+                <p>
+                    My ab&shy;so&shy;lu&shy;te fa&shy;vo&shy;ri&shy;te albums are Rubber Soul 
+                    and Revolver. On both re&shy;cords you can hear re&shy;fe&shy;ren&shy;ces 
+                    to other mu&shy;sic — R&amp;B, Dylan, psyche&shy;delia — but it's not do&shy;ne 
+                    in a way that is ob&shy;vious or da&shy;tes the re&shy;cords. When you pic&shy;ked 
+                    up Revolver, you knew it was some&shy;thing dif&shy;fe&shy;rent. Heck, they are 
+                    wear&shy;ing sung&shy;lasses in&shy;doors in the pic&shy;tu&shy;re on the back of
+                    the co&shy;ver and not even look&shy;ing at the ca&shy;me&shy;ra...and the 
+                    mu&shy;sic was so stran&shy;ge and yet so vi&shy;vid.
+                    <span class="statement">
+                        If I had to pick a favorite song from those albums, it would be 
+                        "And&nbsp;Your&nbsp;Bird&nbsp;Can&nbsp;Sing"... no, "Girl"...no, 
+                        "For&nbsp;No&nbsp;One"...and so on, and so on...
+                    </span>
+                </p>
+            </article>
+        </section>
+        <section>
+            <article class="column">
+                <p class="song-title">A Day in the Life</p>
+                <figure class="sign">
+                    <img class="image" src="http://goo.gl/E1pOcJ"  alt="Beatles">
+                    <figcaption>Photo: Keystone-France/Gamma-Keystone via Getty Images</figcaption>
+                </figure>
+                <p>
+                    "A Day in the Life" is the sound of the Beatles on a historic roll. 
+                    "It was a peak," John Lennon told Rolling Stone in 1970, recalling the Sgt. 
+                    Pepper period. It's also the ultimate Lennon-McCartney collaboration:
+                </p>
+                <figure class="quote">
+                    <blockquote>
+                        "Paul and I were definitely working together, especially on 'A Day in the Life'"
+                    </blockquote>
+                    <figcaption class="author">
+                        John Lennon
+                    </figcaption>
+                </figure>
+                <p>
+                    After their August 29th, 1966, concert in San Francisco, the Beatles 
+                    left live performing for good. Rumors of tension within the group 
+                    spread as the Beatles released no new music for months.
+                </p> 
+                <figure class="quote">
+                    <blockquote>
+                        "People in the media sensed that there was too much of a lull,
+                        which created a vacuum, so they could bitch about us now. 
+                        They'd say, 'Oh, they've dried up,' but we knew we hadn't."
+                    </blockquote>
+                    <figcaption class="author">
+                        Paul McCartney
+                    </figcaption>
+                </figure>
+                <p>
+                    In truth, the song was far too intense musically and emotionally for regular 
+                    radio play. It wasn't really until the Eighties, after Lennon's murder, 
+                    that "A Day in the Life" became recognized as the band's masterwork. 
+                    In this song, as in so many other ways, the Beatles were way ahead of everyone else.
+                </p>
+                <p class="song-title">I Want to Hold Your Hand</p>
+                <figure class="sign">
+                    <img class="image" src="http://goo.gl/sWJpxS" alt="Beatles">
+                    <figcaption>Photo: Daily Express/Archive Photos/Getty Images</figcaption>
+                </figure>
+                <p>
+                    When the joyous, high-end racket of "I Want to Hold Your Hand" first blasted across 
+                    the airwaves, America was still reeling from the November 1963 assassination of 
+                    President John F. Kennedy. Beatles songs had drifted across the Atlantic in a 
+                    desultory way before, but no British rock &amp; roll act had ever made the slightest 
+                    impact on these shores. The Beatles and their manager, Brian Epstein, were 
+                    determined to be the first, vowing that they wouldn't come to the U.S. 
+                    until they had a Number One record.
+                </p>
+                <p>
+                    The song "was the apex of Phase One of the Beatles' development," said producer 
+                    George Martin. "When they started out, in the 'Love Me Do' days, they weren't 
+                    good writers. They stole unashamedly from existing records. It wasn't until they 
+                    tasted blood that they realized they could do this, and that set them on the road 
+                    to writing better songs."
+                </p>
+                <p>
+                    The lightning-bolt energy lunges out of the speakers with a rhythm so tricky 
+                    that many bands who covered the song couldn't figure it out. Lennon's and 
+                    McCartney's voices constantly switch between unison and harmony. 
+                    Every element of the song is a hook, from Lennon's riffing to George Harrison's 
+                    string-snapping guitar fills to the group's syncopated hand claps.
+                </p>
+                <p>
+                    Teens weren't the only ones swept up in Beatlemania. Some of America's greatest 
+                    artists fell under their spell. Poet Allen Ginsberg leapt up to dance the first 
+                    time he heard "I Want to Hold Your Hand" in a New York club. 
+                </p>
+                <figure class="quote">
+                    <blockquote>
+                        "I fell in love with the Beatles' music — the ineluctable beat, 
+                        the Schubert-like flow of musical invention and the 
+                        Fuck-You coolness of the Four Horsemen of Our Apocalypse."
+                    </blockquote>
+                    <figcaption class="author">
+                        Composer Leonard Bernstein
+                    </figcaption>
+                </figure>
+                <figure class="quote">
+                    <blockquote>
+                        "They were doing things nobody was doing". "Their chords were outrageous. 
+                        It was obvious to me they had staying power. I knew they were pointing in 
+                        the direction of where music had to go. In my head, the Beatles were it."
+                    </blockquote>
+                    <figcaption class="author">
+                        Bob Dylan
+                    </figcaption>
+                </figure>
+                <p>
+                    With advance orders at a million copies, "I Want to Hold Your Hand" was 
+                    released in the U.K. in late November and promptly bumped the band's 
+                    "She Loves You" from the top of the charts. After a teenager in Washington, 
+                    D.C., persuaded a local DJ to seek out an import of the single, it quickly 
+                    became a hit on the few American stations that managed to score a copy. 
+                    Rush-released in the U.S. the day after Christmas, the song hit Number 
+                    One on February 1st, 1964.
+                </p>
+                <p class="song-title">Strawberry Fields Forever</p>
+                <figure class="sign">
+                    <img class="image" src="http://goo.gl/VoMUAB" alt="Beatles">
+                    <figcaption>Photo: David Redfern/Redferns</figcaption>
+                </figure>
+                <p>
+                    John Lennon wrote "Strawberry Fields Forever" in September 1966 in Spain, 
+                    where he was making the film How I Won the War. Alone, with no Beatles 
+                    business for the first time in years, he found himself free to reach deep 
+                    for inspiration, going back to childhood memories.
+                </p>
+                <figure class="quote">
+                    <blockquote>
+                        "We were trying to write about Liverpool, and I just listed all the 
+                        nice-sounding names arbitrarily. But I have visions of Strawberry 
+                        Fields...Because Strawberry Fields is just anywhere you want to go."
+                    </blockquote>
+                    <figcaption class="author">
+                        John Lennon
+                    </figcaption>
+                </figure>
+                <p>
+                    Strawberry Field (Lennon added the "s") was a Liverpool children's home 
+                    near where Lennon grew up with his Aunt Mimi. When he was young, Lennon, 
+                    who had been abandoned by both his parents, would climb over the wall 
+                    of the orphanage and play in its wild gardens.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address>
+            &copy; <a href="http://www.rollingstone.com">http://www.rollingstone.com</a>
+        </address>
+    </footer>
 </body>
 </html>
