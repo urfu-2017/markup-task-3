@@ -1,37 +1,38 @@
 @font-face
 {
     font-family: old;
-    src:url('fonts/Carmen.ttf')
+    src: url('fonts/Carmen.ttf');
 }
 
 @font-face
 {
     font-family: simpleText;
-    src:url('fonts/AntiqueTradyNr.ttf')
+    src: url('fonts/AntiqueTradyNr.ttf');
 }
 
 @font-face
 {
     font-family: cap;
-    src:url('fonts/Heinrich_Text.ttf')
+    src: url('fonts/Heinrich_Text.ttf');
 }
+
 body
 {
-    background: #FFFCFC;
+    background: #fffcfc;
 }
 
 h1
 {
     font-family: cap;
     font-size: 60px;
-    letter-spacing: 0.5em;
+    letter-spacing: .5em;
     text-align: center;
 }
 
 h2
 {
     font-family: old;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     font-size: 40px;
 }
 
