@@ -32,37 +32,44 @@
 }
 
 h1,
-h3
+h3,
+p
 {
     font: 50px Rye, cursive;
-    text-align: center;
 }
 
-article p
+p
 {
-    font: 20px Rye, cursive;
+    font-size: 20px;
     text-align: left;
 }
 
 article p:first-of-type::first-letter
 {
-    font: 800 30px Sacramento, cursive;
-}
-
-article p::first-letter
-{
-    margin-left: 25px;
+    font: 800 30px Sacramento, serif;
 }
 
 q
 {
-    font: 1.3rem Dancing Script, cursive;
+    font: 1.3em Dancing Script, cursive;
     font-weight: bold;
 }
 
-body
+.vertical
 {
-    background-size: 100% 100%;
+    font: bold 25px Dancing Script, cursive;
+    width: 1px;
+    word-break: break-all;
+    padding-left: 48%;
+}
+
+p::first-letter
+{
+    margin-left: 25px;
+}
+
+.content
+{
     background-image: url('images/paper.jpg');
 }
 
@@ -78,7 +85,9 @@ h1
 
 h3
 {
-    font-size: 35px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .articles
@@ -94,14 +103,6 @@ h3
 article:not(:last-of-type)
 {
     border-bottom: 1px solid #000;
-}
-
-.vertical
-{
-    font: bold 25px Dancing Script, cursive;
-    width: 1px;
-    word-break: break-all;
-    padding-left: 48%;
 }
 
 .date
@@ -121,4 +122,50 @@ article:not(:last-of-type)
 {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+}
+
+input[id='theme-dark']:checked ~ .content
+{
+    background: #000;
+    color: #fff;
+}
+
+input[id='theme-dark']:checked ~ .content .articles
+{
+    column-rule-color: #fff;
+}
+
+input[id='theme-dark']:checked ~ .content article
+{
+    border-color: #fff;
+}
+
+input[id='font-family-sans-serif']:checked ~ .content,
+input[id='font-family-sans-serif']:checked ~ .content header,
+input[id='font-family-sans-serif']:checked ~ .content h1,
+input[id='font-family-sans-serif']:checked ~ .content h3,
+input[id='font-family-sans-serif']:checked ~ .content p,
+input[id='font-family-sans-serif']:checked ~ .content .vertical
+{
+    font-family: sans-serif;
+}
+
+input[id='font-size-large']:checked ~ .content,
+input[id='font-size-large']:checked ~ .content header,
+input[id='font-size-large']:checked ~ .content h1,
+input[id='font-size-large']:checked ~ .content h3,
+input[id='font-size-large']:checked ~ .content p,
+input[id='font-size-large']:checked ~ .content .vertical
+{
+    font-size: 1.5em;
+}
+
+input[id='font-size-small']:checked ~ .content,
+input[id='font-size-small']:checked ~ .content header,
+input[id='font-size-small']:checked ~ .content h1,
+input[id='font-size-small']:checked ~ .content h3,
+input[id='font-size-small']:checked ~ .content p,
+input[id='font-size-small']:checked ~ .content .vertical
+{
+    font-size: .85em;
 }
