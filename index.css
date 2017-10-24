@@ -89,7 +89,6 @@ h4
 
 .text_demoBlock
 {
-    padding-bottom: 0px;
     width: 100%;
     column-count: 2;
     font-size: 8pt;
@@ -116,7 +115,6 @@ h4
 
 hr
 {
-    margin: 0px;
     padding: 2px;
     border-top: 5px solid;
 }
@@ -192,7 +190,7 @@ th
 {
     vertical-align: text-top;
     font-size: 10pt;
-    font-family:'Chekhovskoy';
+    font-family: 'Chekhovskoy';
     line-height: 20px;
 }
 
