@@ -1,0 +1,60 @@
+@font-face
+{
+    font-family: Parizhel;
+    src: url(MainHeader.ttf)format("truetype"); ;
+}
+
+@font-face
+{
+    font-family: Moscow Sans Regular;
+    src: url(MSR.ttf)format("truetype"); ;
+}
+
+html
+{
+    zoom: 150%;
+}
+
+.aboutMarty
+{
+    font-size: 20px;
+    font-family: 'Moscow Sans Regular';
+}
+
+.mainHeader
+{
+    font-family: 'Parizhel';
+    text-align:  center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.header 
+{
+    text-align:  center;
+}
+
+.twoColoms
+{
+    column-count: 2;
+    column-rule: 1px solid rgb(0, 0, 0);
+}
+
+.leftimg 
+{
+    float:left; 
+    margin: 7px 7px 7px 0; 
+    filter: grayscale(100%);
+}
+
+.docAndMarty 
+{
+    width: 300px;
+    filter: grayscale(100%);
+}
+
+.family 
+{
+    column-count: 3;
+    column-rule: 1px solid rgb(0, 0, 0);
+}
