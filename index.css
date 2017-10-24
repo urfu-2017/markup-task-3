@@ -49,6 +49,8 @@ body
 {
     padding-top: 10px;
     padding-bottom: 10px;
+
+    font-size: 0;
 }
 
 .centered
@@ -73,10 +75,10 @@ body
 .main-header__heading
 {
     width: 62%;
-    margin: 0 0 20px -.05em;
+    margin: 0 0 20px;
 
     font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 5em;
+    font-size: 5rem;
     text-transform: capitalize;
     text-align: center;
 }
@@ -87,8 +89,9 @@ body
     box-sizing: border-box;
     width: 15%;
     border: 1px solid;
-    margin: 0 2% 0 calc(2% - .25em);
+    margin: 0 2%;
 
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -111,6 +114,8 @@ body
 {
     width: 33%;
     display: inline-block;
+
+    font-size: 1rem;
 }
 
 .main-header__price
