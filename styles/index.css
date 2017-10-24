@@ -1,0 +1,184 @@
+@font-face
+{
+    font-family: 'Klaber Fraktur';
+    src: url('../fonts/klaber-fraktur.ttf');
+}
+
+@font-face
+{
+    font-family: 'Headliner';
+    src: url('../fonts/headliner.ttf');
+}
+
+html
+{
+    font-size: 62.5%; /* 62.5% of 16px = 10px */
+    font-family: serif;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.theme-wrapper
+{
+    margin: 0;
+    padding: 20px;
+    background: #f3ece2 url('../images/dust.png') repeat 50% 0;
+}
+
+main
+{
+    column-count: 5;
+    column-gap: 2rem;
+    text-align: justify;
+}
+
+figure
+{
+    margin: 0;
+    padding-bottom: .5rem;
+    display: inline-block;
+    object-fit: scale-down;
+    border-bottom: 2px solid #5559;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+article
+{
+    font-size: 1.4rem;
+    page-break-inside: avoid;
+}
+
+article h2
+{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+article h2 + p::first-letter
+{
+    font-size: 3rem;
+    margin: 0 4px 2px 0;
+}
+
+article p
+{
+    text-indent: 2rem;
+}
+
+.settings
+{
+    font-size: 1.5rem;
+}
+
+.settings ~ header,
+.settings ~ main
+{
+    margin: 20px 25px;
+}
+
+.newsletter-headline
+{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.newsletter-headline > h1,
+.newsletter-headline > aside
+{
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.newsletter-headline h1
+{
+    width: 50%;
+    padding: 35px 0;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Klaber Fraktur', serif;
+}
+
+.headline-widget
+{
+    width: 25%;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.headline-widget h4
+{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.weather-widget
+{
+    float: left;
+}
+
+.index-widget
+{
+    float: right;
+}
+
+.newsletter-headline::after
+{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.newsletter-about
+{
+    width: 100%;
+    padding: 5px;
+    display: table;
+    font-size: 1.4rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-family: 'Headliner', serif;
+}
+
+.newsletter-about .promo-text,
+.newsletter-about .description
+{
+    width: 20%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.newsletter-about .description
+{
+    font-size: 1.8rem;
+}
+
+.most-important-heading
+{
+    display: block;
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: .8rem;
+}
+
+.non-breakable-part
+{
+    page-break-inside: avoid;
+}
