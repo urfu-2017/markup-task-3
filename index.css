@@ -96,7 +96,7 @@ main
     justify-content: space-between;
     font-weight: 700;
     padding: 3px 0;
-    /*word-spacing: -1px;*/
+    word-spacing: -1px;
 }
 
 .folio > span
@@ -280,7 +280,7 @@ main
     height: 1px;
     width: 40%;
     left: 30%;
-    /*margin: -8px 0;*/
+    margin: -8px 0;
 }
 
 .subarticle-more
