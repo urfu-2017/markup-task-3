@@ -51,7 +51,7 @@ main
 .logo
 {
     width: 70%;
-    font-family: TimesLogo, serif;
+    font-family: TimesLogo, 'Old English Text MT', serif;
     font-size: 90px;
 }
 
