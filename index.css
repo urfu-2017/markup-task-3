@@ -1,13 +1,19 @@
 @font-face
 {
     font-family: Anglican;
-    src: url('fonts/AnglicanText.ttf');
+    src: url('fonts/AnglicanText.ttf') format('ttf');
+    src: url('./fonts/AnglicanText.eot?#iefix') format('embedded-opentype');
+    src: url('./fonts/AnglicanText.woff') format('woff');
+    src: url('./fonts/AnglicanText.woff2') format('woff2');
 }
 
 @font-face
 {
     font-family: BLK;
-    src: url('fonts/BLKCHCRY.TTF');
+    src: url('fonts/BLKCHCRY.TTF') format('ttf');
+    src: url('./fonts/BLKCHCRY.eot?#iefix') format('embedded-opentype');
+    src: url('./fonts/BLKCHCRY.woff') format('woff');
+    src: url('./fonts/BLKCHCRY.woff2') format('woff2');
 }
 
 html body
@@ -28,8 +34,10 @@ h2
     text-align: center;
 }
 
-.header-black-line
+header::before
 {
+    display: block;
+    content: '';
     height: 30px;
     background: black;
     width: 100%;
@@ -42,6 +50,7 @@ h2
     justify-content: space-around;
     align-items: center;
     height: 150px;
+    width: 100%;
 }
 
 .header-content > div:first-child,
@@ -67,7 +76,18 @@ h2
 .header-text-name
 {
     font-family: Anglican;
-    font-size: 6em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.vertical-text
+{
+    font-size: 9px;
+    width: 10px;
+    word-break: break-all;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
 }
 
 .header-info
@@ -85,10 +105,18 @@ h2
     font-family: BLK;
 }
 
+.main-content
+{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
 .main-content > div
 {
     float: left;
     padding: 0 5px;
+    height: 100%;
 }
 
 .column > p:first-letter
@@ -150,6 +178,7 @@ main > input[type='checkbox']
 
 main > label
 {
+    background: white;
     cursor: pointer;
     width: 33%;
     font-size: 20px;
@@ -170,7 +199,7 @@ main > label:nth-child(6)
     border: none;
 }
 
-.color-checkbox:checked ~ section > div,
+.color-checkbox:checked ~ section,
 .color-checkbox:checked ~ header
 {
     color: white;
