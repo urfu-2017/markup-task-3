@@ -1,0 +1,327 @@
+body
+{
+    text-align: justify;
+    box-sizing: border-box;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.present
+{
+    color: red;
+    text-shadow: 2px 0 2px black;
+    font: bold 53px Impact, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.battleroar
+{
+    text-align: right;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.name
+{
+    display: inline-block;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 52px;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+.symbol
+{
+    margin: 0;
+    margin-right: 30px;
+}
+
+.symbol > img
+{
+    display: inline-block;
+    width: 66px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.from
+{
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.subscription
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.subscription > p
+{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.banner
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner > div
+{
+    line-height: 3;
+}
+
+.banner > div > div
+{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5;
+}
+
+.fon
+{
+    padding: 20px 20px 30px;
+    font-size: 13px;
+    background: url('fon.png');
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.compliments
+{
+    margin-right: 30px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.compliments > h3
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.compliments > p
+{
+    margin: 3px 10px 0;
+    text-indent: 20px;
+}
+
+.compliments > div
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.allhead
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qlenin
+{
+    max-width: 300px;
+    text-align: right;
+    margin-left: 200px;
+    font-family: sans-serif;
+    text-shadow: 0 1px 0 #000;
+}
+
+.poster
+{
+    margin: 0;
+}
+
+.poster > img
+{
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+.maincontent
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.meeting
+{
+    column-count: 3;
+    column-gap: 10px;
+    font-size: 14px;
+    text-indent: 30px;
+}
+
+.meeting > p
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.tass
+{
+    text-align: right;
+}
+
+.meetingbanner
+{
+    text-shadow: 1px 1px 0 black;
+    font: bold 33px serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.finishcontent
+{
+    column-count: 5;
+    column-gap: 10px;
+    font-size: 14px;
+    text-indent: 30px;
+}
+
+.finishcontent > p
+{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.finish
+{
+    text-shadow: 1px 1px 0 black;
+    font: bold 47px Bookman old style, serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.finish + p
+{
+    text-align: center;
+    font-size: 17px;
+}
+
+.chapterhead
+{
+    column-span: all;
+    font: bold 27px sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.needbold
+{
+    font-weight: 900;
+}
+
+.clarity
+{
+    opacity: .8;
+}
+
+.up
+{
+    text-transform: uppercase;
+}
+
+.em
+{
+    font-style: italic;
+}
+
+input[id='color']:checked ~ .fon
+{
+    padding: 20px 20px 30px;
+    font-size: 13px;
+    color: #fff;
+    background: url('fon_neg.png');
+    background-attachment: fixed;
+    margin: auto;
+}
+
+input[id='arial']:checked ~ .fon > .maincontent > div
+{
+    font-family: sans-serif;
+}
+
+input[id='arial']:checked ~ .fon > .finishcontent
+{
+    font-family: sans-serif;
+}
+
+input[id='small']:checked ~ .fon > .maincontent > div > div,
+
+input[id='small']:checked ~ .fon > .finishcontent
+{
+    font-size: 100%;
+}
+
+input[id='larger']:checked ~ .fon > .maincontent > div > div,
+
+input[id='larger']:checked ~ .fon > .finishcontent
+{
+    font-size: 120%;
+}
+
+input[id='small']:checked ~ .fon > .switcher > label[for='small']
+{
+    color: yellow;
+}
+
+input[id='medium']:checked ~ .fon > .switcher > label[for='medium']
+{
+    color: yellow;
+}
+
+input[id='larger']:checked ~ .fon > .switcher > label[for='larger']
+{
+    color: yellow;
+}
+
+input[id='arial']:checked ~ .fon > .switcher > label[for='arial']
+{
+    color: yellow;
+}
+
+input[id='color']:checked ~ .fon > .switcher > label[for='color']
+{
+    color: yellow;
+}
+
+label
+{
+    padding: 7px;
+    font-size: 13px;
+    border: 3px solid #444;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 10px;
+    color: #444;
+}
+
+input
+{
+    display: none;
+}
