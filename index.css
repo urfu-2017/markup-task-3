@@ -21,6 +21,21 @@ body
     background: #fffcfc;
 }
 
+hr
+{
+    color: black;
+    size: 1px;
+}
+
+div
+{
+    border-right: thin solid black;
+    border-left: thin solid black;
+    border-bottom: thin solid black;
+    padding: 10px;
+    padding-left: 20px;
+}
+
 h1
 {
     font-family: cap;
@@ -51,6 +66,7 @@ article
 {
     font-family: simpleText;
     text-align: justify;
+    column-rule: 1px black solid;
 }
 
 img
