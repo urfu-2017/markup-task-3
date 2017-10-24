@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:400,600|Open+Sans+Condensed:300,600|Saira+Extra+Condensed:400,900|Titillium+Web:200|Bitter|Lora');
+
+.option {
+    margin: 0px 10px 10px 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}
+
+main {
+    border: 2px solid #7c2fff;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 20px #bbb;
+}
+
+.paper-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paper-header-squared  {
+    text-transform: uppercase;
+
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    width: 200px;
+}
+
+.with-border {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #7c2fff;
+}
+
+.paper-header-title {
+    text-transform: uppercase;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+
+    text-shadow: -3px -3px #829cf1,
+                   3px 3px #f88989;
+
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.paper-header-title::before {
+    content: "Awe";
+    opacity: 0.25;
+    text-shadow: 0px 0px;
+}
+
+.paper-header-title:hover::before {
+    opacity: 1;
+    text-shadow: -3px -3px #829cf1,
+                   3px 3px #f88989;
+}
+
+.paper-subtitle {
+    border-bottom: 2px solid #7c2fff;
+    border-top: 2px solid #7c2fff;
+    margin: 20px 0px 50px 0px;
+}
+
+.paper-date {
+    text-transform: uppercase;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.paper-body {
+    column-count: 4;
+    column-rule: 2px solid #7c2fff;
+}
+
+.paper-body h4 {
+    font-weight: 600;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
+    text-transform: uppercase;
+}
+
+.paper-body p {
+    text-align: justify;
+    hyphens: auto;
+    margin: 0px 0px 0px 0px;
+}
+
+.paper-body p::first-letter {
+    font-weight: 900;
+    padding: 0px 1px 0px 0px;
+}
+
+.paper-body .text {
+    font-size: 20px;
+}
+
+.text {
+    color: #7c2fff;
+}
+
+.illustration {
+    width: 100%;
+    display: block;
+    margin: 50px auto 10px auto;
+}
+
+.illustration:hover {
+    filter: invert(100%);
+}
+
+.separator {
+    content: '';
+    background-color: #7c2fff;
+    height: 2px;
+    margin: 10px 70px 10px 70px;
+}
+
+/* Font Styles */
+
+.montserrat-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.saira-style {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.lora-style {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.open-sans-style {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.bitter-style {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+}
+
+/* Dark Theme Switching */
+
+#dark-theme-checkbox:checked ~ main {
+    background-color: #7c2fff;
+}
+
+#dark-theme-checkbox:checked ~ main .text {
+    color: #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .separator {
+    background-color: #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .with-border {
+    border: 2px solid #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .paper-subtitle {
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .paper-body {
+    column-rule: 2px solid #fff;
+}
+
+/* Italic Style Switching */
+
+#italic-checkbox:checked ~ main .paper-body .text {
+    font-style: italic;
+}
+
+/* Font Size Switching */
+
+#small-text-radio:checked ~ main .paper-body .text {
+    font-size: 12px;
+}
+
+#middle-text-radio:checked ~ main .paper-body .text {
+    font-size: 20px;
+}
+
+#large-text-radio:checked ~ main .paper-body .text {
+    font-size: 28px;
+}
