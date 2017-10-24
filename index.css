@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Berkshire+Swash|Istok+Web|Play|Stalinist+One|Yanone+Kaffeesatz');
+
 p
 {
     text-indent: 1em;
@@ -48,6 +50,18 @@ figcaption
 {
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.symbol_img
+{
+    width: 20%;
+    height: 20%;
+}
+
+.full_sectioon_img
+{
+    width: 100%;
+    height: 100%;
 }
 
 .meta_info
