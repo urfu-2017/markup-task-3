@@ -1,0 +1,226 @@
+html,
+body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+main
+{
+    text-align: justify;
+    float: left;
+    display: block;
+}
+
+.news-header
+{
+    font-size: 60pt;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Ultra', serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.news-header-small
+{
+    margin: 0;
+    padding-top: 20px;
+    font-size: 24pt;
+    text-align: left;
+    letter-spacing: 12px;
+    font-family: 'Oranienbaum', serif;
+}
+
+.fig
+{
+    float: left;
+    padding: 15px;
+}
+
+.main
+{
+    border: none;
+    background-color: black;
+    color: black;
+    height: 20px;
+}
+
+.secondary
+{
+    border: none;
+    background-color: grey;
+    color: grey;
+    height: 3px;
+}
+
+section header
+{
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: .1em;
+    font-size: 130%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+section
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 0 1.5%;
+    height: 100%;
+    margin: 0;
+}
+
+article
+{
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    column-width: 80px;
+    column-count: 2;
+    column-gap: 30px;
+    text-indent: 1.5em;
+}
+
+article:first-letter
+{
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.footnote
+{
+    column-count: 1;
+    background: #696969;
+    color: white;
+    display: inline-block;
+    float: right;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: 'Oranienbaum', serif;
+}
+
+aside
+{
+    columns: 1;
+    margin-top: 5px;
+    padding: 5px;
+    width: 90%;
+    border: 7px double black;
+    display: block;
+}
+
+blockquote
+{
+    display: block;
+    padding: 5px;
+    width: 500px;
+    border: 4px dashed #696969;
+    float: right;
+    text-align: justify;
+    margin-right: 10px;
+    font-family: 'Oranienbaum', serif;
+}
+
+blockquote p
+{
+    margin: 5px 0 0;
+    font-size: 120%;
+    font-family: 'Oranienbaum', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section blockquote
+{
+    width: 90%;
+}
+
+li
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2
+{
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+.img-container img
+{
+    width: 90%;
+}
+
+.vertical-line
+{
+    position: absolute;
+    display: inline-block;
+    background-color: #000;
+    border: none;
+    width: 2px;
+    margin: 5px 0;
+    padding: 0;
+    height: 90%;
+}
+
+.img-container
+{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.control
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-size: 11pt;
+}
+
+input[type='checkbox']:checked ~ .control
+{
+    background: black;
+    color: white;
+}
+
+input[type='checkbox']:checked ~ .control .main,
+input[type='checkbox']:checked ~ .control .vertical-line
+{
+    background-color: white;
+}
+
+.small:checked ~ .control
+{
+    font-size: 9pt;
+}
+
+.normal:checked ~ .control
+{
+    font-size: 11pt;
+}
+
+.large:checked ~ .control
+{
+    font-size: 13pt;
+}
+
+.sans-serif:checked ~ .control article,
+.sans-serif:checked ~ .control section header,
+.sans-serif:checked ~ .control .footnote,
+.sans-serif:checked ~ .control blockquote,
+.sans-serif:checked ~ .control article:first-letter
+{
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
