@@ -20,14 +20,17 @@ main
     text-align: left;
     text-transform: uppercase;
     font-family: 'Ultra', serif;
+    font-weight: normal;
+    margin: 0;
 }
 
 .news-header-small
 {
+    margin: 0;
     padding-top: 20px;
     font-size: 24pt;
     text-align: left;
-    letter-spacing: 14px;
+    letter-spacing: 12px;
     font-family: 'Oranienbaum', serif;
 }
 
