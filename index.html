@@ -3,7 +3,247 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input class="theme-changer" type="checkbox" id="theme">
+    <label for="theme">Сменить тему</label><br>
+
+    <input class="font-changer_small" name="font" type="radio" id="font-small">
+    <label for="font-small">Уменьшенный шрифт</label>
+    <input class="font-changer_normal" name="font" type="radio" id="font-normal" checked>
+    <label for="font-normal">Нормальный шрифт</label>
+    <input class="font-changer_big" name="font" type="radio" id="font-big">
+    <label for="font-big">Увеличенный шрифт</label><br>
+
+    <input class="font-family_serif" type="radio" name="font-family" id="serif-font">
+    <label for="serif-font">Шрифт с засечками</label>
+    <input class="font-family_sans-serif" type="radio" name="font-family" id="sans-serif-font">
+    <label for="sans-serif-font">Шрифт без засечек</label>
+    <input class="font-family_default" type="radio" name="font-family" id="default-font" checked>
+    <label for="default-font">Стандартный шрифт</label>
+
+    <header class="main-header centered">
+        <section class="main-header__short-fact">
+            <h3 class="main-header__short-fact-heading">Attention</h3>
+            Lorem ipsum dolor sit amet, consectetur.
+        </section>
+        <h1 class="main-header__heading">Lorem ipsum dolor sit.</h1>
+        <section class="main-header__weather">
+        <h3 class="main-header__weather-heading">The weather</h3>
+            Lorem ipsum +15 dolor sit amet.
+        </section>
+        <section class="main-header__info">
+            <div class="main-header__number">Fresh exclusive № 1 edition</div>
+            <div class="main-header__date">Yekaterinburg, Thursday, May 30, 1985, One page</div>
+            <div class="main-header__price">1 Lorem</div>
+        </section>
+    </header>
+    <main class="centered">
+        <article class="main__article_two-columns main__article_big">
+            <img class="main__article-image_left" src="http://via.placeholder.com/325x150" alt="placeholder">
+            <h2 class="main__article-heading">Sensation</h2>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se ex&shy;cep&shy;turi
+                fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod sed sit?
+                <q class="main__article-quotation">Lo&shy;rem ip&shy;sum do&shy;lor sit amet,
+                    con&shy;sec&shy;te&shy;tur adi&shy;pi&shy;si&shy;cing elit.</q> Cum do&shy;lor
+                esse ex fa&shy;ce&shy;re ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus
+                sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <hr>
+            <img class="main__article-image_right" src="http://via.placeholder.com/150x200" alt="placeholder">
+            <h3>Lorem ipsum.</h3>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Sa&shy;pi&shy;en&shy;te, sus&shy;ci&shy;pit.
+            </p>
+        </article>
+        <article class="main__article_two-columns main__article_big">
+            <img class="main__article-image_left" src="http://via.placeholder.com/325x150" alt="placeholder">
+            <h2 class="main__article-heading">Sensation</h2>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? <q class="main__article-quotation">Lo&shy;rem ip&shy;sum
+                do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur adi&shy;pi&shy;si&shy;cing
+                elit.</q> Cum do&shy;lor esse ex fa&shy;ce&shy;re ha&shy;rum mag&shy;nam
+                ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <hr>
+            <img class="main__article-image_right" src="http://via.placeholder.com/150x200" alt="placeholder">
+            <h3>Lorem ipsum.</h3>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Sa&shy;pi&shy;en&shy;te, sus&shy;ci&shy;pit.
+            </p>
+        </article>
+        <article class="main__article_three-columns main__article_small">
+            <h2 class="main__article-heading main__article-heading_multicolumn">Exchange rates</h2>
+            <section class="main__currency-section">
+                <h3 class="main__currency-header">Dollar</h3>
+                <div class="main__currency">
+                    57.4811749 rub
+                </div>
+            </section>
+            <section class="main__currency-section">
+                <h3 class="main__currency-header">Euro</h3>
+                <div class="main__currency">
+                    67.7441513 rub
+                </div>
+            </section>
+            <section class="main__currency-section">
+                <h3 class="main__currency-header">Lorem</h3>
+                <div class="main__currency">
+                    9000.00001 rub
+                </div>
+            </section>
+        </article>
+        <article class="main__article_three-columns main__article_medium">
+            <figure class="main__article-figure_multicolumn">
+                <img src="http://via.placeholder.com/650x150" alt="placeholder">
+                <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+            </figure>
+            <h2 class="main__article-heading">Something new</h2>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Ali&shy;quid as&shy;su&shy;men&shy;da
+                con&shy;se&shy;qua&shy;tur de&shy;le&shy;ni&shy;ti dis&shy;tin&shy;ctio
+                eaque exer&shy;ci&shy;ta&shy;tio&shy;nem expe&shy;di&shy;ta ip&shy;sa
+                ip&shy;sam ip&shy;sum ita&shy;que li&shy;be&shy;ro ma&shy;xi&shy;me
+                nam no&shy;strum pla&shy;ceat qua&shy;erat quam qui&shy;bus&shy;dam
+                qui&shy;squam, re&shy;pu&shy;di&shy;an&shy;dae, ve&shy;lit vo&shy;lup&shy;ta&shy;tum.
+                A, do&shy;lo&shy;res il&shy;lum la&shy;bo&shy;rio&shy;sam op&shy;tio
+                qui&shy;dem te&shy;ne&shy;tur vo&shy;lup&shy;tas.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Ali&shy;quid as&shy;su&shy;men&shy;da
+                con&shy;se&shy;qua&shy;tur de&shy;le&shy;ni&shy;ti dis&shy;tin&shy;ctio
+                eaque exer&shy;ci&shy;ta&shy;tio&shy;nem expe&shy;di&shy;ta ip&shy;sa
+                ip&shy;sam ip&shy;sum ita&shy;que li&shy;be&shy;ro ma&shy;xi&shy;me
+                nam no&shy;strum pla&shy;ceat qua&shy;erat quam qui&shy;bus&shy;dam
+                qui&shy;squam, re&shy;pu&shy;di&shy;an&shy;dae, ve&shy;lit vo&shy;lup&shy;ta&shy;tum.
+                A, do&shy;lo&shy;res il&shy;lum la&shy;bo&shy;rio&shy;sam op&shy;tio
+                qui&shy;dem te&shy;ne&shy;tur vo&shy;lup&shy;tas.
+            </p>
+        </article>
+        <article class="main__article_two-columns main__article_big">
+            <img class="main__article-image_left" src="http://via.placeholder.com/325x150" alt="placeholder">
+            <h2 class="main__article-heading">Sensation</h2>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Cum do&shy;lor esse ex fa&shy;ce&shy;re
+                ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus sunt to&shy;tam unde.
+            </p>
+            <hr>
+            <img class="main__article-image_right" src="http://via.placeholder.com/150x200" alt="placeholder">
+            <h3>Lorem ipsum.</h3>
+            <p class="main__article-paragraph">
+                Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. De&shy;len&shy;iti eius es&shy;se
+                ex&shy;cep&shy;turi fuga ipsum mi&shy;nus nam nes&shy;ci&shy;unt quod
+                sed sit? <q class="main__article-quotation">Lo&shy;rem ip&shy;sum do&shy;lor sit amet,
+                con&shy;sec&shy;te&shy;tur adi&shy;pi&shy;si&shy;cing elit.</q> Cum do&shy;lor
+                esse ex fa&shy;ce&shy;re ha&shy;rum mag&shy;nam ni&shy;hil pos&shy;si&shy;mus
+                sunt to&shy;tam unde. Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur
+                adi&shy;pi&shy;si&shy;cing elit. Sa&shy;pi&shy;en&shy;te, sus&shy;ci&shy;pit.
+            </p>
+        </article>
+    </main>
 </body>
 </html>
