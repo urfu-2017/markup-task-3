@@ -1,0 +1,16 @@
+body
+{
+    background: rgb(235, 233, 159)
+}
+
+.topnews
+{
+    float:left;
+    width:60%;
+}
+
+.othernews
+{
+    float:right;
+    width: 35%
+}
