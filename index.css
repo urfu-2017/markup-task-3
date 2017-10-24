@@ -98,8 +98,8 @@ footer
     margin-bottom: 8px;
 }
 
-.news1 h1,
-.news2 h1
+.news1 h2,
+.news2 h2
 {
     column-span: all;
     text-align: center;
