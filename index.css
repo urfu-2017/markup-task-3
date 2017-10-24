@@ -50,7 +50,7 @@ main {
 
 .paper-header-title::before {
     content: 'Awe';
-    opacity: 0.25;
+    opacity: .25;
     text-shadow: 0 0;
 }
 
