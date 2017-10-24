@@ -1,0 +1,129 @@
+@font-face
+{
+    font-family: ds_moster;
+    src: url('front/ds_moster.ttf');
+}
+
+@font-face
+{
+    font-family: TrixieCyr-Plain;
+    src: url('front/TrixieCyr-Plain.otf');
+}
+
+img
+{
+    width: 100%;
+}
+
+html
+{
+    background-color: gray;
+}
+
+main
+{
+    padding: 10px;
+}
+
+label
+{
+    padding: 0 15px;
+}
+
+input
+{
+    display: none;
+}
+
+section
+{
+    column-count: 3;
+    column-rule: 1px solid #000;
+}
+
+h1,
+h2
+{
+    font-variant: small-caps;
+    text-align: center;
+}
+
+p
+{
+    text-align: justify;
+    hyphens: auto;
+    text-indent: 2em;
+}
+
+input[value='smoll']:checked ~ main
+{
+    font-size: 80%;
+}
+
+input[value='normal']:checked ~ main
+{
+    font-size: 100%;
+}
+
+input[value='big']:checked ~ main
+{
+    font-size: 120%;
+}
+
+input[value='ds_moster']:checked ~ main 
+{
+    font-family: ds_moster;
+}
+
+input[value='TrixieCyr-Plain']:checked ~ main
+{
+    font-family: TrixieCyr-Plain;
+}
+
+input[value='Arial']:checked ~ main
+{
+    font-family: Arial;
+}
+
+input[value='black_and_white']:checked ~ main
+{
+    background-image: url('56.jpg') ;
+    color: #000;
+    column-rule: 1px solid #000;
+}
+
+input[value='white_and_black']:checked ~ main
+{
+    background-image: url('118.jpg') ;
+    color: #fff;
+    column-rule: 1px solid #fff;
+}
+
+input[value='black_and_white']:checked ~ main section
+{
+    column-rule: 1px solid #000;
+}
+
+input[value='white_and_black']:checked ~ main section
+{
+    column-rule: 1px solid #fff;
+}
+
+.labelButton
+{
+    line-height: 3em;
+    font-family: Arial;
+    text-align: center;
+    column-count: 3;
+    padding: 50 0;
+}
+
+h1:first-letter
+{
+    font-size: 150%;
+}
+
+h2:first-letter
+{
+    font-size: 120%;
+}
