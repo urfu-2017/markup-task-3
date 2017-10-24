@@ -1,0 +1,291 @@
+body
+{
+    font: 16px 'Alegreya SC', serif;
+    color: #1a1a1a;
+    background-color: #fdf5e6;
+}
+
+header
+{
+    padding: 20px;
+    height: 155px;
+    width: 1300px;
+    border-bottom: 4px solid #2f2f2f;
+}
+
+.weather
+{
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    padding: 10px 15px;
+    line-height: 20px;
+    border: 10px solid;
+    border-image: url(http://goo.gl/Xkd6Bu) 35 round;
+}
+
+.headline 
+{
+    display: inline-block;
+    width: 1000px;
+    height: 70px;
+    margin: 0 55px;
+    padding: 23px 0;
+    font: 500 90px 'Monoton', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 75px;
+    border: 5px ridge #1a1a1a;
+}
+
+.headline span
+{
+    font: 35px 'Playfair Display', serif;
+}
+
+.uphead 
+{
+    position: absolute;
+    top: 100px;
+    left: 290px;
+    background: #fdf5e6;
+    padding: 5px;
+    font: 900 35px 'Dancing Script', cursive;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.subhead
+{
+    font-size: 14px;
+    width: 1340px;
+    text-transform: uppercase;
+    border-bottom: 4px double #2f2f2f;
+    white-space: nowrap;
+}
+
+.subhead > p
+{
+    display: inline-block;
+    width: 33%;
+}
+
+.number
+{
+    text-align: start;
+    font-weight: bold;
+}
+
+.date
+{
+    text-align: center;
+}
+
+.page
+{
+    text-align: end;
+    font-weight: bold;
+}
+
+.article-header
+{
+    font: small-caps 700 70px 'Six Caps', sans-serif;
+    text-align: center;
+    letter-spacing: 20px;
+    margin: 15px;
+}
+
+.first-paragraph::first-letter
+{
+    padding-left: 60px;
+    font-size: 30px;
+}
+
+.column
+{
+    column-count: 4;
+    column-gap: 20px;
+    column-width: 300px;
+    column-rule: 1px solid #2f2f2f;
+}
+
+.photo-signature 
+{
+    font: 25px 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.photo-signature:after,
+.photo-signature:before
+{
+    content: '';
+    width: 100px;
+    height: 15px;
+    display: block;
+    margin: auto;
+}
+
+.photo-signature:before
+{
+    border-top: 1px solid #2f2f2f;
+}
+
+.photo-signature:after
+{
+    border-bottom: 3px double #2f2f2f;
+}
+
+.quote,
+.author
+{
+    display: block;
+    margin: 5px 0 10px;
+}
+
+.quote
+{
+    font: 20px 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.author
+{
+    font: 20px 'Alegreya SC', serif;
+    text-align: right;
+}
+
+img
+{
+    width: 290px;
+}
+
+.sign
+{
+    padding: 5px;
+    margin: 10px;
+    min-width: 300px;
+    border: 1px solid #2f2f2f;
+    text-align: center;
+}
+
+blockquote
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.song-title
+{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    border: 1px solid #2f2f2f;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.statement
+{
+    display: block;
+    margin: 0;
+    padding: 10px;
+    font: 30px 'Dancing Script', cursive;
+    line-height: 50px;
+    text-align: center;
+    column-span: all;
+    border-top: 1px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+footer
+{
+    border-top: 2px solid #2f2f2f;
+    padding: 10px;
+    text-align: center;
+}
+
+input
+{
+    margin-right: 15px;
+}
+
+#color-dark:checked ~ main,
+#color-dark:checked ~ header,
+#color-dark:checked ~ header > .uphead,
+#color-dark:checked ~ .subhead,
+#color-dark:checked ~ footer
+{
+    background: #1a1a1a;
+    color: #fdf5e6;
+}
+
+#color-dark:checked ~ header,
+#color-dark:checked ~ header > .headline,
+#color-dark:checked ~ footer,
+#color-dark:checked ~ .subhead,
+#color-dark:checked ~ main .statement,
+#color-dark:checked ~ main figure,
+#color-dark:checked ~ main .song-title,
+#color-dark:checked ~ main .photo-signature:before,
+#color-dark:checked ~ main .photo-signature:after
+{
+    border-color: #fdf5e6;
+}
+
+#color-dark:checked ~ main .column
+{
+    column-rule: 1px solid #fdf5e6;
+}
+
+#color-dark:checked + header .weather
+{
+    border-image: url(http://goo.gl/4rwaUM) 35 round;
+}
+
+#font-simple:checked ~ main,
+#font-simple:checked ~ main h2,
+#font-simple:checked ~ main figcaption,
+#font-simple:checked ~ main .quote,
+#font-simple:checked ~ main .statement,
+#font-simple:checked ~ main .song-title
+{
+    font-family: Arial, Helvetica, Calibri, serif;
+}
+
+#size-bigger:checked ~ main,
+#size-bigger:checked ~ main figure,
+#size-bigger:checked ~ main figcaption
+{
+    font-size: 25px;
+}
+
+#size-bigger:checked ~ main .statement,
+#size-bigger:checked ~ main .song-title
+{
+    font-size: 50px;
+}
+
+#size-bigger:checked ~ main h2
+{
+    font-size: 100px;
+}
+
+#size-smaller:checked ~ main,
+#size-smaller:checked ~ main .author
+{
+    font-size: 14px;
+}
+
+#size-smaller:checked ~ main > section .statement,
+#size-smaller:checked ~ main .song-title,
+#size-smaller:checked ~ main figure
+{
+    font-size: 16px;
+}
+
+#size-smaller:checked ~ main h2
+{
+    font-size: 40px;
+}
