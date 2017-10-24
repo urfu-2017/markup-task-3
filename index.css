@@ -48,87 +48,80 @@ h1
     letter-spacing: 1px;
 }
 
-h2 
+h2
 {
     font-family: 'AA American Captain';
     font-size: 65pt;
     letter-spacing: 1px;
-    margin: 0px;
-    padding: 0px;
 }
 
-h3 
+h3
 {
     font-size: 25pt;
     font-family: 'AA American Captain';
     letter-spacing: 2px;
 }
 
-h4 
+h4
 {
     font-size: 25pt;
     letter-spacing: 2px;
-    margin: 0px;
-    padding: 0px;
 }
 
-.subHeader2 
+.subHeader2
 {
     font-size: 30pt;
     letter-spacing: 2px;
-    margin: 0px;
-    padding: 0px;
 }
 
-.strongSpacing 
+.strongSpacing
 {
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.subH 
+.subH
 {
     padding-left: -10pt;
     font-family: 'RobertaC';
     font-size: 22pt;
 }
 
-.text_demoBlock 
+.text_demoBlock
 {
     padding-bottom: 0px;
-    width:100%;
+    width: 100%;
     column-count: 2;
     font-size: 8pt;
 }
 
-.low 
+.low
 {
     font-size: 8pt;
     text-align: center;
 }
 
-.superlowbold 
+.superlowbold
 {
     font-size: 8pt;
     font-weight: bold;
 }
 
-.ramka 
+.ramka
 {
     border: 40px solid transparent;
     border-width: 45px;
     border-image: url(border1.png) 8%;
-    padding:  0px;
 }
 
-hr 
+hr
 {
     margin: 0px;
     padding: 2px;
     border-top: 5px solid;
 }
 
-.subHeadline 
+.subHeadline
 {
     font-family: 'The Capt';
     text-align: center;
@@ -137,79 +130,65 @@ hr
     letter-spacing: 1px;
 }
 
-.narrowText 
+.narrowText
 {
     text-align: end;
     font-family: 'Times New Roman';
     font-weight: bold;
     font-size: 18px;
-    margin: 0px;
-    padding: 0px;
 }
 
-.subHeader 
+.subHeader
 {
     font-family: 'The Capt';
     font-weight: bold;
     font-size: 20pt;
     letter-spacing: 3px;
-    margin: 0px;
-    padding: 0px;
 }
 
-.border2 
+.border2
 {
     border: solid transparent;
     border-width: 50px;
     border-image: url(border4.png) 10% repeat round;
-    padding:  0px;
-    margin: 0px;
 }
 
-.border3 
+.border3
 {
     border: solid transparent;
     border-width: 50px;
     border-image: url(b5.png) 20% round;
-    padding:  0px;
-    margin: 0px;
 }
 
-.zvezda 
+.zvezda
 {
     font-family: 'Conkordia';
     font-size: 45pt;
     letter-spacing: 4px;
-    margin: 0px;
-    padding: 0px;
 }
 
-.border4 
+.border4
 {
     border: solid transparent;
     border-width: 30px;
     border-image: url(b6.png) 11% round repeat;
-    padding:  0px;
-    margin: 0px;
 }
 
-.boldTimes 
+.boldTimes
 {
-    font-family:'b52';
+    font-family: 'b52';
     font-size: 10pt;
     font-weight: bold;
 }
 
-th 
+th
 {
-    vertical-align:top;
+    vertical-align: top;
     font-size: 20pt;
     font-weight: normal;
-    padding:  0px;
-    margin: 0px;
 }
 
-.text 
+.text
 {
     vertical-align: text-top;
     font-size: 10pt;
@@ -217,6 +196,7 @@ th
     line-height: 20px;
 }
 
-.center {
+.center
+{
     text-align: center;
 }
