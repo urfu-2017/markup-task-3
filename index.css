@@ -1,0 +1,223 @@
+@font-face
+{
+    font-family: 'Burgoyneinitials';
+    src: url('./fonts/Burgoyneinitials.ttf');
+}
+
+@font-face
+{
+    font-family: 'Advert';
+    src: url('./fonts/Advert.ttf');
+}
+
+@font-face
+{
+    font-family: 'Karmen';
+    src: url('./fonts/Ofont.ru_Karmen.ttf');
+}
+
+@font-face
+{
+    font-family: 'Xmasterpiece';
+    src: url('./fonts/Xmasterpiece.ttf');
+
+}
+
+@font-face
+{
+    font-family: 'Bawl';
+    src: url('./fonts/Bawl.ttf');
+}
+
+@font-face
+{
+    font-family: 'Civilian';
+    src: url('./fonts/Civilian.ttf');
+}
+
+@font-face
+{
+    font-family: 'Oldstyle';
+    src: url('./fonts/Oldstyle.ttf');
+}
+
+@font-face
+{
+    font-family: 'Eminenz';
+    src: url('./fonts/Eminenz.ttf');
+}
+
+@font-face
+{
+    font-family: 'Remington';
+    src: url('./fonts/Remington.ttf');
+}
+
+html,
+body,
+header,
+figure,
+h1,
+h2,
+h3
+{
+    margin: 0;
+    padding: 0;
+}
+
+.page
+{
+    width: 961px;
+    margin: 0 auto;
+}
+
+.newspaper
+{
+    color: #4b4343;
+    font: 17px Arial sans-serif;
+    background-image: url('./images/background.jpg');
+    background-repeat: repeat-y;
+}
+
+.appearance-switch-input
+{
+    display: none;
+}
+
+.appearance-switch-label
+{
+    display: inline-block;
+    padding: 10px 29px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.newspaper-logo-left,
+.newspaper-logo-right
+{
+    width: 30%;
+    margin: 10px;
+}
+
+.newspaper-logo-left
+{
+    float: left;
+}
+
+.newspaper-logo-right
+{
+    float: right;
+}
+
+.newspaper-header
+{
+    height: 300px;
+    clear: both;
+}
+
+.newspaper-title
+{
+    text-transform: uppercase;
+    padding-top: 40px;
+    text-align: center;
+    font: 3.1em 'Burgoyneinitials';
+}
+
+main h2,
+main h3
+{
+    text-align: center;
+    font: 2.5em 'Advert';
+}
+
+main h3
+{
+    font-size: 1.7em;
+}
+
+.newspaper-release
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 2px solid #4b4343;
+    border-bottom: 2px solid #4b4343;
+}
+
+.newspaper-content,
+.newspaper-drug
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.newspaper-image
+{
+    width: 100%;
+}
+
+.newspaper-image-caption
+{
+    text-align: center;
+    font: bold italic 'Karmen';
+}
+
+.newspaper-content,
+.newspaper-content .newspaper-introduction,
+.newspaper-content .newspaper-biography,
+.newspaper-drug
+{
+    margin: 0 10px 10px;
+    padding: 5px 10px;
+}
+
+.newspaper-text
+{
+    text-indent: 20px;
+    font-family: 'Karmen';
+}
+
+.newspaper-text:first-letter
+{
+    font-family: 'Xmasterpiece';
+}
+
+.newspaper-quote
+{
+    font-family: 'Bawl';
+}
+
+input[id='increase-font']:checked ~ .newspaper
+{
+    font-size: 18px;
+}
+
+input[id='dark-background']:checked ~ .newspaper
+{
+    color: #fff;
+    background-image: url('./images/dark-background.jpg');
+}
+
+input[id='type-written']:checked ~ .newspaper .newspaper-text
+{
+    font-family: 'Oldstyle';
+}
+
+input[id='type-written']:checked ~ .newspaper h2,
+input[id='type-written']:checked ~ .newspaper h3
+{
+    font-family: 'Remington';
+}
+
+input[id='type-written']:checked ~ .newspaper .newspaper-quote
+{
+    font-family: 'Eminenz';
+}
+
+input:checked + .appearance-switch-label
+{
+    background-color: #f5f5f5;
+}
