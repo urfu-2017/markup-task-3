@@ -41,15 +41,15 @@ body
     border-right: 2px solid #000;
     text-align: center;
     font-family: UbuntuMono;
-    margin-right: 1ch;
+    margin: 0 10px 0 0;
     float: left;
     text-transform: uppercase;
     word-wrap: break-word;
-    padding-right: 1ch;
+    padding: 0 10px 0 0;
     width: 1ch;
 }
 
-header
+.header
 {
     border-top: 5px solid #000;
     border-bottom: 5px solid #000;
@@ -69,7 +69,7 @@ label
     padding: 5px;
 }
 
-.small
+.font-size-small
 {
     display: none;
 }
@@ -81,76 +81,76 @@ label
     color: #fff;
 }
 
-.small:checked ~ .content > section
+.font-size-small:checked ~ .content > section
 {
     font-size: 14px;
 }
 
-.medium
+.font-size-medium
 {
     display: none;
 }
 
-.medium:checked ~ .content > section
+.font-size-medium:checked ~ .content > section
 {
     font-size: 18px;
 }
 
-.large
+.font-size-large
 {
     display: none;
 }
 
-.large:checked ~ .content > section
+.font-size-large:checked ~ .content > section
 {
     font-size: 22px;
 }
 
-.serif
+.font-family-serif
 {
     display: none;
 }
 
-.serif:checked ~ .content > section,
-.serif:checked ~ .content > footer
+.font-family-serif:checked ~ .content > section,
+.font-family-serif:checked ~ .content > footer
 {
     font-family: Lora, serif;
 }
 
-.sans-serif
+.font-family-sans-serif
 {
     display: none;
 }
 
-.sans-serif:checked ~ .content > section,
-.sans-serif:checked ~ .content > footer
+.font-family-sans-serif:checked ~ .content > section,
+.font-family-sans-serif:checked ~ .content > footer
 {
     font-family: OpenSans, sans-serif;
 }
 
-.mono
+.font-family-monospace
 {
     display: none;
 }
 
-.mono:checked ~ .content > section,
-.mono:checked ~ .content > footer
+.font-family-monospace:checked ~ .content > section,
+.font-family-monospace:checked ~ .content > footer
 {
     font-family: UbuntuMono, monospace;
 }
 
-.night
+.night-mode
 {
     display: none;
 }
 
-.night:checked ~ .content
+.night-mode:checked ~ .content
 {
     color: #ddd;
     background-color: #000;
 }
 
-.night:checked ~ .content > header
+.night-mode:checked ~ .content > header
 {
     border-color: #ddd;
 }
@@ -195,7 +195,7 @@ label
 
 section > article:first-child > h3
 {
-    margin-top: 0;
+    margin: 0 auto auto;
 }
 
 article h3
