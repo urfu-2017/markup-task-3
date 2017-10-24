@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:400,600|Open+Sans+Condensed:300,600|Saira+Extra+Condensed:400,900|Titillium+Web:200|Bitter|Lora');
 
 .option {
-    margin: 0px 10px 10px 0px;
+    margin: 0px 10px 10px;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 200;
 }
@@ -9,7 +9,7 @@
 main {
     border: 2px solid #7c2fff;
     background-color: #fff;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     box-shadow: 0px 0px 20px #bbb;
 }
 
@@ -31,7 +31,7 @@ main {
 
 .with-border {
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     border: 2px solid #7c2fff;
 }
 
@@ -46,7 +46,7 @@ main {
                    3px 3px #f88989;
 
     text-align: center;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 .paper-header-title::before {
@@ -64,7 +64,7 @@ main {
 .paper-subtitle {
     border-bottom: 2px solid #7c2fff;
     border-top: 2px solid #7c2fff;
-    margin: 20px 0px 50px 0px;
+    margin: 20px 0px 50px;
 }
 
 .paper-date {
@@ -76,7 +76,7 @@ main {
     font-weight: 300;
 
     text-align: center;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 .paper-body {
@@ -86,20 +86,20 @@ main {
 
 .paper-body h4 {
     font-weight: 600;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 5px 0px;
+    padding: 0px;
+    margin: 0px 0px 5px;
     text-transform: uppercase;
 }
 
 .paper-body p {
     text-align: justify;
     hyphens: auto;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 .paper-body p::first-letter {
     font-weight: 900;
-    padding: 0px 1px 0px 0px;
+    padding: 0px 1px;
 }
 
 .paper-body .text {
@@ -154,6 +154,8 @@ main {
     font-weight: 400;
 }
 
+/* stylelint-disable selector-no-id */
+
 /* Dark Theme Switching */
 
 #dark-theme-checkbox:checked ~ main {
@@ -200,3 +202,5 @@ main {
 #large-text-radio:checked ~ main .paper-body .text {
     font-size: 28px;
 }
+
+/* stylelint-enable */
