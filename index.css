@@ -45,8 +45,6 @@ body
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*====================   Header   ===================*/
-
 .main-header
 {
     padding-top: 10px;
@@ -75,7 +73,7 @@ body
 .main-header__heading
 {
     width: 62%;
-    margin: 0 0 20px;
+    margin: 0 0 20px -.05em;
 
     font-family: 'UnifrakturMaguntia', cursive;
     font-size: 5em;
@@ -89,7 +87,7 @@ body
     box-sizing: border-box;
     width: 15%;
     border: 1px solid;
-    margin: 0 2%;
+    margin: 0 2% 0 calc(2% - .25em);
 
     text-align: center;
 }
@@ -100,8 +98,6 @@ body
     margin-top: 0;
     margin-bottom: 5px;
 }
-
-/*============================   Header Info   =======================*/
 
 .main-header__info
 {
@@ -121,8 +117,6 @@ body
 {
     text-align: right;
 }
-
-/*=============================   Main   ========================*/
 
 hr
 {
@@ -180,6 +174,14 @@ main
 .main__article-heading_multicolumn
 {
     column-span: all;
+}
+
+.main__article-paragraph
+{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .main__article-paragraph:first-of-type::first-letter
