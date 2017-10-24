@@ -3,7 +3,198 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Podkova" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+<input type="radio" id="font-size-small" name="font-size" checked>
+<input type="radio" id="font-size-medium" name="font-size" >
+<input type="radio" id="font-size-large" name="font-size" >
+
+<input type="radio" id="font-sans" name="font" checked>
+<input type="radio" id="font-serif" name="font" >
+<input type="radio" id="font-mono" name="font" >
+
+<input type="radio" id="light" name="color-of-theme" checked>
+<input type="radio" id="dark" name="color-of-theme" >
+
+<main>
+    <section class="navigation">
+        <div class="navigation-item">
+            <h3 class="header_of_navigation">Размер шрифта</h3>
+            <label for="font-size-small">Маленький</label>
+            <label for="font-size-medium">Средний</label>
+            <label for="font-size-large">Крупный</label>
+        </div>
+        <div class="navigation-item">
+            <h3 class="header_of_navigation">Начертание шрифта</h3>
+            <label for="font-sans">Без засечек</label>
+            <label for="font-serif">С засечками</label>
+            <label for="font-mono">Моноширинный</label>
+        </div>
+        <div class="navigation-item">
+            <h3 class="header_of_navigation">Цветовая тема</h3>
+            <label for="light">Тёмная на светлом</label>
+            <label for="dark">Светлая на тёмном</label>
+        </div>
+    </section>
+    <header>
+        <h1>Как не заболеть осенью</h1>
+        <div class="release_date">
+            <h2>Данная статья не несёт смысловой нагрузки и других страшных вещей</h2>
+        </div>
+    </header>
+    <section class="content">
+        <article>
+            <figure>
+                <img src="preview.jpg" alt="Уютная осенняя картинка" title="Уютная осенняя картинка">
+                <figcaption>Картинка 1.</figcaption>
+            </figure>
+            <p>Осень ча&shy;сто со&shy;про&shy;вож&shy;да&shy;ет&shy;ся про&shy;сту&shy;да&shy;ми,
+                ухуд&shy;ше&shy;ни&shy;я&shy;ми пси&shy;хо&shy;ло&shy;ги&shy;че&shy;ско&shy;го и
+                фи&shy;зи&shy;че&shy;ско&shy;го со&shy;сто&shy;я&shy;ния: де&shy;прес&shy;си&shy;я&shy;ми,
+                ОРЗ, грип&shy;пом… Как не за&shy;бо&shy;леть осе&shy;нью и на&shy;сла&shy;дить&shy;ся
+                все&shy;ми пре&shy;ле&shy;стя&shy;ми этой
+                по&shy;ры го&shy;да, пой&shy;дет речь в этой ста&shy;тье.</p>
+            <p>На за&shy;щи&shy;те на&shy;ше&shy;го здо&shy;ро&shy;вья все&shy;гда сто&shy;ит
+                им&shy;му&shy;ни&shy;тет, по&shy;то&shy;му о нем нуж&shy;но вспо&shy;ми&shy;нать
+                не толь&shy;ко то&shy;гда, ко&shy;гда он дал сбой, и мы за&shy;бо&shy;ле&shy;ли,
+                но важ&shy;но круг&shy;лый год его кор&shy;мить и под&shy;пи&shy;ты&shy;вать,
+                то&shy;гда он дей&shy;стви&shy;тель&shy;но смо&shy;жет за&shy;щи&shy;щать нас и в
+                меж&shy;се&shy;зо&shy;нье, ко&shy;гда осо&shy;бен&shy;но ча&shy;сто мно&shy;гие
+                на&shy;чи&shy;на&shy;ют про&shy;сту&shy;жать&shy;ся ибо&shy;леть.</p>
+        </article>
+        <hr>
+        <article>
+            <h2>
+                Как снизить риск заболевания
+            </h2>
+            <ol>
+                <li>
+                    <strong>Пи&shy;та&shy;ние.</strong>Уче&shy;ные до&shy;ка&shy;за&shy;ли,
+                    что есть вза&shy;и&shy;мо&shy;связь меж&shy;ду тем, что мы едим и риском
+                    на&shy;чать бо&shy;леть про&shy;студ&shy;ным за&shy;бо&shy;ле&shy;ва&shy;ни&shy;ем.
+                    К при&shy;ме&shy;ру, слад&shy;кое при&shy;вле&shy;ка&shy;ет
+                    мик&shy;ро&shy;бов из-за по&shy;вы&shy;шен&shy;но&shy;го со&shy;дер&shy;жа&shy;ния
+                    са&shy;ха&shy;ро&shy;зы, ко&shy;то&shy;рая яв&shy;ля&shy;ет&shy;ся
+                    пи&shy;та&shy;тель&shy;ной сре&shy;дой для мно&shy;гих
+                    мик&shy;ро&shy;ор&shy;га&shy;низ&shy;мов. За&shy;щит&shy;ный эф&shy;фект
+                    име&shy;ет пи&shy;ща с вы&shy;со&shy;ким со&shy;дер&shy;жа&shy;ни&shy;ем
+                    бел&shy;ков: ры&shy;ба, тво&shy;рог, ку&shy;ри&shy;ца. Не лю&shy;бят про&shy;студ&shy;ные
+                    ин&shy;фек&shy;ции про&shy;дук&shy;ты
+                    с вы&shy;со&shy;ким со&shy;дер&shy;жа&shy;ни&shy;ем же&shy;ле&shy;за.
+                </li>
+                <li>
+                    <strong>Но&shy;ги в теп&shy;ле.</strong> Ча&shy;ще воз&shy;ни&shy;ка&shy;ет
+                    про&shy;студ&shy;ное за&shy;бо&shy;ле&shy;ва&shy;ние из-за
+                    пе&shy;ре&shy;охла&shy;жде&shy;ния,
+                    ко&shy;то&shy;рые про&shy;ис&shy;хо&shy;дит в об&shy;ла&shy;сти ног.
+                    Та&shy;кое со&shy;сто&shy;я&shy;ние яв&shy;ля&shy;ет&shy;ся оп&shy;ти&shy;маль&shy;ным
+                    для раз&shy;ви&shy;тия про&shy;студ&shy;ной бо&shy;лез&shy;ни, по&shy;это&shy;му
+                    важ&shy;но оде&shy;вать&shy;ся по по&shy;го&shy;де, что&shy;бы
+                    но&shy;ги, го&shy;ло&shy;ва и ру&shy;ки бы&shy;ли хо&shy;ро&shy;шо утеп&shy;ле&shy;ны.
+                </li>
+                <li>
+                    <strong>Ча&shy;ще мыть ру&shy;ки.</strong> Они по&shy;сто&shy;ян&shy;но
+                    со&shy;при&shy;ка&shy;са&shy;ют&shy;ся с дру&shy;ги&shy;ми пред&shy;ме&shy;та&shy;ми,
+                    на ко&shy;то&shy;рых на&shy;хо&shy;дит&shy;ся ин&shy;фек&shy;ция, что
+                    по&shy;вы&shy;ша&shy;ет
+                    риск за&shy;бо&shy;леть. Во вре&shy;мя опас&shy;но&shy;го пе&shy;ри&shy;о&shy;да
+                    ро&shy;ста про&shy;студ&shy;ных за&shy;бо&shy;ле&shy;ва&shy;ний важ&shy;но
+                    ре&shy;гу&shy;ляр&shy;но мыть ру&shy;ки по&shy;сле про&shy;гул&shy;ки.
+                </li>
+                <li>
+                    <strong>Про&shy;вет&shy;ри&shy;вать по&shy;ме&shy;ще&shy;ния.</strong>Све&shy;жий
+                    воз&shy;дух за&shy;ка&shy;ля&shy;ет ор&shy;га&shy;низм че&shy;ло&shy;ве&shy;ка,
+                    укреп&shy;ля&shy;ет им&shy;му&shy;ни&shy;тет. Со&shy;ве&shy;ту&shy;ют вра&shy;чи
+                    ре&shy;гу&shy;ляр&shy;но вы&shy;хо&shy;дить на ули&shy;цу, но не за&shy;бы&shy;вай&shy;те
+                    оде&shy;вать&shy;ся по по&shy;го&shy;де.
+                </li>
+                <li>
+                    <strong>Про&shy;мы&shy;вать нос, гла&shy;за.</strong> Что&shy;бы не за&shy;бе&shy;леть
+                    про&shy;сту&shy;дой, сле&shy;ду&shy;ет очи&shy;щать пу&shy;ти
+                    про&shy;ник&shy;но&shy;ве&shy;ния ин&shy;фек&shy;ции в ор&shy;га&shy;низм. Как
+                    пра&shy;ви&shy;ло, это про&shy;ис&shy;хо&shy;дит че&shy;рез
+                    ды&shy;ха&shy;тель&shy;ные ор&shy;га&shy;ны (нос и рот) или че&shy;рез сли&shy;зи&shy;стые
+                    обо&shy;лоч&shy;ки (гла&shy;за). Для про&shy;мы&shy;ва&shy;ния луч&shy;ше
+                    ис&shy;поль&shy;зо&shy;вать мор&shy;скую во&shy;ду, изо&shy;то&shy;ни&shy;че&shy;ский
+                    рас&shy;твор со&shy;ли. Про&shy;во&shy;дить
+                    про&shy;це&shy;ду&shy;ру сле&shy;ду&shy;ет 2-6 раз за день.
+                </li>
+                <li>
+                    <strong>Кон&shy;траст&shy;ный душ.</strong>Спо&shy;соб за&shy;кал&shy;ки и
+                    укреп&shy;ле&shy;ния им&shy;му&shy;ни&shy;те&shy;та, ко&shy;то&shy;рый
+                    ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся про&shy;во&shy;дить для за&shy;щи&shy;ты от
+                    про&shy;студ&shy;ных за&shy;бо&shy;ле&shy;ва&shy;ний ре&shy;гу&shy;ляр&shy;но, а
+                    не толь&shy;ко осе&shy;нью.
+                </li>
+            </ol>
+        </article>
+        <hr>
+        <article>
+            <h2>
+                Что делать, если чувствуешь, что заболеваешь
+            </h2>
+            <figure>
+                <img src="malade.jpg" alt="Лимончики" title="Лимончики">
+                <figcaption>Картинка 2.</figcaption>
+            </figure>
+            <p>
+                На&shy;чи&shy;нать ле&shy;чить&shy;ся от
+                за&shy;бо&shy;ле&shy;ва&shy;ния нуж&shy;но при пер&shy;вых
+                при&shy;зна&shy;ках про&shy;сту&shy;ды, за&shy;тя&shy;ги&shy;вать нель&shy;зя,
+                что&shy;бы не
+                усу&shy;губ&shy;лять со&shy;сто&shy;я&shy;ние. Симп&shy;то&shy;мы
+                за&shy;бо&shy;ле&shy;ва&shy;ния
+                бу&shy;дут про&shy;яв&shy;лять&shy;ся в ви&shy;де по&shy;вы&shy;ше&shy;ния
+                тем&shy;пе&shy;ра&shy;ту&shy;ры,
+                за&shy;ло&shy;жен&shy;но&shy;го но&shy;са (на&shy;сморк), бо&shy;ли в гор&shy;ле,
+                воз&shy;мож&shy;но в ухе.
+                Че&shy;ло&shy;век бу&shy;дет чув&shy;ство&shy;вать се&shy;бя вя&shy;лым и
+                устав&shy;шим.
+                Боль&shy;шин&shy;ство ме&shy;ди&shy;ка&shy;мен&shy;тов
+                пред&shy;на&shy;зна&shy;че&shy;ны про&shy;сто
+                сни&shy;мать симп&shy;то&shy;мы про&shy;студ&shy;но&shy;го
+                за&shy;бо&shy;ле&shy;ва&shy;ния, но они не
+                все&shy;гда ле&shy;чат сам не&shy;дуг. В худ&shy;шем слу&shy;чае
+                ин&shy;фек&shy;ция
+                рас&shy;про&shy;стра&shy;нит&shy;ся, даст ослож&shy;не&shy;ния,
+                и при&shy;дет&shy;ся при&shy;ни&shy;мать
+                ан&shy;ти&shy;био&shy;ти&shy;ки.</p>
+            <p>Наш ор&shy;га&shy;низм дол&shy;жен са&shy;мо&shy;сто&shy;я&shy;тель&shy;но
+                справ&shy;лять&shy;ся с
+                про&shy;студ&shy;ны&shy;ми за&shy;бо&shy;ле&shy;ва&shy;ни&shy;я&shy;ми,
+                по&shy;это&shy;му
+                че&shy;ло&shy;ве&shy;ку важ&shy;но не сде&shy;лать всю ра&shy;бо&shy;ту
+                за не&shy;го, а
+                под&shy;дер&shy;жать им&shy;му&shy;ни&shy;тет. Что&shy;бы убе&shy;речь&shy;ся
+                от раз&shy;ви&shy;тия
+                грип&shy;па или про&shy;сту&shy;ды, нуж&shy;но быст&shy;ро пред&shy;при&shy;нять
+                за&shy;щит&shy;ные
+                ме&shy;ры:</p>
+            <ol>
+                <li>
+                    Уве&shy;ли&shy;чить ко&shy;ли&shy;че&shy;ство по&shy;треб&shy;ля&shy;е&shy;мой за день
+                    жид&shy;ко&shy;сти.
+                </li>
+                <li>
+                    Ку&shy;шать на&shy;ту&shy;раль&shy;ные сред&shy;ства от про&shy;сту&shy;ды: мед,
+                    чес&shy;нок, лук.
+                    Они яв&shy;ля&shy;ют&shy;ся от&shy;лич&shy;ны&shy;ми
+                    про&shy;ти&shy;во&shy;ви&shy;рус&shy;ны&shy;ми,
+                    на&shy;ту&shy;раль&shy;ны&shy;ми сред&shy;ства&shy;ми от про&shy;сту&shy;ды.
+                </li>
+                <li>
+                    Про&shy;пить ви&shy;та&shy;мин&shy;ный ком&shy;плекс.
+                </li>
+            </ol>
+        </article>
+    </section>
+</main>
 </body>
 </html>
