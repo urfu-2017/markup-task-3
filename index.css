@@ -4,7 +4,7 @@
 @font-face
 {
     font-family: NYTLogo;
-    src: url('OLDENGL.ttf') format('truetype');
+    src: url('oldenglish.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,7 +56,7 @@ main
 .logo
 {
     width: 70%;
-    font-family: NYTLogo, serif;
+    font-family: 'Old English Text MT', NYTLogo, serif;
     font-size: 90px;
 }
 
