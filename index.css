@@ -1,7 +1,95 @@
-.columns
+html
 {
-    column-count: 5;
+    background: #333;
+    font-family: 'Gilrou-ExtraBold';
+}
+
+h1,
+h2
+{
+    text-align: center;
+    font-family: 'Pirou Cyrillic';
+}
+
+h2
+{
+    border: 3px double #000;
+}
+
+h3
+{
+    font-family: 'Pirou Cyrillic';
+    font-size: 150%;
+}
+
+hr
+{
+    height: 1px;
+    border-color: #000;
+}
+
+p
+{
+    text-align: justify;
+}
+
+.inline > div
+{
+    display: inline-block;
+}
+
+.inline > div:first-child,
+.inline > div:last-child
+{
+    width: 10%;
+    float: left;
+}
+
+.inline > div:first-child
+{
+    text-align: right;
+}
+
+.inline > div:last-child
+{
+    text-align: left;
+}
+
+.inline > div:nth-child(2)
+{
+    float: left;
+}
+
+.ufo
+{
+    width: 80%;
+}
+
+.main-columns
+{
+    margin: 0 5px;
+    column-count: 3;
     column-rule: 4px double #000;
+}
+
+.two-columns
+{
+    margin: 0 5px;
+    column-count: 2;
+    column-rule: 4px double #000;
+}
+
+.text-img
+{
+    width: 100%;
+    margin-right: 100px;
+    border: 3px double #000;
+}
+
+.caption
+{
+    font-size: 80%;
+    font-style: italic;
 }
 
 .main
@@ -10,24 +98,6 @@
     background-size: 100%;
     border: 4px double #000;
     margin-top: 25px;
-}
-
-html
-{
-    background: #444;
-    font-family: 'Gilrou-ExtraBold';
-}
-
-h1, h2
-{
-    text-align: center;
-    font-family: 'Pirou Cyrillic';
-}
-
-hr
-{
-    height: 2px;
-    border-color: #000;
 }
 
 .first-letter::first-letter
@@ -52,14 +122,14 @@ input
     display: none;
 }
 
-input[name='font']
+input[id='gilrou'] + label
 {
-    position: center;
+    margin-left: 7%;
 }
 
-input[name='theme']
+input[id='light'] + label
 {
-    position: right;
+    margin-left: 7%;
 }
 
 label
@@ -93,21 +163,33 @@ input[id='arial']:checked ~ .main
 
 input[id='dark']:checked ~ .main
 {
-    background: #000 url('background-black.jpg');
+    background: #222 url('background-black.jpg');
     background-size: 100%;
-    color: #ebd8c7;
-    border-color: #ebd8c7;
+    color: #e7bc88;
+    border-color: #e7bc88;
 }
 
-input[id='dark']:checked ~ .columns
+input[id='dark']:checked ~ div hr
 {
-    column-rule: 4px double #ebd8c7;
+    border-color: #e7bc88;
+}
+
+input[id='dark']:checked ~ div .main-columns,
+input[id='dark']:checked ~ div .two-columns
+{
+    column-rule-color: #e7bc88;
+}
+
+input[id='dark']:checked ~ div p img,
+input[id='dark']:checked ~ div h2
+{
+    border-color: #e7bc88;
 }
 
 @font-face
 {
     font-family: 'Pirou Cyrillic';
-    src: url('PirouCyrillic.ttf') format('truetype')
+    src: url('PirouCyrillic.ttf') format('truetype');
 }
 
 @font-face 
