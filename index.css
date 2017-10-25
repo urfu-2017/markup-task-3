@@ -58,6 +58,11 @@
     color: white;
 }
 
+.tr2:checked ~ footer
+{
+    color: white;
+}
+
 .tr3:checked ~ main
 {
     background-image: url(https://wallpaperscraft.ru/image/bumaga_staraya_fon_poverhnost_69706_3101x1820.jpg);
@@ -66,6 +71,11 @@
 .tr4:checked ~ main
 {
     background-color: red;
+    color: rgb(255, 208, 0);
+}
+
+.tr4:checked ~ footer
+{
     color: rgb(255, 208, 0);
 }
 
@@ -135,8 +145,18 @@ main
 {
     margin-top: 10px;
     padding-top: 10px;
+    padding-bottom: 36px;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+main::after
+{
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
 }
 
 h1
@@ -150,16 +170,9 @@ h1
     line-height: 90%;
 }
 
-.left
-{
-    width: 54.5%;
-    float: left;
-}
-
 .newspaper
 {
     text-align: right;
-    padding-right: 1.5%;
     padding-bottom: 1%;
     border-bottom: 5px solid black;
 }
@@ -226,10 +239,19 @@ h1
     padding-right: 1.5%;
 }
 
-.right
+.left
 {
-    width: 45%;
-    float: right;
+    width: 54%;
+    float: left;
+}
+
+.left::after
+{
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
 }
 
 .first
@@ -257,8 +279,8 @@ h1
 figure
 {
     width: 60%;
-    float: right;
     text-align: center;
+    float: right;
     margin: 0;
     margin-top: 1%;
     padding-top: 1%;
@@ -277,6 +299,13 @@ figcaption
     text-align: left;
     text-indent: 5%;
     padding-top: 1%;
+}
+
+.right
+{
+    width: 45%;
+    margin-left: .5%;
+    float: right;
 }
 
 .second
@@ -353,26 +382,27 @@ blockquote p
     text-align: center;
 }
 
-blockquote p:before
+blockquote p::before
 {
     content: '\201C';
 }
 
-blockquote p:after 
+blockquote p::after 
 {
     content: '\201D';
 }
 
-blockquote footer
+blockquote div
 {
     font: 2em FranklinGothicMedium;
     text-align: center;
 }
 
-.number
+footer
 {
     font: bold 1.5em MSReferenceSansSerif;
-    width: .5%;
-    padding-left: 99%;
-    word-wrap: break-word;
+    writing-mode: tb-rl;
+    text-orientation: upright;
+    margin-top: -36px;
+    padding-left: 89%;
 }
