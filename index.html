@@ -3,7 +3,237 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="radio" id="set-mid-size" name="set-size" checked>
+        <label for="set-mid-size">Обычный</label>
+    <input type="radio" id="set-big-size" name="set-size" class="big-size">
+        <label for="set-big-size">Большой</label>
+
+    <input type="radio" id="set-bright" name="set-brightness" checked>
+        <label for="set-bright">Светлая</label>
+    <input type="radio" id="set-dark" name="set-brightness" class="set-dark">
+        <label for="set-dark">Темная</label>
+
+    <input type="checkbox" id="set-italic" class="set-italic">
+        <label for="set-italic">Курсивный</label>
+    <input type="checkbox" id="set-bold" class="set-bold">
+        <label for="set-bold">Жирный</label>
+
+    <main class="newspaper">
+        <header class="newspaper-header">
+            <span class="vertical-text">
+                <span class="vertical-word">Такие</span>
+                <span class="vertical-word">Вот</span>
+                <span class="vertical-word">Дела</span>
+            </span>
+            <h1 class="newspaper-title">Самая Топовая Газета</h1>
+            <div class="date">22 октября 2017, воскресенье</div>
+        </header>
+        <section class="news">
+            <article class="about-space">
+                <h2 class="about-space-header">Названы страны, намусорившие в космосе больше всего</h2>
+                <p class="first-paragraph">
+                    Во&shy;круг Зем&shy;ли вра&shy;ща&shy;ет&shy;ся око&shy;ло
+                    170 мил&shy;ли&shy;о&shy;нов кус&shy;ков ор&shy;би&shy;таль&shy;но&shy;го хла&shy;ма 
+                    – от мель&shy;чай&shy;ших кус&shy;ков бол&shy;тов до 
+                    по&shy;лу&shy;то&shy;ра&shy;тон&shy;ных стан&shy;ций свя&shy;зи
+                </p>
+                <p class="paragraph-with-capital-letter">
+                    Свы&shy;ше 4600 мерт&shy;вых спут&shy;ни&shy;ков и 14 ты&shy;сяч 
+                    об&shy;лом&shy;ков кос&shy;ми&shy;че&shy;ских ап&shy;па&shy;ра&shy;тов 
+                    вра&shy;ща&shy;ют&shy;ся на зем&shy;ной ор&shy;би&shy;те. При&shy;мер&shy;но 
+                    95% ор&shy;би&shy;таль&shy;но&shy;го му&shy;со&shy;ра при&shy;хо&shy;дит&shy;ся 
+                    на спут&shy;ни&shy;ки, вы&shy;ра&shy;бо&shy;тав&shy;шие свой ре&shy;сурс, 
+                    раз&shy;гон&shy;ные бло&shy;ки и дру&shy;гие ча&shy;сти ра&shy;кет-но&shy;си&shy;
+                    те&shy;лей, а так&shy;же по&shy;те&shy;рян&shy;ные кос&shy;мо&shy;нав&shy;та&shy;ми 
+                    ин&shy;стру&shy;мен&shy;ты.
+                </p>
+                <p>
+                    Та&shy;кие дан&shy;ные озву&shy;чи&shy;ли обо&shy;зре&shy;ва&shy;те&shy;ли 
+                    из&shy;да&shy;ния 
+                    Business Insider, про&shy;ана&shy;ли&shy;зи&shy;ро&shy;вав дан&shy;ные 
+                    из от&shy;кры&shy;тых 
+                    ис&shy;точ&shy;ни&shy;ков. «Этот хлам мо&shy;жет 
+                    там оста&shy;вать&shy;ся сот&shy;ни лет», –про&shy;ком&shy;мен&shy;ти&shy;ро&shy;вал 
+                    ин&shy;фор&shy;ма&shy;цию Билл Ай&shy;лор, ин&shy;же&shy;нер по аэро&shy;
+                    кос&shy;ми&shy;че&shy;ской тех&shy;ни&shy;ке и спе&shy;ци&shy;а&shy;лист 
+                    по ат&shy;мо&shy;сфер&shy;но&shy;му спус&shy;ку.
+                </p>
+                <div class="image-to-span-column">
+                    <img src="space.jpg" alt="мусор в космосе">
+                </div>
+                <p>
+                    При этом си&shy;ту&shy;а&shy;ция по&shy;сто&shy;ян&shy;но ухуд&shy;ша&shy;ет&shy;ся: 
+                    не&shy;смот&shy;ря на то, что на&shy;ша пла&shy;не&shy;та по&shy;сто&shy;ян&shy;но 
+                    при&shy;тя&shy;ги&shy;ва&shy;ет к се&shy;бе и сжи&shy;га&shy;ет в плот&shy;ных сло&shy;ях 
+                    ат&shy;мо&shy;сфе&shy;ры мерт&shy;вые спут&shy;ни&shy;ки и 
+                    от&shy;ра&shy;бо&shy;тан&shy;ные 
+                    сту&shy;пе&shy;ни ра&shy;кет, но&shy;вые пус&shy;ки 
+                    по&shy;сто&shy;ян&shy;но до&shy;бав&shy;ля&shy;ют 
+                    му&shy;со&shy;ра на ор&shy;би&shy;ту. К то&shy;му 
+                    же, кос&shy;ми&shy;че&shy;ский хлам 
+                    спо&shy;со&shy;бен «раз&shy;мно&shy;жать&shy;ся»: 
+                    столк&shy;но&shy;ве&shy;ние не&shy;сколь&shy;ких 
+                    круп&shy;ных об&shy;лом&shy;ков по&shy;рож&shy;да&shy;ет 
+                    не&shy;сколь&shy;ко со&shy;тен, 
+                    а ино&shy;гда – да&shy;же ты&shy;сяч бо&shy;лее мел&shy;ких фраг&shy;мен&shy;тов.
+                </p>
+                <p>
+                    По оцен&shy;ке спе&shy;ци&shy;а&shy;ли&shy;стов Ев&shy;ро&shy;пей&shy;ско&shy;го 
+                    кос&shy;ми&shy;че&shy;ско&shy;го агент&shy;ства, в на&shy;сто&shy;я&shy;щее 
+                    вре&shy;мя во&shy;круг Зем&shy;ли об&shy;ра&shy;ща&shy;ет&shy;ся око&shy;ло 
+                    170 мил&shy;ли&shy;о&shy;нов кус&shy;ков ор&shy;би&shy;таль&shy;но&shy;го 
+                    му&shy;со&shy;ра. Боль&shy;шин&shy;ство из них – фраг&shy;мен&shy;ты взрыв&shy;ных 
+                    бол&shy;тов, ком&shy;ки крас&shy;ки – име&shy;ют не&shy;боль&shy;шие 
+                    раз&shy;ме&shy;ры и не угро&shy;жа&shy;ют кос&shy;ми&shy;че&shy;ским 
+                    ко&shy;раб&shy;лям. Но есть и та&shy;кие, что раз&shy;го&shy;ня&shy;ют&shy;ся 
+                    до вы&shy;со&shy;ких ско&shy;ро&shy;стей.
+                </p>
+                <p>
+                    «Стра&shy;ны за по&shy;след&shy;ние го&shy;ды узна&shy;ли, что, 
+                    со&shy;зда&shy;вая му&shy;сор, они со&shy;зда&shy;ют риск для 
+                    сво&shy;их кос&shy;ми&shy;че&shy;ских си&shy;стем, как и для 
+                    всех осталь&shy;ных», – от&shy;ме&shy;тил Ай&shy;лор.
+                </p>
+                <p>
+                    Пе&shy;ре&shy;до&shy;ви&shy;ка&shy;ми в де&shy;ле му&shy;со&shy;ри&shy;за&shy;ции 
+                    ор&shy;би&shy;ты, как и сле&shy;до&shy;ва&shy;ло ожи&shy;дать, ока&shy;за&shy;лись 
+                    ли&shy;де&shy;ры осво&shy;е&shy;ния кос&shy;ми&shy;че&shy;ских про&shy;странств: 
+                    Рос&shy;сия, США и Ки&shy;тай.
+                </p>
+                <p>
+                    РФ оста&shy;ви&shy;ла на ор&shy;би&shy;те 6515 от&shy;сле&shy;жи&shy;ва&shy;е&shy;мых 
+                    объ&shy;ек&shy;тов; 1520 из них – дей&shy;ству&shy;ю&shy;щие спут&shy;ни&shy;ки, 
+                    а осталь&shy;ное – хлам, на&shy;чав&shy;ший ко&shy;пить&shy;ся еще во 
+                    вре&shy;ме&shy;на СССР.
+                </p>
+                <p>
+                    На вто&shy;ром ме&shy;сте ан&shy;ти&shy;рей&shy;тин&shy;га – США с 6211
+                    фраг&shy;мен&shy;та&shy;ми. При этом НАСА пре&shy;вос&shy;хо&shy;дит 
+                    рос&shy;си&shy;ян по ко&shy;ли&shy;че&shy;ству хла&shy;ма от раз&shy;ру&shy;шен&shy;ных 
+                    спут&shy;ни&shy;ков и стан&shy;ций.
+                </p>
+                <p>
+                    Тре&shy;тье ме&shy;сто уве&shy;рен&shy;но дер&shy;жит Ки&shy;тай: ему 
+                    при&shy;над&shy;ле&shy;жит 3839 об&shy;лом&shy;ков.
+                </p>
+            </article>
+            <article class="power-of-thought">
+                <h2 class="power-of-thought-header">
+                    В России появятся устройства для набора текста силой мысли
+                </h2>
+                <p class="first-paragraph">
+                    Се&shy;рий&shy;ный вы&shy;пуск уни&shy;каль&shy;но&shy;го ап&shy;па&shy;ра&shy;та 
+                    за&shy;пла&shy;ни&shy;ро&shy;ван на 2018 год
+                </p>
+                <p class="paragraph-with-capital-letter">
+                    Устрой&shy;ства, ко&shy;то&shy;рые счи&shy;ты&shy;ва&shy;ют мыс&shy;ли 
+                    па&shy;ци&shy;ен&shy;та, по&shy;явят&shy;ся в Рос&shy;сии. Се&shy;рий&shy;ный 
+                    вы&shy;пуск за&shy;пла&shy;ни&shy;ро&shy;ван на 2018 год.
+                </p>
+                <p>
+                    Но&shy;вый ап&shy;па&shy;рат поз&shy;во&shy;лит лю&shy;дям, 
+                    пе&shy;ре&shy;нес&shy;шим ин&shy;сульт или име&shy;ю&shy;щим 
+                    тя&shy;же&shy;лые на&shy;ру&shy;ше&shy;ния ре&shy;чи, об&shy;щать&shy;ся 
+                    с окру&shy;жа&shy;ю&shy;щи&shy;ми.
+                </p>
+                <p>
+                    Устрой&shy;ство счи&shy;ты&shy;ва&shy;ет мыс&shy;ли па&shy;ци&shy;ен&shy;та 
+                    и пе&shy;ре&shy;да&shy;ет их в ви&shy;де тек&shy;сто&shy;во&shy;го 
+                    со&shy;об&shy;ще&shy;ния.
+                </p>
+                <p>
+                    О раз&shy;ви&shy;тии но&shy;вой тех&shy;но&shy;ло&shy;гии в Рос&shy;сии 
+                    ста&shy;ло из&shy;вест&shy;но в хо&shy;де меж&shy;ду&shy;на&shy;род&shy;ной 
+                    на&shy;уч&shy;ной кон&shy;фе&shy;рен&shy;ции 
+                    «Ней&shy;ро&shy;ком&shy;пью&shy;тер&shy;ный ин&shy;тер&shy;фейс:
+                    на&shy;у&shy;ка и прак&shy;ти&shy;ка». Ме&shy;ро&shy;при&shy;я&shy;тие 
+                    про&shy;хо&shy;дит в Са&shy;ма&shy;ре.
+                </p>
+                <img src="power_of_thought.jpg" alt="мусор в космосе">
+                <p>
+                    Сей&shy;час уже го&shy;то&shy;вы опыт&shy;ные об&shy;раз&shy;цы устрой&shy;ства 
+                    для кли&shy;ни&shy;че&shy;ских ис&shy;пы&shy;та&shy;ний. Ап&shy;па&shy;рат 
+                    ра&shy;бо&shy;та&shy;ет на ос&shy;но&shy;ве ин&shy;тер&shy;фей&shy;са 
+                    «мозг-ком&shy;пью&shy;тер». К го&shy;ло&shy;ве че&shy;ло&shy;ве&shy;ка 
+                    под&shy;клю&shy;ча&shy;ет&shy;ся бес&shy;про&shy;вод&shy;ная 
+                    гар&shy;ни&shy;ту&shy;ра с элек&shy;тро&shy;да&shy;ми, ко&shy;то&shy;рые 
+                    счи&shy;ты&shy;ва&shy;ют им&shy;пульс, по&shy;сы&shy;ла&shy;е&shy;мый 
+                    ко&shy;рой го&shy;лов&shy;но&shy;го моз&shy;га, ко&shy;гда 
+                    че&shy;ло&shy;век фо&shy;ку&shy;си&shy;ру&shy;ет вни&shy;ма&shy;ние 
+                    на кон&shy;крет&shy;ной бук&shy;ве на кла&shy;ви&shy;а&shy;ту&shy;ре. 
+                    В ито&shy;ге идет на&shy;бор тек&shy;ста.
+                </p>
+                <p>
+                    Це&shy;на но&shy;во&shy;го про&shy;дук&shy;та по&shy;ка не&shy;из&shy;вест&shy;на, 
+                    но уже по&shy;нят&shy;но, что устрой&shy;ство край&shy;не 
+                    не&shy;об&shy;хо&shy;ди&shy;мо мно&shy;гим лю&shy;дям. По дан&shy;ным 
+                    раз&shy;ра&shy;бот&shy;чи&shy;ков, до че&shy;ты&shy;рех мил&shy;ли&shy;о&shy;нов 
+                    па&shy;ци&shy;ен&shy;тов в Рос&shy;сии в на&shy;сто&shy;я&shy;щее вре&shy;мя 
+                    стра&shy;да&shy;ют тя&shy;же&shy;лы&shy;ми на&shy;ру&shy;ше&shy;ни&shy;я&shy;ми 
+                    ре&shy;чи и дви&shy;га&shy;тель&shy;ной функ&shy;ции и об&shy;ре&shy;че&shy;ны 
+                    на от&shy;сут&shy;ствие пол&shy;но&shy;цен&shy;но&shy;го об&shy;ще&shy;ния, 
+                    со&shy;об&shy;ща&shy;ет «Рос&shy;сий&shy;ская га&shy;зе&shy;та».
+                </p>   
+            </article>
+            <article class="lies">
+                <h2 class="lies-header">Ученые нашли способ выявить ложь в текстовых сообщениях</h2>
+                <div class="image-to-span-column">
+                        <img src="lies.jpg" alt="мусор в космосе">
+                </div>
+                <p class="first-paragraph">
+                    Аме&shy;ри&shy;кан&shy;ские ис&shy;сле&shy;до&shy;ва&shy;те&shy;ли
+                    про&shy;ана&shy;ли&shy;зи&shy;ро&shy;ва&shy;ли диа&shy;ло&shy;ги 
+                    поль&shy;зо&shy;ва&shy;те&shy;лей в мес&shy;сен&shy;дже&shy;ре и 
+                    при&shy;шли к ря&shy;ду вы&shy;во&shy;дов
+                </p>
+                <p class="paragraph-with-capital-letter">
+                    Че&shy;ло&shy;ве&shy;ка, ко&shy;то&shy;рый го&shy;во&shy;рит 
+                    не&shy;прав&shy;ду, вы&shy;ве&shy;сти на чи&shy;стую во&shy;ду 
+                    не так-то про&shy;сто, да&shy;же гля&shy;дя ему в гла&shy;за. 
+                    Еще слож&shy;нее вы&shy;явить ложь в тек&shy;сто&shy;вых 
+                    со&shy;об&shy;ще&shy;ни&shy;ях.
+                </p>
+                <p>
+                    Не&shy;дав&shy;но уче&shy;ные из уни&shy;вер&shy;си&shy;те&shy;та 
+                    Кор&shy;нел&shy;ла в США по&shy;пы&shy;та&shy;лись спра&shy;вить&shy;ся 
+                    с этой за&shy;да&shy;чей. Экс&shy;пер&shy;ты со&shy;зда&shy;ли 
+                    спе&shy;ци&shy;аль&shy;ное Android-при&shy;ло&shy;же&shy;ние для 
+                    об&shy;ме&shy;на пись&shy;мен&shy;ны&shy;ми со&shy;об&shy;ще&shy;ни&shy;я&shy;ми,
+                    и со&shy;хра&shy;ни&shy;ли 1703 бе&shy;се&shy;ды, на&shy;пи&shy;сан&shy;ные 
+                    поль&shy;зо&shy;ва&shy;те&shy;ля&shy;ми. От об&shy;щей мас&shy;сы бы&shy;ли 
+                    от&shy;де&shy;ле&shy;ны диа&shy;ло&shy;ги, не со&shy;дер&shy;жа&shy;щие лжи, 
+                    по&shy;сле че&shy;го уче&shy;ные про&shy;ана&shy;ли&shy;зи&shy;ро&shy;ва&shy;ли 
+                    со&shy;дер&shy;жа&shy;ние всех бе&shy;сед.
+                </p>
+                <p>
+                    Как вы&shy;яс&shy;ни&shy;лось, жен&shy;щи&shy;ны лгут ина&shy;че, чем 
+                    муж&shy;чи&shy;ны. До&shy;сто&shy;вер&shy;ные со&shy;об&shy;ще&shy;ния 
+                    пре&shy;крас&shy;ной по&shy;ло&shy;ви&shy;ны че&shy;ло&shy;ве&shy;че&shy;ства 
+                    со&shy;дер&shy;жа&shy;ли в сред&shy;нем семь слов и бы&shy;ли на од&shy;но 
+                    сло&shy;во ко&shy;ро&shy;че, чем лож&shy;ные, то&shy;гда как 
+                    пред&shy;ста&shy;ви&shy;те&shy;ли силь&shy;но&shy;го по&shy;ла 
+                    за&shy;пи&shy;сы&shy;ва&shy;ли как прав&shy;ду, так и ложь, в 
+                    сред&shy;нем в се&shy;ми сло&shy;вах.
+                </p>
+                <p>
+                    Кро&shy;ме то&shy;го, ока&shy;за&shy;лось, что, пы&shy;та&shy;ясь со&shy;лгать, 
+                    жен&shy;щи&shy;ны ча&shy;ще поль&shy;зу&shy;ют&shy;ся ме&shy;сто&shy;име&shy;ни&shy;ем 
+                    «я» и сло&shy;вом «по&shy;пы&shy;тать&shy;ся», а муж&shy;чи&shy;ны в та&shy;кой 
+                    же си&shy;ту&shy;а&shy;ции ча&shy;ще упо&shy;треб&shy;ля&shy;ют сло&shy;ва «мой» 
+                    и «на&shy;вер&shy;ня&shy;ка».
+                </p>
+                <p>
+                    На&shy;ко&shy;нец, об&shy;щим при&shy;зна&shy;ком лож&shy;ных тек&shy;стов 
+                    ста&shy;ло ис&shy;поль&shy;зо&shy;ва&shy;ние в фра&shy;зах слов, 
+                    вы&shy;ра&shy;жа&shy;ю&shy;щих не&shy;опре&shy;де&shy;лен&shy;ность, 
+                    та&shy;ких, как «ве&shy;ро&shy;ят&shy;но» и «воз&shy;мож&shy;но», а 
+                    так&shy;же сло&shy;ва «ко&shy;неч&shy;но», пи&shy;шет The Daily Mail.
+                </p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
