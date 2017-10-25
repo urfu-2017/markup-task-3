@@ -34,18 +34,14 @@
 
 .newspaper-title
 {
-    font-family: 'Annabelle', fantasy;
-
-    font-size: 4em;
+    font: bold 4em 'Annabelle', fantasy;
     text-shadow: 6px 6px 6px #aaa;
 }
 
 h2
 {
-    font-family: 'Neucha', serif;
-
+    font: bold 2em 'Neucha', serif;
     text-align: center;
-    font-size: 2em;
     text-shadow: 4px 4px 4px #aaa;
 }
 
@@ -76,18 +72,14 @@ p,
 .first-paragraph,
 .date
 {
-    font-family: 'StudioScriptCTT', cursive;
-
-    font-size: 1.4em;
+    font: 1.4em 'StudioScriptCTT', cursive;
     text-shadow: 1px 1px 1px #aaa;
     text-align: center;
 }
 
 .paragraph-with-capital-letter::first-letter
 {
-    font-family: 'StudioScriptCTT', cursive;
-
-    font-size: 1.8em;
+    font: 1.8em 'StudioScriptCTT', cursive;
     text-shadow: 1px 1px 1px #aaa;
 }
 
@@ -130,17 +122,17 @@ img
     background: #000;
 }
 
-.big-size:checked ~ .newspaper p
+.big-size:checked ~ .newspaper
 {
     font-size: 1.5em;
 }
 
-.set-italic:checked ~ .newspaper p
+.set-italic:checked ~ .newspaper .news
 {
     font-style: italic;
 }
 
-.set-bold:checked ~ .newspaper p
+.set-bold:checked ~ .newspaper .news
 {
     font-weight: bold;
 }
