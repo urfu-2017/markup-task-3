@@ -52,36 +52,42 @@
     src: url('fonts/Nautilus_Pompilius.ttf');
 }
 
-.tr2:checked ~ .newspaper
+.tr2:checked ~ main
 {
     background-color: black;
     color: white;
 }
 
-.tr3:checked ~ .newspaper
+.tr3:checked ~ main
 {
-    background-image: url(https://pp.userapi.com/c639220/v639220298/53992/_OMvC36w6Sw.jpg);
+    background-image: url(https://wallpaperscraft.ru/image/bumaga_staraya_fon_poverhnost_69706_3101x1820.jpg);
 }
 
-.tr4:checked ~ .newspaper
+.tr4:checked ~ main
 {
     background-color: red;
     color: rgb(255, 208, 0);
 }
 
-.sr2:checked ~ .newspaper
+.sr2:checked ~ main
 {
     font-size: 12px;
 }
 
-.sr3:checked ~ .newspaper
+.sr3:checked ~ main
 {
     font-size: 8px;
 }
 
-.fr2:checked ~ .newspaper div,
-.fr2:checked ~ .newspaper p,
-.fr2:checked ~ .newspaper ul
+.fr2:checked ~ main div,
+.fr2:checked ~ main p,
+.fr2:checked ~ main ul,
+.fr2:checked ~ main cite,
+.fr2:checked ~ main figcaption,
+.fr2:checked ~ main h1,
+.fr2:checked ~ main h2,
+.fr2:checked ~ main h3,
+.fr2:checked ~ main h4
 {
     font-family: NautilusPompilius;
 }
@@ -99,6 +105,11 @@ p
     text-indent: 5%;
     font-weight: bold;
     text-align: justify;
+}
+
+p::first-letter
+{
+    font: 2em Truth;
 }
 
 ul
@@ -120,31 +131,32 @@ li::before
     padding-right: 1%;
 }
 
-.newspaper
+main
 {
-    margin: auto;
-    padding-top: 1%;
+    margin-top: 10px;
+    padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.mainTitle
+h1
 {
     font: 8.5em FranklinGothicMedium;
     text-transform: uppercase;
     text-align: center;
     border-bottom: 5px solid black;
-    margin-bottom: .5%;
+    margin-top: 0;
+    margin-bottom: .06em;
     line-height: 90%;
 }
 
 .left
 {
     width: 54.5%;
-    display: inline-block;
+    float: left;
 }
 
-.newspaperTitle
+.newspaper
 {
     text-align: right;
     padding-right: 1.5%;
@@ -152,20 +164,20 @@ li::before
     border-bottom: 5px solid black;
 }
 
-.newspaperTitle > div:nth-of-type(1)
+.newspaper > div:nth-of-type(1)
 {
     font: 1.6em CaviarDreamsItalic;
     text-decoration: underline;
 }
 
-.newspaperTitle > div:nth-of-type(2)
+.newspaper > div:nth-of-type(2)
 {
     font: 1.8em CaviarDreamsBold;
     text-decoration: underline;
     letter-spacing: 4px;
 }
 
-.newspaperTitle img
+.newspaper img
 {
     width: 15.5%;
 }
@@ -217,11 +229,57 @@ li::before
 .right
 {
     width: 45%;
-    display: inline-block;
-    vertical-align: top;
+    float: right;
 }
 
 .first
+{
+    width: 37%;
+    margin-top: 1%;
+    float: left;
+}
+
+.first p
+{
+    font-size: 1em;
+}
+
+.first h2
+{
+    font: 5em RubricaXtCn;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 4px;
+}
+
+figure
+{
+    width: 60%;
+    float: right;
+    text-align: center;
+    margin: 0;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+    border-left: 6px double black;
+}
+
+figure img
+{
+    width: 90%;
+}
+
+figcaption
+{
+    font: italic 1.2em TimesNewRoman;
+    text-align: left;
+    text-indent: 5%;
+    padding-top: 1%;
+}
+
+.second
 {
     padding-left: 2%;
     padding-top: .7%;
@@ -230,18 +288,19 @@ li::before
     border-bottom: 1px solid black;
 }
 
-.tass
+.second h4
 {
     font: 1.5em TimesNewRoman;
     font-weight: bold;
     border: 1px solid black;
+    margin: 0;
     padding: 1.5%;
     display: inline-block;
     position: relative;
     z-index: 2;
 }
 
-.first .title
+.second h2
 {
     font: 4em BrokgauzEfronItalic;
     text-transform: uppercase;
@@ -249,19 +308,21 @@ li::before
     position: relative;
     z-index: 1;
     margin-top: -1.12em;
+    margin-bottom: 0;
     text-indent: 3.7em;
     line-height: 1.2em;
 }
 
-.first .subtitle
+.second h3
 {
     font: 3.5em TimesNewRoman;
-    padding-top: 1%;
+    margin-top: 1%;
+    margin-bottom: 0;
     font-weight: bold;
     text-align: center;
 }
 
-.first .text
+.second .text
 {
     padding-top: 1%;
     column-count: 2;
@@ -279,49 +340,39 @@ li::before
     margin-bottom: 5%;
 }
 
-.second
+blockquote
 {
-    width: 37%;
-    padding-right: 1%;
-    padding-bottom: 1%;
-    margin-top: 1%;
-    border-right: 6px double black;
-    display: inline-block;
+    padding: 2%;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
 }
 
-.second p
+blockquote p
 {
-    font-size: 1em;
-}
-
-.second .title
-{
-    font: 5em RubricaXtCn;
+    font: 2em NautilusPompilius;
     text-align: center;
-    text-transform: uppercase;
-    line-height: 1em;
-    letter-spacing: 4px;
 }
 
-.photo1
+blockquote p:before
 {
-    width: 59%;
-    align-items: center;
-    vertical-align: top;
-    margin-top: 1%;
-    padding-top: 2%;
-    padding-left: 1%;
-    padding-bottom: 3%;
-    display: inline-block;
+    content: "\201C";
 }
 
-.photo1 img
+blockquote p:after 
 {
-    width: 98%;
+    content: "\201D";
 }
 
-.signature p
+blockquote footer
 {
-    font: italic 1.2em TimesNewRoman;
-    padding-top: 1%;
+    font: 2em FranklinGothicMedium;
+    text-align: center;
+}
+
+.number
+{
+    font: bold 1.5em MSReferenceSansSerif;
+    width: .5%;
+    padding-left: 99%;
+    word-wrap: break-word;
 }
