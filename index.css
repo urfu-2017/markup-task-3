@@ -1,58 +1,58 @@
 @font-face
 {
     font-family: machina;
-    src: url(DEUX.ttf);
+    src: local('DEUX'), url(DEUX.ttf);
 }
 
 @font-face
 {
     font-family: augusta;
-    src: url(Augusta_One.ttf);
+    src: local('Augusta One'), url(Augusta_One.ttf);
 }
 
 @font-face
 {
     font-family: turandot;
-    src: url(Turandot.ttf);
+    src: local('Turandot'), url(Turandot.ttf);
 }
 
 @font-face
 {
     font-family: valentina;
-    src: url(Valentina.ttf);
+    src: local('Valentina'), url(Valentina.ttf);
 }
 
 @font-face
 {
     font-family: alice;
-    src: url(Alice.ttf);
+    src: local('Alice'), url(Alice.ttf);
 }
 
 @font-face
 {
     font-family: violett;
-    src: url(Violet.ttf);
+    src: local('Violet'), url(Violet.ttf);
 }
 
 @font-face
 {
     font-family: red_banner;
-    src: url(red_banner.ttf);
+    src: local('Red Banner'), url(red_banner.ttf);
 }
 
 @font-face
 {
-    font-family: campus;
-    src: url(Graffiti1C.ttf);
+    font-family: graffiti;
+    src: local('Graffiti1C'), url(Graffiti1C.ttf);
 }
 
 @font-face
 {
     font-family: comic;
-    src: url(comic.ttf);
+    src: local('Comic Sans'), url(comic.ttf);
 }
 
-.main 
+main 
 {
     background-color: hsl(53, 70%, 88%);
     column-count: 5;
@@ -76,13 +76,13 @@ blockquote
 
 img
 {
-    width: 100%;
+    width: 60%;
 }
 
 figure
 {
-    text-align: center;
     column-span: all;
+    text-align: center;
     font-size: 120%;
 }
 
@@ -96,39 +96,39 @@ figure
     font-family: augusta, turandot, monospace;
 }
 
-.news1
+.news-1
 {
     font-family: turandot, Lucida Grande, monospace;
     font-size: 140%;
 }
 
-.news2
+.news-2
 {
     font-family: valentina, Lucida Grande, monospace;
     font-size: 110%;
 }
 
-.news3
+.news-3
 {
     font-family: alice, Lucida Grande, monospace;
     font-size: 120%;
 }
 
-.news4
+.news-4
 {
     font-family: violett, Lucida Grande, monospace;
     font-size: 140%;
 }
 
-.news5
+.news-5
 {
     font-family: red_banner, Lucida Grande, monospace;
     font-size: 90%;
 }
 
-.news6
+.news-6
 {
-    font-family: campus, Lucida Grande, monospace;
+    font-family: graffiti, Lucida Grande, monospace;
     font-size: 120%;
 }
 
