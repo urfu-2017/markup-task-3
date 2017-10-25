@@ -19,14 +19,13 @@ article
     font-size: 4em;
     text-align: center;
     font-family: Rurintania, Dobrozrachniy, serif;
-    margin: 28px 0;
+    margin: .5em 0;
 }
 
 .column-header
 {
     text-align: center;
-    font-family: Dobrozrachniy, 'Franklin Gothic Medium', 
-    'Arial Narrow', Arial, sans-serif;
+    font-family: Dobrozrachniy, 'Franklin Gothic Medium', Arial, sans-serif;
     text-transform: uppercase;
 }
 
