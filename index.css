@@ -25,13 +25,25 @@ p
     margin-top: 0;
 }
 
+@font-face
+{
+    font-family: Connetable;
+    src: url(fonts/Connetable.ttf);
+}
+
+@font-face
+{
+    font-family: Rurintania;
+    src: url(fonts/Rurintania.ttf);
+}
+
 header
 {
     width: 90%;
     min-height: 200px;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Marck Script', cursive;
+    font-family: 'Rurintania', 'Connetable', 'Marck Script', serif;
     font-size: 80px;
     line-height: 200px;
     text-align: center;
@@ -164,4 +176,14 @@ input[id='change-font']:checked ~ .newspaper h2,
 input[id='change-font']:checked ~ .newspaper figcaption
 {
     font-family: 'Poiret One', cursive;
+}
+
+.vertical-text
+{
+    line-height: 15px;
+    font-size: 15px;
+    width: 5px;
+    word-break: break-all;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
 }
