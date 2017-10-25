@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Podkova');
 
+@font-face
+{
+    font-family: 'Exo 2';
+    src: url(Exo2-Regular.ttf);
+}
+
 body
 {
     width: 900px;
     margin: auto;
-    font-size: 16px;
-    font-family: serif;
+    font: 16px serif;
 }
 
 p
@@ -16,14 +21,14 @@ p
 .post
 {
     padding: 10px;
-    background: rgb(255, 255, 255);
-    border: 1px solid black;
+    background: #fff;
+    border: 1px solid #000;
 }
 
 .top
 {
-    background: rgb(122, 122, 122);
-    color: white;
+    background: #7a7a7a;
+    color: #fff;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -37,7 +42,7 @@ p
 
 .col
 {
-    border: 5px double rgb(122, 122, 122);
+    border: 5px double #7a7a7a;
     width: 212px;
     float: left;
     height: 170px;
@@ -56,7 +61,7 @@ aside
     float: left;
     padding: 10px;
     margin: 4px 8px 8px 0;
-    border: 1.5px solid black;
+    border: 1.5px solid #000;
     min-height: 600px;
 }
 
@@ -78,24 +83,31 @@ footer
     clear: left;
     padding: 10px;
     column-count: 4;
-    border: 8px solid rgb(122, 122, 122);
+}
+
+footer,
+.news1
+{
+    border: 8px solid #7a7a7a;
+}
+
+.news1,
+.news2
+{
+    padding: 10px;
+    margin-bottom: 8px;
 }
 
 .news1
 {
-    border: 8px solid rgb(122, 122, 122);
-    outline: 1.5px solid black;
-    padding: 10px;
-    margin-bottom: 8px;
+    outline: 1.5px solid #000;
 }
 
 .news2
 {
     column-count: 3;
-    column-rule: 2px dotted rgb(122, 122, 122);
-    padding: 10px;
-    border: 1.5px solid black;
-    margin-bottom: 8px;
+    column-rule: 2px dotted #7a7a7a;
+    border: 1.5px solid #000;
 }
 
 .news1 h2,
@@ -119,22 +131,26 @@ footer
 .news1 p::first-letter
 {
     font-size: 150%;
-    color: rgb(122, 122, 122);
+    color: #7a7a7a;
     font-weight: bold;
+}
+
+.pic1,
+.pic2
+{
+    border: 5px double #000;
 }
 
 .pic1
 {
     float: left;
     margin-right: 10px;
-    border: 5px double black;
 }
 
 .pic2
 {
     float: right;
     margin-left: 10px;
-    border: 5px double black;
 }
 
 figure
@@ -149,7 +165,7 @@ figure
     margin: 15px;
     float: left;
     width: .5em;
-    border: 1px solid black;
+    border: 1px solid #000;
     font: 16px, monospace;
     text-transform: uppercase;
     word-break: break-all;
@@ -184,4 +200,17 @@ input[name='font_type'][value='sans-serif']:checked ~ .post
 {
     background-color: #000;
     color: #fff;
+}
+
+input[name='font_type'][value='exo2']:checked ~ .post
+{
+    font-family: 'Exo 2', sans-serif;
+}
+
+@media screen and (max-width: 400px)
+{
+    footer
+    {
+        column-count: 1;
+    }
 }
