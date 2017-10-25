@@ -1,0 +1,405 @@
+@font-face
+{
+    font-family: Truth;
+    src: url('fonts/Real_Truth.ttf');
+}
+
+@font-face
+{
+    font-family: FranklinGothicMedium;
+    src: url('fonts/Franklin_Gothic_Medium.ttf');
+}
+
+@font-face
+{
+    font-family: CaviarDreams;
+    src: url('fonts/Caviar_Dreams.ttf');
+}
+
+@font-face
+{
+    font-family: CaviarDreamsBold;
+    src: url('fonts/Caviar_Dreams_Bold.ttf');
+}
+
+@font-face
+{
+    font-family: CaviarDreamsItalic;
+    src: url('fonts/Caviar_Dreams_Bold_Italic.ttf');
+}
+
+@font-face
+{
+    font-family: MSReferenceSansSerif;
+    src: url('fonts/MS_Reference_Sans_Serif.ttf');
+}
+
+@font-face
+{
+    font-family: BrokgauzEfronItalic;
+    src: url('fonts/Brokgauz_Efron_Italic.ttf');
+}
+
+@font-face
+{
+    font-family: RubricaXtCn;
+    src: url('fonts/RubricaXtCn.ttf');
+}
+
+@font-face
+{
+    font-family: NautilusPompilius;
+    src: url('fonts/Nautilus_Pompilius.ttf');
+}
+
+.tr2:checked ~ main
+{
+    background-color: black;
+    color: white;
+}
+
+.tr2:checked ~ footer
+{
+    color: white;
+}
+
+.tr3:checked ~ main
+{
+    background-image: url(https://wallpaperscraft.ru/image/bumaga_staraya_fon_poverhnost_69706_3101x1820.jpg);
+}
+
+.tr4:checked ~ main
+{
+    background-color: red;
+    color: rgb(255, 208, 0);
+}
+
+.tr4:checked ~ footer
+{
+    color: rgb(255, 208, 0);
+}
+
+.sr2:checked ~ main
+{
+    font-size: 12px;
+}
+
+.sr3:checked ~ main
+{
+    font-size: 8px;
+}
+
+.fr2:checked ~ main div,
+.fr2:checked ~ main p,
+.fr2:checked ~ main ul,
+.fr2:checked ~ main cite,
+.fr2:checked ~ main figcaption,
+.fr2:checked ~ main h1,
+.fr2:checked ~ main h2,
+.fr2:checked ~ main h3,
+.fr2:checked ~ main h4
+{
+    font-family: NautilusPompilius;
+}
+
+body
+{
+    font-size: 10px;
+}
+
+p
+{
+    -webkit-margin-before: 1%;
+    -webkit-margin-after: 1%;
+    font: 1.2em MSReferenceSansSerif;
+    text-indent: 5%;
+    font-weight: bold;
+    text-align: justify;
+}
+
+p::first-letter
+{
+    font: 2em Truth;
+}
+
+ul
+{
+    padding-left: 5%;
+    font: 1.2em MSReferenceSansSerif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+li::before
+{
+    content: '— ';
+    padding-right: 1%;
+}
+
+main
+{
+    margin-top: 10px;
+    padding: 10px 10% 36px;
+}
+
+main::after
+{
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+h1
+{
+    font: 8.5em FranklinGothicMedium;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 5px solid black;
+    margin-top: 0;
+    margin-bottom: .06em;
+    line-height: 90%;
+}
+
+.newspaper
+{
+    text-align: right;
+    padding-bottom: 1%;
+    border-bottom: 5px solid black;
+}
+
+.newspaper > div:nth-of-type(1)
+{
+    font: 1.6em CaviarDreamsItalic;
+    text-decoration: underline;
+}
+
+.newspaper > div:nth-of-type(2)
+{
+    font: 1.8em CaviarDreamsBold;
+    text-decoration: underline;
+    letter-spacing: 4px;
+}
+
+.newspaper img
+{
+    width: 15.5%;
+}
+
+.truth
+{
+    font: 16em Truth;
+    display: inline;
+}
+
+.founded
+{
+    width: 30%;
+    font: 1.6em CaviarDreams;
+    text-align: center;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+
+.version
+{
+    width: 69%;
+    display: inline-block;
+    text-align: center;
+}
+
+.version div:first-of-type
+{
+    font: 2em CaviarDreamsBold;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    border-bottom: 3px solid black;
+    padding-bottom: .5%;
+}
+
+.version div:last-of-type
+{
+    font: 1.4em CaviarDreamsBold;
+}
+
+.version span:not(:last-child)::after
+{
+    font-size: 1.5em;
+    content: '\2022';
+    padding-left: 2.5%;
+    padding-right: 1.5%;
+}
+
+.left
+{
+    width: 54%;
+    float: left;
+}
+
+.left::after
+{
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.first
+{
+    width: 37%;
+    margin-top: 1%;
+    float: left;
+}
+
+.first p
+{
+    font-size: 1em;
+}
+
+.first h2
+{
+    font: 5em RubricaXtCn;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 4px;
+}
+
+figure
+{
+    width: 60%;
+    text-align: center;
+    float: right;
+    margin: 0;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+    border-left: 6px double black;
+}
+
+figure img
+{
+    width: 90%;
+}
+
+figcaption
+{
+    font: italic 1.2em TimesNewRoman;
+    text-align: left;
+    text-indent: 5%;
+    padding-top: 1%;
+}
+
+.right
+{
+    width: 45%;
+    margin-left: .5%;
+    float: right;
+}
+
+.second
+{
+    padding-left: 2%;
+    padding-top: .7%;
+    padding-bottom: 1.5%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.second h4
+{
+    font: 1.5em TimesNewRoman;
+    font-weight: bold;
+    border: 1px solid black;
+    margin: 0;
+    padding: 1.5%;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.second h2
+{
+    font: 4em BrokgauzEfronItalic;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-top: -1.12em;
+    margin-bottom: 0;
+    text-indent: 3.7em;
+    line-height: 1.2em;
+}
+
+.second h3
+{
+    font: 3.5em TimesNewRoman;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.second .text
+{
+    padding-top: 1%;
+    column-count: 2;
+    column-rule: 1px solid black;
+    column-gap: 4em;
+}
+
+.diamond
+{
+    width: 2%;
+    height: 100%;
+    transform: rotate(90deg);
+    font-size: 2em;
+    margin-left: 47%;
+    margin-bottom: 5%;
+}
+
+blockquote
+{
+    padding: 2%;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+
+blockquote p
+{
+    font: 2em NautilusPompilius;
+    text-align: center;
+}
+
+blockquote p::before
+{
+    content: '\201C';
+}
+
+blockquote p::after 
+{
+    content: '\201D';
+}
+
+blockquote div
+{
+    font: 2em FranklinGothicMedium;
+    text-align: center;
+}
+
+footer
+{
+    font: bold 1.5em MSReferenceSansSerif;
+    writing-mode: tb-rl;
+    text-orientation: upright;
+    margin-top: -36px;
+    padding-left: 89%;
+}
