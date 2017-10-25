@@ -1,116 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
+    <p>Размер букв:</p>
+    <input type="radio" name="sizeOfText" id="small">
+    <label for="small">Small</label>
+    <input type="radio" name="sizeOfText" id="normal" checked>
+    <label for="normal">Normal</label>
+    <input type="radio" name="sizeOfText" id="big">
+    <label for="big">Big</label>
 
-    <header class="first header">
-        <div class="settings">
+    <p>Шрифт:</p>
+    <input type="radio" name="font" id="default" checked>
+    <label for="default">Default</label>
+    <input type="radio" name="font" id="helvetica">
+    <label for="helvetica">Helvetica</label>
 
-        </div>
-        <div class="newspaper name">
-            <p>The First Pilot Issue</p>
-        </div>
-        <div>
-            <aside class="advertise">
-                <p>
-                    <img src="http://lno52.ru/r/rekl.jpg" alt="здесь могла быть ваша реклама">
-                </p>
-            </aside>
-        </div>
-    </header>
+    <p>Тема</p>
+    <input type="radio" id="white" name="color" checked>
+    <label for="white">White</label>
+    <input type="radio" id="black" name="color">
+    <label for="black">Black</label>
     <main>
         <header>
-
-            <p class="second header">
+            <div class="newspaper-name">
+                <p>The First Pilot Issue</p>
+            </div>
+            <p class="header-info">
                 Екатеринбург Пондельник Октябрь 1956
             </p>
             <hr class="line">
-
         </header>
-
-        <p>Размер букв:</p>
-        <input type="radio" name="sizeOfText" id="small">
-        <label for="small">Small</label>
-        <input type="radio" name="sizeOfText" id="normal" checked>
-        <label for="normal">Normal</label>
-        <input type="radio" name="sizeOfText" id="big">
-        <label for="big">Big</label>
-
-        <p>Шрифт:</p>
-        <input type="radio" name="font" id="default" checked>
-        <label for="default">Default</label>
-        <input type="radio" name="font" id="helvetica">
-        <label for="helvetica">Helvetica</label>
-
         <section>
-            <input type="radio" id="white" name="color" checked>
-            <label for="white">White</label>
-            <input type="radio" id="black" name="color">
-            <label for="black">Black</label>
-
+            <article class="zero article">
+                <blockquote>Doing business without advertising is like winking at a girl
+                    in the dark. You know what you are doing but nobody else
+                    does.
+                </blockquote>
+                <p class="vertical-text">Вот так</p>
+                <img src="http://lno52.ru/r/rekl.jpg" alt="здесь могла быть ваша реклама" title="реклама">
+            </article>
             <article class="first article">
                 <h3>Экзистенциальный марксизм в XXI веке</h3>
                 <p>
-                    В данной ситуации авторитаризм вызывает субъект власти. Социально-экономическое
-                    развитие, в условиях политической нестабильности, означает
-                    современный кризис легитимности.Коммунизм отражает тоталитарный
-                    тип политической культуры. Можно предположить, что англо-американский
-                    тип политической культуры практически представляет собой
-                    функциональный марксизм, о чем писали такие авторы, как
-                    Ю.Хабермас и Т.Парсонс. Правовое государство, как бы это
-                    ни казалось парадоксальным, символизирует прагматический
-                    марксизм. Идеология важно верифицирует теоретический кризис
-                    легитимности. Феномен толпы иллюстрирует системный гуманизм.
-                    Идея правового государства традиционно приводит идеологический
-                    бихевиоризм, если взять за основу только формально-юридический
-                    аспект. Форма политического сознания доказывает идеологический
-                    субъект политического процесса. Понятие политического участия,
-                    особенно в условиях политической нестабильности, косвенно.
-                    Политическая культура теоретически иллюстрирует системный
-                    элемент политического процесса. Социально-экономическое
-                    развитие практически символизирует субъект власти, что может
-                    привести к усилению полномочий Общественной палаты. Технология
-                    коммуникации существенно иллюстрирует бихевиоризм.
+                    В дан&shy;ной си&shy;ту&shy;а&shy;ции ав&shy;то&shy;ри&shy;та&shy;ризм 
+                    вы&shy;зы&shy;ва&shy;ет
+                    субъ&shy;ект вла&shy;сти. Со&shy;ци&shy;аль&shy;но-эко&shy;но&shy;ми&shy;че&shy;ское
+                    раз&shy;ви&shy;тие, в усло&shy;ви&shy;ях по&shy;ли&shy;ти&shy;че&shy;ской
+                    не&shy;ста&shy;биль&shy;но&shy;сти, озна&shy;ча&shy;ет со&shy;вре&shy;мен&shy;ный
+                    кри&shy;зис ле&shy;ги&shy;тим&shy;но&shy;сти.Ком&shy;му&shy;низм
+                    от&shy;ра&shy;жа&shy;ет то&shy;та&shy;ли&shy;тар&shy;ный
+                    тип по&shy;ли&shy;ти&shy;че&shy;ской куль&shy;ту&shy;ры.
+                    Мож&shy;но пред&shy;по&shy;ло&shy;жить, что англо-аме&shy;ри&shy;кан&shy;ский
+                    тип по&shy;ли&shy;ти&shy;че&shy;ской куль&shy;ту&shy;ры
+                    прак&shy;ти&shy;че&shy;ски пред&shy;став&shy;ля&shy;ет со&shy;бой
+                    функ&shy;ци&shy;о&shy;наль&shy;ный марк&shy;сизм, о чем
+                    пи&shy;са&shy;ли та&shy;кие ав&shy;то&shy;ры, как Ю.Ха&shy;бер&shy;мас
+                    и Т.Пар&shy;сонс. Пра&shy;во&shy;вое го&shy;су&shy;дар&shy;ство,
+                    как бы это ни ка&shy;за&shy;лось па&shy;ра&shy;док&shy;саль&shy;ным,
+                    сим&shy;во&shy;ли&shy;зи&shy;ру&shy;ет праг&shy;ма&shy;ти&shy;че&shy;ский
+                    марк&shy;сизм. Идео&shy;ло&shy;гия важ&shy;но ве&shy;ри&shy;фи&shy;ци&shy;ру&shy;ет
+                    тео&shy;ре&shy;ти&shy;че&shy;ский кри&shy;зис ле&shy;ги&shy;тим&shy;но&shy;сти.
+                    Фе&shy;но&shy;мен тол&shy;пы ил&shy;лю&shy;стри&shy;ру&shy;ет
+                    си&shy;стем&shy;ный гу&shy;ма&shy;низм. Идея пра&shy;во&shy;во&shy;го
+                    го&shy;су&shy;дар&shy;ства тра&shy;ди&shy;ци&shy;он&shy;но
+                    при&shy;во&shy;дит идео&shy;ло&shy;ги&shy;че&shy;ский би&shy;хе&shy;ви&shy;о&shy;ризм,
+                    ес&shy;ли взять за ос&shy;но&shy;ву толь&shy;ко 
+                    фор&shy;маль&shy;но-юри&shy;ди&shy;че&shy;ский
+                    ас&shy;пект. Фор&shy;ма по&shy;ли&shy;ти&shy;че&shy;ско&shy;го
+                    со&shy;зна&shy;ния до&shy;ка&shy;зы&shy;ва&shy;ет идео&shy;ло&shy;ги&shy;че&shy;ский
+                    субъ&shy;ект по&shy;ли&shy;ти&shy;че&shy;ско&shy;го про&shy;цес&shy;са.
+                    По&shy;ня&shy;тие по&shy;ли&shy;ти&shy;че&shy;ско&shy;го
+                    уча&shy;стия, осо&shy;бен&shy;но в усло&shy;ви&shy;ях по&shy;ли&shy;ти&shy;че&shy;ской
+                    не&shy;ста&shy;биль&shy;но&shy;сти, кос&shy;вен&shy;но.
+                    По&shy;ли&shy;ти&shy;че&shy;ская куль&shy;ту&shy;ра тео&shy;ре&shy;ти&shy;че&shy;ски
+                    ил&shy;лю&shy;стри&shy;ру&shy;ет си&shy;стем&shy;ный эле&shy;мент
+                    по&shy;ли&shy;ти&shy;че&shy;ско&shy;го про&shy;цес&shy;са.
+                    Со&shy;ци&shy;аль&shy;но-эко&shy;но&shy;ми&shy;че&shy;ское
+                    раз&shy;ви&shy;тие прак&shy;ти&shy;че&shy;ски сим&shy;во&shy;ли&shy;зи&shy;ру&shy;ет
+                    субъ&shy;ект вла&shy;сти, что мо&shy;жет при&shy;ве&shy;сти
+                    к уси&shy;ле&shy;нию пол&shy;но&shy;мо&shy;чий Об&shy;ще&shy;ствен&shy;ной
+                    па&shy;ла&shy;ты. Тех&shy;но&shy;ло&shy;гия ком&shy;му&shy;ни&shy;ка&shy;ции
+                    су&shy;ще&shy;ствен&shy;но ил&shy;лю&shy;стри&shy;ру&shy;ет
+                    би&shy;хе&shy;ви&shy;о&shy;ризм.
                 </p>
             </article>
-
             <article class="second article">
+                <figure>
+                    <figcaption>
+                        <img src="https://media1.britannica.com/eb-media/13/59613-004-FF09F9D8.jpg"
+                            alt="красивый Ленин" title="Ленин В.И.">
+                        <p>Ленин В.И.</p>
+                    </figcaption>
+                </figure>
                 <h3>100 лет Октября: Какую правду о Ленине от нас скрывают</h3>
                 <p>
-
-                    В последнее время печать захлестнула волна антиленинских выступлений. Это связано,
-                    очевидно, с неблагополучной экономической обстановкой в
-                    стране. Стало привычным в кризисе винить сталинизм и застойный
-                    период. А потом, словно впервые обнаружив, что и при Ленине
-                    были суды, ссылки и расстрелы, некоторые критики административно-командной
-                    системы, видимо в дискуссионном запале, стали утверждать,
-                    что Сталин вырос из Ленина, что Ленин был крестным отцом
-                    террора.
-                    <img src="https://media1.britannica.com/eb-media/13/59613-004-FF09F9D8.jpg"
-                        alt="красивый Ленин"> Что ж, Ленин — создатель партии большевиков, а партия для
-                    того и создается, чтобы взять власть и, используя эту власть,
-                    претворять в жизнь свою программу, свои идеи. Идеи эти преследуют
-                    одну цель — благо трудящихся. Обычно мы воспринимали Ленина
-                    в иконописном облике добреньким, с лукавым прищуром глаз.
-                    Но он был не просто заботливым человеком, сладеньким для
-                    всех, — он был выдающимся деятелем, гениальным политиком.
-                    А на таком посту, как говорится, не до сусальностей.Он считал
-                    и не скрывал этого, что борьба за власть будет кровопролитной.
-                    Захват власти стоил жизни всего лишь шести солдат Павловского
-                    полка. Труднее было удержать власть: началась гражданская
-                    война… А вообще-то любят у нас чернить выдающихся людей.
-                    Вспомним Солженицына, Бродского, Ростроповича, Сахарова…
+                    В по&shy;след&shy;нее вре&shy;мя пе&shy;чать за&shy;хлест&shy;ну&shy;ла вол&shy;на
+                    ан&shy;ти&shy;ле&shy;нин&shy;ских вы&shy;ступ&shy;ле&shy;ний.
+                    Это свя&shy;за&shy;но, оче&shy;вид&shy;но, с не&shy;бла&shy;го&shy;по&shy;луч&shy;ной
+                    эко&shy;но&shy;ми&shy;че&shy;ской об&shy;ста&shy;нов&shy;кой
+                    в стра&shy;не. Ста&shy;ло при&shy;выч&shy;ным в кри&shy;зи&shy;се
+                    ви&shy;нить ста&shy;ли&shy;низм и за&shy;стой&shy;ный пе&shy;ри&shy;од.
+                    А по&shy;том, слов&shy;но впер&shy;вые об&shy;на&shy;ру&shy;жив,
+                    что и при Ле&shy;ни&shy;не бы&shy;ли су&shy;ды, ссыл&shy;ки
+                    и рас&shy;стре&shy;лы, не&shy;ко&shy;то&shy;рые кри&shy;ти&shy;ки
+                    ад&shy;ми&shy;ни&shy;стра&shy;тив&shy;но-ко&shy;манд&shy;ной
+                    си&shy;сте&shy;мы, ви&shy;ди&shy;мо в дис&shy;кус&shy;си&shy;он&shy;ном
+                    за&shy;па&shy;ле, ста&shy;ли утвер&shy;ждать, что Ста&shy;лин
+                    вы&shy;рос из Ле&shy;ни&shy;на, что Ле&shy;нин был крест&shy;ным
+                    от&shy;цом тер&shy;ро&shy;ра. Что ж, Ле&shy;нин — со&shy;зда&shy;тель
+                    пар&shy;тии боль&shy;ше&shy;ви&shy;ков, а пар&shy;тия для
+                    то&shy;го и со&shy;зда&shy;ет&shy;ся, что&shy;бы взять власть
+                    и, ис&shy;поль&shy;зуя эту власть, пре&shy;тво&shy;рять
+                    в жизнь свою про&shy;грам&shy;му, свои идеи. Идеи эти пре&shy;сле&shy;ду&shy;ют
+                    од&shy;ну цель — бла&shy;го тру&shy;дя&shy;щих&shy;ся. Обыч&shy;но
+                    мы вос&shy;при&shy;ни&shy;ма&shy;ли Ле&shy;ни&shy;на в ико&shy;но&shy;пис&shy;ном
+                    об&shy;ли&shy;ке доб&shy;рень&shy;ким, с лу&shy;ка&shy;вым
+                    при&shy;щу&shy;ром глаз. Но он был не про&shy;сто за&shy;бот&shy;ли&shy;вым
+                    че&shy;ло&shy;ве&shy;ком, сла&shy;день&shy;ким для всех,
+                    — он был вы&shy;да&shy;ю&shy;щим&shy;ся де&shy;я&shy;те&shy;лем,
+                    ге&shy;ни&shy;аль&shy;ным по&shy;ли&shy;ти&shy;ком. А на
+                    та&shy;ком по&shy;сту, как го&shy;во&shy;рит&shy;ся, не
+                    до су&shy;саль&shy;но&shy;стей.Он счи&shy;тал и не скры&shy;вал
+                    это&shy;го, что борь&shy;ба за власть бу&shy;дет кро&shy;во&shy;про&shy;лит&shy;ной.
+                    За&shy;хват вла&shy;сти сто&shy;ил жиз&shy;ни все&shy;го
+                    лишь ше&shy;сти сол&shy;дат Пав&shy;лов&shy;ско&shy;го пол&shy;ка.
+                    Труд&shy;нее бы&shy;ло удер&shy;жать власть: на&shy;ча&shy;лась
+                    граж&shy;дан&shy;ская вой&shy;на… А во&shy;об&shy;ще-то
+                    лю&shy;бят у нас чер&shy;нить вы&shy;да&shy;ю&shy;щих&shy;ся
+                    лю&shy;дей. Вспом&shy;ним Сол&shy;же&shy;ни&shy;цы&shy;на,
+                    Брод&shy;ско&shy;го, Ро&shy;стро&shy;по&shy;ви&shy;ча, Са&shy;ха&shy;ро&shy;ва…
                 </p>
             </article>
-
         </section>
     </main>
 </body>
-
 </html>

@@ -1,39 +1,36 @@
 @font-face 
 {
     font-family: 'Mon Amour Two Medium';
-    src: url(mon-amour-two-medium_[allfont.ru].ttf);
+    src: url('fonts/mon-amour-two-medium_[allfont.ru].ttf');
 }
 
-.settings 
+/* lemon-regular - latin */
+@font-face 
 {
-    float: left;
-    height: 150px;
-    width: 25%;
+    font-family: 'Lemon';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/lemon-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Lemon Regular'), local('Lemon-Regular'), url('fonts/lemon-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/lemon-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/lemon-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('fonts/lemon-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('fonts/lemon-v6-latin-regular.svg#Lemon') format('svg'); /* Legacy iOS */
 }
 
-.newspaper.name
+.main
 {
-    width: 50%;
-    float: left;
-    height: 150px;
+    font-family: Arial, sans-serif;
 }
 
-.newspaper.name p
+.newspaper-name p
 {
     font-family: 'Mon Amour Two Medium';
     text-align: center;
     font-size: 60px;
 }
 
-.advertise 
-{
-    width: 25%;
-    height: 150px;
-    float: left;
-    text-align: center;
-}
-
-.second.header 
+.header-info
 {
     text-align: center;
     word-spacing: 20em;
@@ -42,21 +39,34 @@
 
 .line
 {
-    border: none;
     background-color: #000;
     height: 2px;
 }
 
+blockquote
+{
+    font-family: 'Lemon';
+}
+
+.vertical-text 
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.article
+{
+    width: 45%;
+    border-left: 4px double #000;
+    border-right: 4px double #000;
+    border-bottom: 2px solid #000;
+    height: 400px;
+    margin: auto;
+}
+
 .first.article 
 {
-    float: left;
-    width: 45%;
     column-count: 3;
-    column-rule: 2px solid #000;
-    hyphens: auto;
-    border: 4px double #000;
-    height: 400px;
-    overflow-x: hidden;
 }
 
 .first.article h3 
@@ -67,14 +77,8 @@
 
 .second.article 
 {
-    float: right;
-    width: 45%;
     column-width: 150px;
     column-rule: 2px solid #000;
-    hyphens: auto;
-    border: 4px double #000;
-    height: 400px;
-    overflow-x: hidden;
 }
 
 .second.article h3
@@ -86,24 +90,25 @@ img
 {
     width: 150px;
     height: 150px;
+    text-align: center;
 }
 
-input[id='big']:checked ~ section > article
+input[id='big']:checked ~ main section > article
 {
     font-size: 20px;
 }
 
-input[id='small']:checked ~ section > article
+input[id='small']:checked ~ main section > article
 {
     font-size: 10px;
 }
 
-input[id='helvetica']:checked ~ section > article
+input[id='helvetica']:checked ~ main section > article
 {
     font-family: Helvetica;
 }
 
-input[id='black']:checked ~ article
+input[id='black']:checked ~ main section > article
 {
     color: white;
     background-color: black;
