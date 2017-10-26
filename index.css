@@ -71,7 +71,7 @@ article p::first-letter
     font: 3rem 'PT Serif', serif;
 }
 
-.newspaper > article  img
+.newspaper > article img
 {
     width: 100%;
     height: auto;
