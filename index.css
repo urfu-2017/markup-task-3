@@ -37,12 +37,6 @@
 
 @font-face
 {
-    font-family: SchneidlerHalbFetteShadow;
-    src: url(SchneidlerHalbFetteShadow.ttf);
-}
-
-@font-face
-{
     font-family: comics;
     src: url(comics.ttf);
 }
