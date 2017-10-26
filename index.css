@@ -28,13 +28,13 @@ p
 @font-face
 {
     font-family: Connetable;
-    src: url(fonts/Connetable.ttf);
+    src: url(fonts/Connetable.woff) format('woff');
 }
 
 @font-face
 {
     font-family: Rurintania;
-    src: url(fonts/Rurintania.ttf);
+    src: url(fonts/Rurintania.woff) format('woff');
 }
 
 header
@@ -187,3 +187,11 @@ input[id='change-font']:checked ~ .newspaper figcaption
     font-family: 'Times New Roman', Times, serif;
     float: left;
 }
+/*
+@media (max-width: 900px)
+{
+    main
+    {
+        column-count: 1;
+    }
+}*/
