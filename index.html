@@ -3,7 +3,214 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <input id="font-small" type="radio" name="font">
+    <label for="font-small">Маленький шрифт</label>
+    <input id="font-normal" type="radio" name="font">
+    <label for="font-normal">Нормальный шрифт</label>
+    <input id="font-big" type="radio" name="font">
+    <label for="font-big">Большой шрифт</label>
+
+    <input id="Pacifico" type="radio" name="font-type">
+    <label for="Pacifico">Pacifico</label>
+    <input id="CormorantInfant" type="radio" name="font-type" checked>
+    <label for="CormorantInfant">CormorantInfant</label>
+
+    <input id="light" type="radio" name="theme" checked>
+    <label for="light">Светлая тема</label>
+    <input id="dark" type="radio" name="theme">
+    <label for="dark">Темная тема</label>
+
+    <aside class="vertical_left">К О С М О С</aside>
+    <aside class="vertical_right">К О Ш К И</aside>
+    <div class="newspaper">
+        <header>
+            <h1>Котокосмос</h1>
+            <div>ЕКАТЕРИНБУРГ, <time>2017-10-24</time></div>
+        </header>
+        <main>
+            <h3 class="subtitle">
+                Все самое интересное!
+            </h3>
+            <article class="article one">
+                <p>
+                    Что по&shy;яви&shy;лось рань&shy;ше ку&shy;ри&shy;
+                     или яй&shy;цо? <br>
+                    Од&shy;ни ли мы в этой огром&shy;ной Все&shy;лен&shy;ной?
+                    Эти и мно&shy;гие дру&shy;гие во&shy;про&shy;сы 
+                    яв&shy;ля&shy;ют&shy;ся край&shy;не ба&shy;наль&shy;ны&shy;ми по
+                    срав&shy;не&shy;нию с од&shy;ним из&shy;веч&shy;ным 
+                    во&shy;про&shy;сом, ко&shy;то&shy;рый му&shy;ча&shy;ет 
+                    лю&shy;би&shy;те&shy;лей жи&shy;вот&shy;ных уже дол&shy;гое вре&shy;мя:
+                </p>
+                <blockquote>
+                    "Кто лучше в качестве домашнего питомца – кошки или собаки?"
+                </blockquote>
+                <h3>7 причин почему кошки лучше собак.</h3>
+                <img src="http://popugai-market.ru/images/8/8749.jpg" width="189" height="255"
+                 alt="кошка или собака" title="кошка и собака">
+                <ul>
+                    <li>Кошки могут жить даже в самых маленьких домах и квартирах. 
+                        Коты чувствуют себя уютно, скрутившись калачиком в самых, 
+                        казалось бы, неудобных местах.</li>
+                    <li>Кошки обходятся в содержании дешевле, чем собаки.</li>
+                    <li>Кошек не нужно выгуливать.</li>
+                    <li>Кошки не нуждаются в постоянном внимании так, как нуждаются в этом собаки.</li>
+                    <li>Cобаки лают, а кошки нет</li>
+                    <li>Кошки более чистоплотны и требуют меньше внимания со 
+                        стороны гигиены, чем собаки.</li>
+                    <li>Кошку можно оставить дома без присмотра на несколько дней.</li>
+                </ul>
+                <img src="https://i.ytimg.com/vi/IprVGYC3hRY/maxresdefault.jpg"
+                 width="189" height="200" alt="космо-кошки"
+                 title="кошки в космосе">
+                <article class="article two">
+                    <h3>Немного о космосе</h3>
+                    <div class="columns_2">
+                        <p>
+                            В про&shy;сто&shy;рах Все&shy;лен&shy;ной есть очень 
+                            уди&shy;ви&shy;тель&shy;ная вещь – <br>
+                            ги&shy;гант&shy;ский га&shy;зо&shy;вый пу&shy;зырь. 
+                            Его дли&shy;на со&shy;став&shy;ля&shy;ет око&shy;ло 200 <br>
+                            мил&shy;ли&shy;о&shy;нов све&shy;то&shy;вых лет, а
+                             на&shy;хо&shy;дит&shy;ся он от нас в 12 <br>
+                            мил&shy;ли&shy;ар&shy;дах этих же лет! Эта ин&shy;те&shy;
+                            рес&shy;ная шту&shy;ка сфор&shy;ми&shy;ро&shy;ва&shy;лась <br>
+                            все&shy;го-то че&shy;рез два мил&shy;ли&shy;ар&shy;да лет 
+                            по&shy;сле Боль&shy;ше&shy;го взры&shy;ва.
+                        </p>
+                        <p>
+                            Мы ле&shy;та&shy;ем в про&shy;стран&shy;стве 
+                            кос&shy;мо&shy;са со ско&shy;ро&shy;стью око&shy;ло 530 <br>
+                            км в се&shy;кун&shy;ду. Внут&shy;ри Га&shy;лак&shy;ти&shy;ки
+                             пла&shy;не&shy;та дви&shy;жет&shy;ся со <br>
+                            ско&shy;ро&shy;стью око&shy;ло 230 км в се&shy;кун&shy;ду,
+                             сам Млеч&shy;ный Путь <br>
+                            ле&shy;тит в кос&shy;мо&shy;се со ско&shy;ро&shy;стью 300 
+                            км в се&shy;кун&shy;ду.<br>
+                            Нам на го&shy;ло&shy;вы каж&shy;дый день «па&shy;да&shy;ет» 
+                            око&shy;ло 10 тонн кос&shy;ми&shy;че&shy;ской пы&shy;ли.
+                        </p>
+                        <img src="http://risovach.ru/upload/2013/02/generator/kosmos-2_12047765_orig_.jpeg"
+                         width="150" height="120" alt="просторы космоса"
+                         title="просторы космоса">
+                    </div>
+                    <p>Во всей Вселенной существует более 100 миллиардов галактик. Есть шанс,
+                     что мы не одиноки.
+                    </p>
+                    <div class="fact">
+                        <h4>Интересный факт:</h4>каждый день на нашей планете падает около 200 тысяч
+                         метеоритов!
+                        <img alt="Метеоритный дождь"
+                             src="http://priroda-yavlenie.ru/images/987644.jpg"
+                             width="150" height="120"
+                             title="фотография Метеоритного дождя">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Сред&shy;няя плот&shy;ность ве&shy;ществ Са&shy;тур&shy;на в два ра&shy;за
+                             мень&shy;ше, чем плот&shy;ность во&shy;ды.<br>
+                            Это зна&shy;чит, что, ес&shy;ли опу&shy;стить эту пла&shy;не&shy;ту 
+                            в ста&shy;кан с во&shy;дой, то она бу&shy;дет <br>
+                            пла&shy;вать на по&shy;верх&shy;но&shy;сти.<br>
+                            Вы мо&shy;же&shy;те это про&shy;ве&shy;рить, толь&shy;ко, 
+                            ко&shy;неч&shy;но, ес&shy;ли ай&shy;де&shy;те со&shy;от&shy;вет&shy;
+                            ству&shy;ю&shy;щий ста&shy;кан.<br>
+                            Солн&shy;це «ху&shy;де&shy;ет» на мил&shy;ли&shy;ард ки&shy;ло&shy;
+                            грам&shy;мов в се&shy;кун&shy;ду.<br>
+                            Это свя&shy;за&shy;но с сол&shy;неч&shy;ным вет&shy;ром – 
+                            по&shy;то&shy;ком ча&shy;стиц, 
+                            ко&shy;то&shy;рые дви&shy;га&shy;ют&shy;ся <br>
+                            с по&shy;верх&shy;но&shy;сти этой звез&shy;ды в 
+                            раз&shy;ные на&shy;прав&shy;ле&shy;ния.
+                        </p>
+                        <p>
+                            Чер&shy;ная ды&shy;ра – са&shy;мый яр&shy;кий объ&shy;ект
+                             во всей Все&shy;лен&shy;ной.<br>
+                            Внут&shy;ри чер&shy;ной ды&shy;ры си&shy;ла 
+                            гра&shy;ви&shy;та&shy;ции на&shy;столь&shy;ко ве&shy;ли&shy;ка, <br>
+                            что из неё не&shy;воз&shy;мож&shy;но вы&shy;р
+                            вать&shy;ся да&shy;же све&shy;ту.<br>
+                            По ло&shy;ги&shy;ке ве&shy;щей, ды&shy;ра долж&shy;на
+                             быть не за&shy;мет&shy;на на не&shy;бе во&shy;все.<br>
+                            Од&shy;на&shy;ко, во вре&shy;мя вра&shy;ще&shy;ния ды&shy;ры
+                             кро&shy;ме кос&shy;ми&shy;че&shy;ских тел по&shy;гло&shy;ща&shy;ют
+                              еще и га&shy;зо&shy;вые об&shy;ла&shy;ка, <br>
+                            ко&shy;то&shy;рые и на&shy;чи&shy;на&shy;ют све&shy;тить&shy;ся,
+                             за&shy;кру&shy;чи&shy;ва&shy;ясь по спи&shy;ра&shy;ли.<br>
+                            Так же ме&shy;тео&shy;ры, по&shy;па&shy;дая в чер&shy;ные ды&shy;ры,
+                             за&shy;го&shy;ра&shy;ют&shy;ся от не&shy;имо&shy;вер&shy;но
+                            рез&shy;ко&shy;го и быст&shy;ро&shy;го дви&shy;же&shy;ния.
+                        </p>
+                        <p><img src="http://img1.qwrt.ru/img1/2014/10/23/2-678685.jpg" 
+                            class="author" 
+                            alt="Карл Шварцшильд"
+                            width="150" height="200"
+                            title="Карл Шварцшильд">
+                            Карл Шварц&shy;шильд был пер&shy;вым, кто при&shy;ме&shy;нил об&shy;щую 
+                            тео&shy;рию от&shy;но&shy;си&shy;тель&shy;но&shy;сти Эйн&shy;штей&shy;на, <br>
+                            для то&shy;го, что&shy;бы обос&shy;но&shy;вать су&shy;ще&shy;ство&shy;ва&shy;ние
+                             «точ&shy;ки не&shy;воз&shy;вра&shy;та». <br>
+                            Сам Эйн&shy;штейн не за&shy;ду&shy;мы&shy;вал&shy;ся о чер&shy;ных
+                             ды&shy;рах,<br>
+                            хо&shy;тя его тео&shy;рия поз&shy;во&shy;ля&shy;ет пред&shy;ска&shy;зать
+                             их су&shy;ще&shy;ство&shy;ва&shy;ние.<br><br>
+                            Шварц&shy;шильд сде&shy;лал свое пред&shy;по&shy;ло&shy;же&shy;ние 
+                            в 1915 го&shy;ду, сра&shy;зу вслед за тем, <br>
+                            как Эйн&shy;штейн опуб&shy;ли&shy;ко&shy;вал об&shy;щую тео&shy;рию
+                             от&shy;но&shy;си&shy;тель&shy;но&shy;сти. То&shy;гда же воз&shy;ник <br>
+                            тер&shy;мин «ра&shy;ди&shy;ус Шварц&shy;шиль&shy;да» - 
+                            это ве&shy;ли&shy;чи&shy;на, <br>
+                            ко&shy;то&shy;рая по&shy;ка&shy;зы&shy;ва&shy;ет, как силь&shy;но вам
+                             при&shy;дет&shy;ся сжать объ&shy;ект, что&shy;бы он стал чер&shy;ной ды&shy;рой.
+                        </p>
+                    </div>
+                    <img src="https://img-fotki.yandex.ru/get/196771/137106206.7af/0_203f5e_428de2be_orig" 
+                    class="roundedFrame" 
+                    alt="первая кошка космонавт"
+                    width="200" height="400"
+                    title="кошка космонавт Фелисетт">
+                    <blockquote>
+                        "18 октября 1963 года в 07:09 GMT с французского полигона Хаммагир 
+                            была запущена ракета Veronique с кошкой Фелисетт на борту."
+                    </blockquote>
+                    <div class="columns_2">
+                        <p>
+                            На се&shy;го&shy;дняш&shy;ний день это един&shy;ствен&shy;ный
+                             успеш&shy;ный пуск кош&shy;ки в <br>
+                            кос&shy;ми&shy;че&shy;ское про&shy;стран&shy;ство. Хоть по&shy;лет
+                             и не был ор&shy;би&shy;таль&shy;ным, до кос&shy;мо&shy;са кош&shy;ка 
+                             до&shy;бра&shy;лась.
+                        </p>
+                        <p>
+                            Вы&shy;со&shy;та по&shy;ле&shy;та бы&shy;ла не&shy;боль&shy;шой – 
+                            155 км. Кош&shy;ка на&shy;хо&shy;ди&shy;лась  в 
+                            не&shy;ве&shy;со&shy;мо&shy;сти <br>
+                            5 ми&shy;нут 2 се&shy;кун&shy;ды. Пе&shy;ре&shy;груз&shy;ки во 
+                            вре&shy;мя тор&shy;мо&shy;же&shy;ния не&shy;пред&shy;ска&shy;зу&shy;е&shy;мо
+                             пры&shy;га&shy;ла<br>в пре&shy;де&shy;лах от +4 еди&shy;ни&shy;цы до -4 
+                             еди&shy;ни&shy;цы. Ко&shy;гда вы&shy;шел ос&shy;нов&shy;ной
+                              па&shy;ра&shy;шют <br>
+                            пе&shy;ре&shy;груз&shy;ка до&shy;стиг&shy;ла 7 еди&shy;ниц. 
+                            Кош&shy;ку по&shy;сле при&shy;зем&shy;ле&shy;ния на&shy;шли
+                             очень быст&shy;ро <br>
+                            – здесь на&shy;до от&shy;дать долж&shy;ное служ&shy;бе спа&shy;се&shy;ния
+                             и по&shy;ис&shy;ка. Ее до&shy;ста&shy;ли из <br>
+                            кон&shy;тей&shy;не&shy;ра уже че&shy;рез 13 ми&shy;нут 13 се&shy;кунд
+                             по&shy;сле при&shy;зем&shy;ле&shy;ния. Но кош&shy;ка, <br>
+                            оче&shy;вид&shy;но,  боль&shy;ше с людь&shy;ми дел ве&shy;сти не 
+                            по&shy;же&shy;ла&shy;ла, по&shy;это&shy;му сбе&shy;жа&shy;ла точ&shy;но <br>
+                            так же, как и ее пред&shy;ше&shy;ствен&shy;ниц.
+                        </p>
+                    </div>
+                </article>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
