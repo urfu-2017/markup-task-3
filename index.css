@@ -36,6 +36,7 @@ p:first-letter
     left: 0;
     margin: 1%;
     width: 13px;
+    color: #000;
 }
 
 .vertical_right
@@ -43,11 +44,12 @@ p:first-letter
     right: 0;
     margin: 1.5%;
     width: 15px;
+    color: #000;
 }
 
 .fact
 {
-    font: 17px 'Roboto Condensed', sans-serif;
+    font: 1.2em 'Roboto Condensed', sans-serif;
     padding: 5px;
     margin: 10px;
     border: 2px solid #000;
@@ -75,17 +77,7 @@ h1
     position: relative;
 }
 
-.article-one
-{
-    -moz-column-count: 2;
-    column-count: 2;
-    -moz-column-width: 300px;
-    column-width: 300px;
-    -moz-column-rule: 2px solid #000;
-    column-rule: 2px solid #000;
-}
-
-.article-two
+.article
 {
     -moz-column-count: 2;
     column-count: 2;
@@ -99,7 +91,7 @@ main p,
 h2,
 h3
 {
-    font: 13px 'Domine', cursive;
+    font: .8em 'Domine', cursive;
     text-indent: 18px;
 }
 
@@ -112,6 +104,7 @@ h3
 
 img
 {
+    padding: .5%;
     width: 100%;
     height: auto;
 }
@@ -119,7 +112,7 @@ img
 h2,
 h3
 {
-    font: bold 27px 'Pacifico', cursive;
+    font: bold 28px 'Pacifico', cursive;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
@@ -146,7 +139,7 @@ ul
 
 div.content
 {
-    font: 28px 'Pacifico', cursive;
+    font: 1.1em 'Pacifico', cursive;
     text-align: justify;
     margin-bottom: 6px;
 }
@@ -175,23 +168,42 @@ blockquote
     column-rule: 1.5px solid #000;
 }
 
-input[id='font-small']:checked ~ .newspaper main,
-input[id='font-small']:checked ~ .newspaper p
+input[id='font-normal']:checked ~ .newspaper main
 {
-    font-size: 10px;
+    font-size: 1rem;
 }
 
-input[id='font-big']:checked ~ .newspaper main,
-input[id='font-big']:checked ~ .newspaper p
+input[id='font-small']:checked ~ .newspaper main
+
 {
-    font-size: 20px;
+    font-size: .7rem;
 }
 
-input[id='dark']:checked ~ .newspaper main
+input[id='font-big']:checked ~ .newspaper main
 {
-    color: #fff;
+    font-size: 1.5rem;
+}
+
+input[id='dark']:checked ~ .newspaper,
+input[id='dark']:checked ~ .newspaper header,
+input[id='dark']:checked ~ .newspaper h3
+{
     background: url(https://i.ytimg.com/vi/vJKZhZq3RmU/maxresdefault.jpg);
     text-shadow: 1px 1px 2px #000, 0 0 2em #fff;
+    color: #fff;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+input[id='dark']:checked ~ .newspaper .article,
+input[id='dark']:checked ~ .newspaper .columns_2,
+input[id='dark']:checked ~ .newspaper ul,
+input[id='dark']:checked ~ aside,
+input[id='dark']:checked ~ .newspaper .fact
+{
+    column-rule: 2px solid #fff;
+    color: #fff;
+    border: none;
 }
 
 input[id='CormorantInfant']:checked ~ .newspaper p
