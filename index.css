@@ -1,0 +1,89 @@
+.main
+{
+    text-shadow: 1px -1px 1px;
+    column-count: 4;
+    column-rule: 5px outset rgb(139, 141, 156);
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+.content
+{
+    margin: 2em;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.first-header
+{
+    column-span: all;
+    font-size: 4em;
+    text-align: center;
+    font-family: Rurintania, Dobrozrachniy, serif;
+    margin: .5em 0;
+}
+
+.column-header
+{
+    text-align: center;
+    font-family: Dobrozrachniy, 'Franklin Gothic Medium', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.column-text
+{
+    font-size: 1em;
+}
+
+.first-letter::first-letter
+{
+    font-family: fantasy;
+    font-size: 200%;
+}
+
+.quote
+{
+    font-style: italic;
+    font-size: 85%;
+}
+
+body
+{
+    background-image: url('pagebackground.jpg');
+}
+
+.vertical-text
+{
+    position: absolute;
+    left: 1em;
+    top: 12em;
+    white-space: nowrap;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 0 1px;
+}
+
+img
+{
+    width: 90%;
+}
+
+@font-face
+{
+    font-family: Rurintania;
+    src: url(rurintania.ttf);
+    src: url(rurintania.eot);
+    src: url(rurintania.woff2);
+    src: url(rurintania.woff);
+
+}
+
+@font-face
+{
+    font-family: Dobrozrachniy;
+    src: url(Dobrozrachniy.eot);
+    src: url(Dobrozrachniy.woff2);
+    src: url(Dobrozrachniy.woff);
+}
