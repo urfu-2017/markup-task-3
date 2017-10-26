@@ -97,7 +97,8 @@ blockquote
     font-style: italic;
 }
 
-.vertical_text {
+.vertical_text
+{
     display: block;
     word-wrap: break-word;
     width: 1px;
