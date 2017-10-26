@@ -2,8 +2,179 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Underdog" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
+    <input type="checkbox" id="reduce-size">
+    <label for="reduce-size">Уменьшить размер</label>
+    <input type="checkbox" id="increase-size">
+    <label for="increase-size">Увеличить размер</label>
+    <input type="checkbox" id="black-and-white">
+    <label for="black-and-white">Изменить тему на черно-белую</label>
+    <input type="checkbox" id="change-font">
+    <label for="change-font">Изменить шрифт</label>
+    <hr>
+    <div class="newspaper">
+        <aside class="vertical-text">puuuuuuuuuug</aside>
+        <header>
+            Вселенная мопсов
+            <img class="logo" src="images/logo.png" alt="Лого">
+        </header>
+        <hr>
+        <hr>
+        <p class="date">Выпуск №1 от 22 октября 2017 года.</p>
+        <hr>
+        <hr>
+        <main class="main">
+            <h2>Мопс — это не толь&shy;ко доб&shy;ро&shy;душ&shy;ный вид и бод&shy;рый ве&shy;сё&shy;лый
+             ха&shy;рак&shy;тер, мопс — это ма&shy;лень&shy;кий, но ве&shy;со&shy;мый ку&shy;со&shy;чек 
+             сча&shy;стья!</h2>
+            <q>
+                Со&shy;ба&shy;ка так пре&shy;дан&shy;на, что да&shy;же не ве&shy;ришь в то, что че&shy;
+                ло&shy;век за&shy;слу&shy;жи&shy;ва&shy;ет та&shy;кой люб&shy;ви.
+            </q>
+            <figure>
+                <img src="images/2.jpg" alt="cool pug" class="pug1">
+                <figcaption>Я - крутой!</figcaption>
+            </figure>
+            <section class="left">
+                <h2>О мопсах</h2>
+                <p>
+                    Моп&shy;сы очень ми&shy;лы и дру&shy;же&shy;люб&shy;ны, ис&shy;пы&shy;ты&shy;ва&shy;ют
+                     силь&shy;ную при&shy;вя&shy;зан&shy;ность к чле&shy;нам се&shy;мьи, иг&shy;ри&shy;во 
+                     встре&shy;ча&shy;ют за&shy;шед&shy;ших в го&shy;сти лю&shy;дей у по&shy;ро&shy;га 
+                     квар&shy;ти&shy;ры. Но вме&shy;сте с этим, бла&shy;го&shy;да&shy;ря сво&shy;е&shy;му 
+                     доб&shy;ро&shy;му нра&shy;ву, слиш&shy;ком при&shy;вет&shy;ли&shy;во от&shy;но&shy;
+                     сят&shy;ся к не&shy;зна&shy;ком&shy;цам. По&shy;то&shy;му их сле&shy;ду&shy;ет обу&shy;
+                     чать не ре&shy;а&shy;ги&shy;ро&shy;вать на ко&shy;ман&shy;ды по&shy;сто&shy;рон&shy;них
+                      лю&shy;дей и не брать еду из рук.</p>
+                <hr>
+                <article class="fact">
+                    <h3>Ин&shy;те&shy;рес&shy;ный факт</h3>
+                    <img class="fact" src="images/original.png" alt="pug">
+                    <p>Мопс, как и все «кур&shy;но&shy;сые» со&shy;ба&shy;ки, гром&shy;ко хра&shy;пит во сне.
+                    </p>
+                </article>
+                <hr>
+                <p>
+                    Не&shy;взи&shy;рая на от&shy;но&shy;си&shy;тель&shy;но низ&shy;кий уро&shy;вень ак&shy;
+                    тив&shy;но&shy;сти, мопс ни&shy;ко&shy;гда не от&shy;ка&shy;жет&shy;ся по&shy;иг&shy;рать
+                     со сво&shy;им хо&shy;зя&shy;и&shy;ном. В осо&shy;бен&shy;но&shy;сти это ка&shy;са&shy;
+                     ет&shy;ся мо&shy;ло&shy;дых осо&shy;бей.Эта по&shy;ро&shy;да со&shy;бак – ком&shy;пакт
+                     &shy;ная и со&shy;лид&shy;ная. И са&shy;мое ос&shy;нов&shy;ное для за&shy;вод&shy;чи
+                     &shy;ка – со&shy;хра&shy;не&shy;ние по&shy;род&shy;но&shy;го ти&shy;па. Мож&shy;но вы
+                     &shy;де&shy;лить три раз&shy;но&shy;вид&shy;но&shy;сти моп&shy;сов:
+                </p>
+                    <ul>
+                        <li>
+                            <span>Те&shy;рьер&shy;ный тип (об&shy;лег&shy;чен&shy;ный).</span>  Ха&shy;рак
+                            &shy;те&shy;ри&shy;зу&shy;ет&shy;ся длин&shy;ной ше&shy;ей и удли&shy;нен&shy;
+                            ным пря&shy;мым тор&shy;сом. В на&shy;сто&shy;я&shy;щее вре&shy;мя счи&shy;та
+                            &shy;ет&shy;ся наи&shy;бо&shy;лее при&shy;вле&shy;ка&shy;тель&shy;ным.
+                        </li>
+                        <li>
+                            <span>Буль&shy;до&shy;жья раз&shy;но&shy;вид&shy;ность.</span> От&shy;ли&shy;чие 
+                            – слиш&shy;ком ши&shy;ро&shy;кий торс и ко&shy;со по&shy;став&shy;лен&shy;ные ло
+                            &shy;пат&shy;ки. Воз&shy;мож&shy;ны свя&shy;зан&shy;ные ло&shy;пат&shy;ки и боч
+                            &shy;ко&shy;об&shy;раз&shy;ные пе&shy;ред&shy;ние ко&shy;неч&shy;но&shy;сти.
+                        </li>
+                        <li>
+                            <span>Шар&shy;пей&shy;ный тип (са&shy;мый не&shy;при&shy;ем&shy;ле&shy;мый).
+                            </span>. Слиш&shy;ком рас&shy;корм&shy;лен&shy;ная со&shy;ба&shy;ка с оби&shy;
+                            ли&shy;ем скла&shy;док. Де&shy;ла&shy;ет&shy;ся это для то&shy;го, что&shy;бы 
+                            скрыть не&shy;пра&shy;виль&shy;ную или удли&shy;нен&shy;ную ли&shy;нию вер&shy;ха.
+                        </li>
+                    </ul>
+                <p>
+                    К со&shy;жа&shy;ле&shy;нию, в 90-х моп&shy;сы – шар&shy;пеи да&shy;же по&shy;лу&shy;
+                    ча&shy;ли на&shy;гра&shy;ды на вы&shy;став&shy;ках.Мопс – со&shy;ба&shy;ка сба&shy;
+                    лан&shy;си&shy;ро&shy;ван&shy;ная. Он дол&shy;жен быть ко&shy;ре&shy;на&shy;стый, а 
+                    не тол&shy;стый или ху&shy;дой, и об&shy;ла&shy;дать креп&shy;кой раз&shy;ви&shy;той 
+                    му&shy;ску&shy;ла&shy;ту&shy;рой, а не стра&shy;дать ожи&shy;ре&shy;ни&shy;ем.
+                </p>
+            </section>
+            <hr>
+            <article class="fact">
+                <h3>Ин&shy;те&shy;рес&shy;ный факт</h3>
+                <img class="fact" src="images/original1.png" alt="pug">
+                <p>Мопс — ма&shy;лень&shy;кая де&shy;ко&shy;ра&shy;тив&shy;ная со&shy;бач&shy;ка, ко&shy;
+                    то&shy;рую из&shy;дав&shy;на дер&shy;жа&shy;ла знать. Со&shy;ба&shy;ка с жи&shy;вым, 
+                    ве&shy;сё&shy;лым и при этом урав&shy;но&shy;ве&shy;шен&shy;ным ха&shy;рак&shy;те&shy;
+                    ром, бла&shy;го&shy;род&shy;ная и при&shy;вяз&shy;чи&shy;вая к хо&shy;зя&shy;и&shy;ну.</p>
+            </article>
+            <hr>
+            <section class="right">
+                <h2>Ум и сообразительность</h2>
+                <p>
+                    Уди&shy;ви&shy;тель&shy;ная внеш&shy;ность и эк&shy;зо&shy;ти&shy;че&shy;ский окрас 
+                    моп&shy;са вряд ли оста&shy;вят ко&shy;го-ли&shy;бо рав&shy;но&shy;душ&shy;ным. Их 
+                    без&shy;гра&shy;нич&shy;ная доб&shy;ро&shy;же&shy;ла&shy;тель&shy;ность и безум&shy;ная 
+                    лю&shy;бовь к де&shy;тям поз&shy;во&shy;ля&shy;ют этим со&shy;ба&shy;кам ста&shy;но&shy;
+                    вить&shy;ся лю&shy;би&shy;ми&shy;ца&shy;ми в лю&shy;бом об&shy;ще&shy;стве. Моп&shy;сы 
+                    чрез&shy;вы&shy;чай&shy;но иг&shy;ри&shy;вы и об&shy;щи&shy;тель&shy;ны.
+                </p>
+                <figure>
+                    <img src="images/pug11.jpg" alt="mops" class="pug1">
+                    <figcaption>Давай поиграем?</figcaption>
+                </figure>
+                <p>
+                    Со&shy;ба&shy;ки этой по&shy;ро&shy;ды очень на&shy;стой&shy;чи&shy;вы. Они без тру&shy;
+                    да мо&shy;гут по&shy;ка&shy;зать сво&shy;е&shy;му хо&shy;зя&shy;и&shy;ну, че&shy;го же 
+                    они же&shy;ла&shy;ют, и не по&shy;нять их в этом весь&shy;ма слож&shy;но. При дрес&shy;
+                    си&shy;ров&shy;ке не сле&shy;ду&shy;ет по&shy;вы&shy;шать го&shy;лос. Мопс мо&shy;жет 
+                    сде&shy;лать вид, что он вне&shy;зап&shy;но оглох, или мо&shy;мен&shy;таль&shy;но пре
+                    &shy;об&shy;ра&shy;зить&shy;ся и вы&shy;гля&shy;деть так, буд&shy;то его толь&shy;ко 
+                    что по&shy;би&shy;ли. От&shy;ли&shy;ча&shy;ясь умом и со&shy;об&shy;ра&shy;зи&shy;тель
+                    &shy;но&shy;стью, эти со&shy;ба&shy;ки, как и хас&shy;ки, вы&shy;де&shy;ля&shy;ют&shy;ся 
+                    осо&shy;бым упрям&shy;ством, по&shy;это&shy;му обу&shy;чить че&shy;му-ли&shy;бо но&shy;
+                    во&shy;му взрос&shy;лую особь бы&shy;ва&shy;ет про&shy;блем&shy;но. Хо&shy;зя&shy;и&shy;
+                    на и чле&shy;нов его се&shy;мьи эти пе&shy;си&shy;ки за&shy;щи&shy;ща&shy;ют са&shy;мо
+                    &shy;от&shy;вер&shy;жен&shy;но, они ста&shy;но&shy;вят&shy;ся до&shy;воль&shy;но 
+                    агрес&shy;сив&shy;ны&shy;ми и мо&shy;гут ощу&shy;ти&shy;мо по&shy;ку&shy;сать 
+                    обид&shy;чи&shy;ка.
+                </p>
+                <hr>
+                <article class="fact">
+                    <h3>Ин&shy;те&shy;рес&shy;ный факт</h3>
+                    <img class="fact" src="images/original2.png" alt="pug">
+                    <p>
+                        Спе&shy;ци&shy;аль&shy;но рас&shy;трав&shy;лять моп&shy;са не нуж&shy;но, ведь 
+                        при&shy;сту&shy;пы яро&shy;сти мо&shy;гут при&shy;ве&shy;сти к уду&shy;шью или 
+                        сер&shy;деч&shy;но&shy;му при&shy;сту&shy;пу.
+                    </p>
+                </article>
+                <hr>
+                <h2>Преданность и доброта</h2>
+                <p>
+                    Ос&shy;но&shy;ва их ха&shy;рак&shy;те&shy;ра – это пре&shy;дан&shy;ность и доб&shy;
+                    ро&shy;та. По пре&shy;дан&shy;но&shy;сти хо&shy;зя&shy;и&shy;ну они ни сколь&shy;ко 
+                    не усту&shy;па&shy;ют дру&shy;гой ма&shy;лень&shy;кой со&shy;бач&shy;ке — чи&shy;ху
+                    &shy;ахуа. Остав&shy;лять од&shy;ну на дол&shy;гое вре&shy;мя та&shy;кую со&shy;
+                    ба&shy;ку нель&shy;зя. Все вре&shy;мя, про&shy;ве&shy;ден&shy;ное без хо&shy;зя&shy;
+                    и&shy;на, мопс бу&shy;дет стра&shy;дать, де&shy;мон&shy;стри&shy;руя это всем сво&shy;им
+                     ви&shy;дом.
+                </p>
+                <img src="images/pug2.png" alt="" class="pug2">
+                <p>
+                    По мне&shy;нию моп&shy;са, все долж&shy;но на&shy;хо&shy;дить&shy;ся на по&shy;ло&shy;
+                    жен&shy;ных ме&shy;стах. Ес&shy;ли его что-то не устра&shy;и&shy;ва&shy;ет, он сра&shy;
+                    зу при&shy;ни&shy;ма&shy;ет бо&shy;е&shy;вую стой&shy;ку и за&shy;ли&shy;ва&shy;ет&shy;ся
+                     гром&shy;ким ла&shy;ем. Как толь&shy;ко «все вер&shy;нет&shy;ся на кру&shy;ги своя», 
+                     мопс зев&shy;нет, чих&shy;нет и уда&shy;лит&shy;ся на свое ме&shy;сто. Жи&shy;вут 
+                     моп&shy;сы в сред&shy;нем 13 – 15 лет. Та&shy;кая со&shy;ба&shy;ка иде&shy;аль&shy;но 
+                     по&shy;дой&shy;дет для лю&shy;дей, не име&shy;ю&shy;щих опы&shy;та в вос&shy;пи&shy;
+                     та&shy;нии жи&shy;вот&shy;ных. Хо&shy;тя при дрес&shy;си&shy;ров&shy;ке сле&shy;ду&shy;
+                     ет про&shy;яв&shy;лять на&shy;стой&shy;чи&shy;вость.
+                </p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

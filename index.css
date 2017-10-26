@@ -1,0 +1,197 @@
+.newspaper
+{
+    width: 100%;
+    background-image: url(images/bg.gif);
+    font-size: 18px;
+}
+
+main
+{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    column-count: 2;
+    column-rule: 2px dotted #ccc;
+}
+
+section.right,
+section.left
+{
+    column-count: 2;
+}
+
+p
+{
+    margin-top: 0;
+}
+
+@font-face
+{
+    font-family: Connetable;
+    src: url(fonts/Connetable.woff) format('woff');
+}
+
+@font-face
+{
+    font-family: Rurintania;
+    src: url(fonts/Rurintania.woff) format('woff');
+}
+
+header
+{
+    width: 90%;
+    min-height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Rurintania', 'Connetable', 'Marck Script', serif;
+    font-size: 80px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.logo
+{
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.pug1 
+{
+    width: 90%;
+    height: auto;
+}
+
+.pug2
+{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+h2
+{
+    column-span: all;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+}
+
+h3
+{
+    text-align: center;
+    margin: 0;
+}
+
+article.fact
+{
+    padding-top: 5px;
+    display: block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 80px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+    font-family: 'Kelly Slab', cursive;
+}
+
+img.fact
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 80px;
+    margin: auto 0;
+
+}
+
+p:not(.date):first-letter
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: #f36;
+    font-size: 190%;
+    font-weight: bold;
+}
+
+figcaption
+{
+    text-align: center;
+    font-style: italic;
+}
+
+q
+{
+    font-style: italic;
+}
+
+.date
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+span
+{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+article
+{
+    display: block;
+}
+
+.left
+{
+    font-family: 'Pangolin', cursive;
+}
+
+.right
+{
+    font-family: 'Underdog', cursive;
+}
+
+input[id='reduce-size']:checked ~ .newspaper main
+{
+    font-size: 16px;
+}
+
+input[id='increase-size']:checked ~ .newspaper main
+{
+    font-size: 22px;
+}
+
+input[id='black-and-white']:checked ~ .newspaper
+{
+    background: black;
+    color: white;
+}
+
+input[id='change-font']:checked ~ .newspaper p,
+input[id='change-font']:checked ~ .newspaper q,
+input[id='change-font']:checked ~ .newspaper li,
+input[id='change-font']:checked ~ .newspaper h2,
+input[id='change-font']:checked ~ .newspaper figcaption
+{
+    font-family: 'Poiret One', cursive;
+}
+
+.vertical-text
+{
+    line-height: 15px;
+    font-size: 15px;
+    width: 5px;
+    word-break: break-all;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+}
+/*
+@media (max-width: 900px)
+{
+    main
+    {
+        column-count: 1;
+    }
+}*/
