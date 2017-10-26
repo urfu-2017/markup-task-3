@@ -1,0 +1,144 @@
+html
+{
+    font-family: 'myFont', Times, serif;
+    font-size: 14px;
+    background-color: wheat;
+}
+
+@font-face
+{
+    font-family: myFont;
+    src: url(10240.otf);
+    src: url(10240.ttf) format('truetype'), url(10240.woff) format('woff');
+}
+
+header
+{
+    position: relative;
+}
+
+h1
+{
+    font-size: 100px;
+    margin: 40px 0;
+}
+
+hr
+{
+    background-color: #000;
+    height: 3px;
+    border: none;
+}
+
+.price
+{
+    position: absolute;
+    width: 200px;
+    top: 93px;
+    left: 3%;
+
+}
+
+.copyrights
+{
+    position: absolute;
+    top: 93px;
+    left: -150px;
+}
+
+.center
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.right
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+.quote
+{
+
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    width: 250px;
+    color: red;
+    
+}
+
+.two-columns
+{
+    display: inline-block;
+    width: 600px;
+    column-count: 2;
+    column-width: 200px;
+    column-rule: 1px solid black;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-indent: 20px;
+
+}
+
+img
+{
+    column-span: all;
+    width: 600px;
+    height: 200px;
+    display: block;
+}
+
+.two-columns h2,
+.three-columns h2
+{
+    margin: 0;
+}
+
+.right-data
+{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.three-columns
+{
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    width: 600px;
+    column-count: 3;
+    column-width: 150px;
+    column-rule: 1px solid black;
+    margin-right: 20px;
+
+}
+
+.advert
+{
+    display: inline-block;
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+p::first-letter
+{
+    font-size: 20px;
+    border: 1px dashed blue;
+
+}
+
+div.advert p.bigLetters
+{
+    font-size: 20px;
+    margin: 0;
+}
