@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <header>
-            <h1>The Ural Times</h1>
-            <h6>Понедельник, 23 октября 2017г.</h6>
-        </header>
+    <header class='page'>
+        <h1>The Ural Times</h1>
+        <p><time>Понедельник,23 октября 2017г.</time></p>
+    </header>
+    <main class='page'>
         <label for="small">small</label>
         <input type="radio" name="size" id="small" value="small">
         <label for="medium">medium</label>
@@ -23,115 +24,113 @@
         <input type="checkbox" id="bold" value="bold">
         <label for="night_version">night version</label>
         <input type="checkbox" id="night_version" value="night_version">
-        <article class="page">
-            <section class="article">
-                <img class="poster" src="pictures/poster.jpg" alt="афиша Noize MC в Телеклубе 29 октября">
-                <h2>Noize MC ве&shy;зёт в осен&shy;ний тур аль&shy;бом «Царь го&shy;ры»</h2>
-                <p>Аль&shy;бом <span>«Царь Го&shy;ры»</span> дей&shy;стви&shy;тель&shy;но 
-                    стал од&shy;ним из са&shy;мых ожи&shy;да&shy;е&shy;мых
-                    ре&shy;ли&shy;зов го&shy;да: слу&shy;хи и до&shy;мыс&shy;лы от&shy;но
-                    &shy;си&shy;тель&shy;но ма&shy;те&shy;ри&shy;а&shy;ла
-                    на&shy;ча&shy;ли рас&shy;про&shy;стра&shy;нять&shy;ся фа&shy;на&shy;
-                    та&shy;ми в со&shy;ци&shy;аль&shy;ных
-                    се&shy;тях еще про&shy;шло&shy;год&shy;ним ле&shy;том. Ожи&shy;да&shy;ния
-                     оправ&shy;да&shy;лись спол&shy;на:
-                    в 2017 го&shy;ду аль&shy;бом «Царь го&shy;ры» стал <span>«Луч&shy;шим
-                    аль&shy;бо&shy;мом го&shy;да»</span> по ре&shy;зуль&shy;та&shy;там 
-                    на&shy;род&shy;но&shy;го го&shy;ло&shy;со&shy;ва&shy;ния
-                    глав&shy;но&shy;го рэп-ре&shy;сур&shy;са The Flow и по&shy;лу&shy;чил 
-                    ста&shy;тус пла&shy;ти&shy;но&shy;во&shy;го
-                    аль&shy;бо&shy;ма по ко&shy;ли&shy;че&shy;ству по&shy;ку&shy;пок на 
-                    элек&shy;трон&shy;ной вит&shy;ри&shy;не
-                    iTunes.
-                </p>
-                <img class="image" src="pictures/king.jpg" alt="lable for album 'Царь горы'">
-                <p>В аль&shy;бом «Царь Го&shy;ры» во&shy;шли 13 тре&shy;ков: это 
-                    сов&shy;мест&shy;ная ра&shy;бо&shy;та с пе&shy;ви&shy;цей
-                    Мо&shy;не&shy;точ&shy;кой «Чайл&shy;дф&shy;ри», став&shy;шей 
-                    глав&shy;ным бэн&shy;ге&shy;ром аль&shy;бо&shy;ма,
-                    «Граб&shy;ли» - по&shy;сле&shy;но&shy;во&shy;год&shy;ний хит, 
-                    взрос&shy;лая ис&shy;то&shy;рия о по&shy;те&shy;рян&shy;ном
-                    вре&shy;ме&shy;ни, «Лю&shy;би&shy;мый цвет» - «Луч&shy;ший трек 
-                    го&shy;да» по вер&shy;сии The Flow.</p>
-                <h2>Make Some Noize MC</h2>
-                <p>Гром&shy;кий бо&shy;е&shy;вик «Make Some Noize», 
-                    без ко&shy;то&shy;ро&shy;го уже ни&shy;как нель&shy;зя пред&shy;ста&shy;вить
-                    вы&shy;ступ&shy;ле&shy;ние груп&shy;пы, на&shy;ко&shy;нец-то 
-                    до&shy;ждал&shy;ся но&shy;мер&shy;но&shy;го
-                    аль&shy;бо&shy;ма, что&shy;бы за&shy;нять в его 
-                    трек&shy;ли&shy;сте пер&shy;вое ме&shy;сто. Ра&shy;нее
-                    опуб&shy;ли&shy;ко&shy;ван&shy;ная ви&shy;део&shy;ра&shy;бо&shy;та 
-                    «Пи&shy;тер&shy;ские кры&shy;ши» —
-                    ли&shy;ри&shy;че&shy;ский ак&shy;ком&shy;па&shy;не&shy;мент 
-                    осе&shy;ни – так&shy;же во&shy;шел в со&shy;став
-                    аль&shy;бо&shy;ма.
-                </p>
-                <img class="image" src="pictures/childfree.jpg" alt="lable for song 'Чайлдфри'">
-                <p>Весь ма&shy;те&shy;ри&shy;ал, во&shy;шед&shy;ший в ре&shy;лиз, 
-                    ре&shy;пе&shy;ти&shy;ро&shy;ва&shy;ли и ис&shy;пол&shy;ня&shy;ли
-                    толь&shy;ко на кон&shy;цер&shy;тах во вре&shy;мя про&shy;шло&shy;го 
-                    боль&shy;шо&shy;го ту&shy;ра, и те&shy;перь,
-                    ко&shy;гда у по&shy;клон&shy;ни&shy;ков бы&shy;ло до&shy;ста&shy;точ&shy;но 
-                    вре&shy;ме&shy;ни, что&shy;бы
-                    от&shy;слу&shy;шать его в сту&shy;дий&shy;ной вер&shy;сии, вы&shy;брать и 
-                    вы&shy;учить лю&shy;би&shy;мые
-                    пес&shy;ни с аль&shy;бо&shy;ма, фан-со&shy;об&shy;ще&shy;ство 
-                    го&shy;то&shy;во к при&shy;ез&shy;ду Noize
-                    MC в их род&shy;ной го&shy;род, что&shy;бы под&shy;пе&shy;вать 
-                    лю&shy;би&shy;мо&shy;му ар&shy;ти&shy;сту
-                    с пер&shy;вой до по&shy;след&shy;ней пес&shy;ни. Каж&shy;дый трек 
-                    име&shy;ет пер&shy;со&shy;наль&shy;ную
-                    ас&shy;со&shy;ци&shy;а&shy;цию Ной&shy;за с го&shy;ро&shy;да&shy;ми 
-                    и со&shy;бы&shy;ти&shy;я&shy;ми,
-                    про&shy;ис&shy;хо&shy;див&shy;ши&shy;ми во вре&shy;мя ту&shy;ра, 
-                    и пе&shy;ре&shy;да&shy;ет ча&shy;сти&shy;цу
-                    вос&shy;по&shy;ми&shy;на&shy;ний му&shy;зы&shy;кан&shy;та 
-                    пуб&shy;ли&shy;ке.</p>
-                <img class="image" src="pictures/rake.jpg" alt="lable for song 'Грабли'">
-                <p>По&shy;ми&shy;мо пе&shy;сен с аль&shy;бо&shy;ма «Царь го&shy;ры» 
-                    Noize MC обя&shy;за&shy;тель&shy;но вклю&shy;чит
-                    в про&shy;грам&shy;му каж&shy;до&shy;го кон&shy;цер&shy;та 
-                    ту&shy;ра 2017 свои глав&shy;ные <span>хи&shy;ты
-                    ну&shy;ле&shy;вых</span>: «Пес&shy;ня для ра&shy;дио», 
-                    «За за&shy;кры&shy;той две&shy;рью», «Все&shy;лен&shy;ная
-                    бес&shy;ко&shy;неч&shy;на?», «Танцi», «Устрой Де&shy;строй», 
-                    «Мое мо&shy;ре» - что из это&shy;го по&shy;па&shy;дет
-                    в трек&shy;лист мож&shy;но узнать, ку&shy;пив би&shy;лет, 
-                    при&shy;дя на кон&shy;церт и уви&shy;дев во&shy;очию.
-                    За об&shy;нов&shy;ле&shy;ни&shy;я&shy;ми гра&shy;фи&shy;ка 
-                    ту&shy;ра Noize MC мож&shy;но сле&shy;дить
-                    на офи&shy;ци&shy;аль&shy;ном сай&shy;те ар&shy;ти&shy;ста, 
-                    а так&shy;же в со&shy;об&shy;ще&shy;стве
-                    Noize MC в VK.</p>
-            </section>
-            <section class="quote">
-                <div class="quote_image">
-                    <img class="for_quote" src="pictures/noizemc.jpg" alt="Noize MC">
-                </div>
-                <div class="quote_text">
-                    <p>Noize MC об аль&shy;бо&shy;ме «Царь Го&shy;ры»:<br><q>Аль&shy;бом 
-                        «Царь го&shy;ры» за&shy;пи&shy;сы&shy;вал&shy;ся
-                        пря&shy;мо во вре&shy;мя ту&shy;ра по стра&shy;не – так что 
-                        в рам&shy;ках од&shy;но&shy;го тре&shy;ка
-                        мож&shy;но услы&shy;шать ги&shy;та&shy;ры, за&shy;пи&shy;сан&shy;ные 
-                        в То&shy;льят&shy;ти, бас из
-                        Ро&shy;сто&shy;ва-на-До&shy;ну, кла&shy;виш&shy;ные из 
-                        Орен&shy;бур&shy;га и ви&shy;нил, за&shy;пи&shy;лен&shy;ный
-                        в Че&shy;ля&shy;бин&shy;ске. Мы про&shy;шли путь от 
-                        Са&shy;ха&shy;ли&shy;на до Ка&shy;ли&shy;нин&shy;гра&shy;да,
-                        сыг&shy;ра&shy;ли бо&shy;лее 50 кон&shy;цер&shy;тов и с 
-                        гор&shy;до&shy;стью пред&shy;став&shy;ля&shy;ем
-                        вам ре&shy;зуль&shy;тат – ре&shy;лиз о том, как важ&shy;но 
-                        най&shy;ти си&shy;лы не свер&shy;нуть
-                        с вы&shy;бран&shy;но&shy;го кур&shy;са и по до&shy;ро&shy;ге 
-                        услы&shy;шать се&shy;бя, а не кри&shy;ки
-                        с обо&shy;чи&shy;ны</q></p>
-                </div>
-            </section>
+        <article>
+            <img class="poster" src="pictures/poster.jpg" alt="афиша Noize MC в Телеклубе 29 октября">
+            <h2>Noize MC ве&shy;зёт в осен&shy;ний тур аль&shy;бом «Царь го&shy;ры»</h2>
+            <p>Аль&shy;бом <span>«Царь Го&shy;ры»</span> дей&shy;стви&shy;тель&shy;но 
+                стал од&shy;ним из са&shy;мых ожи&shy;да&shy;е&shy;мых
+                ре&shy;ли&shy;зов го&shy;да: слу&shy;хи и до&shy;мыс&shy;лы от&shy;но
+                &shy;си&shy;тель&shy;но ма&shy;те&shy;ри&shy;а&shy;ла
+                на&shy;ча&shy;ли рас&shy;про&shy;стра&shy;нять&shy;ся фа&shy;на&shy;
+                та&shy;ми в со&shy;ци&shy;аль&shy;ных
+                се&shy;тях еще про&shy;шло&shy;год&shy;ним ле&shy;том. Ожи&shy;да&shy;ния
+                    оправ&shy;да&shy;лись спол&shy;на:
+                в 2017 го&shy;ду аль&shy;бом «Царь го&shy;ры» стал <span>«Луч&shy;шим
+                аль&shy;бо&shy;мом го&shy;да»</span> по ре&shy;зуль&shy;та&shy;там 
+                на&shy;род&shy;но&shy;го го&shy;ло&shy;со&shy;ва&shy;ния
+                глав&shy;но&shy;го рэп-ре&shy;сур&shy;са The Flow и по&shy;лу&shy;чил 
+                ста&shy;тус пла&shy;ти&shy;но&shy;во&shy;го
+                аль&shy;бо&shy;ма по ко&shy;ли&shy;че&shy;ству по&shy;ку&shy;пок на 
+                элек&shy;трон&shy;ной вит&shy;ри&shy;не
+                iTunes.
+            </p>
+            <img class="image" src="pictures/king.jpg" alt="lable for album 'Царь горы'">
+            <p>В аль&shy;бом «Царь Го&shy;ры» во&shy;шли 13 тре&shy;ков: это 
+                сов&shy;мест&shy;ная ра&shy;бо&shy;та с пе&shy;ви&shy;цей
+                Мо&shy;не&shy;точ&shy;кой «Чайл&shy;дф&shy;ри», став&shy;шей 
+                глав&shy;ным бэн&shy;ге&shy;ром аль&shy;бо&shy;ма,
+                «Граб&shy;ли» - по&shy;сле&shy;но&shy;во&shy;год&shy;ний хит, 
+                взрос&shy;лая ис&shy;то&shy;рия о по&shy;те&shy;рян&shy;ном
+                вре&shy;ме&shy;ни, «Лю&shy;би&shy;мый цвет» - «Луч&shy;ший трек 
+                го&shy;да» по вер&shy;сии The Flow.</p>
+            <h2>Make Some Noize MC</h2>
+            <p>Гром&shy;кий бо&shy;е&shy;вик «Make Some Noize», 
+                без ко&shy;то&shy;ро&shy;го уже ни&shy;как нель&shy;зя пред&shy;ста&shy;вить
+                вы&shy;ступ&shy;ле&shy;ние груп&shy;пы, на&shy;ко&shy;нец-то 
+                до&shy;ждал&shy;ся но&shy;мер&shy;но&shy;го
+                аль&shy;бо&shy;ма, что&shy;бы за&shy;нять в его 
+                трек&shy;ли&shy;сте пер&shy;вое ме&shy;сто. Ра&shy;нее
+                опуб&shy;ли&shy;ко&shy;ван&shy;ная ви&shy;део&shy;ра&shy;бо&shy;та 
+                «Пи&shy;тер&shy;ские кры&shy;ши» —
+                ли&shy;ри&shy;че&shy;ский ак&shy;ком&shy;па&shy;не&shy;мент 
+                осе&shy;ни – так&shy;же во&shy;шел в со&shy;став
+                аль&shy;бо&shy;ма.
+            </p>
+            <img class="image" src="pictures/childfree.jpg" alt="lable for song 'Чайлдфри'">
+            <p>Весь ма&shy;те&shy;ри&shy;ал, во&shy;шед&shy;ший в ре&shy;лиз, 
+                ре&shy;пе&shy;ти&shy;ро&shy;ва&shy;ли и ис&shy;пол&shy;ня&shy;ли
+                толь&shy;ко на кон&shy;цер&shy;тах во вре&shy;мя про&shy;шло&shy;го 
+                боль&shy;шо&shy;го ту&shy;ра, и те&shy;перь,
+                ко&shy;гда у по&shy;клон&shy;ни&shy;ков бы&shy;ло до&shy;ста&shy;точ&shy;но 
+                вре&shy;ме&shy;ни, что&shy;бы
+                от&shy;слу&shy;шать его в сту&shy;дий&shy;ной вер&shy;сии, вы&shy;брать и 
+                вы&shy;учить лю&shy;би&shy;мые
+                пес&shy;ни с аль&shy;бо&shy;ма, фан-со&shy;об&shy;ще&shy;ство 
+                го&shy;то&shy;во к при&shy;ез&shy;ду Noize
+                MC в их род&shy;ной го&shy;род, что&shy;бы под&shy;пе&shy;вать 
+                лю&shy;би&shy;мо&shy;му ар&shy;ти&shy;сту
+                с пер&shy;вой до по&shy;след&shy;ней пес&shy;ни. Каж&shy;дый трек 
+                име&shy;ет пер&shy;со&shy;наль&shy;ную
+                ас&shy;со&shy;ци&shy;а&shy;цию Ной&shy;за с го&shy;ро&shy;да&shy;ми 
+                и со&shy;бы&shy;ти&shy;я&shy;ми,
+                про&shy;ис&shy;хо&shy;див&shy;ши&shy;ми во вре&shy;мя ту&shy;ра, 
+                и пе&shy;ре&shy;да&shy;ет ча&shy;сти&shy;цу
+                вос&shy;по&shy;ми&shy;на&shy;ний му&shy;зы&shy;кан&shy;та 
+                пуб&shy;ли&shy;ке.</p>
+            <img class="image" src="pictures/rake.jpg" alt="lable for song 'Грабли'">
+            <p>По&shy;ми&shy;мо пе&shy;сен с аль&shy;бо&shy;ма «Царь го&shy;ры» 
+                Noize MC обя&shy;за&shy;тель&shy;но вклю&shy;чит
+                в про&shy;грам&shy;му каж&shy;до&shy;го кон&shy;цер&shy;та 
+                ту&shy;ра 2017 свои глав&shy;ные <span>хи&shy;ты
+                ну&shy;ле&shy;вых</span>: «Пес&shy;ня для ра&shy;дио», 
+                «За за&shy;кры&shy;той две&shy;рью», «Все&shy;лен&shy;ная
+                бес&shy;ко&shy;неч&shy;на?», «Танцi», «Устрой Де&shy;строй», 
+                «Мое мо&shy;ре» - что из это&shy;го по&shy;па&shy;дет
+                в трек&shy;лист мож&shy;но узнать, ку&shy;пив би&shy;лет, 
+                при&shy;дя на кон&shy;церт и уви&shy;дев во&shy;очию.
+                За об&shy;нов&shy;ле&shy;ни&shy;я&shy;ми гра&shy;фи&shy;ка 
+                ту&shy;ра Noize MC мож&shy;но сле&shy;дить
+                на офи&shy;ци&shy;аль&shy;ном сай&shy;те ар&shy;ти&shy;ста, 
+                а так&shy;же в со&shy;об&shy;ще&shy;стве
+                Noize MC в VK.</p>
+            <figure>
+                <figcaption>Концерт в Казани</figcaption>
+                <img class="image" src="pictures/noizemc.jpg" alt="Noize MC">
+            </figure>
+            <blockquote>
+                <p>«Аль&shy;бом 
+                    «Царь го&shy;ры» за&shy;пи&shy;сы&shy;вал&shy;ся
+                    пря&shy;мо во вре&shy;мя ту&shy;ра по стра&shy;не – так что 
+                    в рам&shy;ках од&shy;но&shy;го тре&shy;ка
+                    мож&shy;но услы&shy;шать ги&shy;та&shy;ры, за&shy;пи&shy;сан&shy;ные 
+                    в То&shy;льят&shy;ти, бас из
+                    Ро&shy;сто&shy;ва-на-До&shy;ну, кла&shy;виш&shy;ные из 
+                    Орен&shy;бур&shy;га и ви&shy;нил, за&shy;пи&shy;лен&shy;ный
+                    в Че&shy;ля&shy;бин&shy;ске. Мы про&shy;шли путь от 
+                    Са&shy;ха&shy;ли&shy;на до Ка&shy;ли&shy;нин&shy;гра&shy;да,
+                    сыг&shy;ра&shy;ли бо&shy;лее 50 кон&shy;цер&shy;тов и с 
+                    гор&shy;до&shy;стью пред&shy;став&shy;ля&shy;ем
+                    вам ре&shy;зуль&shy;тат – ре&shy;лиз о том, как важ&shy;но 
+                    най&shy;ти си&shy;лы не свер&shy;нуть
+                    с вы&shy;бран&shy;но&shy;го кур&shy;са и по до&shy;ро&shy;ге 
+                    услы&shy;шать се&shy;бя, а не кри&shy;ки
+                    с обо&shy;чи&shy;ны»</p>
+                <div class='vertical_text'>Noize MC</div>
+            </blockquote>
         </article>
-        <footer>
-                © The Urals Time, Тургенева, 4, 8 (343) 777-77-77
-        </footer>
     </main>
+    <footer class='page'>
+            © The Urals Time, Тургенева, 4, 8 (343) 777-77-77
+    </footer>
 </body>
 </html>

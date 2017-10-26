@@ -1,66 +1,49 @@
 body
 {
-    width: auto;
     margin: 0;
 }
 
-main > p
+.page
 {
-    font-size: 15px;
-    padding-top: 15px;
-    padding-right: 10px;
-    margin: 0;
-    text-align: right;
-}
-
-main
-{
-    /* rgb(211, 178, 140); */
     background: url(pictures/background.jpg);
-    width: 70%;
-    min-height: 100%;
-    margin: auto;
-    padding: 3px;
+    width: 80%;
+    margin: 5px auto;
     border: 1px solid #000;
-}
-
-hr
-{
-    margin: 2px;
-    color: #000;
+    text-indent: 15px;
+    text-align: justify;
+    font: 15px 'River Avenue', Times, serif;
 }
 
 h1
 {
-    text-align: center;
-    font: 60px Old English Text MT, Franklin Gothic Heavy, fantasy;
-    font-weight: 800;
-    letter-spacing: 7px;
     margin: 10px;
+    text-align: center;
+    letter-spacing: 7px;
+    font: 800 60px Old English Text MT, Franklin Gothic Heavy, fantasy;
 }
 
-h6
+.page > p
 {
-    text-align: right;
-    text-transform: uppercase;
-    font: 12px Times New Roman, serif;
-    font-weight: 800;
-    font-variant: small-caps;
-    letter-spacing: 2px;
     margin: 0;
     border: 5px double #000;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 2px;
+    font: 800 15px small-caps Times New Roman, serif;
 }
 
-.article
+article
 {
     column-count: 3;
-    width: auto;
-    border: 1px solid #000;
 }
 
-section
+h2
 {
-    margin: 10px 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font: oblique 900 2rem small-caps Fenwick, Times, serif;
 }
 
 .poster
@@ -68,20 +51,8 @@ section
     display: block;
     width: 95%;
     margin: auto;
-    column-span: all;
     margin-bottom: 10px;
-}
-
-h2
-{
-    text-align: center;
-    text-transform: uppercase;
-    font: 30px Fenwick;
-    font-weight: 900;
-    font-style: oblique;
-    font-variant: small-caps;
-    letter-spacing: 2px;
-    margin: 0;
+    column-span: all;
 }
 
 .image
@@ -91,70 +62,48 @@ h2
 
 span
 {
-    font-size: 25px;
     font-style: italic;
 }
 
-p
+article > p:first-of-type::first-letter
 {
-    text-indent: 15px;
-    margin: 1px 0;
-    font: 13px 'River Avenue', Times, serif;
-    text-align: justify;
+    font: 25px Franklin Gothic Heavy, fantasy;
 }
 
-.article > p:first-of-type::first-letter
-{
-    font: 30px  Franklin Gothic Heavy, fantasy;
-}
-
-.article > p:nth-of-type(2n+1)
+article > p:nth-of-type(2n+1)
 {
     padding: 3px;
     border: 3px double #000;
 }
 
-.quote_text > p
+figure
 {
+    margin: 0;
+    text-indent: 0;
+}
+
+figcaption
+{
+    text-align: center;
+    font: 20px 'Gabriela', serif;
+}
+
+blockquote
+{
+    margin: 0;
     border: 3px dashed #000;
-    text-align: right;
     padding: 3px;
-    font-size: 16px;
+    text-align: right;
     font-style: italic;
 }
 
-.quote_text > p::first-line
-{
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.quote
-{
-    position: relative;
-    overflow: auto;
-    min-height: 200px;
-}
-
-.quote_image
-{
+.vertical_text {
     display: block;
-    width: 50%;
-    height: 80%;
-    margin: 0;
-    float: left;
-}
-
-.for_quote
-{
-    width: 100%;
-}
-
-.quote_text
-{
-    position: absolute;
-    left: 51%;
-    height: 80%;
+    word-wrap: break-word;
+    width: 1px;
+    text-transform: uppercase;
+    text-indent: 0;
+    font: 20px 'Gabriela', serif;
 }
 
 footer
@@ -164,33 +113,34 @@ footer
     text-align: center;
 }
 
-input[value='italic']:checked ~ .page :nth-child(n)
+input[value='italic']:checked ~ article
 {
     font-style: italic;
 }
 
-input[value='bold']:checked ~ .page :nth-child(n)
+input[value='bold']:checked ~ article
 {
     font-weight: 900;
 }
 
-input[value='night_version']:checked ~ .page :nth-child(n)
+input[value='night_version']:checked ~ article
 {
     color: #fff;
     background: #000;
+    border-color: #fff;
 }
 
-input[value='small']:checked ~ .page :nth-child(n)
+input[value='small']:checked ~ article
 {
-    font-size: 10px;
+    font-size: 50%;
 }
 
-input[value='medium']:checked ~ .page :nth-child(n)
+input[value='medium']:checked ~ article
 {
-    font-size: 15px;
+    font-size: 100%;
 }
 
-input[value='large']:checked ~ .page :nth-child(n)
+input[value='large']:checked ~ article
 {
-    font-size: 20px;
+    font-size: 200%;
 }
