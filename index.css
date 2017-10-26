@@ -55,7 +55,6 @@ figure img
     letter-spacing: .2em;
     margin: 10px;
     padding: 3px;
-    font-family: 'Abril Fatface';
     break-inside: avoid-column;
 }
 
@@ -76,27 +75,32 @@ article p:first-of-type::first-letter
     font-weight: bold;
 }
 
-h1
+.font-abril-fatface
+{
+    font-family: 'Abril Fatface';
+}
+
+.font-clip-hanger
 {
     font-family: 'HFF Clip Hanger';
 }
 
-article:nth-child(1) > h3
+.font-bobo-dylan
 {
     font-family: 'Bobo Dylan';
 }
 
-article:nth-child(2) > h3
+.font-oswald
 {
     font-family: 'Oswald';
 }
 
-article:nth-child(3) > h3
+.font-fjalla-one
 {
     font-family: 'Fjalla One';
 }
 
-article:nth-child(4) > h3
+.font-fascinate-inline
 {
     font-family: 'Fascinate Inline';
 }
