@@ -81,3 +81,8 @@ aside > div
     margin: 12px;
     line-height: 12px;
 }
+
+img
+{
+    width: 100%;
+}
