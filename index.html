@@ -7,25 +7,28 @@
 </head>
 <body>
     <input type="radio" name="height" id="low">
-    <label for="low">Маленький шрифт</label>
+    <label for="low">Маленькие буквы</label>
     <input type="radio" name="height" id="middle" checked>
-    <label for="middle">Средний шрифт</label>
+    <label for="middle">Средние буквы</label>
     <input type="radio" name="height" id="high">
-    <label for="high">Большой шрифт</label>
+    <label for="high">Большие буквы</label>
 
-    <input type="radio" name="font" id="gilrou" checked>
-    <label for="gilrou">Шрифт Gilrou</label>
+    <input type="radio" name="font" id="gilrou">
+    <label for="gilrou">Gilrou широкий</label>
     <input type="radio" name="font" id="arial">
-    <label for="arial">Шрифт Arial</label>
+    <label for="arial">Arial обыкновенный</label>
+    <input type="radio" name="font" id="cellblock" checked>
+    <label for="cellblock">Cellblock инопланетный</label>
     
-    <input type="radio" name="theme" id="light" checked>
-    <label for="light">Светлая тема</label>
-    <input type="radio" name="theme" id="dark">
-    <label for="dark">Тёмная тема</label>
+    <input type="radio" name="theme" id="light">
+    <label for="light">Для людей</label>
+    <input type="radio" name="theme" id="dark" checked>
+    <label for="dark">Для инопланетян</label>
     <div class="main">
         <header>
-            <h1>НЛО - СКРЫТАЯ ПРАВДА</h1>
-            <hr>
+            <div class="title">
+                <h1>НЛО - СКРЫТАЯ ПРАВДА</h1>
+            </div>
             <div class="inline">
                 <div>
                     <h3>
@@ -34,9 +37,7 @@
                         О
                     </h3>
                 </div>
-                <div class="center ufo">
-                    <img src="UFO.png" alt="">
-                </div>
+                <img class="ufo" src="UFO.png" alt="">
                 <div>
                     <h3>
                         Н<br>
@@ -45,12 +46,11 @@
                     </h3>
                 </div>
             </div>
-            <hr class="half">
         </header>
         <main class="main-columns">
-            <article>
+            <article class="line">
                 <h2>Приз&shy;нать факт о&shy;ши&shy;боч&shy;ным и вред&shy;ным</h2>
-                <p class="first-letter">
+                <p>
                     &emsp;Глу&shy;бо&shy;кой но&shy;чью са&shy;мо&shy;лет Ту-134А э&shy;стон&shy;ско&shy;го 
                     у&shy;пра&shy;вле&shy;ни&shy;я граж&shy;дан&shy;ской а&shy;ви&shy;а&shy;ции,
                     пи&shy;ло&shy;ти&shy;ру&shy;е&shy;мый э&shy;ки&shy;па&shy;жем ко&shy;ман&shy;ди&shy;ра 
@@ -83,11 +83,10 @@
                     &emsp;Мы пы&shy;та&shy;лись о&shy;тыс&shy;кать ге&shy;ро&shy;ев 
                     пу&shy;бли&shy;ка&shy;ци&shy;и и тех, кто был с ни&shy;ми свя&shy;зан.
                 </p>
-                <hr>
             </article>
-            <article>
+            <article class="line">
                 <h2>На&shy;род&shy;но&shy;е сред&shy;ство от стрес&shy;са</h2>
-                <p class="first-letter">
+                <p>
                     &emsp;Сле&shy;ды э&shy;ки&shy;па&shy;жа мы о&shy;тыс&shy;ка&shy;ли в быв&shy;шей 
                     со&shy;вет&shy;ской, а те&shy;перь не&shy;за&shy;ви&shy;си&shy;мой 
                     Эс&shy;то&shy;ни&shy;и. 
@@ -97,7 +96,7 @@
                     судь&shy;ба э&shy;ки&shy;па&shy;жа по&shy;сле то&shy;го 
                     у&shy;ди&shy;ви&shy;тель&shy;но&shy;го по&shy;ле&shy;та.
                 </p>
-                <p>
+                <p class="italic">
                     &emsp;– Э&shy;тот слу&shy;чай ед&shy;ва не пос&shy;та&shy;вил крест на 
                     ка&shy;рье&shy;ре, – от&shy;ве&shy;тил Ген&shy;на&shy;дий И&shy;ва&shy;но&shy;вич, 
                     – у нас в от&shy;ря&shy;де был за&shy;кры&shy;тый раз&shy;бор по&shy;ле&shy;та, 
@@ -124,28 +123,22 @@
                     о&shy;бъек&shy;та. Мо&shy;жет, при&shy;шель&shy;цы э&shy;то 
                     ис&shy;тол&shy;ко&shy;ва&shy;ли как сиг&shy;нал о&shy;пас&shy;нос&shy;ти?
                 </p>
-                <hr>
             </article>
             <article class="two-columns">
                 <h2>От&shy;дел вне&shy;зем&shy;ных ци&shy;ви&shy;ли&shy;за&shy;ций</h2>
-                <p class="first-letter">
+                <p>
                     &emsp;Э&shy;ки&shy;паж гру&shy;зин&shy;ско&shy;го са&shy;мо&shy;ле&shy;та нам 
-                    о&shy;тыс&shy;кать не у&shy;да&shy;лось. Хо&shy;те&shy;лось бы 
-                    на&shy;де&shy;ять&shy;ся на луч&shy;ше&shy;е. Дос&shy;то&shy;вер&shy;но 
+                    о&shy;тыс&shy;кать не у&shy;да&shy;лось. Дос&shy;то&shy;вер&shy;но 
                     из&shy;вест&shy;но, что по мень&shy;шей ме&shy;ре три чле&shy;на э&shy;ки&shy;па&shy;жа 
                     пос&shy;ле встре&shy;чи с НЛО тя&shy;же&shy;ло за&shy;бо&shy;ле&shy;ли. 
-                    Ко&shy;ман&shy;ди&shy;ру В. Го&shy;ци&shy;рид&shy;зе был пос&shy;тав&shy;лен 
+                    Ко&shy;ман&shy;ди&shy;ру был пос&shy;тав&shy;лен 
                     ди&shy;аг&shy;ноз «по&shy;ра&shy;же&shy;ни&shy;е кост&shy;но&shy;го моз&shy;га», он был 
                     спи&shy;сан на зем&shy;лю и че&shy;рез год скон&shy;чал&shy;ся. 
                     Борт&shy;про&shy;вод&shy;ни&shy;ца в ре&shy;зуль&shy;та&shy;те 
                     об&shy;лу&shy;че&shy;ни&shy;я по&shy;лу&shy;чи&shy;ла тя&shy;же&shy;ло&shy;е 
                     кож&shy;но&shy;е за&shy;бо&shy;ле&shy;ва&shy;ни&shy;е. Вто&shy;рой пи&shy;лот Ю&shy;рий 
                     Ка&shy;бач&shy;ни&shy;ков так&shy;же вско&shy;ре был от&shy;стра&shy;нен от 
-                    по&shy;ле&shy;тов. Но вы&shy;нуж&shy;ден был дол&shy;го о&shy;би&shy;вать 
-                    по&shy;ро&shy;ги ме&shy;ди&shy;цин&shy;ских уч&shy;реж&shy;де&shy;ний, что&shy;бы 
-                    до&shy;ка&shy;зать, что он по&shy;те&shy;рял здо&shy;ро&shy;вье при ис&shy;
-                    пол&shy;не&shy;ни&shy;и про&shy;фес&shy;си&shy;о&shy;наль&shy;ных 
-                    о&shy;бяз&shy;ан&shy;нос&shy;тей.
+                    по&shy;ле&shy;тов.
                 </p>
                 <p class="center caption">
                     <img src="ufo-attack.jpg" alt="" class="text-img">
@@ -156,13 +149,12 @@
                     фев&shy;ра&shy;ле 1985-го лич&shy;но об&shy;сле&shy;до&shy;вал вто&shy;ро&shy;го 
                     пи&shy;ло&shy;та гру&shy;зин&shy;ского Ту-134. Вот что он нам рас&shy;ска&shy;зал:
                 </p>
-                <p>
-                    &emsp;– Я тог&shy;да про&shy;хо&shy;дил ор&shy;ди&shy;на&shy;ту&shy;ру в 
-                    по&shy;лик&shy;ли&shy;ни&shy;ке граж&shy;дан&shy;ской а&shy;ви&shy;а&shy;ци&shy;и. В 
-                    на&shy;шем от&shy;де&shy;ле&shy;ни&shy;и экс&shy;пер&shy;ти&shy;зы лет&shy;но&shy;го 
-                    сос&shy;та&shy;ва Ка&shy;бач&shy;ни&shy;ков про&shy;вел две не&shy;де&shy;ли. Он 
-                    рас&shy;ска&shy;зал, что э&shy;ки&shy;паж по&shy;лу&shy;чил ко&shy;ман&shy;ду 
-                    дис&shy;пет&shy;че&shy;ра ле&shy;те&shy;ть в сто&shy;ро&shy;ну НЛО, и сра&shy;зу 
+                <p class="italic">
+                    &emsp;- В на&shy;шем от&shy;де&shy;ле&shy;ни&shy;и экс&shy;пер&shy;ти&shy;зы 
+                    лет&shy;но&shy;го сос&shy;та&shy;ва Ка&shy;бач&shy;ни&shy;ков про&shy;вел две 
+                    не&shy;де&shy;ли. Он рас&shy;ска&shy;зал, что э&shy;ки&shy;паж 
+                    по&shy;лу&shy;чил ко&shy;ман&shy;ду дис&shy;пет&shy;че&shy;ра 
+                    ле&shy;те&shy;ть в сто&shy;ро&shy;ну НЛО, и сра&shy;зу 
                     пос&shy;ле раз&shy;во&shy;ро&shy;та са&shy;мо&shy;ле&shy;та о&shy;бъект 
                     нап&shy;ра&shy;вил на них ос&shy;ле&shy;пи&shy;тель&shy;ный луч.
                 </p>
@@ -185,6 +177,12 @@
                     яв&shy;ля&shy;ет&shy;ся ис&shy;точ&shy;ни&shy;ком 
                     и&shy;о&shy;ни&shy;зи&shy;ру&shy;ющ&shy;ег&shy;о из&shy;лу&shy;че&shy;ни&shy;я.
                 </p>
+            </article>
+            <p class="center caption title">
+                <img src="aliens.jpg" alt="" class="text-img">
+                Они наблюдают за нами
+            </p>
+            <div class="two-columns">
                 <p>
                     &emsp;Бла&shy;го&shy;да&shy;ря зна&shy;ком&shy;ствам в А&shy;ка&shy;де&shy;ми&shy;и 
                     на&shy;ук Ка&shy;бач&shy;ни&shy;ков про&shy;бил&shy;ся в выс&shy;ши&shy;е 
@@ -196,7 +194,7 @@
                     ис&shy;пол&shy;не&shy;ни&shy;и слу&shy;жеб&shy;ных о&shy;бяз&shy;ан&shy;нос&shy;тей.
                 </p>
                 <p>
-                    &emsp;«По&shy;лет вы&shy;пол&shy;нял&shy;ся на за&shy;дан&shy;ном э&shy;ше&shy;ло&shy;не 
+                    &emsp;По&shy;лет вы&shy;пол&shy;нял&shy;ся на за&shy;дан&shy;ном э&shy;ше&shy;ло&shy;не 
                     10.100 м, об&shy;лач&shy;ность от&shy;сут&shy;ство&shy;ва&shy;ла. По&shy;сле 
                     вхо&shy;да в зо&shy;ну УВД Мин&shy;ско&shy;го РЦ при 
                     про&shy;слу&shy;ши&shy;ва&shy;ни&shy;и 
@@ -234,16 +232,15 @@
                     о&shy;бъек&shy;том, был на у&shy;да&shy;ле&shy;ни&shy;и 25–35 ки&shy;ло&shy;мет&shy;ров 
                     – о&shy;ко&shy;ло го&shy;ро&shy;да Бо&shy;ри&shy;со&shy;ва.
                 </p>
-            </article>
-            <p class="center caption">
-                <img src="aliens.jpg" alt="" class="text-img">
-                Они наблюдают за нами
+            </div>
+            <p class="center title weight white">
+                Э&shy;то не бай&shy;ки, а по&shy;вод для раз&shy;мыш&shy;ле&shy;ний
             </p>
         </main>
-        <footer class="center caption">
-            <hr class="half">
-            Э&shy;то не бай&shy;ки, а по&shy;вод для раз&shy;мыш&shy;ле&shy;ний
-            <hr>
+        <footer class="caption">
+            <div class="title">
+                <p class="center weight">Выпуск от 17 января 1991 г.</p>
+            </div>
         </footer>
     </div>
 </body>

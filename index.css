@@ -13,7 +13,7 @@ h2
 
 h2
 {
-    border: 3px double #000;
+    border: 3px dashed #000;
 }
 
 h3
@@ -22,68 +22,95 @@ h3
     font-size: 150%;
 }
 
-hr
-{
-    height: 1px;
-    border-color: #000;
-}
-
 p
 {
     text-align: justify;
 }
 
-.inline > div
+.title
 {
+    text-align: center;
+    overflow: hidden;
+}
+
+.title::before,
+.title::after,
+.inline::after
+{
+    width: 100%;
+    content: '';
+    vertical-align: middle;
     display: inline-block;
 }
 
-.inline > div:first-child,
-.inline > div:last-child
+.title::before
 {
-    width: 10%;
-    float: left;
+    border-bottom: 4px double #000;
 }
 
-.inline > div:first-child
+.title::after,
+div.inline::after
 {
-    text-align: right;
+    border-top: 4px double #000;
 }
 
-.inline > div:last-child
+.line::after
 {
-    text-align: left;
-}
-
-.inline > div:nth-child(2)
-{
-    float: left;
+    width: 100%;
+    content: '';
+    display: inline-block;
+    border-top: 2px solid #000;
 }
 
 .ufo
 {
-    width: 80%;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.inline > div:first-child
+{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.inline > div:last-child
+{
+    width: 30%;
+    float: right;
+    text-align: center;
 }
 
 .main-columns
 {
-    margin: 0 5px;
+    margin: 0 auto;
     column-count: 3;
-    column-rule: 4px double #000;
+    column-rule: 3px solid #000;
 }
 
 .two-columns
 {
-    margin: 0 5px;
+    margin: 0 auto;
     column-count: 2;
-    column-rule: 4px double #000;
+    column-rule: 2px solid #000;
 }
 
 .text-img
 {
     width: 100%;
-    margin-right: 100px;
-    border: 3px double #000;
+    margin: 0 auto;
+    border: 3px dotted #000;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.weight
+{
+    font-weight: bold;
 }
 
 .caption
@@ -94,16 +121,16 @@ p
 
 .main
 {
-    background: #e7bc88 url('background.jpg');
+    background: #d1bca5 url('background.jpg');
     background-size: 100%;
     border: 4px double #000;
     margin-top: 25px;
 }
 
-.first-letter::first-letter
+main p:first-letter
 {
     font-weight: bold;
-    font-size: 200%;
+    font-size: 175%;
     font-family: 'Pirou Cyrillic';
 }
 
@@ -122,28 +149,34 @@ input
     display: none;
 }
 
+input[id='low'] + label
+{
+    margin-left: 10px;
+}
+
 input[id='gilrou'] + label
 {
-    margin-left: 7%;
+    margin-left: 50px;
 }
 
 input[id='light'] + label
 {
-    margin-left: 7%;
+    margin-left: 50px;
 }
 
 label
 {
-    background: #e7bc88;
+    background: #eee;
     color: #000;
     padding: 5px;
-    border: 1px solid #000;
+    border: 4px double #000;
+    border-radius: 10px;
 }
 
 input:checked + label
 {
     background: #000;
-    color: #e7bc88;
+    color: #eee;
 }
 
 input[id='low']:checked ~ .main
@@ -161,29 +194,68 @@ input[id='arial']:checked ~ .main
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input[id='cellblock']:checked ~ div h1,
+input[id='cellblock']:checked ~ div h2,
+input[id='cellblock']:checked ~ div h3,
+input[id='cellblock']:checked ~ div main p:first-letter,
+input[id='cellblock']:checked ~ div
+{
+    font-family: 'Cellblock-NBP';
+}
+
+input[id='cellblock']:checked ~ div h1
+{
+    font-size: 400%;
+}
+
+input[id='cellblock']:checked ~ div h2
+{
+    font-size: 200%;
+}
+
+input[id='cellblock']:checked ~ div h3
+{
+    font-size: 200%;
+}
+
 input[id='dark']:checked ~ .main
 {
     background: #222 url('background-black.jpg');
     background-size: 100%;
-    color: #e7bc88;
-    border-color: #e7bc88;
+    color: #58c465;
+    border-color: #fff;
 }
 
-input[id='dark']:checked ~ div hr
+input[id='dark']:checked ~ div main p::first-letter,
+input[id='dark']:checked ~ div h3,
+input[id='dark']:checked ~ div .caption,
+input[id='dark']:checked ~ div .white
 {
-    border-color: #e7bc88;
+    color: #fff;
 }
 
 input[id='dark']:checked ~ div .main-columns,
 input[id='dark']:checked ~ div .two-columns
 {
-    column-rule-color: #e7bc88;
+    column-rule-color: #fff;
 }
 
 input[id='dark']:checked ~ div p img,
 input[id='dark']:checked ~ div h2
 {
-    border-color: #e7bc88;
+    border-color: #fff;
+}
+
+input[id='dark']:checked ~ div .inline::after,
+input[id='dark']:checked ~ div .title::after,
+input[id='dark']:checked ~ div .line::after
+{
+    border-top: 4px double #fff;
+}
+
+input[id='dark']:checked ~ div .title::before
+{
+    border-bottom: 4px double #fff;
 }
 
 @font-face
@@ -196,4 +268,10 @@ input[id='dark']:checked ~ div h2
 {
     font-family: 'Gilrou-ExtraBold';
     src: url('Gilrou-ExtraBold.otf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: 'Cellblock-NBP';
+    src: url('Cellblock-NBP.otf') format('truetype');
 }
