@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|IM+Fell+English|Jacques+Francois+Shadow');
+
+html
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #ffdab9;
+
+}
+
+input[id='small']:checked ~ main section
+{
+    font-size: .8em;
+}
+
+input[id='small']:checked ~ main h3
+{
+    font-size: .8em;
+}
+
+input[id='big']:checked ~ main section
+{
+    font-size: 1.2em;
+}
+
+input[id='big']:checked ~ main h3
+{
+    font-size: 1.2em;
+}
+
+input[id='sans']:checked ~ main h3
+{
+    font-family: sans-serif;
+}
+
+input[id='sans']:checked ~ main section
+{
+    font-family: sans-serif;
+}
+
+input[id='dark']:checked ~ main
+{
+    background-image: url('black_old_paper.jpg');
+    color: white;
+}
+
+main,
+section
+{
+    font: 18px IM Fell English, sans-serif;
+    column-rule: 1px solid #000;
+}
+
+section
+{
+    column-count: 2;
+}
+
+main
+{
+    background-image: url('old_paper.jpg');
+    column-count: 3;
+}
+
+p:first-of-type::first-letter
+{
+    font: bold 1.5em fantasy;
+}
+
+hr
+{
+    column-span: all;
+}
+
+p
+{
+    padding: 0;
+    margin: 0;
+    text-indent: 5%;
+}
+
+.top_head,
+.head
+{
+    column-span: all;
+    text-align: center;
+}
+
+.top_head
+{
+    font: 100px Fascinate Inline, serif;
+}
+
+.head
+{
+    font: 30px Jacques Francois Shadow, sans-serif;
+}
+
+.war,
+.subway,
+.congress
+{
+    column-span: all;
+}
+
+.war img,
+.subway img,
+.congress img
+{
+    width: 100%;
+}
