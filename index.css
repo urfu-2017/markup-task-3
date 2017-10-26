@@ -1,20 +1,4 @@
-@font-face
-{
-    font-family: Old English Text;
-    src: url(OldEnglishText.ttf);
-}
-
-@font-face
-{
-    font-family: Bodoni Cameo Cyrillic;
-    src: url(BodoniCameoCyrillic.otf);
-}
-
-@font-face
-{
-    font-family: Trixie Pro Heavy;
-    src: url(TrixiePro-Heavy.otf);
-}
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|IM+Fell+English|Jacques+Francois+Shadow');
 
 html
 {
@@ -27,22 +11,22 @@ html
 
 input[id='small']:checked ~ main section
 {
-    font-size: 80%;
+    font-size: .8em;
 }
 
 input[id='small']:checked ~ main h3
 {
-    font-size: 79%;
+    font-size: .8em;
 }
 
 input[id='big']:checked ~ main section
 {
-    font-size: 120%;
+    font-size: 1.2em;
 }
 
 input[id='big']:checked ~ main h3
 {
-    font-size: 120%;
+    font-size: 1.2em;
 }
 
 input[id='sans']:checked ~ main h3
@@ -64,7 +48,7 @@ input[id='dark']:checked ~ main
 main,
 section
 {
-    font: 18px Trixie Pro Heavy, sans-serif;
+    font: 18px IM Fell English, sans-serif;
     column-rule: 1px solid #000;
 }
 
@@ -81,7 +65,7 @@ main
 
 p:first-of-type::first-letter
 {
-    font: bold 150% fantasy;
+    font: bold 1.5em fantasy;
 }
 
 hr
@@ -105,12 +89,12 @@ p
 
 .top_head
 {
-    font: 100px Old English Text, serif;
+    font: 100px Fascinate Inline, serif;
 }
 
 .head
 {
-    font: 30px Bodoni Cameo Cyrillic, sans-serif;
+    font: 30px Jacques Francois Shadow, sans-serif;
 }
 
 .war,
