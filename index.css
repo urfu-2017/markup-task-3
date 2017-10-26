@@ -1,29 +1,23 @@
-.main-header
+h1
 {
+    margin: 0 auto;
+    display: inline-block;
     font-size: 70px;
     font-family: 'Source Serif Pro', serif;
     font-weight: bold;
-    text-align: center;
-}
-
-html,
-body
-{
-    overflow-x: hidden;
 }
 
 main
 {
-    position: absolute;
-    width: 100%;
-    float: left;
+    columns: 3;
+    column-gap: 0;
+    column-rule: 1px solid #2c2c2c;
 }
 
-.hr
+.wide-separator
 {
     color: #000;
     height: 1px;
-    background-color: #000;
 }
 
 .date
@@ -31,13 +25,16 @@ main
     font-family: 'Marcellus SC', serif;
     text-align: center;
     text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    font-size: 13pt;
 }
 
 aside header
 {
     font-family: 'Source Serif Pro', serif;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 15pt;
     text-align: center;
 }
 
@@ -56,7 +53,7 @@ article
     columns: 2;
     column-gap: 10px;
     column-rule: 1px solid #2c2c2c;
-    width: auto;
+    width: 100%;
 }
 
 article p:first-of-type:first-letter
@@ -71,58 +68,51 @@ article p:first-of-type:first-letter
     font-family: 'Alegreya', serif;
     padding: 10px;
     border: 4px double #000;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    display: inline-block;
     text-align: center;
+    float: right;
 }
 
-.big-image
+.figure
 {
     text-align: center;
-    width: 99%;
-    margin-left: 5px;
+    width: 100%;
 }
 
-.under-big-image
+.header-under-fig
 {
     column-span: all;
 }
 
 .joke
 {
+    position: relative;
+    display: inline-block;
     font-family: 'Marcellus SC', serif;
     border: 4px dashed #c8c8c8;
-    width: 90%;
-    padding: 5px;
-    margin-top: 10px;
+    width: 95%;
+    padding: 2%;
+    margin-top: 3%;
 }
 
 section
 {
-    display: inline-block;
-    vertical-align: top;
-    width: 32%;
     padding: 0 .5%;
-}
-
-section + section
-{
-    border-left: solid #000 1px;
 }
 
 img
 {
     width: 100%;
-    filter: grayscale(100%);
 }
 
-.vertical-line
+body > header
 {
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: 1px;
-    background-color: #000;
-    border: none;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+aside p
+{
+    margin: 0;
 }
