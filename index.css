@@ -1,0 +1,147 @@
+body
+{
+    margin: 0;
+}
+
+.page
+{
+    background: url(pictures/background.jpg);
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #000;
+    text-indent: 15px;
+    text-align: justify;
+    font: 15px 'River Avenue', Times, serif;
+}
+
+h1
+{
+    margin: 10px;
+    text-align: center;
+    letter-spacing: 7px;
+    font: 800 60px Old English Text MT, Franklin Gothic Heavy, fantasy;
+}
+
+.page > p
+{
+    margin: 0;
+    border: 5px double #000;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 2px;
+    font: 800 15px small-caps Times New Roman, serif;
+}
+
+article
+{
+    column-count: 3;
+}
+
+h2
+{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font: oblique 900 2rem small-caps Fenwick, Times, serif;
+}
+
+.poster
+{
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    column-span: all;
+}
+
+.image
+{
+    width: 100%;
+}
+
+span
+{
+    font-style: italic;
+}
+
+article > p:first-of-type::first-letter
+{
+    font: 25px Franklin Gothic Heavy, fantasy;
+}
+
+article > p:nth-of-type(2n+1)
+{
+    padding: 3px;
+    border: 3px double #000;
+}
+
+figure
+{
+    margin: 0;
+    text-indent: 0;
+}
+
+figcaption
+{
+    text-align: center;
+    font: 20px 'Gabriela', serif;
+}
+
+blockquote
+{
+    margin: 0;
+    border: 3px dashed #000;
+    padding: 3px;
+    text-align: right;
+    font-style: italic;
+}
+
+.vertical_text
+{
+    display: block;
+    word-wrap: break-word;
+    width: 1px;
+    text-transform: uppercase;
+    text-indent: 0;
+    font: 20px 'Gabriela', serif;
+}
+
+footer
+{
+    height: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+input[value='italic']:checked ~ article
+{
+    font-style: italic;
+}
+
+input[value='bold']:checked ~ article
+{
+    font-weight: 900;
+}
+
+input[value='night_version']:checked ~ article
+{
+    color: #fff;
+    background: #000;
+    border-color: #fff;
+}
+
+input[value='small']:checked ~ article
+{
+    font-size: 50%;
+}
+
+input[value='medium']:checked ~ article
+{
+    font-size: 100%;
+}
+
+input[value='large']:checked ~ article
+{
+    font-size: 200%;
+}
