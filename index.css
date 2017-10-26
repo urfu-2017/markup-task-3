@@ -1,0 +1,198 @@
+body
+{
+    background-image: url(http://bgfons.com/upload/paper_texture331.jpg);
+    background-size: 100%;
+}
+
+header
+{
+    font-family: 'Old English Text MT', serif;
+    font-size: 100px;
+    font-weight: 400px;
+    text-align: center;
+    padding: 0 15% 0 0;
+}
+
+.late-edition
+{
+    text-align: justify;
+    font-size: 12px;
+    margin: -100px 0 40px 85%;
+    border: 1px solid #000;
+    font-family: Lucida, sans-serif;
+    padding: 3px;
+}
+
+.about-newspaper
+{
+    border-top: 1px solid #000;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid #000;
+}
+
+.small-text
+{
+    font-size: 10px;
+}
+
+.first-article
+{
+    column-count: 5;
+    font-size: 12px;
+    column-rule: 1px solid #000;
+    margin: 40px;
+}
+
+.second-article
+{
+    column-count: 6;
+    font-size: 12px;
+    word-wrap: normal;
+    column-rule: 1px solid #000;
+    margin: 40px;
+}
+
+.vertical-text
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.last-article
+{
+    column-count: 2;
+    font-size: 12px;
+    word-wrap: normal;
+    column-rule: 1px solid #000;
+    margin: 0 40px 40px;
+    float: left;
+    width: 40%;
+}
+
+.art
+{
+    column-count: 4;
+    font-size: 12px;
+    word-wrap: normal;
+    column-rule: 1px solid #000;
+    margin: 40px;
+}
+
+.img
+{
+    filter: grayscale(100%) brightness(1.5);
+    width: 100%;
+}
+
+.long-img
+{
+    filter: grayscale(100%) brightness(1.5);
+    width: 100%;
+    margin-left: 0;
+    column-span: all;
+}
+
+.new-h2
+{
+    column-span: all;
+}
+
+h2
+{
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.arvo
+{
+    font-family: Arvo, serif;
+}
+
+.bitter
+{
+    font-family: Bitter, serif;
+}
+
+.dosis
+{
+    font-family: Dosis, sans-serif;
+}
+
+.anton
+{
+    font-family: Anton, sans-serif;
+}
+
+.josef
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.work
+{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.libre
+{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.montserrat
+{
+    font-family: Montserrat, sans-serif;
+}
+
+.ral
+{
+    font-family: Raleway, sans-serif;
+}
+
+h3
+{
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.first-letter:first-letter
+{
+    font-size: 40px;
+}
+
+p
+{
+    text-indent: 1.5em;
+}
+
+.border
+{
+    border-right: 1px solid #000;
+}
+
+.long-h2
+{
+    column-span: all;
+    font-style: italic;
+    margin: 10px;
+}
+
+.quote
+{
+    border: 1px solid #000;
+    padding: 5px;
+    word-break: break-all;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.italic
+{
+    font-style: italic;
+}
