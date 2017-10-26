@@ -6,7 +6,7 @@ body
 
 header
 {
-    font-family: Old English Text MT, Times New Roman, serif;
+    font-family: 'Old English Text MT', serif;
     font-size: 100px;
     font-weight: 400px;
     text-align: center;
@@ -40,7 +40,6 @@ header
 {
     column-count: 5;
     font-size: 12px;
-    word-wrap: normal;
     column-rule: 1px solid #000;
     margin: 40px;
 }
@@ -52,6 +51,12 @@ header
     word-wrap: normal;
     column-rule: 1px solid #000;
     margin: 40px;
+}
+
+.vertical-text
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 .last-article
@@ -95,15 +100,59 @@ header
 
 h2
 {
-    font-family: Bold, serif;
     font-size: 30px;
     text-align: center;
     border-bottom: 1px solid #000;
 }
 
+.arvo
+{
+    font-family: Arvo, serif;
+}
+
+.bitter
+{
+    font-family: Bitter, serif;
+}
+
+.dosis
+{
+    font-family: Dosis, sans-serif;
+}
+
+.anton
+{
+    font-family: Anton, sans-serif;
+}
+
+.josef
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.work
+{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.libre
+{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.montserrat
+{
+    font-family: Montserrat, sans-serif;
+}
+
+.ral
+{
+    font-family: Raleway, sans-serif;
+}
+
 h3
 {
-    font-family: Helvetica, serif;
+    font-family: Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
     border-bottom: 1px solid #000;
@@ -124,7 +173,7 @@ p
     border-right: 1px solid #000;
 }
 
-.class
+.long-h2
 {
     column-span: all;
     font-style: italic;
