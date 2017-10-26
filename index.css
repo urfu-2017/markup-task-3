@@ -61,8 +61,8 @@ figure img
     letter-spacing: .2em;
     margin: 10px;
     padding: 3px;
+    page-break-inside: avoid;
     break-inside: avoid;
-    break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
 }
 
