@@ -1,3 +1,18 @@
+@font-face
+{
+    font-family: 'Scada';
+    src: local('Scada-Regular'), url('fonts/Scada-Regular.ttf')
+        format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Scada';
+    src: local('Scada-Bold'), url('fonts/Scada-Bold.ttf')
+        format('truetype');
+    font-weight: bold;
+}
+
 html 
 {
     font-size: 18px;
@@ -13,6 +28,9 @@ html
 article
 {
     padding: 1rem;
+    -webkit-column-count: 2;
+    -o-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
     break-inside: avoid;
     
@@ -24,46 +42,45 @@ article p::first-letter
     font-weight: bold;
 }
 
-.header 
+.newspaper > header 
 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.footer 
+.newspaper > footer  
 {
     text-align: center;
 }
 
-.body
+.newspaper > article 
 {
+    -webkit-column-count: 3;
+    -o-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
-    column-fill: auto;
 }
 
 .paper-title
 {
-    font-size: 5rem;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font: bold 5rem 'Oswald', sans-serif;
 }
 
 .paper-subtitle
 {
-    font-size: 3rem;
-    font-family: 'PT Serif', serif;
+    font: 3rem 'PT Serif', serif;
 }
 
-.body img
+.newspaper > article  img
 {
     width: 100%;
-    height: 320px;
+    height: auto;
     display: inline-block;
 }
 
 .column-head
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .column-head::first-letter
@@ -86,11 +103,15 @@ article p::first-letter
 
 .column-second .column-head
 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
 }
 
 .column-third .column-head
 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
 }
 
