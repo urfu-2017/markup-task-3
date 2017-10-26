@@ -24,6 +24,8 @@ section
     column-count: 4;
     column-rule: 1px dotted #ddd;
     column-fill: auto;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
 }
 
 figure
@@ -36,10 +38,10 @@ figure img
     width: 100%;
 }
 
-.firstLine
+.first-line
 {
-    border-bottom: 3px black double;
-    border-top: 3px black double;
+    border-bottom: 3px #000 double;
+    border-top: 3px #000 double;
     margin-bottom: 5px;
 }
 
@@ -50,7 +52,7 @@ figure img
     width: 1em;
     word-break: break-all;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #000;
     height: auto;
     letter-spacing: .2em;
     margin: 10px;
@@ -60,14 +62,14 @@ figure img
 
 section article:nth-child(2n) blockquote
 {
-    border-bottom: 1px black solid;
-    border-top: 1px black solid;
+    border-bottom: 1px #000 solid;
+    border-top: 1px #000 solid;
 }
 
 section article:nth-child(2n+1) blockquote
 {
-    border-bottom: 3px black double;
-    border-top: 3px black double;
+    border-bottom: 3px #000 double;
+    border-top: 3px #000 double;
 }
 
 article p:first-of-type::first-letter
