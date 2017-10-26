@@ -26,6 +26,10 @@ section
     column-fill: auto;
     -webkit-column-count: 4;
     -moz-column-count: 4;
+    -webkit-column-fill: auto;
+    -moz-column-fill: balance;
+    -webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
 }
 
 figure
@@ -49,7 +53,7 @@ figure img
 {
     display: inline-block;
     float: left;
-    width: 1em;
+    width: .85em;
     word-break: break-all;
     border-radius: 5px;
     border: 1px solid #000;
@@ -57,7 +61,9 @@ figure img
     letter-spacing: .2em;
     margin: 10px;
     padding: 3px;
+    break-inside: avoid;
     break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
 }
 
 section article:nth-child(2n) blockquote
