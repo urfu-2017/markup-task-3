@@ -7,25 +7,31 @@
     </head>
     <body>
         Настройка:<br>
-        Размер шрифта:
-        <input name="fontsize" type="radio" value="small">Для взрослых людей
-        <input name="fontsize" type="radio" value="big">Для их родителей<br>
-        Начертание шрифта: 
-        <input name="fonttype" type="radio" value="normal">Не Comic Sans
-        <input name="fonttype" type="radio" value="disgusting">Comic Sans<br>
-        Цветовая схема:
-        <input name="colorcheme" type="radio" value="day">Светлая сторона
-        <input name="colorcheme" type="radio" value="night">Тёмная сторона
+        Размер шрифта:<br>
+        <label for="smallFont">Для взрослых людей</label>
+        <input name="fontsize" type="radio" id="smallFont" value="small">
+        <label for="bigFont">Для их родителей</label>
+        <input name="fontsize" type="radio" value="big" id="bigFont" checked><br>
+        Начертание шрифта:<br>
+        <label for="disgustingFont">Comic Sans</label>
+        <input name="fonttype" type="radio" value="disgusting" id="disgustingFont">
+        <label for="normalFont">Не Comic Sans</label>
+        <input name="fonttype" type="radio" value="normal" id="normalFont" checked><br>
+        Цветовая схема:<br>
+        <label for="darkSide">Тёмная сторона</label>
+        <input name="colorcheme" type="radio" value="night" id="darkSide">
+        <label for="lightSide">Светлая сторона</label>
+        <input name="colorcheme" type="radio" value="day" id="lightSide" checked>
 
         <div class="newspaper">
             <header class="newspaperheader">
-                <div class="newspaperimage">
+                <div class="newspaperimageleft">
                     <img src="lion1left.jpg" alt="lion">
-                </div>
-                <div class="newspapername">
+                </div><!--
+                --><h1 class="newspapername">
                     The daily globe
-                </div>
-                <div class="newspaperimage">
+                </h1><!--
+                --><div class="newspaperimageright">
                     <img src="lion1right.jpg" alt="lion">
                 </div>
             </header>
@@ -35,9 +41,9 @@
                     Yekaterinburg
                     <br>
                     <br>
-                    October 20, 2017
+                    October 26, 2017
                     <br>
-                    Sunday
+                    Thursday
                     <br>
                     <br>
                     Evening edition
@@ -45,41 +51,38 @@
                     Price: two coins
                 </div>
                 <div>
-                    <div>
-                        Evening weater
-                        <br>
-                        <br>
-                        south: sunny period
-                        <br>
-                        north: rain and cloudy
-                        <br>
-                        central: rain and cloudy
-                        <br>
-                        Yekaterinburg: rainy
-                    </div>
+                    Evening weater
+                    <br>
+                    <br>
+                    south: sunny period
+                    <br>
+                    north: rain and cloudy
+                    <br>
+                    central: rain and cloudy
+                    <br>
+                    Yekaterinburg: rainy
                 </div>
                 <div>
-                    <div>
-                        Zodiak aspects
-                        <br>
-                        <br>
-                        phase: Growing Moon
-                        <br>
-                        lunar day: 4
-                        <br>
-                        zodiak: Scorpio
-                        <br>
-                        moonrise: 09:42
-                        <br>
-                        sunset: 18:50
-                    </div>
+                    Zodiak aspects
+                    <br>
+                    <br>
+                    phase: Growing Moon
+                    <br>
+                    lunar day: 4
+                    <br>
+                    zodiak: Scorpio
+                    <br>
+                    moonrise: 09:42
+                    <br>
+                    sunset: 18:50
                 </div>
             </div>
             <hr class="separator">
             <div class="subjects">
-                <section>
+                <article>
                     <div>
-                        <div class="subject"><h3>A stumbling block. Spherical. In a vacuum</h3></div>
+                        <div class="specialreport">Special report</div>
+                        <h3 class="subject">A stumbling block. Spherical. In a vacuum</h3>
                         <div class="text">
                         In 2016, researchers from the California Institute of Technology presented evidence 
                         that the ninth planet - with an orbital period of 15 000 years - does exist beyond 
@@ -88,17 +91,14 @@
                         does exist, it is approximately 2-15 times heavier than Earth and is from the Sun 
                         at a distance of 240,000,000,000 kilometers.
                         </div>
-                        <br>
                         <div class="page">
                             Full report page 6
                         </div>
                     </div>    
-                    <br><br>
                     <hr class="separator">
-                    <br>
                     <div>
                         <div class="specialreport">Special report</div>
-                        <div class="subject"><h3>Launch. Land. Repeat. The VTVL Rocket</h3></div>
+                        <h3 class="subject">Launch. Land. Repeat. The VTVL Rocket</h3>
                         <div class="text">
                             On April 8, 2016, private company SpaceX carried out a successful vertical 
                             landing of the missile. For the general director of the company "SpaceX", 
@@ -110,21 +110,23 @@
                         <div class="page">
                             Full report page 5
                         </div>
-                        <div class="ornament">
-                            <img src="ornament.jpg" alt="victorian ornament">
-                        </div>
-                    </div>
-                </section> 
+                    </div>    
+                    <div class="ornament">
+                        <img src="ornament.jpg" alt="victorian ornament">
+                    </div>                    
+                </article> 
 
-                <section>
+                <article>
                     <div>
                         <div class="exclusive">Exclusive</div>
-                        <div class="subject"><h3>Why is the theory of evolution questionable?</h3></div>
+                        <h3 class="subject">Why is the theory of evolution questionable?</h3>
                         <div class="image">
+                            <figure>
                                 <img src="littlemutation.jpg" alt="mutation">
-                                <div class="caption">
+                                <figcaption>
                                     GK-PID
-                                </div> 
+                                </figcaption>
+                            </figure>    
                         </div>
                         <div class="text">
                             The ancient molecule, GK-PID, caused unicellular organisms to evolve into 
@@ -140,15 +142,14 @@
                         <div class="page">
                             Full report page 4
                         </div>
-                        <br>
                         <hr class="separator">
-                        <br>
-                        <div class="subject"><h3>The Earth Has a Second Moon? NASA Says Yes</h3></div>
+                        <div class="specialreport">Special report</div>
+                        <h3 class="subject">The Earth Has a Second Moon? NASA Says Yes</h3>
                         <div class="text">
                             In 2016 scientists discovered a “quasi-satellite” of our planet, which named 
                             HO3. It orbits the sun in such a way that the space rock never strays too far 
                             from Earth. The asteroid’s exact size is unknown, but researchers believe that 
-                            it is between 130 feet and 330 feet wide.<br><br>
+                            it is between 130 feet and 330 feet wide.
                             The asteroid poses no threat to earth, and never gets closer than 9 million 
                             miles to our planet.
                         </div>
@@ -156,12 +157,11 @@
                             Full report pages 2-3
                         </div>
                     </div>   
-                </section>
+                </article>
                 
-                <section>
+                <article>
                     <div>
-                        <div class="specialreport">Special report</div>
-                        <div class="subject"><h3>Cryptography: Challenge for lovers</h3></div>  
+                        <h3 class="subject">Cryptography: Challenge for lovers</h3> 
                         <div class="text">
                                 In January 2016, mathematicians opened a new prime number in the framework 
                                 of the "Great Internet Mersenne Prime Search". This is 
@@ -178,24 +178,20 @@
                         </div>
                     </div>
                     <hr class="separator">
-                    <br>
                     <div>
-                        <div class="subject"><h3>Information permafrost</h3></div>
-                        <br>
+                        <h3 class="subject">Information permafrost</h3>
                         <div>
                             <blockquote>
                                 <p>
                                     Bernard Fisher
                                 </p>
-                                <br>
                                 In God we trust. All others must have data.
                             </blockquote>
                         </div>
-                        <br>
                         <div class="text">
                             At the moment there is no way that would allow storing data on one device for a 
-                            really long period of time. <br>
-                            Or does it exist?<br>
+                            really long period of time.
+                            Or does it exist?
                             Recently, scientists from Southampton University made an amazing discovery. They 
                             used nano-structured glass in order to successfully create a process of recording 
                             and retrieving data. The storage device is a small glass disk the size of a 
@@ -209,7 +205,7 @@
                             Full report page 8
                         </div>
                     </div>
-                </section>
+                </article>
             </div>
             <hr class="separator">
             <footer>
@@ -219,14 +215,14 @@
                 <div class="page10">
                     health 10.
                 </div>
-                <div class="page11">
-                    <div class="bla">blablabla</div>11.
+                <div class="bla">
+                    blablabla<div class="page11">11.</div>
                 </div>
                 <div class="page12">
                     games 12.
                 </div>
                 <div class="page12">
-                    sports 13
+                    sports 13.
                 </div>
             </footer>
         </div>

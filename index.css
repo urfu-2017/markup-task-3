@@ -49,73 +49,69 @@
 
 .newspaper
 {
+    margin: auto;
     width: 70%;
-    z-index: 2;
-    margin-left: 10%;
-    margin-right: 10%;
+    min-width: 800px;
 }
 
-.newspaperheader div
+.newspaperheader div,
+.newspaperheader h1
 {
     font-family: IMFeDPrm28P, Arial, sans-serif;
     font-size: 55px;
-    display: inline-block;
-    margin-left: 10%;
-    width: 40%;
-}
-
-.newspaperheader div:first-child,
-.newspaperheader div:last-child
-{
-    width: 10%;
+    text-align: center;
 }
 
 .newspapername
 {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    display: inline-block;
+    font-variant: small-caps;
 }
 
-.newspaperimage
+.newspaperimageleft,
+.newspaperimageright
 {
-    vertical-align: bottom;
+    margin: auto;
+    width: 20%;
+    display: inline-block;
+
 }
+
 /* настройки блока информации и футера */
 
-.information div
+.information
 {
-    vertical-align: top;
     font-family: BlackwoodCastle, Arial, sans-serif;
-    padding-left: 25px;
     text-align: center;
-}
-
-.information,
-footer
-{
-    font-size: 20px;
-    text-align: justify;
 }
 
 .information div,
 footer div
 {
+    width: 30%;
     display: inline-block;
+    vertical-align: top;
 }
 
-.information:after,
-footer:after
+footer
 {
-    width: 100%;
-    content: '';
-    display: inline-block;
+    text-align: center;
+}
+
+footer div
+{
+    width: 15%;
 }
 
 /* основные настройки статей и тем */
 
-.subjects div
+article div
 {
     display: inline-block;
     vertical-align: top;
+    padding: 10px;
 }
 
 .subjects
@@ -123,6 +119,7 @@ footer:after
     text-align: justify;
     column-count: 3;
     column-rule: 2px solid #000;
+    margin-bottom: 20px;
 }
 
 .subject
@@ -142,6 +139,16 @@ footer:after
 {
     font-family: MiddleSaxonyText, Arial, sans-serif;
     font-size: 50px;
+}
+
+.page
+{
+    width: 216px;
+    background-color: #26282b;
+    color: #fff;
+    font-family: BlackwoodCastle;
+    text-align: left;
+    border-width: 0;
 }
 
 /* вид темы */
@@ -173,56 +180,46 @@ footer:after
     rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
 }
 
-.page
-{
-    width: 100%;
-    background-color: #26282b;
-    color: #fff;
-    font-family: BlackwoodCastle;
-    text-align: right;
-}
-
 /* Страницы в футере */
 
 .page9
 {
     font-family: GrusskartenGotisch, Arial, sans-serif;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .page10
 {
     font-family: BlackwoodCastle, Arial, sans-serif;
-    font-size: 45px;
+    font-size: 35px;
+    width: 25%;
 }
 
 .page11
 {
     font-family: RhymeChronicle, Arial, sans-serif;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .page12
 {
     font-family: GrusskartenGotisch, Arial, sans-serif;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .bla
 {
     font-family: IMFeDPrm28P, Arial, sans-serif;
+    font-size: 35px;
+    width: 25%;
 }
 
 /* дополнительные настройки */
 
 blockquote
 {
-    margin-left: 1em;
-    margin-top: 2em;
     border-left: 1px;
     border-left-style: dashed;
-    border-left-color: #26282b;
-    padding-left: 1em;
     font-family: IMFeDPrm28P;
     text-align: right;
 }
@@ -241,23 +238,34 @@ blockquote p:first-line
     color: #26282b;
 }
 
-.caption
+figure
 {
-    width: 15px;
-    font-size: 15px;
-    word-wrap: break-word;
-    font-family: BlackwoodCastle, Arial, sans-serif;
+    margin: 0;
 }
 
-div section
+figure img
+{
+    vertical-align: top;
+    display: inline-block;
+}
+
+figcaption
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    vertical-align: top;
+    display: inline-block;
+}
+
+div article
 {
     width: 100%;
 }
 
 .ornament
 {
-    padding-left: 10px;
-    padding-top: 30px;
+    padding: 0;
+    margin-top: 50px;
 }
 
 /* Настройка */
