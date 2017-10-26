@@ -1,9 +1,230 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
-</head>
-<body>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «DeLorean DMC-12»</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+        Настройка:<br>
+        Размер шрифта:<br>
+        <label for="smallFont">Для взрослых людей</label>
+        <input name="fontsize" type="radio" id="smallFont" value="small">
+        <label for="bigFont">Для их родителей</label>
+        <input name="fontsize" type="radio" value="big" id="bigFont" checked><br>
+        Начертание шрифта:<br>
+        <label for="disgustingFont">Comic Sans</label>
+        <input name="fonttype" type="radio" value="disgusting" id="disgustingFont">
+        <label for="normalFont">Не Comic Sans</label>
+        <input name="fonttype" type="radio" value="normal" id="normalFont" checked><br>
+        Цветовая схема:<br>
+        <label for="darkSide">Тёмная сторона</label>
+        <input name="colorcheme" type="radio" value="night" id="darkSide">
+        <label for="lightSide">Светлая сторона</label>
+        <input name="colorcheme" type="radio" value="day" id="lightSide" checked>
+
+        <div class="newspaper">
+            <header class="newspaperheader">
+                <div class="newspaperimageleft">
+                    <img src="lion1left.jpg" alt="lion">
+                </div><!--
+                --><h1 class="newspapername">
+                    The daily globe
+                </h1><!--
+                --><div class="newspaperimageright">
+                    <img src="lion1right.jpg" alt="lion">
+                </div>
+            </header>
+            <hr class="separator">
+            <div class="information">
+                <div>
+                    Yekaterinburg
+                    <br>
+                    <br>
+                    October 26, 2017
+                    <br>
+                    Thursday
+                    <br>
+                    <br>
+                    Evening edition
+                    <br>
+                    Price: two coins
+                </div>
+                <div>
+                    Evening weater
+                    <br>
+                    <br>
+                    south: sunny period
+                    <br>
+                    north: rain and cloudy
+                    <br>
+                    central: rain and cloudy
+                    <br>
+                    Yekaterinburg: rainy
+                </div>
+                <div>
+                    Zodiak aspects
+                    <br>
+                    <br>
+                    phase: Growing Moon
+                    <br>
+                    lunar day: 4
+                    <br>
+                    zodiak: Scorpio
+                    <br>
+                    moonrise: 09:42
+                    <br>
+                    sunset: 18:50
+                </div>
+            </div>
+            <hr class="separator">
+            <div class="subjects">
+                <article>
+                    <div>
+                        <div class="specialreport">Special report</div>
+                        <h3 class="subject">A stumbling block. Spherical. In a vacuum</h3>
+                        <div class="text">
+                        In 2016, researchers from the California Institute of Technology presented evidence 
+                        that the ninth planet - with an orbital period of 15 000 years - does exist beyond 
+                        the orbit of Neptune. At the moment, the existence of the ninth planet remains 
+                        hypothetical, but astronomers have calculated that its orbit is huge. If Planet X 
+                        does exist, it is approximately 2-15 times heavier than Earth and is from the Sun 
+                        at a distance of 240,000,000,000 kilometers.
+                        </div>
+                        <div class="page">
+                            Full report page 6
+                        </div>
+                    </div>    
+                    <hr class="separator">
+                    <div>
+                        <div class="specialreport">Special report</div>
+                        <h3 class="subject">Launch. Land. Repeat. The VTVL Rocket</h3>
+                        <div class="text">
+                            On April 8, 2016, private company SpaceX carried out a successful vertical 
+                            landing of the missile. For the general director of the company "SpaceX", 
+                            Elona Mask, this goal remained a priority for many years. Despite the fact 
+                            that the achievement belongs to a private enterprise, the technology of 
+                            vertical landing will be available to government agencies like NASA so that 
+                            they can move forward in space exploration.
+                        </div>
+                        <div class="page">
+                            Full report page 5
+                        </div>
+                    </div>    
+                    <div class="ornament">
+                        <img src="ornament.jpg" alt="victorian ornament">
+                    </div>                    
+                </article> 
+
+                <article>
+                    <div>
+                        <div class="exclusive">Exclusive</div>
+                        <h3 class="subject">Why is the theory of evolution questionable?</h3>
+                        <div class="image">
+                            <figure>
+                                <img src="littlemutation.jpg" alt="mutation">
+                                <figcaption>
+                                    GK-PID
+                                </figcaption>
+                            </figure>    
+                        </div>
+                        <div class="text">
+                            The ancient molecule, GK-PID, caused unicellular organisms to evolve into 
+                            multicellular organisms about 800 million years ago. It was found that the 
+                            GK-PID molecule acted as a "molecular carbine": it collected the chromosomes 
+                            together and fixed them on the inner wall of the cell membrane when the division 
+                            occurred. A fascinating discovery indicates that the ancient version of GK-PID 
+                            behaved earlier than it does now. The reason why it turned into a "genetic 
+                            carbine" is associated with a small genetic mutation that reproduced itself. 
+                            It turns out that the origins of multicellular life forms is the result of one 
+                            particular mutation.
+                        </div>    
+                        <div class="page">
+                            Full report page 4
+                        </div>
+                        <hr class="separator">
+                        <div class="specialreport">Special report</div>
+                        <h3 class="subject">The Earth Has a Second Moon? NASA Says Yes</h3>
+                        <div class="text">
+                            In 2016 scientists discovered a “quasi-satellite” of our planet, which named 
+                            HO3. It orbits the sun in such a way that the space rock never strays too far 
+                            from Earth. The asteroid’s exact size is unknown, but researchers believe that 
+                            it is between 130 feet and 330 feet wide.
+                            The asteroid poses no threat to earth, and never gets closer than 9 million 
+                            miles to our planet.
+                        </div>
+                        <div class="page">
+                            Full report pages 2-3
+                        </div>
+                    </div>   
+                </article>
+                
+                <article>
+                    <div>
+                        <h3 class="subject">Cryptography: Challenge for lovers</h3> 
+                        <div class="text">
+                                In January 2016, mathematicians opened a new prime number in the framework 
+                                of the "Great Internet Mersenne Prime Search". This is 
+                                2<sup>74207281</sup> - 1. Modern cryptography uses Mersenne's prime numbers 
+                                to decipher encoded information. 2<sup>74207281</sup> at the moment is the 
+                                longest of all existing prime numbers (it is longer than its predecessor by 
+                                almost 5 million digits). The total number of digits that make up a new 
+                                prime number is about 24,000,000.
+                                <br>
+                                And what about next number?
+                        </div>
+                        <div class="page">
+                            Full report page 7
+                        </div>
+                    </div>
+                    <hr class="separator">
+                    <div>
+                        <h3 class="subject">Information permafrost</h3>
+                        <div>
+                            <blockquote>
+                                <p>
+                                    Bernard Fisher
+                                </p>
+                                In God we trust. All others must have data.
+                            </blockquote>
+                        </div>
+                        <div class="text">
+                            At the moment there is no way that would allow storing data on one device for a 
+                            really long period of time.
+                            Or does it exist?
+                            Recently, scientists from Southampton University made an amazing discovery. They 
+                            used nano-structured glass in order to successfully create a process of recording 
+                            and retrieving data. The storage device is a small glass disk the size of a 
+                            25-cent coin, which is capable of storing 360 terabytes of data and is not 
+                            affected by high temperatures (up to 1000 degrees Celsius). The average 
+                            shelf-life at room temperature is about 13.8 billion years (about the same time 
+                            there is our universe). The data is recorded on the device using an ultrafast 
+                            laser by means of short, intense light pulses.
+                        </div>
+                        <div class="page">
+                            Full report page 8
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <hr class="separator">
+            <footer>
+                <div class="page9">
+                    jobs 9.
+                </div>
+                <div class="page10">
+                    health 10.
+                </div>
+                <div class="bla">
+                    blablabla<div class="page11">11.</div>
+                </div>
+                <div class="page12">
+                    games 12.
+                </div>
+                <div class="page12">
+                    sports 13.
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>

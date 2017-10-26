@@ -1,0 +1,281 @@
+
+@font-face
+{
+    font-family: BlackwoodCastle;
+    src: url(BlackwoodCastle.ttf);
+}
+
+@font-face
+{
+    font-family: IMFeDPrm28P;
+    src: url(IMFeDPrm28P.ttf);
+}
+
+@font-face
+{
+    font-family: SketchGothicSchool;
+    src: url(SketchGothicSchool.ttf);
+}
+
+@font-face
+{
+    font-family: MiddleSaxonyText;
+    src: url(MiddleSaxonyText.ttf);
+}
+
+@font-face
+{
+    font-family: GrusskartenGotisch;
+    src: url(SketchGothicSchool.ttf);
+}
+
+@font-face
+{
+    font-family: RhymeChronicle;
+    src: url(RhymeChronicle1494.ttf);
+}
+
+@font-face
+{
+    font-family: comics;
+    src: url(comics.ttf);
+}
+
+.newspaper
+{
+    margin: auto;
+    width: 70%;
+    min-width: 800px;
+}
+
+.newspaperheader div,
+.newspaperheader h1
+{
+    font-family: IMFeDPrm28P, Arial, sans-serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+.newspapername
+{
+    margin-bottom: 20px;
+    width: 60%;
+    display: inline-block;
+    font-variant: small-caps;
+}
+
+.newspaperimageleft,
+.newspaperimageright
+{
+    margin: auto;
+    width: 20%;
+    display: inline-block;
+
+}
+
+/* настройки блока информации и футера */
+
+.information
+{
+    font-family: BlackwoodCastle, Arial, sans-serif;
+    text-align: center;
+}
+
+.information div,
+footer div
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer
+{
+    text-align: center;
+}
+
+footer div
+{
+    width: 15%;
+}
+
+/* основные настройки статей и тем */
+
+article div
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.subjects
+{
+    text-align: justify;
+    column-count: 3;
+    column-rule: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.subject
+{
+    font-family: IMFeDPrm28P, Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.text
+{
+    font-family: IMFeDPrm28P, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.text::first-letter
+{
+    font-family: MiddleSaxonyText, Arial, sans-serif;
+    font-size: 50px;
+}
+
+.page
+{
+    width: 216px;
+    background-color: #26282b;
+    color: #fff;
+    font-family: BlackwoodCastle;
+    text-align: left;
+    border-width: 0;
+}
+
+/* вид темы */
+
+.exclusive
+{
+    font-family: SketchGothicSchool, Arial, sans-serif;
+    font-size: 30px;
+    background-color: #26282b;
+    color: #fff;
+    text-align: right;
+}
+
+.specialreport
+{
+    font-family: SketchGothicSchool, Arial, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    border: 1px dashed #26282b;
+}
+
+/* разделитель между блоками */
+
+.separator
+{
+    border: none;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+}
+
+/* Страницы в футере */
+
+.page9
+{
+    font-family: GrusskartenGotisch, Arial, sans-serif;
+    font-size: 35px;
+}
+
+.page10
+{
+    font-family: BlackwoodCastle, Arial, sans-serif;
+    font-size: 35px;
+    width: 25%;
+}
+
+.page11
+{
+    font-family: RhymeChronicle, Arial, sans-serif;
+    font-size: 35px;
+}
+
+.page12
+{
+    font-family: GrusskartenGotisch, Arial, sans-serif;
+    font-size: 35px;
+}
+
+.bla
+{
+    font-family: IMFeDPrm28P, Arial, sans-serif;
+    font-size: 35px;
+    width: 25%;
+}
+
+/* дополнительные настройки */
+
+blockquote
+{
+    border-left: 1px;
+    border-left-style: dashed;
+    font-family: IMFeDPrm28P;
+    text-align: right;
+}
+
+blockquote p:first-line 
+{
+    font-variant: small-caps;
+}
+
+/* картинка к основной статье */
+
+.image
+{
+    width: 95%;
+    border: 1px dashed #26282b;
+    color: #26282b;
+}
+
+figure
+{
+    margin: 0;
+}
+
+figure img
+{
+    vertical-align: top;
+    display: inline-block;
+}
+
+figcaption
+{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    vertical-align: top;
+    display: inline-block;
+}
+
+div article
+{
+    width: 100%;
+}
+
+.ornament
+{
+    padding: 0;
+    margin-top: 50px;
+}
+
+/* Настройка */
+
+input[value='small']:checked ~ div :nth-child(n)
+{
+    font-size: 15px;
+}
+
+input[value='disgusting']:checked ~ div :nth-child(n)
+{
+    font-family: comics;
+}
+
+input[value='night']:checked ~ div:nth-child(n)
+{
+    background: #000;
+    color: #fff;
+}
