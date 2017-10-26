@@ -1,4 +1,4 @@
-.main-div
+.main
 {
     text-shadow: 1px -1px 1px;
     column-count: 4;
@@ -7,7 +7,7 @@
     font-family: Helvetica, sans-serif;
 }
 
-article
+.content
 {
     margin: 2em;
     line-height: 20px;
@@ -35,13 +35,13 @@ article
     font-size: 1em;
 }
 
-p::first-letter
+.first-letter::first-letter
 {
     font-family: fantasy;
     font-size: 200%;
 }
 
-.somebodys-words
+.quote
 {
     font-style: italic;
     font-size: 85%;
@@ -57,7 +57,7 @@ body
     position: absolute;
     left: 1em;
     top: 12em;
-    height: 60em;
+    white-space: nowrap;
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-family: 'Times New Roman', Times, serif;
@@ -74,6 +74,10 @@ img
 {
     font-family: Rurintania;
     src: url(rurintania.ttf);
+    src: url(rurintania.eot);
+    src: url(rurintania.woff2);
+    src: url(rurintania.woff);
+
 }
 
 @font-face
