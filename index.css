@@ -2,22 +2,22 @@
 {
     font-family: machina;
     src: url(./fonts/machina.ttf)
-    format('truetype'), url(./fonts/machina.eot)
-    format('eot'), url(./fonts/machina.woff)
-    format('woff'), url(./fonts/machina.woff2)
-    format('woff2'), url(./fonts/machina.svg)
-    format('svg');
+        format('truetype'), url(./fonts/machina.eot)
+        format('eot'), url(./fonts/machina.woff)
+        format('woff'), url(./fonts/machina.woff2)
+        format('woff2'), url(./fonts/machina.svg)
+        format('svg');
 }
 
 @font-face
 {
     font-family: zelek;
     src: url(./fonts/zelek.ttf)
-    format('truetype'), url(./fonts/zelek.eot)
-    format('eot'), url(./fonts/zelek.woff)
-    format('woff'), url(./fonts/zelek.woff2)
-    format('woff2'), url(./fonts/zelek.svg)
-    format('svg');
+        format('truetype'), url(./fonts/zelek.eot)
+        format('eot'), url(./fonts/zelek.woff)
+        format('woff'), url(./fonts/zelek.woff2)
+        format('woff2'), url(./fonts/zelek.svg)
+        format('svg');
 }
 
 body
