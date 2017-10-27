@@ -1,0 +1,179 @@
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    margin: 0;
+    padding: 0 50px;
+    background-color: #f7f5f5;
+    font-family: 'latoregular', sans-serif;
+}
+
+@font-face
+{
+    font-family: 'cinzel_decorativeblack';
+    src: url('fonts/cinzeldecorative-black-webfont.eot');
+    src: url('fonts/cinzeldecorative-black-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/cinzeldecorative-black-webfont.woff2') format('woff2'), url('fonts/cinzeldecorative-black-webfont.woff') format('woff'), url('fonts/cinzeldecorative-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.eot');
+    src: url('fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lato-regular-webfont.woff2') format('woff2'), url('fonts/lato-regular-webfont.woff') format('woff'), url('fonts/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.extra
+{
+    margin-right: 20px;
+}
+
+input[value='zoom']:checked ~ .content
+{
+    font-size: 1.5rem;
+}
+
+input[value='reduce']:checked ~ .content
+{
+    font-size: .8rem;
+}
+
+input[value='invert']:checked ~ .content
+{
+    color: #fff;
+    background: #000;
+}
+
+input[value='change-font']:checked ~ .content
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-header
+{
+    margin: 20px 0 10px;
+    border-bottom: 3px solid #a9a9a9;
+}
+
+.general-name
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'cinzel_decorativeblack';
+    font-size: 6.25rem;
+    margin: 0;
+    text-shadow: 5px 3px 4px #a9a9a9;
+}
+
+.general-name__substring
+{
+    text-align: center;
+}
+
+.date
+{
+    float: left;
+}
+
+.issue-number
+{
+    word-wrap: break-word;
+    width: .5rem;
+    float: right;
+
+}
+
+.price
+{
+    float: right;
+}
+
+.content
+{
+    line-height: 1.3;
+}
+
+.first-article
+{
+    text-align: justify;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 1px solid #a9a9a9;
+}
+
+.article-name
+{
+    margin: 10px 0 15px;
+    column-span: all;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+}
+
+.article-text,
+.article-text_first
+{
+    margin: 0;
+    margin-bottom: 10px;
+    text-indent: 5%;
+    hyphens: auto;
+}
+
+.article-text_first::first-letter
+{
+    font-family: 'cinzel_decorativeblack';
+    font-size: 1.8rem;
+}
+
+.article-text_first::first-line
+{
+    line-height: 1;
+}
+
+.container
+{
+    margin: 5px auto;
+}
+
+.image
+{
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container__subtitle
+{
+    font-style: italic;
+    font-size: .8rem;
+}
+
+.author
+{
+    font-style: italic;
+    float: right;
+}
+
+.main-footer
+{
+    margin: 10px 0;
+    border-top: 3px solid #a9a9a9;
+}
+
+.source
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.page-number
+{
+    float: right;
+}
