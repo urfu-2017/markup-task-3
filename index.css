@@ -3,63 +3,63 @@ body
 {
     background-color: #994704;
     font-family: 'bodoniregular';
-    hyphens: manual;
+    padding: 0 40px;
 }
 
-input
+input[id*='set']
 {
     display: none;
 }
 
-#size_1x:checked ~ .settings label[for='size_1x'],
-#size_2x:checked ~ .settings label[for='size_2x'],
-#size_3x:checked ~ .settings label[for='size_3x'],
-#normal_font:checked ~ .settings label[for='normal_font'],
-#check_font:checked ~ .settings label[for='check_font'],
-#normal_theme:checked ~ .settings label[for='normal_theme'],
-#new_theme:checked ~ .settings label[for='new_theme']
+input[id='set_size_1x']:checked ~ .settings label[for='set_size_1x'],
+input[id='set_size_2x']:checked ~ .settings label[for='set_size_2x'],
+input[id='set_size_3x']:checked ~ .settings label[for='set_size_3x'],
+input[id='set_normal_font']:checked ~ .settings label[for='set_normal_font'],
+input[id='set_other_font']:checked ~ .settings label[for='set_other_font'],
+input[id='set_normal_theme']:checked ~ .settings label[for='set_normal_theme'],
+input[id='set_other_theme']:checked ~ .settings label[for='set_other_theme']
 {
     background-color: #664600;
     color: #fff;
 }
 
-#size_2x:checked ~ .newspaper .text_container
+input[id='set_size_2x']:checked ~ .newspaper .text_container
 {
-    font-size: 1.2px;
+    font-size: 20px;
 }
 
-#size_3x:checked ~ .newspaper .text_container
+input[id='set_size_3x']:checked ~ .newspaper .text_container
 {
-    font-size: 1.5px;
+    font-size: 24px;
 }
 
-#check_font:checked ~ .newspaper p
+input[id='set_other_font']:checked ~ .newspaper p
 {
     font-family: 'vogue_highline_serifmedium';
 }
 
-#new_theme:checked ~ .newspaper > header > hr,
-#new_theme:checked ~ .newspaper > header > p
+input[id='set_other_theme']:checked ~ .newspaper > header > hr,
+input[id='set_other_theme']:checked ~ .newspaper > header > p
 {
     background: #363530;
 }
 
-#new_theme:checked ~ .newspaper
+input[id='set_other_theme']:checked ~ .newspaper
 {
     background-color: #a19a8e;
 }
 
-#new_theme:checked ~ .newspaper
+input[id='set_other_theme']:checked ~ .newspaper
 {
     color: #000;
 }
 
-#new_theme:checked ~ .newspaper > header > .data
+input[id='set_other_theme']:checked ~ .newspaper > header > .date
 {
     color: #fff;
 }
 
-label:hover
+section.settings > .settings_item > label[for*='set']:hover
 {
     background-color: #e9d993;
 }
@@ -67,7 +67,9 @@ label:hover
 .settings
 {
     width: 90%;
-    margin: 10px auto 40px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .settings_item
@@ -96,26 +98,35 @@ label:hover
     box-shadow: -4px -4px 10px #000;
 }
 
-#main_container
+.main_title h1
 {
-    margin: .5%;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'american_textcregular';
+    margin: 0;
+}
+
+.main_container
+{
     display: table;
+}
+
+.main_container > section
+{
+    display: table-cell;
 }
 
 .text_container
 {
-    font-size: 1px;
+    font-size: 16px;
 }
 
-.left-half,
-.right-half
+.news
 {
     padding: 0 10px;
-    font-size: 1em;
     width: 42%;
     column-rule: 2px outset #000;
     column-gap: 10px;
-    display: table-cell;
     vertical-align: top;
 }
 
@@ -129,22 +140,15 @@ label:hover
     column-count: 3;
 }
 
-.span_columns
+.column_span
 {
     column-span: all;
-}
-
-.span_columns .header
-{
-    font-size: 30em;
-}
-
-header h1
-{
-    font-size: 80em;
     text-align: center;
-    font-family: 'american_textcregular';
-    margin: 0;
+}
+
+.column_span .header
+{
+    font-size: 1.5em;
 }
 
 header hr
@@ -158,36 +162,30 @@ header hr
 h2.header
 {
     margin-top: 0;
-    font-size: 23em;
+    font-size: 1.2em;
 }
 
 h3.header
 {
     margin-top: 0;
-    font-size: 21em;
+    font-size: 1.1em;
 }
 
-.data
+.date
 {
     text-align: center;
     padding: 5px;
     background-color: #c27f03;
 }
 
-#main_container > section
+.main_container > section
 {
     padding: 20px 10px;
 }
 
 .news > article > p:first-of-type::first-letter
 {
-    font-size: 2em;
-}
-
-.job
-{
-    display: table-cell;
-    height: 100%;
+    font-size: 1.1em;
 }
 
 .job h2
@@ -215,7 +213,7 @@ h3.header
     text-align: right;
 }
 
-.salary::after
+.salary p::after
 {
     content: 'р';
 }
@@ -233,20 +231,15 @@ h3.header
     content: '\"';
 }
 
-p
+.text_container p
 {
-    font-size: 20em;
+    font-size: 1em;
     font-family: 'chekhovskoybook';
     margin: 0;
     text-indent: 1em;
 }
 
-h1
-{
-    font-size: 40em;
-}
-
-img
+.news img
 {
     width: 80%;
     margin: 10px 10%;

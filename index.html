@@ -7,41 +7,41 @@
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-    <input type="radio" name="text_size" id="size_1x" checked>
-    <input type="radio" name="text_size" id="size_2x">
-    <input type="radio" name="text_size" id="size_3x">
+    <input type="radio" name="text_size" id="set_size_1x" checked>
+    <input type="radio" name="text_size" id="set_size_2x">
+    <input type="radio" name="text_size" id="set_size_3x">
 
-    <input type="radio" name="font-family" id="normal_font" checked>
-    <input type="radio" name="font-family" id="check_font">
+    <input type="radio" name="font_family" id="set_normal_font" checked>
+    <input type="radio" name="font_family" id="set_other_font">
 
-    <input type="radio" name="theme" id="normal_theme" checked>
-    <input type="radio" name="theme" id="new_theme">
+    <input type="radio" name="theme" id="set_normal_theme" checked>
+    <input type="radio" name="theme" id="set_other_theme">
     <section class="settings">
         <article class="settings_item">
             <h2 class="settings_header">Размер шрифта</h2>
-            <label for="size_1x">Маленький</label>
-            <label for="size_2x">Средний</label>
-            <label for="size_3x">Большой</label>
+            <label for="set_size_1x">Маленький</label>
+            <label for="set_size_2x">Средний</label>
+            <label for="set_size_3x">Большой</label>
         </article>
         <article class="settings_item">
             <h2 class="settings_header">Вид шрифта</h2>
-            <label for="normal_font">Normal</label>
-            <label for="check_font">Not notmal</label>
+            <label for="set_normal_font">Normal</label>
+            <label for="set_other_font">Not notmal</label>
         </article>
         <article class="settings_item">
                 <h2 class="settings_header">Цветовая тема</h2>
-                <label for="normal_theme">Обычная</label>
-                <label for="new_theme">Другая</label>
+                <label for="set_normal_theme">Обычная</label>
+                <label for="set_other_theme">Другая</label>
             </article>
     </section>
-    <div class="newspaper">
-        <header class="text_container">
+    <main class="newspaper">
+        <header class="text_container main_title">
             <h1>Лучшая газета в мире</h1>
             <hr>
-            <p class="data">Выпуск от 20 октября 1970 года</p>
+            <p class="date">Выпуск от 20 октября 1970 года</p>
             <hr>
         </header>
-        <main id="main_container" class="text_container">
+        <main class="main_container text_container">
             <section class="left-half news">
                     <article>
                         <header><h2 class="header">Дар&shy;рен Аро&shy;но&shy;ф&shy;ски
@@ -123,40 +123,40 @@
                     <p>Пер&shy;спек&shy;тив&shy;ной и быст&shy;ро раз&shy;ви&shy;ва&shy;ю&shy;шей&shy;ся
                         оди&shy;но&shy;кой жен&shy;щи&shy;не, ну&shy;жен спе&shy;ци&shy;а&shy;лист,
                         ко&shy;то&shy;рый бу&shy;дет чи&shy;сать её ко&shy;ти&shy;ков 24/7</p>
-                    <p class="salary">30000</p>
+                    <footer class="salary"><p>30000</p></footer>
                 </article>
                 <article>
-                        <header><h3 class="header">Испытатель диванов</h3></header>
-                        <p>Тре&shy;бу&shy;ет&shy;ся че&shy;ло&shy;век с очень чув&shy;стви&shy;тель&shy;ной
-                            пя&shy;той точ&shy;кой. Пол&shy;ный соц па&shy;кет. Гра&shy;фик ра&shy;бо&shy;ты
-                            2 че&shy;рез 2. При&shy;вест&shy;ву&shy;ет&shy;ся на&shy;ли&shy;чие
-                            пив&shy;но&shy;го пу&shy;за</p>
-                        <p class="salary">60000</p>
-                    </article>
-                    <article>
-                        <header><h3 class="header">Программист php</h3></header>
-                        <p>Ком&shy;па&shy;нии по про&shy;из&shy;вод&shy;ству ко&shy;сты&shy;лей и
-                            ве&shy;ло&shy;си&shy;пе&shy;дов сроч&shy;но тре&shy;бу&shy;ет&shy;ся
-                            про&shy;грам&shy;мист php. Не при&shy;вест&shy;ву&shy;ет&shy;ся зна&shy;ние
-                            дру&shy;гих язы&shy;ков. Опыт ра&shy;бо&shy;ты мень&shy;ше 5 лет.</p>
-                        <p class="salary">50000</p>
-                    </article>
-                    <article>
-                            <header><h3 class="header">Преподаватель в ВУЗ</h3></header>
-                            <p>По&shy;дой&shy;дет лю&shy;бой че&shy;ло&shy;век.
-                                Об&shy;ра&shy;зо&shy;ва&shy;ние не обя&shy;за&shy;тель&shy;но.</p>
-                            <p class="salary">20000</p>
-                    </article>
+                    <header><h3 class="header">Испытатель диванов</h3></header>
+                    <p>Тре&shy;бу&shy;ет&shy;ся че&shy;ло&shy;век с очень чув&shy;стви&shy;тель&shy;ной
+                        пя&shy;той точ&shy;кой. Пол&shy;ный соц па&shy;кет. Гра&shy;фик ра&shy;бо&shy;ты
+                        2 че&shy;рез 2. При&shy;вест&shy;ву&shy;ет&shy;ся на&shy;ли&shy;чие
+                        пив&shy;но&shy;го пу&shy;за</p>
+                    <footer class="salary"><p>60000</p></footer>
+                </article>
+                <article>
+                    <header><h3 class="header">Программист php</h3></header>
+                    <p>Ком&shy;па&shy;нии по про&shy;из&shy;вод&shy;ству ко&shy;сты&shy;лей и
+                        ве&shy;ло&shy;си&shy;пе&shy;дов сроч&shy;но тре&shy;бу&shy;ет&shy;ся
+                        про&shy;грам&shy;мист php. Не при&shy;вест&shy;ву&shy;ет&shy;ся зна&shy;ние
+                        дру&shy;гих язы&shy;ков. Опыт ра&shy;бо&shy;ты мень&shy;ше 5 лет.</p>
+                    <footer class="salary"><p>50000</p></footer>                            
+                </article>
+                <article>
+                    <header><h3 class="header">Преподаватель в ВУЗ</h3></header>
+                    <p>По&shy;дой&shy;дет лю&shy;бой че&shy;ло&shy;век.
+                        Об&shy;ра&shy;зо&shy;ва&shy;ние не обя&shy;за&shy;тель&shy;но.</p>
+                    <footer class="salary"><p>20000</p></footer>                                
+                </article>
             </section>
             <section class="right-half news">
                     <article>
-                        <div class="span_columns">
+                        <div class="column_span">
                             <header>
                                 <h2 class="header">У «Ка&shy;ра&shy;те&shy;ля» от Netflix
                                     по&shy;яви&shy;лась да&shy;та ре&shy;ли&shy;за</h2>
-                                <p>Все 13 се&shy;рий ог&shy;не&shy;стрель&shy;ной дра&shy;мы
-                                    вый&shy;дут все&shy;го че&shy;рез ме&shy;сяц.</p>
                             </header>
+                            <p>Все 13 се&shy;рий ог&shy;не&shy;стрель&shy;ной дра&shy;мы
+                                вый&shy;дут все&shy;го че&shy;рез ме&shy;сяц.</p>
                             <img
                             src="https://st.kp.yandex.net/images/news/mid_3054902_01_201710190608403577.jpg"
                             alt="Каратель">
@@ -195,7 +195,7 @@
                     </article>
             </section>
         </main>
-    </div>
+    </main>
     
 </body>
 </html>
