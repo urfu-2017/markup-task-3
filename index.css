@@ -28,10 +28,15 @@
 
 .newspaper_name
 {
-    font-family: 'Mon Amour Two Medium';
-    font-size: 48px;
+    font: 48px 'Mon Amour Two Medium';
     text-align: center;
     text-shadow: 4px 4px 4px #aaa;
+}
+
+.newspaper_name::first-letter
+{
+    font-size: 75px;
+    text-shadow: -4px -4px 4px #f13b3b;
 }
 
 h2
@@ -41,7 +46,7 @@ h2
     font-size: 35px;
 }
 
-h3
+.advertisement h2
 {
     font-family: 'Bikham Cyr Script';
     font-size: 30px;
@@ -59,10 +64,9 @@ h3
 
 hr 
 {
-    border: none; /* Убираем границу */
-    background-color: #0a0a0a; /* Цвет линии */
-    color: #0a0a0a; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
+    border: none;
+    background-color: #0a0a0a;
+    height: 2px;
 }
 
 .article_name
@@ -82,11 +86,9 @@ article p
 
 .pioneers
 {
-    background: #d9dabb; /* Цвет фона */
-    display: block; /* Блочный элемент */
-    width: 150px; /* Ширина */
-    margin: 10px; /* Отступы */
-    text-align: center; /* Выравнивание по центру */
+    background: #d9dabb;
+    width: 150px;
+
 }
 
 mark
@@ -95,7 +97,7 @@ mark
     background: #d2e28b;
 }
 
-.text_in_frame
+.text_with-border
 {
     border: 1px solid rgb(36, 34, 34);
     padding: 10px;
@@ -108,33 +110,33 @@ footer
     font-size: 30px;
 }
 
-input[id='big']:checked ~ .newspaper
+input[class='big']:checked ~ .newspaper
 {
     font-size: 20px;
 }
 
-input[id='small']:checked ~ .newspaper
+input[class='small']:checked ~ .newspaper
 {
     font-size: 10px;
 }
 
-input[id='courierNew']:checked ~ .newspaper article
+input[class='courierNew']:checked ~ .newspaper article
 {
     font-family: 'Courier New';
 }
 
-input[id='msSerif']:checked ~ .newspaper article
+input[class='msSerif']:checked ~ .newspaper article
 {
     font-family: 'MS Serif';
 }
 
-input[id='black']:checked ~ .newspaper
+input[class='black']:checked ~ .newspaper
 {
     color: white;
     background-color: black;
 }
 
-input[id='white']:checked ~ .newspaper
+input[class='white']:checked ~ .newspaper
 {
     color: black;
     background-color: white;

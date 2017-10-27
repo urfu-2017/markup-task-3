@@ -11,34 +11,25 @@
 </head>
 
 <body>
-    <p>Размер шрифта:</p>
-    <input type="radio" name="sizeOfText" id="small">
-    <label for="small">Small</label>
-    <input type="radio" name="sizeOfText" id="normal" checked>
-    <label for="normal">Normal</label>
-    <input type="radio" name="sizeOfText" id="big">
-    <label for="big">Big</label>
+    <h4>Размер шрифта:</h4>
+    <input type="radio" name="sizeOfText" class="small">Small
+    <input type="radio" name="sizeOfText" class="normal" checked>Normal
+    <input type="radio" name="sizeOfText" class="big">Big
 
-    <p>Шрифт:</p>
-    <input type="radio" name="font" id="default" checked>
-    <label for="default">Default</label>
-    <input type="radio" name="font" id="courierNew">
-    <label for="courierNew">Courier new</label>
-    <input type="radio" name="font" id="msSerif">
-    <label for="msSerif">MS Serif</label>
+    <h4>Шрифт:</h4>
+    <input type="radio" name="font" class="default" checked>Default
+    <input type="radio" name="font" class="courierNew">Courier new
+    <input type="radio" name="font" class="msSerif">MS Serif
 
-    <p>Цветовая тема:</p>
-    <input type="radio" id="defaultColor" name="color" checked>
-    <label for="defaultColor">Default</label>
-    <input type="radio" id="white" name="color">
-    <label for="white">White</label>
-    <input type="radio" id="black" name="color">
-    <label for="black">Black</label>
+    <h4>Цветовая тема:</h4>
+    <input type="radio" class="defaultColor" name="color" checked>Default
+    <input type="radio" class="white" name="color">White
+    <input type="radio" class="black" name="color">Black
 
     <section class="newspaper">
         <header>
             <h1 class="newspaper_name">Комсомольская правда</h1>
-            <h2 class="newspaper_release">Выпуск № 3687 от 11 мая 1937 года</h2>
+            <h2 class="newspaper_release">Выпуск № 3687 от <time>1937-05-11</time></h2>
         </header>
         <hr>
         <article class="article_name">
@@ -70,7 +61,7 @@
                     со&shy;вет&shy;ский граж&shy;да&shy;нин дол&shy;жен
                     ощу&shy;щать, как нечто по&shy;чет&shy;ное, вы&shy;де&shy;ля&shy;ю&shy;щее
                     его из сре&shy;ды всей де&shy;тво&shy;ры?</p>
-                <p class="text_in_frame">Есть хо&shy;ро&shy;шие пи&shy;о&shy;нер&shy;ские во&shy;жа&shy;тые
+                <p class="text_with-border">Есть хо&shy;ро&shy;шие пи&shy;о&shy;нер&shy;ские во&shy;жа&shy;тые
                     - лю&shy;бим&shy;цы ре&shy;бят, под&shy;лин&shy;ные
                     вла&shy;сти&shy;те&shy;ли их дум и сер&shy;дец. Об
                     од&shy;ном из та&shy;ких во&shy;жа&shy;тых рас&shy;ска&shy;зы&shy;ва&shy;ла
@@ -126,7 +117,7 @@
                     нам не&shy;об&shy;хо&shy;ди&shy;ма до&shy;за&shy;ре&shy;зу.</p>
             </article>
             <article class="advertisement">
-                <h3>Куда сдавать бумагу</h3>
+                <h2>Куда сдавать бумагу</h2>
                 <p>Вся&shy;ко&shy;го ви&shy;да бу&shy;ма&shy;гу, не&shy;за&shy;ви&shy;си&shy;мо
                     от ее фор&shy;мы, ка&shy;че&shy;ства и раз&shy;ме&shy;ров,
                     по&shy;ку&shy;па&shy;ет Утиль&shy;гос&shy;торг по 3
