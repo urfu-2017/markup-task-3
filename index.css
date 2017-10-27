@@ -3,9 +3,8 @@
 @font-face
 {
     font-family: Exo 2;
-    src: local(Exo 2)
-        url(exo2.woff2) format(woff2),
-        url(Exo2-Regular.ttf)  format(truetype);
+    src: local(exo 2)
+        url(exo2.woff2) format(woff2), url(Exo2-Regular.ttf)  format(truetype);
 }
 
 body
@@ -53,6 +52,7 @@ p
     padding: 10px;
     vertical-align: top;
 }
+
 .col p
 {
     width: 70px;
