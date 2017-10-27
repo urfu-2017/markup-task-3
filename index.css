@@ -1,3 +1,15 @@
+article:first-of-type,
+.newspaperNumber
+{
+    margin-left: 15px;
+}
+
+.newsArticle2:last-of-type,
+.price
+{
+    margin-right: 15px;
+}
+
 input
 {
     display: inline-block;
@@ -14,17 +26,20 @@ input
     margin-top: 2px;
 }
 
-.arial:checked ~ main
+.arial:checked ~ main,
+.arial:checked ~ footer
 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.courierNew:checked ~ main
+.courierNew:checked ~ main,
+.courierNew:checked ~ footer
 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.italicF:checked ~ main
+.italicF:checked ~ main,
+.italicF:checked ~ footer
 {
     font-style: italic;
 }
@@ -35,9 +50,10 @@ label:hover
     cursor: pointer;
 }
 
-.lightswitch:checked ~ main
+.lightswitch:checked ~ main,
+.lightswitch:checked ~ footer
 {
-    border: white;
+    border: thin solid white;
     background: #222;
     color: white;
 }
@@ -48,17 +64,20 @@ label:hover
     color: white;
 }
 
-.largeSize:checked ~ main
+.largeSize:checked ~ main,
+.largeSize:checked ~ footer
 {
     font-size: 30px;
 }
 
-.midSize:checked ~ main
+.midSize:checked ~ main,
+.midSize:checked ~ footer
 {
     font-size: 16px;
 }
 
-.minSize:checked ~ main
+.minSize:checked ~ main,
+.minSize:checked ~ footer
 {
     font-size: 12px;
 }
@@ -84,6 +103,12 @@ main
     border: black;
     column-count: 3;
     column-rule: thin solid grey;
+}
+
+footer
+{
+    flex: 0 0 auto;
+    border-top: thin solid black;
 }
 
 h1
@@ -167,6 +192,7 @@ div.allCollumns img
 
 .newsArticle1
 {
+    margin-bottom: 10px;
     column-count: 2;
     break-after: column;
     break-before: column;
@@ -174,6 +200,7 @@ div.allCollumns img
 
 .newsArticle2
 {
+    margin-bottom: 100px;
     column-count: 3;
     break-after: column;
     break-before: column;
@@ -181,12 +208,14 @@ div.allCollumns img
 
 figcaption
 {
+    margin: 7px 0 7px 7px;
     font-style: italic;
     font-size: 12px;
 }
 
 figure
 {
+    float: right;
     break-inside: avoid;
     margin: 0;
     text-align: center;
@@ -206,7 +235,7 @@ blockquote
     border-left: 8px solid grey;
     position: relative;
     font-family: Neucha, cursive;
-    font-weight: 300;
+
 }
 
 blockquote:before
@@ -218,7 +247,6 @@ blockquote:before
     position: absolute;
     left: 15px;
     top: 5px;
-
 }
 
 @font-face
