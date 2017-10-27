@@ -1,3 +1,15 @@
+@font-face
+{
+    font-family: 'Oswald', sans-serif;
+    src: url(Oswald-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: 'Kaushan Script', cursive;
+    src: url(KaushanScript-Regular.ttf);
+}
+
 .newspaper
 {
     text-align: justify;
@@ -8,6 +20,7 @@
 
 main
 {
+    position: absolute;
     padding: 30px 20px 40px;
     font-size: 17px;
     background: url('paper_texture309.jpg');
@@ -15,7 +28,7 @@ main
     margin: 25px 50px;
 }
 
-.title
+header
 {
     margin: 10px;
     font: 70px Old English Text MT;
@@ -25,6 +38,7 @@ main
 .news_title
 {
     text-align: center;
+    font: 12px Kaushan Script;
 }
 
 .date
@@ -40,7 +54,7 @@ main
 .pic > img
 {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: inline-block;
 }
 
@@ -48,6 +62,8 @@ main
 {
     font-size: 15px;
     opacity: .5;
+    width: 100%;
+    height: 100%;
 }
 
 p 
@@ -62,7 +78,7 @@ p::first-letter
 
 blockquote
 {
-    margin: 0;
+    margin: 5%;
     padding: 12px 20px;
     font: 12px cursive;
     background-color: rgba(250, 248, 160, .42);
@@ -78,7 +94,7 @@ hr
 
 .new
 {
-    font: 17px impact;
+    font: 17px Oswald;
     text-transform: uppercase;
     
 }
@@ -105,7 +121,7 @@ aside
     padding: 5px;
 }
 
-input[value='color']:checked ~ main
+input[id='color']:checked ~ main
 {
     font-size: 17px;
     padding: 30px 20px 40px;
@@ -115,27 +131,36 @@ input[value='color']:checked ~ main
     margin: 25px 50px;
 }
 
-input[value='italic']:checked ~ main .newspaper article *
+.vertically
+{
+    position: absolute;
+    width: 2px;
+    word-break: break-all;
+    text-transform: uppercase;
+    left: 10px;
+}
+
+input[id='italic']:checked ~ main .newspaper *
 {
     font-style: italic;
 }
 
-input[value='arial']:checked ~ main .newspaper article *
+input[id='arial']:checked ~ main .newspaper *
 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input[value='small']:checked ~ main .newspaper article *
+input[id='small']:checked ~ main .newspaper *
 {
     font-size: 80%;
 }
 
-input[value='medium']:checked ~ main .newspaper article *
+input[id='medium']:checked ~ main .newspaper *
 {
     font-size: 100%;
 }
 
-input[value='large']:checked ~ main .newspaper article *
+input[id='large']:checked ~ main .newspaper *
 {
     font-size: 120%;
 }
