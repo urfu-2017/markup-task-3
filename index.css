@@ -1,0 +1,143 @@
+@font-face
+{
+    font-family: 'Bikham Cyr Script';
+    src: url(bikham-cyr-script_[allfont.ru].ttf);
+}
+
+@font-face
+{
+    font-family: 'Carolina';
+    src: url(carolina_[allfont.ru].ttf);
+}
+
+@font-face
+{
+    font-family: 'Mon Amour Two Medium';
+    src: url(mon-amour-two-medium_[allfont.ru].ttf);
+}
+
+.newspaper
+{
+    margin: 60px;
+    border: 2px solid black;  /* Параметры рамки */
+    padding: 20px; /* Поля вокруг текста */
+    background-color: #eecfb1;
+    text-align: justify;
+    position: relative;
+}
+
+.newspaper_name
+{
+    font: 48px 'Mon Amour Two Medium';
+    text-align: center;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.newspaper_name::first-letter
+{
+    font-size: 75px;
+    text-shadow: -4px -4px 4px #f13b3b;
+}
+
+h2
+{
+    font-family: 'Carolina';
+    text-align: center;
+    font-size: 35px;
+}
+
+.advertisement h2
+{
+    font-family: 'Bikham Cyr Script';
+    font-size: 30px;
+    text-align: center;
+}
+
+.newspaper_release
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 400px;
+}
+
+hr 
+{
+    border: none;
+    background-color: #0a0a0a;
+    height: 2px;
+}
+
+.article_name
+{
+    column-count: 4;
+    column-gap: 40px;
+    column-rule: 1.5px solid #070707;
+    font-family: Arial, Helvetica, sans-serif;
+    hyphens: manual;
+    letter-spacing: 1px;
+}
+
+article p
+{
+    text-indent: 20px;
+}
+
+.pioneers
+{
+    background: #d9dabb;
+    width: 150px;
+
+}
+
+mark
+{
+    letter-spacing: 10px;
+    background: #d2e28b;
+}
+
+.text_with-border
+{
+    border: 1px solid rgb(36, 34, 34);
+    padding: 10px;
+}
+
+footer
+{
+    font-family: 'Carolina';
+    text-align: center;
+    font-size: 30px;
+}
+
+input[class='big']:checked ~ .newspaper
+{
+    font-size: 20px;
+}
+
+input[class='small']:checked ~ .newspaper
+{
+    font-size: 10px;
+}
+
+input[class='courierNew']:checked ~ .newspaper article
+{
+    font-family: 'Courier New';
+}
+
+input[class='msSerif']:checked ~ .newspaper article
+{
+    font-family: 'MS Serif';
+}
+
+input[class='black']:checked ~ .newspaper
+{
+    color: white;
+    background-color: black;
+}
+
+input[class='white']:checked ~ .newspaper
+{
+    color: black;
+    background-color: white;
+}
