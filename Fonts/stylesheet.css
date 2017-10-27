@@ -1,0 +1,39 @@
+@font-face
+{
+    font-family: 'bodoniregular';
+    src: url('bodoni_allfont.ru.woff2') format('woff2')
+        , url('bodoni_allfont.ru.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'american_textcregular';
+    src: url('10616.woff2') format('woff2')
+        , url('10616.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'chekhovskoybook';
+    src: url('10851.woff2') format('woff2')
+        , url('10851.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'vogue_highline_serifmedium';
+    src: url('10841.woff2') format('woff2')
+        , url('10841.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
