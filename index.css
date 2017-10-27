@@ -2,9 +2,10 @@
 
 @font-face
 {
-    font-family: 'Exo 2';
-    src: local('Exo 2')
-        url('exo2.woff2');
+    font-family: Exo 2;
+    src: local(Exo 2)
+        url(exo2.woff2) format(woff2),
+        url(Exo2-Regular.ttf)  format(truetype);
 }
 
 body
@@ -37,9 +38,9 @@ p
 
 .centerCol
 {
-    height: 200;
+    height: 200px;
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 4px 0 6px;
     vertical-align: top;
 }
 
@@ -51,6 +52,13 @@ p
     height: 170px;
     padding: 10px;
     vertical-align: top;
+}
+.col p
+{
+    width: 70px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
 }
 
 section
@@ -65,7 +73,7 @@ aside
     display: inline-block;
     vertical-align: top;
     padding: 10px;
-    margin: 4px 7px 8px 0;
+    margin: 8px 5px 8px 0;
     border: 1.5px solid #000;
     min-height: 600px;
 }
@@ -79,7 +87,7 @@ aside h3
 {
     width: 648px;
     display: inline-block;
-    margin: 5.5px 0 0 2px;
+    margin: 8px 0 0 2px;
     vertical-align: top;
 }
 
@@ -151,13 +159,13 @@ footer,
 
 .pic1
 {
-    float: left;
+    display: inline-block;
     margin-right: 10px;
 }
 
 .pic2
 {
-    float: right;
+    display: inline-block;
     margin-left: 10px;
 }
 
@@ -165,18 +173,19 @@ figure
 {
     margin: 0;
     text-align: center;
+    vertical-align: middle;
 }
 
 .vertical
 {
     padding: 10px;
     margin: 15px;
-    float: left;
     width: .5em;
     border: 1px solid #000;
     font: 16px, monospace;
     text-transform: uppercase;
     word-break: break-all;
+    display: inline-block;
 }
 
 input[name='font_size'][value='small']:checked ~ .post
