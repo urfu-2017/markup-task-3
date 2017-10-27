@@ -36,23 +36,23 @@ body
     margin-right: 20px;
 }
 
-input[value="zoom"]:checked ~ .content
+input[value='zoom']:checked ~ .content
 {
     font-size: 1.5rem;
 }
 
-input[value="reduce"]:checked ~ .content
+input[value='reduce']:checked ~ .content
 {
     font-size: .8rem;
 }
 
-input[value="invert"]:checked ~ .content
+input[value='invert']:checked ~ .content
 {
     color: #fff;
     background: #000;
 }
 
-input[value="change-font"]:checked ~ .content
+input[value='change-font']:checked ~ .content
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
