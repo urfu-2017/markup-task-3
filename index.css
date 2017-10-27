@@ -88,15 +88,22 @@ blockquote
     text-align: center;
 }
 
-.second.article 
+.second.article h3
+{
+    column-span: none;
+}
+
+.second.article div
 {
     column-width: 150px;
     column-rule: 2px solid #000;
 }
 
-.second.article h3
+.second.article figure
 {
-    column-span: none;
+    column-span: all;
+    display: block;
+    margin: 0 100px;
 }
 
 .lenin-pic img
@@ -126,4 +133,34 @@ input[id='black']:checked ~ main section > article
     background-color: black;
     column-rule: 2px solid #fff;
     border: 4px double #fff;
+}
+
+@media screen and (max-width: 1700px) 
+{
+    .article
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 980px) 
+{
+    .article
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+    .article
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1200px;
+    }
 }
