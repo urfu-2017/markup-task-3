@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Podkova');
+
+@font-face
+{
+    font-family: Exo 2;
+    src: local(exo 2)
+        url(exo2.woff2) format(woff2), url(Exo2-Regular.ttf)  format(truetype);
+}
+
+body
+{
+    width: 900px;
+    margin: auto;
+    font-size: 16px;
+
+}
+
+p
+{
+    text-indent: 15px;
+}
+
+.post
+{
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.top
+{
+    background: #7a7a7a;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.centerCol
+{
+    height: 200px;
+    display: inline-block;
+    margin: 0 4px 0 6px;
+    vertical-align: top;
+}
+
+.col
+{
+    display: inline-block;
+    border: 5px double #7a7a7a;
+    width: 208px;
+    height: 170px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.col p
+{
+    width: 70px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+section
+{
+    width: 900px;
+    clear: both;
+}
+
+aside
+{
+    width: 215px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin: 8px 5px 8px 0;
+    border: 1.5px solid #000;
+    min-height: 600px;
+}
+
+aside h3
+{
+    margin-bottom: 5px;
+}
+
+.content
+{
+    width: 648px;
+    display: inline-block;
+    margin: 8px 0 0 2px;
+    vertical-align: top;
+}
+
+footer
+{
+    width: 864px;
+    padding: 10px;
+    column-count: 4;
+    display: block;
+}
+
+footer,
+.news1
+{
+    border: 8px solid #7a7a7a;
+}
+
+.news1,
+.news2
+{
+    padding: 10px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.news1
+{
+    outline: 1.5px solid #000;
+}
+
+.news2
+{
+    width: 626px;
+    column-count: 3;
+    column-rule: 2px dotted #7a7a7a;
+    border: 1.5px solid #000;
+}
+
+.news1 h2,
+.news2 h2
+{
+    column-span: all;
+    text-align: center;
+}
+
+.news1 p
+{
+    font-family: 'Podkova', serif;
+    column-count: 2;
+}
+
+.news2 p
+{
+    margin-top: 0;
+}
+
+.news1 p::first-letter
+{
+    font-size: 150%;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+.pic1,
+.pic2
+{
+    border: 5px double #000;
+}
+
+.pic1
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pic2
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+figure
+{
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vertical
+{
+    padding: 10px;
+    margin: 15px;
+    width: .5em;
+    border: 1px solid #000;
+    font: 16px, monospace;
+    text-transform: uppercase;
+    word-break: break-all;
+    display: inline-block;
+}
+
+input[name='font_size'][value='small']:checked ~ .post
+{
+    font-size: .9rem;
+}
+
+input[name='font_size'][value='normal']:checked ~ .post
+{
+    font-size: 1rem;
+}
+
+input[value='big']:checked ~ .post
+{
+    font-size: 1.5rem;
+}
+
+input[name='font_type'][value='serif']:checked ~ .post
+{
+    font-family: serif;
+}
+
+input[name='font_type'][value='sans-serif']:checked ~ .post
+{
+    font-family: sans-serif;
+}
+
+.checkbox:checked ~ .post
+{
+    background-color: #000;
+    color: #fff;
+}
+
+input[name='font_type'][value='exo2']:checked ~ .post
+{
+    font-family: 'Exo 2', sans-serif;
+}
+
+@media screen and (max-width: 400px)
+{
+    footer
+    {
+        column-count: 1;
+    }
+}
