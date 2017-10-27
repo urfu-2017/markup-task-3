@@ -3,14 +3,16 @@
 @font-face
 {
     font-family: 'Exo 2';
-    src: url(Exo2-Regular.ttf);
+    src: local('Exo 2')
+        url('exo2.woff2');
 }
 
 body
 {
     width: 900px;
     margin: auto;
-    font: 16px serif;
+    font-size: 16px;
+
 }
 
 p
@@ -35,18 +37,20 @@ p
 
 .centerCol
 {
-    width: 400px;
-    float: left;
+    height: 200;
+    display: inline-block;
     margin: 0 8px;
+    vertical-align: top;
 }
 
 .col
 {
+    display: inline-block;
     border: 5px double #7a7a7a;
-    width: 212px;
-    float: left;
+    width: 208px;
     height: 170px;
     padding: 10px;
+    vertical-align: top;
 }
 
 section
@@ -57,10 +61,11 @@ section
 
 aside
 {
-    width: 219px;
-    float: left;
+    width: 215px;
+    display: inline-block;
+    vertical-align: top;
     padding: 10px;
-    margin: 4px 8px 8px 0;
+    margin: 4px 7px 8px 0;
     border: 1.5px solid #000;
     min-height: 600px;
 }
@@ -72,17 +77,18 @@ aside h3
 
 .content
 {
-    width: 645px;
-    float: left;
+    width: 648px;
+    display: inline-block;
     margin: 5.5px 0 0 2px;
+    vertical-align: top;
 }
 
 footer
 {
-    width: 862px;
-    clear: left;
+    width: 864px;
     padding: 10px;
     column-count: 4;
+    display: block;
 }
 
 footer,
@@ -96,6 +102,7 @@ footer,
 {
     padding: 10px;
     margin-bottom: 8px;
+    display: block;
 }
 
 .news1
@@ -105,6 +112,7 @@ footer,
 
 .news2
 {
+    width: 626px;
     column-count: 3;
     column-rule: 2px dotted #7a7a7a;
     border: 1.5px solid #000;
@@ -119,8 +127,8 @@ footer,
 
 .news1 p
 {
-    column-count: 2;
     font-family: 'Podkova', serif;
+    column-count: 2;
 }
 
 .news2 p
