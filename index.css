@@ -1,0 +1,166 @@
+@font-face 
+{
+    font-family: 'Mon Amour Two Medium';
+    src: url('fonts/mon-amour-two-medium_[allfont.ru].ttf');
+}
+
+/* lemon-regular - latin */
+@font-face 
+{
+    font-family: 'Lemon';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/lemon-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Lemon Regular'), local('Lemon-Regular'), url('fonts/lemon-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/lemon-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/lemon-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('fonts/lemon-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('fonts/lemon-v6-latin-regular.svg#Lemon') format('svg'); /* Legacy iOS */
+}
+
+.main
+{
+    font-family: Arial, sans-serif;
+}
+
+.newspaper-name p
+{
+    font: 60px 'Mon Amour Two Medium';
+    text-align: center;
+}
+
+.center
+{
+    width: 205px;
+    margin: 0 auto;
+}
+
+.funny-pic
+{
+    width: 150px;
+    height: 150px;
+}
+
+.header-info
+{
+    text-align: center;
+    vertical-align: top;
+    word-spacing: 20em;
+    font-family: 'courier new';
+}
+
+.line
+{
+    background-color: #000;
+    height: 2px;
+}
+
+blockquote
+{
+    font-family: 'Lemon';
+}
+
+.vertical-text 
+{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.article
+{
+    width: 45%;
+    border-left: 4px double #000;
+    border-right: 4px double #000;
+    border-bottom: 2px solid #000;
+    height: 500px;
+    margin: auto;
+}
+
+.first.article 
+{
+    column-count: 3;
+}
+
+.first.article h3 
+{
+    column-span: all;
+    text-align: center;
+}
+
+.second.article h3
+{
+    column-span: none;
+}
+
+.second.article div
+{
+    column-width: 150px;
+    column-rule: 2px solid #000;
+}
+
+.second.article figure
+{
+    column-span: all;
+    display: block;
+    margin: 0 100px;
+}
+
+.lenin-pic img
+{
+    width: 150px;
+    height: 150px;
+}
+
+input[id='big']:checked ~ main section > article
+{
+    font-size: 17px;
+}
+
+input[id='small']:checked ~ main section > article
+{
+    font-size: 10px;
+}
+
+input[id='helvetica']:checked ~ main section > article
+{
+    font-family: Helvetica;
+}
+
+input[id='black']:checked ~ main section > article
+{
+    color: white;
+    background-color: black;
+    column-rule: 2px solid #fff;
+    border: 4px double #fff;
+}
+
+@media screen and (max-width: 1700px) 
+{
+    .article
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 980px) 
+{
+    .article
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+    .article
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1200px;
+    }
+}
