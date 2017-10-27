@@ -8,6 +8,7 @@ body
     margin: 0;
     padding: 0 50px;
     background-color: #f7f5f5;
+    font-family: 'latoregular', sans-serif;
 }
 
 @font-face
@@ -30,9 +31,35 @@ body
 
 }
 
+.extra
+{
+    margin-right: 20px;
+}
+
+input[value="zoom"]:checked ~ .content
+{
+    font-size: 1.5rem;
+}
+
+input[value="reduce"]:checked ~ .content
+{
+    font-size: .8rem;
+}
+
+input[value="invert"]:checked ~ .content
+{
+    color: #fff;
+    background: #000;
+}
+
+input[value="change-font"]:checked ~ .content
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .main-header
 {
-    margin: 10px 0;
+    margin: 20px 0 10px;
     border-bottom: 3px solid #a9a9a9;
 }
 
@@ -80,7 +107,6 @@ body
     column-count: 3;
     column-gap: 20px;
     column-rule: 1px solid #a9a9a9;
-    font-family: 'latoregular', sans-serif;
 }
 
 .article-name
