@@ -93,6 +93,7 @@ blockquote:before
 {
     float: left;
     column-count: 2;
+    column-rule: 2px solid #000;
     width: 45%;
     margin-left: 3%;
 }
@@ -102,6 +103,7 @@ blockquote:before
     float: right;
     width: 45%;
     column-count: 2;
+    column-rule: 2px solid #000;
     margin-right: 3%;
 }
 
@@ -137,26 +139,26 @@ input[name='change-to-serif']
     z-index: 1;
 }
 
-input[name='black-theme']:checked ~ .main-block
+input[name='black-theme']:checked ~ .whole-body
 {
     position: absolute;
     color: white;
     background: url(resources/texture/COLOURlovers.com-Gothic_Flowers_3.jpg);
 }
 
-input[name='reduce-size']:checked ~ .main-block
+input[name='reduce-size']:checked ~ .whole-body
 {
     position: absolute;
-    font-size: 75%;
+    font-size: .8rem;
 }
 
-input[name='increase-size']:checked ~ .main-block
+input[name='increase-size']:checked ~ .whole-body
 {
     position: absolute;
-    font-size: 125%;
+    font-size: 1.4rem;
 }
 
-input[name='change-to-serif']:checked ~ .main-block
+input[name='change-to-serif']:checked ~ .whole-body
 {
     position: absolute;
     font-family: sans-serif;
@@ -182,5 +184,5 @@ body
 
 html
 {
-    background: url(resources/texture/yellowish.jpg) repeat;
+    background: url(resources/texture/reduced.png) repeat;
 }
