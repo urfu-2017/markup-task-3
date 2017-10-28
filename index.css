@@ -12,6 +12,13 @@
 
 }
 
+@font-face 
+{
+    font-family: karton;
+    src: url(karton.woff);
+
+}
+
 html
 {
     font-size: 15px;
@@ -25,13 +32,13 @@ h1
     text-align: center;
     border: 2px solid #000;
     font-size: 4rem;
-    font-family: salamander;
+    font-family: salamander, karton;
 
 }
 
 .article_header
 {
-    font-family: salamander;
+    font-family: salamander, karton;
     font-size: 240%;
     text-align: center;
 
@@ -55,6 +62,7 @@ body
     column-count: 3;
     column-rule: 3px solid #000;
     column-gap: 30px;
+    overflow: hidden;
 
 }
 
@@ -101,13 +109,13 @@ p:first-letter
 
 }
 
-input[name='size']:checked ~ main 
+input[name='font']:checked ~ main 
 {
-    font-family: 'corp';
+    font-family: corp, karton;
 
 }
 
-input[name='font']:checked ~ main
+input[name='size']:checked ~ main
 {
     font-size: 130%;
 
@@ -118,4 +126,9 @@ input[name='color']:checked ~ main
     background: black;
     color: white;
 
+}
+
+q
+{
+    font-style: italic;
 }
