@@ -7,27 +7,50 @@
 </head>
 <body>
     <h4>Гамма</h4>
-    Темная:<input id="dark" type="radio" name="theme">
-    Светлая:<input id="light" type="radio" name="theme" checked>
+    <label for="dark">
+        Темная:
+    </label>
+    <input class="dark" id="dark" type="radio" name="theme">
+    <label for="light">
+            Светлая:
+    </label>
+    <input class="light" id="light" type="radio" name="theme" checked>
     <h4>Шрифт</h4>
-    Times New Roman:<input id="font1" type="radio" name="font" checked>
-    Arial:<input id="font2" type="radio" name="font">
-    Mono:<input id="font3" type="radio" name="font">
+    <label for="font1">
+            Обычный шрифт:
+    </label>
+    <input class="font1" id="font1" type="radio" name="font" checked>
+    <label for="font2">
+        Какой-то странный шрифт:
+    </label>
+    <input class="font2" id="font2" type="radio" name="font">
+    <label for="font3">
+        Mono:
+    </label>
+    <input class="font3" id="font3" type="radio" name="font">
     <h4>Размер букв</h4>
-    Маленькие:<input id="small" type="radio" name="font_size">
-    Средние:<input id="medium" type="radio" name="font_size" checked>
-    Большие:<input id="big" type="radio" name="font_size">
+    <label for="small">
+        Маленькие:
+    </label>
+    <input class="small" id="small" type="radio" name="font_size">
+    <label for="medium">
+        Средние:
+    </label>
+    <input class="medium" id="medium" type="radio" name="font_size" checked>
+    <label for="big">
+        Большие:
+    </label>
+    <input class="big" id="big" type="radio" name="font_size">
     <main>
-        <header>
+        <header class="main-header">
             <h1>
                 Журнал учёта добычи — новый полезный инструмент для буровиков в EVE Online
             </h1>
         </header>
-        <section>
-            <h2></h2>
+        <section class="mining">
         <article>
             <h3></h3>
-            <img src="майнинг.jpg" alt="майнинг">
+            <img src="майнинг.jpg" alt="Арт завлекающий попробовать себя в роли майнера">
             <p>
                     Доб&shy;рый день, кап&shy;су&shy;лё&shy;ры!<br>
                     При&shy;бли&shy;жа&shy;ет&shy;ся 24 ок&shy;тяб&shy;ря, а вме&shy;сте с этой
@@ -77,7 +100,13 @@
                 кра&shy;си&shy;вых стол&shy;би&shy;ков и ли&shy;ний. Про филь&shy;тры 
                 мы то&shy;же не за&shy;бы&shy;ли!
             </p>
-            <img src="журнал.jpg" alt="журнал">
+            <figure class="table-example">
+                <img  src="журнал.jpg" alt="Еще одна функия которую тепeрь
+                    не надо выносить в exel">
+                <figcaption>
+                    Еще больше таблиц. Эта игра - одна большая таблица.
+                </figcaption>
+            </figure>
             <p>
                 Лич&shy;ный жур&shy;нал учё&shy;та до&shy;бы&shy;чи отоб&shy;ра&shy;жа&shy;ет 
                 ста&shy;ти&shy;сти&shy;ку до&shy;бы&shy;ва&shy;ю&shy;щей 
@@ -166,6 +195,20 @@
                     По&shy;ка на этом всё. Спа&shy;си&shy;бо за вни&shy;ма&shy;ние, 
                     и удач&shy;ных по&shy;лё&shy;тов!
             </p>
+        </article>
+        <article>
+            <h3></h3>
+            <figure>
+                <img class="venture" src="venture.jpg" alt="самая обычная venture">
+                <figcaption>
+                    <blockquote>
+                        <p>На&shy;бег на аль&shy;фа-вен&shy;ту&shy;рах еще в си&shy;ле!</p>
+                        <p>
+                            Бист
+                        </p>
+                    </blockquote>
+                </figcaption>
+            </figure>
         </article>
         </section>
         <footer>
