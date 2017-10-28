@@ -22,7 +22,7 @@
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .sun-img
@@ -35,7 +35,7 @@ aside
 {
     font-family: LilliputSteps-Regular, cursive;
     text-align: center;
-    margin: -15px 5px 0;
+    margin: -5px 5px 0;
 }
 
 .vertical
@@ -77,7 +77,6 @@ aside
     -webkit-column-rule: 1px solid rgba(0,0,0, .5);
     hyphens: auto;
     break-inside: avoid-page;
-    /*margin-top: 100px;*/
 }
 
 body
@@ -85,6 +84,8 @@ body
     font-family: Arial, sans-serif;
     text-align: justify;
     padding: 0 50px;
+    max-width: 1800px;
+    min-width: 550px;
 }
 
 p
@@ -146,30 +147,33 @@ p:first-child::first-letter
 
 .post-2
 {
-    column-count: 3;
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
+    columns: 100px 3;
+    -moz-columns: 180px 3;
+    -webkit-columns: 100px 3;
     column-rule: 1px solid rgba(0,0,0, .5);
     -moz-column-rule: 1px solid rgba(0,0,0, .5);
     -webkit-column-rule: 1px solid rgba(0,0,0, .5);
     hyphens: auto;
+    display: inline-block;
 }
 
 figure
 {
     margin: 1px;
+    text-align: center;
 }
 
 figure img
 {
     width: 100%;
+    display: inline-block;
 }
 
 figcaption
 {
     font-family: Monotype Corsiva, cursive;
-    text-align: center;
     font-size: small;
+    display: inline-block;
 }
 
 .column-span-img
