@@ -15,10 +15,10 @@
     text-align: justify;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 30px 20px 40px;
 }
 
-main
+body > *
 {
     position: absolute;
     padding: 30px 20px 40px;
@@ -51,16 +51,20 @@ header
     font-weight: normal;
 }
 
-.pic > img
+figure
+{
+    margin: 0 0 .2rem;
+}
+
+figure > img
 {
     width: 100%;
     height: 100%;
     display: inline-block;
 }
 
-.pic > div
+figcaption
 {
-    font-size: 15px;
     opacity: .5;
     width: 100%;
     height: 100%;
@@ -121,46 +125,45 @@ aside
     padding: 5px;
 }
 
-input[id='color']:checked ~ main
+input[id='color']:checked ~ .newspaper
 {
     font-size: 17px;
-    padding: 30px 20px 40px;
     color: #fff;
     background: url('tekstura_korichnevyy_relef_nerovnosti_kontrast_1920x1080.jpg');
     background-attachment: fixed;
-    margin: 25px 50px;
 }
 
 .vertically
 {
+    margin: 41px 0 0;
     position: absolute;
-    width: 2px;
+    width: .1px;
     word-break: break-all;
     text-transform: uppercase;
-    left: 10px;
+    left: 1.8px;
 }
 
-input[id='italic']:checked ~ main .newspaper *
+input[id='italic']:checked ~ div > main *
 {
     font-style: italic;
 }
 
-input[id='arial']:checked ~ main .newspaper *
+input[id='arial']:checked ~ div > main *
 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input[id='small']:checked ~ main .newspaper *
+input[id='small']:checked ~ div > main *
 {
     font-size: 80%;
 }
 
-input[id='medium']:checked ~ main .newspaper *
+input[id='medium']:checked ~ div > main *
 {
     font-size: 100%;
 }
 
-input[id='large']:checked ~ main .newspaper *
+input[id='large']:checked ~ div > main *
 {
     font-size: 120%;
 }
