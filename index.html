@@ -8,20 +8,22 @@
     <title>The Hacker Paper</title>
 </head>
 <body>
-    <label for="hacker-mode">HACKER MODE</label>
+    <label for="hacker-mode" class="upper-case">hacker mode</label>
     <input type="checkbox" class="hacker-mode" id="hacker-mode"><br>
-    <label for="encrypted-page">ENCRYPTED PAGE</label>
+    <label for="encrypted-page" class="upper-case">encrypted mode</label>
     <input type="checkbox" class="encrypted-page" id="encrypted-page"><br>
-    <label for="big-font">BIG FONT</label>
+    <label for="big-font" class="upper-case">big font</label>
     <input type="checkbox" class="big-font" id="big-font"><br>
     <section class="paper">
-        <header>
+        <header class="paper-header">
             <div class="title">The Hacker Paper</div>
             <div class="subtitle">Become a Professional Hacker</div>
-            <div class="time">10/22/2017</div>
+            <div class="release-date">
+                <time datetime="2017-10-22">10/22/2017</time>
+            </div>
         </header>
-        <main>
-            <article>
+        <main class="paper-main">
+            <article class="paper-article">
                 <h1>De&shy;loitte Hacked — Cy&shy;ber At&shy;tack Ex&shy;poses Cli&shy;ents' Emails</h1>
                 <p>
                     An&shy;oth&shy;er day, an&shy;oth&shy;er data breach. This time one of the world's
@@ -43,7 +45,7 @@
                     mul&shy;tina&shy;tion&shy;als, among oth&shy;ers.
                 </p>
                 <blockquote>
-                    <cite>De&shy;loit&shy;te&shy;Com&shy;pany</cite>
+                    <span class="author">De&shy;loit&shy;te&shy;Com&shy;pany</span>
                     In re&shy;sponse to a cy&shy;ber in&shy;cid&shy;ent, De&shy;loitte
                     im&shy;ple&shy;men&shy;ted its com&shy;pre&shy;hens&shy;ive se&shy;cur&shy;ity
                     pro&shy;tocol and began an in&shy;tens&shy;ive and thor&shy;ough re&shy;view
@@ -52,7 +54,7 @@
                     of De&shy;loitte.
                 </blockquote>
             </article>
-            <article>
+            <article class="paper-article">
                 <h1>Linux on Galaxy</h1>
                 <p>
                     Linux on Galaxy en&shy;ables de&shy;velopers to use Sam&shy;sung smart&shy;phones for
@@ -69,9 +71,9 @@
                     <figcaption>First user</figcaption>
                 </figure>
             </article>
-            <article>
+            <article class="paper-article">
                 <h1>Pass&shy;words For 540,000 Car Track&shy;ing Devices Leaked On&shy;line</h1>
-                <div class="matrix">10101110100101011010</div>
+                <div class="matrix">101011101001010110</div>
                 <p>
                     An&shy;oth&shy;er day, an&shy;oth&shy;er news about a data breach, though this is
                     something dis&shy;con&shy;cert&shy;ing.
@@ -88,24 +90,24 @@
                     mis&shy;con&shy;figured cloud serv&shy;er.
                 </p>
             </article>
-            <article>
+            <article class="paper-article">
                 <h1>Hack&shy;er says...</h1>
                 <blockquote>
-                    <cite>Mikko&shy;Hyp&shy;pon&shy;en</cite>
+                    <span class="author">Mikko&shy;Hyp&shy;pon&shy;en</span>
                     I'm a hack&shy;er, but I'm the good kind of hack&shy;ers. And I've nev&shy;er been a
                     crim&shy;in&shy;al.
                 </blockquote>
                 <blockquote>
-                    <cite>Jam&shy;ieZ&shy;a&shy;w&shy;in&shy;ski</cite>
+                    <span class="author">Jam&shy;ieZ&shy;a&shy;w&shy;in&shy;ski</span>
                     If you give a hack&shy;er a new toy, the first thing he'll do is take it apart to
                     fig&shy;ure out how it works.
                 </blockquote>
                 <blockquote>
-                    <cite>Justin&shy;Long</cite>
+                    <span class="author">Justin&shy;Long</span>
                     I look like a geeky hack&shy;er, but I don't know any&shy;thing about com&shy;puters.
                 </blockquote>
             </article>
-            <article>
+            <article class="paper-article">
                 <h1>FDA Re&shy;calls Nearly Half a Mil&shy;lion Pace&shy;makers Over Hack&shy;ing Fears</h1>
                 <p>
                     Al&shy;most half a mil&shy;lion people in the United States are highly
@@ -127,7 +129,7 @@
                     rate.
                 </p>
             </article>
-            <article>
+            <article class="paper-article">
                 <h1>Two Crit&shy;ic&shy;al Zero-Day Flaws Dis&shy;closed in Foxit PDF Read&shy;er</h1>
                 <p>
                     Are you us&shy;ing Foxit PDF Read&shy;er? If yes, then you need to watch your back.
@@ -158,7 +160,7 @@
                     Foxit Read&shy;er.
                 </p>
                 <blockquote>
-                    <cite>Fox&shy;it&shy;Com&shy;pany</cite>
+                    <span class="author">Fox&shy;it&shy;Com&shy;pany</span>
                     Foxit Read&shy;er &amp; Phantom&shy;P&shy;DF has a Safe Read&shy;ing Mode which is
                     en&shy;abled by de&shy;fault to con&shy;trol the run&shy;ning of JavaS&shy;cript,
                     which can ef&shy;fect&shy;ively guard against po&shy;ten&shy;tial
@@ -166,7 +168,7 @@
                     JavaS&shy;cript ac&shy;tions.
                 </blockquote>
             </article>
-            <article>
+            <article class="paper-article">
                 <h1>
                     Self-Driv&shy;ing Cars Can Be Hacked By Just Put&shy;ting Stick&shy;ers On
                     Street Signs

@@ -1,13 +1,18 @@
 @font-face 
 {
     font-family: 'VCR OSD Mono';
-    src: url('fonts/VCR OSD Mono.ttf');
+    src: url('fonts/VCR OSD Mono.woff2') format('woff2'), url('fonts/VCR OSD Mono.woff') format('woff'), url('fonts/VCR OSD Mono.ttf') format('truetype'), url('fonts/VCR OSD Mono.eot') format('embedded-opentype');
 }
 
 @font-face
 {
-    font-family: 'Encrypted';
-    src: url('fonts/PIZZADUDEBULLETS.ttf');
+    font-family: 'PIZZADUDEBULLETS';
+    src: url('fonts/PIZZADUDEBULLETS.woff2') format('woff2'), url('fonts/PIZZADUDEBULLETS.woff') format('woff'), url('fonts/PIZZADUDEBULLETS.ttf') format('truetype'), url('fonts/PIZZADUDEBULLETS.eot') format('embedded-opentype');
+}
+
+.upper-case
+{
+    text-transform: uppercase;
 }
 
 .paper
@@ -17,19 +22,19 @@
     margin: 40px;
 }
 
-header
+.paper-header
 {
     font: 84px 'VCR OSD Mono', monospace;
     text-align: center;
 }
 
-header > .subtitle,
-header > .time
+.paper-header > .subtitle,
+.paper-header > .release-date
 {
-    font-size: 49%;
+    font-size: .49em;
 }
 
-header > .time
+.paper-header > .release-date
 {
     border-top: 1px dotted #000;
     border-bottom: 1px dotted #000;
@@ -37,46 +42,46 @@ header > .time
     margin-bottom: 30px;
 }
 
-main
+.paper-main
 {
     column-count: 3;
     column-gap: 30px;
+    font: 20px 'Antic', sans-serif;
 }
 
-article
+.paper-article
 {
-    font: 20px 'Antic', sans-serif;
     text-align: justify;
 }
 
-article:not(:first-of-type)
+.paper-article + .paper-article
 {
     margin-top: 30px;
 }
 
-article > h1
+.paper-article > h1
 {
-    font: 26px /35px 'Reem Kufi', sans-serif;
+    font: 1.3em 'Reem Kufi', sans-serif;
     margin: 0;
 }
 
-article > h1::before
+.paper-article > h1::before
 {
     content: '> ';
 }
 
-article > p
+.paper-article > p
 {
-    text-indent: 15px;
+    text-indent: .8em;
     margin: 0;
 }
 
-article > p:first-of-type::first-letter
+.paper-article > p:first-of-type::first-letter
 {
-    font: 25px 'Walter Turncoat', cursive;
+    font: 1.3em 'Walter Turncoat', cursive;
 }
 
-blockquote
+.paper-article > blockquote
 {
     font-family: 'Delius', cursive;
     border-left: 4px solid #777;
@@ -84,41 +89,40 @@ blockquote
     margin: 8px;
 }
 
-blockquote > cite
+.paper-article > blockquote > .author
 {
     font-weight: bold;
 }
 
-blockquote > cite::after
+.paper-article > blockquote > .author::after
 {
     content: '@hack: >_ ';
 }
 
-figure
+.paper-article > figure
 {
     text-align: center;
     margin: 10px;
 }
 
-figure > img
+.paper-article > figure > img
 {
     box-shadow: 3px 3px 5px rgba(0,0,0,.3);
 }
 
 .matrix
 {
-    font: 18px 'VCR OSD Mono', monospace;
+    font-family: 'VCR OSD Mono', monospace;
     color: #777;
-    width: 0;
-    word-wrap: break-word;
-    margin-right: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
     float: left;
 }
 
 .hacker-mode:checked ~ .paper,
-.hacker-mode:checked ~ .paper > header > .time
+.hacker-mode:checked ~ .paper > .paper-header > .release-date
 {
-    background-color: black;
+    background-color: #000;
     color: #090;
     border-color: #090;
 }
@@ -148,15 +152,17 @@ figure > img
     display: none;
 }
 
-/* stylelint-disable selector-no-universal */
-
-.encrypted-page:checked ~ .paper *,
-.encrypted-page:checked ~ .paper article > p:first-of-type::first-letter
+.encrypted-page:checked ~ .paper > .paper-header,
+.encrypted-page:checked ~ .paper > .paper-main,
+.encrypted-page:checked ~ .paper .paper-article > h1,
+.encrypted-page:checked ~ .paper .paper-article > p:first-of-type::first-letter,
+.encrypted-page:checked ~ .paper .paper-article > blockquote,
+.encrypted-page:checked ~ .paper .paper-article > .matrix
 {
-    font-family: 'Encrypted';
+    font-family: 'PIZZADUDEBULLETS';
 }
 
-.big-font:checked ~ .paper article
+.big-font:checked ~ .paper > .paper-main
 {
     font-size: 25px;
 }
