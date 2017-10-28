@@ -1,14 +1,34 @@
 /*stylelint-disable selector-no-id*/
 
+@font-face
+{
+    font-family: 'News Cycle', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=News+Cycle');
+}
+
+@font-face
+{
+    font-family: 'Pacifico', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Pacifico');
+}
+
+@font-face
+{
+    font-family: 'Amatic SC', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Amatic+SC');
+}
+
 label
 {
-    color: aquamarine;
+    color: #160e14;
+    font-kerning: auto;
+    font-weight: bold;
 }
 
 input#NightMode:checked ~ .all
 {
-    color: #9ebbff ;
-    background: #70707a;
+    color: #a6a7a8;
+    background: #111a24 !important;
 }
 
 input#FontChange:checked ~ .all
@@ -16,34 +36,35 @@ input#FontChange:checked ~ .all
     font-variant: petite-caps !important;
 }
 
-input#FontType:checked ~ .all
+input#FontType:checked ~ .all p
 {
-    font-family: 'Amatic SC', cursive !important;
+    font-family: 'Times New Roman', sans-serif !important;
 }
 
 body
 {
-    background: #160e14;
-}
-
-.all
-{
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-rule: 2px solid grey;
-    background: #faebd7;
-
+    background: #cbbdab;
 }
 
 p
 {
-    overflow: auto;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
 }
 
 p::first-letter
 {
     color: mediumseagreen;
     font-weight: bold;
+}
+
+.all
+{
+    column-width: 270px;
+    column-rule: 2px solid grey;
+    background: url('http://wallpaperpulse.com/img/680611.jpg');
+
 }
 
 .title::first-letter,
@@ -60,9 +81,9 @@ p::first-letter
 
 img
 {
-    align-content: center;
-    width: 90%;
+    width: 100%;
     height: 150px;
+
 }
 
 .globaltitle
@@ -70,7 +91,8 @@ img
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-weight: bold;
-    text-shadow: 1px 1px gray;
+    text-shadow: 6px 4px 25px #803c50;
+    column-span: all;
 }
 
 .title
@@ -93,28 +115,10 @@ img
 
 }
 
-@font-face
-{
-    font-family: 'News Cycle', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=News+Cycle');
-}
-
-@font-face
-{
-    font-family: 'Pacifico', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Pacifico');
-}
-
-@font-face
-{
-    font-family: 'Amatic SC', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Amatic+SC');
-}
-
 .sony
 {
     font-family: 'Pacifico', cursive;
-    column-count: 2;
+    column-width: 150px;
 }
 
 .queen,
@@ -123,4 +127,49 @@ img
 .test3
 {
     font-family: 'Fascinate Inline', cursive;
+}
+
+h4
+{
+    column-span: all;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: xx-large;
+}
+
+.foot
+{
+    font-family: 'Pacifico', cursive;
+    font-size: small;
+    margin: 0% auto;
+    color: #1e4450;
+    position: absolute;
+}
+
+h5
+{
+    white-space: pre;
+}
+
+.sideText
+{
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bolder;
+    column-span: all;
+    margin-top: -17%;
+    color: #225822;
+    letter-spacing: 11px;
+    float: left;
+}
+
+.imga
+{
+    margin: auto;
+    display: flex;
+    column-span: all;
 }
