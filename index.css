@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Montserrat:400,600|Open+Sans+Condensed:300,600|Saira+Extra+Condensed:400,900|Titillium+Web:200|Bitter|Lora');
+
+.option {
+    margin: 0 10px 10;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}
+
+main {
+    border: 2px solid #7c2fff;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px #bbb;
+}
+
+.paper-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paper-header-squared  {
+    text-transform: uppercase;
+
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    width: 200px;
+}
+
+.with-border {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #7c2fff;
+}
+
+.paper-header-title {
+    text-transform: uppercase;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+
+    text-shadow: -3px -3px #829cf1, 3px 3px #f88989;
+
+    text-align: center;
+    margin: 0;
+}
+
+.paper-header-title::before {
+    content: 'Awe';
+    opacity: .25;
+    text-shadow: 0 0;
+}
+
+.paper-header-title:hover::before {
+    opacity: 1;
+    text-shadow: -3px -3px #829cf1, 3px 3px #f88989;
+}
+
+.paper-subtitle {
+    border-bottom: 2px solid #7c2fff;
+    border-top: 2px solid #7c2fff;
+    margin: 20px 0 50px;
+}
+
+.paper-date {
+    text-transform: uppercase;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+
+    text-align: center;
+    margin: 0;
+}
+
+.first-article {
+    display: block;
+}
+
+.other-articles {
+    display: inline-block;
+    column-count: 2;
+    column-rule: 2px solid #7c2fff;
+}
+
+.paper-body {
+    column-count: 2;
+    column-rule: 2px solid #7c2fff;
+}
+
+.paper-body h4 {
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+}
+
+.paper-body p {
+    text-align: justify;
+    margin: 0;
+}
+
+.paper-body p::first-letter {
+    font-weight: 900;
+    padding: 0 1px;
+}
+
+.paper-body > div > article > h4,
+.paper-body > div > article > p {
+    hyphens: manual;
+}
+
+.paper-body .text {
+    font-size: 20px;
+}
+
+.text {
+    color: #7c2fff;
+}
+
+.illustration {
+    display: block;
+    margin: 0;
+}
+
+.girls {
+    column-span: all;
+}
+
+.illustration-image {
+    column-span: all;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.illustration-image:hover {
+    filter: invert(100%);
+}
+
+.illustration-capture {
+    text-align: right;
+}
+
+.separator {
+    content: '';
+    background-color: #7c2fff;
+    height: 2px;
+    margin: 10px 70px;
+}
+
+.vertical {
+    width: 1px;
+    word-wrap: break-word;
+}
+
+/* Font Styles */
+
+.montserrat-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.saira-style {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.lora-style {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.open-sans-style {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.bitter-style {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+}
+
+/* stylelint-disable selector-no-id */
+
+/* Dark Theme Switching */
+
+#dark-theme-checkbox:checked ~ main {
+    background-color: #7c2fff;
+}
+
+#dark-theme-checkbox:checked ~ main .text {
+    color: #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .separator {
+    background-color: #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .with-border {
+    border: 2px solid #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .paper-subtitle {
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .paper-body {
+    column-rule: 2px solid #fff;
+}
+
+#dark-theme-checkbox:checked ~ main .other-articles {
+    column-rule: 2px solid #fff;
+}
+
+/* Italic Style Switching */
+
+#italic-checkbox:checked ~ main .paper-body .text {
+    font-style: italic;
+}
+
+/* Font Size Switching */
+
+#small-text-radio:checked ~ main .paper-body .text {
+    font-size: 12px;
+}
+
+#middle-text-radio:checked ~ main .paper-body .text {
+    font-size: 20px;
+}
+
+#large-text-radio:checked ~ main .paper-body .text {
+    font-size: 28px;
+}
+
+/* stylelint-enable */
