@@ -133,8 +133,8 @@ article:not(:last-of-type)
 
 img
 {
-   width: 40%;
-   padding: 0 20px;
+    width: 40%;
+    padding: 0 20px;
 }
 
 input[id='theme-dark']:checked ~ .content
