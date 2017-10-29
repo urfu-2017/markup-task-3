@@ -18,6 +18,5 @@
 .subscribe__prices
 {
     column-count: 2;
-    column-rule: #373737;
     column-gap: .2rem;
 }

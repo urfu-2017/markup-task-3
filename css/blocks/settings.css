@@ -6,8 +6,7 @@
 .settings__group
 {
     display: inline;
-    margin-right: .3rem;
-    margin-left: .3rem;
+    margin: 0 .3rem;
 }
 
 .settings__group label
@@ -16,4 +15,3 @@
     padding: .5rem;
     border-radius: .5rem;
 }
-

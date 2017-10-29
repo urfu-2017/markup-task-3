@@ -6,15 +6,10 @@
 
 html
 {
-    font-family: Verdana, serif;
+    font-family: Chekhovskoy, serif;
+    font-size: 12px;
     text-align: center;
     padding: 1rem;
-}
-
-html
-{
-    font-size: 12px;
-    font-family: Chekhovskoy, serif;
 }
 
 main
@@ -41,18 +36,11 @@ section > section
 
 header
 {
-    content: ' ';
-    display: block;
     border: none;
     border-color: #373737;
     border-top: .7rem solid #373737;
     border-bottom: .25rem solid #373737;
     padding: 1rem;
-}
-
-input[id='theme-old']:checked ~ main header
-{
-    border-color: #653c00;
 }
 
 .date
@@ -124,6 +112,11 @@ input[id='theme-old']:checked ~ main
 }
 
 input[id='theme-old']:checked ~ main .subscribe
+{
+    border-color: #653c00;
+}
+
+input[id='theme-old']:checked ~ main header
 {
     border-color: #653c00;
 }
