@@ -1,32 +1,27 @@
 .container
 {
     padding-left: 10px;
-    padding-right: 10px;
-    width: 500px;
-    border: 1px solid black;
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-body
+.aside
 {
-    margin-left: 27%;
-    font-family: Georgia;
-}
-
-aside
-{
-    background: linear-gradient(45deg, #ffd65e 0%, #ff5487 100%);
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(45deg, #ffab66 0%, #ff5487 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     font-size: 15px;
-    width: 155px;
+    width: 160px;
     text-align: left;
     color: #fff;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 35px;
+    padding: 33px 15px 13px;
 }
 
 .mainphoto
 {
+    display: run-in;
     width: 98%;
 }
 
@@ -37,12 +32,11 @@ aside
 
 .tes
 {
+    width: 380px;
     white-space: pre-wrap;
     column-count: 2;
     column-gap: 1px;
-    column-width: 123px;
-    font-size: 9px;
-    height: 186px;
+    font-size: 10px;
     hyphens: manual;
 }
 
@@ -53,20 +47,14 @@ aside
 
 .moment
 {
-    font-size: 7px;
+    font-size: 9px;
     font-weight: bolder;
 }
 
 .context
 {
-    font-size: 10px;
-    font-weight: bolder;
+    font-size: 15px;
     color: #838b75;
-}
-
-h1
-{
-    font-size: 30px;
 }
 
 p.asideText
@@ -74,10 +62,15 @@ p.asideText
     font-size: 10px;
 }
 
+.photoDescription
+{
+    font-size: 12px;
+}
+
 .textBlock
 {
-    width: 355px;
-    font-size: 12px;
+    display: inline-block;
+    width: 366px;
     padding-left: 40px;
 }
 
@@ -88,16 +81,18 @@ p.asideText
 
 .rightBlock
 {
-    float: right;
-    width: 100px;
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+    margin-left: 20px;
 }
 
 .description
 {
-    padding-left: 18px;
-    padding-right: 10px;
+    padding-left: 40px;
     hyphens: manual;
-    font-size: 6px;
+    font-size: 7px;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -105,19 +100,14 @@ p.asideText
 {
     font-family: 'Rammetto One', cursive;
     font-size: 65px;
-    padding-left: 20px;
+    line-height: 10px;
 }
 
 .bigText
 {
-    line-height: 2;
     font-size: 48px;
     font-weight: 900;
-}
-
-.floatLeft
-{
-    float: left;
+    line-height: 50px;
 }
 
 .zapasn
@@ -127,7 +117,8 @@ p.asideText
 
 .textDescription
 {
-    color: rgb(0, 128, 0);
+    font-size: 8px;
+    color: #008000;
     line-height: 1;
 }
 
@@ -138,15 +129,13 @@ p.asideText
 
 .litl
 {
+    vertical-align: top;
     font-size: 8px;
 }
 
 .interestingFact
 {
-    line-height: 70%;
-    padding-top: 65px;
-    padding-right: 13px;
-    font-size: 10px;
+    padding: 55px 10px;
 }
 
 .top
@@ -157,4 +146,37 @@ p.asideText
 .saveSpaces
 {
     white-space: pre-wrap;
+}
+
+.bold
+{
+    font-weight: 900;
+}
+
+.black
+{
+    padding: 1px 1px 35px 60px;
+    font-size: 10px;
+    color: #000;
+}
+
+.endOfPage
+{
+    padding-bottom: 10px;
+}
+
+main
+{
+    width: 755px;
+    border: 1px solid #000;
+}
+
+.heightSmall
+{
+    font-weight: 900;
+}
+
+body
+{
+    font-family: Georgia;
 }
