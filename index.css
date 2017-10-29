@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Tinos');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,
+body
+{
+    height: 100%;
+}
+
+.layout
+{
+    width: 80%;
+    margin: auto;
+}
+
+.newspaper
+{
+    width: 100%;
+    padding: 24px;
+    background: #fbf9f4;
+    box-shadow: 0 0 16px #ccc;
+    margin: 24px 0;
+}
+
+.main-header
+{
+    text-align: center;
+}
+
+.nameplate
+{
+    width: 100%;
+    align-items: center;
+}
+
+.nameplate > div,
+.nameplate > h1
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tagline
+{
+    font-size: 16px;
+    padding: 12px 0;
+    border: 2px solid;
+    width: 15%;
+}
+
+.logo
+{
+    width: 68%;
+    font: bold 72px 'Old English Text MT', serif;
+    margin: 15px 0;
+}
+
+.logo a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.weather
+{
+    text-align: justify;
+    font-size: 11px;
+    width: 15%;
+}
+
+.weather h5
+{
+    text-align: center;
+    font: 800 16px sans-serif;
+    margin: 0;
+}
+
+.weather p
+{
+    margin: 0;
+}
+
+.folio
+{
+    border-style: solid none;
+    border-width: 2px 0;
+    font-style: oblique;
+    font-weight: 700;
+    padding: 2px 0;
+    word-spacing: -1px;
+}
+
+.folio > span
+{
+    display: inline-block;
+    width: 33.1%;
+}
+
+.folio-volume
+{
+    text-align: left;
+}
+
+.folio-volume > span
+{
+    display: inline-block;
+    width: 49%;
+}
+
+.folio-copy
+{
+    font-size: 8px;
+    text-align: center;
+}
+
+.folio-price
+{
+    text-align: right;
+}
+
+.article-header
+{
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+}
+
+.article-header h2
+{
+    margin: 0;
+    font-size: 104px;
+    word-spacing: 20px;
+}
+
+.article-author
+{
+    text-align: center;
+}
+
+.article-author span:last-child
+{
+    font-size: 70%;
+}
+
+.underlined,
+.overlined
+{
+    position: relative;
+}
+
+.underlined:after,
+.overlined:before
+{
+    content: '';
+    background: #000;
+    position: absolute;
+    left: 20%;
+    height: 2px;
+    width: 60%;
+}
+
+.underlined:after
+{
+    bottom: 0;
+}
+
+.overlined:before
+{
+    top: 0;
+}
+
+.article-header h3
+{
+    font: inherit oblique inherit 72px inherit;
+    font-size: 72px;
+    margin: 0;
+    padding: 0 16px;
+}
+
+.double-header .dh-part
+{
+    margin: 0;
+}
+
+.double-header :first-child
+{
+    text-align: left;
+}
+
+.double-header :last-child
+{
+    text-align: right;
+}
+
+.content
+{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.content p
+{
+    font-family: 'Tinos', serif;
+    margin: 0;
+    text-indent: 2em;
+}
+
+.content p:first-of-type:first-letter
+{
+    font: bold 1.5em fantasy;
+}
+
+.content figcaption
+{
+    text-align: justify;
+    text-align-last: center;
+    font-weight: 700;
+}
+
+.content img
+{
+    width: 100%;
+}
+
+.content h6
+{
+    text-align: center;
+    margin: 0;
+    font-size: inherit;
+}
+
+.left-block
+{
+    float: left;
+    margin-right: 8px;
+    width: 30%;
+}
+
+.left-block .article-text
+{
+    border-right: solid 1px;
+    padding-right: 16px;
+}
+
+.right-block
+{
+    float: left;
+    padding: 0 8px;
+    width: 67%;
+    -moz-column-count: 2;
+    -moz-column-rule-style: solid;
+    -moz-column-rule-width: 1px;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-rule-style: solid;
+    -webkit-column-rule-width: 1px;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-gap: 20px;
+
+}
+
+.subarticle-header
+{
+    font-size: 32px;
+    padding: 0 24px;
+    margin-bottom: 12px;
+    quotes: '\2018' '\2019';
+}
+
+.shortline.underlined:after,
+.shortline.overlined:before
+{
+    height: 1px;
+    width: 40%;
+    left: 30%;
+    margin: -8px 0;
+}
+
+.subarticle-more
+{
+    margin-top: 12px;
+    text-align: center;
+    font-size: 11px;
+}
+
+p.vertical
+{
+    text-indent: 0;
+    text-align: left;
+    letter-spacing: -.3em;
+    height: 150px;
+    writing-mode: vertical-lr;
+    -webkit-text-orientation: upright;
+    -moz-text-orientation: upright;
+    -ms-text-orientation: upright;
+    text-orientation: upright;
+}
+
+figure
+{
+    margin: 15px 0;
+}
+
+.spanned
+{
+    column-span: all;
+}
+
+.main-footer
+{
+    clear: both;
+}
+
+.inversion-checkbox:checked ~ .newspaper,
+.inversion-checkbox:checked ~ .newspaper a
+{
+    background-color: #444;
+    color: #fff;
+}
+
+.inversion-checkbox:checked ~ .newspaper .underlined:after,
+.inversion-checkbox:checked ~ .newspaper .overlined:before
+{
+    background: #fff;
+}
+
+.font-checkbox:checked ~ .newspaper,
+.font-checkbox:checked ~ .newspaper .content p
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.size-small:checked ~ .newspaper .content
+{
+    font-size: 11px;
+}
+
+.size-large:checked ~ .newspaper .content
+{
+    font-size: 17px;
+}
