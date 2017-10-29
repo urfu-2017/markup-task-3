@@ -56,12 +56,12 @@ header
 figure
 {
     position: relative;
-    margin: 1rem 0 1rem;
+    margin: 1rem 0;
 }
 
 figure > img
 {
-    width:100%;
+    width: 100%;
     max-width: 290px;
     max-height: 418px;
     display: inline-block;
