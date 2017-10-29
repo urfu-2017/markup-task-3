@@ -213,6 +213,10 @@ main {
     column-rule: 2px solid #fff;
 }
 
+#dark-theme-checkbox:checked ~ main .other-articles {
+    column-rule: 2px solid #fff;
+}
+
 /* Italic Style Switching */
 
 #italic-checkbox:checked ~ main .paper-body .text {
