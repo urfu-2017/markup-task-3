@@ -77,8 +77,18 @@ main {
     margin: 0;
 }
 
+.first-article {
+    display: block;
+}
+
+.other-articles {
+    display: inline-block;
+    column-count: 2;
+    column-rule: 2px solid #7c2fff;
+}
+
 .paper-body {
-    column-count: 4;
+    column-count: 2;
     column-rule: 2px solid #7c2fff;
 }
 
@@ -91,13 +101,17 @@ main {
 
 .paper-body p {
     text-align: justify;
-    hyphens: auto;
     margin: 0;
 }
 
 .paper-body p::first-letter {
     font-weight: 900;
     padding: 0 1px;
+}
+
+.paper-body > div > article > h4,
+.paper-body > div > article > p {
+    hyphens: manual;
 }
 
 .paper-body .text {
@@ -109,13 +123,26 @@ main {
 }
 
 .illustration {
-    width: 100%;
     display: block;
-    margin: 50px auto 10px;
+    margin: 0;
 }
 
-.illustration:hover {
+.girls {
+    column-span: all;
+}
+
+.illustration-image {
+    column-span: all;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.illustration-image:hover {
     filter: invert(100%);
+}
+
+.illustration-capture {
+    text-align: right;
 }
 
 .separator {
@@ -123,6 +150,11 @@ main {
     background-color: #7c2fff;
     height: 2px;
     margin: 10px 70px;
+}
+
+.vertical {
+    width: 1px;
+    word-wrap: break-word;
 }
 
 /* Font Styles */
