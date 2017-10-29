@@ -152,7 +152,9 @@ q
     margin: 7px 7px 7px 0;
 }
 
-input[id='set-color-dark']:checked ~ main
+input[id='set-color-dark']:checked ~ main .newspaper,
+input[id='set-color-dark']:checked ~ main .newspaper-header,
+input[id='set-color-dark']:checked ~ main .new
 {
     background-color: #000;
     color: #fff;
