@@ -1,0 +1,199 @@
+@font-face
+{
+    font-family: 'Marck Script';
+    src: url(MarckScript-Regular.ttf);
+}
+
+body
+{
+    margin: 0;
+    padding: 0 10rem;
+    background-color: #000;
+
+}
+
+input[id='set-size-small']:checked ~ main label[for='set-size-small'],
+input[id='set-size-average']:checked ~ main label[for='set-size-average'],
+input[id='set-size-large']:checked ~ main label[for='set-size-large'],
+input[id='set-font-standard']:checked ~ main label[for='set-font-standard'],
+input[id='set-font-sans']:checked ~ main label[for='set-font-sans'],
+input[id='set-font-serif']:checked ~ main label[for='set-font-serif'],
+input[id='set-color-light']:checked ~ main label[for='set-color-light'],
+input[id='set-color-dark']:checked ~ main label[for='set-color-dark']
+{
+    background-color: #69f;
+}
+
+.appearance-size
+{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 1rem;
+    color: white;
+}
+
+.appearance-font
+{
+    position: absolute;
+    left: 1rem;
+    top: 10rem;
+    width: 8rem;
+    color: white;
+}
+
+.appearance-color
+{
+    position: absolute;
+    left: 1rem;
+    top: 20rem;
+    width: 7rem;
+    color: white;
+}
+
+.newspaper
+{
+    position: relative;
+    top: 2rem;
+    max-width: 1200px;
+    background-color: #fff;
+    color: #000;
+}
+
+.newspaper-header
+{
+    background: #69f;
+    color: #fff;
+    text-align: center;
+}
+
+.name-newspaper
+{
+    font: 70px 'PT Sans', sans-serif;
+}
+
+.heading-line
+{
+    border: none;
+    background-color: #fff;
+    height: 2px;
+}
+
+.new
+{
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    -moz-column-gap: 1.5rem;
+    -webkit-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    padding: 2rem;
+}
+
+.date
+{
+    font: 25px 'Symbol type A';
+}
+
+.first-section
+{
+    font-family: 'Marck Script';
+}
+
+.paragraph
+{
+    font-family: 'Indie Flower', cursive;
+}
+
+.news-day
+{
+    color: #f00;
+    text-align: center;
+    font: 30px 'Anton', sans-serif;
+}
+
+.any-news
+{
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.first-paragraph
+{
+    font: 10px 'PT Sans';
+    text-align: left;
+    font-style: oblique;
+}
+
+.any-paragraph
+{
+    font-family: 'Libre Baskerville', serif;
+}
+
+q
+{
+    font-style: italic;
+}
+
+.any-caption
+{
+    text-align: center;
+    font-family: 'Cherry Swash', cursive;
+}
+
+.photo
+{
+    float: left;
+    margin: 7px 7px 7px 0;
+}
+
+input[id='set-color-dark']:checked ~ main .newspaper,
+input[id='set-color-dark']:checked ~ main .newspaper-header,
+input[id='set-color-dark']:checked ~ main .new
+{
+    background-color: #000;
+    color: #fff;
+    -moz-column-rule: 1px solid #fff;
+    -webkit-column-rule: 1px solid #fff;
+    column-rule: 1px solid #fff;
+}
+
+input[id='set-size-average']:checked ~ main .first-news,
+input[id='set-size-average']:checked ~ main .any-paragraph,
+input[id='set-size-average']:checked ~ main .first-paragraph
+{
+    font-size: 1.2rem;
+}
+
+input[id='set-size-large']:checked ~ main .first-news,
+input[id='set-size-large']:checked ~ main .any-paragraph,
+input[id='set-size-large']:checked ~ main .first-paragraph
+{
+    font-size: 1.4rem;
+}
+
+input[id='set-font-sans']:checked ~ main .paragraph,
+input[id='set-font-sans']:checked ~ main .any-paragraph,
+input[id='set-font-sans']:checked ~ main .first-paragraph,
+input[id='set-font-sans']:checked ~ main .date,
+input[id='set-font-sans']:checked ~ main .first-section
+{
+    font-family: 'PT Sans', sans-serif;
+}
+
+input[id='set-font-serif']:checked ~ main .paragraph,
+input[id='set-font-serif']:checked ~ main .any-paragraph,
+input[id='set-font-serif']:checked ~ main .first-paragraph
+{
+    font-family: 'PT Serif', serif;
+}
+
+input[name^='set-']
+{
+    display: none;
+}
