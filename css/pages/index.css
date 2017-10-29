@@ -91,11 +91,9 @@ p
 p:first-of-type::first-letter
 {
     text-indent: 0;
-    padding-bottom: .1rem;
     font-size: 2rem;
     float: left;
     font-weight: bold;
-    margin: 0 .2rem .1rem 0;
 }
 
 input[id='theme-new']:checked ~ main
