@@ -12,6 +12,7 @@
 
 .newspaper
 {
+    position: relative;
     text-align: justify;
     max-width: 1200px;
     margin: 0 auto;
@@ -37,8 +38,9 @@ header
 
 .news_title
 {
-    text-align: center;
     font: 12px Kaushan Script;
+    text-align: center;
+    height: 30px;
 }
 
 .date
@@ -53,13 +55,15 @@ header
 
 figure
 {
-    margin: 0 0 .2rem;
+    position: relative;
+    margin: 1rem 0 1rem;
 }
 
 figure > img
 {
-    width: 100%;
-    height: 100%;
+    width:100%;
+    max-width: 290px;
+    max-height: 418px;
     display: inline-block;
 }
 
@@ -84,7 +88,6 @@ blockquote
 {
     margin: 5%;
     padding: 12px 20px;
-    font: 12px cursive;
     background-color: rgba(250, 248, 160, .42);
     opacity: .7;
 }
@@ -100,6 +103,7 @@ hr
 {
     font: 17px Oswald;
     text-transform: uppercase;
+    height: 170px;
     
 }
 
