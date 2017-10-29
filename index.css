@@ -1,6 +1,7 @@
 html
 {
     background-color: darkkhaki;
+    min-width: 1300px;
 }
 
 h1,
@@ -67,8 +68,8 @@ figcaption
 aside
 {
     position: absolute;
-    right: 20px;
-    top: 1000px;
+    left: -5px;
+    top: 600px;
     font-family: Cousin;
     font-weight: 600;
     font-size: 12px;
@@ -84,5 +85,5 @@ aside > div
 
 img
 {
-    width: 100%;
+    width: 350px;
 }
