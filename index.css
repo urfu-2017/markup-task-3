@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: Iorek Byrnison cyr-lat;
-    src: url(IorekByrnisoncyr-lat.otf);
+    src: url(IorekByrnisoncyr-lat.ttf);
 }
 
 @font-face
@@ -94,7 +94,7 @@ figure img
     width: 100%;
 }
 
-figure.doge
+figure.doge-picture
 {
     column-span: all;
 }
