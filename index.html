@@ -2,8 +2,153 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
+    <input type="checkbox" id="ls" class="lightswitch">
+    <label for="ls">Сменить цветовую тему</label>
+
+    <input type="radio" id="s1" name="size" class="largeSize">
+    <label for="s1">Большой текст</label>
+
+    <input type="radio" id="s2" name="size" class="midSize">
+    <label for="s2">Средний текст</label>
+
+    <input type="radio" id="s3" name="size" class="minSize">
+    <label for="s3">Маленький текст</label>
+
+    <input type="radio" id="f1" name="font" class="arial">
+    <label for="f1">Шрифт Arial</label>
+
+    <input type="radio" id="f2" name="font" class="courierNew">
+    <label for="f2">Шрифт CourierNew</label>
+
+    <input type="checkbox" id="italicStyle" class="italicF">
+    <label for="italicStyle">Стиль текста italic</label>
+
+    <main>
+        <h1 class="allCollumns">DevNews</h1>
+        <div class="header allCollumns">
+            <p class="newspaperNumber">Номер 1024</p>
+            <p class="datetime">Екатеринбург, Среда, 18 октября 2017</p>
+            <p class="price">Цена: 50 рублей</p>
+        </div>
+
+        <article>
+            <header>
+                <div class="withFont1">
+                    <h4>Стив Возняк запускает свой проект по обучению
+                        <span>it-специалистов Woz U</span>
+                    </h4>
+                </div>
+            </header>
+
+            <div>
+                <p>
+                    Woz U яв&shy;ля&shy;ет&shy;ся он&shy;лайн-уни&shy;вер&shy;си&shy;те&shy;том,
+                    ос&shy;нов&shy;ной це&shy;лью ко&shy;то&shy;ро&shy;го бу&shy;дет по&shy;мощь лю&shy;дям
+                    в по&shy;лу&shy;че&shy;нии зна&shy;ний в об&shy;ла&shy;сти
+                    ин&shy;фор&shy;ма&shy;ти&shy;ки. Вто&shy;ро&shy;сте&shy;пен&shy;ная, но не ме&shy;нее
+                    важ&shy;ная идея кур&shy;сов — это устра&shy;не&shy;ние су&shy;ще&shy;ству&shy;ю&shy;щей
+                    не&shy;об&shy;хо&shy;ди&shy;мо&shy;сти в кад&shy;рах в вы&shy;со&shy;ко&shy;
+                    опла&shy;чи&shy;ва&shy;е&shy;мых тех&shy;но&shy;ло&shy;ги&shy;чес&shy;ках
+                    сфе&shy;рах де&shy;я&shy;тель&shy;но&shy;сти. Стив Воз&shy;няк про&shy;ком&shy;
+                    мен&shy;ти&shy;ро&shy;вал от&shy;кры&shy;тие он&shy;лайн-уни&shy;вер&shy;си&shy;те&shy;та:
+                </p>
+            </div>
+
+            <blockquote>
+                <figure>
+                    <img src="steve-wozniak2.jpg" alt="Стив Возняк">
+                    <figcaption>Стив Возняк</figcaption>
+                </figure>
+                На&shy;ша цель — это обу&shy;че&shy;ние лю&shy;дей на&shy;вы&shy;кам
+                ком&shy;пью&shy;тер&shy;ных тех&shy;но&shy;ло&shy;гий. <br>
+                Мно&shy;гие бо&shy;ят&shy;ся вы&shy;би&shy;рать ка&shy;рье&shy;ру в
+                тех&shy;ни&shy;че&shy;ских сфе&shy;рах, по&shy;то&shy;му что счи&shy;та&shy;ют, <br>
+                что они это&shy;го про&shy;сто не смо&shy;гут оси&shy;лить. Я знаю, что они мо&shy;гут,
+                 и хо&shy;чу по&shy;ка&shy;зать им, <br>как это&shy;го до&shy;бить&shy;ся.
+            </blockquote>
+        </article>
+
+        <article class="newsArticle2">
+            <header>
+                <div class="postTitle withFont2">
+                    <h4>Mozilla, Microsoft, Google, Samsung и <span>W3C</span> создали единый
+                        портал документации для веб-разработчиков
+                    </h4>
+                </div>
+            </header>
+
+            <div class="allCollumns">
+                <img src="mdn.png" alt="MDN">
+            </div>
+
+            <p>Се&shy;го&shy;дня, 18 ок&shy;тяб&shy;ря, Mozilla объ&shy;яви&shy;ла о со&shy;труд&shy;
+                ни&shy;че&shy;стве с ком&shy;па&shy;ни&shy;я&shy;ми Microsoft, Google, W3C и Samsung
+                в со&shy;зда&shy;нии <br>пор&shy;та&shy;ла до&shy;ку&shy;мен&shy;та&shy;ции MDN Web Docs.
+                Чтобы под&shy;дер&shy;жать это со&shy;труд&shy;ни&shy;че&shy;ство, Mozilla
+                cфор&shy;ми&shy;ро&shy;ва&shy;ла Кон&shy;суль&shy;та&shy;тив&shy;ный со&shy;вет
+                Product Advisory Board. <br>Цель все&shy;го это&shy;го про&shy;ста — сде&shy;лать
+                веб-раз&shy;ра&shy;бот&shy;ку немно&shy;го лег&shy;че.
+            </p>
+
+            <p>Ра&shy;бо&shy;та со&shy;об&shy;ще&shy;ства ле&shy;жит в ос&shy;но&shy;ве
+            успе&shy;ха MDN. Ты&shy;ся&shy;чи доб&shy;ро&shy;воль&shy;цев по&shy;мог&shy;ли
+            по&shy;стро&shy;ить и усо&shy;вер&shy;шен&shy;ство&shy;вать MDN <br>
+            за по&shy;след&shy;ние 12 лет. Свой вклад в раз&shy;ви&shy;тие кроссбра&shy;у&shy;зер&shy;ной
+            до&shy;ку&shy;мен&shy;та&shy;ции сде&shy;ла&shy;ли и ав&shy;то&shy;ры из <br>
+            Google и Microsoft. В 2017 го&shy;ду тех&shy;ни&shy;че&shy;ские ав&shy;то&shy;ры
+            Microsoft сде&shy;ла&shy;ли бо&shy;лее 5000 из&shy;ме&shy;не&shy;ний.
+            В даль&shy;ней&shy;шем они <br>со&shy;сре&shy;до&shy;то&shy;чат свои уси&shy;лия
+            по до&shy;ку&shy;мен&shy;ти&shy;ро&shy;ва&shy;нию Web API на MDN. Кро&shy;ме то&shy;го,
+            7700 стра&shy;ниц до&shy;ку&shy;мен&shy;та&shy;ции из пор&shy;та&shy;ла <br>
+            Microsoft Developer Network уже пе&shy;ре&shy;на&shy;прав&shy;ля&shy;ют на
+            со&shy;от&shy;вет&shy;ству&shy;ю&shy;щие раз&shy;де&shy;лы MDN.
+            </p>
+        </article>
+
+        <article class="newsArticle1">
+            <header>
+                <div class="postTitle withFont3">
+                    <h4>На GitHub Universe рассказали о новой диаграмме зависимостей</h4>
+                </div>
+            </header>
+            <p>Но&shy;вый гра&shy;фик за&shy;ви&shy;си&shy;мо&shy;стей да&shy;ет пред&shy;став&shy;ле&shy;ние
+                 о про&shy;ек&shy;тах, от ко&shy;то&shy;рых за&shy;ви&shy;сит ваш код,
+                  и о про&shy;ек&shy;тах, <br>за&shy;ви&shy;ся&shy;щих от ва&shy;ше&shy;го ко&shy;да.
+                Те&shy;перь поль&shy;зо&shy;ва&shy;те&shy;ли мо&shy;гут уви&shy;деть все па&shy;ке&shy;ты и
+                при&shy;ло&shy;же&shy;ния, к ко&shy;то&shy;рым они <br>под&shy;клю&shy;че&shy;ны,
+                не вы&shy;хо&shy;дя из сво&shy;е&shy;го ре&shy;по&shy;зи&shy;то&shy;рия.
+                В на&shy;сто&shy;я&shy;щее вре&shy;мя функ&shy;ция под&shy;дер&shy;жи&shy;ва&shy;ет
+                язы&shy;ки Ruby <br>и JavaScript, а вско&shy;ре бу&shy;дет
+                ре&shy;а&shy;ли&shy;зо&shy;ва&shy;на и под&shy;держ&shy;ка Python.
+            </p>
+
+            <article>
+                <header>
+                    <div class="postTitle withFont4">
+                        <h4>Объём рынка вымогательского ПО за последний год вырос в 25 раз</h4>
+                    </div>
+                </header>
+                <p>
+                    По неко&shy;то&shy;рым оцен&shy;кам, за непол&shy;ный 2017 год ущерб от всех
+                    про&shy;ве&shy;дён&shy;ных веб-атак, <br>шиф&shy;ру&shy;ю&shy;щих все важ&shy;ные
+                    дан&shy;ные и вы&shy;мо&shy;га&shy;ю&shy;щих за их раз&shy;бло&shy;ки&shy;ров&shy;ку
+                    день&shy;ги, со&shy;ста&shy;вил по&shy;ряд&shy;ка $1 мил&shy;ли&shy;ар&shy;да.
+                </p>
+
+                <p>Та&shy;кой ин&shy;фор&shy;ма&shy;ци&shy;ей в сво&shy;ём от&shy;чё&shy;те
+                    по&shy;де&shy;ли&shy;лись со&shy;труд&shy;ни&shy;ки от&shy;де&shy;ла
+                    ана&shy;ли&shy;за угроз (Threat Analysis Unit, TAU) ком&shy;па&shy;нии Carbon Black. <br>
+                    Их ис&shy;сле&shy;до&shy;ва&shy;ние име&shy;ет неуте&shy;ши&shy;тель&shy;ные
+                    ре&shy;зуль&shy;та&shy;ты — за пе&shy;ри&shy;од с 2016 по 2017 го&shy;ды раз&shy;мер
+                    рын&shy;ка вы&shy;мо&shy;га&shy;те&shy;лей уве&shy;ли&shy;чил&shy;ся сра&shy;зу на 2502%.
+                </p>
+            </article>
+        </article>
+    </main>
+    <footer><span>© РосЭлектроПечать</span></footer>
 </body>
 </html>

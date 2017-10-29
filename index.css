@@ -1,0 +1,282 @@
+label
+{
+    position: relative;
+}
+
+article:first-of-type,
+.newspaperNumber
+{
+    margin-left: 15px;
+}
+
+.newsArticle1:last-of-type,
+.price
+{
+    margin-right: 15px;
+}
+
+input
+{
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.arial:checked ~ main,
+.arial:checked + label,
+.arial:checked ~ footer
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.courierNew:checked ~ main,
+.courierNew:checked + label,
+.courierNew:checked ~ footer
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.italicF:checked ~ main,
+.italicF:checked ~ label,
+.italicF:checked ~ footer
+{
+    font-style: italic;
+}
+
+.lightswitch:checked ~ main,
+.lightswitch:checked ~ label,
+.lightswitch:checked ~ p,
+.lightswitch:checked ~ footer
+{
+    border-color: white;
+    background: #222;
+    color: white;
+}
+
+.lightswitch:checked ~ p
+{
+    background: #222;
+    color: white;
+}
+
+.largeSize:checked ~ main,
+.largeSize:checked + label,
+.largeSize:checked ~ footer
+{
+    font-size: 30px;
+}
+
+.midSize:checked ~ main,
+.midSize:checked + label,
+.midSize:checked ~ footer
+{
+    font-size: 16px;
+}
+
+.minSize:checked ~ main,
+.minSize:checked + label,
+.minSize:checked ~ footer
+{
+    font-size: 12px;
+}
+
+body
+{
+    margin: 0;
+}
+
+div.header
+{
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    border-bottom: 3px double;
+    border-top: 3px double;
+}
+
+main
+{
+    margin-top: -30px;
+    border: black;
+    column-count: 3;
+    column-rule: thin solid grey;
+    padding-bottom: 10px;
+}
+
+footer
+{
+    border-top: thin solid black;
+    padding: 10px;
+    flex: 0 0 auto;
+}
+
+h1
+{
+    border-top: dotted 2px;
+    margin-top: 35px;
+}
+
+h1,
+h2
+{
+    margin-bottom: 5px;
+}
+
+span
+{
+    white-space: nowrap;
+}
+
+h1,
+.datetime
+{
+    text-align: center;
+}
+
+.newspaperNumber
+{
+    text-align: right;
+}
+
+.postTitle
+{
+    text-align: center;
+    column-span: all;
+}
+
+.withFont1
+{
+    font-family: NotoSans, sans-serif;
+}
+
+.withFont2
+{
+    font-family: Alice, serif;
+    font-size: 18px;
+}
+
+.withFont3
+{
+    font-family: Comfortaa, cursive;
+}
+
+.withFont4
+{
+    font-family: Marmelad, sans-serif;
+    font-size: 18px;
+}
+
+.allCollumns
+{
+    column-span: all;
+}
+
+p.price
+{
+    display: inline-table;
+    text-align: right;
+}
+
+article p::first-letter
+{
+    font-size: 2em;
+}
+
+div.allCollumns img
+{
+    width: 100%;
+    height: 10;
+    column-span: all;
+}
+
+.newsArticle1
+{
+    margin-bottom: 10px;
+    column-count: 2;
+    break-after: column;
+    break-before: column;
+}
+
+.newsArticle2
+{
+    margin-bottom: 100px;
+    column-count: 3;
+    break-after: column;
+    break-before: column;
+}
+
+figcaption
+{
+    margin: 7px 0 7px 7px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+figure
+{
+    float: right;
+    break-inside: avoid;
+    margin: 0;
+    text-align: center;
+}
+
+figure img
+{
+    height: auto;
+    width: 80%;
+}
+
+blockquote
+{
+
+    break-inside: avoid;
+    margin: 0;
+    padding: 30px 30px 30px 40px;
+    border-left: 8px solid grey;
+    position: relative;
+    font-family: Neucha, cursive;
+
+}
+
+blockquote:before
+{
+    content: '\201C';
+    font-family: Arial;
+    color: grey;
+    font-size: 70px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+
+@font-face
+{
+    font-family: Neucha;
+    src: url('Neucha.ttf');
+}
+
+@font-face
+{
+    font-family: NotoSans;
+    src: url('NotoSans-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: Comfortaa;
+    src: url('Comfortaa-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: Alice;
+    src: url('Alice-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: Marmelad;
+    src: url('Marmelad-Regular.ttf');
+}
