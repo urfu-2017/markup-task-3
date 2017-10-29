@@ -1,0 +1,124 @@
+@font-face
+{
+    font-family: Iorek Byrnison cyr-lat;
+    src: url(IorekByrnisoncyr-lat.ttf);
+}
+
+@font-face
+{
+    font-family: Forum-Regular;
+    src: url(Forum-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: OldStandard-Regular;
+    src: url(OldStandard-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: CormorantGaramond-Regular;
+    src: url(CormorantGaramond-Regular.ttf);
+}
+
+body
+{
+    font-size: 20px;
+}
+
+main
+{
+    column-count: 3;
+    column-rule: 1px solid #000;
+    column-fill: balance;
+    column-width: 400px;
+    font: 100% CormorantGaramond-Regular;
+
+}
+
+.title,
+footer
+{
+    text-align: center;
+    font: 150% Iorek Byrnison cyr-lat;
+    font-variant: small-caps;
+}
+
+h1.title
+{
+    column-span: all;
+    font-size: 400%;
+}
+
+.date
+{
+    column-span: all;
+    text-align: right;
+}
+
+footer
+{
+    margin-top: 30px;
+    font-size: 60%;
+}
+
+hr
+{
+    column-span: all;
+}
+
+.news:nth-of-type(2) article
+{
+    column-count: 2;
+    column-rule: 1px solid #000;
+    column-fill: balance;
+}
+
+p:first-of-type:first-letter
+{
+    font: 150% Iorek Byrnison cyr-lat;
+}
+
+em
+{
+    font: 100% Iorek Byrnison cyr-lat;
+}
+
+q
+{
+    font: 100% Forum-Regular;
+}
+
+cite,
+figcaption
+{
+    font: 75% OldStandard-Regular;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+figure.wide-image
+{
+    column-span: all;
+}
+
+input[id='grow-font']:checked ~ main
+{
+    font-size: 150%;
+}
+
+input[id='sans-serif-font']:checked ~ main
+{
+    font-family: sans-serif;
+}
+
+input[id='dark-theme']:checked ~ main
+{
+    background: #000;
+    color: #fff;
+    column-rule: 1px solid #fff;
+}
