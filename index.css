@@ -115,21 +115,12 @@ input[id='set-color-dark']:checked ~ main label[for='set-color-dark']
     font: 30px 'Anton', sans-serif;
 }
 
-.paragraph-photo
-{
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    font: 14px 'Indie Flower', cursive;
-
-}
-
 .any-news
 {
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-
 }
 
 .first-paragraph
@@ -161,14 +152,7 @@ q
     margin: 7px 7px 7px 0;
 }
 
-.photoI
-{
-    font-size: 1.4rem;
-}
-
-input[id='set-color-dark']:checked ~ main .newspaper,
-input[id='set-color-dark']:checked ~ main .newspaper-header,
-input[id='set-color-dark']:checked ~ main .new
+input[id='set-color-dark']:checked ~ main
 {
     background-color: #000;
     color: #fff;
