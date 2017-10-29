@@ -92,12 +92,25 @@ h3
 
 .articles
 {
-    column-count: 3;
-    column-gap: 100px;
-    column-rule: 3px solid #000;
     -moz-column-count: 3;
     -moz-column-gap: 100px;
     -moz-column-rule: 3px solid #000;
+    column-count: 3;
+    column-gap: 100px;
+    column-rule: 3px solid #000;
+}
+
+article:last-of-type
+{
+    -moz-column-count: 2;
+    -moz-column-gap: 30px;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+article:last-of-type h3
+{
+    column-span: all;
 }
 
 article:not(:last-of-type)
@@ -115,13 +128,13 @@ article:not(:last-of-type)
 .img-container
 {
     text-align: center;
-    float: left;
+    column-span: all;
 }
 
-.img-container img
+img
 {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+   width: 40%;
+   padding: 0 20px;
 }
 
 input[id='theme-dark']:checked ~ .content
