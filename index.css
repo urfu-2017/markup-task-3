@@ -177,7 +177,7 @@ body
     padding: 0 16px;
 }
 
-.double-header *
+.double-header .dh-part
 {
     margin: 0;
 }
@@ -202,7 +202,7 @@ body
 {
     font-family: 'Tinos', serif;
     margin: 0;
-    text-indent: 2em
+    text-indent: 2em;
 }
 
 .content p:first-of-type:first-letter
