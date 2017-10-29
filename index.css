@@ -16,25 +16,44 @@
     src: url(OldStandard-Regular.ttf);
 }
 
+@font-face
+{
+    font-family: CormorantGaramond-Regular;
+    src: url(CormorantGaramond-Regular.ttf);
+}
+
+body
+{
+    font-size: 20px;
+}
+
 main
 {
     column-count: 3;
     column-rule: 1px solid #000;
-    font: 20px sans-serif;
+    column-fill: balance;
+    column-width: 400px;
+    font: 100% CormorantGaramond-Regular;
+
 }
 
 .title,
-.heading
+footer
 {
     text-align: center;
     font: 150% Iorek Byrnison cyr-lat;
+    font-variant: small-caps;
 }
 
-.title
+h1.title
 {
     column-span: all;
     font-size: 400%;
-    font-variant: small-caps;
+}
+
+footer
+{
+    font-size: 60%;
 }
 
 hr
@@ -42,15 +61,11 @@ hr
     column-span: all;
 }
 
-.second.news
+.news:nth-of-type(2) article
 {
     column-count: 2;
     column-rule: 1px solid #000;
-}
-
-.second.news > .heading
-{
-    column-span: all;
+    column-fill: balance;
 }
 
 p:first-of-type:first-letter
@@ -74,11 +89,6 @@ figcaption
     font: 75% OldStandard-Regular;
 }
 
-figure
-{
-    column-span: 1;
-}
-
 figure img
 {
     width: 100%;
@@ -89,18 +99,24 @@ figure.doge
     column-span: all;
 }
 
-input[id='increased']:checked ~ main
+div.settings
+{
+    display: inline-block;
+}
+
+input[id='grow-font']:checked ~ main
 {
     font-size: 150%;
 }
 
-input[id='serif']:checked ~ main
+input[id='sans-serif-font']:checked ~ main
 {
-    font-family: serif;
+    font-family: sans-serif;
 }
 
-input[id='dark']:checked ~ main
+input[id='dark-theme']:checked ~ main
 {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
+    column-rule: 1px solid #fff;
 }

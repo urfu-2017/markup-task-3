@@ -6,23 +6,17 @@
     <title>Задача «DeLorean DMC-12»</title>
 </head>
 <body>
-<input type="radio" name="size" id="increased">
-<label for="increased">Увеличенный</label>
-<input type="radio" name="size" id="standard" checked>
-<label for="standard">Стандартный</label>
-<input type="radio" name="font" id="sans" checked>
-<label for="sans">Без засечек</label>
-<input type="radio" name="font" id="serif">
-<label for="serif">С засечками</label>
-<input type="radio" id="light" name="color" checked>
-<label for="light">Светлый фон</label>
-<input type="radio" id="dark" name="color">
-<label for="dark">Тёмный фон</label>
+<input type="checkbox" name="size" id="grow-font">
+<label for="grow-font">Увеличенный</label>
+<input type="checkbox" name="font" id="sans-serif-font">
+<label for="sans-serif-font">Без засечек</label>
+<input type="checkbox" name="color" id="dark-theme">
+<label for="dark-theme">Тёмная тема</label>
 <main>
     <h1 class="title">Ну газета</h1>
     <hr>
-    <section class="first news">
-        <h2 class="heading">Все ду&shy;ма&shy;ют, что Марк Цу&shy;кер&shy;берг — не че&shy;ло&shy;век.
+    <section class="news">
+        <h2 class="title">Все ду&shy;ма&shy;ют, что Марк Цу&shy;кер&shy;берг — не че&shy;ло&shy;век.
             Од&shy;на&shy;жды он да&shy;же (слу&shy;чай&shy;но) при&shy;знал это сам!</h2>
         <article>
             <p>
@@ -76,8 +70,8 @@
             </p>
         </article>
     </section>
-    <section class="second news">
-        <h2 class="heading">Са&shy;мая мем&shy;ная со&shy;ба&shy;ка.
+    <section class="news">
+        <h2 class="title">Са&shy;мая мем&shy;ная со&shy;ба&shy;ка.
             Как си&shy;ба-ину ста&shy;ла лю&shy;би&shy;мой по&shy;ро&shy;дой ин&shy;тер&shy;не&shy;та</h2>
         <article>
             <p>
@@ -105,7 +99,7 @@
                 фо&shy;то&shy;гра&shy;фия и ста&shy;ла ос&shy;но&shy;вой ме&shy;ма.
                 На сни&shy;мок Ка&shy;бо&shy;су ста&shy;ли по&shy;ме&shy;щать ко&shy;рот&shy;кие
                 фра&shy;зы, на&shy;пи&shy;сан&shy;ные шриф&shy;том Comic Sans MS.</p>
-            <figure class="doge">
+            <figure class="doge-picture">
                 <img src="doge.jpg" alt="doge">
                 <figcaption>what r you doing?</figcaption>
             </figure>
@@ -127,5 +121,9 @@
         </article>
     </section>
 </main>
+<footer>
+    © Ну газета. <time>2017-10-23</time>. Тургенева, 4. Тираж 1 экз.
+    <a href="https://github.com/BorodinGeorgy">Георгий Бородин</a>. +7 (123)456-78-90.
+</footer>
 </body>
 </html>
