@@ -1,0 +1,110 @@
+body
+{
+    text-align: center;
+    height: 100px;
+    margin: 1px 400px;
+}
+
+.c3 
+{
+    column-count: 3;
+    column-rule: 2px solid #000;
+}
+
+.c1
+{
+    column-count: 3;
+    column-rule: 2px solid #000;
+}
+
+.c2
+{
+    column-count: 4;
+    column-rule: 2px solid #000;
+}
+
+h6
+{
+    margin: 10px;
+    text-align: center;
+}
+
+hr
+{
+    background-color: black;
+    height: 5px;
+}
+
+figure,
+figure > figcaption
+{
+    column-span: all;
+    text-align: center;
+}
+
+h1,
+h2
+{
+    column-span: all;
+    margin: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.wr
+{
+    font-size: 60px;
+}
+
+h2
+{
+    font-family: fantasy;
+}
+
+tr:first-child > td:first-child
+{
+    width: 10px;
+    padding: 5px;
+    border: 7px dotted black;
+}
+
+.c1 > h4
+{
+    font-family: fantasy;
+}
+
+.c2 > h4
+{
+    font-family: sans-serif;
+}
+
+.c2 > p::first-letter
+{
+    font-size: 30px;
+}
+
+.c1 > p::first-letter
+{
+    font-size: 30px;
+}
+
+.c1 > p:nth-child(5)
+{
+    border: 2px dotted black;
+}
+
+body > div:first-child > img
+{
+    width: 220px;
+}
+
+.img1
+{
+    width: 100px;
+}
+
+.img2
+{
+    width: 300px;
+}
