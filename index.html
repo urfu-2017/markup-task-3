@@ -3,7 +3,331 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" type="text/css" href="index.css" >
 </head>
 <body>
+    <main>
+        <input type="radio" name="theme" value="light" id="light-theme" checked>
+        <input type="radio" name="theme" value="dark" id="dark-theme">
+        <input type="radio" name="font-size" value="small" id="small-font-size">
+        <input type="radio" name="font-size" value="medium" id="medium-font-size" checked>
+        <input type="radio" name="font-size" value="big" id="big-font-size">
+        <input type="radio" name="font-family" value="gothic" id="gothic">
+        <input type="radio" name="font-family" value="courier-new" id="courier-new" checked>
+        <div class="journal">
+            <div class="footer">
+                <div>
+                Тема:
+                <label for="light-theme">Светлая</label>
+                <label for="dark-theme">Темная</label>
+                </div>
+                <div>
+                Размер шрифта:
+                <label for="small-font-size">Маленький</label>
+                <label for="medium-font-size">Умеренный</label>
+                <label for="big-font-size">Радикальный</label>
+                </div>
+                <div>
+                Шрифт:
+                <label for="gothic">Первый</label>
+                <label for="courier-new">Второй</label>
+                </div>
+            </div>
+            <div class="head">
+                <div class="tower">
+                    <img src="tower.png" alt="башня" title="башня">
+                </div>
+                <div class="top">
+                    <span class="italic">Пролетарии всех стран, соединяйтесь!</span>
+                    <span class="cpsu">Коммунистическая партия Советского Союза.</span>
+                    <div class="name">
+                        <div class="img"><img src="ii.png" alt="ленин" title="ленин"></div>
+                        <div class="img"><img src="ii.png" alt="ленин" title="ленин"></div>
+                        <div class="img"><img src="iii.png" alt="звезда" title="звезда"></div>
+                        <h1>ПРАВДА</h1>
+                    </div>
+                    <div>
+                        <div class="createdBy">
+                            Газета основана 5 мая 1912 года В. И. Лениным.
+                        </div>
+                        <div>
+                            <span class="cpsu">Орган Центрального Комитета КПСС</span>
+                            <div>
+                                <ul>
+                                    <li >№ 28</li>
+                                    <li>⚫</li>
+                                    <li >4 ноября 1936 года</li>
+                                    <li>⚫</li>
+                                    <li >Цена 4 коп.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="articles">
+                <table>
+                <tr>
+                <td>
+                <div class="left">
+                    <article>
+                        <header><h1>Искусство партийного управления</h1></header>
+                        <p>
+                            Глав&shy;ный итог со&shy;ро&shy;ка&shy;ле&shy;тия Ок&shy;тябрь&shy;ской
+                            ре&shy;во&shy;лю&shy;ции — ре&shy;во&shy;лю&shy;ции са&shy;мой
+                            гран&shy;ди&shy;оз&shy;ной по сво&shy;им мас&shy;шта&shy;бам,
+                            са&shy;мой глу&shy;бо&shy;кой по це&shy;лям и иде&shy;ям,
+                            ею осу&shy;ществ&shy;ля&shy;е&shy;мым, —
+                            за&shy;клю&shy;ча&shy;ет&shy;ся в том, что она при&shy;ве&shy;ла
+                            к по&shy;бе&shy;де со&shy;ци&shy;а&shy;лиз&shy;ма, к
+                            со&shy;зда&shy;нию мо&shy;гу&shy;че&shy;го
+                            со&shy;ци&shy;а&shy;ли&shy;сти&shy;че&shy;ско&shy;го ла&shy;ге&shy;ря,
+                            под&shy;твер&shy;див тем са&shy;мым ис&shy;тин&shy;ность и
+                            не&shy;зыб&shy;ле&shy;мость прин&shy;ци&shy;пов марк&shy;сиз&shy;ма,
+                            -во&shy;пло&shy;щен&shy;ных в прак&shy;ти&shy;ке на&shy;шей
+                            жиз&shy;ни.
+                        </p>
+                        <p>
+                            Ха&shy;рак&shy;тер&shy;но, что сей&shy;час на&shy;ши идей&shy;ные
+                            про&shy;тив&shy;ни&shy;ки — бур&shy;жу&shy;аз&shy;ные
+                            со&shy;цио&shy;ло&shy;ги
+                            — са&shy;ми вы&shy;нуж&shy;де&shy;ны при&shy;зна&shy;вать, что они
+                            не мо&shy;гут про&shy;ти&shy;во&shy;по&shy;ста&shy;вить
+                            сколь&shy;ко-ни&shy;будь кон&shy;струк&shy;тив&shy;ных,
+                            по&shy;ло&shy;жи&shy;тель&shy;ных и
+                            вдох&shy;нов&shy;ля&shy;ю&shy;щих идей
+                            ве&shy;ли&shy;ким иде&shy;ям
+                            марк&shy;сиз&shy;ма-ле&shy;ни&shy;низ&shy;ма.
+                            «Идеи мо&shy;гут быть по&shy;би&shy;ты толь&shy;ко
+                            луч&shy;ши&shy;ми иде&shy;я&shy;ми… Мы не мо&shy;жем
+                            про&shy;ти&shy;во&shy;по&shy;ста&shy;вить
+                            ко&shy;ка-ко&shy;ла марк&shy;сиз&shy;му», — с
+                            огор&shy;че&shy;ни&shy;ем кон&shy;ста&shy;ти&shy;ру&shy;ет
+                            аме&shy;ри&shy;кан&shy;ский со&shy;цио&shy;лог Мэм&shy;форд
+                            в ра&shy;бо&shy;те с
+                            ха&shy;рак&shy;тер&shy;ным на&shy;зва&shy;ни&shy;ем:
+                            «Во имя здра&shy;во&shy;го смыс&shy;ла».
+                        </p>
+                        <p>
+                            Все ча&shy;ще встре&shy;ча&shy;ют&shy;ся в
+                            бур&shy;жу&shy;аз&shy;ной пе&shy;ча&shy;ти
+                            по&shy;пыт&shy;ки пред&shy;ста&shy;вить де&shy;ло
+                            та&shy;ким об&shy;ра&shy;зом, буд&shy;то ка&shy;пи&shy;та&shy;лизм
+                            пе&shy;ре&shy;стал быть са&shy;мим со&shy;бой.
+                        </p>
+                    </article>
+                </div>
+                </td>
+                <td>
+                <div class="center">
+                    <div class="winter">
+                            <article>
+                                <h2>дальнем <br>На севере</h2>
+                                <p>
+                                    Груп&shy;па под&shy;вод&shy;но&shy;го по&shy;ис&shy;ка, в
+                                    со&shy;став ко&shy;то&shy;рой во&shy;шли
+                                    ак&shy;ва&shy;лан&shy;ги&shy;сты
+                                    и во&shy;до&shy;ла&shy;зы
+                                    спор&shy;тив&shy;но-тех&shy;ни&shy;че&shy;ских клу&shy;бов
+                                    Моск&shy;вы и Ле&shy;нин&shy;гра&shy;да, в
+                                    пе&shy;ри&shy;од лет&shy;них от&shy;пус&shy;ков
+                                    на&shy;ча&shy;ла по&shy;ис&shy;ки
+                                    за&shy;то&shy;нув&shy;ше&shy;го
+                                    ле&shy;до&shy;коль&shy;но&shy;го
+                                    па&shy;ро&shy;хо&shy;да «Вай&shy;гач».
+                                </p>
+                                    <figure class="wide">
+                                        <img src="v.png" alt="зима" title="сварщики">
+                                        <figcaption>Сварщики</figcaption>
+                                    </figure>
+                                <p>
+                                    По&shy;ис&shy;ко&shy;вые ра&shy;бо&shy;ты
+                                    бы&shy;ли ор&shy;га&shy;ни&shy;зо&shy;ва&shy;ны при
+                                    со&shy;дей&shy;ствии
+                                    Гео&shy;гра&shy;фи&shy;че&shy;ско&shy;го
+                                    об&shy;ще&shy;ства Со&shy;ю&shy;за ССР.
+                                </p>
+                            </article>
+                    </div>
+                    <div class="diary"><p>Дневник всесоюзного соревнования</p></div>
+                    <div class="main-section"><h1>Намеченное - выполним!</h1></div>
+                    <article class="main">
+                        <img src="s.jpg" width="150" alt="спорт" title="бегуны">
+                        <p>
+                            Все&shy;рос&shy;сий&shy;ские со&shy;рев&shy;но&shy;ва&shy;ния
+                            «Шко&shy;лы без&shy;опас&shy;но&shy;сти» про&shy;хо&shy;дят на
+                            тер&shy;ри&shy;то&shy;рии
+                            спор&shy;тив&shy;но-до&shy;су&shy;го&shy;во&shy;го цен&shy;тра
+                            «Крас&shy;ная Пах&shy;ра».
+                            Ор&shy;га&shy;ни&shy;за&shy;то&shy;ры раз&shy;би&shy;ли
+                            бла&shy;го&shy;устро&shy;ен&shy;ный по&shy;ле&shy;вой ла&shy;герь,
+                            предо&shy;ста&shy;ви&shy;ли раз&shy;но&shy;об&shy;раз&shy;ное
+                            обо&shy;ру&shy;до&shy;ва&shy;ние,
+                            не&shy;об&shy;хо&shy;ди&shy;мое на раз&shy;ных эта&shy;пах
+                            со&shy;рев&shy;но&shy;ва&shy;ний. Пи&shy;та&shy;ние
+                            и бы&shy;то&shy;вые усло&shy;вия,
+                            как от&shy;ме&shy;ча&shy;ют са&shy;ми де&shy;ти и
+                            пред&shy;ста&shy;ви&shy;те&shy;ли ко&shy;манд из раз&shy;ных
+                            ре&shy;ги&shy;о&shy;нов, очень
+                            хо&shy;ро&shy;шие.
+                        </p>
+                        <p>
+                            «Очень «кру&shy;то», пи&shy;та&shy;ние
+                            ве&shy;ли&shy;ко&shy;леп&shy;ное. Ме&shy;сто, где
+                            мы раз&shy;би&shy;ли па&shy;лат&shy;ки,
+                            по&shy;кры&shy;то ков&shy;ром «под тра&shy;ву», –
+                            ска&shy;зал тре&shy;нер ко&shy;ман&shy;ды из Ан&shy;гар&shy;ска
+                            Ир&shy;кут&shy;ской об&shy;ла&shy;сти Олег Ор&shy;лов.
+                            – Та&shy;кая ис&shy;крен&shy;няя за&shy;бо&shy;та о де&shy;тях
+                            тро&shy;га&shy;ет.
+                            По&shy;ва&shy;ра хо&shy;ро&shy;шо и вкус&shy;но го&shy;то&shy;вят,
+                            есть, где по&shy;мыть&shy;ся и где от&shy;дох&shy;нуть».
+                        </p>
+                        <p>
+                                Шко&shy;ла без&shy;опас&shy;но&shy;сти – это не
+                                про&shy;сто со&shy;рев&shy;но&shy;ва&shy;ния, это
+                                дви&shy;же&shy;ние да&shy;ет
+                                воз&shy;мож&shy;ность ре&shy;бя&shy;там со всех
+                                угол&shy;ков стра&shy;ны по&shy;зна&shy;ко&shy;мить&shy;ся
+                                и по&shy;дру&shy;жить&shy;ся.
+                        </p>
+                        <p>
+                            Пер&shy;вый же ве&shy;чер был про&shy;ве&shy;ден
+                            кон&shy;церт, где каж&shy;дая ко&shy;ман&shy;да
+                            пред&shy;став&shy;ля&shy;ла
+                            свою «ви&shy;зит&shy;ную кар&shy;точ&shy;ку».
+                        </p>
+                        <p>
+                            «Ат&shy;мо&shy;сфе&shy;ра бы&shy;ла теп&shy;лой и
+                            дру&shy;же&shy;ствен&shy;ной. Ре&shy;бя&shy;та
+                            до&shy;воль&shy;ны тем, как их
+                            встре&shy;ти&shy;ла Москва, здесь они зна&shy;ко&shy;мят&shy;ся
+                            со сво&shy;и&shy;ми сверст&shy;ни&shy;ка&shy;ми из дру&shy;гих
+                            ре&shy;ги&shy;о&shy;нов. Пер&shy;вый день
+                            со&shy;рев&shy;но&shy;ва&shy;ний по&shy;ка&shy;зал,
+                            что ко&shy;ман&shy;ды до&shy;ста&shy;точ&shy;но
+                            се&shy;рьез&shy;ные, опыт&shy;ные, бо&shy;роть&shy;ся
+                            за по&shy;бе&shy;ду при&shy;дет&shy;ся изо всех сил»,-
+                            под&shy;черк&shy;нул
+                            тре&shy;нер ан&shy;гар&shy;ской ко&shy;ман&shy;ды Олег
+                            Ор&shy;лов.
+                        </p>
+                        <img src="ss.jpg" width="150" alt="спорт" title="футбол">
+                        <p>
+                            Са&shy;мым слож&shy;ным и ин&shy;те&shy;рес&shy;ным
+                            ста&shy;нет так на&shy;зы&shy;ва&shy;е&shy;мый
+                            «Марш&shy;рут вы&shy;жи&shy;ва&shy;ния»,
+                            ко&shy;то&shy;рый бу&shy;дет про&shy;хо&shy;дить
+                            не один день. Ко&shy;ман&shy;дам пред&shy;сто&shy;ит
+                            пре&shy;одо&shy;леть
+                            де&shy;сят&shy;ки ки&shy;ло&shy;мет&shy;ров пу&shy;ти
+                            по ле&shy;сам и по&shy;лям, в хо&shy;де ко&shy;то&shy;ро&shy;го
+                            их ждут раз&shy;лич&shy;ные
+                            ис&shy;пы&shy;та&shy;ние на уме&shy;ние вы&shy;жить
+                            в усло&shy;ви&shy;ях ди&shy;кой при&shy;ро&shy;ды.
+                        </p>
+                        <p>
+                            Сво&shy;е&shy;го ро&shy;да раз&shy;мин&shy;кой
+                            к пред&shy;сто&shy;я&shy;ще&shy;му «Марш&shy;ру&shy;ту
+                            вы&shy;жи&shy;ва&shy;ния» в пер&shy;вый день
+                            со&shy;рев&shy;но&shy;ва&shy;ний ста&shy;ло
+                            пре&shy;одо&shy;ле&shy;ние по&shy;ло&shy;сы
+                            пре&shy;пят&shy;ствий, как ее на&shy;зы&shy;ва&shy;ют
+                            участ&shy;ни&shy;ки – «ко&shy;рот&shy;кой».
+                            Она дей&shy;стви&shy;тель&shy;но не&shy;ве&shy;ли&shy;ка,
+                            на ее пре&shy;одо&shy;ле&shy;ние
+                            ухо&shy;ди&shy;ло все&shy;го по&shy;ряд&shy;ка
+                            6 – 8 ми&shy;нут, но для участ&shy;ни&shy;ков это
+                            пер&shy;вое
+                            упраж&shy;не&shy;ние ста&shy;ло сво&shy;е&shy;го
+                            ро&shy;да «всту&shy;пи&shy;тель&shy;ным те&shy;стом»:
+                            по&shy;сле про&shy;хож&shy;де&shy;ния
+                            сра&shy;зу ста&shy;но&shy;ви&shy;лось яс&shy;но,
+                            че&shy;го сто&shy;ит каж&shy;дая из ко&shy;манд,
+                            ка&shy;кие из них
+                            осо&shy;бен&shy;но силь&shy;ные. В «ко&shy;рот&shy;кой»
+                            ди&shy;стан&shy;ции  сре&shy;ди стар&shy;шей
+                            груп&shy;пы по&shy;бе&shy;ду
+                            одер&shy;жа&shy;ла сбор&shy;ная из
+                            Став&shy;ро&shy;поль&shy;ско&shy;го края
+                            под ру&shy;ко&shy;вод&shy;ством Ген&shy;на&shy;дия
+                            Мед&shy;ве&shy;де&shy;ва. Но это ещё ни о
+                            чём не го&shy;во&shy;рит, впе&shy;ре&shy;ди ещё пять дней
+                            со&shy;рев&shy;но&shy;ва&shy;ний.
+                        </p>
+                    </article>
+                </div>
+                </td>
+                <td>
+                <div class="right">
+                    <article>
+                        <header><h1>За успехи в труде.</h1></header>
+                        <p>
+                            Служ&shy;ба участ&shy;ко&shy;вых
+                            упол&shy;но&shy;мо&shy;чен&shy;ных - од&shy;но
+                            из круп&shy;ных под&shy;раз&shy;де&shy;ле&shy;ний ми&shy;ли&shy;ции
+                            об&shy;ще&shy;ствен&shy;ной без&shy;опас&shy;но&shy;сти.
+                            По сло&shy;вам на&shy;чаль&shy;ни&shy;ка от&shy;де&shy;ле&shy;ния,
+                            ка&shy;пи&shy;та&shy;на
+                            ми&shy;ли&shy;ции И.В.Куп&shy;ри&shy;я&shy;но&shy;ва в его
+                            под&shy;чи&shy;не&shy;нии на&shy;хо&shy;дят&shy;ся 16
+                            че&shy;ло&shy;век, за ко&shy;то&shy;ры&shy;ми
+                            за&shy;креп&shy;ле&shy;ны 15 ад&shy;ми&shy;ни&shy;стра&shy;тив&shy;ных
+                            участ&shy;ков. На од&shy;но&shy;го
+                            участ&shy;ко&shy;во&shy;го при&shy;хо&shy;дит&shy;ся
+                            по два, а то и по три на&shy;се&shy;лен&shy;ных пунк&shy;та, в
+                            ко&shy;то&shy;рых про&shy;жи&shy;ва&shy;ют от
+                            не&shy;сколь&shy;ких со&shy;тен до ты&shy;ся&shy;чи
+                            и боль&shy;ше че&shy;ло&shy;век. Са&shy;мым круп&shy;ным и важ&shy;ным
+                            объ&shy;ек&shy;том счи&shy;та&shy;ет&shy;ся го&shy;род,
+                            здесь за по&shy;ряд&shy;ком сле&shy;дят 4 участ&shy;ко&shy;вых.».
+                        </p>
+                        <p>
+                            Ос&shy;но&shy;ва де&shy;я&shy;тель&shy;но&shy;сти служ&shy;бы -
+                            про&shy;фи&shy;лак&shy;ти&shy;ка
+                            пра&shy;во&shy;на&shy;ру&shy;ше&shy;ний: под&shy;рост&shy;ко&shy;вая
+                            пре&shy;ступ&shy;ность, ре&shy;ше&shy;ние бы&shy;то&shy;вых
+                            кон&shy;флик&shy;тов и мно&shy;гих дру&shy;гих - все это в
+                            их ком&shy;пе&shy;тен&shy;ции.
+                        </p>
+                        <p>
+                            - По ито&shy;гам про&shy;шло&shy;го го&shy;да
+                            - рас&shy;ска&shy;зы&shy;ва&shy;ет Иван
+                            Ва&shy;ле&shy;рье&shy;вич, - ра&shy;бо&shy;та
+                            от&shy;де&shy;ле&shy;ния УУМ, со&shy;глас&shy;но
+                            при&shy;ка&shy;зу №1120 МВД РФ,
+                            оце&shy;не&shy;на по&shy;ло&shy;жи&shy;тель&shy;но. За
+                            2007 год рас&shy;смот&shy;ре&shy;но 895 жа&shy;лоб
+                            и за&shy;яв&shy;ле&shy;ний от граж&shy;дан.
+                            В це&shy;лях
+                            про&shy;фи&shy;лак&shy;ти&shy;ки тяж&shy;ких и
+                            осо&shy;бо тяж&shy;ких пре&shy;ступ&shy;ле&shy;ний
+                            участ&shy;ко&shy;вы&shy;ми
+                            упол&shy;но&shy;мо&shy;чен&shy;ны&shy;ми
+                            вы&shy;яв&shy;ле&shy;но 51 пре&shy;ступ&shy;ле&shy;ние
+                            пре&shy;вен&shy;тив&shy;но&shy;го ха&shy;рак&shy;те&shy;ра.
+                        </p>
+                        <p>
+                            В сен&shy;тяб&shy;ре под&shy;раз&shy;де&shy;ле&shy;ние
+                            про&shy;шло ин&shy;спек&shy;тор&shy;скую про&shy;вер&shy;ку. Из
+                            рес&shy;пуб&shy;ли&shy;кан&shy;ско&shy;го МВД
+                            при&shy;ез&shy;жа&shy;ла боль&shy;шая груп&shy;па,
+                            ко&shy;то&shy;рую воз&shy;глав&shy;лял
+                            ка&shy;пи&shy;тан ми&shy;ли&shy;ции Н.А.Мат&shy;ве&shy;ев.
+                            Ни&shy;ко&shy;лай Аль&shy;бер&shy;то&shy;вич де&shy;таль&shy;но
+                            озна&shy;ко&shy;мил&shy;ся
+                            со все&shy;ми на&shy;прав&shy;ле&shy;ни&shy;я&shy;ми
+                            ра&shy;бо&shy;ты служ&shy;бы и дал
+                            по&shy;ло&shy;жи&shy;тель&shy;ную оцен&shy;ку
+                            де&shy;я&shy;тель&shy;но&shy;сти ее со&shy;труд&shy;ни&shy;ков. 
+                        </p>
+                    </article>
+                </div>
+                </td>
+                </tr>
+                </table>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
