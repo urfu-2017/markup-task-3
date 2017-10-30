@@ -5,6 +5,15 @@ body
     background-color: #fffacd;
 }
 
+@font-face
+{
+    font-family: 'Old Standard TT';
+    src: local('Old Standard TT Regular'),
+        url('fonts/OldStandard-Regular.woff2') format('woff2'),
+        url('fonts/OldStandard-Regular.woff') format('woff'),
+        url('fonts/OldStandard-Regular.ttf') format('ttf');
+}
+
 main
 {
     background-color: #ffe98f;
