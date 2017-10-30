@@ -1,0 +1,171 @@
+@font-face
+{
+    font-family: Goudy;
+    src: local('Goudy'), url('fonts/goudy.eot') format('embedded-opentype'), url('fonts/goudy.woff') format('woff'), url('fonts/goudy.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: Grotesk;
+    src: local('Grotesk'), url('fonts/grotesk.eot') format('embedded-opentype'), url('fonts/grotesk.woff') format('woff'), url('fonts/grotesk.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: President;
+    src: local('President'), url('fonts/president.eot') format('embedded-opentype'), url('fonts/president.woff') format('woff'), url('fonts/president.ttf') format('truetype');
+}
+
+body
+{
+    min-width: 700px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.background
+{
+    background: url(http://abali.ru/wp-content/uploads/2012/11/tekstura_staroy_korichnevoy_bumagi-1024.jpg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.input
+{
+    display: block;
+}
+
+.news
+{
+    text-align: center;
+    font: oblique 2em Grotesk, serif;
+    margin: 10px;
+}
+
+.title
+{
+    width: 85%;
+    font: normal 55px Goudy, 'Times New Roman';
+    letter-spacing: -2px;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.quote
+{
+    font: italic 1em President, 'Times New Roman';
+    font-weight: 900;
+}
+
+.datetime
+{
+    width: 12%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.content
+{
+    margin-top: 20px;
+    border-top: 2px solid;
+    -moz-column-count: 4;
+    column-count: 4;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+    font-size: 18px;
+}
+
+.paragraph:first-letter
+{
+    font-size: 2em;
+}
+
+.paragraph
+{
+    font-size: 1em;
+    text-align: justify;
+}
+
+.first-style
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+.second-style
+{
+    font-weight: 700;
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+.third-style
+{
+    font-weight: 600;
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+figcaption
+{
+    margin-top: 3px;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.image
+{
+    margin-top: 3px;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption
+{
+    display: inline-block;
+}
+
+input[id='font-size-changer']:checked ~ .content .paragraph,
+input[id='font-size-changer']:checked ~ .content .news,
+input[id='font-size-changer']:checked ~ .content .comment,
+input[id='font-size-changer']:checked ~ .content figcaption,
+input[id='font-size-changer']:checked ~ .content .quote
+{
+    font-size: 1.5em;
+}
+
+input[id='font-style-changer']:checked ~ .content .news,
+input[id='font-style-changer']:checked ~ .content .quote,
+input[id='font-style-changer']:checked ~ header .title
+{
+    font-family: Tahoma, serif;
+}
+
+input[id='color-theme-changer']:checked ~ .content,
+input[id='color-theme-changer']:checked ~ header,
+input[id='color-theme-changer']:checked ~ .label
+{
+    color: #fff;
+}
+
+input[id='color-theme-changer']:checked ~ .background
+{
+    background: url(https://www.firestock.ru/download/s/z3z61tgfpxy92uu/wildtextures-creased-black-paper-texture.jpg?dl=0);
+}
