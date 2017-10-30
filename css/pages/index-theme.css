@@ -6,19 +6,9 @@ input[id='theme-new']:checked ~ main
 
 input[id='theme-old']:checked ~ main
 {
-
+    border-color: #653c00;
     color: #653c00;
     background: #cc8821 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-}
-
-input[id='theme-old']:checked ~ main .subscribe
-{
-    border-color: #653c00;
-}
-
-input[id='theme-old']:checked ~ main header
-{
-    border-color: #653c00;
 }
 
 input[id='theme-old']:checked ~ main img
@@ -36,3 +26,4 @@ input[id='font-bad']:checked ~ main
 {
     font-family: 'Comic Sans MS', serif;
 }
+
