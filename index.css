@@ -1,0 +1,158 @@
+/*stylelint-disable selector-no-id*/
+
+@font-face
+{
+    font-family: 'News Cycle', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=News+Cycle');
+}
+
+@font-face
+{
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: normal;
+    src: url('Pacifico.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Amatic SC', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Amatic+SC');
+}
+
+label
+{
+    color: #160e14;
+    font-kerning: auto;
+    font-weight: bold;
+}
+
+input#NightMode:checked ~ section.all
+{
+    color: #a6a7a8;
+    background: #111a24;
+}
+
+input#FontChange:checked ~ section.all
+{
+    font-variant: petite-caps;
+}
+
+input#FontType:checked ~ section.all p
+{
+    font-family: 'Times New Roman', sans-serif;
+}
+
+body
+{
+    background: #cbbdab;
+}
+
+p
+{
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+}
+
+p::first-letter
+{
+    color: #3cb371;
+    font-weight: bold;
+}
+
+section.all
+{
+    column-width: 270px;
+    column-rule: 2px solid #808080;
+    background: url('backface.jpg');
+
+}
+
+h3.title::first-letter,
+h1.globaltitle:first-letter
+{
+    color: #f00;
+}
+
+img
+{
+    width: 100%;
+    height: 150px;
+}
+
+h1.globaltitle
+{
+    font: bold xx-large 'Pacifico', cursive;
+    text-align: center;
+    text-shadow: 6px 4px 25px #803c50;
+    column-span: all;
+}
+
+h3.title
+{
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
+    text-shadow: 1px 1px gray;
+}
+
+p.text1
+{
+    font-size: small;
+    word-spacing: 1px;
+}
+
+p.sony
+{
+    font-family: 'Pacifico', cursive;
+    column-width: 150px;
+}
+
+p.queen,
+p.text1,
+p.text2
+{
+    font-family: 'Fascinate Inline', cursive;
+}
+
+h4
+{
+    column-span: all;
+    font: italic xx-large 'Fascinate Inline', cursive;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+p.foot
+{
+    font: small 'Pacifico', cursive;
+    margin: auto;
+    color: #1e4450;
+    position: absolute;
+}
+
+h5
+{
+    white-space: pre;
+}
+
+nav.sideText
+{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bolder;
+    column-span: all;
+    margin-top: -17%;
+    color: #225822;
+    letter-spacing: 11px;
+    float: left;
+}
+
+div.panorama
+{
+    margin: auto;
+    display: flex;
+    column-span: all;
+}
