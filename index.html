@@ -3,7 +3,385 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «DeLorean DMC-12»</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <input type="radio" class="radio" name="color" value="white" id="white" checked>
+    <input type="radio" class="radio" name="color" value="black" id="black">
+    <input type="radio" class="radio" name="font_type" value="original" id="original" checked>
+    <input type="radio" class="radio" name="font_type" value="mono" id="mono">
+    <input type="radio" class="radio" name="font_size" value="standart" id="standart" checked>
+    <input type="radio" class="radio" name="font_size" value="reduce" id="reduce">
+    <input type="radio" class="radio" name="font_size" value="increase" id="increase">
+    <div class="knopki">
+        <p class="textRadio">Цвет схемы:</p>
+        <label for="white">Светлая</label>
+        <label for="black">Темная</label>
+    </div>
+    <div class="knopki">
+        <p class="textRadio">Размер шрифта:</p>
+        <label for="standart">Исходный</label>
+        <label for="reduce">Маленький</label>
+        <label for="increase">Большой</label>
+    </div>
+    <div class="knopki">
+        <p class="textRadio">Тип Шрифта:</p>
+        <label for="original">Исходный</label>
+        <label for="mono">Моноширинный</label>
+    </div>
+    <main>
+        <p class="data">
+            <span class="words">Октбярь</span> 
+            <span class="words">2017</span>
+        </p>
+        <h1>
+            <span class="firstLetterHeader">Г</span>олос
+            <span class="firstLetterHeader">В</span>ерхней
+            <span class="firstLetterHeader">Т</span>уры
+        </h1>
+        <div class="firstNews">
+            <h3>&#9679; Мир увлечений</h3>
+            <article class="newsOne">
+                <h2>Люблю старые автомобили!</h2>
+                <p class="bold">
+                    Ви&shy;та&shy;лий Ку&shy;чин &ndash; на&shy;сто&shy;я&shy;щий
+                    ав&shy;то&shy;лю&shy;би&shy;тель. Ма&shy;ши&shy;на для не&shy;го
+                    не толь&shy;ко сред&shy;ство пе&shy;ре&shy;дви&shy;же&shy;ния,но и друг,
+                    с ко&shy;то&shy;рым он го&shy;тов про&shy;во&shy;дить все сво&shy;бод&shy;ное
+                    вре&shy;мя.
+                </p>
+                <div class="imageCar">
+                    <figure class="image">
+                        <img class="car" src="car.jpg" alt="Изображение: любимая машина"
+                        title="Виталий с любимой машиной">
+                        <figcaption class="imageCaption">Фотография: Виталий с любимой машиной</figcaption>
+                    </figure>
+                </div>
+                <div class="imageDream">
+                    <figure class="image">
+                        <img class="dream" src="dream.jpg" alt="Изображение: машина мечты"
+                        title="Мечта виталия">
+                        <figcaption class="imageCaption">Фотография: мечта Виталия</figcaption>
+                    </figure>
+                </div>
+                <div class="text">
+                    <p class="textFirst">
+                        Лю&shy;бовь к тех&shy;ни&shy;ке у Ви&shy;та&shy;лия просну&shy;лась еще
+                        в ран&shy;нем дет&shy;стве. Для не&shy;го не бы&shy;ло бо&shy;лее
+                        увле&shy;ка&shy;тель&shy;но&shy;го за&shy;ня&shy;тия, чем вме&shy;сте с от&shy;цом
+                        ра&shy;бо&shy;тать в га&shy;ра&shy;же. Ви&shy;дя та&shy;кой ин&shy;те&shy;рес к
+                        ма&shy;ши&shy;не, в пять лет отец по&shy;са&shy;дил сы&shy;на за руль
+                        ав&shy;то&shy;мо&shy;би&shy;ля, и он бла&shy;го&shy;по&shy;луч&shy;но
+                        про&shy;ехал всю ули&shy;цу!
+                    </p>
+                    <p class="textFirst">
+                        Но по-на&shy;сто&shy;я&shy;ще&shy;му влю&shy;бил Ви&shy;та&shy;лия в тех&shy;ни&shy;ку
+                        его де&shy;душ&shy;ка, Ан&shy;дрей Ива&shy;но&shy;вич, ко&shy;то&shy;рый всю жизнь
+                        про&shy;ра&shy;бо&shy;тал в ав&shy;то&shy;ко&shy;лон&shy;не за&shy;во&shy;да.
+                        Ви&shy;та&shy;лий да&shy;же хо&shy;тел пой&shy;ти по его сто&shy;пам, но дед
+                        от&shy;го&shy;во&shy;рил: «Бу&shy;дешь, как я, всю жизнь
+                        ле&shy;жать под ма&shy;ши&shy;ной».
+                        Внук по&shy;слу&shy;шал&shy;ся и стал свар&shy;щи&shy;ком.
+                        Но лю&shy;бовь к тех&shy;ни&shy;ке
+                        все-та&shy;ки ока&shy;за&shy;лась силь&shy;ней. 12 лет на&shy;зад он пе&shy;ре&shy;шел
+                        в охра&shy;ну за&shy;во&shy;да, что&shy;бы боль&shy;ше вре&shy;ме&shy;ни уде&shy;лять
+                        лю&shy;би&shy;мо&shy;му увле&shy;че&shy;нию &ndash; ре&shy;мон&shy;ту
+                        ав&shy;то&shy;мо&shy;би&shy;лей. И не толь&shy;ко сво&shy;их. К не&shy;му
+                        по&shy;сто&shy;ян&shy;но об&shy;ра&shy;ща&shy;ют&shy;ся дру&shy;зья,
+                        зна&shy;ко&shy;мые,
+                        ко&shy;гда у них воз&shy;ни&shy;ка&shy;ют про&shy;бле&shy;мы с ма&shy;ши&shy;ной.
+                        Они зна&shy;ют, что Ви&shy;та&shy;лий смо&shy;жет устра&shy;нить лю&shy;бую
+                        не&shy;ис&shy;прав&shy;ность,
+                        и сде&shy;ла&shy;ет все на со&shy;весть, с ду&shy;шой.
+                    </p>
+                    <p class="textFirst">
+                        В 8 лет Ви&shy;та&shy;лий сам со&shy;брал мо&shy;то&shy;ве&shy;лик.
+                        Позд&shy;нее сде&shy;лал дви&shy;га&shy;тель к сво&shy;е&shy;му
+                        дет&shy;ско&shy;му ве&shy;ло&shy;си&shy;пе&shy;ду
+                        «Ле&shy;вуш&shy;ка» и ка&shy;тал&shy;ся на нем с дру&shy;зья&shy;ми,
+                        как на мо&shy;пе&shy;де. В 15 лет из ме&shy;тал&shy;ло&shy;ло&shy;ма
+                        со&shy;брал мо&shy;то&shy;цикл «ИЖ-49». Он до сих пор сто&shy;ит
+                        в его га&shy;ра&shy;же, как и мо&shy;то&shy;цик&shy;лы «М-1»,
+                        1951 го&shy;да вы&shy;пус&shy;ка, «РИГА-16». Но осо&shy;бой
+                        лю&shy;бо&shy;вью у не&shy;го поль&shy;зу&shy;ют&shy;ся «Вол&shy;га»,
+                        1968 го&shy;да вы&shy;пус&shy;ка, и «По&shy;бе&shy;да», 1950 го&shy;да
+                        вы&shy;пус&shy;ка. На по&shy;след&shy;ней он участ&shy;во&shy;вал в
+                        ав&shy;то&shy;про&shy;бе&shy;ге, ко&shy;то&shy;рый про&shy;хо&shy;дил
+                        в на&shy;шем го&shy;ро&shy;де семь лет на&shy;зад. Меч&shy;та&shy;ет
+                        Ви&shy;та&shy;лий ку&shy;пить се&shy;бе еще один та&shy;кой же
+                        ра&shy;ри&shy;тет&shy;ный ав&shy;то&shy;мо&shy;биль &ndash;
+                        аме&shy;ри&shy;кан&shy;ский «Вил&shy;лис-МВ», 1943 го&shy;да вы&shy;пус&shy;ка.
+                    </p>
+                    <p class="textFirst">
+                        <q>За что люб&shy;лю ра&shy;ри&shy;тет&shy;ные ав&shy;то&shy;мо&shy;би&shy;ли?!
+                        Да за все</q> &ndash; при&shy;зна&shy;ет&shy;ся Ви&shy;та&shy;лий.
+                        &ndash; <q>И за внеш&shy;ний вид, и за ка&shy;че&shy;ство,
+                        и за не&shy;пе&shy;ре&shy;да&shy;ва&shy;е&shy;мое чув&shy;ство по&shy;коя,
+                        ком&shy;фор&shy;та, ко&shy;то&shy;рое те&shy;бя окру&shy;жа&shy;ет,
+                        ко&shy;гда ты са&shy;дишь&shy;ся в са&shy;лон та&shy;кой ма&shy;ши&shy;ны,
+                        где да&shy;же за&shy;пах ка&shy;кой-то осо&shy;бен&shy;ный!</q> 
+                    </p>
+                    <p class="textFirst">
+                        <q>Я ни&shy;ко&shy;гда не стре&shy;мил&shy;ся при&shy;об&shy;ре&shy;сти
+                        но&shy;вую ма&shy;ши&shy;ну</q>, &ndash; про&shy;дол&shy;жа&shy;ет он.
+                        &ndash; <q>И до&shy;ро&shy;го, а глав&shy;ное, с ней мне 
+                        не&shy;ин&shy;те&shy;рес&shy;но. Ста&shy;рень&shy;кую ма&shy;ши&shy;ну
+                        сам раз&shy;бе&shy;решь, со&shy;бе&shy;решь, про&shy;ве&shy;ришь,
+                        как она ра&shy;бо&shy;та&shy;ет, и спо&shy;кой&shy;но са&shy;дишь&shy;ся
+                        за руль. А от но&shy;вой ма&shy;ши&shy;ны не зна&shy;ешь, че&shy;го ждать.
+                        Не бу&shy;дешь же ее пе&shy;ре&shy;би&shy;рать. Для ме&shy;ня ва&shy;жен
+                        про&shy;цесс об&shy;ще&shy;ния с ав&shy;то&shy;мо&shy;би&shy;лем,
+                        ко&shy;то&shy;рый, как и че&shy;ло&shy;век, име&shy;ет свой ха&shy;рак&shy;тер</q>.
+                    </p>
+                    <p class="textFirst">
+                        Все ав&shy;то&shy;мо&shy;би&shy;ли Ви&shy;та&shy;лия, а их он по&shy;ме&shy;нял
+                        бо&shy;лее де&shy;сят&shy;ка, бы&shy;ли куп&shy;ле&shy;ны с рук и, как
+                        пра&shy;ви&shy;ло, из&shy;ряд&shy;но по&shy;би&shy;тые до&shy;ро&shy;гой.
+                        Но в уме&shy;лых ру&shy;ках Ви&shy;та&shy;лия они по&shy;лу&shy;чи&shy;ли
+                        но&shy;вую жизнь и но&shy;во&shy;го хо&shy;зя&shy;и&shy;на.
+                        Ко&shy;гда сде&shy;лан ре&shy;монт, он обыч&shy;но про&shy;да&shy;ет
+                        ма&shy;ши&shy;ны, лю&shy;бу&shy;ясь на них уже со сто&shy;ро&shy;ны.
+                        Но к ра&shy;ри&shy;те&shy;там это не от&shy;но&shy;сит&shy;ся.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="secondNews">
+            <h3>&#9679; Вопрос&ndash;ответ</h3>
+            <article class="newsTwo">
+                <h2>У автобусов тоже выходной?</h2>
+                <p class="question">
+                    <q><span>По&shy;че&shy;му</span> по вы&shy;ход&shy;ным дням не хо&shy;дит 
+                    го&shy;род&shy;ской ав&shy;то&shy;бус? Я, на&shy;при&shy;мер,
+                    в эти дни ра&shy;бо&shy;таю, а жи&shy;ву на ули&shy;це Пи&shy;о&shy;нер&shy;ской.
+                    И мне при&shy;хо&shy;дит&shy;ся че&shy;рез весь го&shy;род пеш&shy;ком
+                    или на так&shy;си до&shy;би&shy;рать&shy;ся до до&shy;ма.
+                    Ес&shy;ли уж пред&shy;при&shy;ни&shy;ма&shy;те&shy;ли взя&shy;лись за
+                    пас&shy;са&shy;жи&shy;ро&shy;пе&shy;ре&shy;воз&shy;ки,
+                    то долж&shy;ны вы&shy;пол&shy;нять свои обя&shy;за&shy;тель&shy;ства
+                    пе&shy;ред го&shy;ро&shy;жа&shy;на&shy;ми.</q>
+                </p>
+                <p class="bolds">
+                    На во&shy;прос от&shy;ве&shy;ча&shy;ет
+                    ин&shy;ди&shy;ви&shy;ду&shy;аль&shy;ный пред&shy;при&shy;ни&shy;ма&shy;тель
+                    Свет&shy;ла&shy;на Пет&shy;ров&shy;на Хлев&shy;ная:
+                </p>
+                <p class="answer">
+                    Го&shy;род&shy;ской ав&shy;то&shy;бус по вы&shy;ход&shy;ным
+                    нач&shy;нет хо&shy;дить лишь то&shy;гда,
+                    ко&shy;гда по&shy;явит&shy;ся пас&shy;са&shy;жи&shy;ро&shy;по&shy;ток.
+                    Ра&shy;ди двух пас&shy;са&shy;жи&shy;ров, я счи&shy;таю,
+                    не&shy;це&shy;ле&shy;со&shy;об&shy;раз&shy;но вы&shy;во&shy;дить
+                    на го&shy;род&shy;ской марш&shy;рут ав&shy;то&shy;бус и во&shy;ди&shy;те&shy;ля.
+                    Хо&shy;чу на&shy;пом&shy;нить, что еже&shy;днев&shy;но, шесть раз в день,
+                    хо&shy;дит ав&shy;то&shy;бус Ниж&shy;няя Ту&shy;ра-Крас&shy;но&shy;уральск,
+                    на ко&shy;то&shy;ром мож&shy;но до&shy;е&shy;хать от пе&shy;ре&shy;ез&shy;да до
+                    Ри&shy;ги. Рас&shy;пи&shy;са&shy;ние ав&shy;то&shy;бу&shy;са
+                    есть на ав&shy;то&shy;стан&shy;ции. В сто&shy;ро&shy;ну сов&shy;хо&shy;за
+                    в вы&shy;ход&shy;ные дни дей&shy;стви&shy;тель&shy;но ни&shy;че&shy;го не хо&shy;дит.
+                    Но этот во&shy;прос уже не к нам. Я об&shy;ра&shy;ща&shy;лась к гла&shy;ве
+                    го&shy;ро&shy;да, так как по до&shy;го&shy;во&shy;ру,
+                    за&shy;клю&shy;чен&shy;но&shy;му меж&shy;ду на&shy;ми, осо&shy;бо зна&shy;чи&shy;мые
+                    марш&shy;ру&shy;ты нам долж&shy;на опла&shy;чи&shy;вать ад&shy;ми&shy;ни&shy;стра&shy;ция.
+                    Но она это&shy;го не де&shy;ла&shy;ет. 
+                </p>
+                <div class="imageBus">
+                    <figure>
+                        <img class="bus" src="bus.jpg" alt="Изображение: автобус"
+                        title="Автобус">
+                        <figcaption class="imageCaption">Рисунок: городской автобус</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </div>
+        <div class="thirdNews">
+            <h3 class="captionThree">&#9679; Наши земляки</h3>
+            <article class="newsThree">
+                <h2>Владимир Бадьин: <q>Перенесите огонь на меня!</q></h2>
+                <p class="textThirds">
+                    Фор&shy;си&shy;ро&shy;ва&shy;ние Дне&shy;пра сто&shy;и&shy;ло
+                    жиз&shy;ни сот&shy;ням ты&shy;сяч со&shy;вет&shy;ских сол&shy;дат,
+                    ко&shy;то&shy;рые про&shy;яв&shy;ля&shy;ли мас&shy;со&shy;вый
+                    ге&shy;ро&shy;изм, идя на вер&shy;ную смерть ра&shy;ди сво&shy;ей
+                    Ро&shy;ди&shy;ны. За всю ис&shy;то&shy;рию Ве&shy;ли&shy;кой
+                    Оте&shy;че&shy;ствен&shy;ной вой&shy;ны боль&shy;ше не бы&shy;ло
+                    по&shy;доб&shy;но&shy;го пре&shy;це&shy;ден&shy;та, ко&shy;гда
+                    ге&shy;ро&shy;изм и му&shy;же&shy;ство со&shy;вет&shy;ских
+                    во&shy;и&shy;нов бы&shy;ли от&shy;ме&shy;че&shy;ны та&shy;ким
+                    боль&shy;шим ко&shy;ли&shy;че&shy;ством выс&shy;ших на&shy;град
+                    Ро&shy;ди&shy;ны: 2438 сол&shy;дат и офи&shy;це&shy;ров бы&shy;ли
+                    удо&shy;сто&shy;е&shy;ны вы&shy;со&shy;ко&shy;го зва&shy;ния
+                    Ге&shy;роя Со&shy;вет&shy;ско&shy;го Со&shy;ю&shy;за. В чис&shy;ле
+                    удо&shy;сто&shy;ен&shy;ных этой на&shy;гра&shy;ды бы&shy;ли два
+                    на&shy;ших зем&shy;ля&shy;ка &ndash; Ана&shy;то&shy;лий Гро&shy;бов
+                    и Вла&shy;ди&shy;мир Ба&shy;дьин. 
+                </p>
+                <p class="textThird">
+                    Вла&shy;ди&shy;мир Ба&shy;дьин ро&shy;дил&shy;ся в на&shy;шем
+                    го&shy;ро&shy;де 17 ок&shy;тяб&shy;ря 1918 го&shy;да. В 1937 го&shy;ду
+                    по&shy;сле окон&shy;ча&shy;ния де&shy;ся&shy;ти клас&shy;сов
+                    по&shy;сту&shy;пил на
+                    ин&shy;же&shy;нер&shy;но-эко&shy;но&shy;ми&shy;че&shy;ский
+                    фа&shy;куль&shy;тет Ураль&shy;ско&shy;го
+                    по&shy;ли&shy;тех&shy;ни&shy;че&shy;ско&shy;го ин&shy;сти&shy;ту&shy;та.
+                    Но пла&shy;ны мир&shy;ной жиз&shy;ни пе&shy;ре&shy;черк&shy;ну&shy;ла
+                    вой&shy;на. На чет&shy;вер&shy;том кур&shy;се Вла&shy;ди&shy;мир
+                    оста&shy;вил ин&shy;сти&shy;тут и за&shy;пи&shy;сал&shy;ся
+                    доб&shy;ро&shy;воль&shy;цем на фронт. Но преж&shy;де он  окон&shy;чил
+                    Смо&shy;лен&shy;ское ар&shy;тил&shy;ле&shy;рий&shy;ское учи&shy;ли&shy;ще.
+                </p>
+                <p class="textThird">
+                    Бо&shy;е&shy;вое кре&shy;ще&shy;ние мо&shy;ло&shy;дой лей&shy;те&shy;нант
+                    Ба&shy;дьин по&shy;лу&shy;чил в рай&shy;о&shy;не Се&shy;вер&shy;ско&shy;го
+                    Дон&shy;ца в фев&shy;ра&shy;ле 1942 го&shy;да. Впе&shy;ре&shy;ди его
+                    ожи&shy;да&shy;ли тя&shy;же&shy;лые обо&shy;ро&shy;ни&shy;тель&shy;ные бои
+                    тра&shy;ги&shy;че&shy;ско&shy;го ле&shy;та 1942 го&shy;да
+                    и пер&shy;вое ран&shy;ние.
+                </p>
+                <p class="textThird">
+                    Вер&shy;нув&shy;шись в строй, Вла&shy;ди&shy;мир Ива&shy;но&shy;вич стал
+                    ко&shy;ман&shy;ди&shy;ром ба&shy;та&shy;реи 671
+                    ар&shy;тил&shy;ле&shy;рий&shy;ско&shy;го пол&shy;ка 213 стрел&shy;ко&shy;вой
+                    ди&shy;ви&shy;зии. И вновь бо&shy;е&shy;вой путь при&shy;вел ураль&shy;ца
+                    на бе&shy;ре&shy;га Се&shy;вер&shy;ско&shy;го Дон&shy;ца. В бо&shy;ях
+                    5-6 июля ар&shy;тил&shy;ле&shy;ри&shy;сты ба&shy;та&shy;реи
+                    Ба&shy;дьи&shy;на уни&shy;что&shy;жи&shy;ли ше&shy;сти&shy;стволь&shy;ный
+                    ми&shy;но&shy;мет и тя&shy;же&shy;лое ору&shy;дие про&shy;тив&shy;ни&shy;ка,
+                    ис&shy;тре&shy;би&shy;ли 260 фа&shy;ши&shy;стов, по&shy;да&shy;ви&shy;ли
+                    ми&shy;но&shy;мет&shy;ную ба&shy;та&shy;рею и раз&shy;ру&shy;ши&shy;ли
+                    пон&shy;тон&shy;ную пе&shy;ре&shy;пра&shy;ву вра&shy;га. Ме&shy;даль
+                    «За от&shy;ва&shy;гу» ста&shy;ла пер&shy;вой на&shy;гра&shy;дой
+                    верх&shy;не&shy;ту&shy;рин&shy;ца.
+                </p>
+                <p class="textThird">
+                    На&shy;ши вой&shy;ска упор&shy;но про&shy;дви&shy;га&shy;лись впе&shy;ред.
+                    С ав&shy;гу&shy;ста 1943 г. ча&shy;сти 213 ди&shy;ви&shy;зии в
+                    со&shy;ста&shy;ве войск 7 гвар&shy;дей&shy;ской ар&shy;мии,
+                    вкли&shy;нив&shy;шись в обо&shy;ро&shy;ну про&shy;тив&shy;ни&shy;ка,
+                    на&shy;сту&shy;па&shy;ли на Бел&shy;го&shy;род с во&shy;сто&shy;ка.
+                    В оже&shy;сто&shy;чен&shy;ных бо&shy;ях наш зем&shy;ляк про&shy;явил
+                    храб&shy;рость и во&shy;ин&shy;ское ма&shy;стер&shy;ство.
+                    28 ав&shy;гу&shy;ста, кор&shy;рек&shy;ти&shy;руя огонь ору&shy;дий,
+                    стар&shy;ший лей&shy;те&shy;нант Ба&shy;дьин уни&shy;что&shy;жил
+                    вра&shy;же&shy;ский тя&shy;гач с бо&shy;е&shy;при&shy;па&shy;са&shy;ми.
+                    В бою за го&shy;род Ме&shy;ре&shy;фа от&shy;важ&shy;ный ура&shy;лец был
+                    два&shy;жды кон&shy;ту&shy;жен, но не по&shy;ки&shy;нул по&shy;зи&shy;ции.
+                    С остав&shy;шим&shy;ся в жи&shy;вых бой&shy;цом сам встал за при&shy;цел
+                    един&shy;ствен&shy;но&shy;го уце&shy;лев&shy;ше&shy;го ору&shy;дия.
+                    Рас&shy;стре&shy;ли&shy;вая фа&shy;ши&shy;стов в упор, со&shy;рвал
+                    ата&shy;ку вра&shy;га. За этот по&shy;двиг ко&shy;ман&shy;дир
+                    ар&shy;тил&shy;ле&shy;рий&shy;ской ба&shy;та&shy;реи Ба&shy;дьин был
+                    на&shy;граж&shy;ден ор&shy;де&shy;ном Крас&shy;ной Звез&shy;ды.
+                </p>
+                <figure class="imageBadin">
+                    <img class="Badin" src="badin.jpg" alt="Изображение: Бадьин В.И."
+                    title="Герой советского союза Владимир Иванович Бадьин">
+                    <figcaption class="imageCaption">Герой советского союза Бадьин В. И.</figcaption>
+                </figure>
+                <p class="textThird">
+                    Вал вой&shy;ны по&shy;вер&shy;нул на за&shy;пад. На&shy;прас&shy;но враг
+                    цеп&shy;лял&shy;ся за каж&shy;дый кло&shy;чок со&shy;вет&shy;ской зем&shy;ли.
+                    Осво&shy;бож&shy;дая го&shy;ро&shy;да и се&shy;ла
+                    ле&shy;во&shy;бе&shy;реж&shy;ной Укра&shy;и&shy;ны, на&shy;ши вой&shy;ска
+                    упор&shy;но рва&shy;лись к Дне&shy;пру. В чис&shy;ле пер&shy;вых
+                    про&shy;рва&shy;лись на бе&shy;рег ве&shy;ли&shy;кой ре&shy;ки и во&shy;и&shy;ны
+                    213 ди&shy;ви&shy;зии. Ко&shy;ман&shy;дир 671
+                    ар&shy;тил&shy;ле&shy;рий&shy;ско&shy;го пол&shy;ка май&shy;ор Алек&shy;сей
+                    Лю&shy;би&shy;мов при&shy;ка&shy;зал как мож&shy;но быст&shy;рее
+                    пе&shy;ре&shy;пра&shy;вить&shy;ся на дру&shy;гую сто&shy;ро&shy;ну. Ведь там,
+                    на пра&shy;вом бе&shy;ре&shy;гу, пе&shy;хо&shy;тин&shy;цы,
+                    за&shy;хва&shy;тив&shy;шие кро&shy;хот&shy;ный уча&shy;сток,
+                    от&shy;ча&shy;ян&shy;но от&shy;би&shy;ва&shy;лись от на&shy;се&shy;дав&shy;ше&shy;го
+                    вра&shy;га. Ба&shy;та&shy;льо&shy;ны про&shy;си&shy;ли ог&shy;ня, и ком&shy;бат
+                    Ба&shy;дьин пер&shy;вый со сво&shy;и&shy;ми «пуш&shy;ка&shy;ря&shy;ми» всту&shy;пил
+                    в во&shy;ды Дне&shy;пра. Пе&shy;ре&shy;пра&shy;вив под ура&shy;ган&shy;ным ог&shy;нем
+                    про&shy;тив&shy;ни&shy;ка свои ору&shy;дия, ар&shy;тил&shy;ле&shy;ри&shy;сты сра&shy;зу
+                    же вы&shy;дви&shy;ну&shy;лись впе&shy;ред. Вне&shy;зап&shy;но из-за буг&shy;ра
+                    по&shy;ка&shy;за&shy;лись не&shy;мец&shy;кие тан&shy;ки, на флан&shy;гах &ndash;
+                    ав&shy;то&shy;ма&shy;ши&shy;ны с пе&shy;хо&shy;той. «Про&shy;пу&shy;стить
+                    ма&shy;ши&shy;ны! Без мо&shy;ей ко&shy;ман&shy;ды не стре&shy;лять»,
+                    - при&shy;ка&shy;зал ко&shy;ман&shy;дир ба&shy;та&shy;реи стар&shy;ший
+                    лей&shy;те&shy;нант Ба&shy;дьин. Ба&shy;та&shy;рея с хо&shy;ду
+                    раз&shy;вер&shy;ну&shy;лась и при&shy;го&shy;то&shy;ви&shy;лась встре&shy;тить вра&shy;га.
+                    Ко&shy;гда пер&shy;вые фа&shy;шист&shy;ские тан&shy;ки по&shy;до&shy;шли на
+                    500 – 600 мет&shy;ров, од&shy;но&shy;вре&shy;мен&shy;но уда&shy;ри&shy;ли все
+                    ору&shy;дия. Сра&shy;зу за&shy;го&shy;ре&shy;лись два тан&shy;ка.
+                    Сле&shy;ду&shy;ю&shy;щи&shy;ми зал&shy;па&shy;ми бы&shy;ли раз&shy;не&shy;се&shy;ны в
+                    щеп&shy;ки пять ав&shy;то&shy;ма&shy;шин. Гит&shy;ле&shy;ров&shy;цы да&shy;же
+                    не успе&shy;ли раз&shy;бе&shy;жать&shy;ся, все по&shy;лег&shy;ли на ме&shy;сте.
+                    Еще три тан&shy;ка за&shy;пы&shy;ла&shy;ли, по&shy;до&shy;жжен&shy;ные мет&shy;ки&shy;ми
+                    вы&shy;стре&shy;ла&shy;ми со&shy;вет&shy;ских ар&shy;тил&shy;ле&shy;ри&shy;стов.
+                    Сна&shy;ря&shy;ды ло&shy;жи&shy;лись точ&shy;но в цель, но к
+                    на&shy;блю&shy;да&shy;тель&shy;но&shy;му пунк&shy;ту про&shy;рва&shy;лось
+                    не&shy;сколь&shy;ко тан&shy;ков и бро&shy;не&shy;ма&shy;шин. Од&shy;на
+                    оста&shy;но&shy;ви&shy;лась в двух мет&shy;рах от не&shy;го, но го&shy;лос
+                    Ба&shy;дьи&shy;на, кор&shy;рек&shy;ти&shy;ру&shy;ю&shy;ще&shy;го стрель&shy;бу по
+                    те&shy;ле&shy;фо&shy;ну, был по-преж&shy;не&shy;му спо&shy;ко&shy;ен.
+                    «Пе&shy;ре&shy;не&shy;си&shy;те огонь на ме&shy;ня», &ndash; от&shy;дал
+                    он при&shy;каз, и ог&shy;нен&shy;ная ла&shy;ви&shy;на об&shy;ру&shy;ши&shy;лась на то
+                    ме&shy;сто, где был на&shy;блю&shy;да&shy;тель&shy;ный пункт ко&shy;ман&shy;ди&shy;ра.
+                    За&shy;го&shy;ре&shy;лась бро&shy;не&shy;ма&shy;ши&shy;на,
+                    за&shy;тем один танк, вто&shy;рой.
+                    Три «тиг&shy;ра» бы&shy;ли под&shy;би&shy;ты в этой смер&shy;тель&shy;ной схват&shy;ке,
+                    че&shy;ты&shy;ре по&shy;до&shy;жже&shy;ны. Про&shy;тив&shy;ник стре&shy;мил&shy;ся
+                    лю&shy;бой це&shy;ной сбро&shy;сить на&shy;ши вой&shy;ска об&shy;рат&shy;но в Днепр.
+                </p>
+                <p class="textThird">
+                    Дни и но&shy;чи шли кро&shy;во&shy;про&shy;лит&shy;ные бои, лишь од&shy;но&shy;му
+                    пол&shy;ку 213 ди&shy;ви&shy;зии уда&shy;лось удер&shy;жать за&shy;хва&shy;чен&shy;ный
+                    плац&shy;дарм. С 28 сен&shy;тяб&shy;ря по 16 ок&shy;тяб&shy;ря, от&shy;би&shy;вая
+                    ата&shy;ки фа&shy;ши&shy;стов, ба&shy;та&shy;рея стар&shy;ше&shy;го
+                    лей&shy;те&shy;нан&shy;та
+                    Ба&shy;дьи&shy;на уни&shy;что&shy;жи&shy;ла де&shy;сят&shy;ки тан&shy;ков и дру&shy;гой
+                    тех&shy;ни&shy;ки, по&shy;да&shy;ви&shy;ла сво&shy;им ог&shy;нем мно&shy;же&shy;ство
+                    ору&shy;дий и пу&shy;ле&shy;ме&shy;тов про&shy;тив&shy;ни&shy;ка
+                    и ис&shy;тре&shy;би&shy;ла
+                    де&shy;сят&shy;ки за&shy;хват&shy;чи&shy;ков. В этих бо&shy;ях Вла&shy;ди&shy;мир
+                    Ива&shy;но&shy;вич был тя&shy;же&shy;ло ра&shy;нен. Ро&shy;ди&shy;на по
+                    до&shy;сто&shy;ин&shy;ству оце&shy;ни&shy;ла по&shy;двиг на&shy;ше&shy;го
+                    зем&shy;ля&shy;ка.
+                    На&shy;град&shy;ной лист утвер&shy;дил ко&shy;ман&shy;дарм 7 гвар&shy;дей&shy;ской
+                    ар&shy;мии ге&shy;не&shy;рал Шу&shy;ми&shy;лов. Ука&shy;зом Пре&shy;зи&shy;ди&shy;у&shy;ма
+                    Вер&shy;хов&shy;но&shy;го Со&shy;ве&shy;та СССР от 26 ок&shy;тяб&shy;ря 1943 го&shy;да
+                    стар&shy;ший лей&shy;те&shy;нант Вла&shy;ди&shy;мир Ба&shy;дьин был удо&shy;сто&shy;ен
+                    вы&shy;со&shy;ко&shy;го зва&shy;ния Ге&shy;роя Со&shy;вет&shy;ско&shy;го Со&shy;ю&shy;за с
+                    вру&shy;че&shy;ни&shy;ем ор&shy;де&shy;на Ле&shy;ни&shy;на и ме&shy;да&shy;ли
+                    «Зо&shy;ло&shy;тая Звез&shy;да» за но&shy;ме&shy;ром 1477.
+                </p>
+                <p class="textThird">
+                    Вос&shy;ста&shy;но&shy;вив&shy;шись по&shy;сле ра&shy;не&shy;ния,
+                    ге&shy;рой-ура&shy;лец сно&shy;ва вер&shy;нул&shy;ся на пе&shy;ре&shy;до&shy;вую.
+                    Впе&shy;ре&shy;ди бы&shy;ли осво&shy;бож&shy;де&shy;ние Ру&shy;мы&shy;нии, Вен&shy;грии,
+                    Ав&shy;стрии и Че&shy;хо&shy;сло&shy;ва&shy;кии. Вой&shy;ну ко&shy;ман&shy;дир
+                    пол&shy;ка ка&shy;пи&shy;тан Ба&shy;дьин за&shy;кон&shy;чил у стен Пра&shy;ги.
+                </p>
+                <p class="textThird">
+                    По&shy;сле по&shy;бе&shy;ды с ок&shy;тяб&shy;ря 1945 май&shy;ор Вла&shy;ди&shy;мир
+                    Ба&shy;дьин - в за&shy;па&shy;се. В 1947 го&shy;ду окон&shy;чил УПИ. Ра&shy;бо&shy;тал
+                    на Ураль&shy;ском за&shy;во&shy;де тя&shy;жё&shy;ло&shy;го
+                    ма&shy;ши&shy;но&shy;стро&shy;е&shy;ния. В 1950 го&shy;ду Ро&shy;ди&shy;на вновь
+                    при&shy;зва&shy;ла Вла&shy;ди&shy;ми&shy;ра Ива&shy;но&shy;ви&shy;ча Ба&shy;дьи&shy;на
+                    на от&shy;вет&shy;ствен&shy;ную служ&shy;бу в ор&shy;га&shy;ны
+                    контр&shy;раз&shy;вед&shy;ки. По&shy;след&shy;ние го&shy;ды наш зем&shy;ляк жил в Москве,
+                    но ни&shy;ко&shy;гда не за&shy;бы&shy;вал о сво&shy;ей ма&shy;лой ро&shy;ди&shy;не.
+                    Дол&shy;гое вре&shy;мя в честь на&shy;ше&shy;го ге&shy;роя в Верх&shy;ней Ту&shy;ре
+                    про&shy;во&shy;ди&shy;лись лыж&shy;ные со&shy;рев&shy;но&shy;ва&shy;ния.
+                    За по&shy;дви&shy;ги в бою и служ&shy;бу в мир&shy;ное вре&shy;мя Вла&shy;ди&shy;мир
+                    Ба&shy;дьин был на&shy;граж&shy;ден мно&shy;ги&shy;ми на&shy;гра&shy;да&shy;ми, в том
+                    чис&shy;ле ор&shy;де&shy;на&shy;ми Ле&shy;ни&shy;на, Оте&shy;че&shy;ствен&shy;ной
+                    вой&shy;ны 1 сте&shy;пе&shy;ни, Крас&shy;ной Звез&shy;ды и мно&shy;ги&shy;ми
+                    ме&shy;да&shy;ля&shy;ми. Умер Вла&shy;ди&shy;мир Ива&shy;но&shy;вич Ба&shy;дьин
+                    25 сен&shy;тяб&shy;ря 2003 го&shy;да. По&shy;хо&shy;ро&shy;нен в Москве на
+                    Тро&shy;е&shy;ку&shy;ров&shy;ском клад&shy;би&shy;ще. В Ека&shy;те&shy;рин&shy;бур&shy;ге
+                    имя ге&shy;роя уве&shy;ко&shy;ве&shy;че&shy;но на обе&shy;лис&shy;ке в честь
+                    Ге&shy;ро&shy;ев Со&shy;вет&shy;ско&shy;го Со&shy;ю&shy;за, ко&shy;то&shy;рые
+                    учи&shy;лись и ра&shy;бо&shy;та&shy;ли в УГТУ-УПИ.
+                </p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Редакция Голос Верхней Туры, Автор: Авдюшева Ирина</p>
+    </footer>
 </body>
 </html>

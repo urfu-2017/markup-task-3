@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #ffe5b4;
+    font-size: 16px;
+    font-family: serif;
+}
+
+main
+{
+    background-color: #ffffe0;
+    padding-bottom: 1px;
+}
+
+h1
+{
+    font-family: 'Ruslan Display', cursive;
+    text-align: center;
+    text-shadow: 2px 2px #ffd700;
+}
+
+.firstLetterHeader
+{
+    font: normal 60px 'Ruslan Display';
+}
+
+p
+{
+    text-indent: 25px;
+    hyphens: manual;
+}
+
+.firstNews
+{
+    display: inline-block;
+    width: 990px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.secondNews
+{
+    vertical-align: top;
+    width: 310px;
+    height: auto;
+    display: inline-block;
+}
+
+.thirdNews
+{
+    margin-bottom: 20px;
+}
+
+.captionThree
+{
+    margin-top: 30px;
+}
+
+h3
+{
+    border-bottom: 4px solid;
+    column-span: all;
+    font-style: italic;
+    padding-right: 10px;
+    margin: 0 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+    -webkit-margin-before: 0;
+}
+
+h2
+{
+    text-align: center;
+    margin: 10px;
+    column-span: all;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.newsTwo
+{
+    padding: 0 10px;
+    border-left: thin solid;
+}
+
+.question
+{
+    font-family: 'Bad Script', cursive;
+}
+
+.bold
+{
+    column-span: all;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Russo One', sans-serif;
+    text-indent: 25px;
+}
+
+.bolds
+{
+    font-family: 'Russo One', sans-serif;
+}
+
+.newsOne
+{
+    padding: 0 10px;
+}
+
+.imageCar
+{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.imageDream
+{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.image
+{
+    margin: 0;
+}
+
+.imageCaption
+{
+    text-align: center;
+    font-family: 'Neucha', cursive;
+}
+
+.dream
+{
+    width: 464px;
+    height: 346px;
+}
+
+.car
+{
+    width: auto;
+    height: auto;
+}
+
+.text
+{
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+}
+
+.textFirst,
+.textThird,
+.textThirds
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.bold::first-letter,
+.textThirds::first-letter
+{
+    color: #ffd700;
+    font-size: 25px;
+}
+
+.newsThree
+{
+    column-count: 4;
+}
+
+.imageBadin
+{
+    text-align: center;
+}
+
+.answer
+{
+    margin-bottom: 10px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.bus
+{
+    width: 200px;
+    height: 250px;
+}
+
+.data
+{
+    position: absolute;
+}
+
+.words
+{
+    text-indent: 0;
+    display: inline-block;
+    width: .5em;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    font: .6em 'Comfortaa', cursive;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.wordCheck
+{
+    font-family: serif;
+    margin: 10px;
+}
+
+input[value='black']:checked ~ main
+{
+    background-color: black;
+    color: white;
+}
+
+input[value='mono']:checked ~ main div h3,
+input[value='mono']:checked ~ main div h2,
+input[value='mono']:checked ~ main h1,
+input[value='mono']:checked ~ main div p,
+input[value='mono']:checked ~ main p span
+{
+    font-family: monospace;
+}
+
+input[value='reduce']:checked ~ main
+{
+    font-size: 12px;
+}
+
+input[value='standart']:checked ~ main
+{
+    font-size: 16px;
+}
+
+input[value='increase']:checked ~ main
+{
+    font-size: 20px;
+}
+
+label
+{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+input[value='black'] ~ .knopki label[for='black']::before,
+input[value='white'] ~ .knopki label[for='white']::before,
+input[value='original'] ~ .knopki label[for='original']::before,
+input[value='mono'] ~ .knopki label[for='mono']::before,
+input[value='standart'] ~ .knopki label[for='standart']::before,
+input[value='reduce'] ~ .knopki label[for='reduce']::before,
+input[value='increase'] ~ .knopki label[for='increase']::before
+{
+    content: '\26AB';
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 20px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0;
+    transition: font-size ease .3s;
+}
+
+input[value='black']:checked ~ .knopki label[for='black']::before,
+input[value='white']:checked ~ .knopki label[for='white']::before,
+input[value='original']:checked ~ .knopki label[for='original']::before,
+input[value='mono']:checked ~ .knopki label[for='mono']::before,
+input[value='standart']:checked ~ .knopki label[for='standart']::before,
+input[value='reduce']:checked ~ .knopki label[for='reduce']::before,
+input[value='increase']:checked ~ .knopki label[for='increase']::before
+{
+    font-size: 20px;
+}
+
+.textRadio
+{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+.knopki
+{
+    display: inline-block;
+    margin: 0 55px;
+    padding-bottom: 10px;
+}
+
+footer
+{
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+}
