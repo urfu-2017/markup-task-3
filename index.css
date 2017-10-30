@@ -24,12 +24,6 @@ p
     text-indent: 25px;
 }
 
-p::first-letter
-{
-    font: 'GothicCyr';
-    font-size: 3em;
-}
-
 body
 {
     margin: 1px;
@@ -186,7 +180,7 @@ img
     column-span: all;
 }
 
-.main-section h1
+.main-section .h1
 {
     margin: 15px;
     text-align: center;
@@ -249,7 +243,7 @@ td:last-child
     text-align: center;
 }
 
-.main-section h1
+.main-section .h1
 {
     font: 'Trebuchet MS', helvetica, sans-serif, 50px;
 }
@@ -306,9 +300,9 @@ input[value='big']:checked ~ .journal article p
     font-size: 20px;
 }
 
-input[value='times-new-roman']:checked ~ .journal article p
+input[value='gothic']:checked ~ .journal article p
 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'GothicCyr';
 }
 
 input[value='courier-new']:checked ~ .journal article p
@@ -316,7 +310,7 @@ input[value='courier-new']:checked ~ .journal article p
     font-family: 'Courier New', Courier, monospace;
 }
 
-input[value='times-new-roman']:checked ~ .journal label[for='times-new-roman'],
+input[value='gothic']:checked ~ .journal label[for='gothic'],
 input[value='courier-new']:checked ~ .journal label[for='courier-new'],
 input[value='big']:checked ~ .journal label[for='big-font-size'],
 input[value='medium']:checked ~ .journal label[for='medium-font-size'],
@@ -340,4 +334,10 @@ input[value='light']:checked ~ .journal label[for='light-theme']
     -moz-column-gap: 30px;
     column-gap: 30px;
     column-rule: 1px solid #000;
+}
+
+p::first-letter
+{
+    font: 'GothicCyr';
+    font-size: 3em;
 }
