@@ -17,14 +17,14 @@ h1
     font-size: 120%;
 }
 
-.toto
+img.toto
 {
     width: 250px;
     float: left;
     margin: 10px;
 }
 
-.totoro_and_all
+.img_totoro img
 {
     height: 250px;
 }
@@ -62,11 +62,30 @@ article
 .general-section
 {
     columns: 3;
-    column-rule: 1px solid #420;
+    column-rule: 1px solid grey;
     column-gap: 30px;
 }
 
-p:first-letter
+.column_count_2
+{
+    column-count: 2;
+    column-rule: 3px dotted grey;
+    column-gap: 30px;
+}
+
+.img_totoro
+{
+    column-span: all;
+}
+
+footer
+{
+    border-top: 7px double grey;
+    text-align: right;
+    font-family: 'Neucha', cursive;
+}
+
+p::first-letter
 {
     font: xx-large serif;
 }
@@ -139,8 +158,8 @@ label
     content: 'SERIF';
 }
 
-.font-style-checkbox:checked ~ .main
+.font-style-checkbox:checked ~ .newspaper > article
 {
-    font-family: 'Noto Serif', serif;
+    font-family: serif;
 }
 
