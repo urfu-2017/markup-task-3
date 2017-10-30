@@ -1,6 +1,6 @@
 body
 {
-    margin: auto auto 100px auto;
+    margin: auto auto 100px;
     width: 80%;
     background-color: #fffacd;
 }
@@ -8,10 +8,7 @@ body
 @font-face
 {
     font-family: 'Old Standard TT';
-    src: local('Old Standard TT Regular'),
-        url('fonts/OldStandard-Regular.woff2') format('woff2'),
-        url('fonts/OldStandard-Regular.woff') format('woff'),
-        url('fonts/OldStandard-Regular.ttf') format('ttf');
+    src: local('Old Standard TT Regular'), url('fonts/OldStandard-Regular.woff2') format('woff2'), url('fonts/OldStandard-Regular.woff') format('woff'), url('fonts/OldStandard-Regular.ttf') format('ttf');
 }
 
 main
@@ -87,7 +84,7 @@ article img
 p
 {
     text-indent: 10%;
-    margin: 2px 0 0 0;
+    margin: 2px 0 0;
 }
 
 figcaption
