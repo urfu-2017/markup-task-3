@@ -53,13 +53,13 @@ header
     font-weight: normal;
 }
 
-.img_wrapper
+figure
 {
     position: relative;
     margin: 1rem 0;
 }
 
-.img_wrapper > img
+figure > img
 {
     /* width: 100%; */
     width: 290px;
