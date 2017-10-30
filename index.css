@@ -1,0 +1,165 @@
+.header.newspaper
+{
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+h1
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 500%;
+}
+
+.header.item
+{
+    font-family: 'Neucha', cursive;
+    font-size: 120%;
+}
+
+img.toto
+{
+    width: 250px;
+    float: left;
+    margin: 10px;
+}
+
+.img_totoro img
+{
+    height: 250px;
+}
+
+.studio
+{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    margin: 0;
+    width: 20px;
+    border: 2px solid grey;
+    background: rgb(240, 221, 221);
+    box-shadow: 2px 2px 20px rgb(66, 53, 53);
+    font: 20px 'Courier', monospace;
+    word-break: break-all;
+    text-align: center;
+}
+
+.release
+{
+    border-top: 7px double grey;
+    border-bottom: 7px double grey;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+article
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.general-section
+{
+    columns: 3;
+    column-rule: 1px solid grey;
+    column-gap: 30px;
+}
+
+.column_count_2
+{
+    column-count: 2;
+    column-rule: 3px dotted grey;
+    column-gap: 30px;
+}
+
+.img_totoro
+{
+    column-span: all;
+}
+
+footer
+{
+    border-top: 7px double grey;
+    text-align: right;
+    font-family: 'Neucha', cursive;
+}
+
+p::first-letter
+{
+    font: xx-large serif;
+}
+
+input
+{
+    display: none;
+}
+
+label
+{
+    padding: 10px;
+    font-size: 2em;
+}
+
+.color-checkbox-label,
+.font-size-checkbox-label,
+.font-style-checkbox-label
+{
+    box-shadow: 2px 2px 10px rgb(66, 53, 53);
+    text-align: center;
+}
+
+.color-checkbox-label:hover,
+.font-size-checkbox-label:hover,
+.font-style-checkbox-label:hover
+{
+    background-color: rgb(179, 142, 142);
+    box-shadow: 2px 2px 10px rgb(66, 53, 53);
+}
+
+.color-checkbox-label:after
+{
+    content: 'LIGHT';
+}
+
+.color-checkbox:checked ~ .color-checkbox-label:after
+{
+    content: 'DARK';
+}
+
+.color-checkbox:checked ~ .newspaper
+{
+    color: #fff;
+    background: rgb(68, 54, 54);
+}
+
+.font-size-checkbox-label:after
+{
+    content: 'SMALL';
+}
+
+.font-size-checkbox:checked ~ .font-size-checkbox-label:after
+{
+    content: 'BIG';
+}
+
+.font-size-checkbox:checked ~ .newspaper
+{
+    font-size: 20px;
+}
+
+.font-style-checkbox-label:after
+{
+    content: 'SANS SERIF';
+}
+
+.font-style-checkbox:checked ~ .font-style-checkbox-label:after
+{
+    content: 'SERIF';
+}
+
+.font-style-checkbox:checked ~ .newspaper > article
+{
+    font-family: serif;
+}
+
