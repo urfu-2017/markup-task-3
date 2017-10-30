@@ -1,9 +1,8 @@
 body
 {
-    margin: auto;
+    margin: auto auto 100px auto;
     width: 80%;
     background-color: #fffacd;
-    margin-bottom: 100px;
 }
 
 main
@@ -16,6 +15,9 @@ main
 .news
 {
     column-count: 3;
+    -o-column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-rule: 2px solid #000;
 }
 
@@ -43,7 +45,6 @@ main
 
 h2
 {
-    margin-bottom: 0;
     text-align: center;
 }
 
@@ -55,6 +56,9 @@ h1
 .many-columns-article
 {
     column-count: 2;
+    -o-column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
 }
 
 article img
@@ -66,14 +70,15 @@ article img
 .many-columns-article h2
 {
     column-span: all;
+    -o-column-span: all;
+    -moz-column-span: all;
+    -webkit-column-span: all;
 }
 
 p
 {
-
     text-indent: 10%;
-    margin: 0;
-    margin-top: 2px;
+    margin: 2px 0 0 0;
 }
 
 figcaption
@@ -99,7 +104,7 @@ article p:first-of-type::first-letter
     font-size: 2em;
 }
 
-.description
+header
 {
     text-align: center;
     border-top: 3px double #000;
