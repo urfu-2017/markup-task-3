@@ -76,9 +76,16 @@ h2
     font: 30px bold 'Times New Roman', serif;
 }
 
-.logo
+.logo1
 {
     height: 50px;
+    float: left;
+}
+
+.logo2
+{
+    height: 50px;
+    float: right;
 }
 
 .delorean
