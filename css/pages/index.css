@@ -26,14 +26,15 @@ main
 main > section
 {
     padding: .5rem;
-    column-count: 5;
+    column-width: 17rem;
     column-gap: 1rem;
     text-align: justify;
+    column-fill: balance;
 }
 
 section > section
 {
-    column-count: 2;
+    column-width: 8rem;
     column-gap: .5rem;
 }
 
@@ -85,11 +86,6 @@ img
     filter: contrast(200%) brightness(110%);
     max-width: 100%;
     max-height: 100%;
-}
-
-body > input
-{
-    display: none;
 }
 
 p
