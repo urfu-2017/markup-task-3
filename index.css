@@ -1,0 +1,191 @@
+@font-face
+{
+    font-family: 'Oswald', sans-serif;
+    src: url(Oswald-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: 'Kaushan Script', cursive;
+    src: url(KaushanScript-Regular.ttf);
+}
+
+.newspaper
+{
+    position: relative;
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 40px;
+}
+
+body > *
+{
+    position: absolute;
+    padding: 30px 20px 40px;
+    font-size: 17px;
+    background: url('paper_texture309.jpg');
+    background-attachment: fixed;
+    margin: 25px 50px;
+}
+
+header
+{
+    margin: 10px;
+    font: 70px Old English Text MT;
+    text-align: center;
+}
+
+.news_title
+{
+    font: 12px Kaushan Script;
+    text-align: center;
+    height: 30px;
+}
+
+.date
+{
+    padding: .2rem;
+    border-top: 4px double;
+    border-bottom: 4px double;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+figure
+{
+    position: relative;
+    margin: 1rem 0;
+}
+
+.img1 img
+{
+    width: 290px;
+    height: 400px;
+    display: inline-block;
+}
+
+.img2 img
+{
+    width: 289px;
+    height: 220px;
+    display: inline-block;
+}
+
+figcaption
+{
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+
+p 
+{
+    text-indent: 20px;
+}
+
+p::first-letter
+{
+    font: 150% Old English Text MT;
+}
+
+blockquote
+{
+    margin: 5%;
+    padding: 12px 20px;
+    background-color: rgba(250, 248, 160, .42);
+    opacity: .7;
+}
+
+hr
+{
+    background-color: rgb(43, 2, 2);
+    height: .2px;
+    width: 90%;
+}
+
+.new
+{
+    font: 17px Oswald;
+    text-transform: uppercase;
+    height: 170px;
+}
+
+.column
+{
+    column-count: 4;
+    column-rule: 1px solid rgb(66, 49, 38);
+    column-gap: 1.2rem;
+    column-width: 70px;
+}
+
+.impr
+{
+    font-weight: bold;
+    border: 1px solid rgba(51, 47, 47, .34);
+}
+
+aside
+{
+    border: solid .2px rgba(250, 248, 160, .42);
+    outline: solid .2px rgb(26, 26, 26);
+    font-size: 18px;
+    padding: 5px;
+}
+
+input[id='color']:checked ~ .newspaper
+{
+    font-size: 17px;
+    color: #fff;
+    background: url('tekstura_korichnevyy_relef_nerovnosti_kontrast_1920x1080.jpg');
+    background-attachment: fixed;
+}
+
+.vertically
+{
+    margin: 41px 0 0;
+    position: absolute;
+    width: .1px;
+    word-break: break-all;
+    text-transform: uppercase;
+    left: 1.8px;
+}
+
+input[id='italic']:checked ~ div > main *
+{
+    font-style: italic;
+}
+
+input[id='arial']:checked ~ div > main *
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[id='small']:checked ~ div > main *
+{
+    font-size: 80%;
+}
+
+input[id='medium']:checked ~ div > main *
+{
+    font-size: 100%;
+}
+
+input[id='large']:checked ~ div > main *
+{
+    font-size: 120%;
+}
+
+label
+{
+    padding: 10px 20px 10px 10px;
+    font-size: 10px;
+    border: 1px solid;
+    text-transform: uppercase;
+}
+
+input
+{
+    visibility: hidden;
+}
