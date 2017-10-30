@@ -8,8 +8,10 @@
 
 @font-face
 {
-    font-family: 'Pacifico', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Pacifico');
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: normal;
+    src: url('Pacifico.woff2') format('woff2');
 }
 
 @font-face
@@ -25,20 +27,20 @@ label
     font-weight: bold;
 }
 
-input#NightMode:checked ~ .all
+input#NightMode:checked ~ section.all
 {
     color: #a6a7a8;
-    background: #111a24 !important;
+    background: #111a24;
 }
 
-input#FontChange:checked ~ .all
+input#FontChange:checked ~ section.all
 {
-    font-variant: petite-caps !important;
+    font-variant: petite-caps;
 }
 
-input#FontType:checked ~ .all p
+input#FontType:checked ~ section.all p
 {
-    font-family: 'Times New Roman', sans-serif !important;
+    font-family: 'Times New Roman', sans-serif;
 }
 
 body
@@ -55,76 +57,60 @@ p
 
 p::first-letter
 {
-    color: mediumseagreen;
+    color: #3cb371;
     font-weight: bold;
 }
 
-.all
+section.all
 {
     column-width: 270px;
-    column-rule: 2px solid grey;
-    background: url('http://wallpaperpulse.com/img/680611.jpg');
+    column-rule: 2px solid #808080;
+    background: url('backface.jpg');
 
 }
 
-.title::first-letter,
-.globaltitle:first-letter
+h3.title::first-letter,
+h1.globaltitle:first-letter
 {
-    color: red;
-}
-
-.sonytitle::first-letter
-{
-    color: black;
-    font-size: 20px;
+    color: #f00;
 }
 
 img
 {
     width: 100%;
     height: 150px;
-
 }
 
-.globaltitle
+h1.globaltitle
 {
-    font-family: 'Pacifico', cursive;
+    font: bold xx-large 'Pacifico', cursive;
     text-align: center;
-    font-weight: bold;
     text-shadow: 6px 4px 25px #803c50;
     column-span: all;
 }
 
-.title
+h3.title
 {
     text-align: center;
     font-family: 'News Cycle', sans-serif;
     text-shadow: 1px 1px gray;
-
 }
 
-.test1
+p.text1
 {
     font-size: small;
     word-spacing: 1px;
 }
 
-.test2
-{
-    font-weight: normal; /* обычный (а) */
-
-}
-
-.sony
+p.sony
 {
     font-family: 'Pacifico', cursive;
     column-width: 150px;
 }
 
-.queen,
-.test1,
-.test2,
-.test3
+p.queen,
+p.text1,
+p.text2
 {
     font-family: 'Fascinate Inline', cursive;
 }
@@ -132,19 +118,16 @@ img
 h4
 {
     column-span: all;
-    font-style: italic;
+    font: italic xx-large 'Fascinate Inline', cursive;
     text-align: center;
     display: block;
     margin: auto;
-    font-family: 'Fascinate Inline', cursive;
-    font-size: xx-large;
 }
 
-.foot
+p.foot
 {
-    font-family: 'Pacifico', cursive;
-    font-size: small;
-    margin: 0% auto;
+    font: small 'Pacifico', cursive;
+    margin: auto;
     color: #1e4450;
     position: absolute;
 }
@@ -154,9 +137,9 @@ h5
     white-space: pre;
 }
 
-.sideText
+nav.sideText
 {
-    display: flex;
+    display: inline-block;
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-weight: bolder;
@@ -167,7 +150,7 @@ h5
     float: left;
 }
 
-.imga
+div.panorama
 {
     margin: auto;
     display: flex;
