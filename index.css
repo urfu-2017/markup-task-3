@@ -53,16 +53,17 @@ header
     font-weight: normal;
 }
 
-figure
+.img_wrapper
 {
     position: relative;
     margin: 1rem 0;
 }
 
-figure > img
+.img_wrapper > img
 {
-    width: 100%;
-    max-width: 290px;
+    /* width: 100%; */
+    width: 290px;
+    min-height: 100%;
     max-height: 418px;
     display: inline-block;
 }
@@ -104,7 +105,6 @@ hr
     font: 17px Oswald;
     text-transform: uppercase;
     height: 170px;
-    
 }
 
 .column
