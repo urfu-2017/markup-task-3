@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: createFont;
-    src: url(createFont.ttf);
+    src: local('Discipuli Britannica'), url(createFont.woff) format('woff'), url(createFont.ttf) format('truetype'), url(createFont.woff2) format('woff2');
 }
 
 body
@@ -47,8 +47,7 @@ h5
 {
     word-wrap: break-word;
     text-align: left;
-    width: .7rem;
-      
+    width: .7rem;      
 }
 
 h1 
