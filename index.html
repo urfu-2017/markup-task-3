@@ -1,9 +1,280 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <title>The Коммерсантъ</title>
     <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <input id="black-white-fonts" type="checkbox" class="black-and-white">
+    <label for="black-white-fonts">Черно/белое отображение</label>
+    <br>
+    <input id="change-font" type="checkbox" class="switch-font">
+    <label for="change-font">Сменить шрифт</label>
+    <br>
+    <input id="little-size-font" type="radio" name="font" class="small-font">
+    <label for="little-size-font">Уменьшить</label>
+    <input id="normal-size-font" type="radio" name="font" class="norm-font" checked>
+    <label for="normal-size-font">Нормальный шрифт</label>
+    <input id="big-size-font" type="radio" name="font" class="large-font">
+    <label for="big-size-font">Увеличить</label>
+    <main class="page">
+        <header>
+            <hr class="long-line">
+            <div class="header-container">
+                <div class="newspaper-name-container">
+                    <p class="newspaper-name text-center">The Коммерсантъ</p>
+                </div>
+                <div class="newspaper-about-container">
+                    <p class="about">
+                        Газета издательского дома
+                        <q class="beautiful-quotes">The КоммерсантЪ</q>
+                    </p>
+                    <p class="about">
+                        Издается с 1909 года. С 1917 по 1990 год не выходила по не зависящим от
+                        редакции обстоятельствам
+                    </p>
+                    <p class="about">
+                        С 1990 года выходит в еженедельном режиме
+                    </p>
+                    <p class="about">
+                        С 1992 года - в ежедневном.
+                    </p>
+                </div>
+            </div>
+            <div class="newspaper-stats-container">
+                <p class="newspaper-stats-text">No. 154</p>
+                <p class="newspaper-stats-text">
+                    <time datetime="1984-10-31">Понедельник ОКТЯБРЬ 31 1984</time>
+                </p>
+                <p class="newspaper-stats-text">Важные сообщения</p>
+            </div>
+            <hr class="long-line">
+        </header>
+        <div class="left-side">
+            <article class="doctorwho-news box">
+                <h1 class="attract-attention">ДОКТОР КТО?</h1>
+                <figure>
+                    <img class="doctorwho" title="Doctor Who?" src="images/doctorwho.jpg"
+                        alt="Doctor who?">
+                    <figcaption>Вам знаком человек на фото?</figcaption>
+                </figure>
+
+                <p class="normal-paragraph">
+                    Если этот человек вам знаком, просим связаться с Клайвом Финчем по телефону
+                    <br>+7 922 645 16 08 (вымышленный) или же по электронной почте
+                </p>
+                <address>clivevsdoctorwho@bbc.com</address>
+            </article>
+            <div class="col-4 col-format">
+                <article>
+                    <h3 class="normal-caption">
+                        В Сколково создадут центр ад&shy;дитив&shy;ных тех&shy;но&shy;логий
+                    </h3>
+                    <p class="normal-paragraph">
+                        Пре&shy;дус&shy;мат&shy;ри&shy;ва&shy;ет&shy;ся стро&shy;и&shy;тельст&shy;во
+                        в ин&shy;но&shy;ва&shy;ци&shy;он&shy;ном клас&shy;те&shy;ре
+                        про&shy;из&shy;водст&shy;вен&shy;но
+                        -ин&shy;жи&shy;ни&shy;рин&shy;го&shy;во&shy;го ком&shy;плек&shy;са
+                        ад&shy;ди&shy;тив&shy;ных (по&shy;слой&shy;ный син&shy;тез
+                        из&shy;де&shy;лий) тех&shy;но&shy;ло&shy;гий. За&shy;пуск ра&shy;бо&shy;ты
+                        на&shy;уч&shy;но&shy;го ком&shy;плек&shy;са за&shy;пла&shy;ни&shy;ро&shy;ван
+                        на се&shy;ре&shy;ди&shy;ну 2019 го&shy;да. Он зай&shy;мет пло&shy;щадь
+                        в семь ты&shy;сяч квад&shy;рат&shy;ных мет&shy;ров, на ко&shy;то&shy;рых
+                        рас&shy;по&shy;ло&shy;жат&shy;ся ин&shy;но&shy;ва&shy;ци&shy;он&shy;ные
+                        ла&shy;зер&shy;ные ком&shy;плек&shy;сы, учеб&shy;ный центр, а так&shy;же
+                        ин&shy;жи&shy;ни&shy;рин&shy;го&shy;вый центр ад&shy;ди&shy;тив&shy;ных
+                        тех&shy;но&shy;ло&shy;гий и еще кру&shy;тые ме&shy;х&shy;об&shy;ра&shy;бот&shy;ки.
+                    </p>
+                    <p class="normal-paragraph">
+                        Пре&shy;дус&shy;мат&shy;ри&shy;ва&shy;ет&shy;ся стро&shy;и&shy;тельст&shy;во
+                        в ин&shy;но&shy;ва&shy;ци&shy;он&shy;ном клас&shy;те&shy;ре
+                        про&shy;из&shy;водст&shy;вен&shy;но
+                        -ин&shy;жи&shy;ни&shy;рин&shy;го&shy;во&shy;го ком&shy;плек&shy;са
+                        ад&shy;ди&shy;тив&shy;ных (по&shy;слой&shy;ный син&shy;тез
+                        из&shy;де&shy;лий) тех&shy;но&shy;ло&shy;гий. За&shy;пуск ра&shy;бо&shy;ты
+                        на&shy;уч&shy;но&shy;го ком&shy;плек&shy;са за&shy;пла&shy;ни&shy;ро&shy;ван
+                        на се&shy;ре&shy;ди&shy;ну 2019 го&shy;да. Он зай&shy;мет пло&shy;щадь
+                        в семь ты&shy;сяч квад&shy;рат&shy;ных мет&shy;ров, на ко&shy;то&shy;рых
+                        рас&shy;по&shy;ло&shy;жат&shy;ся ин&shy;но&shy;ва&shy;ци&shy;он&shy;ные
+                        ла&shy;зер&shy;ные ком&shy;плек&shy;сы, учеб&shy;ный центр, а так&shy;же
+                        ин&shy;жи&shy;ни&shy;рин&shy;го&shy;вый центр ад&shy;ди&shy;тив&shy;ных
+                        тех&shy;но&shy;ло&shy;гий и еще кру&shy;тые ме&shy;х&shy;об&shy;ра&shy;бот&shy;ки.
+                    </p>
+                    <p class="normal-paragraph">
+                        Пре&shy;дус&shy;мат&shy;ри&shy;ва&shy;ет&shy;ся стро&shy;и&shy;тельст&shy;во
+                        в ин&shy;но&shy;ва&shy;ци&shy;он&shy;ном клас&shy;те&shy;ре
+                        про&shy;из&shy;водст&shy;вен&shy;но
+                        -ин&shy;жи&shy;ни&shy;рин&shy;го&shy;во&shy;го ком&shy;плек&shy;са
+                        ад&shy;ди&shy;тив&shy;ных (по&shy;слой&shy;ный син&shy;тез
+                        из&shy;де&shy;лий) тех&shy;но&shy;ло&shy;гий. За&shy;пуск ра&shy;бо&shy;ты
+                        на&shy;уч&shy;но&shy;го ком&shy;плек&shy;са за&shy;пла&shy;ни&shy;ро&shy;ван
+                        на се&shy;ре&shy;ди&shy;ну 2019 го&shy;да. Он зай&shy;мет пло&shy;щадь
+                        в семь ты&shy;сяч квад&shy;рат&shy;ных мет&shy;ров, на ко&shy;то&shy;рых
+                        рас&shy;по&shy;ло&shy;жат&shy;ся ин&shy;но&shy;ва&shy;ци&shy;он&shy;ные
+                        ла&shy;зер&shy;ные ком&shy;плек&shy;сы, учеб&shy;ный центр, а так&shy;же
+                        ин&shy;жи&shy;ни&shy;рин&shy;го&shy;вый центр ад&shy;ди&shy;тив&shy;ных
+                        тех&shy;но&shy;ло&shy;гий и еще кру&shy;тые ме&shy;х&shy;об&shy;ра&shy;бот&shy;ки.
+                    </p>
+                </article>
+                <article>
+                    <h3 class="normal-caption">
+                        На ор&shy;би&shy;та&shy;ль&shy;ной станции «МИР-2» будет создана
+                        ис&shy;кус&shy;ствен&shy;ная гравитация.
+                    </h3>
+                    <p class="normal-paragraph">
+                        Цент&shy;раль&shy;ный мо&shy;дуль бу&shy;дет раз&shy;де&shy;лен на три
+                        сег&shy;мен&shy;та. В пер&shy;вом сег&shy;мен&shy;те
+                        рас&shy;по&shy;ло&shy;жат&shy;ся все тех&shy;ни&shy;чес&shy;кие
+                        по&shy;ме&shy;ще&shy;ния и здесь бу&shy;дет ну&shy;ле&shy;вая
+                        гра&shy;ви&shy;та&shy;ция. Во вто&shy;ром сег&shy;мен&shy;те она
+                        бу&shy;дет со&shy;став&shy;лять по&shy;ло&shy;ви&shy;ну от зем&shy;ной,
+                        а в треть&shy;ей – мак&shy;си&shy;маль&shy;но при&shy;бли&shy;же&shy;на
+                        к ней. В этой час&shy;ти бу&shy;дут жить участ&shy;ни&shy;ки
+                        экс&shy;пе&shy;ди&shy;ций. Дан&shy;ный про&shy;ект яв&shy;ля&shy;ет&shy;ся
+                        важ&shy;ным ша&shy;гом в даль&shy;ней&shy;шем осво&shy;е&shy;нии
+                        кос&shy;мо&shy;са.
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="sherlock-news">
+            <article>
+                <h3 class="normal-caption">Названа точная дата премьеры нового сезона "Шерлока"</h3>
+                <div class="col-3 col-format">
+                    <p class="normal-paragraph">
+                        Пос&shy;ле ободря&shy;ю&shy;щей суб&shy;бот&shy;ней но&shy;вос&shy;ти в
+                        Twitter от Дэви&shy;да Ар&shy;ноль&shy;да, од&shy;но&shy;го из
+                        бес&shy;смен&shy;ных ком&shy;по&shy;зи&shy;то&shy;ров
+                        му&shy;зы&shy;каль&shy;ных ком&shy;по&shy;зи&shy;ций для
+                        бри&shy;тан&shy;ско&shy;го се&shy;ри&shy;а&shy;ла "Шер&shy;лок",
+                        о том, что сту&shy;дий&shy;ная за&shy;пись на&shy;ко&shy;нец-то
+                        за&shy;вер&shy;ше&shy;на, по&shy;яви&shy;лось еще од&shy;но
+                        дол&shy;гож&shy;дан&shy;ное из&shy;вес&shy;тие.
+                    </p>
+                    <p class="normal-paragraph">
+                        Речь идет о да&shy;те вы&shy;хо&shy;да в эфир чет&shy;вер&shy;то&shy;го
+                        се&shy;зо&shy;на се&shy;ри&shy;а&shy;ла. Пор&shy;тал Deadline
+                        <a href="https://goo.gl/dn54gD">со&shy;об&shy;ща&shy;ет</a> о том, что
+                        <a href="https://goo.gl/YV3IhA">пер&shy;вая се&shy;рия</a>
+                        но&shy;во&shy;го се&shy;зо&shy;на под на&shy;зва&shy;ни&shy;ем "Шесть
+                        Тэт&shy;че&shy;ров" (The Six Thatchers) вый&shy;дет в эфир в
+                        Со&shy;еди&shy;нен&shy;ном Ко&shy;ро&shy;левст&shy;ве и США 1
+                        ян&shy;ва&shy;ря 2017 го&shy;да. Но&shy;вый се&shy;зон вы&shy;пол&shy;нен в
+                        трех&shy;се&shy;рий&shy;ном фор&shy;ма&shy;те, став&shy;шем для
+                        зри&shy;те&shy;лей уже при&shy;выч&shy;ным.
+                    </p>
+                    <figure class="img-span-2">
+                        <img class="img_sher" title="Sher" src="images/sher.jpg"
+                            alt="Sher">
+                        <figcaption>Где Шерлок? Туть</figcaption>
+                    </figure>
+                    <p class="normal-paragraph">
+                        От по&shy;клон&shy;ни&shy;ков, добрых че&shy;ты&shy;ре ме&shy;ся&shy;ца
+                        на&shy;блю&shy;дав&shy;ших за съем&shy;ка&shy;ми, не
+                        укры&shy;лись не&shy;ко&shy;то&shy;рые ин&shy;три&shy;гу&shy;ю&shy;щие
+                        под&shy;роб&shy;нос&shy;ти: у Ват&shy;со&shy;нов, су&shy;дя по
+                        ро&shy;зо&shy;во&shy;му ком&shy;би&shy;не&shy;зо&shy;ну,
+                        ро&shy;дит&shy;ся дочь, То&shy;би Джонс вы&shy;сту&shy;пит в ро&shy;ли
+                        зло&shy;дея из рас&shy;ска&shy;за "Шер&shy;лок
+                        Холмс при смер&shy;ти", Мо&shy;ри&shy;ар&shy;ти, ко&shy;то&shy;рый,
+                        по мно&shy;го&shy;крат&shy;ным за&shy;ве&shy;ре&shy;ни&shy;ям
+                        ко&shy;ман&shy;ды со&shy;зда&shy;те&shy;лей се&shy;ри&shy;а&shy;ла, умер,
+                        сно&shy;ва со&shy;вер&shy;шит оче&shy;ред&shy;ное по&shy;яв&shy;ле&shy;ние.
+                    </p>
+                    <p class="normal-paragraph">
+                        Не&shy;сколь&shy;ко на&shy;ме&shy;ков сде&shy;ла&shy;ли и са&shy;ми
+                        со&shy;зда&shy;те&shy;ли: на фес&shy;ти&shy;ва&shy;ле Comic-Con
+                        в Сан-Ди&shy;е&shy;го Марк Гэй&shy;тисс, Сти&shy;вен Моф&shy;фат и
+                        Аман&shy;да Аб&shy;бинг&shy;тон рас&shy;ска&shy;за&shy;ли о том,
+                        что се&shy;зон бу&shy;дет "мрач&shy;ным", а на&shy;кал
+                        со&shy;бы&shy;тий "до&shy;стиг&shy;нет сво&shy;е&shy;го пи&shy;ка".
+                    </p>
+                    <p class="normal-paragraph">
+                        Там же впер&shy;вые по&shy;ка&shy;за&shy;ли
+                        <a href="https://goo.gl/JxHFbm">трей&shy;лер</a> но&shy;во&shy;го
+                        се&shy;зо&shy;на, в ко&shy;то&shy;ром де&shy;тек&shy;тив без
+                        ус&shy;та&shy;ли пов&shy;то&shy;ря&shy;ет, что "что-то гря&shy;дет",
+                        Мол&shy;ли го&shy;во&shy;рит Шер&shy;ло&shy;ку, что "это уже
+                        не иг&shy;ра", Ват&shy;сон про&shy;сит про&shy;све&shy;тить
+                        его ка&shy;са&shy;тель&shy;но под&shy;роб&shy;нос&shy;тей
+                        оче&shy;ред&shy;но&shy;го де&shy;ла, мис&shy;сис Хад&shy;сон
+                        вы&shy;став&shy;ля&shy;ет Майк&shy;роф&shy;та с фра&shy;зой:
+                        "Реп&shy;ти&shy;лия, уби&shy;рай&shy;ся из мо&shy;е&shy;го
+                        до&shy;ма", а Кэл&shy;вер&shy;тон Смит зло&shy;ве&shy;ще
+                        хо&shy;хо&shy;чет.
+                    </p>
+                    <p class="normal-paragraph">
+                        Бе&shy;не&shy;дикт Кам&shy;бер&shy;бэтч и во&shy;все за&shy;явил,
+                        что пос&shy;ле про&shy;смот&shy;ра чет&shy;вер&shy;то&shy;го
+                        се&shy;зо&shy;на зри&shy;те&shy;ли пой&shy;мут, по&shy;че&shy;му
+                        без&shy;от&shy;ла&shy;га&shy;тель&shy;ное
+                        про&shy;дол&shy;же&shy;ние се&shy;зо&shy;на
+                        не&shy;воз&shy;мож&shy;но, и са&shy;ми за&shy;хо&shy;тят взять
+                        па&shy;у&shy;зу. А глав&shy;ное - все бы&shy;ло
+                        за&shy;ду&shy;ма&shy;но так с са&shy;мо&shy;го на&shy;ча&shy;ла.
+                    </p>
+                    <blockquote class="quote">
+                        Зри&shy;те&shy;ли пой&shy;мут
+                    </blockquote>
+                    <p class="normal-paragraph">
+                        Бе&shy;не&shy;дикт Кам&shy;бер&shy;бэтч, Бе&shy;не&shy;дикт
+                        Бер&shy;бэтч, Бе&shy;не&shy;дикт Ка&shy;рам&shy;бач,
+                        Бе&shy;не&shy;дикт Ку&shy;кум&shy;бер&shy;бэтч и Бе&shy;не
+                        фон Кам&shy;бер во&shy;все за&shy;явил,
+                        что пос&shy;ле про&shy;смот&shy;ра чет&shy;вер&shy;то&shy;го
+                        се&shy;зо&shy;на зри&shy;те&shy;ли пой&shy;мут, по&shy;че&shy;му
+                        без&shy;от&shy;ла&shy;га&shy;тель&shy;ное
+                        про&shy;дол&shy;же&shy;ние се&shy;зо&shy;на
+                        не&shy;воз&shy;мож&shy;но, и са&shy;ми за&shy;хо&shy;тят взять
+                        па&shy;у&shy;зу. А глав&shy;ное - все бы&shy;ло
+                        за&shy;ду&shy;ма&shy;но так с са&shy;мо&shy;го,
+                        са&shy;мо&shy;го-пре&shy;са&shy;мо&shy;го на&shy;ча&shy;ла.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="little-news">
+            <div class="tv-radio-news">
+                <p class="updown-paragraph">
+                    Текст
+                </p>
+            </div>
+            <section>
+                <header>
+                    <h2 class="ads-caption">Объявления</h2>
+                </header>
+                <article>
+                    <h3 class="normal-caption">ПРОПАЛ МАЛЬЧИК!</h3>
+                    <p class="normal-paragraph">
+                        Гла&shy;за зе&shy;ле&shy;ные, рост метр с лиш&shy;ним,
+                        ро&shy;ди&shy;те&shy;лей у не&shy;го не&shy;ту.
+                    </p>
+                    <p class="normal-paragraph">
+                        Нашедшего ждет премия - Нимбус 2000.
+                    </p>
+                    <p class="normal-paragraph">
+                        Обращаться ли&shy;чно по адресу:
+                    </p>
+                    <address>
+                        Косая Аллея, д. 32, имя: Тот-Кого-Нельзя-Называть.
+                    </address>
+                </article>
+                <article>
+                    <h3 class="normal-caption">ИЩУ СОСЕДА!</h3>
+                    <p class="normal-paragraph">
+                        Вы&shy;со&shy;ко&shy;ак&shy;тив&shy;ный со&shy;цио&shy;пат,
+                        иг&shy;ра&shy;ю&shy;щий на скрип&shy;ке, хо&shy;чет
+                        най&shy;ти по&shy;ря&shy;доч&shy;но&shy;го
+                        со&shy;се&shy;да. Об&shy;ра&shy;щать&shy;ся по
+                        ад&shy;ре&shy;су:
+                    </p>
+                    <address>
+                        Лондон, Бейкер-Стрит, 221б, имя: Шерлок Холмс
+                    </address>
+                </article>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
