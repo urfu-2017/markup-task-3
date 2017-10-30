@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'GothicCyr';
+    src: url('TrueGothicCyr.woff') format('woff');
+}
+
 @font-face 
 {
     font-family: 'Gentium';
@@ -6,12 +12,19 @@
 
 .journal
 {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    min-width: 800px;
 }
 
 p
 {
     text-indent: 25px;
+}
+
+p::first-letter
+{
+    font-family: 'GothicCyr';
+    font-size: 3em;
 }
 
 body
@@ -29,88 +42,92 @@ article
     margin: 5px;
 }
 
-div.head
+.head div
 {
     font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-block;
+
 }
 
-div.head ul
+.top
 {
-    float: right;
+    height: 470px;
 }
 
-div.name
+.tower
 {
-    display: flex;
+    height: 470px;
 }
 
-div.name h1
+.name div
+{
+    display: inline-block;
+}
+
+.name h1
 {
     font-family: 'Gentium';
-    flex: 1;
+    display: inline-block;
+    margin-left: 140px;
 }
 
-div.name div.img:not(:first-child)
+.name div.img:not(:first-child)
 {
     margin-left: -15px;
 }
 
-div.name div:not(:last-child)
+.name div:not(:last-child)
 {
     margin-right: -15px;
 }
 
-div.head span
+.head span
 {
     font-family: Verdana;
 }
 
-div.head span.cpsu
+.head span.cpsu
 {
     letter-spacing: .5em;
 }
 
-div.head i
+.head i
 {
     font-family: 'Courier New';
 }
 
-div.head h1
+.head h1
 {
     font-size: 60px;
     text-align: right;
     line-height: 1em;
 }
 
-div.top
+.top
 {
-    flex: 1;
     border-right: solid #000 2px;
     border-bottom: solid #000 4px;
     min-width: 500px;
 }
 
-div.top span
+.top span
 {
     text-decoration: underline;
     display: block;
     text-align: right;
 }
 
-div.top div.createdBy
+.top div.createdBy
 {
-    float: left;
     max-width: 140px;
 }
 
-div.top li
+.top li
 {
     display: inline;
 }
 
-div.top li:not(:last-child)
+.top li:not(:last-child)
 {
     margin-right: 50px;
 }
@@ -120,73 +137,88 @@ img
     margin: 1px 5px;
 }
 
-.winter img
-{
-    float: left;
-}
-
 .italic
 {
     font-style: italic;
 }
 
-div.articles
+.articles
 {
-    display: flex;
     font-family: 'Times New Roman', Times, serif;
 }
 
-div.left
+.left
 {
-    max-width: 200px;
+    width: 200px;
     border-right: 8px double #000;
 }
 
-article.main
+.main
 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
     column-count: 4;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
     column-width: 150px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
     column-gap: 30px;
     column-rule: 1px solid #000;
-    flex: 1;
 }
 
-div.main-section h1
+.wide
+{
+    display: block;
+    -webkit-column-span: 2;
+    column-span: 2;
+}
+
+.main-section h1
 {
     margin: 15px;
     text-align: center;
 }
 
-div.right
+.center,
+.left,
+.right,
+.articles tr,
+.articles td
 {
-    margin: 10px;
-    border-left: solid #000 2px;
-    border-top: solid #000 2px;
-    max-width: 250px;
+    height: 100%;
 }
 
-div.winter
+.right
+{
+    margin: 10px;
+    border-left: #000 2px solid;
+    border-top: #000 4px solid;
+    width: 300px;
+}
+
+.winter
 {
     margin: 15px;
-    display: flex;
-    flex-direction: row;
     border-bottom: #000 4px solid;
 }
 
-div.winter img
+.winter img
 {
     width: 241px;
     height: 137px;
 }
 
-div.winter h2
+.winter h2
 {
+    margin-right: 50px;
     border: dotted #000 2px;
-    float: right;
     max-width: 150px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
-div.diary
+.diary
 {
     border-bottom: 1px solid #000;
     text-transform: uppercase;
@@ -194,7 +226,7 @@ div.diary
     text-align: center;
 }
 
-div.main-section h1
+.main-section h1
 {
     font-style: 'Trebuchet MS', helvetica, sans-serif;
     font-size: 50px;
@@ -209,7 +241,6 @@ div.main-section h1
     background-color: #000;
     color: #999;
     width: 100%;
-    display: flex;
 }
 
 .footer div
@@ -220,20 +251,14 @@ div.main-section h1
 
 input[value='light']:checked ~ .journal
 {
-    background-image: url('светлая-бумага.jpg');
+    background-image: url('paper_texture6094.jpg');
     border-color: #000;
-    color: #000;
-}
-
-input[value='light']:checked ~ .journal label[for='light-theme']
-{
-    background: #999;
     color: #000;
 }
 
 input[value='dark']:checked ~ .journal
 {
-    background-image: url('темная-бумага.jpg');
+    background-image: url('paper_texture6094d.jpg');
     border-color: #fff;
     color: #fff;
 }
@@ -249,21 +274,9 @@ input[value='small']:checked ~ .journal article p
     font-size: 10px;
 }
 
-input[value='small']:checked ~ .journal label[for='small-font-size']
-{
-    background: #999;
-    color: #000;
-}
-
 input[value='medium']:checked ~ .journal article p
 {
     font-size: 15px;
-}
-
-input[value='medium']:checked ~ .journal label[for='medium-font-size']
-{
-    background: #999;
-    color: #000;
 }
 
 input[value='big']:checked ~ .journal article p
@@ -271,21 +284,9 @@ input[value='big']:checked ~ .journal article p
     font-size: 20px;
 }
 
-input[value='big']:checked ~ .journal label[for='big-font-size']
-{
-    background: #999;
-    color: #000;
-}
-
 input[value='times-new-roman']:checked ~ .journal article p
 {
     font-family: 'Times New Roman', Times, serif;
-}
-
-input[value='times-new-roman']:checked ~ .journal label[for='times-new-roman']
-{
-    background: #999;
-    color: #000;
 }
 
 input[value='courier-new']:checked ~ .journal article p
@@ -293,7 +294,12 @@ input[value='courier-new']:checked ~ .journal article p
     font-family: 'Courier New', Courier, monospace;
 }
 
-input[value='courier-new']:checked ~ .journal label[for='courier-new']
+input[value='times-new-roman']:checked ~ .journal label[for='times-new-roman'],
+input[value='courier-new']:checked ~ .journal label[for='courier-new'],
+input[value='big']:checked ~ .journal label[for='big-font-size'],
+input[value='medium']:checked ~ .journal label[for='medium-font-size'],
+input[value='small']:checked ~ .journal label[for='small-font-size'],
+input[value='dark']:checked ~ .journal label[for='dark-theme']
 {
     background: #999;
     color: #000;
