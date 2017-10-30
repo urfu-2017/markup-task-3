@@ -16,7 +16,7 @@
     width: 160px;
     text-align: left;
     color: #fff;
-    padding: 33px 15px 13px;
+    padding: 20px 15px 13px;
 }
 
 .mainphoto
@@ -64,7 +64,7 @@ p.asideText
 
 .photoDescription
 {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .textBlock
@@ -74,9 +74,24 @@ p.asideText
     padding-left: 40px;
 }
 
+.leftSize
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+}
+
+.rightSize
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 55%;
+}
+
 .photo
 {
-    width: 30%;
+
+    width: 100%;
 }
 
 .rightBlock
