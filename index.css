@@ -20,6 +20,7 @@ body
 {
     min-width: 700px;
     max-width: 1366px;
+    margin: 0 auto;
 }
 
 .background
@@ -124,11 +125,21 @@ figcaption
     margin-top: 3px;
 }
 
+figure
+{
+    margin: 0;
+}
+
 .image
 {
     margin-top: 3px;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+figcaption
+{
+    display: inline-block;
 }
 
 input[id='font-size-changer']:checked ~ .content .paragraph,
