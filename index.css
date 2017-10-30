@@ -1,0 +1,127 @@
+body
+{
+    margin: auto auto 100px;
+    width: 80%;
+    background-color: #fffacd;
+}
+
+@font-face
+{
+    font-family: 'Old Standard TT';
+    src: local('Old Standard TT Regular'), url('fonts/OldStandard-Regular.woff2') format('woff2'), url('fonts/OldStandard-Regular.woff') format('woff'), url('fonts/OldStandard-Regular.ttf') format('ttf');
+}
+
+main
+{
+    background-color: #ffe98f;
+    padding: 30px;
+    font-family: 'Old Standard TT', serif;
+}
+
+.news
+{
+    column-count: 3;
+    -o-column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-rule: 2px solid #000;
+}
+
+#changeColor:checked ~ main
+{
+    
+    color: #fffacd;
+    background-color: #705d16;
+}
+
+#changeFont:not(:checked) ~ main
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#font-size-small:checked ~ main
+{
+    font-size: .8em;
+}
+
+#font-size-large:checked ~ main
+{
+    font-size: 1.2em;
+}
+
+h2
+{
+    text-align: center;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.many-columns-article
+{
+    column-count: 2;
+    -o-column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+}
+
+article img
+{
+    width: 100%;
+}
+
+.many-columns-article > figure,
+.many-columns-article h2
+{
+    column-span: all;
+    -o-column-span: all;
+    -moz-column-span: all;
+    -webkit-column-span: all;
+}
+
+p
+{
+    text-indent: 10%;
+    margin: 2px 0 0;
+}
+
+figcaption
+{
+    font-style: italic;
+    font-size: .8em;
+    text-align: center;
+}
+
+blockquote
+{
+    font-size: .8em;
+    padding: 10px;
+}
+
+h1
+{
+    font-size: 4em;
+}
+
+article p:first-of-type::first-letter
+{
+    font-size: 2em;
+}
+
+header
+{
+    text-align: center;
+    border-top: 3px double #000;
+    border-bottom: 3px double #000;
+    margin-bottom: 10px;
+}
+
+.vertical-text
+{
+    width: 1em;
+    word-break: break-all;
+    float: right;
+    border-left: solid 2px;
+}
