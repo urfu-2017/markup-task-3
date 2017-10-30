@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Ewert');
+
+.sideCenter
+{
+    text-align: center;
+    word-spacing: 15px;
+    font: small-caps 50px 'Ewert', cursive;
+}
+
+.sideLeft,
+.sideRight
+{
+    font: 15px Arial, sans-serif;
+}
+
+article
+{
+    font: 16px/23px Arial, sans-serif;
+    text-indent: 2em;
+}
+
+.sideRight
+{
+    text-align: right;
+}
+
+body
+{
+    background-image: url(backgroung.jpg);
+}
+
+.first,
+.fourth
+{
+    break-after: column;
+}
+
+.second,
+.header
+{
+    column-count: 2;
+}
+
+.second h2
+{
+    column-span: all;
+}
+
+section.double
+{
+    column-count: 2;
+    column-rule: 1px solid;
+}
+
+.vertical
+{
+    float: left;
+    writing-mode: tb-rl;
+}
+
+.news
+{
+    width: 90%;
+    margin: auto;
+    column-count: 2;
+}
+
+.news p:first-child
+{
+    break-after: column;
+}
+
+h2
+{
+    text-align: center;
+    font: 30px bold 'Times New Roman', serif;
+}
+
+.logo1
+{
+    height: 50px;
+    float: left;
+}
+
+.logo2
+{
+    height: 50px;
+    float: right;
+}
+
+.delorean
+{
+    width: 300px;
+}
+
+.imgHolder
+{
+    text-align: center;
+}
+
+.third
+{
+    width: 80%;
+    margin: auto;
+}
+
+ul
+{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.marker
+{
+    font: bold italic 110% sans-serif;
+}
+
+li
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
