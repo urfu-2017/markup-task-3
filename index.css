@@ -1,18 +1,13 @@
 @font-face 
 {
-    font-family: Comfortaa-Light; /* жирный, жирный, жирный */
-    src: local("Comfortaa-Light"),
-         url(Comfortaa-Light.eot?) format("eot"),   
-         url(Comfortaa-Light.woff) format("woff"),
-         url(Comfortaa-Light.woff2) format("woff2"),  
-         url(Comfortaa-Light.ttf);
+    font-family: Comfortaa-Light;
+    src: local('Comfortaa-Light'), url(Comfortaa-Light.eot?) format('eot'), url(Comfortaa-Light.woff) format('woff'), url(Comfortaa-Light.woff2) format('woff2'), url(Comfortaa-Light.ttf);
 }
 
 @font-face
 {
     font-family: Jura-Light;
-    src: local("Jura-Light"),
-         url(Jura-Light.ttf);
+    src: local('Jura-Light'), url(Jura-Light.ttf);
 }
 
 html
