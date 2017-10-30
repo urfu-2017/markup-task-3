@@ -1,0 +1,177 @@
+@font-face
+{
+    font-family: Dancing Script;
+    src: url('fonts/dancingscript-regular.ttf')
+        format('truetype'), url('fonts/dancingscript-regular.woff')
+        format('woff'), url('fonts/dancingscript-regular.woff2')
+        format('woff2'), url('fonts/dancingscript-regular.eot')
+        format('embedded-opentype');
+    unicode-range: u+0000-007f;
+}
+
+@font-face
+{
+    font-family: Rye;
+    src: url('fonts/rye-regular.ttf')
+        format('truetype'), url('fonts/rye-regular.woff')
+        format('woff'), url('fonts/rye-regular.woff2') 
+        format('woff2'), url('fonts/rye-regular.eot') 
+        format('embedded-opentype');
+    unicode-range: u+0000-007f;
+}
+
+@font-face
+{
+    font-family: Sacramento;
+    src: url('fonts/sacramento-regular.ttf')
+        format('truetype'), url('fonts/sacramento-regular.woff')
+        format('woff'), url('fonts/sacramento-regular.woff2')
+        format('woff2'), url('fonts/sacramento-regular.eot')
+        format('embedded-opentype');
+    unicode-range: u+0000-007f;
+}
+
+body
+{
+    font-size: 30px;
+}
+
+.content
+{
+    font: 50px Rye, cursive;
+}
+
+p
+{
+    font-size: 40%;
+    text-align: left;
+}
+
+article p:first-of-type::first-letter
+{
+    font: 800 130% Sacramento, serif;
+}
+
+q
+{
+    font: 1.3em Dancing Script, cursive;
+    font-weight: bold;
+}
+
+.vertical
+{
+    font: bold 50% Dancing Script, cursive;
+    width: 1px;
+    word-break: break-all;
+    padding-left: 48%;
+}
+
+p::first-letter
+{
+    margin-left: 25px;
+}
+
+.content
+{
+    background-image: url('images/paper.jpg');
+}
+
+header
+{
+    text-align: center;
+}
+
+h1
+{
+    margin-bottom: 10px;
+}
+
+h3
+{
+    text-align: center;
+    font-size: 50%;
+    font-weight: bold;
+}
+
+figcaption
+{
+    font-size: 30%;
+}
+
+.articles
+{
+    -moz-column-count: 3;
+    -moz-column-gap: 100px;
+    -moz-column-rule: 3px solid #000;
+    column-count: 3;
+    column-gap: 100px;
+    column-rule: 3px solid #000;
+}
+
+article:last-of-type
+{
+    -moz-column-count: 2;
+    -moz-column-gap: 30px;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+article:last-of-type h3
+{
+    column-span: all;
+}
+
+article:not(:last-of-type)
+{
+    border-bottom: 1px solid #000;
+}
+
+.date
+{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+}
+
+.img-container
+{
+    text-align: center;
+    column-span: all;
+}
+
+img
+{
+    width: 40%;
+    padding: 0 20px;
+}
+
+input[id='theme-dark']:checked ~ .content
+{
+    background: #000;
+    color: #fff;
+}
+
+input[id='theme-dark']:checked ~ .content .articles
+{
+    column-rule-color: #fff;
+}
+
+input[id='theme-dark']:checked ~ .content article
+{
+    border-color: #fff;
+}
+
+input[id='font-family-sans-serif']:checked ~ .content
+{
+    font-family: sans-serif;
+}
+
+input[id='font-size-large']:checked ~ .content
+{
+    font-size: 2.5em;
+}
+
+input[id='font-size-small']:checked ~ .content
+{
+    font-size: .85em;
+}
