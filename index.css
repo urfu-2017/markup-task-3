@@ -1,3 +1,135 @@
+<<<<<<< HEAD
+@font-face
+{
+    font-family: createFont;
+    src: url(createFont.ttf);
+}
+
+body
+{
+    min-width: 800px;
+}
+
+.check_type 
+{
+    text-align: right;
+}
+
+.main 
+{
+    column-count: 3;
+}
+
+html 
+{
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: #000;
+    color: #adff2f;
+}
+
+.top 
+{
+    column-count: 2;
+}
+
+.main > img
+{
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 60%;
+}
+
+fieldset
+{
+    column-span: all;
+}
+
+h5
+{
+    word-wrap: break-word;
+    text-align: left;
+    width: .7rem;
+      
+}
+
+h1 
+{
+    text-shadow: 7px 7px 7px #f94;
+}
+
+input[id='dark']:checked ~ main 
+{
+    background-image: url('dark.jpg');
+    color: #f5f5f5;
+}
+
+.top > img
+{
+    float: left;
+    margin: 0 1em 1em 0;
+    width: 60%;
+}
+
+input[id='light']:checked ~ main 
+{
+    background-image: url('light.jpg');
+    color: #000;
+}
+
+h1,
+fieldset
+{
+    text-align: center;
+}
+
+img 
+{
+    border: 4px solid #00008b;
+}
+
+input[id='small']:checked ~ main 
+{
+    font-size: 75%;
+}
+
+input[id='large']:checked ~ main 
+{
+    font-size: 120%;
+}
+
+input[id='large']:checked > h2 
+{
+    color: #adff2f;
+}
+
+input[id='e-large']:checked ~ main 
+{
+    font-size: 150%;
+}
+
+input[id='bold']:checked ~ main 
+{
+    font-family: 'Ruslan Display', cursive;
+}
+
+input[id='hand']:checked ~ main 
+{
+    font-family: createFont, cursive;
+}
+
+p:first-letter,
+h4:first-letter 
+{
+    margin: 0 0 0 2rem;
+    font-size: 1.5rem;
+    color: #ff4500;
+}
+
+h2 
+{
+    color: #8b0000;
+}
+=======
 .check_type
 {
     text-align: right;
@@ -90,3 +222,4 @@ h2
 {
     color: darkred;
 }
+>>>>>>> aa587563665fb565ac174b67d0c953f4c7498f2b
