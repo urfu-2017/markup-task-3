@@ -1,7 +1,10 @@
 @font-face
 {
     font-family: Kannonik;
-    src: url(../../fonts/kanonnik.ttf);
+    src: url(../../fonts/kanonnik.woff2)
+        format('woff2'), url(../../fonts/kanonnik.woff)
+        format('woff'), url(../../fonts/kanonnik.ttf)
+        format('truetype');
 }
 
 .main-visual

@@ -1,7 +1,10 @@
 @font-face
 {
     font-family: Chekhovskoy;
-    src: url(../../fonts/сhekhovskoy.ttf);
+    src: url(../../fonts/chekhovskoy.woff2)
+        format('woff2'), url(../../fonts/chekhovskoy.woff)
+        format('woff'), url(../../fonts/chekhovskoy.ttf)
+        format('truetype');
 }
 
 html
