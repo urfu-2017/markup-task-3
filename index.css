@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
 
 html
 {
@@ -25,9 +26,7 @@ body
 main
 {
     background-color: #ffffe0;
-    margin-right: auto;
-    margin-left: auto;
-    display: inline-block;
+    padding-bottom: 1px;
 }
 
 h1
@@ -49,10 +48,9 @@ p
 }
 
 .firstNews
-{
+{   
     display: inline-block;
     width: 990px;
-    height: auto;
     margin-left: 10px;
     margin-right: auto;
     margin-bottom: 20px;
@@ -68,14 +66,11 @@ p
 
 .thirdNews
 {
-    clear: left;
-    padding-top: 0;
     margin-bottom: 20px;
 }
 
 .captionThree
 {
-    clear: both;
     margin-top: 30px;
 }
 
@@ -195,11 +190,6 @@ h2
 
 .imageBadin
 {
-    clear: both;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
@@ -283,13 +273,13 @@ input[type='radio']
     display: none;
 }
 
-input[value='black'] ~ .knopka1 label[for='black']::before,
-input[value='white'] ~ .knopka1 label[for='white']::before,
-input[value='original'] ~ .knopka3 label[for='original']::before,
-input[value='mono'] ~ .knopka3 label[for='mono']::before,
-input[value='standart'] ~ .knopka2 label[for='standart']::before,
-input[value='reduce'] ~ .knopka2 label[for='reduce']::before,
-input[value='increase'] ~ .knopka2 label[for='increase']::before
+input[value='black'] ~ .knopki label[for='black']::before,
+input[value='white'] ~ .knopki label[for='white']::before,
+input[value='original'] ~ .knopki label[for='original']::before,
+input[value='mono'] ~ .knopki label[for='mono']::before,
+input[value='standart'] ~ .knopki label[for='standart']::before,
+input[value='reduce'] ~ .knopki label[for='reduce']::before,
+input[value='increase'] ~ .knopki label[for='increase']::before
 {
     content: '\26AB';
     border: 1px solid #000;
@@ -305,13 +295,13 @@ input[value='increase'] ~ .knopka2 label[for='increase']::before
     transition: font-size ease .3s;
 }
 
-input[value='black']:checked ~ .knopka1 label[for='black']::before,
-input[value='white']:checked ~ .knopka1 label[for='white']::before,
-input[value='original']:checked ~ .knopka3 label[for='original']::before,
-input[value='mono']:checked ~ .knopka3 label[for='mono']::before,
-input[value='standart']:checked ~ .knopka2 label[for='standart']::before,
-input[value='reduce']:checked ~ .knopka2 label[for='reduce']::before,
-input[value='increase']:checked ~ .knopka2 label[for='increase']::before
+input[value='black']:checked ~ .knopki label[for='black']::before,
+input[value='white']:checked ~ .knopki label[for='white']::before,
+input[value='original']:checked ~ .knopki label[for='original']::before,
+input[value='mono']:checked ~ .knopki label[for='mono']::before,
+input[value='standart']:checked ~ .knopki label[for='standart']::before,
+input[value='reduce']:checked ~ .knopki label[for='reduce']::before,
+input[value='increase']:checked ~ .knopki label[for='increase']::before
 {
     font-size: 20px;
 }
@@ -322,11 +312,15 @@ input[value='increase']:checked ~ .knopka2 label[for='increase']::before
     text-align: center;
 }
 
-.knopka1,
-.knopka2,
-.knopka3
+.knopki
 {
     display: inline-block;
     margin: 0 55px;
     padding-bottom: 10px;
+}
+
+footer
+{
+    text-align: center;
+    font-family: 'Pangolin', cursive;
 }
