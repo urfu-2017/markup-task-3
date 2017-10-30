@@ -14,6 +14,9 @@
 {
     margin-bottom: 80px;
     min-width: 800px;
+    position: relative;
+    right: 1px;
+    top: 1px;
 }
 
 p
@@ -23,7 +26,7 @@ p
 
 p::first-letter
 {
-    font-family: 'GothicCyr';
+    font: 'GothicCyr';
     font-size: 3em;
 }
 
@@ -49,12 +52,16 @@ article
 
 }
 
-.top
+.tower
 {
     height: 470px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding-left: 700px;
 }
 
-.tower
+.tower img
 {
     height: 470px;
 }
@@ -107,7 +114,11 @@ article
 {
     border-right: solid #000 2px;
     border-bottom: solid #000 4px;
-    min-width: 500px;
+    height: 470px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    margin-right: 400px;
 }
 
 .top span
@@ -145,12 +156,12 @@ img
 .articles
 {
     font-family: 'Times New Roman', Times, serif;
+    padding-top: 470px;
 }
 
 .left
 {
     width: 200px;
-    border-right: 8px double #000;
 }
 
 .main
@@ -170,8 +181,9 @@ img
 .wide
 {
     display: block;
-    -webkit-column-span: 2;
-    column-span: 2;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
 }
 
 .main-section h1
@@ -187,13 +199,12 @@ img
 .articles td
 {
     height: 100%;
+    vertical-align: top;
 }
 
 .right
 {
     margin: 10px;
-    border-left: #000 2px solid;
-    border-top: #000 4px solid;
     width: 300px;
 }
 
@@ -216,6 +227,18 @@ img
     max-width: 150px;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    display: inline-block;
+}
+
+td:first-child
+{
+    border-right: 8px double #000;
+}
+
+td:last-child
+{
+    border-left: #000 2px solid;
+    border-top: #000 4px solid;
 }
 
 .diary
@@ -228,8 +251,7 @@ img
 
 .main-section h1
 {
-    font-style: 'Trebuchet MS', helvetica, sans-serif;
-    font-size: 50px;
+    font: 'Trebuchet MS', helvetica, sans-serif, 50px;
 }
 
 .footer
@@ -299,8 +321,23 @@ input[value='courier-new']:checked ~ .journal label[for='courier-new'],
 input[value='big']:checked ~ .journal label[for='big-font-size'],
 input[value='medium']:checked ~ .journal label[for='medium-font-size'],
 input[value='small']:checked ~ .journal label[for='small-font-size'],
-input[value='dark']:checked ~ .journal label[for='dark-theme']
+input[value='dark']:checked ~ .journal label[for='dark-theme'],
+input[value='light']:checked ~ .journal label[for='light-theme']
 {
     background: #999;
     color: #000;
+}
+
+.winter article
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    column-rule: 1px solid #000;
 }
