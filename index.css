@@ -120,3 +120,11 @@ header
     border-bottom: 3px double #000;
     margin-bottom: 10px;
 }
+
+.vertical-text
+{
+    width: 1em;
+    word-break: break-all;
+    float: right;
+    border-left: solid 2px;
+}
