@@ -11,14 +11,14 @@
     cursor: pointer;
 }
 
-.button-primary
+.button_primary
 {
     background: #d94440;
     border-color: #d94440;
     color: #fffcf5;
 }
 
-.button-large
+.button_large
 {
     min-width: 12rem;
 }
