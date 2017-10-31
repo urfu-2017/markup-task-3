@@ -22,7 +22,6 @@ html
 
 }
 
-
 body
 {
     display: table;
@@ -72,7 +71,7 @@ p
 
 figure
 {
-    column-span:all;
+    column-span: all;
 }
 
 span.first-letter
