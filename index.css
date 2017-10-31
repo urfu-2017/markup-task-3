@@ -151,34 +151,34 @@ p:first-of-type::first-letter
     font-size: 200%;
 }
 
-input[value='cursive']:checked ~ .main
+input[value='cursive']:checked ~ main
 {
     font-style: italic;
 }
 
-input[value='monospace']:checked ~ .main article
+input[value='monospace']:checked ~ main article
 {
     font-family: monospace;
 }
 
-input[value='designer']:checked ~ .main
+input[value='designer']:checked ~ main
 {
     background-color: #000;
     color: #7fff00;
     text-shadow: 4px 4px 15px;
 }
 
-input[value='small']:checked ~ .main
+input[value='small']:checked ~ main
 {
     font-size: 75%;
 }
 
-input[value='medium']:checked ~ .main
+input[value='medium']:checked ~ main
 {
     font-size: 100%;
 }
 
-input[value='large']:checked ~ .main
+input[value='large']:checked ~ main
 {
     font-size: 125%;
 }
