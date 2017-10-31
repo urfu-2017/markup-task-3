@@ -1,0 +1,20 @@
+.settings
+{
+    margin-bottom: 1rem;
+}
+
+.settings__group
+{
+    display: inline-block;
+    margin: .3rem;
+}
+
+input[id='theme-old']:checked ~ .settings label[for='theme-old'],
+input[id='theme-new']:checked ~ .settings label[for='theme-new'],
+input[id='font-bad']:checked ~ .settings label[for='font-bad'],
+input[id='font-good']:checked ~ .settings label[for='font-good'],
+input[id='size-big']:checked ~ .settings label[for='size-big'],
+input[id='size-small']:checked ~ .settings label[for='size-small']
+{
+    display: none;
+}

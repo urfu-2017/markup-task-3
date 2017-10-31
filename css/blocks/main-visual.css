@@ -1,0 +1,68 @@
+@font-face
+{
+    font-family: Kannonik;
+    src: url(../../fonts/kanonnik.woff2)
+        format('woff2'), url(../../fonts/kanonnik.woff)
+        format('woff'), url(../../fonts/kanonnik.ttf)
+        format('truetype');
+}
+
+.main-visual
+{
+    font-weight: bold;
+    position: relative;
+}
+
+.main-visual__title:first-of-type::first-letter
+{
+    font-size: 10rem;
+}
+
+.main-visual__title
+{
+    font-family: Kannonik, sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.main-visual__description
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-visual__group
+{
+    display: inline-block;
+}
+
+.main-visual__period
+{
+    margin-top: .4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-stretch: ultra-condensed;
+}
+
+.main-visual__subscribe
+{
+    margin: .5rem .5rem 2rem;
+}
+
+.main-visual__date
+{
+    top: 3.75rem;
+    left: 27%;
+    position: absolute;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 931px)
+{
+    .main-visual__date
+    {
+        /*Костыль. Подогнано на глаз чтобы не наезжало на букву У.
+         В 2017 году перепишите на флекс.*/
+        left: 31%;
+    }
+}
