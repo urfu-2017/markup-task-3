@@ -57,16 +57,16 @@ main
     padding: 5px 20px;
     background-color: hsl(53, 70%, 88%);
     -webkit-column-count: 5;
-            column-count: 5;
+    column-count: 5;
     -webkit-column-rule: 3px outset #000;
-            column-rule: 3px outset #000;
+    column-rule: 3px outset #000;
 }
 
 header
 {
     font-family: machina, Lucida Grande, monospace;
     -webkit-column-span: all;
-            column-span: all;
+    column-span: all;
     text-align: center;
     font-size: 450%;
 }
@@ -86,7 +86,7 @@ img
 figure
 {
     -webkit-column-span: all;
-            column-span: all;
+    column-span: all;
     text-align: center;
     font-size: 120%;
 }
@@ -96,12 +96,12 @@ figure
     font-size: 200%;
     margin-right: 2px;
     -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
     font-family: augusta, turandot, monospace;
     -webkit-transform-origin: left top;
-        -ms-transform-origin: left top;
-            transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
 }
 
 .news-1
