@@ -75,7 +75,8 @@ header
 }
 
 .news
-{   -moz-column-width: 19em;
+{   
+    -moz-column-width: 19em;
     -moz-column-rule: 1px dotted #000;
     -moz-column-gap: 35px;
     -webkit-column-width: 19em;
