@@ -5,8 +5,8 @@
 
 .settings__group
 {
-    display: inline;
-    margin: 0 .3rem;
+    display: inline-block;
+    margin: .3rem;
 }
 
 input[id='theme-old']:checked ~ .settings label[for='theme-old'],
