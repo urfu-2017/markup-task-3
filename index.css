@@ -1,0 +1,140 @@
+@font-face
+{
+    font-family: old;
+    src: local('Carmen'), url('fonts/Carmen.ttf');
+}
+
+@font-face
+{
+    font-family: simpleText;
+    src: local('AntiqueTradyNr'), url('fonts/AntiqueTradyNr.ttf');
+}
+
+@font-face
+{
+    font-family: cap;
+    src: local('Heinrich Text'), url('fonts/Heinrich_Text.ttf');
+}
+
+body
+{
+    background: #fffcfc;
+}
+
+hr
+{
+    color: black;
+    size: 1px;
+}
+
+div,
+main
+{
+    border-right: thin solid black;
+    border-left: thin solid black;
+    border-bottom: thin solid black;
+    padding: 10px 10px 10px 20px;
+}
+
+h1
+{
+    font-family: cap;
+    font-size: 60px;
+    letter-spacing: .5em;
+    text-align: center;
+}
+
+h2
+{
+    font-family: old;
+    letter-spacing: .1em;
+    font-size: 40px;
+}
+
+p
+{
+    hyphens: auto;
+}
+
+p::first-letter
+{
+    font-weight: 900;
+    font-size: large;
+}
+
+article
+{
+    -webkit-column-rule: 1px black solid;
+    -moz-column-rule: 1px black solid;
+    font-family: simpleText;
+    text-align: justify;
+    column-rule: 1px black solid;
+}
+
+img
+{
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+}
+
+main
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-rule: 3px black solid;
+}
+
+section
+{
+    margin: 5px;
+}
+
+q
+{
+    font-size: large;
+    font-weight: 600;
+    color: #423d3d;
+}
+
+.topnews > article
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.othernews > article
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+input[class='darkTheme']:checked ~ main,
+input[class='darkTheme']:checked ~ main > section > article > p > q
+{
+    background-color: rgb(51, 51, 51) !important;
+    color: #fffcfc;
+}
+
+input[class='smallText']:checked ~ main
+{
+    font-size: 14px;
+}
+
+input[class='mediumText']:checked ~ main
+{
+    font-size: 16px;
+}
+
+input[class='largeText']:checked ~ main > section > article
+{
+    font-size: 18px;
+}
+
+input[class='fontStyle']:checked ~ main > section > article
+{
+    font-family: 'Courier new';
+}
