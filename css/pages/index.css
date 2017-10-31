@@ -95,8 +95,6 @@ p
 
 p:first-of-type::first-letter
 {
-    text-indent: 0;
-    font-size: 2rem;
-    float: left;
+    font-size: 1.75rem;
     font-weight: bold;
 }
