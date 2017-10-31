@@ -1,0 +1,136 @@
+@font-face
+{
+    font-family: 'Strangefont';
+    src: url('decor.ttf') format('truetype');
+    src: url('decor.eot') format('eot');
+    src: url('decor.woff') format('woff');
+    src: url('decor.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.light:checked ~ .news
+{
+    color: black;
+    background: url('старая газета.jpg') round;
+}
+
+.dark:checked ~ .news
+{
+    color: white;
+    background: url('старая газета темная.jpg') round;
+}
+
+.font1:checked ~ .news
+{
+    font-family: 'Arial';
+}
+
+.font2:checked ~ .news
+{
+    font-family: Strangefont;
+}
+
+.font3:checked ~ .news
+{
+    font-family: monospace;
+}
+
+.small:checked ~ .news
+{
+    font-size: 1em;
+}
+
+.medium:checked ~ .news
+{
+    font-size: 1.5em;
+}
+
+.big:checked ~ .news
+{
+    font-size: 2.5em;
+}
+
+.main-header .main_head
+{
+    text-align: center;
+    margin: 20px;
+    border-bottom: 2px solid;
+}
+
+.mining
+{
+    display: inline-block;
+    column-count: 3;
+}
+
+.paragraph
+{
+    margin: 20px;
+    border-left: 1.5px solid;
+    border-right: 1.5px solid;
+}
+
+.article_img
+{
+    margin: 0;
+}
+
+.picture
+{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+.paragraph > .paragraph_head
+{
+    margin: 10px;
+}
+
+.paragraph > .paragraph_text
+{
+    text-indent: 1.5em;
+    margin: 5px;
+}
+
+.paragraph > .paragraph_text:first-letter
+{
+    font-size: 150%;
+    font-style: italic;
+}
+
+.sourse
+{
+    margin: 15px;
+}
+
+.img_caption
+{
+    font-size: 75%;
+    text-align: center;
+}
+
+.quote 
+{
+    font-style: italic;
+}
+
+.quote:before,
+.quote:after
+{
+    font-size: 150%;
+}
+
+.quote:before
+{
+    content: '«';
+    float: left;
+}
+
+.quote:after
+{
+    content: '»';
+    float: right;
+    margin-top: -1.7em;
+}
