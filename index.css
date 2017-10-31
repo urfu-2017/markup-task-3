@@ -1,19 +1,19 @@
 @font-face
 {
     font-family: old;
-    src: url('fonts/Carmen.ttf');
+    src: local('Carmen'), url('fonts/Carmen.ttf');
 }
 
 @font-face
 {
     font-family: simpleText;
-    src: url('fonts/AntiqueTradyNr.ttf');
+    src: local('AntiqueTradyNr'), url('fonts/AntiqueTradyNr.ttf');
 }
 
 @font-face
 {
     font-family: cap;
-    src: url('fonts/Heinrich_Text.ttf');
+    src: local('Heinrich Text'), url('fonts/Heinrich_Text.ttf');
 }
 
 body
@@ -27,7 +27,8 @@ hr
     size: 1px;
 }
 
-div
+div,
+main
 {
     border-right: thin solid black;
     border-left: thin solid black;
@@ -67,6 +68,8 @@ article
     font-family: simpleText;
     text-align: justify;
     column-rule: 1px black solid;
+    -webkit-column-rule: 1px black solid;
+    -moz-column-rule: 1px black solid;
 }
 
 img
@@ -76,24 +79,36 @@ img
     height: 100%;
 }
 
-.topnews
+main
 {
-    float: left;
-    width: 60%;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-rule: 3px black solid;
+}
+
+section
+{
+    margin: 5px;
+}
+
+q
+{
+    font-size: large;
+    font-weight: 600;
+    color: #423D3D;
 }
 
 .topnews > article
 {
     column-count: 3;
-}
-
-.othernews
-{
-    float: right;
-    width: 35%;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
 }
 
 .othernews > article
 {
     column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
 }
