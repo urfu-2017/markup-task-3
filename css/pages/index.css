@@ -82,6 +82,7 @@ h2
 
 img
 {
+    -webkit-filter: contrast(200%) brightness(110%);
     filter: contrast(200%) brightness(110%);
     max-width: 100%;
     max-height: 100%;

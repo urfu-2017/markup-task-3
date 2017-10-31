@@ -13,6 +13,7 @@ input[id='theme-old']:checked ~ main
 
 input[id='theme-old']:checked ~ main img
 {
+    -webkit-filter: contrast(300%) brightness(70%) sepia(100%);
     filter: contrast(300%) brightness(70%) sepia(100%);
 }
 
