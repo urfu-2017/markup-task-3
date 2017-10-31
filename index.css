@@ -1,16 +1,20 @@
 h1
 {
-    margin: 0 auto;
-    display: inline-block;
+    text-align: center;
     font-size: 70px;
     font-family: 'Source Serif Pro', serif;
     font-weight: bold;
 }
 
+body
+{
+    font-family: 'Source Serif Pro', serif;
+}
+
 main
 {
     columns: 3;
-    column-gap: 0;
+    column-gap: 5px;
     column-rule: 1px solid #2c2c2c;
 }
 
@@ -55,7 +59,7 @@ article
     columns: 2;
     column-gap: 10px;
     column-rule: 1px solid #2c2c2c;
-    width: 100%;
+    column-width: 100px;
 }
 
 article p:first-of-type:first-letter
@@ -70,7 +74,6 @@ article p:first-of-type:first-letter
     font-family: 'Alegreya', serif;
     padding: 10px;
     border: 4px double #000;
-    display: inline-block;
     text-align: center;
     float: right;
 }
@@ -81,7 +84,7 @@ article p:first-of-type:first-letter
     width: 100%;
 }
 
-.header-under-fig
+.figcaption
 {
     column-span: all;
 }
@@ -89,17 +92,16 @@ article p:first-of-type:first-letter
 .joke
 {
     position: relative;
-    display: inline-block;
     font-family: 'Marcellus SC', serif;
     border: 4px dashed #c8c8c8;
-    width: 95%;
-    padding: 2%;
+    box-sizing: border-box;
+    padding: 4px;
     margin-top: 3%;
 }
 
 section
 {
-    padding: 0 .5%;
+    padding: 0 1px;
 }
 
 img
@@ -110,7 +112,6 @@ img
 body > header
 {
     text-align: center;
-    width: 100%;
     overflow: hidden;
 }
 
