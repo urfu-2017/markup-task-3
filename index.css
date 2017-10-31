@@ -33,8 +33,7 @@ main
     border-right: thin solid black;
     border-left: thin solid black;
     border-bottom: thin solid black;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 10px 10px 10px 20px;
 }
 
 h1
@@ -65,11 +64,11 @@ p::first-letter
 
 article
 {
+    -webkit-column-rule: 1px black solid;
+    -moz-column-rule: 1px black solid;
     font-family: simpleText;
     text-align: justify;
     column-rule: 1px black solid;
-    -webkit-column-rule: 1px black solid;
-    -moz-column-rule: 1px black solid;
 }
 
 img
@@ -81,9 +80,9 @@ img
 
 main
 {
-    column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
+    column-count: 2;
     column-rule: 3px black solid;
 }
 
@@ -101,14 +100,41 @@ q
 
 .topnews > article
 {
-    column-count: 3;
     -webkit-column-count: 3;
     -moz-column-count: 3;
+    column-count: 3;
 }
 
 .othernews > article
 {
-    column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
+    column-count: 2;
+}
+
+input[class='darkTheme']:checked ~ main,
+input[class='darkTheme']:checked ~ main > section > article > p > q
+{
+    background-color: rgb(51, 51, 51) !important;
+    color: #fffcfc;
+}
+
+input[class='smallText']:checked ~ main
+{
+    font-size: 14px;
+}
+
+input[class='mediumText']:checked ~ main
+{
+    font-size: 16px;
+}
+
+input[class='largeText']:checked ~ main > section > article
+{
+    font-size: 18px;
+}
+
+input[class='fontStyle']:checked ~ main > section > article
+{
+    font-family: 'Courier new'
 }
