@@ -1,0 +1,64 @@
+body
+{
+    background-color: #e6dbb9;
+}
+
+.main_sec
+{
+    width: 30%;
+    display: inline-grid;
+}
+
+.illustration
+{
+    width: 100%;
+    height: auto;
+}
+
+p
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+p::first-letter
+{
+    color: red;
+    font-size: 150%;
+}
+
+.separators
+{
+    width: 4%;
+    height: 100vh;
+    display: inline-grid;
+}
+
+.ornam_sep
+{
+    width: 100%;
+    position: relative;
+    top: 170%;
+}
+
+header
+{
+    text-align: center;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: blue;
+}
+
+header.title
+{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 300%;
+    color: black;
+}
+
+footer > p
+{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
