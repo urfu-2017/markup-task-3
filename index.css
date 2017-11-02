@@ -16,6 +16,8 @@ main
     columns: 3;
     column-gap: 5px;
     column-rule: 1px solid #2c2c2c;
+    min-width: 900px;
+    page-break-after: right;
 }
 
 .wide-separator
@@ -44,7 +46,7 @@ aside h2
     font-weight: normal;
 }
 
-article header
+section header
 {
     font-family: 'Cormorant Infant', serif;
     font-weight: bold;
@@ -56,10 +58,11 @@ article
 {
     font-family: 'Marcellus SC', serif;
     font-size: 15px;
-    columns: 2;
     column-gap: 10px;
     column-rule: 1px solid #2c2c2c;
-    column-width: 100px;
+    column-width: 200px;
+    break-after: column;
+    max-height: 690px;
 }
 
 article p:first-of-type:first-letter
@@ -78,15 +81,19 @@ article p:first-of-type:first-letter
     float: right;
 }
 
-.figure
+figure
 {
-    text-align: center;
     width: 100%;
+    margin: 0;
+    text-align: center;
 }
 
-.figcaption
+figcaption
 {
-    column-span: all;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .joke
