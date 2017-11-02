@@ -1,9 +1,357 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «DeLorean DMC-12»</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «DeLorean DMC-12»</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:700i&amp;subset=cyrillic"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:500&amp;subset=cyrillic"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300i" rel="stylesheet">
+    </head>
+    <body>
+        Размер шрифта:
+        <input type="radio" name="fontSize" value="size_small" id="small">
+        <label for="small">Маленький</label>
+        <input type="radio" name="fontSize" value="size_normal" id="size_normal" checked>
+        <label for="size_normal">Обычный</label>
+        <input type="radio" name="fontSize" value="size_big" id="big">
+        <label for="big">Большой</label>
+        <br>
+        Стиль шрифта:
+        <input type="radio" name="fontStyle" value="style_normal" id="style_normal" checked>
+        <label for="style_normal">Обычный</label>
+        <input type="radio" name="fontStyle" value="style_simple" id="style_simple">
+        <label for="style_simple">Простой</label>
+        <br>
+        Тема:
+        <input type="radio" name="theme" value="theme_normal" id="theme_normal" checked>
+        <label for="theme_normal">Стандартная</label>
+        <input type="radio" name="theme" value="theme_inverse" id="theme_inverse">
+        <label for="theme_inverse">Ночная</label>
+        <main class="wrapper">
+            <header>
+                <h1>The Hill Valley Times</h1>
+                <hr>
+                <div>
+                    <time datetime="2015-10-21" class="headerRow">Среда, 21 октября 2015г.</time>
+                </div>
+                <hr class="lastHr">
+            </header>
+            <section class="mainBlock">
+                <article class="mainArticle">
+                    <h2 class="mainHeader">Физики запретили гравитации разгоняться выше 1,4 скорости
+                        света</h2>
+
+                    <figure class="articleImg">
+                        <img src="images/article.jpg"
+                             alt="Срезы задержек времени регистрации гравитационных волн">
+                        <figcaption>Срезы задержек времени регистрации гравитационных волн
+                        </figcaption>
+                    </figure>
+                    <p>По ре&shy;зуль&shy;та&shy;там все&shy;го трех
+                        экс&shy;пе&shy;ри&shy;мен&shy;тов LIGO уче&shy;ные
+                        опре&shy;де&shy;ли&shy;ли, что ско&shy;рость
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ных волн
+                        ле&shy;жит в
+                        ин&shy;тер&shy;ва&shy;ле от 0,55 до 1,42
+                        ско&shy;рос&shy;тей све&shy;та. Статья опуб&shy;ли&shy;ко&shy;ва&shy;на
+                        в Physical Review Letters.</p>
+
+                    <p>В Об&shy;щей те&shy;о&shy;рии от&shy;но&shy;си&shy;тель&shy;нос&shy;ти
+                        ско&shy;рость рас&shy;прост&shy;ра&shy;не&shy;ния
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ных волн (как и во&shy;об&shy;ще всех
+                        воз&shy;му&shy;ще&shy;ний, пе&shy;ре&shy;но&shy;ся&shy;щих
+                        ин&shy;фор&shy;ма&shy;цию) огра&shy;ни&shy;чи&shy;ва&shy;ет&shy;ся
+                        сверху ско&shy;ростью све&shy;та. С дру&shy;гой сто&shy;ро&shy;ны,
+                        ско&shy;рость
+                        гра&shy;ви&shy;та&shy;ции долж&shy;на хо&shy;тя бы не&shy;мно&shy;го
+                        пре&shy;вы&shy;шать ско&shy;рость
+                        све&shy;та, что&shy;бы предот&shy;вра&shy;тить
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ное
+                        че&shy;рен&shy;ков&shy;ское из&shy;лу&shy;че&shy;ние (это стран&shy;ное
+                        яв&shy;ле&shy;ние те&shy;о&shy;ре&shy;ти&shy;чес&shy;ки
+                        пред&shy;ска&shy;за&shy;ли в 2001 го&shy;ду). Кро&shy;ме то&shy;го,
+                        су&shy;щест&shy;ву&shy;ет мно&shy;жест&shy;во аль&shy;тер&shy;на&shy;тив&shy;ных
+                        те&shy;о&shy;рий
+                        гра&shy;ви&shy;та&shy;ции, в ко&shy;то&shy;рых ее ско&shy;рость мо&shy;жет
+                        при&shy;ни&shy;мать
+                        са&shy;мые
+                        не&shy;ожи&shy;дан&shy;ные зна&shy;че&shy;ния (впро&shy;чем,
+                        боль&shy;шинст&shy;во уче&shy;ных
+                        от&shy;но&shy;сит&shy;ся к этим те&shy;о&shy;ри&shy;ям
+                        скеп&shy;ти&shy;чес&shy;ки). По&shy;это&shy;му
+                        очень
+                        важ&shy;но точ&shy;но из&shy;ме&shy;рить ско&shy;рость
+                        гра&shy;ви&shy;та&shy;ции.</p>
+
+                    <p>Од&shy;на&shy;ко сде&shy;лать это на дан&shy;ный мо&shy;мент слож&shy;но
+                        из-за не&shy;боль&shy;шо&shy;го
+                        ко&shy;ли&shy;чест&shy;ва экс&shy;пе&shy;ри&shy;мен&shy;таль&shy;ных
+                        дан&shy;ных.
+                        Впер&shy;вые
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ные вол&shy;ны бы&shy;ли
+                        за&shy;ре&shy;гист&shy;ри&shy;ро&shy;ва&shy;ны
+                        в сен&shy;тяб&shy;ре 2015 го&shy;да кол&shy;ла&shy;бо&shy;ра&shy;ци&shy;ей LIGO.
+                        LIGO со&shy;сто&shy;ит
+                        из
+                        двух
+                        об&shy;сер&shy;ва&shy;то&shy;рий, од&shy;на из ко&shy;то&shy;рых
+                        на&shy;хо&shy;дит&shy;ся в
+                        Ли&shy;винг&shy;сто&shy;не
+                        (штат Лу&shy;и&shy;зи&shy;а&shy;на), а дру&shy;гая в Хэн&shy;фор&shy;де (штат
+                        Ва&shy;шинг&shy;тон). Ос&shy;нов&shy;ным эле&shy;мен&shy;том каж&shy;дой
+                        об&shy;сер&shy;ва&shy;то&shy;рии
+                        яв&shy;ля&shy;ет&shy;ся мо&shy;ди&shy;фи&shy;ци&shy;ро&shy;ван&shy;ный
+                        ин&shy;тер&shy;фе&shy;ро&shy;метр
+                        Май&shy;кель&shy;со&shy;на,
+                        ко&shy;то&shy;рый мо&shy;жет по&shy;чувст&shy;во&shy;вать
+                        из&shy;ме&shy;не&shy;ние дли&shy;ны
+                        плеч при про&shy;хож&shy;де&shy;нии
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ной вол&shy;ны. На
+                        мо&shy;мент
+                        под&shy;го&shy;тов&shy;ки статьи кол&shy;ла&shy;бо&shy;ра&shy;ция
+                        за&shy;ре&shy;гист&shy;ри&shy;ро&shy;ва&shy;ла
+                        все&shy;го три гра&shy;ви&shy;та&shy;ци&shy;он&shy;ных вол&shy;ны,
+                        ис&shy;пу&shy;щен&shy;ных
+                        при
+                        сли&shy;я&shy;нии
+                        чер&shy;ных дыр.</p>
+
+                    <blockquote>...огра&shy;ни&shy;че&shy;ния на ско&shy;рость гра&shy;ви&shy;та&shy;ции,
+                        по&shy;лу&shy;чен&shy;ные
+                        в дан&shy;ной ста&shy;тье,
+                        ско&shy;ро бу&shy;дут
+                        зна&shy;чи&shy;тель&shy;но
+                        уточ&shy;не&shy;ны, по&shy;сколь&shy;ку в этот по&shy;не&shy;дель&shy;ник бы&shy;ло
+                        объ&shy;яв&shy;ле&shy;но об од&shy;но&shy;вре&shy;мен&shy;ной
+                        ре&shy;ги&shy;стра&shy;ции
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ной вол&shy;ны и
+                        гам&shy;ма-из&shy;лу&shy;че&shy;ния,<br>
+                        <cite>
+                            <a href="https://nplus1.ru/news/2017/10/19/gravity-speed">сообщает журнал N+1</a>
+                        </cite>
+                    </blockquote>
+
+                    <p>Для по&shy;лу&shy;че&shy;ния огра&shy;ни&shy;че&shy;ний на ско&shy;рость
+                        уче&shy;ные ис&shy;поль&shy;зо&shy;ва&shy;ли
+                        тот факт, что об&shy;сер&shy;ва&shy;то&shy;рии LIGO раз&shy;не&shy;се&shy;ны
+                        на три ты&shy;ся&shy;чи ки&shy;ло&shy;мет&shy;ров (что
+                        со&shy;от&shy;вет&shy;ст&shy;ву&shy;ет
+                        де&shy;ся&shy;ти
+                        све&shy;то&shy;вым мил&shy;ли&shy;се&shy;кун&shy;дам), из-за че&shy;го
+                        сиг&shy;на&shy;лы
+                        ре&shy;гист&shy;ри&shy;ру&shy;ют&shy;ся ими с не&shy;боль&shy;шой
+                        раз&shy;ни&shy;цей во вре&shy;ме&shy;ни.
+                        Эта за&shy;держ&shy;ка име&shy;ет не&shy;ко&shy;то&shy;рое
+                        рас&shy;пре&shy;де&shy;ле&shy;ние
+                        ве&shy;ро&shy;ят&shy;нос&shy;ти, за&shy;ви&shy;ся&shy;щее от ско&shy;рос&shy;ти
+                        гра&shy;ви&shy;та&shy;ции.
+                        С по&shy;мощью те&shy;о&shy;ре&shy;мы Бай&shy;е&shy;са из не&shy;го мож&shy;но
+                        най&shy;ти об&shy;рат&shy;ное
+                        рас&shy;пре&shy;де&shy;ле&shy;ние (ско&shy;рос&shy;ти от за&shy;держ&shy;ки).
+                        Для ап&shy;ри&shy;ор&shy;но&shy;го
+                        рас&shy;пре&shy;де&shy;ле&shy;ния ско&shy;рос&shy;ти фи&shy;зи&shy;ки
+                        рас&shy;смот&shy;ре&shy;ли
+                        две
+                        ги&shy;по&shy;те&shy;зы: рав&shy;но&shy;мер&shy;ное
+                        рас&shy;пре&shy;де&shy;ле&shy;ние в ин&shy;тер&shy;ва&shy;лах
+                        от 0,01 до 100 и от 1 до 100 ско&shy;рос&shy;тей све&shy;та.
+                        Уче&shy;ные
+                        от&shy;ме&shy;ча&shy;ют, что вы&shy;бор ка&shy;кой-то од&shy;ной
+                        ги&shy;по&shy;те&shy;зы не
+                        дол&shy;жен
+                        ска&shy;зать&shy;ся на опре&shy;де&shy;ле&shy;нии верх&shy;ней
+                        гра&shy;ни&shy;цы.</p>
+
+                    <p>При&shy;ме&shy;нив этот ме&shy;тод для дан&shy;ных трех из&shy;ме&shy;ре&shy;ний
+                        LIGO, фи&shy;зи&shy;ки
+                        по&shy;лу&shy;чи&shy;ли рас&shy;пре&shy;де&shy;ле&shy;ние
+                        ве&shy;ро&shy;ят&shy;нос&shy;ти
+                        для
+                        ско&shy;рос&shy;ти гра&shy;ви&shy;та&shy;ци&shy;он&shy;ных волн.
+                        Ока&shy;за&shy;лось, что с
+                        ве&shy;ро&shy;ят&shy;ностью
+                        де&shy;вя&shy;нос&shy;то про&shy;цен&shy;тов ее зна&shy;че&shy;ние ле&shy;жит в
+                        ин&shy;тер&shy;ва&shy;ле от 0,55 до 1,42 ско&shy;рос&shy;тей све&shy;та
+                        (от 1,0 до 1,4 в слу&shy;чае
+                        вто&shy;рой ги&shy;по&shy;те&shy;зы). Та&shy;кая низ&shy;кая
+                        точ&shy;ность обу&shy;с&shy;лов&shy;ле&shy;на не&shy;боль&shy;шим
+                        ко&shy;ли&shy;чест&shy;вом
+                        дан&shy;ных.
+                        При боль&shy;шем чис&shy;ле де&shy;тек&shy;то&shy;ров или боль&shy;шем чис&shy;ле
+                        из&shy;ме&shy;ре&shy;ний на LIGO мож&shy;но бы&shy;ло бы очер&shy;тить
+                        ин&shy;тер&shy;вал
+                        воз&shy;мож&shy;ных
+                        зна&shy;че&shy;ний го&shy;раз&shy;до точ&shy;нее — на&shy;при&shy;мер,
+                        ис&shy;поль&shy;зо&shy;ва&shy;ние дан&shy;ных все&shy;го пя&shy;ти
+                        экс&shy;пе&shy;ри&shy;мен&shy;тов
+                        се&shy;ти LIGO-Virgo-Kagra обес&shy;пе&shy;чи&shy;ло бы точ&shy;ность в один
+                        про&shy;цент от ско&shy;рос&shy;ти све&shy;та.
+                        По ре&shy;зуль&shy;та&shy;там все&shy;го трех экс&shy;пе&shy;ри&shy;мен&shy;тов
+                        LIGO уче&shy;ные
+                        опре&shy;де&shy;ли&shy;ли, что ско&shy;рость
+                        гра&shy;ви&shy;та&shy;ци&shy;он&shy;ных волн
+                        ле&shy;жит в
+                        ин&shy;тер&shy;ва&shy;ле от 0,55 до 1,42 ско&shy;рос&shy;тей све&shy;та.
+                        Статья опуб&shy;ли&shy;ко&shy;ва&shy;на
+                        в Physical Review Letters.</p>
+
+                </article>
+            </section>
+            <section class="asideBlock">
+                <article class="asideArticle marsArticle">
+                    <h2 class="asideHeader">Магнитный хвост Марса оказался перекручен</h2>
+                    <p>Остат&shy;ки маг&shy;нит&shy;но&shy;го по&shy;ля Мар&shy;са под
+                        вли&shy;я&shy;ни&shy;ем сол&shy;неч&shy;но&shy;го
+                        вет&shy;ра сфор&shy;ми&shy;ро&shy;ва&shy;ли не&shy;обыч&shy;ный
+                        маг&shy;нит&shy;ный хвост,
+                        со&shy;об&shy;щи&shy;ли уче&shy;ные в до&shy;кла&shy;де на 49-й
+                        еже&shy;год&shy;ной встре&shy;че
+                        от&shy;де&shy;ла
+                        пла&shy;не&shy;то&shy;ло&shy;гии Аме&shy;ри&shy;кан&shy;ско&shy;го
+                        аст&shy;ро&shy;но&shy;ми&shy;че&shy;ско&shy;го об&shy;ще&shy;ства.
+                        Ин&shy;те&shy;рес&shy;но,
+                        что
+                        в
+                        от&shy;ли&shy;чие от маг&shy;нит&shy;ных хво&shy;стов у дру&shy;гих пла&shy;нет,
+                        он пе&shy;ре&shy;кру&shy;чен. По мне&shy;нию
+                        ис&shy;сле&shy;до&shy;ва&shy;те&shy;лей, та&shy;кая
+                        осо&shy;бен&shy;ность
+                        мо&shy;жет спо&shy;соб&shy;ство&shy;вать по&shy;те&shy;ре ве&shy;ще&shy;ства
+                        мар&shy;си&shy;ан&shy;ской ат&shy;мо&shy;сфе&shy;рой.</p>
+
+                    <p>Изу&shy;че&shy;ни&shy;ем Крас&shy;ной пла&shy;не&shy;ты се&shy;го&shy;дня
+                        за&shy;ни&shy;ма&shy;ет&shy;ся
+                        мно&shy;же&shy;ство зон&shy;дов, в том чис&shy;ле и MAVEN.
+                        Он со&shy;би&shy;ра&shy;ет
+                        дан&shy;ные об со&shy;вре&shy;мен&shy;ном со&shy;сто&shy;я&shy;нии и
+                        эво&shy;лю&shy;ции ат&shy;мо&shy;сфе&shy;ры
+                        Мар&shy;са — в част&shy;но&shy;сти о том, как быст&shy;ро она
+                        ис&shy;па&shy;ря&shy;ет&shy;ся в кос&shy;мос. На его бор&shy;ту
+                        уста&shy;нов&shy;ле&shy;ны
+                        ана&shy;ли&shy;за&shy;то&shy;ры
+                        сол&shy;неч&shy;но&shy;го вет&shy;ра, спе&shy;ци&shy;аль&shy;ные
+                        дат&shy;чи&shy;ки и
+                        маг&shy;ни&shy;то&shy;мет&shy;ры, ко&shy;то&shy;рые по&shy;мо&shy;га&shy;ют
+                        со&shy;би&shy;рать
+                        на&shy;уч&shy;ные
+                        дан&shy;ные. В хо&shy;де мис&shy;сии ис&shy;сле&shy;до&shy;ва&shy;те&shy;ли
+                        на&shy;де&shy;ют&shy;ся
+                        по&shy;нять,
+                        как ме&shy;нял&shy;ся кли&shy;мат на пла&shy;не&shy;те и ка&shy;кую роль
+                        сыг&shy;ра&shy;ла
+                        по&shy;те&shy;ря
+                        га&shy;зо&shy;вой обо&shy;лоч&shy;ки.</p>
+                </article>
+                <article class="asideArticle fiberArticle">
+                    <h2 class="asideHeader">Оптоволоконный кабель превратили в сейсмограф</h2>
+                    <p>Ис&shy;сле&shy;до&shy;ва&shy;те&shy;ли из Стэн&shy;форд&shy;ско&shy;го
+                        уни&shy;вер&shy;си&shy;те&shy;та
+                        со&shy;зда&shy;ли и про&shy;те&shy;сти&shy;ро&shy;ва&shy;ли си&shy;сте&shy;му
+                        об&shy;на&shy;ру&shy;же&shy;ния
+                        сей&shy;сми&shy;че&shy;ских волн с по&shy;мо&shy;щью опто&shy;во&shy;лок&shy;на.
+                        В от&shy;ли&shy;чие
+                        от по&shy;хо&shy;жих тех&shy;но&shy;ло&shy;гий,
+                        ис&shy;поль&shy;зу&shy;е&shy;мых для
+                        от&shy;сле&shy;жи&shy;ва&shy;ния раз&shy;ру&shy;ше&shy;ний в
+                        со&shy;ору&shy;же&shy;ни&shy;ях,
+                        опто&shy;во&shy;лок&shy;но
+                        не бы&shy;ло жест&shy;ко за&shy;креп&shy;ле&shy;но. Об этом
+                        со&shy;об&shy;ща&shy;ет
+                        пресс-ре&shy;лиз уни&shy;вер&shy;си&shy;те&shy;та.</p>
+
+                    <p>Для на&shy;блю&shy;де&shy;ния за сей&shy;сми&shy;че&shy;ской
+                        ак&shy;тив&shy;но&shy;стью ис&shy;поль&shy;зу&shy;ют&shy;ся
+                        се&shy;ти сей&shy;смо&shy;гра&shy;фов. Та&shy;кие на&shy;блю&shy;де&shy;ния
+                        поз&shy;во&shy;ля&shy;ют опре&shy;де&shy;лить эпи&shy;центр
+                        зем&shy;ле&shy;тря&shy;се&shy;ния,
+                        со&shy;ста&shy;вить
+                        кар&shy;ту наи&shy;бо&shy;лее сей&shy;сми&shy;че&shy;ски ак&shy;тив&shy;ных зон,
+                        а в
+                        не&shy;ко&shy;то&shy;рых слу&shy;ча&shy;ях по&shy;лу&shy;чить дан&shy;ные о
+                        силь&shy;ных
+                        толч&shy;ках
+                        за&shy;ра&shy;нее. Од&shy;ной из про&shy;блем та&shy;ких
+                        де&shy;тек&shy;то&shy;ров
+                        яв&shy;ля&shy;ет&shy;ся их вы&shy;со&shy;кая сто&shy;и&shy;мость, из-за
+                        че&shy;го из них
+                        слож&shy;но
+                        со&shy;ста&shy;вить плот&shy;ную сеть с не&shy;боль&shy;шим
+                        рас&shy;сто&shy;я&shy;ни&shy;ем меж&shy;ду де&shy;тек&shy;то&shy;ра&shy;ми.</p>
+                </article>
+                <article class="asideArticle genArticle">
+                    <h2 class="asideHeader">Ученые сложили белковые оригами-тетраэдры в клетках печени
+                        мыши</h2>
+                    <p>Био&shy;хи&shy;ми&shy;кам уда&shy;лось сло&shy;жить трех&shy;мер&shy;ные
+                        струк&shy;ту&shy;ры
+                        за&shy;дан&shy;ной
+                        фор&shy;мы из по&shy;ли&shy;пеп&shy;тид&shy;ной це&shy;пи. Для это&shy;го
+                        уче&shy;ные скон&shy;стру&shy;и&shy;ро&shy;ва&shy;ли бел&shy;ко&shy;вые
+                        спи&shy;ра&shy;ли,
+                        скла&shy;ды&shy;ва&shy;ю&shy;щи&shy;е&shy;ся
+                        друг с дру&shy;гом опре&shy;де&shy;лен&shy;ным об&shy;ра&shy;зом при
+                        вза&shy;и&shy;мо&shy;дей&shy;ствии ами&shy;но&shy;кис&shy;лот&shy;ных
+                        остат&shy;ков. Бел&shy;ки,
+                        со&shy;сто&shy;я&shy;щие
+                        из спи&shy;ра&shy;лей с за&shy;дан&shy;ны&shy;ми свой&shy;ства&shy;ми,
+                        спо&shy;соб&shy;ны фор&shy;ми&shy;ро&shy;вать струк&shy;ту&shy;ры в ви&shy;де
+                        тет&shy;ра&shy;эд&shy;ров,
+                        пи&shy;ра&shy;ми&shy;док и призм как в рас&shy;тво&shy;ре, так и в жи&shy;вых
+                        клет&shy;ках. Но&shy;вый тип са&shy;мо&shy;сбор&shy;ных бел&shy;ко&shy;вых
+                        на&shy;но&shy;ча&shy;стиц,
+                        по ана&shy;ло&shy;гии с ДНК-ори&shy;га&shy;ми, мо&shy;жет най&shy;ти
+                        при&shy;ме&shy;не&shy;ние как в био&shy;ме&shy;ди&shy;ци&shy;не,
+                        к при&shy;ме&shy;ру, для до&shy;став&shy;ки
+                        ле&shy;карств, так и в дру&shy;гих при&shy;ло&shy;же&shy;ни&shy;ях.
+                        Ра&shy;бо&shy;та
+                        опуб&shy;ли&shy;ко&shy;ва&shy;на в Nature Biotechnology.</p>
+
+                    <p>Спо&shy;соб&shy;ность био&shy;ло&shy;ги&shy;че&shy;ских по&shy;ли&shy;ме&shy;ров
+                        фор&shy;ми&shy;ро&shy;вать
+                        вто&shy;рич&shy;ную и тре&shy;тич&shy;ную струк&shy;ту&shy;ры
+                        при&shy;вле&shy;ка&shy;ет
+                        био&shy;ин&shy;же&shy;не&shy;ров, ко&shy;то&shy;рые пы&shy;та&shy;ют&shy;ся при
+                        по&shy;мо&shy;щи
+                        ра&shy;ци&shy;о&shy;наль&shy;но&shy;го
+                        ди&shy;зай&shy;на за&shy;ста&shy;вить ДНК и бел&shy;ки
+                        скла&shy;ды&shy;вать&shy;ся
+                        нуж&shy;ным об&shy;ра&shy;зом. Фор&shy;ми&shy;ро&shy;ва&shy;ние
+                        за&shy;дан&shy;ных струк&shy;тур
+                        нук&shy;ле&shy;и&shy;но&shy;вы&shy;ми
+                        кис&shy;ло&shy;та&shy;ми бла&shy;го&shy;да&shy;ря свой&shy;ству
+                        ком&shy;пле&shy;мен&shy;тар&shy;но&shy;сти из&shy;вест&shy;но как
+                        ДНК-ори&shy;га&shy;ми и
+                        дав&shy;но
+                        и успеш&shy;но ис&shy;поль&shy;зу&shy;ет&shy;ся для раз&shy;ных за&shy;дач. К
+                        при&shy;ме&shy;ру, мы рас&shy;ска&shy;зы&shy;ва&shy;ли, как
+                        со&shy;би&shy;ра&shy;ю&shy;щи&shy;е&shy;ся
+                        нуж&shy;ным об&shy;ра&shy;зом мо&shy;ле&shy;ку&shy;лы ДНК
+                        ис&shy;поль&shy;зо&shy;ва&shy;ли
+                        для
+                        со&shy;зда&shy;ния
+                        мо&shy;ле&shy;ку&shy;ляр&shy;ных на&shy;но&shy;нож&shy;ниц, до&shy;став&shy;ки
+                        ле&shy;карств
+                        в
+                        ра&shy;ко&shy;вые
+                        клет&shy;ки, и да&shy;же для со&shy;зда&shy;ния элек&shy;трон&shy;ных
+                        мик&shy;ро&shy;чи&shy;пов.</p>
+                </article>
+            </section>
+            <footer>
+                <div class="footerLogo">
+                    Hill Valley Times
+                </div>
+                <div class="footerText">
+                    <p>Отрендерено в издательстве Hill Valley</p>
+                    <time datetime="2015">2015г.</time>
+                    <p>Тираж: 1экз.</p>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>
