@@ -1,4 +1,5 @@
-html, body
+html,
+body
 {
     height: auto;
     width: 100%;
@@ -54,10 +55,12 @@ input[value='bigtext']:checked ~ .main > article h2
 {
     font-size: 40pt;
 }
+
 input[value='bigtext']:checked ~ .main > header
 {
     font-size: 80pt;
 }
+
 input[value='bigtext']:checked ~ .main > .news,
 input[value='bigtext']:checked ~ .main > article .padding,
 input[value='bigtext']:checked ~ .main > .about,
