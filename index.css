@@ -45,8 +45,6 @@ h2
 
 figure
 {
-    display: flex;
-    flex-direction: column;
     margin: 0;
 }
 
@@ -73,6 +71,7 @@ h2
 {
     text-align: center;
     width: 100%;
+    display: inline-block;
 }
 
 hr
@@ -144,4 +143,9 @@ input[id='font-serif']:checked ~ main
 input[id='font-mono']:checked ~ main
 {
     font-family: 'Anonymous Pro', monospace;
+}
+
+h4
+{
+    margin: 5px 0;
 }
