@@ -1,0 +1,153 @@
+html
+{
+    background-color: #595b5d;
+}
+
+body
+{
+    font: 16px 'Open Sans Condensed', sans-serif;
+    margin: 100px;
+    color: #373437;
+    background-color: #fff;
+}
+
+main
+{
+    padding: 15px;
+}
+
+h1
+{
+    font: 2.5rem 'Bad Script', cursive;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.release-date
+{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    font: 1.4rem 'Bad Script', cursive;
+    margin: 5px;
+
+}
+
+.content
+{
+    column-count: 3;
+    column-rule: 1px solid;
+}
+
+figure
+{
+    margin: 0;
+}
+
+figure > img
+{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+p
+{
+    text-align: justify;
+}
+
+article > p:first-of-type::first-letter
+{
+    font: 1.5em 'Bad Script', cursive;
+}
+
+h1,
+h2
+{
+    text-align: center;
+    width: 100%;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+}
+
+hr
+{
+    text-align: center;
+    width: 50%;
+}
+
+ol
+{
+    padding-left: 30px;
+}
+
+.navigation
+{
+    text-align: center;
+}
+
+.navigation-item label
+{
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.navigation-item
+{
+    display: inline-block;
+    padding: 2rem;
+    text-align: center;
+}
+
+input
+{
+    display: none;
+}
+
+input[id='font-size-medium']:checked ~ main
+{
+    font-size: 1.3rem;
+}
+
+input[id='font-size-large']:checked ~ main
+{
+    font-size: 1.6rem;
+}
+
+input[id='dark']:checked ~ main
+{
+    background-color: #373437;
+    color: #fed;
+}
+
+input[id='dark']:checked ~ main .release-date
+{
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+input[id='font-sans']:checked ~ main
+{
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+input[id='font-serif']:checked ~ main
+{
+    font-family: 'Podkova', serif;
+}
+
+input[id='font-mono']:checked ~ main
+{
+    font-family: 'Anonymous Pro', monospace;
+}
+
+h4
+{
+    margin: 5px 0;
+}
