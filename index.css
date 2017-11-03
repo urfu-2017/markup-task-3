@@ -23,7 +23,7 @@ h1
     margin-bottom: 5px;
 }
 
-.release_date
+.release-date
 {
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
@@ -124,7 +124,7 @@ input[id='dark']:checked ~ main
     color: #fed;
 }
 
-input[id='dark']:checked ~ main .release_date
+input[id='dark']:checked ~ main .release-date
 {
     border-top-color: #fff;
     border-bottom-color: #fff;
