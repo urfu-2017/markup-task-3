@@ -107,58 +107,37 @@ blockquote:before
     margin-right: 3%;
 }
 
-input[name='black-theme']
+input
 {
-    overflow: visible;
-    position: fixed;
-    top: 50%;
-    z-index: 1;
+    display: inline-block;
 }
 
-input[name='reduce-size']
-{
-    overflow: visible;
-    position: fixed;
-    top: 55%;
-    z-index: 1;
-}
-
-input[name='increase-size']
-{
-    overflow: visible;
-    position: fixed;
-    top: 60%;
-    z-index: 1;
-}
-
-input[name='change-to-serif']
-{
-    overflow: visible;
-    position: fixed;
-    top: 65%;
-    z-index: 1;
-}
-
-input[name='black-theme']:checked ~ .whole-body
+input[title='change theme']:checked ~ .whole-body
 {
     position: absolute;
     color: white;
     background: url(resources/texture/COLOURlovers.com-Gothic_Flowers_3.jpg);
 }
 
-input[name='reduce-size']:checked ~ .whole-body
+input[title='reduce size']:checked ~ .whole-body
 {
     position: absolute;
     font-size: .8rem;
 }
 
-input[name='increase-size']:checked ~ .whole-body
+input[title='rever']:checked ~ .whole-body
+{
+    position: absolute;
+    font-size: 1rem;
+}
+
+input[title='increase size']:checked ~ .whole-body
 {
     position: absolute;
     font-size: 1.4rem;
 }
 
-input[name='change-to-serif']:checked ~ .whole-body
+input[title='change to serif']:checked ~ .whole-body
 {
     position: absolute;
     font-family: sans-serif;
