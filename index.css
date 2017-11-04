@@ -28,7 +28,7 @@ body
 a
 {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 .text-center
@@ -48,7 +48,7 @@ a
 
 .newspaper-header
 {
-    padding: 1%;
+    padding: 10px;
 }
 
 .newspaper-header > h1
@@ -96,7 +96,7 @@ a
     column-count: 3;
     column-rule: 1px solid #808080;
     column-gap: 30px;
-    padding: 1%;
+    padding: 10px;
 }
 
 .story-subheader + p::first-letter
@@ -147,7 +147,7 @@ a
 {
     width: 1ch;
     word-wrap: break-word;
-    color: white;
+    color: #fff;
 }
 
 .advertising
