@@ -20,6 +20,7 @@
 
 body
 {
+    /* background-size не работает в background */
     background-image: url('images/background.jpg');
     background-size: cover;
 }
@@ -68,7 +69,9 @@ a
 
 .story-header
 {
-    margin: 2%;
+    margin: 20px;
+    column-span: all;
+
 }
 
 .story-header > h3
@@ -91,7 +94,7 @@ a
 .story
 {
     column-count: 3;
-    column-rule: 1px solid gray;
+    column-rule: 1px solid #808080;
     column-gap: 30px;
     padding: 1%;
 }
@@ -124,7 +127,7 @@ a
 .story-big-image
 {
     column-span: all;
-    margin: 5% auto;
+    margin: 40px auto;
     height: 400px;
 }
 
