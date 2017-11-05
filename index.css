@@ -1,13 +1,13 @@
 @font-face
 {
-    font-family: ds_moster;
-    src: url('front/ds_moster.ttf');
+    font-family: ds-Moster;
+    src: url('font/ds-Moster.ttf');
 }
 
 @font-face
 {
-    font-family: TrixieCyr-Plain;
-    src: url('front/TrixieCyr-Plain.otf');
+    font-family: trixieCyr-Plain;
+    src: url('font/trixieCyr-Plain.otf');
 }
 
 img
@@ -27,6 +27,7 @@ main
 
 label
 {
+    cursor: pointer;
     padding: 0 15px;
 }
 
@@ -48,6 +49,19 @@ h2
     text-align: center;
 }
 
+h1
+{
+    white-space: nowrap;
+    height: 60px;
+}
+
+h3
+{
+    white-space: nowrap;
+    height: 20px;
+    margin-top: 0;
+}
+
 p
 {
     text-align: justify;
@@ -55,7 +69,7 @@ p
     text-indent: 2em;
 }
 
-input[value='smoll']:checked ~ main
+input[value='small']:checked ~ main
 {
     font-size: 80%;
 }
@@ -72,17 +86,17 @@ input[value='big']:checked ~ main
 
 input[value='ds_moster']:checked ~ main 
 {
-    font-family: ds_moster;
+    font-family: ds-Moster, 'sans-serif';
 }
 
 input[value='TrixieCyr-Plain']:checked ~ main
 {
-    font-family: TrixieCyr-Plain;
+    font-family: trixieCyr-Plain, 'sans-serif';
 }
 
 input[value='Arial']:checked ~ main
 {
-    font-family: Arial;
+    font-family: Arial, 'sans-serif';
 }
 
 input[value='black_and_white']:checked ~ main
@@ -109,13 +123,13 @@ input[value='white_and_black']:checked ~ main section
     column-rule: 1px solid #fff;
 }
 
-.labelButton
+.label-button
 {
     line-height: 3em;
     font-family: Arial;
     text-align: center;
     column-count: 3;
-    padding: 50 0;
+    padding: 50px 0;
 }
 
 h1:first-letter
@@ -127,3 +141,4 @@ h2:first-letter
 {
     font-size: 120%;
 }
+
