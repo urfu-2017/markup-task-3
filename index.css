@@ -1,0 +1,144 @@
+@font-face
+{
+    font-family: ds-Moster;
+    src: url('font/ds-Moster.ttf');
+}
+
+@font-face
+{
+    font-family: trixieCyr-Plain;
+    src: url('font/trixieCyr-Plain.otf');
+}
+
+img
+{
+    width: 100%;
+}
+
+html
+{
+    background-color: gray;
+}
+
+main
+{
+    padding: 10px;
+}
+
+label
+{
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+input
+{
+    display: none;
+}
+
+section
+{
+    column-count: 3;
+    column-rule: 1px solid #000;
+}
+
+h1,
+h2
+{
+    font-variant: small-caps;
+    text-align: center;
+}
+
+h1
+{
+    white-space: nowrap;
+    height: 60px;
+}
+
+h3
+{
+    white-space: nowrap;
+    height: 20px;
+    margin-top: 0;
+}
+
+p
+{
+    text-align: justify;
+    hyphens: auto;
+    text-indent: 2em;
+}
+
+input[value='small']:checked ~ main
+{
+    font-size: 80%;
+}
+
+input[value='normal']:checked ~ main
+{
+    font-size: 100%;
+}
+
+input[value='big']:checked ~ main
+{
+    font-size: 120%;
+}
+
+input[value='ds_moster']:checked ~ main 
+{
+    font-family: ds-Moster, 'sans-serif';
+}
+
+input[value='TrixieCyr-Plain']:checked ~ main
+{
+    font-family: trixieCyr-Plain, 'sans-serif';
+}
+
+input[value='Arial']:checked ~ main
+{
+    font-family: Arial, 'sans-serif';
+}
+
+input[value='black_and_white']:checked ~ main
+{
+    background-image: url('56.jpg') ;
+    color: #000;
+    column-rule: 1px solid #000;
+}
+
+input[value='white_and_black']:checked ~ main
+{
+    background-image: url('118.jpg') ;
+    color: #fff;
+    column-rule: 1px solid #fff;
+}
+
+input[value='black_and_white']:checked ~ main section
+{
+    column-rule: 1px solid #000;
+}
+
+input[value='white_and_black']:checked ~ main section
+{
+    column-rule: 1px solid #fff;
+}
+
+.label-button
+{
+    line-height: 3em;
+    font-family: Arial;
+    text-align: center;
+    column-count: 3;
+    padding: 50px 0;
+}
+
+h1:first-letter
+{
+    font-size: 150%;
+}
+
+h2:first-letter
+{
+    font-size: 120%;
+}
+
