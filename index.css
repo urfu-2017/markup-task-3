@@ -39,13 +39,11 @@ figure img
 
 .vertical
 {
-    display: inline-block;
     float: left;
     width: .85em;
     word-break: break-all;
     border-radius: 5px;
     border: 1px solid #000;
-    height: auto;
     letter-spacing: .2em;
     margin: 10px;
     padding: 3px;

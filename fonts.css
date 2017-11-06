@@ -26,7 +26,6 @@
     src: url('fjalla.woff2');
 }
 
-
 @font-face
 {
     font-family: 'Oswald';
@@ -37,11 +36,11 @@
 
 @font-face
 {
-    font-family: 'Fascinate Inline'; 
-    font-style: normal; 
-    font-weight: 400; 
+    font-family: 'Fascinate Inline';
+    font-style: normal;
+    font-weight: 400;
     src: url('fascinate.woff2');
-} 
+}
 
 .font-abril-fatface
 {
