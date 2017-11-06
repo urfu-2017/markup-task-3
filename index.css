@@ -54,13 +54,13 @@ figure img
     -webkit-column-break-inside: avoid;
 }
 
-section article:nth-child(2n) blockquote
+.border-1-solid
 {
     border-bottom: 1px #000 solid;
     border-top: 1px #000 solid;
 }
 
-section article:nth-child(2n+1) blockquote
+.border-3-double
 {
     border-bottom: 3px #000 double;
     border-top: 3px #000 double;
