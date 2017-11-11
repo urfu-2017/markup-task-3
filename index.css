@@ -1,0 +1,230 @@
+@font-face
+{
+    font-family: 'AA American Captain';
+    src: local('AA American Captain'), url(9923.ttf) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'RobertaC';
+    src: local('RobertaC'), url(7945.ttf) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'The Capt';
+    src: local('The Capt'), url(10763.otf) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Conkordia';
+    src: local('Conkordia'), url(7863.ttf) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Flange BQ';
+    src: local('Flange BQ'), url(9475.otf) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'b52';
+    src: local('b52'), url(b52.ttf) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Chekhovskoy';
+    src: local('Chekhovskoy'), url(10851.ttf) format('truetype');
+}
+
+h1
+{
+    padding-left: 20pt;
+    font-family: 'AA American Captain';
+    font-size: 102pt;
+    letter-spacing: 1px;
+}
+
+h2
+{
+    font-family: 'AA American Captain';
+    font-size: 65pt;
+    letter-spacing: 1px;
+}
+
+h3
+{
+    font-size: 25pt;
+    font-family: 'AA American Captain';
+    letter-spacing: 2px;
+}
+
+.headFour
+{
+    font-size: 25pt;
+    letter-spacing: 2px;
+}
+
+.tableHeader
+{
+    column-count: 2;
+    column-width: 400px;
+}
+
+.subHeader2
+{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 30pt;
+    letter-spacing: 2px;
+}
+
+.flange
+{
+    font-size: 20pt;
+    font-family: 'Flange BQ';
+}
+
+.strongSpacing
+{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subH
+{
+    padding-left: -10pt;
+    font-family: 'RobertaC';
+    font-size: 22pt;
+}
+
+.text_demoBlock
+{
+    width: 100%;
+    column-count: 2;
+    font-size: 8pt;
+}
+
+.low
+{
+    font-size: 8pt;
+    text-align: center;
+}
+
+.superlowbold
+{
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.bigTable
+{
+    column-count: 3;
+    column-gap: 15px;
+    column-rule: solid 1px;
+}
+
+.smallTable
+{
+    column-count: 2;
+}
+
+.ramka
+{
+    column-count: 2;
+    column-rule-style: solid;
+    border: 40px solid transparent;
+    border-width: 45px;
+    border-image: url(border1.png) 8%;
+}
+
+.subHeadline
+{
+    font-family: 'The Capt';
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 20pt;
+    letter-spacing: 1px;
+}
+
+.narrowText
+{
+    text-align: end;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.subHeader
+{
+    font-family: 'The Capt';
+    font-weight: bold;
+    font-size: 20pt;
+    letter-spacing: 3px;
+}
+
+.border2
+{
+    break-inside: avoid;
+    border: solid transparent;
+    border-width: 50px;
+    border-image: url(border4.png) 10% repeat round;
+}
+
+.border3
+{
+    break-inside: avoid;
+    border: solid transparent;
+    border-width: 50px;
+    border-image: url(b5.png) 20% round;
+}
+
+.zvezda
+{
+    font-family: 'Conkordia';
+    font-size: 45pt;
+    letter-spacing: 4px;
+}
+
+.vertical
+{
+    column-count: 2;
+    column-width: 100px;
+}
+
+.border4
+{
+    border: solid transparent;
+    border-width: 30px;
+    border-image: url(b6.png) 11% round repeat;
+}
+
+.boldTimes
+{
+    column-count: 2;
+    font-family: 'b52';
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.text
+{
+    vertical-align: text-top;
+    font-size: 10pt;
+    font-family: 'Chekhovskoy';
+    line-height: 20px;
+}
+
+.text:first-letter
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center
+{
+    text-align: center;
+}
