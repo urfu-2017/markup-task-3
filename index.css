@@ -1,0 +1,76 @@
+figure,
+.firstLine,
+.vertical,
+blockquote,
+h1
+{
+    text-align: center;
+}
+
+section
+{
+    column-count: 4;
+    column-rule: 1px dotted #ddd;
+    column-fill: auto;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-fill: auto;
+    -moz-column-fill: balance;
+    -webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+}
+
+figure
+{
+    break-inside: avoid-column;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+.first-line
+{
+    border-bottom: 3px #000 double;
+    border-top: 3px #000 double;
+    margin-bottom: 5px;
+}
+
+.vertical
+{
+    float: left;
+    width: .85em;
+    word-break: break-all;
+    border-radius: 5px;
+    border: 1px solid #000;
+    letter-spacing: .2em;
+    margin: 10px;
+    padding: 3px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+}
+
+.border-1-solid
+{
+    border-bottom: 1px #000 solid;
+    border-top: 1px #000 solid;
+}
+
+.border-3-double
+{
+    border-bottom: 3px #000 double;
+    border-top: 3px #000 double;
+}
+
+article p:first-of-type::first-letter
+{
+    font-weight: bold;
+}
+
+.break-column {
+    break-before: always;
+    -moz-column-break-before: always;
+    -webkit-column-break-before: always;
+}

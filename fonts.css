@@ -1,0 +1,73 @@
+@font-face
+{
+    font-family: 'HFF Clip Hanger';
+    src: url('HFF Clip Hanger.ttf');
+}
+
+@font-face
+{
+    font-family: 'Bobo Dylan';
+    src: url('Rns_Bobo_Dylan.otf');
+}
+
+@font-face
+{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    src: url('abril.woff2');
+}
+
+@font-face
+{
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fjalla.woff2');
+}
+
+@font-face
+{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url('oswald.woff2');
+}
+
+@font-face
+{
+    font-family: 'Fascinate Inline';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fascinate.woff2');
+}
+
+.font-abril-fatface
+{
+    font-family: 'Abril Fatface';
+}
+
+.font-clip-hanger
+{
+    font-family: 'HFF Clip Hanger';
+}
+
+.font-bobo-dylan
+{
+    font-family: 'Bobo Dylan';
+}
+
+.font-oswald
+{
+    font-family: 'Oswald';
+}
+
+.font-fjalla-one
+{
+    font-family: 'Fjalla One';
+}
+
+.font-fascinate-inline
+{
+    font-family: 'Fascinate Inline';
+}
