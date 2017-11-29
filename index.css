@@ -1,0 +1,310 @@
+@font-face
+{
+    font-family: Philosopher;
+    src: url(fonts/Philosopher-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: Anonymous Pro;
+    src: url(fonts/AnonymousPro-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Anonymous Pro;
+    src: url(fonts/AnonymousPro-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: Mon Amour;
+    src: url(fonts/mon-amour-two-medium_[allfont.ru].ttf);
+}
+
+html
+{
+    font-size: 14px;
+}
+
+body
+{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.white,
+.black,
+.small,
+.normal,
+.big,
+.monospace,
+.serif,
+.sans-serif,
+.white:checked + label,
+.black:checked + label
+{
+    display: none;
+}
+
+.white + label,
+.black + label,
+.small + label,
+.normal + label,
+.big + label,
+.monospace + label,
+.serif + label,
+.sans-serif + label
+{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.black + label
+{
+    background: black;
+    color: white;
+}
+
+.black:checked ~ header,
+.black:checked ~ main
+{
+    color: white;
+    background: black;
+    border-color: white;
+}
+
+.big:checked + label,
+.normal:checked + label,
+.small:checked + label,
+.monospace:checked + label,
+.sans-serif:checked + label,
+.serif:checked + label
+{
+    border-width: 2px;
+}
+
+.big + label
+{
+    top: 4.5em;
+}
+
+.normal + label
+{
+    top: 3em;
+}
+
+.small + label
+{
+    top: 1.5em;
+}
+
+.monospace + label
+{
+    top: 6em;
+    font-family: Courier New, monospace;
+}
+
+.serif + label
+{
+    top: 7.5em;
+    font-family: Times New Roman, serif;
+}
+
+.sans-serif + label
+{
+    top: 9em;
+    font-family: Arial, sans-serif;
+}
+
+.serif:checked ~ main p,
+.serif:checked ~ main h2,
+.serif:checked ~ main h3,
+.serif:checked ~ main cite,
+.serif:checked ~ main figcaption,
+.serif:checked ~ footer
+{
+    font-family: Times New Roman, serif;
+}
+
+.sans-serif:checked ~ main p,
+.sans-serif:checked ~ main h2,
+.sans-serif:checked ~ main h3,
+.sans-serif:checked ~ main cite,
+.sans-serif:checked ~ main figcaption,
+.sans-serif:checked ~ footer
+{
+    font-family: Arial, sans-serif;
+}
+
+.small:checked ~ header,
+.small:checked ~ main,
+.small:checked ~ footer
+{
+    font-size: .5em;
+}
+
+.big:checked ~ header,
+.big:checked ~ main,
+.big:checked ~ footer
+{
+    font-size: 2em;
+}
+
+header,
+main
+{
+    border-color: black;
+    border-style: solid;
+}
+
+header
+{
+    margin-top: 3em;
+    border-width: 2px 2px 0;
+}
+
+main,
+article div,
+.article-4-columns
+{
+    column-count: 2;
+    column-rule: 1px dashed grey;
+    column-gap: 30px;
+}
+
+.article h2,
+.category
+{
+    break-inside: avoid-column;
+}
+
+main 
+{
+    border-width: 1px 2px 2px;
+    border-top-style: dashed;
+    padding: 10px;
+    margin: 0 0 10px;
+}
+
+h1
+{
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Philosopher, Courier New, monospace;
+    font-weight: normal;
+    font-size: 500%;
+}
+
+.article h2,
+.category
+{
+    font-family: Anonymous Pro, Courier New, monospace;
+}
+
+.article h2
+{
+    text-align: center;
+    font-style: italic;
+    font-size: 200%;
+    margin: 10px 0;
+    padding: 20px 10px;
+    border: 1px dotted grey;
+}
+
+.category
+{
+    width: 1em;
+    word-wrap: break-word;
+    float: left;
+    padding: 0 12px 0 0;
+    margin: 0;
+    font-size: 150%;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+blockquote
+{
+    text-align: right;
+    margin: 10px 0;
+    font-size: 95%;
+    font-family: Courier New, monospace;
+    width: 80%;
+    margin-left: 20%;
+}
+
+article div:first-letter
+{
+    font-family: Mon Amour, Verdana;
+    font-weight: normal;
+    font-size: 175%;
+}
+
+article div
+{
+    margin: 2em 0 0;
+}
+
+article div p:first-child
+{
+    margin-top: -1.1em;
+}
+
+article div p
+{
+    font-family: Courier New, monospace;
+    text-align: justify;
+    text-indent: 2em;
+    margin: .5em 0;
+}
+
+figure
+{
+    margin: 1em;
+}
+
+img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    text-align: center;
+    font-style: italic;
+    font-family: Courier New, monospace;
+}
+
+.article-big h2
+{
+    column-span: all;
+}
+
+.article-big:after
+{
+    content: '';
+    column-span: all;
+    display: block;
+    height: 2em;
+}
+
+.article-4-columns div
+{
+    column-count: 1;
+}
+
+footer cite
+{
+    float: right;
+}
